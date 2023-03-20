@@ -31,6 +31,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - abbr
   - attr_list
   - pymdownx.tabbed:
       alternate_style: true
@@ -40,7 +41,10 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path:
         - "docs/.snippets"
+      auto_append:
+        - "docs/.snippets/abbreviations.md"        
   - footnotes
+  - def_list
 
 # Copyright
 copyright: >-
@@ -76,7 +80,7 @@ extra:
 
 # Customization
 extra_css:
-#  - /Domino-rest-api/assets/css/keep_style.css
+  - ../assets/css/voltmxgo.css
 
 plugins:
   - search
