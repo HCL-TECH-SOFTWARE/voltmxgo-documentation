@@ -39,10 +39,10 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets:
-      base_path:
-        - "docs/.snippets"
       auto_append:
-        - "docs/.snippets/abbreviations.md"        
+        - "abbreviations.md" 
+      base_path:
+        - "docs/.snippets"          
   - footnotes
   - def_list
 
@@ -87,4 +87,5 @@ plugins:
   - awesome-pages
   - section-index
   - tags
+  - git-revision-date-localized
   - markdownextradata: {}
