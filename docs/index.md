@@ -6,12 +6,12 @@ hide:
 
 # Welcome to Volt MX Go documentation
 
-*Volt MX Go* modernizes and extends the value of your *Domino* applications with the market leading, multi-experience platform *Volt MX* by:
+Volt MX Go modernizes and extends the value of your Domino applications with the market leading, multi-experience platform Volt MX by:
 
-- connecting *Volt Foundry* to your *Domino* applications
-- modernizing or creating new multi-experience applications in *Volt Iris* on your Domino back-end data and applications
-- expanding who can code *Domino* applications, allowing for app modernization or migration without requiring a complete rewrite of the code
-- importing existing Domino views, forms, and fields into *Volt Foundry* to	get a head start on your *Volt MX Go* applications 
+- connecting Volt Foundry to your Domino applications
+- modernizing or creating new multi-experience applications in Volt Iris on your Domino back-end data and applications
+- expanding who can code Domino applications, allowing for app modernization or migration without requiring a complete rewrite of the code
+- importing existing Domino views, forms, and fields into *Volt Foundry* to	get a head start on your Volt MX Go applications 
 
 For more information, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md). 
 
