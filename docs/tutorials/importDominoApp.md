@@ -3,32 +3,38 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
  
 ## Pre-requisite
  
-    * Must have a credentials.
-    * Must have a configured .NSF file, connected to scope and schema in DRAPI
-    * Must have configured Foundry and Drapi
-    * Must have an Iris Application
+     - Must have Volt MX Iris, Foundry and Domino REST API credentials
+
+    -  Must have a configured .NSF file, connected Domino REST API.
+    -  
+
+
     
 ## Procedure
 
-### How to import domino application for new foundry and new DRAPI 
 1. Open the **Volt Mx Iris** app.
-2. Click on **Project**.
-3. On Project menu, hover **Import** and click **Domino Application**.
+2. Click on **Project** &rarr; **Import** &rarr; **Domino Application**.
 4. A pop-up box appears. Click **Get Started**.
-    ! [Get Started](../assets/css/images/ImportStarted.png)
+
+    ![Get Started](../assets/images/importstarted.png)
+
 5. Click **Next**. A pop-up menu appears, selecting between `Use Existing` or `Create`. 
-    ! [Create ](../assets/css/images/ImportCreate.png)
+
+    ![Create ](../assets/images/importcreate.png)
+    
 6. Choose **Create**. The ***Foundry Backend*** create a default name **App 1**. The Foundry Backend incremently create a name **App**.
 7. Click **Next**. 
 8. Choose  **Create New DRAPI** services and Click **Next**.
 9. ***Generated Services*** wiappears. Fill-in the ***fields*** and Click **Next**.
+
     |  **Fields**     | **Description** |
-    | ----------- | ----------- |
-    | DRAPI URL   This refers to the DRAPI URL you are working with.     |
+    | -----------      | -----------     |
+    | DRAPI URL   | This refers to the DRAPI URL you are working with.     |
     | Scope       | This is the name of your configured scope describe in your App of DRAPI application management. |
     |Client ID    | This is the App ID of your Application in DRAPI application management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
     |Client Secret| This is the App Secret in DRAPI application management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
     |Service Name: |Any name that identify the Volt Foundry Identity Services. |
+
 10. Select your ***Drapi Identity Service*** and click **Next**.
 11. A popup window appears. Log in your credentials in **DRAPI**.
 12. Click **Allow** and click **Next**.
