@@ -21,9 +21,9 @@ theme:
   custom_dir: theme_overrides/
   icon:
     repo: fontawesome/brands/github
-  font:
-    text: Roboto
-    code: Roboto Mono
+  font: false
+  #  text: Roboto
+  #  code: Roboto Mono
   favicon: favicon.ico
 
 # Markdown Extensions
@@ -47,7 +47,7 @@ markdown_extensions:
   - def_list
 
 # Copyright
-copyright: >-
+copyright: 
   Copyright &copy; 2023, HCL Technologies Limited -
   <a href="#__consent">Change cookie settings</a>
 
