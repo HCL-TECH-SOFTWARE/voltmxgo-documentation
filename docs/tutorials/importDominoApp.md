@@ -15,7 +15,9 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
 2. Click on **Project**.
 3. On Project menu, hover **Import** and click **Domino Application**.
 4. A pop-up box appears. Click **Get Started**.
+    ! [Get Started](../assets/css/images/ImportStarted.png)
 5. Click **Next**. A pop-up menu appears, selecting between `Use Existing` or `Create`. 
+    ! [Create ](../assets/css/images/ImportCreate.png)
 6. Choose **Create**. The ***Foundry Backend*** create a default name **App 1**. The Foundry Backend incremently create a name **App**.
 7. Click **Next**. 
 8. Choose  **Create New DRAPI** services and Click **Next**.
@@ -29,7 +31,7 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
     |Service Name: |Any name that identify the Volt Foundry Identity Services. |
 10. Select your ***Drapi Identity Service*** and click **Next**.
 11. A popup window appears. Log in your credentials in **DRAPI**.
-12. Click **Allow**. This allows your scopes or the resources to be accessed and click **Next**.
+12. Click **Allow** and click **Next**.
 13. Select your scope created and click **Next**. There are lot of scope created on one **.NSF**. You'll need to find your created scope. 
 14. Select your ***App Identity Service*** and click **Next**.
 15. You may  _clear or _select_ again the records from your selected scope and click ***Next***.
