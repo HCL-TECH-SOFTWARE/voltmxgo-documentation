@@ -13,7 +13,7 @@ Volt MX Go modernizes and extends the value of your Domino applications with the
 - expanding who can code Domino applications, allowing for app modernization or migration without requiring a complete rewrite of the code
 - importing existing Domino views, forms, and fields into *Volt Foundry* to	get a head start on your Volt MX Go applications 
 
-To get started, see the following topics:
+To get started, see the following topics in the order that they're listed:
 
 - [Introducing Volt MX Go](topicguides/introvoltmxgo.md)
 - [System requirements](references/sysreq.md)

@@ -20,7 +20,6 @@ This tutorial guides you on accessing and running the First Touch app in Volt MX
 
    The **Volt MX Foundry Console** opens with the **Apps** tab shown by default. 
 
-
 ## Run First Touch
 
 1. On the **Apps** tab, click **GET STARTED**.
