@@ -1,5 +1,5 @@
 # Volt Mx Go Volt Formula
-    What ideas do you conjure up whenever you hear the word "formula"? It is a string of words, a collection of mathematical processes, or an expression with the purpose of producing results as an output. In point of fact, the description of this formula and this Volt Formula are identical. MX Go Volt Formula  function of MX GO is responsible for converting the formula used on other Formula Language platforms into the javascript programming language.
+    What ideas do you think whenever you hear the word "formula"? It is a string of words, a collection of mathematical processes, or an expression with the purpose of producing results as an output. In point of fact, the description of this formula and this Volt Formula are identical. MX Go Volt Formula  function of MX GO is responsible for converting the formula used on other Formula Language platforms into the javascript programming language.
     
 ## Three platforms supported by the Volt Formula. 
       - [Open Formula] (https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html)
