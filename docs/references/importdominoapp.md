@@ -6,6 +6,7 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
      - Must have Volt MX Iris, Foundry and Domino REST API credentials
 
     -  Must have a configured .NSF file, connected Domino REST API.
+    
     -  
 
 
@@ -14,18 +15,25 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
 
 1. Open the **Volt Mx Iris** app.
 2. Click on **Project** &rarr; **Import** &rarr; **Domino Application**.
-4. A pop-up box appears. Click **Get Started**.
+3. A pop-up box appears. Click **Get Started**.
 
-    ![Get Started](../assets/images/importstarted.png)
+    ![](/assets/images/importstarted.png)
 
-5. Click **Next**. A pop-up menu appears, selecting between `Use Existing` or `Create`. 
 
-    ![Create ](../assets/images/importcreate.png)
-    
-6. Choose **Create**. The ***Foundry Backend*** create a default name **App 1**. The Foundry Backend incremently create a name **App**.
-7. Click **Next**. 
-8. Choose  **Create New DRAPI** services and Click **Next**.
-9. ***Generated Services*** wiappears. Fill-in the ***fields*** and Click **Next**.
+4. Select **Create**. This creates and associates a new foundry app. Click **Next** to continue.
+
+    'create' image
+
+  
+5. Select  **Create New** Domino REST API services. This associates the output of your form based on the configuration of your Domina Rest API. Click **Next**. 
+
+    Drapi new image 
+
+    This associates the output of your form based on the configuration of your Domino Rest API. Click **Next**. 
+
+
+
+6. ***Generated Services*** appears. Fill-in the ***fields*** and Click **Next**.
 
     |  **Fields**     | **Description** |
     | -----------      | -----------     |
@@ -36,6 +44,7 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
     |Service Name: |Any name that identify the Volt Foundry Identity Services. |
 
 10. Select your ***Drapi Identity Service*** and click **Next**.
+
 11. A popup window appears. Log in your credentials in **DRAPI**.
 12. Click **Allow** and click **Next**.
 13. Select your scope created and click **Next**. There are lot of scope created on one **.NSF**. You'll need to find your created scope. 
