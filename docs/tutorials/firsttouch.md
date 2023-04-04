@@ -33,8 +33,7 @@ This tutorial guides you on accessing and running the First Touch app in Volt MX
 2. On the **Welcome to Volt MX Go** dialog, enter the following information:
     
     - URL of your Domino REST API server
-    - Domino REST API user ID
-    - Domino REST API user password
+    - Domino REST API administrator user ID and password
 
 3. Click **Next**. An installation progress dialog appears. 
 

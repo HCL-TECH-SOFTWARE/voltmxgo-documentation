@@ -1,6 +1,6 @@
 # References
 
-This section provides technical references and descriptions for using Volt MX Go.
+Provides technical references and descriptions for using Volt MX Go.
 
 ## [What's new](whatisnew.md)
 

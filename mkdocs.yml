@@ -1,6 +1,6 @@
 #Project Information
 site_name: HCL Volt MX Go Documentation
-site_url: 
+site_url: https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation
 site_description: >-
   HCL Volt MX Go documentation site
 use_directory_urls: false
