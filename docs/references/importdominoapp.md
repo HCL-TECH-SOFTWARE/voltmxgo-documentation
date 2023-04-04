@@ -7,9 +7,7 @@ Domino Application in Volt MX Iris is a way to extract the domino .NSF file to v
 
     -  Must have a configured .NSF file, connected Domino REST API.
     
-    -  
-
-
+    
     
 ## Procedure
 
