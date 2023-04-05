@@ -17,6 +17,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - content.code.copy
   custom_dir: theme_overrides/
   icon:
     repo: fontawesome/brands/github
@@ -30,6 +31,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.keys
   - abbr
   - attr_list
   - pymdownx.tabbed:
@@ -44,6 +46,7 @@ markdown_extensions:
         - "docs/.snippets"          
   - footnotes
   - def_list
+  
 
 # Copyright
 copyright: 

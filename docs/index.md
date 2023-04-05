@@ -17,7 +17,6 @@ To get started, see the following topics in the order that they're listed:
 
 - [Introducing Volt MX Go](topicguides/introvoltmxgo.md)
 - [System requirements](references/sysreq.md)
-- [Download software](references/download.md)
 - [Installation](tutorials/installation.md)
 - [Tutorials](tutorials/index.md)
 

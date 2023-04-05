@@ -7,6 +7,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 - You have completed the [installation procedure](installation.md), and have configured your username and password.
 - You have the URL of your Domino REST API server, and have administrator username and password for Domino REST API.
 - You have added and configured a schema and a scope in the Domino REST API. 
+- Your schema should have a configured form with a `dql` mode similar to the `default` mode. 
 
 ## Log in to Volt MX Foundry
 
@@ -45,8 +46,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
         Example:  `[Domino REST API server URL]/oauth/token`
 
-    4. In the **Callback URL** text box, click **Copy**. <br/> You need to callback URL when configuring your app in Domino REST API. 
+    4. In the **Callback URL** text box, click **Copy**. <br/> You need the callback URL when configuring your app in Domino REST API. 
     5. Enter `$DATA` in the **Scope** text box.
+
+![](../assets/images/identityproviderdetails.png)
 
 5.	Under **Client Details**:
 
@@ -81,6 +84,8 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     For example, URL: http://mbaastest30.hcl.net:53504
 5.	Click **Test Connection** to verify that the entered URL is correct. If the test is successful, a check mark appears beside the **Server** tab.
 6. Click **Save**.
+
+    ![](../assets/images/addenvironment.png)
 
 ## Configure an Object service
 

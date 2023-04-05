@@ -43,15 +43,15 @@ Some field (column) data types are common between Domino and Foundry, for exampl
 
 For common data types, the field type in the generated Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`. 
 
-![](img/recipe-servings-keepschema.png)
+![](../assets/images/recipe-servings-keepschema.png)
 
 In the Foundry object model, the field type of *Servings* is `number`:
 
-![](img/recipe-servings-foundrymodel.png)
+![](../assets/images/recipe-servings-foundrymodel.png)
 
 For Domino object types not supported in Foundry, the Foundry object field type is `string`. The extended type information is stored in the the field metadata as `richtext` as shown in the following example image.
 
-![](img/recipe-richtext.png)
+![](../assets/images/recipe-richtext.png)
 
 #### Additional Metadata (per "row")
 

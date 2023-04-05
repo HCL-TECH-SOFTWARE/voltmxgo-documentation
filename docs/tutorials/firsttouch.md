@@ -20,15 +20,15 @@ This tutorial guides you on accessing and running the First Touch app in Volt MX
  
 3. Click **Sign In**.  
 
-   The **Volt MX Foundry Console** opens with the **Apps** tab shown by default. 
+   The **Volt MX Foundry Console** opens with the **Apps** page shown by default. The **VOLT MX GO | First Touch** banner is shown on the **Apps** page.  
 
 ## Run First Touch
 
-1. On the **Apps** tab, click **GET STARTED**.
+1. On the **Apps** page, click **GET STARTED**.
 
     OR
 
-    Select **First Touch** from the side panel. 
+    Select **VOLT MX GO First Touch** from the side panel. 
 
 2. On the **Welcome to Volt MX Go** dialog, enter the following information:
     
