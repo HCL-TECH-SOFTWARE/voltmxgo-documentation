@@ -4,7 +4,6 @@ site_url:
 site_description: >-
   HCL Volt MX Go ...
 use_directory_urls: false
-site_dir: docs
 # Theme Configuration
 theme:
   name: material
@@ -55,13 +54,13 @@ extra:
 #  productversion: 1.0.2
 #  flexnet_url: "https://hclsoftware.flexnetoperations.com/flexnet/operationsportal/entitledDownloadFile.action?downloadPkgId=HCL%20Domino%20REST%20API%20Early%20Access%20Release"
   social:
-#    - icon: fontawesome/brands/github
-#      link: https://github.com/HCL-TECH-SOFTWARE/Domino-rest-api
+    - icon: fontawesome/brands/github
+      link: https://github.com/HCL-TECH-SOFTWARE/volt-mx-go-documentation-public
   version:
     provider: mike
   analytics:
     provider: google
-#    property: UA-169645537-2
+    property: UA-169645537-2
   consent:
     title: Cookie consent
     description: >-
@@ -74,9 +73,9 @@ extra:
       - manage
 
 # Repository
-#repo_url: https://github.com/HCL-TECH-SOFTWARE/Domino-rest-api
-#repo_name: Domino-rest-api
-#edit_uri: edit/main/docs
+repo_url: https://github.com/HCL-TECH-SOFTWARE/volt-mx-go-documentation-public
+repo_name: volt-mx-go-documentation-public
+edit_uri: edit/main/docs
 
 # Customization
 extra_css:
@@ -87,5 +86,4 @@ plugins:
   - awesome-pages
   - section-index
   - tags
-  - git-revision-date-localized
   - markdownextradata: {}
