@@ -10,6 +10,7 @@
 4. Must have a **username** and **password** for VoltMX Go Iris, Foundry and Domino REST API.
 
 ## Launch VoltMX Go Iris
+
 1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
 
 	!!! notes "notes"
@@ -24,6 +25,7 @@
 
 
 ## Open a new project
+
 1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.** 
 2. Select **Web App** and click **Next.**
    !!! notes ""
