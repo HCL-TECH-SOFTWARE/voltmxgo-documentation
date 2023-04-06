@@ -71,21 +71,21 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
 		|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
 
-		<img src="../assets/images/dikeep.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+		<img src="../assets/images/dikeep.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
 
 
 	2. Select your **service name** you added from the earlier page and click **Next**.
 
-		<img src="../assets/images/didrapi.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+		<img src="../assets/images/didrapi.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
 	3. Log-in your credential to Domino Rest API and click **allow**.
 
-		<img src="../assets/images/didrapilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+		<img src="../assets/images/didrapilogin.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
 	4. Select your **Foundry server name** associated to Domino REST API and click **Next.**
 
-		<img src="../assets/images/difoundry.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />			
+		<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />			
 
  4. Select your scope that you’ve configured in Domino Rest API. 
  
