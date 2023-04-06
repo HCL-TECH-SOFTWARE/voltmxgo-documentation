@@ -62,25 +62,22 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 3. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
 
 	1. Fill-in the **New Identity Service** and click **Next**
-	
-	|  **Fields**     | **Description** |
-	| -----------     | -----------		|
-	| Domino REST API URL   | This refers to the Domino REST API URL you are working with.     |
-	| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
-	|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-	Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-	|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
 
-	<img src="../assets/images/dikeep.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
-
-
-
-	2. Select your **Domino Rest API Identity Service** and  click **Next**
-
-		!!! notes "Notes"
-			This refers to the **service name** you added from the earlier page.
+		|  **Fields**     | **Description** |
+		| -----------     | -----------		|
+		| Domino REST API URL   | This refers to the Domino REST API URL you are working with.     |
+		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
+		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+		|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
 
 		<img src="../assets/images/dikeep.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+
+
+
+	2. Select your **service name** you added from the earlier page and click **Next**.
+
+		<img src="../assets/images/didrapi.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 
 	3. Select your **Domino Rest API Identity Service** and click **Next.**
 
@@ -106,4 +103,4 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 		- You can view the final result of the .nsf file that you configured in KEEP.
 		- You can click the link “*click here to view logs on a separate window”* to see the summarized forms, views and app forms in one page.
 
-Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris. 
+Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris. rtrgg
