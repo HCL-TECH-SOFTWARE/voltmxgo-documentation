@@ -1,8 +1,8 @@
 #Project Information
 site_name: HCL Volt MX Go Documentation
-site_url: 
+site_url: https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation
 site_description: >-
-  HCL Volt MX Go ...
+  HCL Volt MX Go documentation site
 use_directory_urls: false
 # Theme Configuration
 theme:
@@ -17,6 +17,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - content.code.copy
   custom_dir: theme_overrides/
   icon:
     repo: fontawesome/brands/github
@@ -30,6 +31,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.keys
   - abbr
   - attr_list
   - pymdownx.tabbed:
@@ -44,6 +46,7 @@ markdown_extensions:
         - "docs/.snippets"          
   - footnotes
   - def_list
+  
 
 # Copyright
 copyright: 
@@ -86,4 +89,6 @@ plugins:
   - awesome-pages
   - section-index
   - tags
+  - git-revision-date-localized:
+      type: date
   - markdownextradata: {}
