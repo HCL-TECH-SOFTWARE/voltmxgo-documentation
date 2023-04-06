@@ -50,7 +50,7 @@
 This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file where you can design the **.NSF** structure in **VoltMX GO Iris** simultaneously to  the **Notes Designer.**
 
 
-	## Import a Domino Application
+## Import a Domino Application
 
 1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **VoltMX Go Iris** app.
 1. Go to the first step "**Getting Started**" and click **Next**.
@@ -61,17 +61,17 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 
 3. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
 
-	1. Fill-in the **New Identity Service** and click **Next**.
+	1. Fill-in the **New Identity Service** and click **Next**
+	
+	|  **Fields**     | **Description** |
+	| -----------     | -----------		|
+	| Domino REST API URL   | This refers to the Domino REST API URL you are working with.     |
+	| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
+	|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+	Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+	|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
 
-		|  **Fields**     | **Description** |
-| -----------     | -----------		|
-| Domino REST API URL   | This refers to the Domino REST API URL you are working with.     |
-		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
-		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-		|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
-
-<img src="../assets/images/didrapi.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+	<img src="../assets/images/dikeep.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 
 
 
