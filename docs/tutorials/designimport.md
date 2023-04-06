@@ -66,7 +66,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 2. Click **Create New** on the *Associate Foundry  App*.
 
 	!!! notes "Notes"
-		Once you click **Create New** , new foundry app associated in VoltMX Go Iris. The default name of this is App1. The name incrementally increase by 1. 
+		Once you click **Create New** , new foundry app associated in VoltMX Go Iris. The default name of the same your **Project Name*.
 
 3. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
 
