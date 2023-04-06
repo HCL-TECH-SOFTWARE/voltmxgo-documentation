@@ -36,9 +36,9 @@ VoltFormula expands who can code Domino applications by allowing app modernizati
 Design Import reads a Domino app through the Domino REST API, retrieves design elements from the app, including forms, views, and agents, and presents them to the user. The user can then decide which forms and fields to import. 
 
 Design Import builds the forms and views within Volt Iris and make them actionable against object services in the Domino Adapter (CRUD operations). The forms and views are presented as a simplified list for better navigation.
-## Domino Adapter
+## HCL Domino Adapter
 
-Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX apps can interact with Domino databases in the same way they can for relational databases. With the Domino Adapter, you can connect to your Domino database as an endpoint via the Domino REST API. Domino Adapter includes the following features: 
+The HCL Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX apps can interact with Domino databases in the same way they can for relational databases. With the Domino Adapter, you can connect to your Domino database as an endpoint via the Domino REST API. Domino Adapter includes the following features: 
 
 - Form-based CRUD (post, get, put, delete)
 - Form-based PATCH 
