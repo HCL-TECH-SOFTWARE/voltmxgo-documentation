@@ -40,15 +40,7 @@ The procedures will guide you in the installation of Foundry.
 
     The output should be similar to the following and will update over time:
 
-```
-NAME    READY   STATUS    RESTARTS   AGE   IP      NODE              NOMINATED NODE   READINESS GATES
-domino-keep-5c65d76c6c-rkfml  3/3     Running   0 23m   10.42.0.13   k3s.fnxlabs.com<none>           <none>
-mysql-0                           1/1     Running   0          12m   10.42.0.15   k3s.fnxlabs.com   <none>           <none>
-foundry-db-update-5c56h           1/1     Running   0          65s   10.42.0.17   k3s.fnxlabs.com   <none>           <none>
-foundry-db-update-5c56h           0/1     Completed 0          2m37s 10.42.0.17   k3s.fnxlabs.com   <none>           <none>
-foundry-db-update-5c56h           0/1     Completed 0          2m39s 10.42.0.17   k3s.fnxlabs.com   <none>           <none>
-foundry-db-update-5c56h           0/1     Completed 0          2m40s 10.42.0.17   k3s.fnxlabs.com   <none>           <none>
-```
+![](../assets/images/output2.png)
 
 Once the dbupdate pod shows Completed in the STATUS column, press `Ctrl-c` to stop the command.
 
@@ -68,32 +60,15 @@ Once the dbupdate pod shows Completed in the STATUS column, press `Ctrl-c` to st
 
 You should see an output similar to the following:
 
-```
-NAME                                          READY   STATUS              RESTARTS   AGE     IP           NODE              NOMINATED NODE   READINESS GATES
-domino-keep-5c65d76c6c-rkfml                  3/3     Running             0          27m     10.42.0.13   k3s.fnxlabs.com   <none>           <none>
-mysql-0                                       1/1     Running             0          16m     10.42.0.15   k3s.fnxlabs.com   <none>           <none>
-foundry-db-update-5c56h                       0/1     Completed           0          5m31s   10.42.0.17   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-apiportal-64fd9ccb7d-gr2xc     0/1     ContainerCreating   0          39s     <none>       k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-console-774f88ff7f-8mz99       0/1     ContainerCreating   0          39s     <none>       k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-engagement-fd5ff95dd-6gvdp     0/1     ContainerCreating   0          39s     <none>       k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-integration-7bd767d54b-mpbwc   0/1     ContainerCreating   0          39s     <none>       k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-identity-f8bf9784b-jg2jw       0/1     ContainerCreating   0          39s     <none>       k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-integration-7bd767d54b-mpbwc   0/1     Running             0          69s     10.42.0.18   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-apiportal-64fd9ccb7d-gr2xc     0/1     Running             0          75s     10.42.0.21   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-identity-f8bf9784b-jg2jw       0/1     Running             0          76s     10.42.0.19   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-engagement-fd5ff95dd-6gvdp     0/1     Running             0          84s     10.42.0.20   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-console-774f88ff7f-8mz99       0/1     Running             0          96s     10.42.0.22   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-apiportal-64fd9ccb7d-gr2xc     1/1     Running             0          2m1s    10.42.0.21   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-identity-f8bf9784b-jg2jw       1/1     Running             0          2m6s    10.42.0.19   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-integration-7bd767d54b-mpbwc   1/1     Running             0          2m6s    10.42.0.18   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-engagement-fd5ff95dd-6gvdp     1/1     Running             0          2m14s   10.42.0.20   k3s.fnxlabs.com   <none>           <none>
-voltmx-foundry-console-774f88ff7f-8mz99       1/1     Running             0          2m49s   10.42.0.22   k3s.fnxlabs.com   <none>           <none>
-```
+![](../assets/images/output1.png)
 
-3. Once all the foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.  
-
+Once all the foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.  
 
 Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/).   
 
 !!!note
     If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
+
+## Next step
+
+Proceed to [Connect to Domino server from your Notes client](connectdominofromnotes.md).

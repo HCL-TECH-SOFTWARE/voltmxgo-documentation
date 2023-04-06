@@ -14,6 +14,8 @@ The procedure guides you in installing MySql for Foundry.
 
     ```
     helm repo add bitnami https://charts.bitnami.com/bitnami
+    ```
+    ```
     helm install mysql bitnami/mysql --version "9.6.0" --set image.tag="8.0.32-debian-11-r17",auth.rootPassword="Password123\!",auth.createDatabase=false,auth.username=dbclient,auth.password="Password123\!" -n mxgo
     ```
 
@@ -32,3 +34,7 @@ The procedure guides you in installing MySql for Foundry.
     ```
 
 4. Once the database is in the ready state, press `Ctrl-c` to stop the command.
+
+## Next step
+
+Proceed to [Install Foundry](installfoundry.md).

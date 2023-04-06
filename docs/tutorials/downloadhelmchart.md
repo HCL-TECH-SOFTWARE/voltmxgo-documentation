@@ -10,7 +10,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
     helm pull hclcr/keep
     ```
 
-The file `keep.tgz` is downloaded. 
+    The file `keep.tgz` is downloaded. 
 
 2. Run the following commands to unpack the chart and make the Keep directory your current directory:
 
@@ -19,9 +19,9 @@ The file `keep.tgz` is downloaded.
     cd keep
     ```
 
-3. Edit the `values.yaml` file using an editor, such as **vi**, to update the file with your HCL Container Repository credentials.
+3. Edit the `values.yaml` file using an editor to update the file with your HCL Container Repository credentials. You can use your preferred editor. 
 
-    When using **vi**:
+    The example procedure uses **vi** to edit the `values.yaml` file:
 
     1. Run the following command:
 
@@ -68,3 +68,7 @@ The file `keep.tgz` is downloaded.
     ```
 
 3. Once you see the READY column showing 3/3, press `Ctrl+c` to cancel the command.
+
+## Next step
+
+Proceed to [Install MySql for Foundry](installmysqlfoundry.md).

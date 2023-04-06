@@ -4,6 +4,9 @@ The procedure guides you in installing Rancher Desktop, which is delivered as a 
 
 ## Before you start
 
+!!!note
+    If you will use K3s in deploying the Early Access version of Volt MX Go, you don't need to execute this procedure.
+
 Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying Volt MX Go using Rancher Desktop running on Windows](../references/sysreq.md#for-deploying-volt-mx-go-using-rancher-desktop-running-on-windows) are met.
 
 !!!note
@@ -21,6 +24,15 @@ Before starting with the procedure, make sure that you have checked and verified
 7. Follow the prompts to confirm installation.
 8. When the installation completes, click **Finish** to close the installation wizard.
 
+## Post installation 
+
+### Obtain your authentication token from HCL Container Repository
+
+--8<-- "obtaintoken.md"
+
+!!!note
+    After completing the procedure for obtaining the authentication token from HCL Container Repository, restart Rancher Desktop.  
+
 ## Additional information
 
 When run for the first time or when changing versions, Kubernetes container images are downloaded. It may take a little time to load on the first run for a new Kubernetes version.
@@ -33,4 +45,6 @@ After Rancher Desktop installation, users will have access to these supporting u
   - Moby
   - Docker Compose
 
+## Next step
 
+Proceed to the [Prerequisite procedures](prereq.md).

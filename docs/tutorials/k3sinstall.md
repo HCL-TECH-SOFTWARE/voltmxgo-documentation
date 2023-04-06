@@ -7,6 +7,9 @@ K3s is a fully compliant Kubernetes distribution. For more information, see [K3s
 
 ## Before you start
 
+!!!note
+    If you will use Rancher Desktop in deploying the Early Access version of Volt MX Go, you don't need to install K3s. 
+
 Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](../references/sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met. 
 
 ## 1. Install K3s
@@ -76,26 +79,7 @@ For more information, see [Installing Helm](https://helm.sh/docs/intro/install/)
 
 ## 5. Obtain your authentication token from HCL Container Repository
 
-The binary images and Helm charts for Volt MX GO server components will be pulled from the HCL Container Repository. This will require you to get your authentication token from the HCL Container Repository. 
-
-1. Go to the [HCL Container Repository](https://hclcr.io).
-2. On the login page, click **LOGIN VIA OIDC Provider**, and then login using your corporate email address.
-3. On the **Projects** page, enter `voltmxgo` in the search field, and then click `voltmxgo-ea` on the search result. 
-4. On the **voltmxgo-ea** project page, click your username and select **User Profile**.
-5. On the **User Profile** dialog, copy the value of the **CLI secret** by clicking the copy icon.
-6. Save the CLI secret value as it's required in the next steps. 
-7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.
-8. Run the following commands to export the username and authentication token. 
-
-    !!!note
-        Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
-
-    ```
-    export HCLCR_USERNAME=<your hclcr username>
-    ```
-    ```
-    export HCLCR_TOKEN=<your hclcr authentication token>
-    ```
+--8<-- "obtaintoken.md"
 
 ## 6. Ensure K3s is active and ready
 
@@ -122,4 +106,6 @@ The binary images and Helm charts for Volt MX GO server components will be pulle
     vm1.example.com        Ready    control-plane,master   25h   v1.23.15+k3s1
     ```
 
+## Next step
 
+Proceed to the [Prerequisite procedures](prereq.md).

@@ -1,6 +1,6 @@
 # Prerequisite procedures
 
-The following procedures must be performed post installation of K3s or Rancher Desktop, and before the downloading the download of the Domino/Keep Helm chart and Foundry installation. 
+The following procedures must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
 
 ## 1. Configure Helm to pull from HCL Container Repository
 
@@ -35,7 +35,7 @@ Most likely, you haven't specified your username or authentication token correct
     kubectl config set-context --current --namespace=mxgo
     ```
 
-## Add Early Access Preview Host Names
+## 3. Add Early Access Preview Host Names
 
 For the Early Access preview, the following host names are **hard-coded**:
 
@@ -83,7 +83,7 @@ foundry.mymxgo.com
 4. Save the file and exit the editor.
 
 
-## Create a temp directory for the charts
+## 4. Create a temp directory for the charts
 
 - Run the following commands to create a temp directory for the charts and make it the current directory:
 
@@ -92,7 +92,7 @@ foundry.mymxgo.com
     cd ~/mxgo
     ```
 
-## Setup Helm with credentials
+## 5. Setup Helm with credentials
 
 1. Run the following command to setup Helm with credentials:
 
@@ -101,3 +101,7 @@ foundry.mymxgo.com
     ```
 
 2. When prompted for a password, enter your authentication token for HCL Container Repository.
+
+## Next step
+
+Proceed to [Download Domino/Keep Helm chart](downloadhelmchart.md).

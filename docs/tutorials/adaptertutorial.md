@@ -4,20 +4,21 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Before you start
 
-- You have completed the [installation procedure](installation.md), and have configured your username and password.
-- You have the URL of your Domino REST API server, and have administrator username and password for Domino REST API.
+- You have completed the [Volt MX Go installation](installation.md).
+- You have created your [Foundry admin account](../howto/foundryadminaccount.md). 
+- You have noted the following Domino REST API details:
+
+    - Server URL: http://drapi.mymxgo.com 
+    - username: mxgo admin
+    - password: password
+
 - You have added and configured a schema and a scope in the Domino REST API. 
 - Your schema should have a configured form with a `dql` mode similar to the `default` mode. 
 
 ## Log in to Volt MX Foundry
 
-1. Open `http://foundry.[domain]/mfconsole/` in your browser. 
-    
-    !!! note
-        Replace `[domain]` with the domain you selected/used during the installation.  
-
+1. Open `http://foundry.mymxgo.com/mfconsole/` in your browser.  
 2. Enter your username and password on the **Sign in to your account** page.
- 
 3. Click **Sign In**.  
 
    The **Volt MX Foundry Console** opens with the **Apps** page shown by default. 

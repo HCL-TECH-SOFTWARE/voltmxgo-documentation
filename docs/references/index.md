@@ -8,8 +8,10 @@ Check the [latest information](whatisnew.md) about Volt MX Go.
 
 ## System requirements
 
+Check the minimum [System requirements](sysreq.md) for deploying the Early Access version of Volt MX Go.
+
 ## Installation
-Useful reference information related to Volt MX Go installation.
+Useful reference information related to [Volt MX Go installation](../tutorials/installation.md).
 
 - [Kubernetes cheat sheet](kubecheatsheet.md)
 
