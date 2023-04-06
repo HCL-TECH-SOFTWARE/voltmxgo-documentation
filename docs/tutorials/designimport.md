@@ -30,6 +30,9 @@
 3. Fill-in the Foundry URL and click **Validate**. This is the Foundry console base URL. 
 4. Click **Done**. 
 
+<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />			
+
+
 ## Open a new project
 
 1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.** 
@@ -71,7 +74,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 
 		|  **Fields**     | **Description** |
 		| -----------     | -----------		|
-		| Domino REST API URL   | This refers to the Domino REST API URL you are working with.     |
+		| Domino REST API URL   | This refers to the Domino REST API URL you are working with. Example: http://design-import-r12-qs-keep-8880.qs.hcllabs.net/     |
 		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
 		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
 		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
