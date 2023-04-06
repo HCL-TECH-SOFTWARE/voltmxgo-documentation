@@ -95,7 +95,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
  	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
 		!!! notes "Notes"
-			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in KEEP configurations.
+			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
 
 
 5. Click **Build Iris Application.**
@@ -106,7 +106,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 6. Click **Done**.
 
 	!!!notes "Notes"
-		- You can view the final result of the .nsf file that you configured in KEEP.
-		- You can click the link “*click here to view logs on a separate window”* to see the summarized forms, views and app forms in one page.
+		- You can view the final result of the .nsf file that you configured in Domino REST API.
+		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
-Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris. rtrgg
+Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
