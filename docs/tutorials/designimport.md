@@ -5,7 +5,7 @@
 ## Before you start
 
 - Must have a **VoltMX Iris** app and completed the installation procedure in [Volt MX Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/installing_iris.html).
-- Must have a **VoltMX Foundry** app and completed the installation procedure in [Volt MX Foundry]().
+- Must have a **VoltMX Foundry** app and completed the installation procedure in [Volt MX Foundry](https://opensource.hcltechsw.com/volt-mx-docs/docs/documentation/Foundry/installing_foundry.html).
 - Must have a configured **.NSF** file, schema and scopes in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
 - Must have a **username** and **password** for VoltMX Go Iris, Foundry and Domino REST API.
 
@@ -13,9 +13,8 @@
 
 1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
 
-	!!! notes "notes"
-        
-        You can also start Iris by going to the folder where it's stored and double-clicking it.
+	!!! notes "Notes"
+	You can also start Iris by going to the folder where it's stored and double-clicking it.
 
 
    	On launching Iris, the VoltMX Go cloud login screen appears for license validation.
@@ -40,8 +39,10 @@
 
 4. Enter your **Project Name** and  click **Create**. 
 
-	!!! notes "Notes"
-		You can see your Project name on the upper-right corner of the Iris canvass.
+		
+5. You can see your Project name on the upper-right corner of the Iris canvass.
+
+	<img src="../assets/images/dinewproject.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 
 
 ## Introduction to the Design Import
@@ -49,7 +50,7 @@
 This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file where you can design the **.NSF** structure in **VoltMX GO Iris** simultaneously to  the **Notes Designer.**
 
 
-## Import a Domino Application
+	## Import a Domino Application
 
 1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **VoltMX Go Iris** app.
 1. Go to the first step "**Getting Started**" and click **Next**.
@@ -62,19 +63,24 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 
 	1. Fill-in the **New Identity Service** and click **Next**.
 
-	|  **Fields**     | **Description** |
-    | -----------     | -----------     |
-    | DRAPI URL   | This refers to the Domino REST API URL you are working with.     |
-    | Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
-    |Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-    |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-    |Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
+		|  **Fields**     | **Description** |
+| -----------     | -----------		|
+| Domino REST API URL   | This refers to the Domino REST API URL you are working with.     |
+		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
+		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+		|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
+
+<img src="../assets/images/didrapi.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+
 
 
 	2. Select your **Domino Rest API Identity Service** and  click **Next**
 
-	!!! notes "Notes"
-		This refers to the **service name** you added from the earlier page.
+		!!! notes "Notes"
+			This refers to the **service name** you added from the earlier page.
+
+		<img src="../assets/images/dikeep.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 
 	3. Select your **Domino Rest API Identity Service** and click **Next.**
 
