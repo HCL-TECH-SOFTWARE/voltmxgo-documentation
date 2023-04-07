@@ -15,8 +15,8 @@
 
 1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
 
-	!!! notes "Notes"
-	You can also start Iris by going to the folder where it's stored and double-clicking it.
+	!!! note ""
+		You can also start Iris by going to the folder where it's stored and double-clicking it.
 
 
    	On launching Iris, the VoltMX Go cloud login screen appears for license validation.
