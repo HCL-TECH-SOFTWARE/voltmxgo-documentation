@@ -41,12 +41,12 @@
 1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.**
 2. Select **Web App** and click **Next.**
 
-	!!! notes "Notes"
+	!!! note ""
 		For this release, select only the Web App.
 
 3. Select the **device** you want to build for the new Project and click **Next**.
 
-	!!! notes "Notes"
+	!!! note ""
 		For this release, select only the Desktop.
 
 4. Enter your **Project Name** and  click **Create**. 
@@ -68,7 +68,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 1. Go to the first step "**Getting Started**" and click **Next**.
 2. Click **Create New** on the *Associate Foundry  App*.
 
-	!!! notes "Notes"
+	!!! note ""
 		Once you click **Create New** , new foundry app associated in VoltMX Go Iris. The default name of the same your **Project Name*.
 
 3. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
@@ -101,35 +101,59 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
  4. Select your scope that you’ve configured in Domino Rest API. 
  
  	!!! note ""
-
 		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
 
 	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
-		!!! notes "Notes"
+		!!! note ""
 			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
 
 
 5. Click **Build Iris Application.**
 
-	!!! notes "Notes"
-		You can see the summary of the configured forms, views, agents and fields. You can Go Back if there are changes. 
+	!!! note ""
+		You can see the summary of the configured `forms`, `views`, `agents` and fields. You can **Go Back** if there are changes. 
 
 6. Click **Done**.
 
-	!!!notes "Notes"
+	!!! note ""
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
 Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
 
-<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
+<img src="../assets/images/dioutput.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
 ## Creating from existing Foundry and Domino Rest API.
 
-1. Follow the the step 1 and 2 from Import Domino Application.
-2. Click on **Use Existing** link on **Associate Foundry App**.
+1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **VoltMX Go Iris** app.
+2. Go to the first step "**Getting Started**" and click **Next**.
+3.  Click on **Use Existing** link on **Associate Foundry App**.
 	1. Select from the VoltMX Go Application the foundry app and click **Associate**. The existing foundry app is selected and click **Next**.
-3. Click **Select Existing** on the Identy Service step. This connects the Domino Rest API service.
+4. Click **Select Existing** on the Identy Service step. This connects the Domino Rest API service.
 	1. Select your **active app** from you Domino Rest API identity Service.
-4. Continue to 5 to 7 steps in **Import Domino Application**. -->
+5. Select your scope that you’ve configured in Domino Rest API. 
+ 
+ 	!!! note ""
+		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
+
+	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
+
+		!!! note ""
+			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
+
+
+6. Click **Build Iris Application.**
+
+	!!! note ""
+		You can see the summary of the configured `forms`, `views`, `agents` and `fields`. You can **Go Back** if there are changes. 
+
+7. Click **Done**.
+
+	!!! note ""
+		- You can view the final result of the .nsf file that you configured in Domino REST API.
+		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
+
+Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
+
+<img src="../assets/images/dioutput.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
