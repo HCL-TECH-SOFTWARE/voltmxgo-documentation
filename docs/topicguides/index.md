@@ -4,5 +4,5 @@ This section discusses and explains topics and concepts about Volt MX Go to help
 
 - [Introducing Volt MX Go](introvoltmxgo.md)
 - [Volt Formula](voltformula.md)
-- [HCl Domino Adapter](dominoadapter.md)
+- [HCL Domino Adapter](dominoadapter.md)
 

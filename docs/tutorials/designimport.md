@@ -15,7 +15,7 @@
 
 1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
 
-	!!! note ""
+	!!!note 
 		You can also start Iris by going to the folder where it's stored and double-clicking it.
 
 
