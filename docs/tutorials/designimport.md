@@ -15,7 +15,7 @@
 
 1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
 
-	!!! note ""
+	!!!note ""
 		You can also start Iris by going to the folder where it's stored and double-clicking it.
 
 
@@ -41,12 +41,12 @@
 1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.**
 2. Select **Web App** and click **Next.**
 
-	!!! note ""
+	!!!note ""
 		For this release, select only the Web App.
 
 3. Select the **device** you want to build for the new Project and click **Next**.
 
-	!!! note ""
+	!!!note ""
 		For this release, select only the Desktop.
 
 4. Enter your **Project Name** and  click **Create**. 
@@ -68,7 +68,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 1. Go to the first step "**Getting Started**" and click **Next**.
 2. Click **Create New** on the *Associate Foundry  App*.
 
-	!!! note ""
+	!!!note ""
 		Once you click **Create New** , new foundry app associated in VoltMX Go Iris. The default name of the same your **Project Name*.
 
 3. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
