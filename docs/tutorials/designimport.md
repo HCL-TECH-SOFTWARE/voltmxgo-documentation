@@ -54,7 +54,7 @@
 		
 5. You can see your Project name on the upper-right corner of the Iris canvass.
 
-	<img src="../assets/images/dinewproject.png"  width="60%" height="60%" style="display: block; margin: 0 auto" /> -->
+	<img src="../assets/images/dinewproject.png"  width="60%" height="60%" style="display: block; margin: 0 auto" /> 
 
 
 ## Introduction to the Design Import
