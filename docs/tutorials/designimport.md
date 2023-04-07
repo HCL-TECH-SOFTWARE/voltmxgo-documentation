@@ -122,7 +122,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 
 Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
 
-<img src="../assets/images/dioutput.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
+<img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
 
 ## Creating from existing Foundry and Domino Rest API.
 
@@ -156,4 +156,4 @@ Once you click **Done**, each of the selected form, views and agents have import
 
 Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
 
-<img src="../assets/images/dioutput.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
+<img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
