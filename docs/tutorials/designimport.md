@@ -5,8 +5,8 @@
 ## Before you start
 
 - Must have a **VoltMX Iris** app and completed the installation procedure in [Volt MX Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/installing_iris.html).
-- Must have a **VoltMX Foundry** app and completed the installation procedure in [Volt MX Foundry](https://opensource.hcltechsw.com/volt-mx-docs/docs/documentation/Foundry/installing_foundry.html).
-- Must have a configured **.NSF** file, schema and scopes in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
+- Must have a **VoltMX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
+- Must have a configured **`.NSF`** file, `schema` and `scopes` in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
 - Must have a **username** and **password** for VoltMX Go Iris, Foundry and Domino REST API.
 
 ## Launch VoltMX Go Iris
@@ -27,10 +27,10 @@
 	
 1. Open the **Vlt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
 2. This opens the **VoltMX Iris Preferences**. Click to **Volt MX Foundry**.
-3. Fill-in the Foundry URL and click **Validate**. This is the Foundry console base URL. 
+3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` and click **Validate**. 
 4. Click **Done**. 
 
-<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />		
+<img src="../assets/images/dipreference.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />		
 
 
 ## Open a new project
@@ -56,7 +56,7 @@
 
 ## Introduction to the Design Import
 
-This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file where you can design the **.NSF** structure in **VoltMX GO Iris** simultaneously to  the **Notes Designer.**
+This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file where you can design the **`.NSF`** structure in **VoltMX GO Iris** simultaneously to  the **Notes Designer.**
 
 
 ## Import a Domino Application
@@ -74,10 +74,10 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 
 		|  **Fields**     | **Description** |
 		| -----------     | -----------		|
-		| Domino REST API URL   | This refers to the Domino REST API URL you are working with. Example: http://design-import-r12-qs-keep-8880.qs.hcllabs.net/     |
+		| Domino REST API URL   | This refers to the Domino REST API URL you are working with.    |
 		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
-		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
-		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your App ID and your App Secret. |
+		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
+		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
 		|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
 
 		<img src="../assets/images/dikeep.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
@@ -97,10 +97,11 @@ This feature in VoltMX Go Iris is a way to extract the domino **.NSF** file wher
 		<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
  4. Select your scope that you’ve configured in Domino Rest API. 
  
- 	!!! notes "Notes"
+ 	!!! note ""
+
 		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
 
- 	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
+	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
 		!!! notes "Notes"
 			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
