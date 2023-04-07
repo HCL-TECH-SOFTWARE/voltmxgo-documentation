@@ -2,7 +2,7 @@
 
 The procedure guides you in downloading the Domino/Keep Helm chart and deploying Domino.
 
-## 1. Donwload the Domino/Keep Helm chart
+## 1. Download the Domino/Keep Helm chart
 
 1. Run the following command to download the chart:
 
@@ -19,7 +19,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
     cd keep
     ```
 
-3. Edit the `values.yaml` file using an editor to update the file with your HCL Container Repository credentials. You can use your preferred editor. 
+3. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.  
 
     The example procedure uses **vi** to edit the `values.yaml` file:
 
@@ -67,7 +67,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
     domino-keep-68596f98fd-bkpdz   3/3     Running             0          72s
     ```
 
-3. Once you see the READY column showing 3/3, press `Ctrl+c` to cancel the command.
+3. Once you see the READY column showing 3/3, press `Ctrl-c` to cancel the command.
 
 ## Next step
 

@@ -1,4 +1,4 @@
-# Prerequisite procedures
+# Complete prerequisite procedures
 
 The following procedures must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
 
@@ -17,18 +17,14 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 If you get an error message similar to the following:
 
 ```
-https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: 
-```
-
-```
-failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
+Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
 ```
 
 Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
 ## 2. Create a namespace for MXGO
 
-- Run the following commands to create a namespace and set the current context to **mxgo**:
+Run the following commands to create a namespace and set the current context to **mxgo**:
 
     ```
     kubectl create namespace mxgo
@@ -45,14 +41,14 @@ drapi-management.mymxgo.com
 foundry.mymxgo.com
 ```
 
-- Run the following command to add these host names in your `/etc/hosts` file to your **IP ADDRESS** and **dns domain name**:
+Add these host names in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name** as shown in the following example:
 
     ```
     10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
     ```
 
 !!!note
-    If you will be accessing this deployment from other remote machines you will need to apply this same `/etc/hosts` file change on those machines as well.
+    If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
 
 ### For K3s only
 
@@ -85,7 +81,7 @@ foundry.mymxgo.com
 
 ## 4. Create a temp directory for the charts
 
-- Run the following commands to create a temp directory for the charts and make it the current directory:
+Run the following commands to create a temp directory for the charts and make it the current directory:
 
     ```
     mkdir ~/mxgo

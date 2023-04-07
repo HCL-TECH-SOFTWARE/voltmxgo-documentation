@@ -5,7 +5,7 @@ nav:
         - System requirements: ../references/sysreq.html
         - Install and configure K3s: k3sinstall.md
         - Install Rancher Desktop: installrancher.md
-        - Prerequisite procedures: prereq.md
+        - Complete prerequisite procedures: prereq.md
         - Download Domino/Keep Helm chart: downloadhelmchart.md
         - Install MySql for Foundry: installmysqlfoundry.md
         - Install Foundry: installfoundry.md

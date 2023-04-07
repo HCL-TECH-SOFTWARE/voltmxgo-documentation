@@ -1,6 +1,6 @@
 # Installation
 
-This tutorial will guide you through the procedures for installing the Early Access version of Volt MX Go.
+Guides you through the procedures for installing the Early Access version of Volt MX Go.
 
 ## Before you start
 
@@ -20,7 +20,7 @@ Follow the order for completing the procedures according to your preferred deplo
 **When using K3s on an Ubuntu, RHEL, SLES machine or VM:**
 
 1. [Install and configure K3s](k3sinstall.md)
-2. [Prerequisite procedures](prereq.md)
+2. [Complete prerequisite procedures](prereq.md)
 3. [Download Domino/Keep Helm chart](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
@@ -29,7 +29,7 @@ Follow the order for completing the procedures according to your preferred deplo
 **When using Rancher Desktop running on Windows:**
 
 1. [Install Rancher Desktop](installrancher.md)
-2. [Prerequisite procedures](prereq.md)
+2. [Complete prerequisite procedures](prereq.md)
 3. [Download Domino/Keep Helm chart](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)

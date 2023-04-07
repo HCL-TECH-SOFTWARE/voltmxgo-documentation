@@ -3,7 +3,7 @@
 K3s is a fully compliant Kubernetes distribution. For more information, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/)
 
 !!!warning "Caution"
-    In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must be run with sudo permissions. For these commands, you need to configure your non-root with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906).
+    In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must be run with sudo permissions. For these commands, you need to configure your non-root user with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906).
 
 ## Before you start
 

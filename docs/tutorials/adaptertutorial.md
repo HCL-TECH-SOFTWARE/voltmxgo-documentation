@@ -50,7 +50,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     4. In the **Callback URL** text box, click **Copy**. <br/> You need the callback URL when configuring your app in Domino REST API. 
     5. Enter `$DATA` in the **Scope** text box.
 
-![](../assets/images/identityproviderdetails.png)
+    ![](../assets/images/identityproviderdetails.png)
 
 5.	Under **Client Details**:
 
@@ -66,7 +66,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     1. Select **Form Param** as the **Client Authentication Scheme**. 
     2. Use the default for the rest of the settings.
 
-7.	Click Save.
+7.	Click **Save**.
 
 !!!tip
     You can click **Test Login** to verify if the configured Identity service works. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the  Domino REST API **Access consent required** dialog. 
@@ -96,6 +96,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 4. Enter the object service name in the **Name** text field. For example, `EmployeeModelSchema`.
 5. Select **HCL Domino** under **Business Adapters** for the **Endpoint Type**.
 4. Set the **Metadata Security Level** to **Authenticated App Users** to restrict the download of object service metadata to users that have successfully authenticated using the Identity Service.
+
+    ![](../assets/images/objectendpointtype.png)
+
 5.	Under **Connection Parameters**:
 
     1. Enter the Domino REST API server URL in the **Keep API Base URL** text field.
@@ -103,6 +106,8 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
      
     !!!tip
         To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a "Connection Successful" message if the configured connection parameters are correct. 
+
+    ![](../assets/images/objectconparam.png)
 
 6.	Under **Authentication**: 
 
@@ -112,6 +117,8 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     !!!tip
         To test the authentication, click **Test Login**. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the Domino REST API **Access consent required** dialog. A Test Login Successful message is then displayed. 
 
+    ![](../assets/images/objectauthentication.png)
+
 7.	Click **Save and Configure**.
 
 ## Configure a data model
@@ -119,7 +126,13 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 1. On the **Data Model** tab, click **Generate**.
 2. In the Domino REST API **Access consent required** dialog, click **Allow**. The **Import Objects from Backend** dialog appears. 
 3. Expand the scope, **Forms**, and **View Entities**.
-4. Select the checkboxes corresponding to the forms and view entities you want to import, and then click **Next**. The **Backend Object Name** and **Data Model Object Name** of the selected forms and view entities are shown. 
+4. Select the checkboxes corresponding to the forms and view entities you want to import.
+
+    ![Import Objects from Backend](../assets/images/importobject.png)
+
+5. Click **Next**. The **Backend Object Name** and **Data Model Object Name** of the selected forms and view entities are shown. 
+
+    ![Import Objects from Backend](../assets/images/importobject2.png)
 
     !!!tip
         You can change the data model object names of the selected forms and view entities.
@@ -134,7 +147,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click GET. 
 4. Expand the **base mapper1**, and then select the **Test** tab.
-5. Click Send.
+5. Click **Send**.
 6. The records are displayed on the Response console. Click Save after viewing. 
 
 ## Testing the POST Method by creating a record
