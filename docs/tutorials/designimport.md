@@ -1,4 +1,6 @@
 # Design Import tutorial
+
+<!--add changes to designimport.md -->
  
  This  tutorial guides you in accesing the Design Import in VoltMX Go through the use of VoltMX Iris to view the .NSF file.
 
@@ -23,6 +25,7 @@
    The VoltMX Go Iris app canvass opens.
 
 <img src="../assets/images/dilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+
 ## Validating VoltMX GO Foundry
 	
 1. Open the **Vlt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
