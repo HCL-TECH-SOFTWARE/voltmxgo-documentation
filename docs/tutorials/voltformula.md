@@ -20,7 +20,7 @@ This  tutorial guides you in accesing the VoltFormula in VoltMX Go through the u
 		
    	On launching Iris, the VoltMX Go cloud login screen appears for license validation.
 
-2.  Enter your **credentials** in VoltMx Go Iris and click **Sign-In.**
+2.  Enter your **credentials** in VoltMx Go Iris and click **Sign-In
    The VoltMX Go Iris app canvass opens.
 
 <img src="../assets/images/dilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
