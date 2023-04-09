@@ -15,10 +15,9 @@
 
 1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
 
-	!!!note ""
+	!!!note
 		You can also start Iris by going to the folder where it's stored and double-clicking it.
-
-
+		
    	On launching Iris, the VoltMX Go cloud login screen appears for license validation.
 
 2.  Enter your **credentials** in VoltMx Go Iris and click **Sign-In.**
@@ -37,6 +36,8 @@
 
 
 ## Open a new project
+	!!!note
+		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. 
 
 1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.**
 2. Select **Web App** and click **Next.**
@@ -59,7 +60,7 @@
 
 ## Introduction to the Design Import
 
-This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file where you can design the **`.NSF`** structure in **VoltMX GO Iris** simultaneously to  the **Notes Designer.**
+This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file where you can design the **`.NSF`** structure in **VoltMX GO Iris** synchronous to  the **Notes Designer** server. 
 
 
 ## Import a Domino Application
@@ -77,7 +78,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 
 		|  **Fields**     | **Description** |
 		| -----------     | -----------		|
-		| Domino REST API URL   | This refers to the Domino REST API URL you are working with.    |
+		| Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
 		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
 		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
 		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
@@ -100,23 +101,23 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 		<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
  4. Select your scope that you’ve configured in Domino Rest API. 
  
- 	!!! note ""
+ 	!!!note ""
 		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
 
 	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
-		!!! note ""
+		!!!note ""
 			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
 
 
 5. Click **Build Iris Application.**
 
-	!!! note ""
+	!!!note ""
 		You can see the summary of the configured `forms`, `views`, `agents` and fields. You can **Go Back** if there are changes. 
 
 6. Click **Done**.
 
-	!!! note ""
+	!!!note ""
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
@@ -134,26 +135,27 @@ Once you click **Done**, each of the selected form, views and agents have import
 	1. Select your **active app** from you Domino Rest API identity Service.
 5. Select your scope that you’ve configured in Domino Rest API. 
  
- 	!!! note ""
+ 	!!!note ""
 		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
 
 	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
-		!!! note ""
+		!!!note ""
 			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
 
 
 6. Click **Build Iris Application.**
 
-	!!! note ""
+	!!!note ""
 		You can see the summary of the configured `forms`, `views`, `agents` and `fields`. You can **Go Back** if there are changes. 
 
 7. Click **Done**.
 
-	!!! note ""
+	!!!note ""
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
 Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
 
 <img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
+
