@@ -52,6 +52,5 @@ This feature in VoltMX Go Iris is an added actions in Volt MX Iris where you can
     <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
 
 ## Translating the OpenFormula and NotesFormula into Javascript
-1. On the action editor, click the Add
-
+1. On the action editor, click the Ad
 <!--add changes in voltformula.md-->
