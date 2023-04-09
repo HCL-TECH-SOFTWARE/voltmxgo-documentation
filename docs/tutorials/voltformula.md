@@ -1,5 +1,6 @@
 # Volt Formula Tutorial
-    This  tutorial guides you in accesing the VoltFormula in VoltMX Go through the use of VoltMX Iris to convert the formula from OpenFormula and NotesFormula.
+
+This  tutorial guides you in accesing the VoltFormula in VoltMX Go through the use of VoltMX Iris to convert the formula from OpenFormula and NotesFormula.
 
 ## Before you start
 
@@ -26,24 +27,31 @@
 
 ## Validating VoltMX GO Foundry
 	
-1. Open the **Vlt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
+1. Open the **Volt MX Iris** menu bar for **Mac** or **Edit** menu bar for **Windows** and click **Preferences**.
 2. This opens the **VoltMX Iris Preferences**. Click to **Volt MX Foundry**.
 3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` and click **Validate**. 
 4. Click **Done**. 
 
 <img src="../assets/images/dipreference.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
-### Introduction to the Volt Formula
+## Introduction to the VoltFormula
 
-This feature in VoltMX Go Iris is an added actions in Volt MX Iris where the you can insert the OpenFormula nad NoteFormula and it's going to be translated into a javascript code.
+This feature in VoltMX Go Iris is an added actions in Volt MX Iris where you can insert the [OpenFormula]((https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html)) and [NoteFormula](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) translated into a javascript code.
 
 
 ## Open VoltFormula through `Actions`
 
-1. Open your **`Project`.**
-2. From the **`Project`** tab of the **Project Explorer**, select the widget you want to apply the action to. 
-3. Once it’s highlighted on the Iris Canvas, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. Doing so opens the **Action Editor** and creates an action sequence for you to configure.
+1. Open your **Project.**
+2. From the **Project** tab of the **Project Explorer**, select the widget you want to apply the action to. 
+3. Once it’s highlighted on the Iris Canvas, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
 
-    <img src="../assets/images/vfaction.png"  width="1000%" height="100%" style="display: block; margin: 0 auto" />
+    <img src="../assets/images/vfaction.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
 
-4. 
+4. Doing so opens the **Action Editor** and creates an action sequence for you to configure.
+5. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**.
+    <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
+
+## Translating the OpenFormula and NotesFormula into Javascript
+1. On the action editor, click the Add
+
+<!--add changes in voltformula.md-->
