@@ -35,7 +35,7 @@ The following tutorial shows you how to use VoltFormula in VoltMX Iris to conver
 
 ## Introduction to the VoltFormula
 
-This feature in VoltMX Go Iris is an added actions in Volt MX Iris where you can insert the [OpenFormula]((https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html)) and [NoteFormula](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) translated into a javascript code.
+This feature in VoltMX Go Iris is an added actions in Volt MX Iris where you can insert the [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [NoteFormula](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) translated into a javascript code.
 
 
 ## Open VoltFormula through `Actions`
@@ -51,6 +51,7 @@ This feature in VoltMX Go Iris is an added actions in Volt MX Iris where you can
     <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
 
 ## Translating the OpenFormula and NotesFormula into Javascript
+
 1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the voltFormula.
     - **window for the translated openFormula and notesFormula in javascript.**
     - **window for the formula language** - OpenFormula and NotesFormula are the formulas to add in this window.

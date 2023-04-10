@@ -36,18 +36,19 @@
 
 
 ## Open a new project
-	!!!note
+	
+!!!note
 		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. 
 
 1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.**
 2. Select **Web App** and click **Next.**
 
-	!!!note ""
+	!!!note
 		For this release, select only the Web App.
 
 3. Select the **device** you want to build for the new Project and click **Next**.
 
-	!!!note ""
+	!!!note
 		For this release, select only the Desktop.
 
 4. Enter your **Project Name** and  click **Create**. 
@@ -69,8 +70,8 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 1. Go to the first step "**Getting Started**" and click **Next**.
 2. Click **Create New** on the *Associate Foundry  App*.
 
-	!!!note ""
-		Once you click **Create New** , new foundry app associated in VoltMX Go Iris. The default name of the same your **Project Name*.
+	!!!note
+		Once you click **Create New**, new foundry app associated in Volt MX Go Iris. The default name of the same your **Project Name**.
 
 3. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
 
@@ -87,7 +88,6 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 		<img src="../assets/images/dikeep.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
 
-
 	2. Select your **service name** you added from the earlier page and click **Next**.
 
 		<img src="../assets/images/didrapi.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
@@ -99,25 +99,26 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 	4. Select your **Foundry Identity Service** name  associated to Domino REST API and click **Next.**
 
 		<img src="../assets/images/difoundry.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
- 4. Select your scope that you’ve configured in Domino Rest API. 
+
+4. Select your scope that you’ve configured in Domino Rest API. 
  
- 	!!!note ""
+ 	!!!note
 		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
 
-	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
+	You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
-		!!!note ""
+		!!!note
 			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
 
 
 5. Click **Build Iris Application.**
 
-	!!!note ""
+	!!!note
 		You can see the summary of the configured `forms`, `views`, `agents` and fields. You can **Go Back** if there are changes. 
 
 6. Click **Done**.
 
-	!!!note ""
+	!!!note
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
@@ -135,23 +136,23 @@ Once you click **Done**, each of the selected form, views and agents have import
 	1. Select your **active app** from you Domino Rest API identity Service.
 5. Select your scope that you’ve configured in Domino Rest API. 
  
- 	!!!note ""
+ 	!!!note
 		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
 
-	1. You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
+	You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 
-		!!!note ""
-			The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
+	!!!note
+		The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
 
 
 6. Click **Build Iris Application.**
 
-	!!!note ""
+	!!!note
 		You can see the summary of the configured `forms`, `views`, `agents` and `fields`. You can **Go Back** if there are changes. 
 
 7. Click **Done**.
 
-	!!!note ""
+	!!!note
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 

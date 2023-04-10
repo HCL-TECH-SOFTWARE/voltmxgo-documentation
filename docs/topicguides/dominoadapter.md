@@ -122,11 +122,13 @@ The Foundry Domino adapter supports these OData filter parameters for the GET me
 
 - Only Foundry Object services is supported.
 - Authenticated app users metadata and verb security only. You must have a valid Domino REST API token for all Domino REST API calls. Customers that have such a requirement may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and to inject Authorization headers in each request.
-- Offline Object downloadReconciliationRequired isn't implemented 
+<!--- Offline Object downloadReconciliationRequired isn't implemented.--> 
 
 ### MX core limitations (Iris, client SDK, Foundry)
 
-- Naming limitations
-   - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, which are included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
-   - Foundry restricts the length of names, for example field names, to ???X??? that's shorter than the name length supported in Domino.
-   - Iris doesn't respect non-queryable in `$filter` and read-only on update/add forms.
+- Naming limitations:
+
+    - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, which are included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
+    - Foundry restricts the length of names, for example field names, to ???X??? that's shorter than the name length supported in Domino.
+   
+- Iris doesn't respect non-queryable in `$filter` and read-only on update/add forms.

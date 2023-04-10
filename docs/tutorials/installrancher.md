@@ -36,15 +36,17 @@ You must add an Ubuntu Linux distribution to WSL2 by following the steps:
         You must download the Ubuntu 20.04 LTS version. 
 
 2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
+3. [Install the Windows Terminal App](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab).
 
-Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. Use the Ubuntu on Windows app to open a terminal session. 
+4. Configure the Windows Terminal App.
 
-### To access the Ubuntu on Windows app
+    1. Open Windows Terminal and go to the **Settings** UI window. 
+    2. Select **Startup** and choose **Ubuntu** as the **Default profile** for your terminal.
+    3. Click **Save**.
 
-1. Enter "Ubuntu on Windows" in the Windows search box.
-2. Select the Ubuntu on Windows app. 
+![Windows Terminal configuration](../assets/images/ubuntuconfig.png)
 
-An Ubuntu terminal session opens with your home directory set as your current directory. 
+Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory. 
 
 ## Additional information
 
