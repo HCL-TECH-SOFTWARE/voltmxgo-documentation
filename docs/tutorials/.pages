@@ -11,6 +11,8 @@ nav:
         - Install Foundry: installfoundry.md
         - Connect to Domino server from Notes client: connectdominofromnotes.md
     - firsttouch.md
-    - adaptertutorial.md
     - designimport.md
+    - voltformula.md
+    - adaptertutorial.md
+    
 

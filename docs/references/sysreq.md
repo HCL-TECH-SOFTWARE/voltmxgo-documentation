@@ -48,3 +48,6 @@ Rancher Desktop requires the following on Windows:
 - Persistent internet connection.
 - Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
+## Next step
+
+Proceed to [Installation](../tutorials/installation.md).

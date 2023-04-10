@@ -88,16 +88,6 @@ Run the following commands to create a temp directory for the charts and make it
     cd ~/mxgo
     ```
 
-## 5. Setup Helm with credentials
-
-1. Run the following command to setup Helm with credentials:
-
-    ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username $HCLCR_USERNAME
-    ```
-
-2. When prompted for a password, enter your authentication token for HCL Container Repository.
-
 ## Next step
 
 Proceed to [Download Domino/Keep Helm chart](downloadhelmchart.md).
