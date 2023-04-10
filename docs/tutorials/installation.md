@@ -1,6 +1,6 @@
 # Installation
 
-Guides you through the procedures for installing the Early Access version of Volt MX Go.
+This tutorial will guide you through the procedures for installing the Early Access version of Volt MX Go.
 
 ## Before you start
 
@@ -20,7 +20,7 @@ Follow the order for completing the procedures according to your preferred deplo
 **When using K3s on an Ubuntu, RHEL, SLES machine or VM:**
 
 1. [Install and configure K3s](k3sinstall.md)
-2. [Complete prerequisite procedures](prereq.md)
+2. [Prerequisite procedures](prereq.md)
 3. [Download Domino/Keep Helm chart](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
@@ -29,8 +29,13 @@ Follow the order for completing the procedures according to your preferred deplo
 **When using Rancher Desktop running on Windows:**
 
 1. [Install Rancher Desktop](installrancher.md)
-2. [Complete prerequisite procedures](prereq.md)
+2. [Prerequisite procedures](prereq.md)
 3. [Download Domino/Keep Helm chart](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 6. [Connect to Domino server from Notes client](connectdominofromnotes.md)
+
+## Installing Volt MX Go Iris
+- [**For Mac**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
+- [**For Windows**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing)
+    
