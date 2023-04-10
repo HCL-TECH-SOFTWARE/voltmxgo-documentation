@@ -8,9 +8,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md). 
 - You have noted the following Domino REST API details:
 
-    - Server URL: http://drapi.mymxgo.com 
-    - username: mxgo admin
-    - password: password
+    - Server URL: `http://drapi.mymxgo.com` 
+    - username: `mxgo admin`
+    - password: `password`
 
 - You have added and configured a schema and a scope in the Domino REST API. 
 - Your schema should have a configured form with a `dql` mode similar to the `default` mode. 

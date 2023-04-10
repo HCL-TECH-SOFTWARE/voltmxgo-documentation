@@ -2,6 +2,7 @@
 
 How-to guides instruct users in completing key goals and tasks related to Volt MX Go.
 
+- [Access Domino REST API](accessdrapi.md)
 - [Create Foundry admin account](foundryadminaccount.md)
 - [Uninstall K3s](k3suninstall.md)
 - [Uninstall Rancher Desktop on Windows](rancheruninstall.md)
