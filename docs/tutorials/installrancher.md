@@ -7,6 +7,8 @@ The procedure guides you in installing Rancher Desktop, which is delivered as a 
 !!!note
     If you will use K3s in deploying the Early Access version of Volt MX Go, you don't need to execute this procedure.
 
+Rancher Desktop requires Windows Subsystem for Linux (WSL2) on Windows, which is automatically installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
+
 Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying Volt MX Go using Rancher Desktop running on Windows](../references/sysreq.md#for-deploying-volt-mx-go-using-rancher-desktop-running-on-windows) are met.
 
 !!!note
@@ -26,18 +28,29 @@ Before starting with the procedure, make sure that you have checked and verified
 
 ## Post installation 
 
-### Obtain your authentication token from HCL Container Repository
+You must add an Ubuntu Linux distribution to WSL2 by following the steps: 
 
---8<-- "obtaintoken.md"
+1. [Download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu). 
+	
+    !!!note
+        You must download the Ubuntu 20.04 LTS version. 
 
-!!!note
-    After completing the procedure for obtaining the authentication token from HCL Container Repository, restart Rancher Desktop.  
+2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
+
+Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. Use the Ubuntu on Windows app to open a terminal session. 
+
+### To access the Ubuntu on Windows app
+
+1. Enter "Ubuntu on Windows" in the Windows search box.
+2. Select the Ubuntu on Windows app. 
+
+An Ubuntu terminal session opens with your home directory set as your current directory. 
 
 ## Additional information
 
 When run for the first time or when changing versions, Kubernetes container images are downloaded. It may take a little time to load on the first run for a new Kubernetes version.
 
-After Rancher Desktop installation, users will have access to these supporting utilities:
+After Rancher Desktop installation, users have access to these supporting utilities:
 
   - Helm
   - kubectl

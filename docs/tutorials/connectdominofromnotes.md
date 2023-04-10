@@ -4,7 +4,7 @@ The procedure guides you in connecting to the Domino server from your Notes clie
 
 ## Before you start
 
-Make sure that your `/etc/hosts` file has the early access preview host names. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [adding early access preview host names](prereq.md#add-early-access-preview-host-names). 
+Make sure that your `/etc/hosts` file has the early access preview host names. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [adding early access preview host names](prereq.md#3-add-early-access-preview-host-names). 
 
 ## Procedure
 
@@ -22,7 +22,7 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
     2. On the **Choose User ID to Switch To** dialog, search and select the `k8s-notes-admin.id` file, and then click **Open**.
 
         !!!note
-            The default password is `passw0rd`.
+            The default password is `password`.
 
 
 2. Specify your `names.nsf` file within the Notes client.

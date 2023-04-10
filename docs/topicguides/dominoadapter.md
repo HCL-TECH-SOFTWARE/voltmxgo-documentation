@@ -1,10 +1,10 @@
-# HCL Domino Adapter
+# Domino Adapter
 
-The HCL Domino Adapter makes Domino a core part of the Foundry Object services so that Volt MX apps can interact with Domino databases in the same way they can for relational databases.
+The Domino Adapter makes Domino a core part of the Foundry Object services so that Volt MX apps can interact with Domino databases in the same way they can for relational databases.
 
 ## Object Services
 
-HCL Domino Adapter supports Object services that enables model-driven app design and development by following a micro-services architectural approach to create reusable components and link them to fit into your solution. By using Object services, you can define your preferred data model, which defines how your app wants to interact with its data. 
+Domino Adapter supports Object services that enables model-driven app design and development by following a micro-services architectural approach to create reusable components and link them to fit into your solution. By using Object services, you can define your preferred data model, which defines how your app wants to interact with its data. 
 
 When creating an Object service in Foundry for Domino, the Foundry administrator associates the Object service to a single Domino REST API server URL. The Foundry administrator can associate more than one Object service with the same Domino REST API server URL if desired.
 
@@ -12,7 +12,7 @@ For more information, see [Object Services](https://opensource.hcltechsw.com/vol
 
 ## Authorization
 
-The HCL Domino Adapter interacts with Domino for both configuration and run-time activities by leveraging the Domino REST API, which requires an authorization token. The HCL Domino Adapter relies directly on the Identity service of Foundry and indirectly on the Domino REST API OAuth REST API to obtain valid authorization tokens. The same Identity service is used for authorizing access to Domino REST API for both configuration flow, such as configuring Object services in Foundry, and runtime flow, such as using the Object service from Iris applications.
+The Domino Adapter interacts with Domino for both configuration and run-time activities by leveraging the Domino REST API, which requires an authorization token. The Domino Adapter relies directly on the Identity service of Foundry and indirectly on the Domino REST API OAuth REST API to obtain valid authorization tokens. The same Identity service is used for authorizing access to Domino REST API for both configuration flow, such as configuring Object services in Foundry, and runtime flow, such as using the Object service from Iris applications.
 
 
 ## Data models
@@ -78,7 +78,7 @@ For form-based data models, the following methods are generated:
 
 ### Supported OData filter parameters, form-based GET
 
-The HCL Domino adapter supports these OData filter parameters for the GET method on form-based data models:
+The Domino Adapter supports these OData filter parameters for the GET method on form-based data models:
 
 - `$select` - list of fields to include in the returned documents
 - `$filter` - search criteria specifying which documents to return 
@@ -127,6 +127,6 @@ The Foundry Domino adapter supports these OData filter parameters for the GET me
 ### MX core limitations (Iris, client SDK, Foundry)
 
 - Naming limitations
-   - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, which are included in Domino field names, aren't supported. As a workaround, HCL Domino adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
+   - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, which are included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
    - Foundry restricts the length of names, for example field names, to ???X??? that's shorter than the name length supported in Domino.
    - Iris doesn't respect non-queryable in `$filter` and read-only on update/add forms.
