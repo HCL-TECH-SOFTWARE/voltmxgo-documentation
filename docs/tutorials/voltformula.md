@@ -3,7 +3,7 @@ The following tutorial shows you how to use VoltFormula in Volt MX Iris to conve
 
 ## Before you start
 
-- Must have a **Volt MX Iris** app and completed the installation procedure. The installationis provided to the customers/partners that sign up for early release access. 
+- Must have a **Volt MX Iris** app and completed the installation procedure.
 - Must have a **Volt MX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
 - Must have a **username** and **password** for Volt MX Go Iris and Foundry.
 - Must learn to use the [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor) in Volt MX Iris.
@@ -90,4 +90,4 @@ This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you ca
 <img src="../assets/images/vfrosoutput.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
 
-<!--add changes in voltformula.md-->
+<!--add changes in voltformula1.md-->
