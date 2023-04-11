@@ -51,7 +51,6 @@ Rancher Desktop requires the following on Windows:
 ## For installing Volt MX Go Iris
 
 ### For Windows
-This section helps you to understand the system requirements and necessary software before installing Volt MX Iris.
 
 **Software Requirements**
 
@@ -70,8 +69,6 @@ This section helps you to understand the system requirements and necessary softw
 
 ### For Mac
 
-This section helps you understand the system requirements and necessary software required to install Volt MX Iris.
-
 **Software Requirements**
 
 Mac OS X 10.9 and above
@@ -84,7 +81,6 @@ Mac OS X 10.9 and above
 |RAM	    |8 GB |
 |Internal Storage|	24 GB|
 |Network Ethernet |Port|
-
 
 ## Next step
 
