@@ -42,11 +42,7 @@ foundry.mymxgo.com
 ```
 
 !!!tip
-    If you do not know your IP ADDRESS, use the following command to obtain it:
-    ```
-    kubectl config view 
-    ```
-    Your IP ADDRESS will be the value for the server setting.
+    Obtain your machine's IP ADDRESS as you will need it in the following step.
 
 Add these host names in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name** as shown in the following example:
 
