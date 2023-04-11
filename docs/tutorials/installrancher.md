@@ -28,7 +28,9 @@ Before starting with the procedure, make sure that you have checked and verified
 
 ## Post installation 
 
-You must add an Ubuntu Linux distribution to WSL2 by following the steps: 
+You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to interact with the Rancher Desktop support for Kubernetes, via running some previously listed utilities (commands) to configure and install Volt MX GO.
+
+**To add Ubuntu Linux distribution to WSL2:** 
 
 1. [Download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu). 
 	
@@ -62,4 +64,4 @@ After Rancher Desktop installation, users have access to these supporting utilit
 
 ## Next step
 
-Proceed to the [Prerequisite procedures](prereq.md).
+Proceed to the [Complete prerequisite procedures](prereq.md).

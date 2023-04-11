@@ -26,10 +26,10 @@ Most likely, you haven't specified your username or authentication token correct
 
 Run the following commands to create a namespace and set the current context to **mxgo**:
 
-    ```
-    kubectl create namespace mxgo
-    kubectl config set-context --current --namespace=mxgo
-    ```
+```
+kubectl create namespace mxgo
+kubectl config set-context --current --namespace=mxgo
+```
 
 ## 3. Add Early Access Preview Host Names
 
@@ -41,11 +41,14 @@ drapi-management.mymxgo.com
 foundry.mymxgo.com
 ```
 
+!!!tip
+    Obtain your machine's IP ADDRESS as you will need it in the following step.
+
 Add these host names in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name** as shown in the following example:
 
-    ```
-    10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
-    ```
+```
+10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
+```
 
 !!!note
     If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
@@ -83,10 +86,10 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 
 Run the following commands to create a temp directory for the charts and make it the current directory:
 
-    ```
-    mkdir ~/mxgo
-    cd ~/mxgo
-    ```
+```
+mkdir ~/mxgo
+cd ~/mxgo
+```
 
 ## Next step
 

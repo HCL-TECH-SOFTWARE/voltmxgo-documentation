@@ -65,14 +65,14 @@ Before installing K3s, make sure you have met any operating system configuration
 
 Helm is the package manager for Kubernetes and will be used to install Volt MX Go. For more information, see [Helm](https://helm.sh/).  
 
-- To install Helm, run the following commands:
+To install Helm, run the following commands:
 
-    ```
-    sudo wget https://get.helm.sh/helm-v3.11.2-linux-386.tar.gz
-    sudo tar -xzf helm-v3.11.2-linux-386.tar.gz
-    sudo mv linux-386/helm  /usr/local/bin/helm
-    sudo rm -rf helm-v3.11.2-linux-386.tar.gz linux-386
-    ```
+```
+sudo wget https://get.helm.sh/helm-v3.11.2-linux-386.tar.gz
+sudo tar -xzf helm-v3.11.2-linux-386.tar.gz
+sudo mv linux-386/helm  /usr/local/bin/helm
+sudo rm -rf helm-v3.11.2-linux-386.tar.gz linux-386
+```
 
 For more information, see [Installing Helm](https://helm.sh/docs/intro/install/).
 
@@ -136,4 +136,4 @@ The binary images and Helm charts for Volt MX GO server components will be pulle
 
 ## Next step
 
-Proceed to the [Prerequisite procedures](prereq.md).
+Proceed to the [Complete prerequisite procedures](prereq.md).
