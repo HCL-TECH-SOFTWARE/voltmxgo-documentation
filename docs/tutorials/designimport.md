@@ -160,3 +160,30 @@ Once you click **Done**, each of the selected form, views and agents have import
 
 <img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
 
+## CRUDE operation upon importing the .NSF file
+
+1. Log in your account in Domino REST API.
+
+	!!!note
+		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
+		All the views, forms, and agents of your .NSF file have imported, so you can design your **.NSF** synchronous to the **notes designer**.
+
+2. Go to the dashboard&rarr;**Forms** and click your Table (example: newCar)
+	<img src="../assets/images/dinewview.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
+
+3. Click **Add New**.
+4. Fill in the fields and click **Add**. This add the data in the .NSF file.
+
+	<img src="../assets/images/dinewview1.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
+
+5. Go back in dashboard&rarr;**View** and click your Table (example: carListView)
+
+	<img src="../assets/images/diviews.png=" width="100%" height="100%" style="display: block; margin: 0 auto" />
+
+6. In the **Views** window, you can show here the added value on your **Forms**.
+
+	<img src="../assets/images/dilist.png=" width="80%" height="80%" style="display: block; margin: 0 auto" />
+
+	!!!note
+		The **design import** in Iris is synchronous with the data added, modified and deleted in the **notes designer**.
+		<img src="../assets/images/didesigner.png=" width="100%" height="100%" style="display: block; margin: 0 auto" />
