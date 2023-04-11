@@ -64,4 +64,4 @@ After Rancher Desktop installation, users have access to these supporting utilit
 
 ## Next step
 
-Proceed to the [Prerequisite procedures](prereq.md).
+Proceed to the [Complete prerequisite procedures](prereq.md).

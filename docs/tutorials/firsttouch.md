@@ -1,6 +1,6 @@
 # First Touch tutorial
 
-This tutorial guides you on accessing and running the First Touch app in Volt MX Foundry to to view and explore sample apps. 
+This tutorial guides you on accessing and running the First Touch app in Volt MX Foundry to view and explore sample apps. 
 
 ## Before you start
 
