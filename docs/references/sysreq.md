@@ -53,13 +53,13 @@ Rancher Desktop requires the following on Windows:
 ### For Windows
 This section helps you to understand the system requirements and necessary software before installing Volt MX Iris.
 
-Software Requirements
+**Software Requirements**
 
 |Operating System |	Software Requirements|
 |-----------------| ---------------------|
 |Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems|	Installer File (mandatory)|
 
-Hardware Requirements
+**Hardware Requirements**
 
 |Component	|Requirement|
 |-----------|-----------|
@@ -72,11 +72,11 @@ Hardware Requirements
 
 This section helps you understand the system requirements and necessary software required to install Volt MX Iris.
 
-Software Requirements
+**Software Requirements**
 
 Mac OS X 10.9 and above
 
-Hardware Requirements
+**Hardware Requirements**
 
 |Component	|Requirement |
 | --------  | -----------|       

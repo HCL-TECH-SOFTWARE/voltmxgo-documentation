@@ -6,7 +6,7 @@
 
 ## Before you start
 
-- Must have a **VoltMX Iris** app and completed the installation procedure in [Volt MX Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/installing_iris.html).
+- Must have a **VoltMX Iris** app and completed the installation procedure in [Volt MX Iris](instalation.md).
 - Must have a **VoltMX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
 - Must have a configured **`.NSF`** file, `schema` and `scopes` in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
 - Must have a **username** and **password** for VoltMX Go Iris, Foundry and Domino REST API.
@@ -169,21 +169,20 @@ Once you click **Done**, each of the selected form, views and agents have import
 		All the views, forms, and agents of your .NSF file have imported, so you can design your **.NSF** synchronous to the **notes designer**.
 
 2. Go to the dashboard&rarr;**Forms** and click your Table (example: newCar)
-	<img src="../assets/images/dinewview.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
+	![Screenshot](../assets/images/dinewview.png)
 
 3. Click **Add New**.
 4. Fill in the fields and click **Add**. This add the data in the .NSF file.
 
-	<img src="../assets/images/dinewview1.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
-
+	![Screenshot](../assets/images/dinewview1.png)
 5. Go back in dashboard&rarr;**View** and click your Table (example: carListView)
 
-	<img src="../assets/images/diviews.png=" width="100%" height="100%" style="display: block; margin: 0 auto" />
+	![Screenshot](../assets/images/diviews.png)
 
 6. In the **Views** window, you can show here the added value on your **Forms**.
 
-	<img src="../assets/images/dilist.png=" width="80%" height="80%" style="display: block; margin: 0 auto" />
+	![Screenshot](../assets/images/dilist.png)
 
 	!!!note
 		The **design import** in Iris is synchronous with the data added, modified and deleted in the **notes designer**.
-		<img src="../assets/images/didesigner.png=" width="100%" height="100%" style="display: block; margin: 0 auto" />
+		<img src="../assets/images/didesigner.png" width="100%" height="100%" style="display: block; margin: 0 auto" />
