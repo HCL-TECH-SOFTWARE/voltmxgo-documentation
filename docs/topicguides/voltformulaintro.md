@@ -1,4 +1,3 @@
-
 # VoltFormula
 
 What ideas do you think whenever you hear the word "formula?" It refers to a string of words, a collection of mathematical processes, or an expression with the purpose of producing results as an output. The description of this formula and this VoltFormula are the same. MX Go voltFormula  function of MX GO is responsible for converting the formula used on other Formula Language platforms into the javascript programming language. This is essential to those existing users of Notes and Excel that wants to convert their existing formula into a javascript language. 
