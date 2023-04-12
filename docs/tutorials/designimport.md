@@ -73,7 +73,7 @@ This feature in Volt MX Go Iris is a way to extract the domino **`.NSF`** file w
 
 1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
 1. Go to the first step "**Getting Started**" and click **Next**.
-2. Click **Create New** on the *Associate Foundry  App*.
+2. Click **Create New** on the *Associate Foundry  App* window.
 
 	!!!note
 		Once you click **Create New**, new foundry app associated in Volt MX Go Iris. The default name of the same your **Project Name**.
