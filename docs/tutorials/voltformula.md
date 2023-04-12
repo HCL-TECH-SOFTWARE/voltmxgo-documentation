@@ -1,4 +1,4 @@
-# voltFormula Tutorial
+# VoltFormula Tutorial
 The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go rosetta javascript.
 
 ## Before you start
@@ -34,7 +34,7 @@ The following tutorial shows you how to use voltFormula in Volt MX Iris to conve
 
 <img src="../assets/images/dipreference.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
-## Introduction to the voltFormula
+## Introduction to the VoltFormula
 
 This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you can insert the [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [NoteFormula](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) translated into a javascript code.
 
