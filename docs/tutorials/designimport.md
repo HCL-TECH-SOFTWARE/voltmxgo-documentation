@@ -6,10 +6,16 @@
 
 ## Before you start
 
-- Must have a **Volt MX Iris** app and completed the installation procedure in [Volt MX Iris](installation.md).
-- Must have a **Volt MX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
-- Must have a configured **`.NSF`** file, `schema` and `scopes` in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
-- Must have a **username** and **password** for Volt MX Go Iris, Foundry and Domino REST API.
+- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Iris installation](installation.md#installation-guide).
+- You have created your [Foundry admin account](../howto/foundryadminaccount.md).
+- You have noted the following Domino REST API details:
+    - Server URL: `http://drapi.mymxgo.com` 
+    - username: `mxgo admin`
+    - password: `password`
+
+- You have a configured **`.NSF`** file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
+- You have a credentials for Volt MX Foundry and Domino REST API.
 
 ## Launch Volt MX Go Iris
 
@@ -21,7 +27,7 @@
    	On launching Iris, the Volt MX Go cloud login screen appears for license validation.
 
 2.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
-   The Volt MX Go Iris app canvass opens.
+   The Volt MX Go Iris app opens.
 
 <img src="../assets/images/dilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 

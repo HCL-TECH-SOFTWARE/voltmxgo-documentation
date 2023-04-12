@@ -1,14 +1,16 @@
-# Volt Formula Tutorial
-The following tutorial shows you how to use Volt Formula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go rosetta javascript.
+# voltFormula Tutorial
+The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go rosetta javascript.
 
 ## Before you start
 
-- Must have a **Volt MX Iris** app and completed the installation procedure.
-- Must have a **Volt MX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
-- Must have a **username** and **password** for Volt MX Go Iris and Foundry.
-- Must learn to use the [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor) in Volt MX Iris.
-
-
+- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Iris installation](installation.md#installation-guide).
+- You have created your [Foundry admin account](../howto/foundryadminaccount.md).
+- You have noted the following Domino REST API details:
+    - Server URL: `http://drapi.mymxgo.com` 
+    - username: `mxgo admin`
+    - password: `password`
+- You have to used the [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor) in Volt MX Iris.
 
 ## Launch Volt MX Go Iris
 
@@ -24,7 +26,7 @@ The following tutorial shows you how to use Volt Formula in Volt MX Iris to conv
 
 <img src="../assets/images/dilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 
-## Validating Volt MX GO Foundry
+## Validating Volt MX Go Foundry
 	
 1. Open the **Volt MX Iris** menu bar for **Mac** or **Edit** menu bar for **Windows** and click **Preferences**.
 2. This opens the **Volt MX Iris Preferences**. Click to **Volt MX Foundry**.
@@ -33,12 +35,12 @@ The following tutorial shows you how to use Volt Formula in Volt MX Iris to conv
 
 <img src="../assets/images/dipreference.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
-## Introduction to the Volt Formula
+## Introduction to the voltFormula
 
 This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you can insert the [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [NoteFormula](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) translated into a javascript code.
 
 
-## Open Volt Formula through `Actions`
+## Open voltFormula through `Actions`
 
 1. Open your **Project.**
 2. From the **Project** tab of the **Project Explorer**, select the widget you want to apply the action to. 
@@ -50,9 +52,9 @@ This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you ca
 5. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**.
     <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
 
-## Translating the OpenFormula and NotesFormula into Javascript
+## Translating the OpenFormula and NotesFormula into javascript
 
-1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the Volt Formula.
+1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the voltFormula.
     - **window for the translated openFormula and notesFormula in javascript.**
     - **window for the formula language** - OpenFormula and NotesFormula are the formulas to add in this window.
     - **window for the formula results**.
@@ -69,7 +71,7 @@ This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you ca
 4. Click **Save**.
   <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />    
 
-## Using the Volt Formula in Container
+## Using the voltFormula in Container
 
 1. Open a controller on Project Explorer
 2. Select and open your container. This opens the code window.
@@ -90,4 +92,4 @@ This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you ca
 <img src="../assets/images/vfrosoutput.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
 
-<!--add changes in Volt Formula1.md-->
+<!--add changes in voltFormula1.md-->
