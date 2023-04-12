@@ -35,7 +35,11 @@ Follow the order for completing the procedures according to your preferred deplo
 5. [Install Foundry](installfoundry.md)
 6. [Connect to Domino server from Notes client](connectdominofromnotes.md)
 
-## Installing Volt MX Go Iris
-- [**For Mac**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
-- [**For Windows**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing)
-    
+**Install Volt MX Go Iris**
+
+1. [Complete prerequisite procedures](prereq.md) 
+2. [Download Volt MX Go Iris](downloadiris.md) 
+3.  Install Iris
+      - [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
+      - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing)
+  
