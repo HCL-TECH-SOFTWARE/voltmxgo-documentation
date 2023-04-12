@@ -7,7 +7,6 @@
 ## Before you start
 
 - You have completed the [Volt MX Go installation](installation.md).
-- You have completed the [Volt MX Iris installation](installation.md#installation-guide).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
     - Server URL: `http://drapi.mymxgo.com` 
