@@ -6,7 +6,7 @@ nav:
         - Install and configure K3s: k3sinstall.md
         - Install Rancher Desktop: installrancher.md
         - Complete prerequisite procedures: prereq.md
-        - Download Domino/Keep Helm chart: downloadhelmchart.md
+        - Install Domino/Keep: downloadhelmchart.md
         - Install MySql for Foundry: installmysqlfoundry.md
         - Install Foundry: installfoundry.md
         - Connect to Domino server from Notes client: connectdominofromnotes.md

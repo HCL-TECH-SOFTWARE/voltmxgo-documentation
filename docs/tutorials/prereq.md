@@ -9,7 +9,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 1. Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo  --username $HCLCR_USERNAME
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo-ea  --username $HCLCR_USERNAME
     ```
 
 2. When prompted for a password, enter your authentication token for HCL Container Repository.  
@@ -53,7 +53,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 !!!note
     If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
 
-### For K3s only
+### Update the coredns configmap
 
 1. Run the following command to make these name/IP address matches available within the Kubernetes: 
 
@@ -82,6 +82,13 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 4. Save the file and exit the editor.
 
 
+### For Rancher Desktop only
+
+You must restart Rancher Desktop:
+
+1. Select **File** &rarr; **Exit** to close the current session.
+2. Open a new session by opening Rancher Desktop via the desktop icon. 
+
 ## 4. Create a temp directory for the charts
 
 Run the following commands to create a temp directory for the charts and make it the current directory:
@@ -93,4 +100,4 @@ cd ~/mxgo
 
 ## Next step
 
-Proceed to [Download Domino/Keep Helm chart](downloadhelmchart.md).
+Proceed to [Install Domino/Keep](downloadhelmchart.md).
