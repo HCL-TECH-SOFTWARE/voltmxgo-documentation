@@ -74,7 +74,7 @@ sudo mv linux-386/helm  /usr/local/bin/helm
 sudo rm -rf helm-v3.11.2-linux-386.tar.gz linux-386
 ```
 
-For more information, see [Installing Helm](https://helm.sh/docs/intro/install/).
+For more information, see [Installing Helm](https://helm.sh/docs/intro/install/) and [Helm releases](https://github.com/helm/helm/releases).
 
 
 ## 5. Obtain your authentication token from HCL Container Repository

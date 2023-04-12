@@ -9,7 +9,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 1. Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo  --username $HCLCR_USERNAME
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo-ea  --username $HCLCR_USERNAME
     ```
 
 2. When prompted for a password, enter your authentication token for HCL Container Repository.  
@@ -100,4 +100,4 @@ cd ~/mxgo
 
 ## Next step
 
-Proceed to [Download Domino/Keep Helm chart](downloadhelmchart.md).
+Proceed to [Install Domino/Keep](downloadhelmchart.md).

@@ -9,7 +9,7 @@ The procedures will guide you in the installation of Foundry.
     ```
     helm pull hclcr/voltmx-dbupdate
     helm pull hclcr/voltmx-foundry
-    tar -xzf voltmx-foundry-1.1.0.tgz
+    tar -xzf voltmx-foundry-1.2.0.tgz
     tar -xzf voltmx-dbupdate-1.1.0.tgz
     mv voltmx-foundry/values.yaml  ./
     ```
