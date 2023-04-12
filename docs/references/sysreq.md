@@ -48,18 +48,16 @@ Rancher Desktop requires the following on Windows:
 - Persistent internet connection.
 - Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
-## For installing Volt MX Go Iris
+## For installing Volt MX Go Iris on Windows
 
-### For Windows
-This section helps you to understand the system requirements and necessary software before installing Volt MX Iris.
+### Operating System
 
-**Software Requirements**
 
-|Operating System |	Software Requirements|
-|-----------------| ---------------------|
-|Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems|	Installer File (mandatory)|
+Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems
 
-**Hardware Requirements**
+Installer File (mandatory)
+
+### Hardware
 
 |Component	|Requirement|
 |-----------|-----------|
@@ -68,23 +66,20 @@ This section helps you to understand the system requirements and necessary softw
 |Internal Storage	|2 GB|
 |Network	|Ethernet Port|
 
-### For Mac
+## For installing Volt MX Go Iris on  Mac
 
-This section helps you understand the system requirements and necessary software required to install Volt MX Iris.
-
-**Software Requirements**
+### Operating System
 
 Mac OS X 10.9 and above
 
-**Hardware Requirements**
+### Hardware
 
 |Component	|Requirement |
 | --------  | -----------|       
-|Processor	|x86-64 CPU (64-bit Mac, with an Intel Core i3, Intel Core i5, Intel Core i7, or Xeon processor.)|
+|Processor	|x86-64 CPU<br/>(64-bit Mac with an Intel Core i3, i5, i7, or Intel Xeon processor)|
 |RAM	    |8 GB |
 |Internal Storage|	24 GB|
 |Network Ethernet |Port|
-
 
 ## Next step
 

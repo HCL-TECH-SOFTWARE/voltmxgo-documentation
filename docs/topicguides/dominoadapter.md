@@ -26,16 +26,18 @@ For more information on schemas, scopes, forms, and views, see [Using Admin UI](
 The generated data models have these characteristics:
 
 - More than one data model can be generated from the same Domino REST API `Scope`, either in the same or in a different object service.
-- Data models can be generated from the `forms` and `views` configured in a Domino REST API `schema` associated with the selected `scope`.
-- Generated data models include all fields defined by the associated Domino REST API `schema` and all additional metadata fields:
+- Data models can be generated from the `Forms` and `Views` configured in a Domino REST API `schema` associated with the selected `scope`.
+- Generated Foundry data models for a `Form` include all fields defined by the associated Domino REST API `schema` plus [additional metadata](#additional-metadata-per-row). Form data model fields:
 
-      - have the same names as in the Domino REST API `schema` except for meta fields whose `@` character is encoded. For example, `@unid` becomes `x_0040unid`.
+      - have the same names as found in the Domino REST API `schema`. 
       - have the same [effective data type](dominoadapter.md#effective-data-types) as the data type defined in the Domino REST API `schema`
 
+- Generated Foundry data models for a `View` include all columns defined in the NSF design plus [additional metadata](#additional-metadata-per-row)
 - Data models are in sync with the Domino REST API `schema` at the time of data model generation. 
 
 !!!note
-    If the data models are edited in Foundry or the `schema` is modified in Domino REST API, the model and `schema` may be out of sync leading to undesired results. 
+    - If the data models are edited in Foundry or the `schema` is modified in Domino REST API, the model and `schema` may be out of sync leading to undesired results.
+    - When defining related Foundry and Domino REST API artifacts (form names, view names and field names, for example), they're derived from corresponding Domino REST API objects. *Special characters*, however, are encoded. For example, the `@unid` (meta) field becomes `x_0040unid`. 
 
 ### Effective data types
 
@@ -49,17 +51,34 @@ In the Foundry object model, the field type of *Servings* is `number`:
 
 ![](../assets/images/recipe-servings-foundrymodel.png)
 
-For Domino object types not supported in Foundry, the Foundry object field type is `string`. The extended type information is stored in the the field metadata as `richtext` as shown in the following example image.
+For Domino object types not supported in Foundry, the Foundry object field type is `string`. Extended type information for Domino data types is stored as properties in the field metadata attribute. The `dominoSpecialType` property indicates if the data is `Rich Text` or `Multivalue`. The `dominoArrayComponentType` property indicates the array type for multivalue fields, for example, a multivalue array of strings as shown in the following example:
 
 ![](../assets/images/recipe-richtext.png)
 
-#### Additional Metadata (per "row")
+A non-exhaustive list of data-type mappings between Domino REST API and Foundry are shown below:
+
+| Domino REST API type| Domino REST API format| FOUNDRY type | Foundry metadata properties |
+|---|---|---|---|
+| integer, number| | double ||
+| |date, date-time | date ||
+| |BYTE, DOUBLE, FLOAT, INT32, INT64:| double ||
+| |BOOLEAN | boolean ||
+| |BINARY | string ||
+| |AUTHORS, NAMES, PASSWORD, READERS| string ||
+| |RICH TEXT | string | dominoSpecialType = richtext|
+| |MULTIVALUE | string | dominoSpecialType = array<br>dominoArrayComponentType=array type (for example: string, number) |
+| |all others | string ||
+
+#### Additional Metadata per row
 
 In addition to the document fields specified in the database design, metadata "fields" related Domino document data is also included. 
 
 For form-based data models, the document's `@unid` is an obvious example, along with date information (created, updated, accessed) and parent UNID.
 
-For view-based data models, `UNID` and `form name` are included.
+For view-based data models, `UNID` and `form name` for the document associated with a view row are included. 
+
+!!!note
+    `UNID` isn't necessarily unique for view rows, particularly more than one row in a view may be associated with the same database document.
 
 ## Methods (Verbs)
 

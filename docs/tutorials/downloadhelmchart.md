@@ -1,4 +1,4 @@
-# Download Domino/Keep Helm chart
+# Install Domino/Keep
 
 The procedure guides you in downloading the Domino/Keep Helm chart and deploying Domino.
 
@@ -15,7 +15,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
 2. Run the following commands to unpack the chart and make the Keep directory your current directory:
 
     ```
-    tar -xzvf keep-<version>.tgz
+    tar -xzvf keep-0.3.1.tgz
     cd keep
     ```
 
