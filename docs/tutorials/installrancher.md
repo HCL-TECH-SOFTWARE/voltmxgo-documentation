@@ -33,10 +33,6 @@ You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to intera
 **To add Ubuntu Linux distribution to WSL2:** 
 
 1. [Download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu). 
-	
-    !!!note
-        You must download the Ubuntu 20.04 LTS version. 
-
 2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
 3. [Install the Windows Terminal App](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab).
 
@@ -46,7 +42,19 @@ You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to intera
     2. Select **Startup** and choose **Ubuntu** as the **Default profile** for your terminal.
     3. Click **Save**.
 
-![Windows Terminal configuration](../assets/images/ubuntuconfig.png)
+    ![Windows Terminal configuration](../assets/images/ubuntuconfig.png)
+
+5. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
+
+    1. Open Rancher Desktop, and then click the **Settings** icon.
+
+        ![Settings icon](../assets/images/rancherpreference1.png)
+
+    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then select the **Ubuntu** checkbox.
+
+        ![Rancher Desktop - Preferences](../assets/images/rancherpreference.png) 
+
+    3. Click **Apply**.  
 
 Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory. 
 
