@@ -6,7 +6,7 @@
 
 ## Before you start
 
-- Must have a **Volt MX Iris** app and completed the installation procedure in [Volt MX Iris](instalation.md).
+- Must have a **Volt MX Iris** app and completed the installation procedure in [Volt MX Iris](installation.md).
 - Must have a **Volt MX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
 - Must have a configured **`.NSF`** file, `schema` and `scopes` in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
 - Must have a **username** and **password** for Volt MX Go Iris, Foundry and Domino REST API.
