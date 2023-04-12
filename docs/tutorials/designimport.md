@@ -160,7 +160,7 @@ Once you click **Done**, each of the selected form, views and agents have import
 
 <img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
 
-## CRUDE operation upon importing the .NSF file
+## CRUD eperation upon importing the .NSF file
 
 1. Log in your account in Domino REST API.
 
