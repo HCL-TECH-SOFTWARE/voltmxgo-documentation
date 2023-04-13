@@ -73,7 +73,8 @@ Once all the foundry pods have a 1/1 state in the READY column, press `Ctrl-c` t
 Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/).   
 
 !!!note
-    If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
+    - If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
+    - To create an account, see [Create Foundry admin account](../howto/foundryadminaccount.md) 
 
 ## Next step
 
