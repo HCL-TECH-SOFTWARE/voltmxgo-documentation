@@ -2,33 +2,38 @@
 
 <!--add changes to designimport.md -->
  
- This  tutorial guides you in accesing the Design Import in VoltMX Go through the use of VoltMX Iris to view the .NSF file.
+ This  tutorial guides you in accesing the Design Import in Volt MX Go through the use of Volt MX Iris to view the .NSF file.
 
 ## Before you start
 
-- Must have a **VoltMX Iris** app and completed the installation procedure in [Volt MX Iris](instalation.md).
-- Must have a **VoltMX Foundry** app and completed the installation procedure in [Volt MX Foundry](installation.md).
-- Must have a configured **`.NSF`** file, `schema` and `scopes` in [KEEP](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
-- Must have a **username** and **password** for VoltMX Go Iris, Foundry and Domino REST API.
+- You have completed the [Volt MX Go installation](installation.md).
+- You have created your [Foundry admin account](../howto/foundryadminaccount.md).
+- You have noted the following Domino REST API details:
+    - Server URL: `http://drapi.mymxgo.com` 
+    - username: `mxgo admin`
+    - password: `password`
 
-## Launch VoltMX Go Iris
+- You have a configured **`.NSF`** file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
+- You have a credentials for Volt MX Foundry and Domino REST API.
 
-1. Open the **VoltMX Go Iris**. This opens the log-in screen of Iris.
+## Launch Volt MX Go Iris
+
+1. Open the **Volt MX Go Iris**. This opens the log-in screen of Iris.
 
 	!!!note
 		You can also start Iris by going to the folder where it's stored and double-clicking it.
 		
-   	On launching Iris, the VoltMX Go cloud login screen appears for license validation.
+   	On launching Iris, the Volt MX Go cloud login screen appears for license validation.
 
-2.  Enter your **credentials** in VoltMx Go Iris and click **Sign-In.**
-   The VoltMX Go Iris app canvass opens.
+2.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
+   The Volt MX Go Iris app opens.
 
 <img src="../assets/images/dilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
 
-## Validating VoltMX GO Foundry
+## Validating Volt MX GO Foundry
 	
 1. Open the **Vlt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
-2. This opens the **VoltMX Iris Preferences**. Click to **Volt MX Foundry**.
+2. This opens the **Volt MX Iris Preferences**. Click to **Volt MX Foundry**.
 3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` and click **Validate**. 
 4. Click **Done**. 
 
@@ -40,7 +45,7 @@
 !!!note
 		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. 
 
-1. Click **Project** on the VoltMX Go Iris navigation tab and click the **New Project.**
+1. Click **Project** on the Volt MX Go Iris navigation tab and click the **New Project.**
 2. Select **Web App** and click **Next.**
 
 	!!!note
@@ -61,14 +66,14 @@
 
 ## Introduction to the Design Import
 
-This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file where you can design the **`.NSF`** structure in **VoltMX GO Iris** synchronous to  the **Notes Designer** server. 
+This feature in Volt MX Go Iris is a way to extract the domino **`.NSF`** file where you can design the **`.NSF`** structure in **Volt MX GO Iris** synchronous to  the **Notes Designer** server. 
 
 
 ## Import a Domino Application
 
-1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **VoltMX Go Iris** app.
+1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
 1. Go to the first step "**Getting Started**" and click **Next**.
-2. Click **Create New** on the *Associate Foundry  App*.
+2. Click **Create New** on the *Associate Foundry  App* window.
 
 	!!!note
 		Once you click **Create New**, new foundry app associated in Volt MX Go Iris. The default name of the same your **Project Name**.
@@ -83,7 +88,7 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
 		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
 		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
-		|Service Name:| Any name that identify the VoltMX Go Foundry Identity Services. |
+		|Service Name:| Any name that identify the Volt MX Go Foundry Identity Services. |
 
 		<img src="../assets/images/dikeep.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
@@ -122,16 +127,16 @@ This feature in VoltMX Go Iris is a way to extract the domino **`.NSF`** file wh
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
-Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
+Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
 
 <img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
 
 ## Creating from existing Foundry and Domino Rest API.
 
-1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **VoltMX Go Iris** app.
+1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
 2. Go to the first step "**Getting Started**" and click **Next**.
 3.  Click on **Use Existing** link on **Associate Foundry App**.
-	1. Select from the VoltMX Go Application the foundry app and click **Associate**. The existing foundry app is selected and click **Next**.
+	1. Select from the Volt MX Go Application the foundry app and click **Associate**. The existing foundry app is selected and click **Next**.
 4. Click **Select Existing** on the Identy Service step. This connects the Domino Rest API service.
 	1. Select your **active app** from you Domino Rest API identity Service.
 5. Select your scope that you’ve configured in Domino Rest API. 
@@ -156,11 +161,11 @@ Once you click **Done**, each of the selected form, views and agents have import
 		- You can view the final result of the .nsf file that you configured in Domino REST API.
 		- You can click the link "**click here to view logs on a separate window**" to see the summarized forms, views and app forms in one page.
 
-Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in VoltMX Go Iris.
+Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
 
 <img src="../assets/images/dioutput.png"  width="100%" height="100%" style="display: block; margin: 0 auto" />
 
-## CRUDE operation upon importing the .NSF file
+## CRUD eperation upon importing the .NSF file
 
 1. Log in your account in Domino REST API.
 
