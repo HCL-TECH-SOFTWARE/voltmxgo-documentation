@@ -74,7 +74,7 @@ Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundr
 
 !!!note
     - If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
-    - To create an account, see [Create Foundry admin account](../howto/foundryadminaccount.md) 
+    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md) 
 
 ## Next step
 
