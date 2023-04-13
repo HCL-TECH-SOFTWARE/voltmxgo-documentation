@@ -35,6 +35,9 @@ Follow the order for completing the procedures according to your preferred deplo
 5. [Install Foundry](installfoundry.md)
 6. [Connect to Domino server from Notes client](connectdominofromnotes.md)
 
+!!!tip
+    You can see [FAQ and common procedures](../references/kubecheatsheet.md) for additional information.
+
 ## Installing Volt MX Go Iris
 
 - [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)

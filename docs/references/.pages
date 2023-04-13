@@ -2,6 +2,5 @@ nav:
     - index.md
     #- whatisnew.md
     - sysreq.md
-    - Installation:
-        - Kubernetes cheat sheet: kubecheatsheet.md
+    - kubecheatsheet.md
     - Rosetta API reference documentation: https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html
