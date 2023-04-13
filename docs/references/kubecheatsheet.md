@@ -1,29 +1,46 @@
-# Kubernetes cheat sheet
+# FAQ and common procedures
 
-- To show the notes that were displayed initially after deploying Domino:
+!!!note
+    You can copy and update the pod names from the code examples. We plan to improve this experience in future updates by adding label support.
 
-`helm get notes domino`
+- Show the notes that were displayed initially after deploying Domino
 
-- To view the Domino startup / initialization logs:
+    ```
+    helm get notes domino
+    ```
 
-`kubectl logs domino-keep-784d86bf6b-v6dzt -c qs-keep | less`
+- View the Domino startup / initialization logs:
 
-- To view the Domino server logs
+    ```
+    kubectl logs domino-keep-784d86bf6b-v6dzt -c qs-keep | less
+    ```
 
-`kubectl logs domino-keep-784d86bf6b-v6dzt -c domino-log | less`
+- View the Domino server logs
 
-- To view the REST API logs
+    ```
+    kubectl logs domino-keep-784d86bf6b-v6dzt -c domino-log | less
+    ```
 
-`kubectl logs domino-keep-784d86bf6b-v6dzt -c restapi-log | less`
+- View the REST API logs
 
-- To view all of the logs
+    ```
+    kubectl logs domino-keep-784d86bf6b-v6dzt -c restapi-log | less
+    ```
 
-`kubectl logs domino-keep-784d86bf6b-v6dzt --all-containers=true | less`
+- View all the logs
 
-- To copy a file out of the pod
+    ```
+    kubectl logs domino-keep-784d86bf6b-v6dzt --all-containers=true | less
+    ```
 
-`kubectl cp -n mxgo -c restapi-log $POD_NAME:/local/notesdata/admin.id ./admin.id`
+- Copy a file out of the pod
 
-- To copy a directory out of the pod
+    ```
+    kubectl cp -n mxgo -c restapi-log $POD_NAME:/local/notesdata/admin.id ./admin.id
+    ```
 
-`kubectl cp -n mxgo -c restapi-log $POD_NAME:/local/notesdata/IBM_TECHNICAL_SUPPORT support/`
+- Copy a directory out of the pod
+
+    ```
+    kubectl cp -n mxgo -c restapi-log $POD_NAME:/local/notesdata/IBM_TECHNICAL_SUPPORT support/
+    ```

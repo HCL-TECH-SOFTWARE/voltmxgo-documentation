@@ -17,7 +17,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 If you get an error message similar to the following:
 
 ```
-Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
+Error: looks like https://hclcr.io/chartrepo/voltmxgo-ea is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo-ea/index.yaml : 401 Unauthorized
 ```
 
 Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
@@ -53,7 +53,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 !!!note
     If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
 
-### Update the coredns configmap
+### For K3s only
 
 1. Run the following command to make these name/IP address matches available within the Kubernetes: 
 
@@ -79,8 +79,13 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
         10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
     kind: ConfigMap
     ```
-4. Save the file and exit the editor.
 
+4. Save the file and exit the editor.
+5. Run the following command to force the restart of the coredns pod:
+
+    ```
+    kubectl delete pod -n kube-system -l k8s-app=kube-dns
+    ```
 
 ### For Rancher Desktop only
 
@@ -97,6 +102,10 @@ Run the following commands to create a temp directory for the charts and make it
 mkdir ~/mxgo
 cd ~/mxgo
 ```
+
+## 5. Install wget and curl into your Linux environment
+
+Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using.
 
 ## Next step
 

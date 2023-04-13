@@ -1,6 +1,6 @@
 # First Touch tutorial
 
-This tutorial guides you on accessing and running the First Touch app in Volt MX Foundry to view and explore sample apps. 
+This tutorial guides you on accessing and running the First Touch app in Volt MX Foundry to view and explore a sample app. 
 
 ## Before you start
 
@@ -11,9 +11,6 @@ This tutorial guides you on accessing and running the First Touch app in Volt MX
     - Server URL: `http://drapi.mymxgo.com` 
     - username: `mxgo admin`
     - password: `password`
-
-- You have configured the OAuth provider on the Domino REST API server. For more information, see [Domino REST API and OAuth](https://opensource.hcltechsw.com/Domino-rest-api/references/security/authentication.html?h=oauth#domino-rest-api-and-oauth) in the see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
-- You have read and write access to the `FirstTouchRecipes.nsf` database on the Domino server.
 
 ## Log in to Volt MX Foundry
 
@@ -46,7 +43,6 @@ This tutorial guides you on accessing and running the First Touch app in Volt MX
  
 5. On the **Congratulations!** dialog, click **Launch**. 
     
-   You can now view and explore the First Touch sample recipe app in the **Apps** tab.  
-
+   You can now view and explore the First Touch sample recipe app Foundry configuration.  
  
 The First Touch sample recipe app is a Domino app written using Volt MX Go. It is automatically configured to use Domino REST API for both the Identity Service and the Object Service. For more information, see [Identity Service](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Identity.html) and [Object Service](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html) in the [HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html). 

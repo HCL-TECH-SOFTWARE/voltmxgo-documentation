@@ -35,7 +35,10 @@ Follow the order for completing the procedures according to your preferred deplo
 5. [Install Foundry](installfoundry.md)
 6. [Connect to Domino server from Notes client](connectdominofromnotes.md)
 
-**Volt MX Iris**
+!!!tip
+    You can see [FAQ and common procedures](../references/kubecheatsheet.md) for additional information.
+
+## Installing Volt MX Go Iris
 
 1.  [Download Volt MX Iris]()
 2.  Install Volt MX Iris

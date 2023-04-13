@@ -17,7 +17,7 @@ The Domino Adapter interacts with Domino for both configuration and run-time act
 
 ## Data models
 
-Data models are generated in an Object service by Foundry administrators to serve as a bridge between your back-end data and the client app. Each data model is associated with a single `form` or `view` in Domino REST API. A Domino REST API administrator defines the `forms` and `wiews` in a `schema`. To expose the `schema` to generate a data model, the Domino REST API administrator creates a `scope`. 
+Data models are generated in an Object service by Foundry administrators to serve as a bridge between back-end data and the client app. Each data model is associated with a single `form` or `view` in Domino REST API. A Domino REST API administrator defines the `forms` and `views` in a `schema`. To expose the `schema` to generate a data model, the Domino REST API administrator creates a `scope`. 
 
 For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation.  
 
@@ -148,6 +148,5 @@ The Foundry Domino adapter supports these OData filter parameters for the GET me
 - Naming limitations:
 
     - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, which are included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
-    - Foundry restricts the length of names, for example field names, to ???X??? that's shorter than the name length supported in Domino.
+    - Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
    
-- Iris doesn't respect non-queryable in `$filter` and read-only on update/add forms.

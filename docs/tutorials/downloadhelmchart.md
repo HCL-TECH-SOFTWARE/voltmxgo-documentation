@@ -4,7 +4,13 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
 
 ## 1. Download the Domino/Keep Helm chart
 
-1. Run the following command to download the chart:
+1. Run the following command to make sure that the chart information for the repositories is up-to-date.
+
+    ```
+    helm repo update
+    ```
+    
+2. Run the following command to download the chart:
 
     ```
     helm pull hclcr/keep
@@ -12,14 +18,14 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
 
     The file `keep.tgz` is downloaded. 
 
-2. Run the following commands to unpack the chart and make the Keep directory your current directory:
+3. Run the following commands to unpack the chart and make the Keep directory your current directory:
 
     ```
     tar -xzvf keep-0.3.1.tgz
     cd keep
     ```
 
-3. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.  
+4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.  
 
     The example procedure uses **vi** to edit the `values.yaml` file:
 
