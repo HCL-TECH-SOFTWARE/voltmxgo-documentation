@@ -12,9 +12,6 @@ This tutorial guides you on accessing and running the First Touch app in Volt MX
     - username: `mxgo admin`
     - password: `password`
 
-- You have configured the OAuth provider on the Domino REST API server. For more information, see [Domino REST API and OAuth](https://opensource.hcltechsw.com/Domino-rest-api/references/security/authentication.html?h=oauth#domino-rest-api-and-oauth) in the see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
-- You have read and write access to the `FirstTouchRecipes.nsf` database on the Domino server.
-
 ## Log in to Volt MX Foundry
 
 1. Open `http://foundry.mymxgo.com/mfconsole/` in your browser. 

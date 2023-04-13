@@ -17,7 +17,7 @@ The Domino Adapter interacts with Domino for both configuration and run-time act
 
 ## Data models
 
-Data models are generated in an Object service by Foundry administrators to serve as a bridge between your back-end data and the client app. Each data model is associated with a single `form` or `view` in Domino REST API. A Domino REST API administrator defines the `forms` and `wiews` in a `schema`. To expose the `schema` to generate a data model, the Domino REST API administrator creates a `scope`. 
+Data models are generated in an Object service by Foundry administrators to serve as a bridge between back-end data and the client app. Each data model is associated with a single `form` or `view` in Domino REST API. A Domino REST API administrator defines the `forms` and `views` in a `schema`. To expose the `schema` to generate a data model, the Domino REST API administrator creates a `scope`. 
 
 For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation.  
 

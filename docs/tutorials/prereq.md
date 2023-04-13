@@ -53,7 +53,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 !!!note
     If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
 
-### Update the coredns configmap
+### For K3s only
 
 1. Run the following command to make these name/IP address matches available within the Kubernetes: 
 
@@ -79,8 +79,13 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
         10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
     kind: ConfigMap
     ```
-4. Save the file and exit the editor.
 
+4. Save the file and exit the editor.
+5. Run the following command to force the restart of the coredns pod:
+
+    ```
+    kubectl delete pod -n kube-system -l k8s-app=kube-dns
+    ```
 
 ### For Rancher Desktop only
 
