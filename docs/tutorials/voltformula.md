@@ -98,4 +98,12 @@ ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula a
 <img src="../assets/images/vfrosoutput.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
 
-<!--add changes in voltFormula1.md-->
+
+
+
+
+
+
+
+
+
