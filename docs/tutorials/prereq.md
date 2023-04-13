@@ -17,7 +17,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 If you get an error message similar to the following:
 
 ```
-Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
+Error: looks like https://hclcr.io/chartrepo/voltmxgo-ea is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo-ea/index.yaml : 401 Unauthorized
 ```
 
 Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.

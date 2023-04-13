@@ -10,14 +10,20 @@ The procedure guides you in installing MySql for Foundry.
     cd foundry
     ```
 
-2. Run the following commands to install the Bitnami MySql Helm chart to use for the Foundry database storage:
+2. Run the following command to make sure that the chart information for the repositories is up-to-date.
+
+    ```
+    helm repo update
+    ```
+    
+3. Run the following commands to install the Bitnami MySql Helm chart to use for the Foundry database storage:
 
     ```
     helm repo add bitnami https://charts.bitnami.com/bitnami
     helm install mysql bitnami/mysql --version "9.6.0" --set image.tag="8.0.32-debian-11-r17",auth.rootPassword="Password123\!",auth.createDatabase=false,auth.username=dbclient,auth.password="Password123\!" -n mxgo
     ```
 
-3. Run the following command to verify when the database is in the ready state:
+4. Run the following command to verify when the database is in the ready state:
 
     ```
     kubectl get pods -o wide -w
@@ -31,7 +37,7 @@ The procedure guides you in installing MySql for Foundry.
     mysql-0                           1/1     Running   0          45s
     ```
 
-4. Once the database is in the ready state, press `Ctrl-c` to stop the command.
+5. Once the database is in the ready state, press `Ctrl-c` to stop the command.
 
 ## Next step
 

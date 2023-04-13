@@ -4,7 +4,13 @@ The procedures will guide you in the installation of Foundry.
 
 ## 1. Download Foundry charts
 
-1. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
+1. Run the following command to make sure that the chart information for the repositories is up-to-date.
+
+    ```
+    helm repo update
+    ```
+
+2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
     ```
     helm pull hclcr/voltmx-dbupdate
@@ -14,7 +20,7 @@ The procedures will guide you in the installation of Foundry.
     mv voltmx-foundry/values.yaml  ./
     ```
 
-2. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository.
+3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository.
 
     ```
     imageCredentials:
@@ -22,7 +28,7 @@ The procedures will guide you in the installation of Foundry.
       password: your-authentication-token
     ```
 
-3. Save the file and exit.
+4. Save the file and exit.
 
 ## 2. Deploy Foundry's dbupdate to create the databases in MySql
 
