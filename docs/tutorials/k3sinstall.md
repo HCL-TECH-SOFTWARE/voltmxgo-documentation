@@ -52,14 +52,12 @@ Before installing K3s, make sure you have met any operating system configuration
 !!!note
     If you are using bash for your login shell, update your `.bashrc` to export the KUBECONFIG variable. Make the appropriate change if you use a different shell.
 
-1. Run the command to update the KUBECONFIG environment variable:
+Run the commands to update the KUBECONFIG environment variable:
 
-    ```
-    echo export KUBECONFIG=~/.kube/config >> /home/$K3SUSER/.bashrc
-    ```
-
-2. Log out and then log in to pick up the KUBECONFIG change.
-
+```
+echo export KUBECONFIG=~/.kube/config >> /home/$K3SUSER/.bashrc
+export KUBECONFIG=~/.kube/config
+```
 
 ## 4. Install Helm
 

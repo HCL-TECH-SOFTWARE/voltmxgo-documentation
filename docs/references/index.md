@@ -6,11 +6,9 @@ Provides technical references and descriptions for using Volt MX Go.
 
 Check the minimum [System requirements](sysreq.md) for deploying the Early Access version of Volt MX Go.
 
-## Installation
+## FAQ and common procedures
 
-Useful reference information related to [Volt MX Go installation](../tutorials/installation.md).
-
-- [Kubernetes cheat sheet](kubecheatsheet.md)
+Useful [FAQ and common procedures](kubecheatsheet.md) related to [Volt MX Go installation](../tutorials/installation.md).
 
 ## Rosetta API reference documentation
 
