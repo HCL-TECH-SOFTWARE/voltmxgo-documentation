@@ -52,7 +52,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
 
 ## Translating the OpenFormula and NotesFormula into javascript
 
-1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the Volt Formula.
+1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the voltFormula.
     - **window for the translated OpenFormula and NotesFormula in JavaScript.**
     - **window for the formula language** - OpenFormula and NotesFormula are the accepted formulas to add in this window.
     - **window for the formula results**.
