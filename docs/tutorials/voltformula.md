@@ -92,3 +92,6 @@ This feature in Volt MX Go Iris is an added actions in Volt MX Iris where you ca
 
 
 <!--add changes in voltFormula1.md-->
+
+
+MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
