@@ -19,12 +19,13 @@ Before starting with the procedure, make sure that you have checked and verified
 
 ## To install Rancher Desktop
 
-1. Download the [Rancher.Desktop.Setup.1.8.1.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.8.1/Rancher.Desktop.Setup.1.8.1.msi) installer.
+1. Download the [Rancher.Desktop.Setup.1.7.0.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.7.0/Rancher.Desktop.Setup.1.7.0.msi) installer.  There is a serious defect in 1.8 that makes 1.8 very difficult to use.   We strongly recommend skipping 1.8.0.
 2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
 5. Review the License Agreement, and then click **I Agree** to proceed with the installation.
 6. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to install the Rancher Desktop Privileged Service.
 7. Follow the prompts to confirm installation.
-8. When the installation completes, click **Finish** to close the installation wizard.
+8. In the General settings for Rancher Desktop, toggle off the "Check for updates automatically" as you do not want to be upgraded to version 1.8.
+9. When the installation completes, click **Finish** to close the installation wizard.
 
 ## Post installation
 
