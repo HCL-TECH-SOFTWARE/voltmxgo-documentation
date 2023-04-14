@@ -40,12 +40,13 @@ Follow the order for completing the procedures according to your preferred deplo
 
 ## Installing Volt MX Go Iris
 
-1.  Download Volt Iris from [HCL Software License & Download Portal](https://id.hcltechsw.com/).
+**Prerequisite**
 
-    !!!tip
-        For more information on how to download from the portal, see [Download from HCL License & Download Portal](../howto/portaldownload.md).
+- You have [downloaded the HCL Volt MX GO Early Access Release package](../howto/portaldownload.md).
 
-2.  Install Volt MX Iris.
+**Procedure**
+
+1.  Install Volt MX Iris.
     - [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing)
 3. Login to your Volt Foundry Server.

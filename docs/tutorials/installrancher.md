@@ -75,10 +75,10 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 
 **To enable port forwarding:**
 
-1. Download the port forwarding script `mxgo-port-forwarding.ps1` from [HCL Software License & Download Portal](https://id.hcltechsw.com/).
+1. Download the port forwarding script `mxgo-port-forwarding.ps1`.
 
     !!!tip
-        For more information on how to download from the portal, see [Download from HCL License & Download Portal](../howto/portaldownload.md).
+        For more information, see [Download HCL Volt MX GO Early Access Release](../howto/portaldownload.md).
 
 2. Open a **Windows PowerShell** as the Administrator.
 3. Run the following command and answer `A` when prompted.
@@ -90,7 +90,7 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 4. Change to the directory where you downloaded the script and run it as follows:
 
     ```
-    .\port-forwarding.ps1
+    .\mxgo-port-forwarding.ps1
     ```
 
 5. Run the following command to confirm that ports 80, 443, and 1352 are being forwarded:

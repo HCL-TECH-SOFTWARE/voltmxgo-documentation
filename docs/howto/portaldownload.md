@@ -6,14 +6,16 @@ The procedure guides you on how to search and download the HCL Volt MX GO Early 
 
 The HCL Volt MX GO Early Access Release package includes:
 
-- HCL Volt MX Go First Touch Iris Application Zip
-- HCl Volt MX Go Iris Installer (MacOS)
-- HCl Volt MX Go Iris Installer (Windows)
-- HCL Volt MX GO Rancher Desktop Power Shell Script
-- HCL Volt MX GO Rosetta SDK JAR
+| Description | Filename |
+| --- | --- |
+| HCL Volt MX Go First Touch Iris Application Zip | `FirstTouchRecipes.zip` |
+| HCL Volt MX Go Iris Installer (MacOS) | `HCLVoltMXGO_Iris_Installer_MacOS_ER1.zip` |
+| HCL Volt MX Go Iris Installer (Windows) | `HCLVoltMXGO_Iris_Installer_Windows_ER1.exe` |
+| HCL Volt MX GO Rancher Desktop Power Shell Script | `mxgo-port-forwarding.ps1` |
+| HCL Volt MX GO Rosetta SDK JAR | `com.hcl.rosetta.sdk_1.0.0.v202304122103.jar` |
 
 !!!tip
-    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344).
+    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344)
 
 ## To search and download the HCL Volt MX GO Early Access Release package
 
