@@ -2,7 +2,7 @@
 
 This section describes the minimum system requirements for deploying the Early Access version of Volt MX Go. 
 
-## For deploying Volt MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM
+## For deploying Volt MX GO Foundry Server using K3s on an Ubuntu, RHEL, SLES machine, or VM
 
 !!!note
     - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/).
@@ -21,7 +21,7 @@ This section describes the minimum system requirements for deploying the Early A
 | CPU | 4 cores |
 | RAM | 16 GB |
 
-## For deploying Volt MX Go using Rancher Desktop running on Windows
+## For deploying Volt MX Go Foundry Server using Rancher Desktop running on Windows
 
 !!!note
     - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/).
@@ -48,12 +48,12 @@ Rancher Desktop requires the following on Windows:
 - Persistent internet connection.
 - Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
-## For installing Volt MX Go Iris on Windows
+
+## For installing Volt MX Go Iris IDE on Windows
 
 ### Operating System
 
-
-Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems
+Windows 11, Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems
 
 Installer File (mandatory)
 
@@ -66,7 +66,8 @@ Installer File (mandatory)
 |Internal Storage	|2 GB|
 |Network	|Ethernet Port|
 
-## For installing Volt MX Go Iris on  Mac
+
+## For installing Volt MX Go Iris IDE on  Mac
 
 ### Operating System
 
@@ -76,7 +77,7 @@ Mac OS X 10.9 and above
 
 |Component	|Requirement |
 | --------  | -----------|       
-|Processor	|x86-64 CPU<br/>(64-bit Mac with an Intel Core i3, i5, i7, or Intel Xeon processor)|
+|Processor	|x86-64 CPU, M1/M2 CPU<br/>(64-bit Mac with an Intel Core i3, i5, i7, Intel Xeon processor or M1, M2 ARM processor)|
 |RAM	    |8 GB |
 |Internal Storage|	24 GB|
 |Network Ethernet |Port|

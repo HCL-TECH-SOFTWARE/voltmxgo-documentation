@@ -4,7 +4,7 @@ Guides you through the procedures for installing the Early Access version of Vol
 
 ## Before you start
 
-The Early Access version of Volt MX Go is deployed with Kubernetes via the following options:
+The Early Access version of Volt MX Go Foundry Server is deployed with Kubernetes via the following options:
 
 - using [K3s](https://docs.k3s.io) on an Ubuntu, RHEL, SLES machine or VM
 - using [Rancher Desktop](https://docs.rancherdesktop.io) running on Windows  
@@ -38,7 +38,7 @@ Follow the order for completing the procedures according to your preferred deplo
 !!!tip
     You can see [FAQ and common procedures](../references/kubecheatsheet.md) for additional information.
 
-## Installing Volt MX Go Iris
+## Installing Volt MX Go Iris IDE
 
 **Prerequisite**
 
@@ -46,7 +46,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 **Procedure**
 
-1.  Install Volt MX Iris.
+1.  Install Volt MX Iris IDE.
     - [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing)
 3. Login to your Volt Foundry Server.
