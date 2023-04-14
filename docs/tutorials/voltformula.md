@@ -137,16 +137,19 @@ ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula a
 MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
 -->
 
-## Using Rosetta setting panel of Iris
+## Configuring Volt Formula's Rosetta API Options
 1. Open the **Project Settings** icon.
     ![settings](../assets/images/vfrosettasetting.png)
 2. The **Project Setting** window appears. Click the **Rosetta** tab.
     ![settings](../assets/images/vfsetting.png)
 
-    |Rosetta Settings| Description|
-    |----------------|------------|
-    |API configuration||
-    |Converter Configuration|You can select or clear the option|
-    |Use Native vs. API Conversion|You can select or clear the control flow statement that you want for your formula code|
-    |Version| This is where you get the version of the `SDK`,`API`,`Converter`, and `prettifier`|
+    |Rosetta Area | Description|
+    |-------------|------------|
+    |**API configuration**|This section allows you to configure options specific to the APIs' implementation and execution|
+    | |**Register Custom API** allows you upload a file with custom APIs.  Refer to the API reference documentation under the rosetta-api module for method `registerAPI` for more details on expected file format and parameters|
+    | |**Preferred API implementation** allows you specify whether to execute the Notes Formula or the OpenFormula implementation when calling an API method which has an existing implementation in either formula language.  Example, `@Abs()` and `=ABS()` are encapsulated by Rosettas `abs()` method.  Selecting `Notes` option will make Rosetta call the Notes implementation.  In most cases either implementation will behave the same.  But in other cases, there may be difference in parameters, execution, or returned results.  For example, most Notes formula functions allow lists to be passed in as arguments while OpenFormula allows lists as ranges for only a number of methods.  Refer to the API reference documentation for details on each API|
+    |**Converter Configuration**|This section allows you to configure options related to how formulas are converted into their corresponding Rosetta enabled JavaScript|
+    | | **Passthrough formula language** allows you specify whether the converter allow unrecognize formula code to be made part of the javascript conversion results without any massaging, or if it should throw and error when encounters unrecognizable formula code.  This allows greater flexibility but also exposes the API to injection of code.  Use with care.|
+    | | **Use Native vs. API Conversion** allows you specify whether the converter will use native JavaScript or API calls for methods where a native JavaScript function exists.  Example, convert `@If( )` into JavaScript native `if( )` or call the API `rosettajs.Logical.if( )`.  Sometimes it will make sense and produce cleaner code to select "convert into native JavaScript" than using the API.  Other times you may want to go through the API call itself in order to allow for additional checks and/or handle the parameters differently|
+    |**Version**| This is where you get the version of the `SDK` plugin,`API`,`Converter`, and `prettifier`|
 
