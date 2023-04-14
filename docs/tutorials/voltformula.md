@@ -130,7 +130,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
         - When you add `rosetta` javascript,  you'll be able see the syntax code or the intellisense for the formula that you choose in code window.
         - Make sure you know the syntax for coding the `rosetta` javascript.
     
-     ![Edit Rosetta Javascript](../assets/images/vfjavaedit/.png)
+     ![Edit Rosetta Javascript](../assets/images/vfjavaedit.png/.png)
      
 <!--ALSO NEEDS EDIT EXISTING FORMULA  (right click on the javascript code to pop menu that shows EDIT formula)
 ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula and then try to edit formula) 
