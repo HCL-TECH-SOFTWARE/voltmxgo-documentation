@@ -17,6 +17,58 @@ Before starting with the procedure, make sure that you have checked and verified
     - WSL2 - You need Admin privileges to install WSL2, which is an essential component of Rancher Desktop.
     - Rancher Desktop Privileged Service - You need Admin privileges to install the Rancher Desktop privileged service, which is required to expose applications/services, running inside containers, on all interfaces on the host machine. However, you can skip the installation of the Rancher Desktop Privileged Service with the limitation that you will not be able to expose applications/services on any interface except 127.0.0.1.
 
+## Enable Port Forwarding for Ports 80, 443 and 1352
+
+Rancher Desktop needs the forwarding of specific ports to WSL2. The script you need to run forwards ports 80, 443, and 1352 on all network interfaces to WSL2.
+
+!!!note
+    Make sure Ubuntu is running before proceeding.
+
+**To enable port forwarding:**
+
+1. Download the port forwarding script `mxgo-port-forwarding.ps1` from [HCL Software License & Download Portal](https://id.hcltechsw.com/).
+
+    !!!tip
+        For more information on how to download from the portal, see [Download from HCL License & Download Portal](../howto/portaldownload.md). 
+
+2. Open a **Windows PowerShell** as the Administrator.
+3. Run the following command and answer `A` when prompted.
+
+    ```
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+    ```
+
+4. Change to the directory where you downloaded the script and run it as follows:
+
+    ```
+    .\port-forwarding.ps1
+    ```
+
+5. Run the following command to confirm that ports 80, 443, and 1352 are being forwarded:
+
+    ```
+    netsh interface portproxy show all
+    ```
+
+    The output should appear as follows:
+
+    ```
+    Listen on ipv4: Connect to ipv4:
+    Address Port Address Port
+    --------------- ---------- --------------- ----------
+    0.0.0.0 1352 172.30.87.124 1352
+    0.0.0.0 443 172.30.87.124 443
+    0.0.0.0 80 172.30.87.124 80
+    ```
+
+6. Close the **Windows PowerShell**.
+
+!!!note
+    Repeat the steps starting from opening the **Windows PowerShell** if either of the following occurs:
+
+    - Rancher Desktop stops and restarts.
+    - WSL instances stop and restart.
+
 ## To install Rancher Desktop
 
 1. Download the [Rancher.Desktop.Setup.1.8.1.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.8.1/Rancher.Desktop.Setup.1.8.1.msi) installer.
