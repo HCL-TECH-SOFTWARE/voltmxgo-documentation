@@ -18,6 +18,8 @@ The full specification of the API is available in a structured format in the [Ro
 
 HCL Project KEEP has been re-branded to HCL Domino REST API to align with the HCL VOLT MX GO strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.
 
+To learn more about Domino REST API, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
+
 <!--## What's new
 
 Check the [latest information](whatisnew.md) about Volt MX Go.-->

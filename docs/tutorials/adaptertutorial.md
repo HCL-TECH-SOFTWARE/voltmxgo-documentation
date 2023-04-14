@@ -59,6 +59,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     6. Enter the name of the scope that you have configured in your app in Domino REST API in the **Scope** text box. 
 
+        !!!note "Important"
+            Make sure that the name of the scope you enter in the **Scope** text box matches the name of the scope that you have configured in your app in Domino REST API. 
+
     ![](../assets/images/identityproviderdetails.png)
 
 5.	Under **Client Details**:
