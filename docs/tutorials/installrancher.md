@@ -1,11 +1,11 @@
 # Install Rancher Desktop
 
-The procedure guides you in installing Rancher Desktop, which is delivered as a desktop app. 
+The procedure guides you in installing Rancher Desktop, which is delivered as a desktop app.
 
 ## Before you start
 
 !!!note
-    If you will use K3s in deploying the Early Access version of Volt MX Go, you don't need to execute this procedure.
+    If you will use K3s in deploying the Early Access version of Volt MX Go, you don't need to execute this procedure.  Rancher Desktop includes a customized configuration of K3s and is geared to enabling developers with a small, desktop style Kubernetes cluster.  It includes other developer centric tooling not included in K3s.
 
 Rancher Desktop requires Windows Subsystem for Linux (WSL2) on Windows, which is automatically installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
@@ -17,19 +17,68 @@ Before starting with the procedure, make sure that you have checked and verified
     - WSL2 - You need Admin privileges to install WSL2, which is an essential component of Rancher Desktop.
     - Rancher Desktop Privileged Service - You need Admin privileges to install the Rancher Desktop privileged service, which is required to expose applications/services, running inside containers, on all interfaces on the host machine. However, you can skip the installation of the Rancher Desktop Privileged Service with the limitation that you will not be able to expose applications/services on any interface except 127.0.0.1.
 
+## To install Rancher Desktop
+
+1. Download the [Rancher.Desktop.Setup.1.8.1.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.8.1/Rancher.Desktop.Setup.1.8.1.msi) installer.
+2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
+5. Review the License Agreement, and then click **I Agree** to proceed with the installation.
+6. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to install the Rancher Desktop Privileged Service.
+7. Follow the prompts to confirm installation.
+8. When the installation completes, click **Finish** to close the installation wizard.
+
+## Post installation
+
+You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to interact with the Rancher Desktop support for Kubernetes, via running some previously listed utilities (commands) to configure and install Volt MX GO.
+
+**To add Ubuntu Linux distribution to WSL2:**
+
+1. [Download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu).
+2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
+3. [Install the Windows Terminal App](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab).
+
+4. Configure the Windows Terminal App.
+
+    1. Open Windows Terminal and go to the **Settings** UI window.
+    2. Select **Startup** and choose **Ubuntu** as the **Default profile** for your terminal.
+    3. Click **Save**.
+
+    ![Windows Terminal configuration](../assets/images/ubuntuconfig.png)
+
+5. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
+
+    1. Open Rancher Desktop, and then click the **Settings** icon.
+
+        ![Settings icon](../assets/images/rancherpreference1.png)
+
+    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then select the **Ubuntu** checkbox.
+
+        ![Rancher Desktop - Preferences](../assets/images/rancherpreference.png)
+
+    3. Click **Apply**.
+
+6.  Make certain that **Ubuntu** is specified as your default WSL distribution.  From a Windows command prompt or Powershell window run the following command:
+
+```
+wsl --setdefault Ubuntu
+```
+
+Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory.
+
+
+
 ## Enable Port Forwarding for Ports 80, 443 and 1352
 
 Rancher Desktop needs the forwarding of specific ports to WSL2. The script you need to run forwards ports 80, 443, and 1352 on all network interfaces to WSL2.
 
 !!!note
-    Make sure Ubuntu is running before proceeding.
+    Make sure Ubuntu is running before proceeding and also **stop** Rancher Desktop.  If Rancher Desktop is not stopped for this step, you may experience problems connecting to your Foundry and Domino deployments.
 
 **To enable port forwarding:**
 
 1. Download the port forwarding script `mxgo-port-forwarding.ps1` from [HCL Software License & Download Portal](https://id.hcltechsw.com/).
 
     !!!tip
-        For more information on how to download from the portal, see [Download from HCL License & Download Portal](../howto/portaldownload.md). 
+        For more information on how to download from the portal, see [Download from HCL License & Download Portal](../howto/portaldownload.md).
 
 2. Open a **Windows PowerShell** as the Administrator.
 3. Run the following command and answer `A` when prompted.
@@ -56,52 +105,13 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 
 6. Close the **Windows PowerShell**.
 
+7. Restart Rancher Desktop.
+
 !!!note
     Repeat the steps starting from opening the **Windows PowerShell** if either of the following occurs:
 
     - Rancher Desktop stops and restarts.
     - WSL instances stop and restart.
-
-## To install Rancher Desktop
-
-1. Download the [Rancher.Desktop.Setup.1.8.1.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.8.1/Rancher.Desktop.Setup.1.8.1.msi) installer.
-2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
-5. Review the License Agreement, and then click **I Agree** to proceed with the installation.
-6. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to install the Rancher Desktop Privileged Service.
-7. Follow the prompts to confirm installation.
-8. When the installation completes, click **Finish** to close the installation wizard.
-
-## Post installation 
-
-You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to interact with the Rancher Desktop support for Kubernetes, via running some previously listed utilities (commands) to configure and install Volt MX GO.
-
-**To add Ubuntu Linux distribution to WSL2:** 
-
-1. [Download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu). 
-2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
-3. [Install the Windows Terminal App](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab).
-
-4. Configure the Windows Terminal App.
-
-    1. Open Windows Terminal and go to the **Settings** UI window. 
-    2. Select **Startup** and choose **Ubuntu** as the **Default profile** for your terminal.
-    3. Click **Save**.
-
-    ![Windows Terminal configuration](../assets/images/ubuntuconfig.png)
-
-5. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
-
-    1. Open Rancher Desktop, and then click the **Settings** icon.
-
-        ![Settings icon](../assets/images/rancherpreference1.png)
-
-    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then select the **Ubuntu** checkbox.
-
-        ![Rancher Desktop - Preferences](../assets/images/rancherpreference.png) 
-
-    3. Click **Apply**.  
-
-Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory. 
 
 ## Additional information
 
