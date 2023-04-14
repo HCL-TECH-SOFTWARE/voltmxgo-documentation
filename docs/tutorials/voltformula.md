@@ -71,7 +71,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
 
 ## Using the voltFormula in Controller 
 ### Add formula in a controller
-1. Open a controller on Project Explorer.
+1. Open a controller on **Project Explorer.**
 2. Select and open your controller. This opens the code window.
 3. Right-click on the code window and select **Add Code from Formula**. The Formula Language window appear.
    <img src="../assets/images/vfaddcode.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
@@ -81,7 +81,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
         - **@** chraracter for *NotesFormula*
 	    - **=** character  for *OpenFormula*
 	    - You can the see the syntax code or the IntelliSense for the formula that you choose.
-	    - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
+	    - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
       <img src="../assets/images/vfsyntax.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
 
@@ -106,7 +106,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
         - **@** chraracter for *NotesFormula*
         - **=** character  for *OpenFormula*
         - You can the see the syntax code or the IntelliSense for the formula that you choose.
-        - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
+        - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
         - You can add or edit code in the formula language window as long as you folow the syntax.
         - You can add more than one line of code. 
       <img src="../assets/images/vfsyntax1.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
@@ -137,8 +137,8 @@ ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula a
 MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
 -->
 
-## Using rosetta setting panel of Iris
-1. Open the **project settings** icon.
+## Using Rosetta setting panel of Iris
+1. Open the **Project Settings** icon.
     ![settings](../assets/images/vfrosettasetting.png)
 2. The **Project Setting** window appears. Click the **Rosetta** tab.
     ![settings](../assets/images/vfsetting.png)
@@ -146,7 +146,7 @@ MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> R
     |Rosetta Settings| Description|
     |----------------|------------|
     |API configuration||
-    |Converter Configuration|You can select o clear the option|
+    |Converter Configuration|You can select or clear the option|
     |Use Native vs. API Conversion|You can select or clear the control flow statement that you want for your formula code|
     |Version| This is where you get the version of the `SDK`,`API`,`Converter`, and `prettifier`|
 
