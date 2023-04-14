@@ -135,8 +135,9 @@ ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula a
 MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
 -->
 
-<!--## Using rosetta configuration panel of Iris
+## Using rosetta configuration panel of Iris
 1. Open the **project settings** icon.
 2. The project setting window appears. Click the **Rosetta** tab.
-3. -->
+    ![settings(../assets/images/vfrosettasetting.png)
+3. 
 
