@@ -13,6 +13,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     - password: `password`
 
 - You have added and configured a schema and a scope in the Domino REST API. 
+
+    !!!tip
+        For more information, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation. 
+
 - Your schema should have a configured form with a `dql` mode similar to the `default` mode. 
 
 ## Log in to Volt MX Foundry
@@ -47,8 +51,13 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
         Example:  `[Domino REST API server URL]/oauth/token`
 
-    4. In the **Callback URL** text box, click **Copy**. <br/> You need the callback URL when configuring your app in Domino REST API. 
-    5. Enter `$DATA` in the **Scope** text box.
+    4. In the **Callback URL** text box, click **Copy**. <br/> You need the callback URL when configuring your app in Domino REST API.
+    5. [Create and configure an application](#create-and-configure-an-application-in-domino-rest-api) in Domino REST API. 
+
+        !!!note "Caution"
+            You need to pause the execution of the **Configure an Identity Service** procedure without saving your initial changes and complete the creation and configuration of an app in Domino REST API before proceeding. 
+
+    6. Enter the name of the scope that you have configured in your app in Domino REST API in the **Scope** text box. 
 
     ![](../assets/images/identityproviderdetails.png)
 
@@ -162,3 +171,28 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 5. Beside the fields, input the value, then click **Send**. The ID of the record is displayed on the **Response** console after the successful insertion of the record.
 6. Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
 
+## Additional procedure
+
+### Create and configure an application in Domino REST API
+
+1. Log in to Domino REST AP].
+
+    !!!tip
+        For more details, see [Access Domino REST API](../howto/accessdrapi.md).
+
+2. Select **Application Management - OAuth** from the home page.
+3. On the **Application Management** page, click **Add Application**.
+4. Under **Add New Application**, fill in the form:
+    1. Enter an **Application Name**.
+    2. Provide a **Description**.
+    3. Paste the callback URL that you have copied when configuring the Identity Service in Foundry in the **Callback URLs** text box.
+    4. Provide the application startup page URL under **Startup Page**. 
+    4. Select and add a scope in the **Scope** field.
+5. Click **Add**. 
+6. Hover over the application tile and click **Generate Application Secret**. Take note of the App secret and the App ID.
+
+!!!note
+    Make sure to take note of the App ID and App secret as you need these information in configuring the Identity Service in Foundry. 
+
+
+ 
