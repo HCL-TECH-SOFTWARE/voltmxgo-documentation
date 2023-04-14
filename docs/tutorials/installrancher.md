@@ -52,14 +52,7 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 
     The output should appear as follows:
 
-    ```
-    Listen on ipv4: Connect to ipv4:
-    Address Port Address Port
-    --------------- ---------- --------------- ----------
-    0.0.0.0 1352 172.30.87.124 1352
-    0.0.0.0 443 172.30.87.124 443
-    0.0.0.0 80 172.30.87.124 80
-    ```
+    ![Port confirmation result](../assets/images/portforwarding.png)
 
 6. Close the **Windows PowerShell**.
 

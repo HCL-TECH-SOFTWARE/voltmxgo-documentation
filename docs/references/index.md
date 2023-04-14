@@ -14,6 +14,9 @@ Useful [FAQ and common procedures](kubecheatsheet.md) related to [Volt MX Go ins
 
 The full specification of the API is available in a structured format in the [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
 
+## HCL Domino REST API formerly known as HCL Project KEEP
+
+HCL Project KEEP has been re-branded to HCL Domino REST API to align with the HCL VOLT MX GO strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.
 
 <!--## What's new
 
