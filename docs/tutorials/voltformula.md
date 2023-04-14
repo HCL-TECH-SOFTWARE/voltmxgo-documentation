@@ -1,9 +1,8 @@
-# voltFormula Tutorial
+# VoltFormula Tutorial
 The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go rosetta javascript.
-
 ## Before you start
 
-- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Go installation](installation.md#installing-volt-mx-go-iris).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
     - Server URL: `http://drapi.mymxgo.com` 
@@ -15,7 +14,8 @@ The following tutorial shows you how to use voltFormula in Volt MX Iris to conve
 
 1. Open the **Volt MX Go Iris**. This opens the log-in screen of Iris.
 
-    \****NOTE***\* You can also start Iris by going to the folder where it's stored and double-clicking it.
+    !!!note
+        You can also start Iris by going to the folder where it's stored and double-clicking it.
 		
    	On launching Iris, the Volt MX Go cloud login screen appears for license validation.
 
@@ -33,7 +33,7 @@ The following tutorial shows you how to use voltFormula in Volt MX Iris to conve
 
 <img src="../assets/images/dipreference.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
-## Introduction to the voltFormula
+## Introduction to the VoltFormula
 
 This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can insert the [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) translated into a JavaScript code.
 
@@ -41,8 +41,8 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
 ## Open voltFormula through `Actions`
 
 1. Open your **Project.**
-2. From the **Project** tab of the **Project Explorer**, select the widget you want to apply the action to. 
-3. Once it’s highlighted on the Iris Canvas, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
+2. From the **Project** tab of the **Project Explorer**, go on `Forms` navigation and select the widget or object you want to apply action to. 
+3. Once in the Iris forms, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
 
     <img src="../assets/images/vfaction.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
 
@@ -60,9 +60,8 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
 
 2. Click on **Formula Language** window and enter a valid formula.
 
-    \****NOTE***\*
-    	In Formula language  window, it has the abilty to detect the **Notes** and **Open** formula. You must enter the **@** character before the formula in NotesFormula.
-        and enter the **=** character before the formula in OpenFormula.
+    !!! note "Notes"
+        In Formula language  window, it has the abilty to detect the **Notes** and **Open** formula. You must enter the **@** character before the formula in NotesFormula and enter the **=** character before the formula in OpenFormula.
     
 3. You can see the JavaScript code and the result.
 
@@ -70,33 +69,75 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
   <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />    
 
 ## Using the voltFormula in Controller 
-
-1. Open a controller on Project Explorer
-2. Select and open your container. This opens the code window.
+### Add formula in a controller
+1. Open a controller on Project Explorer.
+2. Select and open your controller. This opens the code window.
 3. Right-click on the code window and select **Add Code from Formula**. The Formula Language window appear.
    <img src="../assets/images/vfaddcode.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 4. Add the code in the **Formula Language** window.
 
-	\****NOTE***\*
-	 - **@** chraracter for *NotesFormula*
-	 - **=** character  for *OpenFormula*
-	 - You can the see the syntax code or the intellisense for the formula that you choose.
-	 - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
+	!!! note "Notes"
+        - **@** chraracter for *NotesFormula*
+	    - **=** character  for *OpenFormula*
+	    - You can the see the syntax code or the intellisense for the formula that you choose.
+	     - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
       <img src="../assets/images/vfsyntax.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
 
-5. The code you enter in **Formula Language** is translated to autogenerated rosettajs code in the code window.  
-
-
-ALSO NEEDS EDIT EXISTING FORMULA  (right click on the javascript code to pop menu that shows EDIT formula)
-ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula and then try to edit formula) 
-
-
-
-
+5. The code you enter in **Formula Language** is translated to autogenerated rosettajs code in the code window.   
 ### Expected Ouput
     
 <img src="../assets/images/vfrosoutput.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
+### Edit formula in a controller
+1. Open a controller on Project Explorer
+2. Select and open your controller. This opens the code window.
 
+    !!!note
+        You can easily see the conversion formula that comes from the openFormula and notesFormula inbetween the comment  of rosetta autogenerated code.
+        ![autogenerated code](../assets/images/vfeditform.png)
+
+3. Right-click on the existing code and select **Edit Formula Code**. The Formula Language window appear and you can see the existing formula in the Formula Language window.
+    ![Edit Formula](../assets/images/vfclickedit.png)
+
+4. You can edit the code you want in the Formula Language window.
+
+    !!! note "Notes"
+        - **@** chraracter for *NotesFormula*
+        - **=** character  for *OpenFormula*
+        - You can the see the syntax code or the intellisense for the formula that you choose.
+        - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
+        - You can add or edit code in the formula language window as long as you folow the syntax.
+        - You can add more than one line of code. 
+      <img src="../assets/images/vfsyntax1.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
+
+5. The code you enter in **Formula Language** is translated to autogenerated rosettajs code in the code window.   
+### Expected Ouput
+    
+<img src="../assets/images/vfresedit.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
+
+### Edit rosetta javasript
+
+1. Open a controller on **Project Explorer.**
+2. Select and open your controller. This opens the code window.
+
+    !!!note
+        You can easily see the conversion formula that comes from the openFormula and notesFormula inbetween the comment  of rosetta autogenerated code.
+        ![autogenerated code](../assets/images/vfeditform.png)
+
+3. Add your formula in `rosettajs` in the code window, or edit the existing formula in the code window without opening the **Formula Language** window.
+
+    !!! note "Notes"
+        - When you add `rosetta` javascript,  you'll be able see the syntax code or the intellisense for the formula that you choose in code window.
+        - make sure you know the syntax for coding the `rosetta` javascript.
+     
+<!--ALSO NEEDS EDIT EXISTING FORMULA  (right click on the javascript code to pop menu that shows EDIT formula)
+ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula and then try to edit formula) 
+MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
+-->
+
+<!--## Using rosetta configuration panel of Iris
+1. Open the **project settings** icon.
+2. The project setting window appears. Click the **Rosetta** tab.
+3. -->
 
