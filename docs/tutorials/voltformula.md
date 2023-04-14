@@ -1,5 +1,5 @@
 # VoltFormula Tutorial
-The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go rosetta javascript.
+The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript.
 ## Before you start
 
 - You have completed the [Volt MX Go installation](installation.md#installing-volt-mx-go-iris).
