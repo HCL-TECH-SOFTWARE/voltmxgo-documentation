@@ -2,7 +2,7 @@
 The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go rosetta javascript.
 ## Before you start
 
-- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Go installation](installation.md#installing-volt-mx-go-iris).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
     - Server URL: `http://drapi.mymxgo.com` 
@@ -41,8 +41,8 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
 ## Open voltFormula through `Actions`
 
 1. Open your **Project.**
-2. From the **Project** tab of the **Project Explorer**, select the widget you want to apply the action to. 
-3. Once it’s highlighted on the Iris Canvas, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
+2. From the **Project** tab of the **Project Explorer**, go on `Forms` navigation and select the widget or object you want to apply action to. 
+3. Once in the Iris forms, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
 
     <img src="../assets/images/vfaction.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
 
