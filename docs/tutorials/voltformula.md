@@ -90,7 +90,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
 <img src="../assets/images/vfrosoutput.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
 ### Edit formula in a controller
-1. Open a controller on Project Explorer
+1. Open a controller on Project Explorer.
 2. Select and open your controller. This opens the code window.
 
     !!!note
@@ -115,7 +115,7 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
     
 <img src="../assets/images/vfresedit.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
 
-### Edit Rosetta Javasript
+### Edit Rosetta Javascript
 
 1. Open a controller on **Project Explorer.**
 2. Select and open your controller. This opens the code window.
@@ -129,15 +129,24 @@ This feature in Volt MX Go Iris is an added action in Volt MX Iris where you can
     !!!note
         - When you add `rosetta` javascript,  you'll be able see the syntax code or the intellisense for the formula that you choose in code window.
         - Make sure you know the syntax for coding the `rosetta` javascript.
+    
+     ![Edit Rosetta Javascript](../assets/images/vfjavaedit/.png)
      
 <!--ALSO NEEDS EDIT EXISTING FORMULA  (right click on the javascript code to pop menu that shows EDIT formula)
 ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula and then try to edit formula) 
 MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
 -->
 
-## Using rosetta configuration panel of Iris
+## Using rosetta setting panel of Iris
 1. Open the **project settings** icon.
-2. The project setting window appears. Click the **Rosetta** tab.
-    ![settings(../assets/images/vfrosettasetting.png)
-3. 
+    ![settings](../assets/images/vfrosettasetting.png)
+2. The **Project Setting** window appears. Click the **Rosetta** tab.
+    ![settings](../assets/images/vfsetting.png)
+
+    |Rosetta Settings| Description|
+    |----------------|------------|
+    |API configuration||
+    |Converter Configuration|You can select o clear the option|
+    |Use Native vs. API Conversion|You can select or clear the control flow statement that you want for your formula code|
+    |Version| This is where you get the version of the `SDK`,`API`,`Converter`, and `prettifier`|
 
