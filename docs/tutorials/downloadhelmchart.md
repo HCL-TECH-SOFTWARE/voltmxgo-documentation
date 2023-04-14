@@ -27,15 +27,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.  
 
-    The example procedure uses **vi** to edit the `values.yaml` file:
-
-    1. Run the following command:
-
-        ```
-        vi values.yaml
-        ```
-
-    2. Locate the following lines in the file and replace `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository:
+    1. Locate the following lines in the file and replace `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository:
 
         ```
         imageCredentials:
@@ -43,7 +35,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
             password: your-authentication-token
         ```
 
-    3. Save the file and exit.  
+    2. Save the file and exit.  
     
 ## 2. Deploy Domino 
 
