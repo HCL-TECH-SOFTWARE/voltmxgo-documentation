@@ -21,7 +21,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 1. [Install and configure K3s](k3sinstall.md)
 2. [Complete prerequisite procedures](prereq.md)
-3. [Download Domino/Keep Helm chart](downloadhelmchart.md)
+3. [Install Domino/Keep](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 6. [Connect to Domino server from Notes client](connectdominofromnotes.md)
@@ -30,7 +30,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 1. [Install Rancher Desktop](installrancher.md)
 2. [Complete prerequisite procedures](prereq.md)
-3. [Download Domino/Keep Helm chart](downloadhelmchart.md)
+3. [Install Domino/Keep](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 6. [Connect to Domino server from Notes client](connectdominofromnotes.md)
