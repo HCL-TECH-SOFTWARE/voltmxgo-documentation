@@ -92,8 +92,8 @@ For form-based data models, the following methods are generated:
 - GET :`Read` an existing Domino document, returning all non-null fields for that document.
 - PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
 - Delete :`Delete` the specified document.
-- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
-- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.
+<!--- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
+- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.-->
 
 ### Supported OData filter parameters, form-based GET
 

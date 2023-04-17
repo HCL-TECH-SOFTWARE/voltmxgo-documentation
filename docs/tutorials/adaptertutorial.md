@@ -93,10 +93,12 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
         Your environment name can only contain letters, numbers, and hyphens (-). A hyphen can't appear at the beginning or at the end of a name. A number can't appear at the beginning of a name. A name should be a minimum of three characters and a maximum of 20 characters long.
 
 4.	In the **Server** tab, enter the URL of your Volt MX Foundry in the **URL** text box.
-    The URL format is: <http or https>://<server_host>:<server_port>
-    For example, URL: http://mbaastest30.hcl.net:53504
-5.	Click **Test Connection** to verify that the entered URL is correct. If the test is successful, a check mark appears beside the **Server** tab.
-6. Click **Save**.
+    The URL format is: `<http or https>://<server_host>:<server_port>`
+    
+    For example: `http://mbaastest30.hcl.net:53504`
+
+5.  Click **Test Connection** to verify that the entered URL is correct. If the test is successful, a check mark appears beside the **Server** tab.
+6.  Click **Save**.
 
     ![](../assets/images/addenvironment.png)
 
@@ -160,7 +162,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 2. From the list, click GET. 
 4. Expand the **base mapper1**, and then select the **Test** tab.
 5. Click **Send**.
-6. The records are displayed on the Response console. Click Save after viewing. 
+6. The records are displayed on the Response console. Click **Save** after viewing. 
 
 ## Testing the POST Method by creating a record
 
