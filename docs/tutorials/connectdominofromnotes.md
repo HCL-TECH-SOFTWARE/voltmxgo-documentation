@@ -8,6 +8,9 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
 
 ## Procedure
 
+!!!note
+    The procedure is based on using HCL Notes v12.
+
 1. Run the following command to copy the `admin.id` from the domino/keep pod:
 
     ```
@@ -25,19 +28,19 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
             The default password is `password`.
 
 
-2. Specify your `names.nsf` file within the Notes client.
+3. Specify your `names.nsf` file within the Notes client.
 
-    1. On the Notes client, select **File** &rarr; **Application** &rarr; **Open**.
+    1. On the Notes client, select **File** &rarr; **Open** &rarr; **HCL Notes Application**.
     2. On the **Open Application dialog**, search and select the `names.nsf` file, and then click **Open**.
 
-3. Create a new server connection.
+4. Create a new server connection.
 
-    1. On the Notes client, select **New** &rarr; **Server Connection**. The **Server Connection** page opens.
+    1. On the Notes client, select **Advanced** &rarr; **New** &rarr; **Server Connection**. The **Server Connection** page opens.
     2. On the **Basics** tab, enter `keep` in the **Server name** text box and then select the **TCPIP** checkbox for **Use LAN port**. 
-    3. Click the **Advanced** tab, and then enter the TCP/IP address for your server in the **Destination server address** text box.
+    3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
     4. Click **Save & Close**.
 
 ## Expected result
 
-In your Notes client, you should now be able to select **File** &rarr; **Application** &rarr; **Open**, specify `keep` as the server name, and connect to your new Domino server.
+In your Notes client, you should now be able to select **File** &rarr; **Open** &rarr; **HCL Notes Application**, specify `keep` as the server name, and connect to your new Domino server.
 

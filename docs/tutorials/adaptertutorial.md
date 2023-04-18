@@ -162,7 +162,18 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 2. From the list, click GET. 
 4. Expand the **base mapper1**, and then select the **Test** tab.
 5. Click **Send**.
-6. The records are displayed on the Response console. Click **Save** after viewing. 
+6. All records are displayed on the Response console. Click **Save** after viewing. 
+
+**To view a filtered record**
+
+1. Expand the **base mapper1**, and then select the **Test** tab.
+2. Enter a query parameter in the **Enter the Query Params** text box.
+
+    ![Filtered record](../assets/images/getoneunid.png)
+
+3. Click **Send**.
+4. The record is displayed on the Response console. Click **Save** after viewing. 
+
 
 ## Testing the POST Method by creating a record
 
