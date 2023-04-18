@@ -6,7 +6,7 @@
 
 ## Before you start
 
-- You have completed the [Volt MX Go installation](installation.md#installing-volt-mx-go-iris).
+- You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
     - Server URL: `http://drapi.mymxgo.com` 
@@ -106,7 +106,7 @@ This feature in Volt MX Go Iris is a way to extract the domino **`.NSF`** file w
 4. Select your scope that you’ve configured in Domino Rest API. 
  
  	!!!note
-		These scopes are associated with the .nsf file from Domino Software and IBM Lotus Notes.
+		These scopes are associated with the .nsf file from Domino and Notes.
 
 	You can **select** or **deselect** the configured forms, fields, views and agent and click **Next.**
 

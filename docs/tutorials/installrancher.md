@@ -67,7 +67,8 @@ You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to intera
 wsl --setdefault Ubuntu
 ```
 
-Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory.
+!!!warning "Important"
+    Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
 ## Enable Port Forwarding for Ports 80, 443 and 1352
 
