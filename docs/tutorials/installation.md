@@ -38,7 +38,7 @@ Follow the order for completing the procedures according to your preferred deplo
 !!!tip
     You can see [FAQ and common procedures](../references/kubecheatsheet.md) for additional information.
 
-## Installing Volt MX Go Iris
+## Install Volt MX Go Iris
 
 **Prerequisite**
 

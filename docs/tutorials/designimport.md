@@ -6,7 +6,7 @@
 
 ## Before you start
 
-- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Go installation](installation.md#installing-volt-mx-go-iris).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
     - Server URL: `http://drapi.mymxgo.com` 
@@ -135,8 +135,10 @@ Once you click **Done**, each of the selected form, views and agents have import
 2. Go to the first step "**Getting Started**" and click **Next**.
 3. Click on **Use Existing** link on **Associate Foundry App**.
 	- Select from the Volt MX Go Application the foundry app and click **Associate**. The existing foundry app is selected and click **Next**.
-4. Click **Select Existing** on the Identity Service step. This connects the Domino Rest API service.
+
+4. Click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
 	- Select your **active app** from you Domino Rest API Identity Service.
+	
 5. Select your scope that you’ve configured in Domino Rest API. These scopes are associated with the .nsf file from Domino and Notes.
 
 	- You can **select** or **deselect** the configured `forms`, `fields`, `views` and `agents` and click **Next**. The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
