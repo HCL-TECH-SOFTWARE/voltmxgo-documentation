@@ -153,16 +153,16 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 5. Click **Generate**. The forms and view entities are now added to the **Data Model**. 
 
-## Testing the GET method by viewing a record
+## Test the GET method by viewing a record
 
 !!!note
     For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
-2. From the list, click GET. 
+2. From the list, click **GET**. 
 4. Expand the **base mapper1**, and then select the **Test** tab.
 5. Click **Send**.
-6. All records are displayed on the Response console. Click **Save** after viewing. 
+6. All records are displayed on the **Response** console. Click **Save** after viewing. 
 
 **To view a filtered record**
 
@@ -172,20 +172,62 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     ![Filtered record](../assets/images/getoneunid.png)
 
 3. Click **Send**.
-4. The record is displayed on the Response console. Click **Save** after viewing. 
+4. The record is displayed on the **Response** console. Click **Save** after viewing. 
 
 
-## Testing the POST Method by creating a record
+## Test the POST method by creating a record
 
 !!!note
     For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
-2. From the list, click POST to create a record.
+2. From the list, click **POST**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
 4. On the **Request Payload**, the fields of the data model should be displaying.
-5. Beside the fields, input the value, then click **Send**. The ID of the record is displayed on the **Response** console after the successful insertion of the record.
-6. Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
+5. Beside the fields, input the values, then click **Send**. 
+6. The ID of the record is displayed on the **Response** console after the successful insertion of the record. Click **Save** after viewing.
+
+    !!!tip
+        Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
+
+
+## Test the PUT method by updating a record
+
+!!!note
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
+
+1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
+2. From the list, click **PUT**.
+3. Expand the **base mapper1**, and then select the **Test** tab.	
+4. On the **Request Payload**, the fields of the data model should be displaying.
+5. Beside the fields, input the updated values, then click **Send**.
+
+    !!!note
+        All fields, updated or not, must be specified to maintain the fields in the note after the update. 
+
+    ![Input updated values](../assets/images/putrequest.png){: style="height:60%;width:60%"}
+
+6. The **Response** console shows the fields with updated values and the number of updated records. Click **Save** after viewing. 
+
+    ![Update result](../assets/images/putresponse.png){: style="height:60%;width:60%"}
+
+
+## Test the DELETE method by deleting a record
+
+!!!note
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
+
+1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
+2. From the list, click **DELETE**.
+3. Expand the **base mapper1**, and then select the **Test** tab.	
+4. On the **Request Payload**, the field of the data model should be displaying.
+5. Beside the field, input the ID of the record to be deleted, then click **Send**.
+
+    ![Delete request](../assets/images/deleterequest.png){: style="height:60%;width:60%"}
+
+6. The **Response** console shows the number of deleted records. Click **Save** after viewing.
+
+    ![Delete result](../assets/images/deleteresponse.png){: style="height:60%;width:60%"}
 
 ## Additional procedure
 
