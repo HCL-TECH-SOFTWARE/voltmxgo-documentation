@@ -26,6 +26,10 @@ The HCL Volt MX GO Early Access Release package includes:
 5. Click the **HCL Volt MX GO Early Access Release** from the search result.
 6. On the **Files** tab in the **Downloads** page, select all the files and click **Download Selected Files**.
 
+    **OR** 
+
+    Click the download icon beside the filename of each file. 
+
 ![Download HCL Volt MX GO Early Access Release package](../assets/images/downloadearelease.png)
 
 !!!tip

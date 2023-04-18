@@ -48,7 +48,7 @@ The procedures will guide you in the installation of Foundry.
 
 ![](../assets/images/output2.png)
 
-Once the dbupdate pod shows Completed in the STATUS column, press `Ctrl-c` to stop the command.
+Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created in MySql. Press `Ctrl-c` to stop the kubectl command.
 
 ## 3. Install Foundry
 
@@ -68,7 +68,7 @@ You should see an output similar to the following:
 
 ![](../assets/images/output1.png)
 
-Once all the foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.  
+Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.  
 
 **Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.   
 
