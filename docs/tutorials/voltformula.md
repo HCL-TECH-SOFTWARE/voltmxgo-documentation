@@ -1,8 +1,9 @@
 # VoltFormula Tutorial
-The following tutorial shows you how to use voltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript.
+
+This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) and have it translated automatically into JavaScript code.
 ## Before you start
 
-- You have completed the [Volt MX Go installation](installation.md#installing-volt-mx-go-iris).
+- You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
     - Server URL: `http://drapi.mymxgo.com` 
@@ -33,11 +34,6 @@ The following tutorial shows you how to use voltFormula in Volt MX Iris to conve
     ![Validate Foundry](../assets/images/dipreference.png){: style="height:80%;width:80%"}
 
 4. Click **Done**. 
-
-
-## Introduction to the VoltFormula
-
-This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) and have it translated automatically into JavaScript code.
 
 ## Open VoltFormula using the Action Editor
 
