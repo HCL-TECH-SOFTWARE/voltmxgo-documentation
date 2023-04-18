@@ -22,42 +22,45 @@ The following tutorial shows you how to use voltFormula in Volt MX Iris to conve
 2.  Enter your **credentials** in Volt MX Go Iris and click **SIGN-IN**.
     The Volt MX Go Iris app canvas opens.
 
-<img src="../assets/images/dilogin.png"  width="60%" height="60%" style="display: block; margin: 0 auto" />
+    ![Login page](../assets/images/dilogin.png){: style="height:60%;width:60%"}
 
-## Validating Volt MX Go Foundry
+## Validate Volt MX Go Foundry
 	
 1. Open the **Volt MX Iris** menu bar for **Mac** or **Edit** menu bar for **Windows** and click **Preferences**.
 2. This opens the **Volt MX Iris Preferences**. Click to **Volt MX Foundry**.
 3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` and click **Validate**. A confirmation will be displayed.
+
+    ![Validate Foundry](../assets/images/dipreference.png){: style="height:80%;width:80%"}
+
 4. Click **Done**. 
 
-<img src="../assets/images/dipreference.png"  width="80%" height="80%" style="display: block; margin: 0 auto" />
 
 ## Introduction to the VoltFormula
 
 This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) and have it translated automatically into JavaScript code.
 
-
-## Open voltFormula using the Action Editor
+## Open VoltFormula using the Action Editor
 
 1. Open your **Project**.
 2. From the **Project** tab of the **Project Explorer**, go on `Forms` navigation and select the widget or object you want to apply action to. 
 3. Once in the Iris forms, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
 
-    <img src="../assets/images/vfaction.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
+    ![](../assets/images/vfaction.png){: style="height:80%;width:80%"}
 
     The **Action Editor** opens and creates an action sequence for you to configure.
 
 4. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**.
-    <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
+    
+    ![](../assets/images/vfactioneditor.png){: style="height:80%;width:80%"}
 
-## Translating the OpenFormula and NotesFormula into Javascript
+## Translate OpenFormula and NotesFormula into Javascript
 
 1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the voltFormula.
     - **window for the translated OpenFormula and NotesFormula in JavaScript.**
     - **window for the formula language** - OpenFormula and NotesFormula are the accepted formulas to add in this window.
     - **window for the formula results**.
-    <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />
+    
+    ![](../assets/images/vfactioneditor.png){: style="height:90%;width:90%"}
 
 2. Click on **Formula Language** window and enter a valid formula.
 
@@ -66,15 +69,18 @@ This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](ht
     
     You can see the JavaScript code and the result.
 
-4. Click **Save**.
-  <img src="../assets/images/vfactioneditor.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />    
+    ![](../assets/images/vfactionformula.png){: style="height:90%;width:90%"}
 
-## Using the voltFormula in a Controller module
+4. Click **Save**.
+ 
+## Use VoltFormula in a Controller module
 ### Add formula in a controller
 1. Open a controller on **Project Explorer.**
 2. Select and open your controller. This opens the code window.
-3. Right-click on the code window and select **Add Code from Formula**. The Formula Language window appear.
-   <img src="../assets/images/vfaddcode.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
+3. Right-click the code window and select **Add Code from Formula**. The Formula Language window appear.
+
+    ![](../assets/images/vfaddcode.png){: style="height:90%;width:90%"}
+ 
 4. Add the code in the **Formula Language** window.
 
 	!!!note
@@ -82,22 +88,24 @@ This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](ht
 	    - **=** character  for *OpenFormula*
 	    - You can the see the syntax code or the IntelliSense for the formula that you choose.
 	    - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
-      <img src="../assets/images/vfsyntax.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
-
-
+      
+    ![](../assets/images/vfsyntax.png){: style="height:90%;width:90%"}
+  
     The code you enter in **Formula Language** is translated to autogenerated rosettajs code in the code window.   
     
-<img src="../assets/images/vfrosoutput.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
+    ![](../assets/images/vfrosoutput.png){: style="height:90%;width:90%"}  
 
 ### Edit formula in a controller
-1. Open a controller on Project Explorer.
+1. Open a controller on **Project Explorer**.
 2. Select and open your controller. This opens the code window.
 
     !!!note
-        You can easily see the conversion formula that comes from the openFormula and notesFormula inbetween the comment  of rosetta autogenerated code.
-        ![autogenerated code](../assets/images/vfeditform.png)
+        You can easily see the conversion formula that comes from the OpenFormula and NotesFormula inbetween the comment  of rosetta autogenerated code.
+        
+    ![autogenerated code](../assets/images/vfeditform.png)
 
 3. Right-click on the existing code and select **Edit Formula Code**. The Formula Language window appear and you can see the existing formula in the Formula Language window.
+
     ![Edit Formula](../assets/images/vfclickedit.png)
 
 4. You can edit the code you want in the Formula Language window.
@@ -109,11 +117,13 @@ This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](ht
         - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
         - You can add or edit code in the formula language window as long as you folow the syntax.
         - You can add more than one line of code. 
-      <img src="../assets/images/vfsyntax1.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
-
+    
+    ![](../assets/images/vfsyntax1.png){: style="height:90%;width:90%"}
+    
     The code you enter in **Formula Language** is translated to autogenerated `rosettajs` code in the code window.   
     
-<img src="../assets/images/vfresedit.png"  width="90%" height="90%" style="display: block; margin: 0 auto" />  
+    ![](../assets/images/vfresedit.png){: style="height:90%;width:90%"}
+      
 
 ### Edit Rosetta Javascript
 
@@ -121,8 +131,9 @@ This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](ht
 2. Select and open your controller. This opens the code window.
 
     !!!note
-        You can easily see the conversion formula that comes from the openFormula and notesFormula inbetween the comment  of rosetta autogenerated code.
-        ![autogenerated code](../assets/images/vfeditform.png)
+        You can easily see the conversion formula that comes from the OpenFormula and NotesFormula inbetween the comment  of rosetta autogenerated code.
+        
+    ![autogenerated code](../assets/images/vfeditform.png)
 
 3. Add your formula in `rosettajs` in the code window, or edit the existing formula in the code window without opening the **Formula Language** window.
 
@@ -132,17 +143,14 @@ This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](ht
         
     ![Edit Rosettajs](../assets/images/vfjavaedit.png)
      
+## Configure Volt Formula's Rosetta API Options
 
-
-<!--ALSO NEEDS EDIT EXISTING FORMULA  (right click on the javascript code to pop menu that shows EDIT formula)
-ALSO NEEDS REVERTING FORMULA (when you change the javascript converted formula and then try to edit formula) 
-MISSING ROSETTA CONFIGURATION PANEL OF IRIS  (eg.  Iris -> Project Settings -> Rosetta "Tab"
--->
-
-## Configuring Volt Formula's Rosetta API Options
 1. Open the **Project Settings** icon.
-    ![settings](../assets/images/vfrosettasetting.png)
+    
+    ![settings](../assets/images/vfrosettasetting.png){: style="height:80%;width:80%"}
+
 2. The **Project Setting** window appears. Click the **Rosetta** tab.
+    
     ![settings](../assets/images/vfsetting.png)
 
     |Rosetta Area | Description|
