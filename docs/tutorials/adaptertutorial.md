@@ -1,6 +1,6 @@
 # Domino Adapter tutorial
 
-The tutorial guides you in creating an app in Foundry and connecting the app to your Domino database as an endpoint via the Domino REST API, and testing the GET and POST methods.
+The tutorial guides you in creating an app in Foundry and connecting the app to your Domino database as an endpoint via the Domino REST API, and testing methods.
 
 ## Before you start
 
