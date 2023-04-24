@@ -22,7 +22,7 @@ The procedures will guide you in the installation of Foundry.
 
 3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository.
 
-    ```
+    ```{ .yaml .no-copy }
     imageCredentials:
       username: your-email
       password: your-authentication-token

@@ -4,7 +4,7 @@ Provides technical references and descriptions for using Volt MX Go.
 
 ## System requirements
 
-Check the minimum [System requirements](sysreq.md) for deploying the Early Access version of Volt MX Go.
+Check the minimum [System requirements](../tutorials/sysreq.md) for deploying the Early Access version of Volt MX Go.
 
 ## FAQ and common procedures
 

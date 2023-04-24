@@ -10,7 +10,7 @@ K3s is a fully compliant Kubernetes distribution. For more information, see [K3s
 !!!note
     If you will use Rancher Desktop in deploying the Early Access version of Volt MX Go, you don't need to install K3s. 
 
-Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](../references/sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met. 
+Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met. 
 
 ## 1. Install K3s
 
@@ -127,7 +127,7 @@ The binary images and Helm charts for Volt MX GO server components will be pulle
 
     The result should be similar as below:
 
-    ```
+    ``` { .yaml .no-copy }
     NAME                   STATUS   ROLES                  AGE   VERSION
     vm1.example.com        Ready    control-plane,master   25h   v1.23.15+k3s1
     ```

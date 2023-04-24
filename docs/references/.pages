@@ -1,6 +1,6 @@
 nav:
     - index.md
     #- whatisnew.md
-    - sysreq.md
+    - System requirements: ../tutorials/sysreq.html
     - kubecheatsheet.md
     - Rosetta API reference documentation: https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html

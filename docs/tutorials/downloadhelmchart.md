@@ -29,7 +29,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
 
     1. Locate the following lines in the file and replace `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository:
 
-        ```
+        ```{ .yaml .no-copy }
         imageCredentials:
             username: your-email
             password: your-authentication-token
@@ -59,7 +59,7 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
 
     Eventually you should see 3/3 in the READY column as shown below:
 
-    ```
+    ```{ .yaml .no-copy }
     NAME                           READY   STATUS              RESTARTS   AGE
     domino-keep-68596f98fd-bkpdz   0/3     ContainerCreating   0          34s
     domino-keep-68596f98fd-bkpdz   3/3     Running             0          72s

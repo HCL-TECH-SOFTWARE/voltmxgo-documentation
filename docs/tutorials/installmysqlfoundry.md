@@ -1,8 +1,8 @@
-# Install MySql for Foundry
+# Install MySQL for Foundry
 
-The procedure guides you in installing MySql for Foundry.
+The procedure guides you in installing MySQL for Foundry.
 
-1. Run the following commands to create a Foundry directory in the proper location, and and make the Foundry directory the current directory:
+1. Run the following commands to create a Foundry directory in the proper location, and make the Foundry directory the current directory:
 
     ```
     cd ..
@@ -16,7 +16,7 @@ The procedure guides you in installing MySql for Foundry.
     helm repo update
     ```
     
-3. Run the following commands to install the Bitnami MySql Helm chart to use for the Foundry database storage:
+3. Run the following commands to install the Bitnami MySQL Helm chart to use for the Foundry database storage:
 
     ```
     helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -31,7 +31,7 @@ The procedure guides you in installing MySql for Foundry.
 
     mysql-0 should show 1/1 in the READY column as shown in the following output example to indicate that the database is in the ready state.
 
-    ```
+    ```{ .yaml .no-copy }
     NAME                              READY   STATUS    RESTARTS   AGE
     domino-keep-5c65d76c6c-rkfml      3/3     Running   0          11m
     mysql-0                           1/1     Running   0          45s

@@ -11,7 +11,7 @@ The Early Access version of Volt MX Go is deployed with Kubernetes via the follo
 
 
 ## System requirements
-Before starting the installation, make sure to verify that you meet the [System requirements](../references/sysreq.md).
+Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
 ## Installation guide
 

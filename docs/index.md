@@ -16,9 +16,9 @@ Volt MX Go modernizes and extends the value of your Domino applications with the
 To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 
 ---
-## To get started:
+## Get started
 
-- [System requirements](references/sysreq.md)
+- [System requirements](tutorials/sysreq.md)
 - [Installation](tutorials/installation.md)
 - [Tutorials](tutorials/index.md)
 
