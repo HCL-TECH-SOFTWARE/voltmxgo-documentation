@@ -30,7 +30,7 @@
 
 ## Validate Volt MX GO Foundry
 	
-1. Open the **Vlt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
+1. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
 2. This opens the **Volt MX Iris Preferences**. Click to **Volt MX Foundry**.
 3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` and click **Validate**. 
 4. Click **Done**. 
@@ -43,20 +43,18 @@
 !!!note
 		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. 
 
-1. Click **Project** on the Volt MX Go Iris navigation tab and click the **New Project.**
-2. Select **Web App** and click **Next.**
+1. On the top menu, **Project** &rarr; **New Project**.
+2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
 	!!!note
-		For this release, select only the Web App.
+		For this release, only select **Web App**.
 
-3. Select the **device** you want to build for the new Project and click **Next**.
+3. On the **Which device size do you want to start building for first?** dialog, select the **device** you want to build for the new Project and click **Next**.
 
 	!!!note
-		For this release, select only the Desktop.
+		For this release, only select **Desktop**.
 
-4. Enter your **Project Name** and  click **Create**. 
-
-		
+4. Enter your **Project Name** and click **Create**. 		
 5. You can see your Project name on the upper-right corner of the Iris canvass.
 
 	![](../assets/images/dinewproject.png){: style="height:70%;width:70%"}
