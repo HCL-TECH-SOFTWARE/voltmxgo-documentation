@@ -9,7 +9,7 @@ The procedure guides you in installing Rancher Desktop, which is delivered as a 
 
 Rancher Desktop requires Windows Subsystem for Linux (WSL2) on Windows, which is automatically installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
-Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying Volt MX Go using Rancher Desktop running on Windows](../references/sysreq.md#for-deploying-volt-mx-go-using-rancher-desktop-running-on-windows) are met.
+Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying Volt MX Go using Rancher Desktop running on Windows](sysreq.md#for-deploying-volt-mx-go-using-rancher-desktop-running-on-windows) are met.
 
 !!!note
     You can use Rancher Desktop as a Non-Admin user on a Windows machine. However, an Admin's intervention is required during the installation process for the following components:
@@ -37,7 +37,7 @@ You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to intera
 
 **To add Ubuntu Linux distribution to WSL2:**
 
-1. [Download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu).
+1. [Download Ubuntu 20.04 LTS](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu). 
 2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
 3. [Install the Windows Terminal App](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab).
 
@@ -68,21 +68,21 @@ wsl --setdefault Ubuntu
 ```
 
 !!!warning "Important"
-    Use an Ubuntu terminal session to run all the commands presented in the [Complete prerequisite procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory.
+    Use an Ubuntu terminal session to run all the commands presented in the [Complete preparatory procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
 ## Enable Port Forwarding for Ports 80, 443 and 1352
 
 Rancher Desktop needs the forwarding of specific ports to WSL2. The script you need to run forwards ports 80, 443, and 1352 on all network interfaces to WSL2.
 
 !!!note
-    Make sure Ubuntu is running before proceeding and also **stop** Rancher Desktop.  If Rancher Desktop is not stopped for this step, you may experience problems connecting to your Foundry and Domino deployments.
+    Make sure Ubuntu is running before proceeding and also **stop** Rancher Desktop. If Rancher Desktop isn't stopped for this step, you may experience problems connecting to your Foundry and Domino deployments.
 
 **To enable port forwarding:**
 
 1. Download the port forwarding script `mxgo-port-forwarding.ps1`.
 
     !!!tip
-        For more information, see [Download HCL Volt MX GO Early Access Release](../howto/portaldownload.md).
+        For more information, see [Download HCL Volt MX GO Early Access Release](portaldownload.md).
 
 2. Open a **Windows PowerShell** as the Administrator.
 3. Run the following command and answer `A` when prompted.
@@ -131,4 +131,4 @@ After Rancher Desktop installation, users have access to these supporting utilit
 
 ## Next step
 
-Proceed to the [Complete prerequisite procedures](prereq.md).
+Proceed to the [Complete preparatory procedures](prereq.md).

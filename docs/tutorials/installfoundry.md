@@ -22,7 +22,7 @@ The procedures will guide you in the installation of Foundry.
 
 3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository.
 
-    ```
+    ```{ .yaml .no-copy }
     imageCredentials:
       username: your-email
       password: your-authentication-token
@@ -74,8 +74,5 @@ Monitor all the foundry pods except for the foundry-db-update pod as it has alre
 
 !!!note
     - If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
-    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md). 
-
-## Next step
-
-Proceed to [Connect to Domino server from your Notes client](connectdominofromnotes.md).
+    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
+    - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).

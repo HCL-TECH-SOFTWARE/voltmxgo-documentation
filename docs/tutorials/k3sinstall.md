@@ -10,7 +10,7 @@ K3s is a fully compliant Kubernetes distribution. For more information, see [K3s
 !!!note
     If you will use Rancher Desktop in deploying the Early Access version of Volt MX Go, you don't need to install K3s. 
 
-Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](../references/sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met. 
+Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met. 
 
 ## 1. Install K3s
 
@@ -75,11 +75,11 @@ sudo rm -rf helm-v3.11.2-linux-386.tar.gz linux-386
 For more information, see [Installing Helm](https://helm.sh/docs/intro/install/) and [Helm releases](https://github.com/helm/helm/releases).
 
 
-## 5. Obtain your authentication token from HCL Container Repository
+## 5. Export username and authentication token
 
-The binary images and Helm charts for Volt MX GO server components will be pulled from the HCL Container Repository. This will require you to get your authentication token from the HCL Container Repository. 
+The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. You must [obtain your authentication token from the HCL Container Repository](obtainauthenticationtoken.md) before running the commands. 
 
-1. Go to the [HCL Container Repository](https://hclcr.io).
+<!--1. Go to the [HCL Container Repository](https://hclcr.io).
 2. On the login page, click **LOGIN VIA OIDC Provider**, and then login using your corporate email address.
 3. On the **Projects** page, enter `voltmxgo` in the search field, and then click `voltmxgo-ea` on the search result. 
 
@@ -94,8 +94,8 @@ The binary images and Helm charts for Volt MX GO server components will be pulle
     ![user profile dialog](../assets/images/userprofile.png)
 
 6. Save the CLI secret value as it's required in the next steps. 
-7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.
-8. Run the following commands to export the username and authentication token. 
+7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.-->
+Run the following commands to export the username and authentication token. 
 
     !!!note
         Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
@@ -127,11 +127,11 @@ The binary images and Helm charts for Volt MX GO server components will be pulle
 
     The result should be similar as below:
 
-    ```
+    ``` { .yaml .no-copy }
     NAME                   STATUS   ROLES                  AGE   VERSION
     vm1.example.com        Ready    control-plane,master   25h   v1.23.15+k3s1
     ```
 
 ## Next step
 
-Proceed to the [Complete prerequisite procedures](prereq.md).
+Proceed to the [Complete preparatory procedures](prereq.md).

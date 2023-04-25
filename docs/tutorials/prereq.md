@@ -1,6 +1,6 @@
-# Complete prerequisite procedures
+# Complete preparatory procedure
 
-The following procedures must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
+The following procedure must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
 
 ## 1. Configure Helm to pull from HCL Container Repository
 
@@ -16,7 +16,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 If you get an error message similar to the following:
 
-```
+``` { .yaml .no-copy }
 Error: looks like https://hclcr.io/chartrepo/voltmxgo-ea is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo-ea/index.yaml : 401 Unauthorized
 ```
 
@@ -61,9 +61,9 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
     kubectl edit configmap -n kube-system coredns
     ```
 
-2. Locate the segment that looks like following:
+2. Locate the segment that looks like the following:
 
-    ```
+    ``` { .yaml .no-copy }
         import /etc/coredns/custom/*.server
       NodeHosts: |
         10.190.252.181 vm1.example.com
@@ -72,7 +72,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 
 3. Before the line that starts with `kind: ConfigMap`, add a new line that uses the same IP address, but adds the hard-coded host names. When done, the segment of the file looks like the following, but with your IP address and your own host name:
 
-    ```
+    ```{ .yaml .no-copy }
         import /etc/coredns/custom/*.server
       NodeHosts: |
         10.190.252.181 vm1.example.com

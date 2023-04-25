@@ -12,7 +12,7 @@ This tutorial guides you on accessing and running the First Touch app in Volt Fo
     - username: `mxgo admin`
     - password: `password`
 
-- You have [downloaded the HCL Volt MX GO Early Access Release package](../howto/portaldownload.md).
+- You have [downloaded the HCL Volt MX GO Early Access Release package](portaldownload.md).
 
 ## Log in to Volt MX Foundry
 
