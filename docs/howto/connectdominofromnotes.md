@@ -4,7 +4,7 @@ The procedure guides you in connecting to the Domino server from your Notes clie
 
 ## Before you start
 
-Make sure that your `/etc/hosts` file has the early access preview host names. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [adding early access preview host names](prereq.md#3-add-early-access-preview-host-names). 
+Make sure that your `/etc/hosts` file has the early access preview host names. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [adding early access preview host names](../tutorials/prereq.md#3-add-early-access-preview-host-names). 
 
 ## Procedure
 

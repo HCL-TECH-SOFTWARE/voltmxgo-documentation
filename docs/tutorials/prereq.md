@@ -1,6 +1,6 @@
-# Complete prerequisite procedures
+# Complete preparatory procedure
 
-The following procedures must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
+The following procedure must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
 
 ## 1. Configure Helm to pull from HCL Container Repository
 

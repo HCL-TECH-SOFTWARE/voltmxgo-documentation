@@ -74,8 +74,5 @@ Monitor all the foundry pods except for the foundry-db-update pod as it has alre
 
 !!!note
     - If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
-    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md). 
-
-## Next step
-
-Proceed to [Connect to Domino server from your Notes client](connectdominofromnotes.md).
+    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
+    - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).

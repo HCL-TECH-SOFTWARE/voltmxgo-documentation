@@ -3,13 +3,19 @@ nav:
     - Installation: 
         - installation.md
         - sysreq.md
-        - Install and configure K3s: k3sinstall.md
-        - Install Rancher Desktop: installrancher.md
-        - Complete prerequisite procedures: prereq.md
+        - Complete prerequisite procedures:
+            - prerequisite.md
+            - portaldownload.md
+            - obtainauthenticationtoken.md
+        - Deploy Kubernetes:
+            - deploykubernetes.md 
+            - Install and configure K3s: k3sinstall.md
+            - Install Rancher Desktop: installrancher.md
+        - Complete preparatory procedures: prereq.md
         - Install Domino/Keep: downloadhelmchart.md
         - Install MySQL for Foundry: installmysqlfoundry.md
         - Install Foundry: installfoundry.md
-        - Connect to Domino server from Notes client: connectdominofromnotes.md
+        - Install Volt MX Go Iris: installiris.md
     - firsttouch.md
     - designimport.md
     - voltformula.md
