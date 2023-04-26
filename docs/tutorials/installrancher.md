@@ -21,7 +21,7 @@ Prior to installing Rancher Desktop you need to ensure you have an up-to-date in
 
 ### Updating WSL2
 
-If you are already using WSL2, from a Windows command prompt or Powershell window, run the following command to ensure WSL2 is up-to-date:
+If you are already using WSL2, open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator", and run the following command to ensure WSL2 is up-to-date:
 
 ```
 wsl --update
@@ -37,14 +37,14 @@ Proceed [to install Rancher Desktop](#to-install-rancher-desktop).
 
 ### Installing WSL2
 
-From a Windows command prompt or Powershell window, run the following command to install WSL2 using Ubuntu-22.04 as the Linux distrbution:
+Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator", and run the following command to install WSL2 using Ubuntu-22.04 as the Linux distrbution:
 
 ```
 wsl --install -d Ubuntu-22.04
 ```
 
 !!!info "Important"
-    It is recommended to reboot your machine after this initial installation to complete the setup. Once the reboot has completed please return to this documentation and complete the steps that follow.
+    Restart your machine after this initial installation to complete the setup. Once the restart has completed please return to this documentation and complete the steps that follow.
 
 Type "Ubuntu" on the Windows search bar (Type here to search) and open the **Ubuntu on Windows App**. You should be prompted to create a username and password. Use the first letter of your first name and your full last name as your username such as _jdoe_. Use a password you can easily remember.
 
@@ -70,7 +70,7 @@ You are now ready to install Rancher Desktop.
 1. Download the [Rancher.Desktop.Setup.1.7.0.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.7.0/Rancher.Desktop.Setup.1.7.0.msi) installer.
 
     !!!note
-        There is a serious defect in 1.8.n that makes 1.8.n very difficult to use. It's strongly recommend skipping 1.8.n.
+        There is a serious defect in 1.8 that makes 1.8 very difficult to use. It's strongly recommended to skip 1.8.
 
 2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
 3. Review the License Agreement, and then click **I Agree** to proceed with the installation.
@@ -143,7 +143,7 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 
 ## Reset Port Forwarding for Ports 80, 443 and 1352
 
-If at any time you need to reset port fowarding for Ports 80, 443 and 1352, you can do so using the following steps:
+If at any time you need to reset (disable or stop) port fowarding for Ports 80, 443 and 1352, you can do so using the following steps:
 
 1. Open a **Windows PowerShell** as the Administrator.
 2. Run the following command:
