@@ -1,6 +1,9 @@
 # Complete preparatory procedure
 
-The following procedure must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation. 
+The following procedure must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation.
+
+!!!warning "Important"
+    Use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
 ## 1. Configure Helm to pull from HCL Container Repository
 
@@ -12,7 +15,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo-ea  --username $HCLCR_USERNAME
     ```
 
-2. When prompted for a password, enter your authentication token for HCL Container Repository.  
+2. When prompted for a password, enter your authentication token for HCL Container Repository.
 
 If you get an error message similar to the following:
 
@@ -55,7 +58,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 
 ### For K3s only
 
-1. Run the following command to make these name/IP address matches available within the Kubernetes: 
+1. Run the following command to make these name/IP address matches available within the Kubernetes:
 
     ```
     kubectl edit configmap -n kube-system coredns
@@ -92,7 +95,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
 You must restart Rancher Desktop:
 
 1. Select **File** &rarr; **Exit** to close the current session.
-2. Open a new session by opening Rancher Desktop via the desktop icon. 
+2. Open a new session by opening Rancher Desktop via the desktop icon.
 
 ## 4. Create a temp directory for the charts
 

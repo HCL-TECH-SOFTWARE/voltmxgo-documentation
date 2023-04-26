@@ -1,55 +1,84 @@
 # Install Rancher Desktop
 
-The procedure guides you in installing Rancher Desktop, which is delivered as a desktop app.
+The procedure guides you in installing Rancher Desktop on Windows, which is delivered as a desktop app.
 
 ## Before you start
 
 !!!note
     If you will use K3s in deploying the Early Access version of Volt MX Go, you don't need to execute this procedure.  Rancher Desktop includes a customized configuration of K3s and is geared to enabling developers with a small, desktop style Kubernetes cluster.  It includes other developer centric tooling not included in K3s.
 
-Rancher Desktop requires Windows Subsystem for Linux (WSL2) on Windows, which is automatically installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
-
 Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying Volt MX Go using Rancher Desktop running on Windows](sysreq.md#for-deploying-volt-mx-go-using-rancher-desktop-running-on-windows) are met.
 
 !!!note
     You can use Rancher Desktop as a Non-Admin user on a Windows machine. However, an Admin's intervention is required during the installation process for the following components:
 
-    - WSL2 - You need Admin privileges to install WSL2, which is an essential component of Rancher Desktop.
+    - WSL2 - Rancher Desktop requires Windows Subsystem for Linux (WSL2) on Windows. You need Admin privileges to install WSL2, which is an essential component of Rancher Desktop.
     - Rancher Desktop Privileged Service - You need Admin privileges to install the Rancher Desktop privileged service, which is required to expose applications/services, running inside containers, on all interfaces on the host machine. However, you can skip the installation of the Rancher Desktop Privileged Service with the limitation that you will not be able to expose applications/services on any interface except 127.0.0.1.
+
+## Install or Update WSL2
+
+Prior to installing Rancher Desktop you need to ensure you have an up-to-date installation of WSL2. If you are already using WSL2 use the steps for [Updating WSL2](#updating-wsl2). Otherwise, use the steps for [Installing WSL2](#installing-wsl2).
+
+### Updating WSL2
+
+If you are already using WSL2, from a Windows command prompt or Powershell window, run the following command to ensure WSL2 is up-to-date:
+
+```
+wsl --update
+```
+
+Follow any instructions given by the wsl update process. Afterwards, from a Windows command prompt or Powershell window, run the following command to ensure Ubuntu is set as the default distribution:
+
+```
+wsl --setdefault Ubuntu
+```
+
+Proceed [to install Rancher Desktop](#to-install-rancher-desktop).
+
+### Installing WSL2
+
+From a Windows command prompt or Powershell window, run the following command to install WSL2 using Ubuntu-22.04 as the Linux distrbution:
+
+```
+wsl --install -d Ubuntu-22.04
+```
+
+!!!info "Important"
+    It is recommended to reboot your machine after this initial installation to complete the setup. Once the reboot has completed please return to this documentation and complete the steps that follow.
+
+Type "Ubuntu" on the Windows search bar (Type here to search) and open the **Ubuntu on Windows App**. You should be prompted to create a username and password. Use the first letter of your first name and your full last name as your username such as _jdoe_. Use a password you can easily remember.
+
+If you are not prompted to create a username and password, use the following command to do so, adding your username such as _sudo adduser jdoe_:
+
+```
+sudo adduser
+```
+
+It is not required to enter additional information, simply hit the <Enter> key and respond *Y* when  prompted _Is the information correct?_.
+
+!!!info "Important"
+    Make certain that **Ubuntu-22.04** is specified as your default WSL distribution. From a Windows command prompt or Powershell window run the following command:
+    ```
+    wsl --setdefault Ubuntu-22.04
+    ```
+
+You are now ready to install Rancher Desktop.
+
 
 ## To install Rancher Desktop
 
-1. Download the [Rancher.Desktop.Setup.1.7.0.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.7.0/Rancher.Desktop.Setup.1.7.0.msi) installer. 
+1. Download the [Rancher.Desktop.Setup.1.7.0.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.7.0/Rancher.Desktop.Setup.1.7.0.msi) installer.
 
     !!!note
-        There is a serious defect in 1.8 that makes 1.8 very difficult to use. It's strongly recommend skipping 1.8.0.
+        There is a serious defect in 1.8.n that makes 1.8.n very difficult to use. It's strongly recommend skipping 1.8.n.
 
 2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
 3. Review the License Agreement, and then click **I Agree** to proceed with the installation.
 4. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to install the Rancher Desktop Privileged Service.
 5. Follow the prompts to confirm installation.
-6. In the **General** settings for Rancher Desktop, toggle off the **Check for updates automatically** as you don't want to be upgraded to version 1.8.
+6. In the **General** settings for Rancher Desktop, toggle off the **Check for updates automatically** as you don't want to be upgraded to version 1.8.n.
 7. When the installation completes, click **Finish** to close the installation wizard.
-
-## Post installation
-
-You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to interact with the Rancher Desktop support for Kubernetes, via running some previously listed utilities (commands) to configure and install Volt MX GO.
-
-**To add Ubuntu Linux distribution to WSL2:**
-
-1. [Download Ubuntu 20.04 LTS](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu). 
-2. [Configure Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#4-configure-ubuntu).
-3. [Install the Windows Terminal App](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab).
-
-4. Configure the Windows Terminal App.
-
-    1. Open Windows Terminal and go to the **Settings** UI window.
-    2. Select **Startup** and choose **Ubuntu** as the **Default profile** for your terminal.
-    3. Click **Save**.
-
-    ![Windows Terminal configuration](../assets/images/ubuntuconfig.png)
-
-5. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
+8. Make sure that **Ubuntu-22.04** is selected under **WSL** in Rancher Desktop:
 
     1. Open Rancher Desktop, and then click the **Settings** icon.
 
@@ -61,14 +90,9 @@ You must add an Ubuntu Linux distribution to WSL2. You will use Ubuntu to intera
 
     3. Click **Apply**.
 
-6.  Make certain that **Ubuntu** is specified as your default WSL distribution.  From a Windows command prompt or Powershell window run the following command:
-
-```
-wsl --setdefault Ubuntu
-```
-
 !!!warning "Important"
-    Use an Ubuntu terminal session to run all the commands presented in the [Complete preparatory procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Terminal" in the Windows search box and select the Terminal App. An Ubuntu terminal session opens with your home directory set as your current directory.
+    Use an Ubuntu terminal session to run all the commands presented in the [Complete preparatory procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
+
 
 ## Enable Port Forwarding for Ports 80, 443 and 1352
 
@@ -116,6 +140,18 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 
     - Rancher Desktop stops and restarts.
     - WSL instances stop and restart.
+
+## Reset Port Forwarding for Ports 80, 443 and 1352
+
+If at any time you need to reset port fowarding for Ports 80, 443 and 1352, you can do so using the following steps:
+
+1. Open a **Windows PowerShell** as the Administrator.
+2. Run the following command:
+
+    ```
+    netsh interface portproxy reset
+    ```
+
 
 ## Additional information
 
