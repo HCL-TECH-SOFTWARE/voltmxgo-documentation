@@ -61,7 +61,7 @@ export KUBECONFIG=~/.kube/config
 
 ## 4. Install Helm
 
-Helm is the package manager for Kubernetes and will be used to install Volt MX Go. For more information, see [Helm](https://helm.sh/).  
+Helm is the package manager for Kubernetes and use to install Volt MX Go. For more information, see [Helm](https://helm.sh/).  
 
 To install Helm, run the following commands:
 
@@ -97,15 +97,15 @@ The binary images and Helm charts for Volt MX GO server components are pulled fr
 7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.-->
 Run the following commands to export the username and authentication token. 
 
-    !!!note
-        Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
+!!!note
+    Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
 
-    ```
-    export HCLCR_USERNAME=<your hclcr username>
-    ```
-    ```
-    export HCLCR_TOKEN=<your hclcr authentication token>
-    ```
+```
+export HCLCR_USERNAME=<your hclcr username>
+```
+```
+export HCLCR_TOKEN=<your hclcr authentication token>
+```
 
 ## 6. Ensure K3s is active and ready
 
@@ -134,4 +134,4 @@ Run the following commands to export the username and authentication token.
 
 ## Next step
 
-Proceed to the [Complete preparatory procedures](prereq.md).
+Proceed to [Complete preparatory procedures](prereq.md).

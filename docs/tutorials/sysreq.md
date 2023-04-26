@@ -84,4 +84,4 @@ Mac OS X 10.9 and above
 
 ## Next step
 
-Proceed to [Installation](../tutorials/installation.md)
+Proceed to [Installation](../tutorials/installation.md).
