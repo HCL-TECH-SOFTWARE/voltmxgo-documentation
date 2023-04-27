@@ -20,7 +20,7 @@ The procedures will guide you in the installation of Foundry.
     mv voltmx-foundry/values.yaml  ./
     ```
 
-3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](k3sinstall.md#5-obtain-your-authentication-token-from-hcl-container-repository) used with the HCL Container Repository.
+3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     ```{ .yaml .no-copy }
     imageCredentials:
@@ -73,6 +73,6 @@ Monitor all the foundry pods except for the foundry-db-update pod as it has alre
 **Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.   
 
 !!!note
-    - If you want to access this deployment from a remote machine, you will most likely need to update the `/etc/hosts` file on the remote machine as well.
+    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
     - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).

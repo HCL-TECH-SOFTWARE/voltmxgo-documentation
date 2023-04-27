@@ -3,7 +3,7 @@
 K3s is a fully compliant Kubernetes distribution. For more information, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/)
 
 !!!warning "Caution"
-    In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must be run with sudo permissions. For these commands, you need to configure your non-root user with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906).
+    In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must with sudo permissions. For these commands, you need to configure your non-root user with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906).
 
 ## Before you start
 
@@ -26,7 +26,7 @@ Before installing K3s, make sure you have met any operating system configuration
 
 ## 2. Enable non-root user to use kube commands
 
-1. Replace `<username>` in the following command with your Linux username, which you will use to install and work Volt MX Go. Run the command:
+1. Replace `<username>` in the following command with your Linux username, which you will use to install and work on Volt MX Go. Run the command:
 
     ```
     export K3SUSER=<username>
@@ -79,26 +79,11 @@ For more information, see [Installing Helm](https://helm.sh/docs/intro/install/)
 
 The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. You must [obtain your authentication token from the HCL Container Repository](obtainauthenticationtoken.md) before running the commands. 
 
-<!--1. Go to the [HCL Container Repository](https://hclcr.io).
-2. On the login page, click **LOGIN VIA OIDC Provider**, and then login using your corporate email address.
-3. On the **Projects** page, enter `voltmxgo` in the search field, and then click `voltmxgo-ea` on the search result. 
-
-    ![search project](../assets/images/searchproj.png)
-
-4. On the **voltmxgo-ea** project page, click your username and select **User Profile**.
-
-    ![user profile](../assets/images/userprofile1.png)
-
-5. On the **User Profile** dialog, copy the value of the **CLI secret** by clicking the copy icon.
-
-    ![user profile dialog](../assets/images/userprofile.png)
-
-6. Save the CLI secret value as it's required in the next steps. 
-7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.-->
 Run the following commands to export the username and authentication token. 
 
 !!!note
-    Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
+    - Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. *Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email*.
+    - Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
 
 ```
 export HCLCR_USERNAME=<your hclcr username>

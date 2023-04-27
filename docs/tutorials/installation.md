@@ -16,7 +16,7 @@ Before starting the installation, make sure to verify that you meet the [System 
 
 ## Installation guide
 
-!!!note
+!!!info "Important"
     Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures. 
 
 Follow the order for completing the procedures according to your preferred deployment option.

@@ -19,17 +19,5 @@ The binary images and Helm charts for Volt MX GO server components are pulled fr
 
     ![user profile dialog](../assets/images/userprofile.png)
 
-6. Save the CLI secret value as it's required in the next steps. 
+6. Save the **CLI secret** value as it's required in the next steps. 
 7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.
-
-<!--8. Run the following commands to export the username and authentication token. 
-
-    !!!note
-        Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
-
-    ```
-    export HCLCR_USERNAME=<your hclcr username>
-    ```
-    ```
-    export HCLCR_TOKEN=<your hclcr authentication token>
-    ```-->
