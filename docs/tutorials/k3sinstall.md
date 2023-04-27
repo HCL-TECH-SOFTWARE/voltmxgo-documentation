@@ -61,7 +61,7 @@ export KUBECONFIG=~/.kube/config
 
 ## 4. Install Helm
 
-Helm is the package manager for Kubernetes and use to install Volt MX Go. For more information, see [Helm](https://helm.sh/).  
+Helm is the package manager for Kubernetes and is used to install Volt MX Go. For more information, see [Helm](https://helm.sh/).  
 
 To install Helm, run the following commands:
 
