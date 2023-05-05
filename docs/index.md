@@ -23,7 +23,11 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 - [Tutorials](tutorials/index.md)
 
 ---
+## What's new
 
+For the latest release information about Volt MX Go, see [What's new](../docs/references/whatisnew.md).
+
+---
 ## How the documentation is organized
 
 The Volt MX Go documentation is based on the [Diátaxis framework](https://diataxis.fr/), which organizes documentation into the following modes to address users' documentation needs at different times and in different circumstances. Below shows an overview that guides you on where to look for needed information:

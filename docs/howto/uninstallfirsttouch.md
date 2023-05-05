@@ -13,13 +13,13 @@ The procedure guides you in uninstalling First Touch in case you want to start o
     Select **VOLT MX GO First Touch** from the side panel. 
 
 2. On the **Welcome to Volt MX Go** dialog, select **Uninstall First Touch Recipes**. 
-3. Click **Next**. A **Progress** dialog shows the status of the uninstallation subprocesses. 
+3. Click **Next**. An uninstall progress dialog shows the status of the uninstallation subprocesses. 
 
     !!!note 
         -  If the Domino REST API configuration can't be pulled from the object service or the object service has been unlinked or deleted, enter your Domino REST API details in the **Uninstall First Touch** dialog and click **Next**. 
         -  If another app is published to the environment created when First Touch was installed, the Progress dialog indicates that the environment isn't deleted as it's used by another app. However, the First Touch app is removed from the environment. 
 
-4.	After the completion of each uninstallation subprocess as indicated by a check icon, close the **Progress** dialog. 
+4.	After the completion of each uninstallation subprocess as indicated by a check icon, click **OK** to close the dialog. 
 
 ## Expected result
 

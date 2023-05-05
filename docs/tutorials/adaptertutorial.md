@@ -116,12 +116,15 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 5.	Under **Connection Parameters**:
 
     1. Enter the Domino REST API server URL in the **Keep API Base URL** text field.
-    2. Enter a value in the **Connection Timeout** text field. By default, the value is set 30.
+    2. Enter a value in the **Connection Timeout** text field. By default, the value is set to 30 ms.
      
-    !!!tip
-        To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a "Connection Successful" message if the configured connection parameters are correct. 
+    !!!note
+        The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.  
 
     ![](../assets/images/objectconparam.png)
+
+    !!!tip
+        To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a "Connection Successful" message if the configured connection parameters are correct.
 
 6.	Under **Authentication**: 
 
