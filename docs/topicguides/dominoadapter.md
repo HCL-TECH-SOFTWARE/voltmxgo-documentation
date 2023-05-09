@@ -4,7 +4,9 @@ The Domino Adapter makes Domino a core part of the Foundry Object services so th
 
 ## Authorization
 
-The Domino Adapter interacts with Domino for both configuration and run-time activities by leveraging the Domino REST API, which requires an authorization token. The Domino Adapter relies directly on the Identity service of Foundry and indirectly on the Domino REST API OAuth REST API to obtain valid authorization tokens. The same Identity service is used for authorizing access to Domino REST API for both configuration flow, such as configuring Object services in Foundry, and runtime flow, such as using the Object service from Iris applications.
+The Domino Adapter interacts with Domino for both configuration and run-time activities by leveraging the Domino REST API, which requires an authorization token. The Domino Adapter relies directly on the Identity service of Foundry and indirectly on the OAuth REST API of Domino REST API to obtain valid authorization tokens for configuration and runtime. 
+
+<!--The same Identity service is used for authorizing access to Domino REST API for both configuration flow, such as configuring Object services in Foundry, and runtime flow, such as using the Object service from Iris applications.-->
 
 ## Object Services
 
@@ -81,7 +83,7 @@ The table shows a simplified list of data-type mappings between Domino REST API 
 |all others|string|
 
 !!!tip
-    * [See data model metadata attribute](#data-model-metadata-attribute).
+    *[See data model metadata attribute](#data-model-metadata-attribute).
 
 ### Meta fields
 
