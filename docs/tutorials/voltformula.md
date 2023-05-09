@@ -18,12 +18,14 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
     !!!note
         You can also start Iris by going to the folder where it's stored and double-clicking it.
 		
-   	On launching Iris, the Volt MX Go cloud login screen appears for license validation.
+2. On launching Iris, the Volt MX Go cloud login screen appears for license validation. Click **Close.**
 
-2.  Enter your **credentials** in Volt MX Go Iris and click **SIGN-IN**.
-    The Volt MX Go Iris app canvas opens.
+3. Go to [Validate Volt MX GO Foundry](#validate-volt-mx-go-foundry) procedure.
 
-    ![Login page](../assets/images/dilogin.png){: style="height:60%;width:60%"}
+
+4.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
+
+	![Log in screen](../assets/images/dilogin.png){: style="height:60%;width:60%"}
 
 ## Validate Volt MX Go Foundry
 	
@@ -37,9 +39,12 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
 ## Open VoltFormula using the Action Editor
 
+!!!Tip
+    To see your Project, click in **Design** tab beside the **Storyboard** tab.
+
 1. Open your **Project**.
-2. From the **Project** tab of the **Project Explorer**, go on `Forms` navigation and select the widget or object you want to apply action to. 
-3. Once in the Iris forms, right-click it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
+2. On the Project window, find the `Forms`. Once you click the `form`, the `form appears on the canvass.  
+3. On the `form` canvass, select the widget or object you want to apply action to. **Right-click** it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
 
     ![](../assets/images/vfaction.png){: style="height:80%;width:80%"}
 
