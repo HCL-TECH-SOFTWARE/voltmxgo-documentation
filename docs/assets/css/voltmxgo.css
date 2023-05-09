@@ -46,6 +46,10 @@ pre {
     --md-code-font: "Courier";
   }
   
+  :root > * {
+    --md-code-hl-string-color: #475156;
+  }
+  
   .md-typeset h1{
     font-family:"HCLTech Roobert";
   }

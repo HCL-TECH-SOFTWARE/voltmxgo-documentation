@@ -6,8 +6,12 @@ The section provides information on the latest features, improvements, and resol
 
 ### Improvements
 
-- Simplified [First Touch uninstall procedure](../howto/uninstallfirsttouch.md) for better user experience.
-- Domino Adapter now supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).  
+- Simplified First Touch [uninstall procedure](../howto/uninstallfirsttouch.md) for better user experience.
+- Domino Adapter supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
+
+### Others
+
+- Updated commands in the installation procedures. 
 ## Early Access v1
 
 - First release of the early access version of Volt MX Go.

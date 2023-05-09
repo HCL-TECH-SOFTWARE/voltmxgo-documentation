@@ -89,7 +89,7 @@ In addition to the document fields specified in the database design such as `for
 
 For form-based data models, the document's `@unid` is an obvious example. Below are other `meta-fields` you may see for each document:
 
-```
+```{ .yaml .no-copy }
 x_0040addedtofile	
 x_0040created	
 x_0040etag	
@@ -110,7 +110,7 @@ x_0040unread
 
 For view-based data models, the following `meta-fields` are returned:
 
-```
+```{ .yaml .no-copy }
 x_0040etag	
 x_0040form	
 x_0040index	
@@ -138,18 +138,6 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
     |----|----|----|
     |RICH TEXT|richtext|not used|
     |MULTI-VALUE|array|the array type, such as string, number|
-
-<!--#### Additional Metadata per row
-
-In addition to the document fields specified in the database design, metadata "fields" related Domino document data is also included. 
-
-For form-based data models, the document's `@unid` is an obvious example, along with date information (created, updated, accessed) and parent UNID.
-
-For view-based data models, `UNID` and `form name` for the document associated with a view row are included. 
-
-!!!note
-    `UNID` isn't necessarily unique for view rows, particularly more than one row in a view may be associated with the same database document.
-    -->
 
 ## Methods (Verbs)
 
