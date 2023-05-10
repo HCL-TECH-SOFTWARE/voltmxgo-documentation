@@ -107,7 +107,7 @@
 	!!!tip
 		It may take a while of publishing the imported irish app.
 
-	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
+	![](../assets/images/disummary.png){: style="height:80%;width:80%"}	
 
 7. On the final step **Result** , click **Done**. Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris.
 
@@ -129,7 +129,7 @@
 5. On the fourth step **Scope and Forms**, select your scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
 
-	- You can **select** or **deselect** the configured `forms`, `fields` and `views` and click **Next**. The lists you see are the ones you choose in the configured `forms` and `views`, thensave on your scope in Domino Rest API configurations.
+	- You can **select** or **deselect** the configured `forms`, `fields` and `views` and click **Next**. The lists you see are the ones you choose in the configured `forms` and `views`, then save on your scope in Domino Rest API configurations.
 
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
@@ -146,10 +146,10 @@
 ## CRUD operation upon importing the .NSF file
 
 !!!note
-	Before you can do the CRUD operation in your imported domino applicatiion, you must first build and published web in Iris.
+	Before you can do the CRUD operation in your imported domino application, you must first build web in Iris.
 	To do this, go this link: [Publishing a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#build-and-publish-web-app)
 
-1. Log in your account in Domino REST API using the newly published imported domino apllication.
+1. Log in your account in Domino REST API using the newly published imported domino application.
 
 	!!!note
 		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
