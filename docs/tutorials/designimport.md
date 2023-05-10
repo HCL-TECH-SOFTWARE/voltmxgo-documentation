@@ -161,7 +161,7 @@
 
 	!!!note
 		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
-		All the `views` and `forms` of your .NSF file have imported, so you can design your **`.NSF`** synchronous to the **Notes Designer**.
+		All the `views` and `forms` of your `.NSF` file have imported, so you can design your **`.NSF`** synchronous to the **Notes Designer**.
 
 2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
 	
