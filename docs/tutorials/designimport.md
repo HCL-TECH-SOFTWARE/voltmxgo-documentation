@@ -107,11 +107,19 @@
 	!!!tip
 		It may take a while of publishing the imported Irish app.
 
+	
 	![](../assets/images/disummary.png){: style="height:80%;width:80%"}	
 
-7. On the final step **Result** , click **Done**. Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris.
+7. On the final step **Result** , you can see the final `forms` and `views`. 
+ 
+	!!!tip
+		The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
 
-![](../assets/images/dioutput.png)
+	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
+
+	Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris.
+	![](../assets/images/dioutput.png)
 
 !!!note
 		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
@@ -139,28 +147,28 @@
 ![](../assets/images/dioutput.png)
 
 !!!note
-		- You can view the final result of the .nsf file that you configured in Domino REST API.
+		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms` and  `views` in one page.
 
 
 ## CRUD operation upon importing the .NSF file
 
 !!!note
-	Before you can do the CRUD operation in your imported domino application, you must first build web in Iris.
-	To do this, go this link: [Publishing a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#build-and-publish-web-app)
+	Before you can do the CRUD operation in your imported domino application, you must first build and published web in Iris.
+	To do this, go this link: [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app)
 
 1. Log in your account in Domino REST API using the newly published imported domino application.
 
 	!!!note
 		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
-		All the `views` and `forms` of your .NSF file have imported, so you can design your **.NSF** synchronous to the **Notes Designer**.
+		All the `views` and `forms` of your .NSF file have imported, so you can design your **`.NSF`** synchronous to the **Notes Designer**.
 
 2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
 	
 	![Screenshot](../assets/images/dinewview.png)
 
 3. Click **Add New**.
-4. Fill in the fields and click **Add**. This add the data in the .NSF file.
+4. Fill in the fields and click **Add**. This add the data in the `.NSF` file.
 
 	![Screenshot](../assets/images/dinewview1.png)
 
