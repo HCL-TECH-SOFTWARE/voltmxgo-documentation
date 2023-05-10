@@ -2,11 +2,35 @@
 
 ## About this procedure
 
-The procedure guides you in manually uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
+The procedure guides you in uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
 
 ## To uninstall First Touch
 
-To uninstall First Touch, you have to uninstall the Domino REST API configuration and also uninstall the Foundry configuration.
+1. On the **Apps** page of the **Volt MX Foundry Console**, click **GET STARTED**.  
+
+    OR
+
+    Select **VOLT MX GO First Touch** from the side panel. 
+
+2. On the **Welcome to Volt MX Go** dialog, select **Uninstall First Touch Recipes**. 
+3. Click **Next**. An uninstall progress dialog shows the status of the uninstallation subprocesses. 
+
+    !!!note 
+        -  If the Domino REST API configuration can't be pulled from the object service or the object service has been unlinked or deleted, enter your Domino REST API details in the **Uninstall First Touch** dialog and click **Next**. 
+        -  If another app is published to the environment created when First Touch was installed, the Progress dialog indicates that the environment isn't deleted as it's used by another app. However, the First Touch app is removed from the environment. 
+
+4.	After the completion of each uninstallation subprocess as indicated by a check icon, click **OK** to close the dialog. 
+
+## Expected result
+
+- The First Touch app and the environment created when installing First Touch are deleted in Volt MX Foundry.
+
+    !!!note
+        The environment isn't deleted during the uninstallation **if another app is published to the environment**.
+
+- The schema, scope, and app related to the First Touch app are deleted from the Domino REST API.
+
+<!--To uninstall First Touch, you have to uninstall the Domino REST API configuration and also uninstall the Foundry configuration.
 
 ### To uninstall the Domino REST API configuration
 
@@ -53,3 +77,4 @@ To uninstall First Touch, you have to uninstall the Domino REST API configuratio
     3. If there is a `FirstTouchEnv` environment, click the menu icon in the upper right
 corner of `FirstTouchEnv` environment, and then click **Delete**.
     4. On the confirmation dialog, select the **Server** checkbox, and then click **Delete**.
+    -->
