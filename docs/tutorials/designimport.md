@@ -50,18 +50,18 @@
 1. On the top menu, **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-	!!!note
-		For this release, only select **Web App**.
+	![](../assets/images/distart.png){: style="height:70%;width:70%"}
 
 3. On the **Which device size do you want to start building for first?** dialog, select the **device** you want to build for the new Project and click **Next**.
 
-	!!!note
-		For this release, only select **Desktop**.
+	![](../assets/images/didevice.png){: style="height:70%;width:70%"}
 
-4. Enter your **Project Name** and click **Create**. 		
+4. Enter your **Project Name** and click **Create**. 	
+	![](../assets/images/diprojectname.png){: style="height:70%;width:70%"}	
+
 5. You can see your Project name on the upper-right corner of the Iris canvass.
 
-	![](../assets/images/dinewproject.png){: style="height:70%;width:70%"}
+	![](../assets/images/diappname.png){: style="height:70%;width:70%"}
 
 
 ## Import a Domino Application using new Foundry
@@ -142,7 +142,7 @@
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
 
-7. On the final step **Result** , click **Done**. Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris.
+7. On the final step **Result** , click **Done**. Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
 
