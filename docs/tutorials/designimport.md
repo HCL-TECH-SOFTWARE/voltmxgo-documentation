@@ -105,7 +105,7 @@
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
 	!!!tip
-		It may take a while of publishing the imported irish app.
+		It may take a while of publishing the imported Irish app.
 
 	![](../assets/images/disummary.png){: style="height:80%;width:80%"}	
 
@@ -114,7 +114,7 @@
 ![](../assets/images/dioutput.png)
 
 !!!note
-		- You can view the final result of the .nsf file that you configured in Domino REST API.
+		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
 
 ## Import a Domino Application from existing Foundry
