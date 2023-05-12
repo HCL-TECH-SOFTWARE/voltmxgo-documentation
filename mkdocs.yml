@@ -7,7 +7,7 @@ use_directory_urls: false
 # Theme Configuration
 theme:
   name: material
-  logo: 
+  logo: assets/images/VoltMXGoLogo.png
   language: en
   features:
     - navigation.tabs
@@ -58,7 +58,7 @@ extra:
 #  flexnet_url: "https://hclsoftware.flexnetoperations.com/flexnet/operationsportal/entitledDownloadFile.action?downloadPkgId=HCL%20Domino%20REST%20API%20Early%20Access%20Release"
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/HCL-TECH-SOFTWARE/volt-mx-go-documentation-public
+      link: https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation
   version:
     provider: mike
   analytics:
@@ -76,8 +76,8 @@ extra:
       - manage
 
 # Repository
-repo_url: https://github.com/HCL-TECH-SOFTWARE/volt-mx-go-documentation-public
-repo_name: volt-mx-go-documentation-public
+repo_url: https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation
+repo_name: voltmxgo-documentation
 edit_uri: edit/main/docs
 
 # Customization
