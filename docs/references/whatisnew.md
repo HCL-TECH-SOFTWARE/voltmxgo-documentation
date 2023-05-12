@@ -18,7 +18,7 @@ The section provides information on the latest features, improvements, and resol
 
 ### Others
 - Updated the installation procedures to update Volt MX Go to the latest version. 
-- Updated commands in the installation procedures. 
+ 
 ## Early Access v1
 
 - First release of the early access version of Volt MX Go.
