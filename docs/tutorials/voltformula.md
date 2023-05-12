@@ -139,7 +139,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
         
     ![Edit Rosetta JS](../assets/images/vfjavaedit.png)
      
-## Configure Volt Formula's Rosetta API Options
+## Configure VoltFormula's Rosetta API Options
 
 1. Click the **Project Settings** icon.
     
