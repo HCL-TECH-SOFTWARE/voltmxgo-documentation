@@ -19,12 +19,14 @@ Before starting the installation, make sure to verify that you meet the [System 
 !!!info "Important"
     Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures. 
 
+### For installing Volt MX Go for the first time
+
 Follow the order for completing the procedures according to your preferred deployment option.
 
 **When using K3s on an Ubuntu, RHEL, SLES machine or VM:**
 
 1. [Install and configure K3s](k3sinstall.md)
-2. [Complete preparatory procedures](prereq.md)
+2. [Complete preparatory procedure for first time installation of Volt MX Go](prereq.md)
 3. [Install Domino/Keep](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
@@ -33,12 +35,23 @@ Follow the order for completing the procedures according to your preferred deplo
 **When using Rancher Desktop running on Windows:**
 
 1. [Install Rancher Desktop](installrancher.md)
-2. [Complete preparatory procedures](prereq.md)
+2. [Complete preparatory procedure for first time installation of Volt MX Go](prereq.md)
 3. [Install Domino/Keep](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 
-!!!tip
-    See [FAQ and common procedures](../references/kubecheatsheet.md) for more information about Kubernetes commands.
+### For installing new version of Volt MX Go
+
+!!!warning "Important"
+    This installation guide is only applicable when you have an existing installation of Volt MX Go and you want to upgrade your installation to the latest version. 
+
+1. [Complete preparatory procedure for new version installation of Volt MX Go](prereqnew.md)
+2. [Install Domino/Keep](downloadhelmchart.md)
+3. [Install MySql for Foundry](installmysqlfoundry.md)
+4. [Install Foundry](installfoundry.md)
+
+### Additional information
+
+See [FAQ and common procedures](../references/kubecheatsheet.md) for more information about Kubernetes commands.
 
 After completing the procedures based on your preferred deployment option, proceed to [Install Volt MX Go Iris](installiris.md).
