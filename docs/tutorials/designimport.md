@@ -118,9 +118,6 @@
 
 	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
 
-	Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris.
-	![](../assets/images/dioutput.png)
-
 !!!note
 		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
