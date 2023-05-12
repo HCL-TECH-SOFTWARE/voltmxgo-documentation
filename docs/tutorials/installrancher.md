@@ -30,7 +30,7 @@ wsl --update
 Follow any instructions given by the WSL update process. Afterward, from a Windows command prompt or PowerShell window, run the following command to make sure Ubuntu is the default distribution:
 
 ```
-wsl --set-default Ubuntu
+wsl --set-default Ubuntu-22.04
 ```
 
 Proceed [to install Rancher Desktop](#to-install-rancher-desktop).
