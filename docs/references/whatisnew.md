@@ -6,12 +6,18 @@ The section provides information on the latest features, improvements, and resol
 
 ### Improvements
 
-- Simplified First Touch [uninstall procedure](../howto/uninstallfirsttouch.md) and improved progress view for both install and uninstall for better user experience.
-- Domino Adapter supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
-- Updated the installation procedures to update Volt MX Go to the latest version.
+#### First Touch
+
+- Simplified [uninstall procedure](../howto/uninstallfirsttouch.md) and improved progress view for both install and uninstall for better user experience.
+
+#### Domino Adapter
+
+- Supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
+- Added optional parameters, such as pagination parameters, for "GET Views".
+- Added Domino form alias names to `@form` attribute metadata in form-based data models. 
 
 ### Others
- 
+- Updated the installation procedures to update Volt MX Go to the latest version. 
 - Updated commands in the installation procedures. 
 ## Early Access v1
 
