@@ -1,11 +1,12 @@
-# Logging Reference Levels
-
+# Logging Levels
+Log levels are an essential piece of equipment for monitoring and evaluating activities that take place throughout your whole program infrastructure and any cloud-based computing environments that it may be connected to. Log files have a lot of information about all the events that happen in the Iris app especially the Design Import. Log levels allows users classify those events by level so they can be managed appropriately.
 ## Criteria in Logging Levels
 
 |  **Logging Levels**     | **Description** |
 | -----------     | -----------		|
-| Info   | When there are moving screens or any specific wizard aborts implemented.|
-| Warn | When the user types incorrect datatypes, or any unsupported routes in the design import|
-| Error | when theres are 400/500 error, API error loading implemented.|
-| Trace| When there are active wizard variable  implemented.|
-| Fatal,debug| Fatal and Debug are unused for now. |
+| Info   | The standard log level signifies that something has occurred, the application has processed a request, etc. The information captured using the INFO log level should be simply informative, and failing to review them on a regular basis should not result in missing crucial data.|
+| Warn | The log level that indicates an unanticipated application error has occurred. For instance, a problem or situation that interrupts one of the processes, but not the application as a whole.|
+| Error | The log level that should be used when the app runs into a problem that stops one or more features from functioning correctly. You can also look at the ERROR log level for errors.|
+| Trace| This level of logging is the most detailed, but you usually don't need it unless you need to see everything that's going on in your program and in any third-party tools you use. The TRACE logging setting is likely to be very detailed.|
+| Fatal|Logs describing an unrecoverable program or system crash, or a major malfunction that requires quick action.|
+|Debug| This level is less detailed than the TRACE level, but it still has more information than you need for everyday use. Use the DEBUG log level to store information that may be needed for deeper analysis and fixing. |

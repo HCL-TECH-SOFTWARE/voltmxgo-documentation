@@ -6,16 +6,15 @@ The section provides information on the latest features, improvements, and resol
 
 ### New Features
 
-- Import Design Logging Levels [Monitor Logging Level](../howto/logginglevel.md) 
+- Design Import Logging Levels is a new feature that check the client-side logging which can track the logging levels which are Info, Trace, Warn, Error and Fatal and  it allows the end-user to change it in [monitor logging level](../howto/logginglevel.md).
 
 
 ### Improvements
 
 - Simplified First Touch [uninstall procedure](../howto/uninstallfirsttouch.md) and improved progress view for both install and uninstall for better user experience.
 - Domino Adapter supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
-- Domino Design UI improvements on the import domino app wizard.
-- VoltFormula additional list of formula from Notes and Open formula. [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
-
+- Implemented UI improvements on the VoltMX Design Import wizard for better user experience.
+- VoltFormula updates the list of Notes and Open formulas in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.) 
 
 
 ### Others

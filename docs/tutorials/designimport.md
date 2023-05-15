@@ -4,6 +4,9 @@
 
 ## Before you start
 
+!!!note
+	Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.
+
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
@@ -17,9 +20,6 @@
 ## Launch Volt MX Go Iris
 
 1. Open the **Volt MX Go Iris**. This opens the log-in screen of Iris.
-
-	!!!note
-		You can also start Iris by going to the folder where it's stored and double-clicking it.
 		
 2. On launching Iris, the Volt MX Go cloud login screen appears for license validation. Click **Close.**
 
@@ -67,7 +67,10 @@
 ## Import a Domino Application using new Foundry
 
 1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
-2. A wizard modal dialog appears. Go to the first step "**Getting Started**" and click **Next**.
+2. The VoltMX Design Import wizard appears. Go to the first step "**Getting Started**" and click **Next**.
+
+	![](../assets/images/diwizard.png){: style="height:80%;width:80%"}
+	
 3. On the second step **Associate Foundry App"**, click **Create New** and click **Next**.
 
 	!!!note
@@ -113,8 +116,9 @@
 7. On the final step **Result** , you can see the final `forms` and `views`. 
  
 	!!!tip
-		The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
-		The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
+		- The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
+		- Turn on `show only error` toggle to see all the fields with warning icon.
 
 	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
 
@@ -127,6 +131,7 @@
 	!!!note
 		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
+
 
 ## Import a Domino Application from existing Foundry
 
@@ -152,8 +157,9 @@
 7. On the final step **Result** , you can see the final `forms` and `views`. 
  
 	!!!tip
-		The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
-		The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
+		- The **check mark icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
+		- Turn on `show only error` toggle to see all the fields with warning icon.
 
 
 	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
