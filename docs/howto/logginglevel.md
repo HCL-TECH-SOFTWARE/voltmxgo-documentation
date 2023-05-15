@@ -1,4 +1,4 @@
-# Monitoring a Logging Level
+# Monitor Logging Level
 
 ## About this procedure
 This procedure guides you on how to check your log file using the specific logging level.
