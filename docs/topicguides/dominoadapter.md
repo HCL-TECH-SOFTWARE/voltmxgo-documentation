@@ -6,8 +6,6 @@ The Domino Adapter makes Domino a core part of the Foundry Object services so th
 
 The Domino Adapter interacts with Domino for both configuration and run-time activities by leveraging the Domino REST API, which requires an authorization token. The Domino Adapter relies directly on the Identity service of Foundry and indirectly on the OAuth REST API of Domino REST API to obtain valid authorization tokens for configuration and runtime. 
 
-<!--The same Identity service is used for authorizing access to Domino REST API for both configuration flow, such as configuring Object services in Foundry, and runtime flow, such as using the Object service from Iris applications.-->
-
 ## Object Services
 
 Domino Adapter supports Object services that enables model-driven app design and development by following a micro-services architectural approach to create reusable components and link them to fit into your solution. By using Object services, you can define your preferred data model, which defines how your app wants to interact with its data. 
@@ -71,15 +69,18 @@ Two properties are used for Domino data type information:
 
 The table shows a simplified list of data-type mappings between Domino REST API and Foundry:
 
-|Domino REST API format|Foundry type|
-|---|---|
-|DATA, DATE-TIME|date|
-|BYTE, DOUBLE, FLOAT, INT32, INT64|number|
-|BOOLEAN|boolean|
-|BINARY|string|
-|AUTHORS, NAMES, PASSWORD, READERS|string|
-|RICH TEXT|string *|
-|MULTI-VALUE|string *|
+!!!note
+    Examples in the table are from the Foundry Object Service perspective.
+
+|Domino REST API format|Foundry type|Additional details|
+|---|---|---|
+|DATA, DATE-TIME|date|Example: `2023-05-09T19:39:47Z`|
+|BYTE, DOUBLE, FLOAT, INT32, INT64|number|Example: `7`|
+|BOOLEAN|boolean|Example: `true`|
+|BINARY|string||
+|AUTHORS, NAMES, PASSWORD, READERS|string||
+|RICH TEXT|string *|Field values are in [Inception Mode](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/richtext.html?h=incept#flat-json-submissions-aka-inception-mode) format (Base64 encoded MIME-wrapped HTML) but likely changing to Base64 encoded HTML subsequently.|
+|ARRAY|string *|Field values are "stringified JSON Array"<br/> Example: `"[\"flour\",\"eggs\"]"`<br/><br/>Other data types may also be marked as multi-value, in which case the JSON array contains values of the corresponding type. Examples:<br/>String array: `"[\"flour\",\"eggs\"]"`<br/>Number array: `"[1,2]"`<br/>Author array: `"[\"CN=mxgo admin/O=ocp\",\"[Admin]\"]"]"`|
 |all others|string|
 
 !!!tip
@@ -92,7 +93,8 @@ In addition to the document fields specified in the database design such as `for
 For form-based data models, the document's `@unid` is an obvious example. Below are other `meta-fields` you may see for each document:
 
 ```{ .yaml .no-copy }
-x_0040addedtofile	
+x_0040addedtofile
+x_0040aliases	
 x_0040created	
 x_0040etag	
 x_0040lastaccessed	
@@ -123,6 +125,7 @@ x_0040unid
 !!!note
     - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
     - Meta-fields are included in generated data models by default. The Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
+    - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata for with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
 
 ### Data model metadata attribute
 
@@ -133,7 +136,11 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
     - sorted: refers to whether the column is sortable
     - direction: refers to sort direction, either ascending or descending
     
-- Form aliases: Itemized for the `x_0040form` meta field. One metadata property is added for each form, and one property is added for each alias. 
+- Form aliases: For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, the `Main Document` form in the Domino Teamroom database has three aliases, so the **Metadata** properties look like the following:
+
+![Metadata properties](../assets/images/formaliasproperties.png)
+<!--- Form aliases: Itemized for the `x_0040form` meta field. One metadata property is added for each form, and one property is added for each alias.-->
+
 - Extended data types: Rich text and multi-value (array) form fields are seen as string fields in the data model. For these fields, `dominoSpecialType` and `dominoArrayComponentType` properties are added to metadata.
 
     |For...|dominoSpecialType=|dominoArrayComponentType=|
@@ -147,12 +154,16 @@ Methods for interacting with the generated data models are also generated when g
 
 For view-based data model, only the GET method is generated.
 
-For form-based data models, the following methods are generated: 
+For form-based data models, a number of method including standard CRUD operations and binary CRUD are supported: 
 
 - POST :`Create` new Domino document containing the specified fields.
 - GET :`Read` an existing Domino document, returning all non-null fields for that document.
 - PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
 - Delete :`Delete` the specified document.
+- createBinary 
+- getBinary 
+- updateBinary 
+- deleteBinary 
 <!--- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 - Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.-->
 
@@ -160,10 +171,14 @@ For form-based data models, the following methods are generated:
 
 The Domino Adapter supports these OData filter parameters for the GET method on form-based data models:
 
-- `$select`: list of fields to include in the returned documents
-- `$filter`: search criteria specifying which documents to return 
-- `$top`: number of documents to return
-- `$skip`: number of documents to skip
+- `$select`: List of fields to include in the returned documents.
+- `$filter`: Specifies conditions that must be met by a document for it to be returned to the set of matching documents.
+<!-- `$filter with unknown domino form and specific UNID` - A special case of `$filter` that allows the caller to request the form names (list of form name and aliases) associated with a given document UNID.-->
+- `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
+- `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
+
+!!!note
+    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
 
 With `$filter`, the following canonical functions are supported:
 
@@ -175,10 +190,12 @@ With `$filter`, the following canonical functions are supported:
 
 |Example query|Expected result|
 |----|----|
-|`$filter=Type eq 'Dessert'`|returns all documents whose `Type` field is equal to `Dessert`|
-|`$top=2`|returns the first two documents|
-|`$skip=3`|returns documents starting from the fourth document onwards|
-|`$select=Name&$filter=substringof(Name,'Hot') eq true`|returns documents with `Hot` included in the `Name` field|
+|`$filter=Type eq 'Dessert'`|Returns all documents whose `Type` field is equal to `Dessert`.|
+|`$top=2`|Returns the first two documents.|
+|`$skip=3`|Returns documents starting from the fourth document onwards.|
+|`$select=Name&$filter=substringof(Name,'Hot') eq true`|Returns documents with `Hot` included in the `Name` field, only returning the `Name` field.|
+|`$select=Name,Ingredients`|Returned documents include only the `Name` and `Ingredients` fields.|
+<!--|`$filter=x_0040unid eq xxxx and Form eq unknown`|returns only the form name and form alias names for the document specified by UNID xxxx|-->
 
 !!!note 
     `$skip` can only be used if `$top` is also specified.
@@ -187,22 +204,34 @@ With `$filter`, the following canonical functions are supported:
 
 The Domino Adapter supports these OData filter parameters for the GET method on view-based data models:
 
-- `$top`: limits the number of returned data rows
+<!-- `$top`: limits the number of returned data rows
 - `$skip`: defines the number of rows to skip or in what row index should the data query start
 - `$orderby`: sorts records in either ascending or descending order based on the values of the defined column
 - column data equal filter using `$filter`: filters records and shows only the record with the defined column and column value
-- column data `startswith` filter using `$filter`: filters records and shows the record or records with the defined column name and column value starting with a defined string
+- column data `startswith` filter using `$filter`: filters records and shows the record or records with the defined column name and column value starting with a defined string-->
+
+- `$skip`: Specific the number of documents to skip (zero-based row index of the first returned document).
+- `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
+<!--$orderby - Sort the result-set in ascending or descending order based on a specified column. The column must be specified as sortable in the database design.-->
+- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. Only sortable columns can be filtered.
+
+!!!note
+    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+
+With `$filter`, the canonical function `documentsonly` is supported. The `documentsonly` function isn't part of the OData standards, but for Domino use only.
 
 #### Examples
 
 |Example query|Expected result|
 |----|----|
-|`$top=10`|returns 10 rows of data unless the total number of data rows in the view database is less than 10|
-|`$skip=5`|returns data starting from the sixth row in the view|
-|`$orderby=Year` or `$orderby=Year asc`|sorts records in ascending order starting with the record having the earliest Year column value |
-|`$orderby=Year desc`|sorts the records in descending order starting with the record having the latest Year column value|
-|`$filter=Year eq 2021`|shows the record with the Year column having a value of 2021.|
-|`$filter=startswith(Model,'HR') eq true`|shows only the record or records with the Model column having a value starting with the string HR|
+|`$top=10`|Returns 10 rows of data unless the total number of data rows in the view database is less than 10.|
+|`$skip=0`|Returns rows starting from the first document in the view (skip zero rows), equivalent to omitting `$skip`.|
+|`$skip=5`|Returns data starting from the sixth document in the view.|
+|`$filter=Year eq 2021`|Returns all documents in the view whose `Year` field is equal to `2021`.|
+|`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|
+<!--|`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
+|`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
+|`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|-->
 
 !!!note
     `$top` and `$skip` are usually used together for pagination. 
