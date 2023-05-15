@@ -13,7 +13,7 @@ This procedure guides you on how to check your log file using the specific loggi
 !!!Note
     This Logging Level is specified for import domino application only.
 
-1. Go to Help menu&rarr;Logging level&rarr;click the current level you want. For reference see (link)
+1. Go to Help menu&rarr;Logging level&rarr;click the current level you want. For reference see [Logging Reference Levels](../references/reflogginglevels.md).
 
     !!!Note
     The default level is **Info**. For each level of logging, you must restart the Iris to take effect the level that you have chosen. After restarting the Iris the current level will be the level that you have chosen and this will be the defualt level of the logging.
