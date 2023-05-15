@@ -30,7 +30,7 @@ wsl --update
 Follow any instructions given by the WSL update process. Afterward, from a Windows command prompt or PowerShell window, run the following command to make sure Ubuntu is the default distribution:
 
 ```
-wsl --setdefault Ubuntu
+wsl --set-default Ubuntu-22.04
 ```
 
 Proceed [to install Rancher Desktop](#to-install-rancher-desktop).
@@ -46,7 +46,7 @@ wsl --install -d Ubuntu-22.04
 !!!info "Important"
     Restart your machine after this initial installation to complete the setup. Once the restart has completed, return to this documentation and complete the steps that follow.
 
-Enter `Ubuntu` on the Windows search box and open the **Ubuntu on Windows App**. You should be prompted to create a username and password. 
+Enter `Ubuntu` on the Windows search box and open the **Ubuntu on Windows App**. You should be prompted to create a username and password.
 
 !!!tip
     Use the first letter of your first name and your full last name as your username such as _jdoe_. Use a password that's easy for you to remember.
@@ -62,7 +62,7 @@ It's not required to enter more information, simply hit the **Enter** key and re
 !!!info "Important"
     Make certain that **Ubuntu-22.04** is your default WSL distribution. From a Windows command prompt or PowerShell window, run the following command:
     ```
-    wsl --setdefault Ubuntu-22.04
+    wsl --set-default Ubuntu-22.04
     ```
 
 You are now ready to install Rancher Desktop.
