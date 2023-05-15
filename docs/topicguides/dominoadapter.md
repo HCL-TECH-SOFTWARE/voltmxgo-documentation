@@ -178,7 +178,8 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 - `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
 
 !!!note
-    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+    - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+    - `$skip` can only be used if `$top` is also specified.
 
 With `$filter`, the following canonical functions are supported:
 
@@ -197,8 +198,6 @@ With `$filter`, the following canonical functions are supported:
 |`$select=Name,Ingredients`|Returned documents include only the `Name` and `Ingredients` fields.|
 <!--|`$filter=x_0040unid eq xxxx and Form eq unknown`|returns only the form name and form alias names for the document specified by UNID xxxx|-->
 
-!!!note 
-    `$skip` can only be used if `$top` is also specified.
 
 ### Supported OData filter parameters, view-based GET 
 
@@ -212,13 +211,16 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 
 - `$skip`: Specific the number of documents to skip (zero-based row index of the first returned document).
 - `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
-<!--$orderby - Sort the result-set in ascending or descending order based on a specified column. The column must be specified as sortable in the database design.-->
-- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. Only sortable columns can be filtered.
+- `$orderby`: Sort the result-set in ascending or descending order based on a specified column. The column must be specified as `sortable` in the database design. 
+- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. Only `sortable` columns can be filtered.
 
 !!!note
     `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
 
-With `$filter`, the canonical function `documentsonly` is supported. The `documentsonly` function isn't part of the OData standards, but for Domino use only.
+With `$filter`, the following canonical functions are supported:
+
+- `startswith`
+- `documentsonly` - this function isn't part of the OData standards, but for Domino use only
 
 #### Examples
 
@@ -229,12 +231,10 @@ With `$filter`, the canonical function `documentsonly` is supported. The `docume
 |`$skip=5`|Returns data starting from the sixth document in the view.|
 |`$filter=Year eq 2021`|Returns all documents in the view whose `Year` field is equal to `2021`.|
 |`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|
-<!--|`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
+|`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
-|`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|-->
+|`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
 
-!!!note
-    `$top` and `$skip` are usually used together for pagination. 
 ## Limitations
 
 - Supports only Foundry Object services.
