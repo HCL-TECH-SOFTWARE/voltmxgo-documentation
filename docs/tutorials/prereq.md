@@ -5,7 +5,25 @@
 !!!warning "Important"
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
-## 1. Configure Helm to pull from HCL Container Repository
+
+## 1. Export username and authentication token
+
+The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. You must [obtain your authentication token from the HCL Container Repository](obtainauthenticationtoken.md) before running the commands.
+
+Run the following commands to export the username and authentication token.
+
+!!!note
+    - Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. *Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email*.
+    - Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
+
+```
+export HCLCR_USERNAME=<your hclcr username>
+```
+```
+export HCLCR_TOKEN=<your hclcr authentication token>
+```
+
+## 2. Configure Helm to pull from HCL Container Repository
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
@@ -25,7 +43,7 @@ Error: looks like https://hclcr.io/chartrepo/voltmxgo-ea is not a valid chart re
 
 Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
-## 2. Create a namespace for MXGO
+## 3. Create a namespace for MXGO
 
 Run the following commands to create a namespace and set the current context to **mxgo**:
 
@@ -34,7 +52,7 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
-## 3. Add Early Access Preview Host Names
+## 4. Add Early Access Preview Host Names
 
 For the Early Access preview, the following host names are **hard-coded**:
 
@@ -97,7 +115,7 @@ You must restart Rancher Desktop:
 1. Select **File** &rarr; **Exit** to close the current session.
 2. Open a new session by opening Rancher Desktop via the desktop icon.
 
-## 4. Create a temp directory for the charts
+## 5. Create a temp directory for the charts
 
 Run the following commands to create a temp directory for the charts and make it the current directory:
 
@@ -106,7 +124,7 @@ mkdir ~/mxgo
 cd ~/mxgo
 ```
 
-## 5. Install wget and curl into your Linux environment
+## 6. Install wget and curl into your Linux environment
 
 Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using.
 

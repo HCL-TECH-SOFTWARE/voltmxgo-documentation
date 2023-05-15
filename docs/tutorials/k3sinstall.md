@@ -8,9 +8,9 @@ K3s is a fully compliant Kubernetes distribution. For more information, see [K3s
 ## Before you start
 
 !!!note
-    If you will use Rancher Desktop in deploying the Early Access version of Volt MX Go, you don't need to install K3s. 
+    If you will use Rancher Desktop in deploying the Early Access version of Volt MX Go, you don't need to install K3s.
 
-Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met. 
+Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](sysreq.md#for-deploying-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met.
 
 ## 1. Install K3s
 
@@ -61,7 +61,7 @@ export KUBECONFIG=~/.kube/config
 
 ## 4. Install Helm
 
-Helm is the package manager for Kubernetes and is used to install Volt MX Go. For more information, see [Helm](https://helm.sh/).  
+Helm is the package manager for Kubernetes and is used to install Volt MX Go. For more information, see [Helm](https://helm.sh/).
 
 To install Helm, run the following commands:
 
@@ -75,24 +75,7 @@ sudo rm -rf helm-v3.11.2-linux-386.tar.gz linux-386
 For more information, see [Installing Helm](https://helm.sh/docs/intro/install/) and [Helm releases](https://github.com/helm/helm/releases).
 
 
-## 5. Export username and authentication token
-
-The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. You must [obtain your authentication token from the HCL Container Repository](obtainauthenticationtoken.md) before running the commands. 
-
-Run the following commands to export the username and authentication token. 
-
-!!!note
-    - Replace `<your hclcr username>` with your email address as shown in the **User Profile** dialog. *Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email*.
-    - Replace `<your hclcr authentication token>` with the **CLI secret** value you copied from the **User Profile** dialog.
-
-```
-export HCLCR_USERNAME=<your hclcr username>
-```
-```
-export HCLCR_TOKEN=<your hclcr authentication token>
-```
-
-## 6. Ensure K3s is active and ready
+## 5. Ensure K3s is active and ready
 
 1. Run the following command to check if K3s has an active status:
 
