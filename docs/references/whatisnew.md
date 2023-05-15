@@ -20,7 +20,11 @@ The section provides information on the latest features, improvements, and resol
 - Supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
 - Added optional parameters, such as pagination parameters, for "GET Views".
 - Added Domino form alias names to `@form` attribute metadata in form-based data models. 
+
+#### Design Import
 - Implemented UI improvements on the VoltMX Design Import wizard for better user experience.
+
+#### VoltFormula
 - VoltFormula updates the list of Notes and Open formulas in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.) 
 
 
