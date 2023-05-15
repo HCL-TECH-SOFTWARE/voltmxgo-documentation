@@ -118,11 +118,18 @@
 
 	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
 
-!!!note
+	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
+	**The App Events [desktop]** appears.
+
+	![](../assets/images/dioutput.png)
+
+
+	!!!note
 		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
 
 ## Import a Domino Application from existing Foundry
+
 1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
 2. A wizard modal dialog appears. Go to the first step "**Getting Started**" and click **Next**.
 3. On the second step **Associate Foundry App"**, click **Create New** and click **Next**.
@@ -133,20 +140,24 @@
 	
 5. On the fourth step **Scope and Forms**, select your scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
+	- You can **select** or **deselect** the configured `forms`, `fields` and `views` and click **Next**. The lists you see are the ones you choose in the configured `forms` and  `views`, then save on your scope in Domino Rest API configurations.
 
-	- You can **select** or **deselect** the configured `forms`, `fields` and `views` and click **Next**. The lists you see are the ones you choose in the configured `forms` and `views`, then save on your scope in Domino Rest API configurations.
 
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
+	!!!tip
+		It may take a while of publishing the imported Irish app.
 
-7. On the final step **Result** , click **Done**. Once you click **Done**, each of the selected `form` and `views`  have imported in the  Iris through the use of `Forms` in Volt MX Go Iris. **The App Events [desktop]** appears.
 
-![](../assets/images/dioutput.png)
+7. On the final step **Result** , you can see the final `forms` and `views`. 
+ 
+	!!!tip
+		The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
 
-!!!note
-		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
-		- You can click the link **click here to view logs on a separate window** to see the summarized `forms` and  `views` in one page.
 
+	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
+	**The App Events [desktop]** appears.
 
 ## CRUD operation upon importing the .NSF file
 
@@ -177,7 +188,5 @@
 
 	![Screenshot](../assets/images/dilist.png)
 
-
-The **Design Import** in Iris is synchronous with the data added, modified and deleted in the **Notes Designer**.
 
 ![](../assets/images/didesigner.png)
