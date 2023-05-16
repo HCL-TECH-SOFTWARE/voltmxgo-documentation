@@ -25,7 +25,7 @@ The section provides information on the latest features, improvements, and resol
 - Implemented UI improvements on the **VoltMX Design Import Wizard** for better user experience.
 
 #### VoltFormula
-- Updated the list of Notes and Open formulas in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index). 
+- Updated the list of Notes and Open formulas in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
 
 
 ### Others
