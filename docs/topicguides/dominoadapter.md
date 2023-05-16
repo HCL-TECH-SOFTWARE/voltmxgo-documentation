@@ -154,7 +154,7 @@ Methods for interacting with the generated data models are also generated when g
 
 For view-based data model, only the GET method is generated.
 
-For form-based data models, a number of method including standard CRUD operations and binary CRUD are supported: 
+For form-based data models, a number of methods including standard CRUD operations and binary CRUD are supported: 
 
 - POST :`Create` new Domino document containing the specified fields.
 - GET :`Read` an existing Domino document, returning all non-null fields for that document.
