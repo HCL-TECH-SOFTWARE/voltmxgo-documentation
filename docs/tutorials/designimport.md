@@ -4,6 +4,9 @@
 
 ## Before you start
 
+!!!note
+	Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.
+
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have noted the following Domino REST API details:
@@ -17,14 +20,13 @@
 ## Launch Volt MX Go Iris
 
 1. Open the **Volt MX Go Iris**. This opens the log-in screen of Iris.
-
-	!!!note
-		You can also start Iris by going to the folder where it's stored and double-clicking it.
 		
-   	On launching Iris, the Volt MX Go cloud login screen appears for license validation.
+2. On launching Iris, the Volt MX Go cloud login screen appears for license validation. Click **Close.**
 
-2.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
-   The Volt MX Go Iris app opens.
+3. Go to [Validate Volt MX GO Foundry](#validate-volt-mx-go-foundry) procedure.
+
+
+4.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
 
 	![Log in screen](../assets/images/dilogin.png){: style="height:60%;width:60%"}
 
@@ -41,114 +43,146 @@
 ## Open a new project
 	
 !!!note
-		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. 
+		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. Once you Import a Domino Application, it prompts a notification that you must start with a Desktop as a platform.
+		
+		![Desktop Webapp](../assets/images/didesktop.png){: style="height:80%;width:80%;display: block"}
 
 1. On the top menu, **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-	!!!note
-		For this release, only select **Web App**.
+	![](../assets/images/distart.png){: style="height:70%;width:70%"}
 
 3. On the **Which device size do you want to start building for first?** dialog, select the **device** you want to build for the new Project and click **Next**.
 
-	!!!note
-		For this release, only select **Desktop**.
+	![](../assets/images/didevice.png){: style="height:70%;width:70%"}
 
-4. Enter your **Project Name** and click **Create**. 		
+4. Enter your **Project Name** and click **Create**. 	
+	![](../assets/images/diprojectname.png){: style="height:70%;width:70%"}	
+
 5. You can see your Project name on the upper-right corner of the Iris canvass.
 
-	![](../assets/images/dinewproject.png){: style="height:70%;width:70%"}
+	![](../assets/images/diappname.png){: style="height:70%;width:70%"}
 
 
-## Import a Domino Application
+## Import a Domino Application using new Foundry
 
-1. Click on **Project** navigation bar, go to &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
-2. Go to the first step "**Getting Started**" and click **Next**.
-3. Click **Create New** on the *Associate Foundry  App* window.
+1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
+2. The VoltMX Design Import wizard appears. Go to the first step "**Getting Started**" and click **Next**.
+
+	![](../assets/images/diwizard.png){: style="height:80%;width:80%"}
+	
+3. On the second step **Associate Foundry App"**, click **Create New** and click **Next**.
 
 	!!!note
-		Once you click **Create New**, new foundry app associated in Volt MX Go Iris. The default name of the same your **Project Name**.
+		Once you click **Create New**, new foundry app associated in Volt MX Go Iris. The default name is the same with your **Project Name**.
 
-4. Select the “**Create New**” for  the connection of Domino REST API Services and click **Next**.
+4. The third step **Identity Service**, fill in the **New Identity Service** and click **Next**,
 
-	1. Fill-in the **New Identity Service** and click **Next**
+	|  **Fields**     | **Description** |
+	| -----------     | -----------		|
+	| Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
+	| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
+	|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
+	|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
+	|Service Name:| Any name that identify the Volt MX Go Foundry Identity Services. |
 
-		|  **Fields**     | **Description** |
-		| -----------     | -----------		|
-		| Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
-		| Scope       | This is the name of your configured scope describe in your App of Domino REST API app management. |
-		|Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
-		|Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see all along your `App ID` and your `App Secret`. |
-		|Service Name:| Any name that identify the Volt MX Go Foundry Identity Services. |
+	![](../assets/images/dikeep.png){: style="height:80%;width:80%"}
 
-		![](../assets/images/dikeep.png){: style="height:80%;width:80%"}
-
-	2. Select your **service name** you added from the earlier page and click **Next**.
+	1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has pubished, your service name should be named as MXGO(service name). Example: MXGODigiApp1
 
 		![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
-	3. Log-in your credential to Domino Rest API and click **allow**.
+	2. Log-in your credential to Domino Rest API within this wizard modal dialog and click **allow**.
 
 		![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 
-	4. Select your **Foundry Identity Service** name  associated to Domino REST API and click **Next.**
+	3. Select your **Foundry Identity Service** name  associated to Domino REST API and click **Next.**
 
 		![](../assets/images/difoundry.png){: style="height:80%;width:80%"}
 
-5. Select your scope that you’ve configured in Domino Rest API. These scopes are associated with the .nsf file from Domino and Notes.
+5. On the fourth step **Scope and Forms**, select your scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
-	- You can **select** or **deselect** the configured `forms`, `fields`, `views` and `agents` and click **Next**. The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
+	- You can **select** or **deselect** the configured `forms`, `fields` and `views` and click **Next**. The lists you see are the ones you choose in the configured `forms` and  `views`, then save on your scope in Domino Rest API configurations.
+		![](../assets/images/discopeform.png){: style="height:80%;width:80%"}
 
-6. Click **Build Iris Application.**
+6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
-7. Click **Done**.Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
+	!!!tip
+		It may take a while of publishing the imported Irish app.
 
-![](../assets/images/dioutput.png)
+	
+	![](../assets/images/disummary.png){: style="height:80%;width:80%"}	
 
-!!!note
-		- You can view the final result of the .nsf file that you configured in Domino REST API.
+7. On the final step **Result** , you can see the final `forms` and `views`. 
+ 
+	!!!tip
+		- The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
+		- Turn on `show only error` toggle to see all the fields with warning icon.
+
+	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
+
+	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
+	**The App Events [desktop]** appears.
+
+	![](../assets/images/dioutput.png)
+
+
+	!!!note
+		- You can view the final result of the `.nsf` file that you configured in Domino REST API.
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
 
-## Create from existing Foundry and Domino Rest API.
 
-1. On the **Volt MX Go Iris** top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**.
-2. Go to the first step "**Getting Started**" and click **Next**.
-3. Click on **Use Existing** link on **Associate Foundry App**.
+## Import a Domino Application from existing Foundry
+
+1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
+2. A wizard modal dialog appears. Go to the first step "**Getting Started**" and click **Next**.
+3. On the second step **Associate Foundry App"**, click **Create New** and click **Next**.
 	- Select from the Volt MX Go Application the foundry app and click **Associate**. The existing foundry app is selected and click **Next**.
 
-4. Click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
+4. The third step **Identity Service**, click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
 	- Select your **active app** from you Domino Rest API Identity Service.
 	
-5. Select your scope that you’ve configured in Domino Rest API. These scopes are associated with the .nsf file from Domino and Notes.
+5. On the fourth step **Scope and Forms**, select your scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
-	- You can **select** or **deselect** the configured `forms`, `fields`, `views` and `agents` and click **Next**. The lists you see are the ones you choose in the configured forms, views, and agents and save on your scope in Domino Rest API configurations.
+	- You can **select** or **deselect** the configured `forms`, `fields` and `views` and click **Next**. The lists you see are the ones you choose in the configured `forms` and  `views`, then save on your scope in Domino Rest API configurations.
 
 
-6. Click **Build Iris Application.**
+6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
-7. Click **Done**.Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
+	!!!tip
+		It may take a while of publishing the imported Irish app.
 
-![](../assets/images/dioutput.png)
 
-!!!note
-		- You can view the final result of the .nsf file that you configured in Domino REST API.
-		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
+7. On the final step **Result** , you can see the final `forms` and `views`. 
+ 
+	!!!tip
+		- The **check mark icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
+		- Turn on `show only error` toggle to see all the fields with warning icon.
 
+
+	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
+	**The App Events [desktop]** appears.
 
 ## CRUD operation upon importing the .NSF file
 
-1. Log in your account in Domino REST API.
+!!!note
+	Before you can do the CRUD operation in your imported domino application, you must first build and published web in Iris.
+	To do this, go this link: [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app)
+
+1. Log in your account in Domino REST API using the newly published imported domino application.
 
 	!!!note
 		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
-		All the views, forms, and agents of your .NSF file have imported, so you can design your **.NSF** synchronous to the **Notes Designer**.
+		All the `views` and `forms` of your `.NSF` file have imported, so you can design your **`.NSF`** synchronous to the **Notes Designer**.
 
 2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
 	
 	![Screenshot](../assets/images/dinewview.png)
 
 3. Click **Add New**.
-4. Fill in the fields and click **Add**. This add the data in the .NSF file.
+4. Fill in the fields and click **Add**. This add the data in the `.NSF` file.
 
 	![Screenshot](../assets/images/dinewview1.png)
 
@@ -160,7 +194,5 @@
 
 	![Screenshot](../assets/images/dilist.png)
 
-
-The **Design Import** in Iris is synchronous with the data added, modified and deleted in the **Notes Designer**.
 
 ![](../assets/images/didesigner.png)
