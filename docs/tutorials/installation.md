@@ -7,7 +7,7 @@ Guides you through the procedures for installing the Early Access version of Vol
 The server components of the Early Access version of Volt MX Go are deployed with Kubernetes via the following options:
 
 - using [K3s](https://docs.k3s.io) on an Ubuntu, RHEL, SLES machine or VM
-- using [Rancher Desktop](https://docs.rancherdesktop.io) running on Windows  
+- using [Rancher Desktop](https://docs.rancherdesktop.io) running on Windows
 
 !!!note
     HCL Project KEEP has been re-branded to [HCL Domino REST API](../references/index.md#hcl-domino-rest-api-formerly-known-as-hcl-project-keep) to align with the HCL Volt MX Go strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.
@@ -17,7 +17,7 @@ Before starting the installation, make sure to verify that you meet the [System 
 ## Installation guide
 
 !!!info "Important"
-    Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures. 
+    Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures.
 
 ### For installing Volt MX Go for the first time
 
@@ -27,7 +27,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 1. [Install and configure K3s](k3sinstall.md)
 2. [Complete preparatory procedure for first time installation of Volt MX Go](prereq.md)
-3. [Install Domino/Keep](downloadhelmchart.md)
+3. [Install Domino REST API](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 
@@ -36,17 +36,17 @@ Follow the order for completing the procedures according to your preferred deplo
 
 1. [Install Rancher Desktop](installrancher.md)
 2. [Complete preparatory procedure for first time installation of Volt MX Go](prereq.md)
-3. [Install Domino/Keep](downloadhelmchart.md)
+3. [Install Domino REST API](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 
 ### For installing new version of Volt MX Go
 
 !!!warning "Important"
-    This installation guide is only applicable when you have an existing installation of Volt MX Go and you want to upgrade your installation to the latest version. 
+    This installation guide is only applicable when you have an existing installation of Volt MX Go and you want to upgrade your installation to the latest version.
 
 1. [Complete preparatory procedure for new version installation of Volt MX Go](prereqnew.md)
-2. [Install Domino/Keep](downloadhelmchart.md)
+2. [Install Domino REST API](downloadhelmchart.md)
 3. [Install MySql for Foundry](installmysqlfoundry.md)
 4. [Install Foundry](installfoundry.md)
 
