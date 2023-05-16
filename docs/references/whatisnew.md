@@ -6,8 +6,8 @@ The section provides information on the latest features, improvements, and resol
 
 ### New Features
 
-- Design Import Logging Levels is a new feature that check the client-side logging which can track the logging levels which are Info, Trace, Warn, Error and Fatal and  it allows the end-user to change it in [monitor logging level](../howto/logginglevel.md).
-
+#### Design Import 
+User selectable logging levels is a new feature that allows the user of Volt MX Go Iris to change the client logging levels. The logging levels are Info, Trace, Warn, Error, and Fatal. These levels can be changed using the[monitor logging level](../howto/logginglevel.md) setting. 
 
 ### Improvements
 

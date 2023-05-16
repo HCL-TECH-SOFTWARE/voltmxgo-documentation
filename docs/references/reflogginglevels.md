@@ -1,5 +1,5 @@
 # Logging levels
-Log levels are an essential piece of tools for monitoring and evaluating activities that take place throughout your whole program infrastructure and any cloud-based computing environments that it may be connected to. Log files have a lot of information about all the events that happen in the Iris app especially the Design Import. Log levels allows users classify those events by level so they can be managed appropriately.
+Log levels are essential for monitoring and evaluating activities that take place throughout the execution of Iris. Log files contain information about the events that happen in Iris, especially during Design Import. Log levels allows the user to select the level they wish to capture during execution of events in Iris.
 ## Criteria in logging levels
 
 |  **Logging Levels**     | **Description** |
