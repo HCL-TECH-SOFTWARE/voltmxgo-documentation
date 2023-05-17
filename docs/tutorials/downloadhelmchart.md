@@ -9,23 +9,23 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
     ```
     helm repo update
     ```
-    
+
 2. Run the following command to download the chart:
 
     ```
     helm pull hclcr/keep
     ```
 
-    The file `keep.tgz` is downloaded. 
+    The file `keep.tgz` is downloaded.
 
 3. Run the following commands to unpack the chart and make the Keep directory your current directory:
 
     ```
-    tar -xzvf keep-0.3.1.tgz
+    tar -xzvf keep-0.3.2.tgz
     cd keep
     ```
 
-4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.  
+4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.
 
     1. Locate the following lines in the file and replace `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository:
 
@@ -35,11 +35,11 @@ The procedure guides you in downloading the Domino/Keep Helm chart and deploying
             password: your-authentication-token
         ```
 
-    2. Save the file and exit.  
-    
-## 2. Deploy Domino 
+    2. Save the file and exit.
 
-1. Deploy Domino by running the following Helm install command: 
+## 2. Deploy Domino
+
+1. Deploy Domino by running the following Helm install command:
 
     ```
     helm install domino . -f values.yaml -n mxgo
