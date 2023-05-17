@@ -4,7 +4,7 @@
 This procedure guides you on how to check and set the logging level, and access the log files. For more information, see [Logging levels](../references/reflogginglevels.md). 
 
 !!!Note
-    The logging level in Iris will only affect the logs for importing a Domino application at the moment.
+    The logging level in Volt MX Go Iris only affects the logs for importing a Domino application at the moment.
 
 ## Check the logging level
 
@@ -22,13 +22,13 @@ This procedure guides you on how to check and set the logging level, and access 
 
 ## View the logs
 
-1. From your user directory:
+1. From your user directory, go to **Iris** &rarr; **irisdata** &rarr; **logs**. 
 
-    - For Windows, go to **Iris** &rarr; **irisdata** &rarr; **logs**.
+    - For Windows:
 
     ![](../assets/images/diloggingwin.png){: style="height:80%;width:80%"}
 
-    - For Mac, go to **Iris** &rarr; **irisdata** &rarr; **logs** &rarr; **ielogs**. 
+    - For Mac: 
 
     ![](../assets/images/dilogging.png){: style="height:80%;width:80%"}
 
