@@ -1,6 +1,6 @@
 # Install Foundry
 
-The procedures will guide you in the installation of Foundry. 
+The procedures will guide you in the installation of Foundry.
 
 ## 1. Download Foundry charts
 
@@ -15,8 +15,8 @@ The procedures will guide you in the installation of Foundry.
     ```
     helm pull hclcr/voltmx-dbupdate
     helm pull hclcr/voltmx-foundry
-    tar -xzf voltmx-foundry-1.2.0.tgz
-    tar -xzf voltmx-dbupdate-1.1.0.tgz
+    tar -xzf voltmx-foundry-1.2.3.tgz
+    tar -xzf voltmx-dbupdate-1.2.3.tgz
     mv voltmx-foundry/values.yaml  ./
     ```
 
@@ -68,9 +68,9 @@ You should see an output similar to the following:
 
 ![](../assets/images/output1.png)
 
-Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.  
+Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.
 
-**Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.   
+**Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
 
 !!!note
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
