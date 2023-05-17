@@ -40,7 +40,7 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
     3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
     4. Click **Save & Close**.
     !!!note
-        `drapi` is the abreviation for Domino REST API.
+        `drapi` is the abbreviation for Domino REST API.
 
 ## Expected result
 
