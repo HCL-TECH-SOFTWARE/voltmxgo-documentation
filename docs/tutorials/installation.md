@@ -40,12 +40,12 @@ Follow the order for completing the procedures according to your preferred deplo
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 
-### For installing new version of Volt MX Go
+### For upgrading an existing installation of Volt MX Go
 
-!!!warning "Important"
-    This installation guide is only applicable when you have an existing installation of Volt MX Go and you want to upgrade your installation to the latest version. 
+<!--!!!warning "Important"
+    This installation guide is only applicable when you have an existing installation of Volt MX Go and you want to upgrade your installation to the latest version.--> 
 
-1. [Complete preparatory procedure for new version installation of Volt MX Go](prereqnew.md)
+1. [Complete preparatory procedure for upgrading existing installation of Volt MX Go](prereqnew.md)
 2. [Install Domino/Keep](downloadhelmchart.md)
 3. [Install MySql for Foundry](installmysqlfoundry.md)
 4. [Install Foundry](installfoundry.md)

@@ -1,6 +1,6 @@
-# Complete preparatory procedure for new version installation of Volt MX Go
+# Complete preparatory procedure for upgrading an existing installation of Volt MX Go
 
-**The following procedure must be performed when installing a new version of Volt MX Go**. It's assumed that you have already deployed Kubernetes as part of your first installation of Volt MX Go. 
+The following procedure must be performed when upgrading an existing installation of Volt MX Go. It's assumed that you have already deployed Kubernetes as part of your first installation of Volt MX Go. 
 
 !!!warning "Important"
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.

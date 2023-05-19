@@ -4,7 +4,7 @@ The procedure guides you in connecting to the Domino server from your Notes clie
 
 ## Before you start
 
-Make sure that your `/etc/hosts` file has the early access preview host names. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [adding early access preview host names](../tutorials/prereq.md#3-add-early-access-preview-host-names). 
+Make sure that your `/etc/hosts` file has the early access preview host names. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [adding early access preview host names](../tutorials/prereq.md#4-add-early-access-preview-host-names). 
 
 ## Procedure
 
@@ -17,7 +17,16 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
     kubectl cp -n mxgo -c restapi-log $POD_NAME:/local/notesdata/admin.id ./k8s-notes-admin.id
     ```
 
-    If necessary, copy the `k8s-notes-admin.id` file to your laptop.
+    !!!tip
+        The `$POD_NAME` in the command represents the name of the Domino pod. To get the name of the Domino pod, run the command `kubectl get pods`. In the following example result, the highlighted text corresponds to the Domino pod name.
+
+        ![Domino pod name](../assets/images/podnamesample.png)
+
+        So using the example result, the command above should look like:
+
+        `kubectl cp -n mxgo -c restapi-log domino-keep-6989796bdc-nnmdg:/local/notesdata/admin.id ./k8s-notes-admin.id`
+
+    **If necessary, copy the `k8s-notes-admin.id` file to your laptop**.
 
 2. Switch your ID within the Notes client.
 
