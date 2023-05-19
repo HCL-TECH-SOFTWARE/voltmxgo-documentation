@@ -42,8 +42,10 @@ Follow the order for completing the procedures according to your preferred deplo
 
 ### For upgrading an existing installation of Volt MX Go
 
-<!--!!!warning "Important"
-    This installation guide is only applicable when you have an existing installation of Volt MX Go and you want to upgrade your installation to the latest version.--> 
+!!!warning "Important"
+    The Early Access release doesn't support actual upgrades. You must remove the prior release deployment and install a new deployment to upgrade. This removes all the data from the prior release deployment. 
+
+    The official product releases will support upgrades of existing deployments while maintaining existing deployment data.  
 
 1. [Complete preparatory procedure for upgrading existing installation of Volt MX Go](prereqnew.md)
 2. [Install Domino/Keep](downloadhelmchart.md)

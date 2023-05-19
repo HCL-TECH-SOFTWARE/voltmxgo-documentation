@@ -18,7 +18,7 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
     ```
 
     !!!tip
-        The `$POD_NAME` in the command represents the name of the Domino pod. To get the name of the Domino pod, run the command `kubectl get pods`. In the following example result, the highlighted text corresponds to the Domino pod name.
+        The `$POD_NAME` in the command represents the name of the Domino pod. To get the name of the Domino pod, run the command `kubectl get pods -n mxgo`. In the following example result, the highlighted text corresponds to the Domino pod name.
 
         ![Domino pod name](../assets/images/podnamesample.png)
 
