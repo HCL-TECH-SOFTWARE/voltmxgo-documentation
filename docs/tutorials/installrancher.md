@@ -43,7 +43,7 @@ Open PowerShell or Windows Command Prompt in administrator mode by right-clickin
 wsl --install -d Ubuntu-22.04
 ```
 
-!!!info "Important"
+!!!warning "Important"
     Restart your machine after this initial installation to complete the setup. Once the restart has completed, return to this documentation and complete the steps that follow.
 
 Enter `Ubuntu` on the Windows search box and open the **Ubuntu on Windows App**. You should be prompted to create a username and password.
@@ -59,7 +59,7 @@ sudo adduser
 
 It's not required to enter more information, simply hit the **Enter** key and respond `Y` when prompted **Is the information correct?**.
 
-!!!info "Important"
+!!!warning "Important"
     Make certain that **Ubuntu-22.04** is your default WSL distribution. From a Windows command prompt or PowerShell window, run the following command:
     ```
     wsl --set-default Ubuntu-22.04
