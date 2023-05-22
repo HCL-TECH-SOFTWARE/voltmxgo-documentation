@@ -65,6 +65,9 @@ pre {
   }
   .md-typeset h5{
     font-family:"HCLTech Roobert";
+    text-transform: capitalize;
+    font-size: medium;
+    color: #5b666d;
   }
   .md-typeset h6{
     font-family:"HCLTech Roobert";
