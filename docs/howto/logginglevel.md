@@ -28,7 +28,7 @@ This procedure guides you on how to check and set the logging level, and access 
 
     ![](../assets/images/diloggingwin.png){: style="height:80%;width:80%"}
 
-    - For Mac, go to **Iris** &rarr; **irisdata** &rarr; **logs** &rarr; **ielogs**. 
+    - For Mac, go to **Iris** &rarr; **irisdata** &rarr; **logs**. 
 
     ![](../assets/images/dilogging.png){: style="height:80%;width:80%"}
 
