@@ -116,7 +116,7 @@
 7. On the final step **Result** , you can see the final `forms` and `views`. 
  
 	!!!tip
-		- The **checkbox icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
+		- The **check mark icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
 		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
 		- Turn on `show only error` toggle to see all the fields with warning icon.
 
@@ -175,7 +175,7 @@
 
 	!!!note
 		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
-		All the `views` and `forms` of your `.NSF` file have imported, so you can design your **`.NSF`** synchronous to the **Notes Designer**.
+		All the `views` and `forms` of your `.NSF` file have imported, so you can design your **`.NSF`** file with CRUD operation.
 
 2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
 	
