@@ -13,16 +13,16 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 2. Run the following command to download the chart:
 
     ```
-    helm pull hclcr/keep
+    helm pull hclcr/drapi
     ```
 
-    The file `keep.tgz` is downloaded.
+    The file `drapi-n.n.n.tgz` is downloaded.
 
-3. Run the following commands to unpack the chart and make the Keep directory your current directory:
+3. Run the following commands to unpack the chart and make the DRAPI directory your current directory:
 
     ```
-    tar -xzvf keep-0.3.2.tgz
-    cd keep
+    tar -xzvf drapi-0.3.2.tgz
+    cd drapi
     ```
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.
