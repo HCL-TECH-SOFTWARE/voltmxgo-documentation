@@ -25,15 +25,26 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     cd drapi
     ```
 
-4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials.
+4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials, and the DNS name settings.
 
-    1. Locate the following lines in the file and replace `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository:
+    1. Locate the following lines in the file and replace `your-email` and `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository:
 
         ```{ .yaml .no-copy }
         imageCredentials:
             username: your-email
             password: your-authentication-token
         ```
+
+    2. Locate the following lines in the file and add your DNS name settings:
+
+        ```{ .yaml .no-copy }
+        ingress:
+            drapiDnsName:
+            drapiManagementDnsName:
+        ```
+
+        !!!note
+            The default names used in previous Early Access releases were `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
     2. Save the file and exit.
 
