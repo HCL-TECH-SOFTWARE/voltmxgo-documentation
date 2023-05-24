@@ -15,7 +15,6 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     ```
     helm pull hclcr/drapi
     ```
-
     The file `drapi-n.n.n.tgz` is downloaded.
 
 3. Run the following commands to unpack the chart and make the DRAPI directory your current directory:

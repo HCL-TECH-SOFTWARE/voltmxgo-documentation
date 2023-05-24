@@ -1,4 +1,4 @@
-# Complete preparatory procedure for new version installation of Volt MX Go
+# Complete preparatory procedure for upgrading an existing installation of Volt MX Go
 
 **The following procedure must be performed when installing a new version of Volt MX Go**. It's assumed that you have already deployed Kubernetes as part of your first installation of Volt MX Go.
 

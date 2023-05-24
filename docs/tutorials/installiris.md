@@ -6,8 +6,8 @@
 
 ## Procedure
 
-!!!note
-    Make sure to download the latest version of the Volt MX Go Iris. 
+!!!warning "Important!"
+    Make sure to download and install the latest version of the Volt MX Go Iris. 
 
 1.  Install Volt MX Go Iris.
     - [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
