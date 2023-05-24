@@ -14,7 +14,7 @@ nav:
         - Complete preparatory procedure:
             - prereqindex.md
             - For first time installation of Volt MX Go: prereq.md
-            - For new version installation of Volt MX Go: prereqnew.md
+            - For upgrading existing installation of Volt MX Go: prereqnew.md
         - Install Domino REST API: downloadhelmchart.md
         - Install MySQL for Foundry: installmysqlfoundry.md
         - Install Foundry: installfoundry.md
