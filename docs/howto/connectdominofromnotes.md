@@ -24,7 +24,7 @@ Make sure that your `/etc/hosts` file has the early access preview host names. Y
 
         So using the example result, the command above should look like:
 
-        `kubectl cp -n mxgo -c restapi-log domino-keep-6989796bdc-nnmdg:/local/notesdata/admin.id ./k8s-notes-admin.id`
+        `kubectl cp -n mxgo -c restapi-log domino-drapi-6989796bdc-nnmdg:/local/notesdata/admin.id ./k8s-notes-admin.id`
 
     **If necessary, copy the `k8s-notes-admin.id` file to your laptop**.
 
