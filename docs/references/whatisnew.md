@@ -2,6 +2,12 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go. 
 
+## Early Access v3
+
+### Others
+- Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
+- Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
+
 ## Early Access v2
 
 ### New Features
