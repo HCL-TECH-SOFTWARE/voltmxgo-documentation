@@ -15,7 +15,7 @@ The procedure guides you in installing MySQL for Foundry.
     ```
     helm repo update
     ```
-    
+
 3. Run the following commands to install the Bitnami MySQL Helm chart to use for the Foundry database storage:
 
     ```
@@ -33,7 +33,7 @@ The procedure guides you in installing MySQL for Foundry.
 
     ```{ .yaml .no-copy }
     NAME                              READY   STATUS    RESTARTS   AGE
-    domino-keep-5c65d76c6c-rkfml      3/3     Running   0          11m
+    domino-drapi-5c65d76c6c-rkfml      3/3     Running   0          11m
     mysql-0                           1/1     Running   0          45s
     ```
 

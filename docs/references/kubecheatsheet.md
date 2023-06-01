@@ -9,28 +9,28 @@
     helm get notes domino
     ```
 
-- View the Domino startup / initialization logs:
+- View the Domino REST API startup / initialization logs:
 
     ```
-    kubectl logs domino-keep-784d86bf6b-v6dzt -c qs-keep | less
+    kubectl logs domino-drapi-784d86bf6b-v6dzt -c drapi | less
     ```
 
 - View the Domino server logs
 
     ```
-    kubectl logs domino-keep-784d86bf6b-v6dzt -c domino-log | less
+    kubectl logs domino-drapi-784d86bf6b-v6dzt -c domino-log | less
     ```
 
-- View the REST API logs
+- View the Domino REST API logs
 
     ```
-    kubectl logs domino-keep-784d86bf6b-v6dzt -c restapi-log | less
+    kubectl logs domino-drapi-784d86bf6b-v6dzt -c restapi-log | less
     ```
 
 - View all the logs
 
     ```
-    kubectl logs domino-keep-784d86bf6b-v6dzt --all-containers=true | less
+    kubectl logs domino-drapi-784d86bf6b-v6dzt --all-containers=true | less
     ```
 
 - Copy a file out of the pod

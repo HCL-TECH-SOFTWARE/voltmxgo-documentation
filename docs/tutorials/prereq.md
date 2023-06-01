@@ -1,6 +1,6 @@
 # Complete preparatory procedure for first time installation of Volt MX Go
 
-The following procedure must be performed when installing Volt MX Go for the first time. It should be performed post installation of K3s or Rancher Desktop, and before the download of the Domino/Keep Helm chart and Foundry installation.
+The following procedure must be performed when installing Volt MX Go for the first time. It should be performed post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Foundry installation.
 
 !!!warning "Important"
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
@@ -130,4 +130,4 @@ Use a search engine, such as Google, to search for instructions on installing **
 
 ## Next step
 
-Proceed to [Install Domino/Keep](downloadhelmchart.md).
+Proceed to [Install Domino REST API](downloadhelmchart.md).
