@@ -1,6 +1,6 @@
 # First Touch tutorial
 
-This tutorial guides you on accessing and running the First Touch app in Volt Foundry to view and explore a sample app, and then set up and run the sample app in Volt Iris.
+This tutorial guides you in accessing and running the First Touch Recipe Catalog app from Volt Foundry to view and explore the app.
 
 ## Before you start
 
@@ -34,17 +34,38 @@ This tutorial guides you on accessing and running the First Touch app in Volt Fo
     - username: `mxgo admin`
     - password: `password`
 
-3. Click **Next**. An installation progress dialog appears. 
+3. Click **Next**. An installation progress dialog appears.
 
-4. Wait for the completion of the installation. Once completed, a **Congratulations!** dialog appears confirming the successful installation of the First Touch app and the verification of the connection to the Domino database via Domino REST API. 
+    ![Installation progress dialog](../assets/images/firsttouchinstalldialog.png){: style="height:60%;width:60%"}
+
+4. Wait for the completion of the installation. Once completed, a **Congratulations!** dialog appears confirming the successful installation of the First Touch app and the verification of the connection to the Domino database via Domino REST API.
+
+    ![Congratulations dialog](../assets/images/firsttouchcongrats.png){: style="height:60%;width:60%"}
  
-5. On the **Congratulations!** dialog, click **Launch**. 
 
-   You can now view and explore the First Touch sample recipe app Foundry configuration.
- 
+5. On the **Congratulations!** dialog, click **Launch** to launch the First Touch Recipe Catalog app. The First Touch Recipe Catalog app opens in another tab. 
+6. Click **Sign In**.
+7. On the **HCL Domino Login** page, enter your Domino REST API username and password, and click **Login**.
 
-The First Touch sample recipe app is a Domino app written using Volt MX Go. It's automatically configured to use Domino REST API for both the Identity Service and the Object Service. For more information, see [Identity Service](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Identity.html) and [Object Service](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html) in the [HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html). 
+    ![HCL Domino Login page](../assets/images/fthcllogin.png){: style="height:60%;width:60%"}
 
+8. On the **Permission Requested** page, click **Allow**.
+
+    ![Permission requested](../assets/images/ftpermissionreq.png){: style="height:60%;width:60%"}
+ 
+You can now view and explore the First Touch Recipe Catalog app. 
+
+![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
+
+For more information, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
+
+!!!tip
+    - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Foundry to view the app’s Foundry configuration.
+    - To launch the app again from Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.    
+
+
+
+<!--
 ## Import the First Touch sample recipe application
 
 1. Open **Volt MX GO Iris**.
@@ -111,3 +132,4 @@ Once the build is completed, you will see the following dialog indicating publis
 ![Publish Complete](../assets/images/publishcomplete.png)
 
 **You will now find the published application here: `<foundry url>/admin/console/apps/appservices.html#!/details`**.
+-->
