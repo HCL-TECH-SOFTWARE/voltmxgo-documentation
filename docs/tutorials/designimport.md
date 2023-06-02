@@ -63,7 +63,7 @@
 	![](../assets/images/diappname.png){: style="height:70%;width:70%"}
 
 
-## Import a Domino Application using new Foundry
+## Import a Domino Application using new Foundry app
 
 1. Select **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app. The VoltMX Design Import Wizard appears.
 
@@ -133,7 +133,7 @@
 		- You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms in one page.
 
 
-## Import a Domino Application from existing Foundry
+## Import a Domino Application from existing Foundry app
 
 1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
 2. A wizard modal dialog appears. Go to the first step "**Getting Started**" and click **Next**.
