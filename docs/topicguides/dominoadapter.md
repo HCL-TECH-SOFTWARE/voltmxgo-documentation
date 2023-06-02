@@ -217,10 +217,9 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 !!!note
     `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
 
-With `$filter`, the following canonical functions are supported:
+With `$filter`, the canonical function `startswith` is supported.
 
-- `startswith`
-- `documentsonly` - this function isn't part of the OData standards, but for Domino use only
+<!--- `documentsonly` - this function isn't part of the OData standards, but for Domino use only-->
 
 #### Examples
 
@@ -230,11 +229,10 @@ With `$filter`, the following canonical functions are supported:
 |`$skip=0`|Returns rows starting from the first document in the view (skip zero rows), equivalent to omitting `$skip`.|
 |`$skip=5`|Returns data starting from the sixth document in the view.|
 |`$filter=Year eq 2021`|Returns all documents in the view whose `Year` field is equal to `2021`.|
-|`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|
 |`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
-
+<!--|`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|-->
 ## Limitations
 
 - Supports only Foundry Object services.

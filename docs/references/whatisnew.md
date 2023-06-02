@@ -6,31 +6,28 @@ The section provides information on the latest features, improvements, and resol
 
 ### New Features
 
-#### Design Import 
+##### Design Import 
 - Added user-selectable [logging levels](reflogginglevels.md) for better monitoring and evaluation of activities and events.  
 
 ### Improvements
 
-#### First Touch
-
+##### First Touch
 - Simplified [uninstall procedure](../howto/uninstallfirsttouch.md) and improved progress view for both install and uninstall for better user experience.
 
-#### Domino Adapter
-
+##### Domino Adapter
 - Supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
-
 - Added Domino form alias names to `@form` attribute metadata in form-based data models. 
 
-#### Design Import
+##### Design Import
 - Implemented UI improvements on the **VoltMX Design Import Wizard** for better user experience.
 
-#### VoltFormula
-- Updated the list of Notes and Open formulas in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index). 
+##### VoltFormula
+- Updated the list of Notes and Open formulas in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
 
 
 ### Others
 - Updated the installation procedures to update Volt MX Go to the latest version. 
- 
+
 ## Early Access v1
 
 - First release of the early access version of Volt MX Go.
