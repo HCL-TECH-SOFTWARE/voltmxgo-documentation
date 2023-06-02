@@ -1,6 +1,6 @@
 # Design Import tutorial
  
- This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Iris to view the .NSF file. This feature in Volt MX Go Iris is a way to extract the domino **`.NSF`** file where you can design the **`.NSF`** structure in **Volt MX GO Iris** synchronous to the **Notes Designer** server. 
+ This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronous to the **Domino Designer** server. 
 
 ## Before you start
 
@@ -14,7 +14,7 @@
     - username: `mxgo admin`
     - password: `password`
 
-- You have a configured **`.NSF`** file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
+- You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
 - You have a credentials for Volt MX Foundry and Domino REST API.
 
 ## Launch Volt MX Go Iris
@@ -40,43 +40,43 @@
 ![Preferences](../assets/images/dipreference.png){: style="height:80%;width:80%"}
 
 
-## Open a new project
+## Create a new project
 	
 !!!note
-		The default project for Iris is `Sample` which has the mobile app. For early release, you need only the WebApp and the Desktop as a platform. Once you Import a Domino Application, it prompts a notification that you must start with a Desktop as a platform.
+	Design Import currently only supports projects for desktop web apps. Before importing a Domino Application, select or create a project set for Responsive Web desktop.
 		
-		![Desktop Webapp](../assets/images/didesktop.png){: style="height:80%;width:80%;display: block"}
 
 1. On the top menu, **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
 	![](../assets/images/distart.png){: style="height:70%;width:70%"}
 
-3. On the **Which device size do you want to start building for first?** dialog, select the **device** you want to build for the new Project and click **Next**.
+3. On the **Which device size do you want to start building for first?** dialog, select Desktop and click **Next**.
 
 	![](../assets/images/didevice.png){: style="height:70%;width:70%"}
 
 4. Enter your **Project Name** and click **Create**. 	
 	![](../assets/images/diprojectname.png){: style="height:70%;width:70%"}	
 
-5. You can see your Project name on the upper-right corner of the Iris canvass.
+5. You can see your project name on the upper-right corner of the Iris canvass.
 
 	![](../assets/images/diappname.png){: style="height:70%;width:70%"}
 
 
 ## Import a Domino Application using new Foundry
 
-1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
-2. The VoltMX Design Import wizard appears. Go to the first step "**Getting Started**" and click **Next**.
+1. Select **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app. The VoltMX Design Import Wizard appears.
+
+2. The VoltMX Design Import wizard appears. Go to the first step **Getting Started** and click **Next**.
 
 	![](../assets/images/diwizard.png){: style="height:80%;width:80%"}
 	
-3. On the second step **Associate Foundry App"**, click **Create New** and click **Next**.
+3. On the second step **Associate Foundry App**, click **Create New** and click **Next**.
 
 	!!!note
 		Once you click **Create New**, new foundry app associated in Volt MX Go Iris. The default name is the same with your **Project Name**.
 
-4. The third step **Identity Service**, fill in the **New Identity Service** and click **Next**,
+4. The third step **Identity Service**, fill in the **Create New Identity Service** and click **Next**,
 
 	|  **Fields**     | **Description** |
 	| -----------     | -----------		|
@@ -165,7 +165,7 @@
 	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
 	**The App Events [desktop]** appears.
 
-## CRUD operation upon importing the .NSF file
+## CRUD operation upon importing the `.nsf` file
 
 !!!note
 	Before you can do the CRUD operation in your imported domino application, you must first build and published web in Iris.
@@ -175,14 +175,14 @@
 
 	!!!note
 		Your configuration in Domino REST API decide what are the operations you can include in the **design import** form.
-		All the `views` and `forms` of your `.NSF` file have imported, so you can design your **`.NSF`** file with CRUD operation.
+		All the `views` and `forms` of your `.nsf` file have imported, so you can design your **`.nsf`** file with CRUD operation.
 
 2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
 	
 	![Screenshot](../assets/images/dinewview.png)
 
 3. Click **Add New**.
-4. Fill in the fields and click **Add**. This add the data in the `.NSF` file.
+4. Fill in the fields and click **Add**. This add the data in the `.nsf` file.
 
 	![Screenshot](../assets/images/dinewview1.png)
 
