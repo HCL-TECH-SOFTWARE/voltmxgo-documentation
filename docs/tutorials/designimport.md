@@ -194,5 +194,6 @@
 
 	![Screenshot](../assets/images/dilist.png)
 
+	Since changes to the form are reflected in the Domino Server, they're also visible in the Domino Designer.
 
-![](../assets/images/didesigner.png)
+	![Screenshot](../assets/images/didesigner.png)
