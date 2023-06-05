@@ -4,10 +4,15 @@ The section provides information on the latest features, improvements, and resol
 
 ## Early Access v3
 
+### New Features
+
 ### Improvements
 
 ##### First Touch
 - Users can now view and explore the First Touch Recipe Catalog app by launching it from Foundry. To learn more about the app, see [First Touch app](../topicguides/firsttouchapp.md).
+
+##### Domino Adapter
+
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.

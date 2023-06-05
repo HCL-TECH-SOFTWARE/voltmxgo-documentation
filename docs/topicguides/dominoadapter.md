@@ -164,8 +164,8 @@ For form-based data models, a number of methods including standard CRUD operatio
 - getBinary 
 - updateBinary 
 - deleteBinary 
-<!--- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
-- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.-->
+- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
+<!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.-->
 
 ### Supported OData filter parameters, form-based GET
 
@@ -173,7 +173,7 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 
 - `$select`: List of fields to include in the returned documents.
 - `$filter`: Specifies conditions that must be met by a document for it to be returned to the set of matching documents.
-<!-- `$filter with unknown domino form and specific UNID` - A special case of `$filter` that allows the caller to request the form names (list of form name and aliases) associated with a given document UNID.-->
+- `$filter (unknown Form)`: Specifies the UNID of the document to return without knowing the document's form name.
 - `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
 - `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
 
@@ -196,7 +196,7 @@ With `$filter`, the following canonical functions are supported:
 |`$skip=3`|Returns documents starting from the fourth document onwards.|
 |`$select=Name&$filter=substringof(Name,'Hot') eq true`|Returns documents with `Hot` included in the `Name` field, only returning the `Name` field.|
 |`$select=Name,Ingredients`|Returned documents include only the `Name` and `Ingredients` fields.|
-<!--|`$filter=x_0040unid eq xxxx and Form eq unknown`|returns only the form name and form alias names for the document specified by UNID xxxx|-->
+|`$filter=x_0040unid eq xxxx and Form eq unknown`|returns only the form name and form alias names for the document specified by UNID xxxx|
 
 
 ### Supported OData filter parameters, view-based GET 
