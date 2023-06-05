@@ -9,3 +9,4 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Uninstall Rancher Desktop on Windows](rancheruninstall.md)
 - [Uninstall First Touch](uninstallfirsttouch.md)
 - [Set logging level](logginglevel.md)
+- [Import Summernote Editor component](summernote.md)
