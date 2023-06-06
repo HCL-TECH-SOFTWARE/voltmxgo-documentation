@@ -46,7 +46,29 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         !!!note
             The default names used in previous Early Access releases were `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Save the file and exit.
+    3. Locate the following lines in the file and add your Administrator first name, last name, and password to replace the default entries:
+
+        ```{ .yaml .no-copy }
+        dominoAdminFirstName: "mxgo"
+        dominoAdminLastName: "admin"
+        dominoAdminPassword: "password"
+        ```
+        Note that `dominoAdminFirstName` and `dominoAdminLastName` are combined to form the username. The following fields may be of interest to you as well:
+
+        ```{ .yaml .no-copy }
+        dominoServerDomainName: "ocp"
+        dominoOrgName: "ocp"
+        dominoServerName: "drapi"
+        dominoNetworkHostname: ""
+        ```
+
+        Consult the section **Table of variables** in the following documentation to determine if you need to update these fields as well: [Run Domino REST API with a Docker image](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html). The mapping of values.yaml settings to variables is as follows:
+        * dominoServerDomainName = SERVERSETUP_SERVER_DOMAINNAME
+        * dominoOrgName = SERVERSETUP_ORG_ORGNAME
+        * dominoServerName = SERVERSETUP_SERVER_NAME
+        * dominoNetworkHostname = SERVERSETUP_NETWORK_HOSTNAME
+
+    4. Save the file and exit.
 
 ## 2. Deploy Domino REST API
 
