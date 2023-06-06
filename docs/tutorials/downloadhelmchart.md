@@ -63,7 +63,8 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         dominoNetworkHostname: ""
         ```
 
-        Consult the section **Table of variables** in the following documentation to determine if you need to update these fields as well: [Run Domino REST API with a Docker image](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html). The mapping of values.yaml settings to variables is as follows:
+        Consult the [Table of variables](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html#table-of-variables) in *Run Domino REST API with a Docker image* in  [Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html) to determine if you need to update these fields as well. The mapping of `values.yaml` settings to variables is as follows:
+
         * dominoServerDomainName = SERVERSETUP_SERVER_DOMAINNAME
         * dominoOrgName = SERVERSETUP_ORG_ORGNAME
         * dominoServerName = SERVERSETUP_SERVER_NAME
