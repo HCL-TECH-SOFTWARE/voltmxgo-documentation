@@ -7,7 +7,7 @@ The section provides information on the latest features, improvements, and resol
 ### New Features
 
 ##### Domino REST API
-Readiness and Liveness probes support has been added to the Domino REST API Helm chart. Readiness probes are used to determine if a service is available to handle requests. If it fails the configured thresholds, the service is marked as not ready and will not be routed requests. The liveness problem is similar, but when it fails the configured thresholds, the container is killed and restarted. These probes are present and may be customized.
+Readiness and Liveness probes support has been added to the Domino REST API Helm chart. Readiness probes are used by a service to determine if a container is available to handle requests. If it fails the configured thresholds, the service is marked as not ready and will not be routed requests. The liveness problem is similar, but when it fails the configured thresholds, the container is killed and restarted. These probes are present and may be customized.
 
 ## Early Access v2
 
