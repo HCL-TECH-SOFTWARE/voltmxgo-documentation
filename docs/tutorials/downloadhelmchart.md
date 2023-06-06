@@ -46,14 +46,15 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         !!!note
             The default names used in previous Early Access releases were `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Locate the following lines in the file and add your Administrator first name, last name, and password to replace the default entries:
+    3. Locate the following lines in the file for the Administrator's first name, last name, and password. You can leave these values as the current default if you desire. However, if you choose to change them, remember the new values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch). Note that `dominoAdminFirstName` and `dominoAdminLastName` are combined to form the **username**.
 
         ```{ .yaml .no-copy }
         dominoAdminFirstName: "mxgo"
         dominoAdminLastName: "admin"
         dominoAdminPassword: "password"
         ```
-        Note that `dominoAdminFirstName` and `dominoAdminLastName` are combined to form the username. The following fields may be of interest to you as well:
+
+        The following fields may be of interest to you as well:
 
         ```{ .yaml .no-copy }
         dominoServerDomainName: "ocp"
