@@ -5,7 +5,7 @@ The section provides information on the latest features, improvements, and resol
 ## Early Access v3
 
 ### New Features
-- Added Summernote Editor to Iris to allow users to edit rich text fields.  
+- Added Summernote Editor component in Iris to allow users to enter or edit rich text content in  **Create** and **Update** forms generated from Domino objects.  
 
 ### Improvements
 
@@ -13,8 +13,15 @@ The section provides information on the latest features, improvements, and resol
 - Users can now view and explore the First Touch Recipe Catalog app by launching it from Foundry. To learn more about the app, see [First Touch app](../topicguides/firsttouchapp.md).
 
 ##### Domino Adapter
+- Updated the Rich Text field format in Foundry Object Services to Base64-encoded HTML
 - Added support for the PATCH method for form-based data models.
 - Added support for *GET document with an unknown form* OData filter parameter for the GET method on form-based data models.
+- Enhanced object service code generation in Iris for Domino objects so that when using the **Generate Forms** function: 
+
+    - The GRID and DETAILS forms show rich text via the Rich Text widget.
+    - The CREATE form allows users to specify the rich text field content using the Summernote Editor Iris component.
+    - The UPDATE form allows users to edit the rich text using the Summernote Editor Iris component.  
+
 
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.

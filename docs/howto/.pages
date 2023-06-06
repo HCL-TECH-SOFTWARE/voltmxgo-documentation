@@ -3,8 +3,8 @@ nav:
     - foundryadminaccount.md
     - accessdrapi.md
     - connectdominofromnotes.md
+    - logginglevel.md
+    - summernote.md
     - k3suninstall.md
     - rancheruninstall.md
     - uninstallfirsttouch.md
-    - logginglevel.md
-    - summernote.md
