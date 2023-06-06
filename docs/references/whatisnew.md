@@ -15,13 +15,14 @@ The section provides information on the latest features, improvements, and resol
 ##### Domino Adapter
 - Updated the Rich Text field format in Foundry Object Services to Base64-encoded HTML
 - Added support for the PATCH method for form-based data models.
-- Added support for *GET document with an unknown form* OData filter parameter for the GET method on form-based data models.
+- Support OData filter parameter for the GET method on form-based data models to return a document’s unknown form name using the document's UNID. For more information, see [Supported OData filter parameters, form-based GET](../topicguides/dominoadapter.md#supported-odata-filter-parameters-form-based-get).
 - Enhanced object service code generation in Iris for Domino objects so that when using the **Generate Forms** function: 
 
     - The GRID and DETAILS forms show rich text via the Rich Text widget.
     - The CREATE form allows users to specify the rich text field content using the Summernote Editor Iris component.
     - The UPDATE form allows users to edit the rich text using the Summernote Editor Iris component.  
 
+<!-- Added support for *GET document with an unknown form* OData filter parameter for the GET method on form-based data models.-->
 
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.

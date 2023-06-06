@@ -2,10 +2,11 @@
 
 ## About this task 
 
-The procedure guides you in importing the Summernote Editor component in Iris. The Summernote Editor component is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris. For more information, see [summernote.org](https://summernote.org/). 
+The procedure guides you in importing the Summernote Editor component in Iris. The Summernote Editor component is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris.  
 
 ## Prerequisite
-- You have completed the [Volt MX Go installation](../tutorials/installation.md) and opened Volt MX Iris.
+- You have created a Domino data model in a Foundry Object Service for which you want to generate forms.
+<!-- You have completed the [Volt MX Go installation](../tutorials/installation.md) and opened Volt MX Iris.
 - You have created your [Foundry admin account](foundryadminaccount.md).
 - You have checked your Foundry settings. To check your Foundry settings:
 
@@ -34,7 +35,7 @@ The procedure guides you in importing the Summernote Editor component in Iris. T
     6. Click **Project Services** and see the connections to the Foundry data.
 
         ![Project Services](../assets/images/projectservices.png)
-
+-->
 ## Procedures
 
 ### To import Summernote Editor:
