@@ -57,7 +57,7 @@ You can now view and explore the First Touch Recipe Catalog app.
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
 
-For more information, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
+<!--For more information, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).-->
 
 !!!tip
     - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Foundry to view the app’s Foundry configuration.

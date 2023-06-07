@@ -6,5 +6,5 @@ This section discusses and explains topics and concepts about Volt MX Go to help
 - [VoltFormula](voltformulaintro.md)
 - [Domino Adapter](dominoadapter.md)
 - [Design Import](designimportintro.md)
-- [First Touch app](firsttouchapp.md)
+<!-- [First Touch app](firsttouchapp.md)-->
 

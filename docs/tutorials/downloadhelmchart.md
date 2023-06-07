@@ -46,7 +46,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         !!!note
             The default names used in previous Early Access releases were `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Locate the following lines in the file for the Administrator's first name, last name, and password. You can leave these values as the current default if you desire. However, if you choose to change them, remember the new values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and access the [Domino REST API Console](../howto/accessdrapi.md#access-domino-rest-api). Note that `dominoAdminFirstName` and `dominoAdminLastName` are combined with a space to separate them to form the **username**.
+    3. Locate the following lines in the file for the Administrator's first name, last name, and password. You can leave these values as the current default if you desire. However, if you choose to change them, remember the new values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and [Access Domino REST API](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
 
         ```{ .yaml .no-copy }
         dominoAdminFirstName: "mxgo"
@@ -65,10 +65,10 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
         Consult the [Table of variables](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html#table-of-variables) in *Run Domino REST API with a Docker image* in  [Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html) to determine if you need to update these fields as well. The mapping of `values.yaml` settings to variables is as follows:
 
-        * dominoServerDomainName = SERVERSETUP_SERVER_DOMAINNAME
-        * dominoOrgName = SERVERSETUP_ORG_ORGNAME
-        * dominoServerName = SERVERSETUP_SERVER_NAME
-        * dominoNetworkHostname = SERVERSETUP_NETWORK_HOSTNAME
+        - dominoServerDomainName = SERVERSETUP_SERVER_DOMAINNAME
+        - dominoOrgName = SERVERSETUP_ORG_ORGNAME
+        - dominoServerName = SERVERSETUP_SERVER_NAME
+        - dominoNetworkHostname = SERVERSETUP_NETWORK_HOSTNAME
 
     4. Save the file and exit.
 
@@ -103,6 +103,5 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 3. Once you see the READY column showing 3/3, press `Ctrl-c` to cancel the command.
 
 ## Next step
-
 
 Proceed to [Install MySql for Foundry](installmysqlfoundry.md).
