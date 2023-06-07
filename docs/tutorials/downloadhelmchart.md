@@ -46,7 +46,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         !!!note
             The default names used in previous Early Access releases were `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Locate the following lines in the file for the Administrator's first name, last name, and password. You can leave these values as the current default if you desire. However, if you choose to change them, remember the new values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch). Note that `dominoAdminFirstName` and `dominoAdminLastName` are combined with a space to separate them to form the **username**.
+    3. Locate the following lines in the file for the Administrator's first name, last name, and password. You can leave these values as the current default if you desire. However, if you choose to change them, remember the new values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and access the [Domino REST API Console](../howto/accessdrapi.md#access-domino-rest-api). Note that `dominoAdminFirstName` and `dominoAdminLastName` are combined with a space to separate them to form the **username**.
 
         ```{ .yaml .no-copy }
         dominoAdminFirstName: "mxgo"
@@ -102,5 +102,6 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 3. Once you see the READY column showing 3/3, press `Ctrl-c` to cancel the command.
 
 ## Next step
+
 
 Proceed to [Install MySql for Foundry](installmysqlfoundry.md).
