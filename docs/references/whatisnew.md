@@ -2,6 +2,32 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go. 
 
+# Early Access v3
+
+### New Features
+
+##### Design Import 
+
+#### VoltFormula
+- Added Typeahead IntelliSence in the configuration which can be seen in the rosetta formula which can be seen in [Configuration of Rosetta API setting](../howto/configrosetta.md)
+
+
+### Improvements
+
+##### First Touch
+- 
+
+##### Domino Adapter
+- 
+- 
+##### Design Import
+- 
+
+##### VoltFormula
+- IntelliSense improvement on category beside each formula. 
+- Update the usage of Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
+
+
 ## Early Access v2
 
 ### New Features
