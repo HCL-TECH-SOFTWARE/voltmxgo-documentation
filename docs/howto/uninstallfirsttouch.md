@@ -4,7 +4,7 @@
 
 The procedure guides you in uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
 
-## To uninstall First Touch
+## Procedure
 
 1. On the **Apps** page of the **Volt MX Foundry Console**, click **GET STARTED**.  
 
