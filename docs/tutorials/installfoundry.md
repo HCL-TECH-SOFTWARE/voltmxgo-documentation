@@ -33,7 +33,7 @@ The procedures will guide you in the installation of Foundry.
     ```{ .yaml .no-copy }
     serverDomainName:
     ```
-    Whatever server domain name you specify here, you need to ensure that it is resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you have not registered it, you must add it to the server's /etc/hosts file as described in [Add Early Access Preview Host Names](prereq.md#4-add-early-access-preview-host-names), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Add Early Access Preview Host Names](prereq.md#4-add-early-access-preview-host-names), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
     !!!note
         The default name used in previous Early Access releases was `foundry.mymxgo.com`.
@@ -84,24 +84,8 @@ The procedures will guide you in the installation of Foundry.
 
     The output should be similar to the following and will update over time:
 
-    ```{ .yaml .no-copy }
-    NAME                                          READY   STATUS              RESTARTS   AGE
-    domino-drapi-6d755b68df-2sfhb                 3/3     Running             0          14m
-    mysql-0                                       1/1     Running             0          11m
-    foundry-db-update-dzdrx                       0/1     Completed           0          8m55s
-    voltmx-foundry-apiportal-6f5b6ff485-64js8     0/1     ContainerCreating   0          2s
-    voltmx-foundry-integration-6bdbd5f68d-7djkl   0/1     ContainerCreating   0          2s
-    voltmx-foundry-identity-6c688757d9-c74bg      0/1     ContainerCreating   0          2s
-    voltmx-foundry-console-67f7867b64-bk8bf       0/1     ContainerCreating   0          2s
-    voltmx-foundry-identity-6c688757d9-c74bg      0/1     Running             0          2s
-    voltmx-foundry-console-67f7867b64-bk8bf       0/1     Running             0          2s
-    voltmx-foundry-apiportal-6f5b6ff485-64js8     0/1     Running             0          3s
-    voltmx-foundry-integration-6bdbd5f68d-7djkl   0/1     Running             0          4s
-    voltmx-foundry-apiportal-6f5b6ff485-64js8     1/1     Running             0          61s
-    voltmx-foundry-identity-6c688757d9-c74bg      1/1     Running             0          61s
-    voltmx-foundry-integration-6bdbd5f68d-7djkl   1/1     Running             0          63s
-    voltmx-foundry-console-67f7867b64-bk8bf       1/1     Running             0          69s
-    ```
+    ![output](../assets/images/output1.png)
+
 
 3. Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.
 

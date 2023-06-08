@@ -115,7 +115,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 5.	Under **Connection Parameters**:
 
-    1. Enter the Domino REST API server URL in the **Keep API Base URL** text field.
+    1. Enter the Domino REST API server URL in the **Domino REST API Base URL** text field.
     2. Enter a value in the **Connection Timeout** text field. By default, the value is set to 30 ms.
      
     !!!note
