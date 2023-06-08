@@ -3,3 +3,4 @@
 *[W3C]: World Wide Web Consortium
 *[URL]: Uniform Resource Locator
 *[NSF]: Notes Storage Facility
+*[WYSIWYG]: what you see is what you get
