@@ -126,7 +126,7 @@ cd ~/mxgo
 
 ## 6. Install wget and curl into your Linux environment
 
-Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using.
+Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using if they are not already installed.
 
 ## Next step
 
