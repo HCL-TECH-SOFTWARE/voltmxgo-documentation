@@ -31,7 +31,7 @@ The section provides information on the latest features, improvements, and resol
 
 ##### VoltFormula
 - IntelliSense improvements on category beside each formula.
-- Update the Rosetta API and Rosetta converter which can be seen in Rosetta API reference documentation.
+- Update the Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
