@@ -14,7 +14,7 @@
     - username: `mxgo admin`
     - password: `password`
 
-- You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html).
+- You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"}.
 - You have a credentials for Volt MX Foundry and Domino REST API.
 
 ## Launch Volt MX Go Iris
@@ -168,8 +168,8 @@
 ## CRUD operation upon importing the `.nsf` file
 
 !!!note
-	Before you can do the CRUD operation in your imported domino application, you must first build and published web in Iris.
-	To do this, go this link: [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app)
+	Before you can do the CRUD operation in your imported Domino application, you must first build and published web in Iris.
+	To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
 
 1. Log in your account in Domino REST API using the newly published imported domino application.
 

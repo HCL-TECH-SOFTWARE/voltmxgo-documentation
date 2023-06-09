@@ -5,8 +5,8 @@ This section describes the minimum system requirements for deploying the Early A
 ## For deploying Volt MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM
 
 !!!note
-    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/).
-    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements).
+    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank"}.
+    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements){: target="_blank"}.
 
 ### Operating System
 
@@ -24,9 +24,9 @@ This section describes the minimum system requirements for deploying the Early A
 ## For deploying Volt MX Go using Rancher Desktop running on Windows
 
 !!!note
-    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/).
+    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/){: target="_blank"}.
     
-    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows).
+    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows){: target="_blank"}.
 
 ### Operating System
 

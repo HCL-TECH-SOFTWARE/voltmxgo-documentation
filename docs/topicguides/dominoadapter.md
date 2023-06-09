@@ -17,7 +17,7 @@ The `object` of the Object service essentially has two components:
 - Data Model - refers to the definition of the fields that comprise the object definition
 - Methods - verbs for interacting with the data, for example GET, POST
 
-For more information, see [Object Services](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html).
+For more information, see [Object Services](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html){: target="_blank"}.
 
 ## Data models
 
@@ -38,7 +38,7 @@ Foundry data models are in sync with the Domino REST API `schema` at the time of
 - schema is modified in Domino REST API
 - changes in the NSF design
 
-For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation.  
+For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"} in the Domino REST API documentation.  
 
 ### Data model artifact names
 

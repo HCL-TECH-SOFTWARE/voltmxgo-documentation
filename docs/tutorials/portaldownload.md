@@ -24,11 +24,11 @@ The HCL Volt MX GO Early Access Release package includes:
 | HCL Volt MX GO Rosetta SDK JAR | `com.hcl.rosetta.sdk_1.0.0.v202304122103.jar` |-->
 
 !!!tip
-    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344)
+    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344){: target="_blank"}.
 
 ## To search and download the HCL Volt MX Go Early Access Release package
 
-1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/).
+1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/){: target="_blank"}.
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **Search Downloads**.
 4. On the **Download Search** page, enter `HCL Volt MX GO Early Access Release` in the **Search for** field, and then click **Search**.
