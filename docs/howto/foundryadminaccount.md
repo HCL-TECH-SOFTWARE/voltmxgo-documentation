@@ -8,7 +8,7 @@ The procedure guides you in creating an administrator account to log in to Found
 
 You must complete the [Volt MX Go installation](../tutorials/installation.md). 
 
-## To create a Foundry administrator account
+## Procedure
 
 1. Open `http://foundry.mymxgo.com/mfconsole/` in your browser. The **Welcome to Volt MX Foundry setup** page opens.
 

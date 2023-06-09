@@ -6,7 +6,18 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-- You have [downloaded the HCL Volt MX GO Early Access Release package](portaldownload.md).
+- You have [downloaded the HCL Volt MX Go First Touch Iris Application Zip](portaldownload.md) file, extracted the `FirstTouchRecipes.nsf` from the zip file, and copied the NSF file to your Domino server.
+
+### Additional prerequisites
+
+If you used the Volt MX Go native installer, you need to perform the following in addition to the steps listed above:
+
+- You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html).
+- You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api)
+
+    !!!note
+        You don't need to perform The *Create Foundry Identity Service* and the *Set up Domino REST API application and database* procedures included in the same webpage that contain the *Set up Domino REST API* procedure as they aren't applicable to First Touch.
+
 
 ## Log in to Volt MX Foundry
 

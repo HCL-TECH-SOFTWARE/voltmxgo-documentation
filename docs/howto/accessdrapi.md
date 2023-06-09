@@ -8,7 +8,7 @@ The procedure guides you in accessing Domino REST API Admin UI to add and config
 
 You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
-## To access Domino REST API
+## Procedure
 
 1. Open `http://drapi.mymxgo.com/admin/ui` in your browser. 
 2. Enter the following credentials in the login page: 

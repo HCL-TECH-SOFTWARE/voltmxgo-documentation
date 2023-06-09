@@ -4,7 +4,7 @@
 
 The procedure guides you in uninstalling Rancher Desktop in case you want to start over with the installation or you want to completely remove Rancher Desktop.
 
-## To uninstall Rancher Desktop
+## Procedure
 
 1. From the taskbar, click the **Start** menu.
 2. Go to **Settings** &rarr; **Apps** &rarr; **Apps & features**.
