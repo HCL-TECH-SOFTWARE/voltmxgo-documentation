@@ -9,6 +9,9 @@ The section provides information on the latest features, improvements, and resol
 - Added Summernote Editor component in Iris to allow users to enter or edit rich text content in  **Create** and **Update** forms generated from Domino objects.
 - Added readiness and liveness probes support to the Domino REST API Helm chart. The readiness probe is used by a service to know if a container is available to handle requests. If it fails the configured thresholds, the service is marked as not ready and won't route requests. The liveness probe is similar to the readiness probe. However, if it fails the configured thresholds, the container is killed and restarted. These probes are present and customizable.
 
+#### VoltFormula
+- Added Typeahead IntelliSence in the [configuration](../howto/configrosetta.md) which can be seen in the rosetta formula. 
+
 ### Improvements
 
 ##### First Touch
@@ -26,9 +29,14 @@ The section provides information on the latest features, improvements, and resol
 
 <!-- Added support for *GET document with an unknown form* OData filter parameter for the GET method on form-based data models.-->
 
+##### VoltFormula
+- IntelliSense improvements on category beside each formula.
+- Update the Rosetta API and Rosetta converter which can be seen in Rosetta API reference documentation.
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
+
+
 
 ## Early Access v2
 

@@ -42,7 +42,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
     To see your Project, click in **Design** tab beside the **Storyboard** tab.
 
 1. Open your **Project**.
-2. On the Project window, find the `Forms`. Once you click the `form`, the `form appears on the canvass.  
+2. On the Project window, find the `Forms`. Once you click the `form`, the form appears on the canvass.  
 3. On the `form` canvass, select the widget or object you want to apply action to. **Right-click** it, and then select one of the action sequences, such as `onTouchStart`, `onClick` and others. 
 
     ![](../assets/images/vfaction.png){: style="height:80%;width:80%"}
@@ -86,7 +86,8 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 	!!!note
         - **@** character for *NotesFormula*
 	    - **=** character  for *OpenFormula*
-	    - You can the see the syntax code or the IntelliSense for the formula that you choose.
+	    - You can see the code hinting or the IntelliSense for the formula that you choose.
+        - Each formula is accompanied by its category.
 	    - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
       
     ![](../assets/images/vfsyntax.png){: style="height:90%;width:90%"}
@@ -113,7 +114,8 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
     !!!note
         - **@** character for *NotesFormula*
         - **=** character  for *OpenFormula*
-        - You can the see the syntax code or the IntelliSense for the formula that you choose.
+        - You can see the code hinting or the IntelliSense for the formula that you choose.
+        - Each formula is accompanied by its category.
         - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
         - You can add or edit code in the formula language window as long as you follow the syntax.
         - You can add more than one line of code. 
@@ -138,28 +140,10 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 3. Add your formula in `rosettajs` in the code window, or edit the existing formula in the code window without opening the **Formula Language** window.
 
     !!!note
-        - When you add `rosetta` javascript,  you'll be able see the syntax code or the IntelliSense for the formula that you choose in code window.
+        - When you add `rosetta` javascript,  you'll be able see the code hinting or the IntelliSense for the formula that you choose in code window.
         - Make sure you know the syntax for coding the `rosetta` javascript.
         
     ![Edit Rosetta JS](../assets/images/vfjavaedit.png)
      
-## Configure VoltFormula's Rosetta API Options
 
-1. Click the **Project Settings** icon.
-    
-    ![settings](../assets/images/vfrosettasetting.png){: style="height:80%;width:80%"}
-
-2. In the **Project Setting** window, click the **Rosetta** tab.
-    
-    ![settings](../assets/images/vfsetting.png)
-
-    |Rosetta area | Rosetta area sections | Description|
-    |-------------|------------|------------|
-    |**API Configuration**| |Allows you to configure options specific to the APIs' implementation and execution.|
-    | |**Register Custom API**|Allows you to upload a file with custom APIs. Refer to the [API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html) under the rosetta-api module for method `registerAPI` for more details on expected file format and parameters.|
-    | |**Preferred API implementation**| Allows you to specify whether to execute the Notes Formula or the OpenFormula implementation when calling an API method, which has an existing implementation in either formula language. Example, `@Abs()` and `=ABS()` are encapsulated by Rosettas `abs()` method. Selecting `Notes` option makes Rosetta call the Notes implementation. Usually, either implementation behaves the same. But in other cases, there may be differences in parameters, execution, or returned results. For example, most Notes formula functions allow lists to be passed in as arguments while OpenFormula allows lists as ranges for only a number of methods. Refer to the [API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html) for details on each API.|
-    |**Converter Configuration**| |Allows you to configure options related to how formulas are converted into their corresponding Rosetta enabled JavaScript.|
-    | |**Passthrough unrecognized formula language into JavasSript conversion results**|Allows you to specify whether the converter allows unrecognized formula code to be part of the javascript conversion results without any massaging, or if it should throw an error when encountering unrecognizable formula code. This allows greater flexibility but also exposes the API to injection of code. **Use with care**.|
-    | |**Use Native vs API Conversion**|Allows you to specify whether the converter uses native JavaScript or API calls for methods where a native JavaScript function exists. Example, convert `@If( )` into JavaScript native `if( )` or call the API `rosettajs.Logical.if( )`.  Sometimes, it makes sense and produces cleaner code to select "convert into native JavaScript" than using the API. Other times, you may want to go through the API call itself to allow for additional checks and/or handle the parameters differently.|
-    |**Version**| |Indicates the `SDK` plugin,`API`,`Converter`, and `Prettifier` versions.|
 
