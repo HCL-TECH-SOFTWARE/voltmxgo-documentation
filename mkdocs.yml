@@ -24,7 +24,7 @@ theme:
   font: false
   #  text: Roboto
   #  code: Roboto Mono
-  favicon: favicon.ico
+  favicon: assets/images/favicon.png
 
 # Markdown Extensions
 markdown_extensions:

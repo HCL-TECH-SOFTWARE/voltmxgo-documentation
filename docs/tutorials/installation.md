@@ -9,8 +9,8 @@ The server components of the Early Access version of Volt MX Go are deployed wit
 - using [K3s](https://docs.k3s.io) on an Ubuntu, RHEL, SLES machine or VM
 - using [Rancher Desktop](https://docs.rancherdesktop.io) running on Windows
 
-!!!note
-    HCL Project KEEP has been re-branded to [HCL Domino REST API](../references/index.md#hcl-domino-rest-api-formerly-known-as-hcl-project-keep) to align with the HCL Volt MX Go strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.
+<!--!!!note
+    HCL Project KEEP has been re-branded to [HCL Domino REST API](../references/index.md#hcl-domino-rest-api-formerly-known-as-hcl-project-keep) to align with the HCL Volt MX Go strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.-->
 ## System requirements
 Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 

@@ -1,5 +1,7 @@
 # Connect to Domino server from your Notes client
 
+## About this procedure
+
 The procedure guides you in connecting to the Domino server from your Notes client.
 
 ## Before you start
