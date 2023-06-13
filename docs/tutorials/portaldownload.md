@@ -9,13 +9,24 @@ The procedure guides you on how to search and download the HCL Volt MX Go Early 
 
 The HCL Volt MX GO Early Access Release package includes:
 
+- Domino_REST_API_for_MXGO_EA3_Installer.tar.gz
+- HCLVoltMXGO_Foundry_Installer_CommandLine_EA3.zip
+- HCLVoltMXGO_Foundry_Installer_Linux_EA3.zip
+- HCLVoltMXGO_Foundry_Installer_Windows_EA3.zip
+- HCLVoltMXGO_Iris_Installer_MacOS_EA3.zip
+- HCLVoltMXGO_Iris_Installer_Windows_EA3.exe
+- FirstTouchRecipes_NSF_EA3.zip
+- FirstTouchRecipes_EA3.zip
+- mxgo-port-forwarding_EA3.ps1
+
+<!--
 - HCL Volt MX Go First Touch Iris Application Zip
 - HCL Volt MX Go Iris Installer (MacOS)
 - HCL Volt MX Go Iris Installer (Windows)
 - HCL Volt MX GO Rancher Desktop Power Shell Script
 - HCL Volt MX GO Rosetta SDK JAR 
 
-<!--| Description | Filename |
+| Description | Filename |
 | --- | --- |
 | HCL Volt MX Go First Touch Iris Application Zip | `FirstTouchRecipes.zip` |
 | HCL Volt MX Go Iris Installer (MacOS) | `HCLVoltMXGO_Iris_Installer_MacOS_ER1.zip` |
@@ -24,11 +35,11 @@ The HCL Volt MX GO Early Access Release package includes:
 | HCL Volt MX GO Rosetta SDK JAR | `com.hcl.rosetta.sdk_1.0.0.v202304122103.jar` |-->
 
 !!!tip
-    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344)
+    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344){: target="_blank"}.
 
 ## To search and download the HCL Volt MX Go Early Access Release package
 
-1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/).
+1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/){: target="_blank"}.
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **Search Downloads**.
 4. On the **Download Search** page, enter `HCL Volt MX GO Early Access Release` in the **Search for** field, and then click **Search**.
@@ -39,8 +50,8 @@ The HCL Volt MX GO Early Access Release package includes:
 
     Click the download icon beside the filename of each file. 
 
-![Download HCL Volt MX GO Early Access Release package](../assets/images/downloadearelease.png)
+<!--![Download HCL Volt MX GO Early Access Release package](../assets/images/downloadearelease.png)-->
 
 !!!tip
-    For the Volt MX Go Iris installer, you can just select and download the installer applicable to your machine. 
+    For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine. 
 

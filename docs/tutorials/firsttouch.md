@@ -6,22 +6,28 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-- You have [downloaded the HCL Volt MX Go First Touch Iris Application Zip](portaldownload.md) file, extracted the `FirstTouchRecipes.nsf` from the zip file, and copied the NSF file to your Domino server.
+- You have [downloaded the FirstTouchRecipes_NSF_EA3.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
 
 ### Additional prerequisites
 
-If you used the Volt MX Go native installer, you need to perform the following in addition to the steps listed above:
+If you used the Volt MX Go native installers, you need to perform the following in addition to the steps listed above:
 
-- You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html).
-- You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api)
+- You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html){: target="_blank"}.
+- You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api){: target="_blank"}.
 
     !!!note
         You don't need to perform The *Create Foundry Identity Service* and the *Set up Domino REST API application and database* procedures included in the same webpage that contain the *Set up Domino REST API* procedure as they aren't applicable to First Touch.
 
 
-## Log in to Volt MX Foundry
+## Log in to Volt MX Go Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` in your browser. 
+1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry host name concatenated with `/mfconsole/`in your browser.
+
+
+    !!!tip
+        If you used the native installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
+ 
+
 2. Enter your username and password on the **Sign in to your account** page. 
 3. Click **Sign In**.  
 
@@ -41,9 +47,12 @@ If you used the Volt MX Go native installer, you need to perform the following i
 
 2. On the **Welcome to Volt MX Go** dialog, enter the following information:
 
-    - Server URL: `http://drapi.mymxgo.com`
+    - Domino REST API server URL
     - username: `mxgo admin`
     - password: `password`
+
+    !!!note
+        If you used the native installer to install Domino REST API, use your Domino server administrator username and password. 
 
 3. Click **Next**. An installation progress dialog appears.
 

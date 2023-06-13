@@ -15,6 +15,8 @@ Volt MX Go includes the following components:
 - Domino Adapter
 - Domino REST API
 
+![Volt MX Go](../assets/images/VoltMXGoDiagram.png)
+
 ## First Touch
 
 The First Touch app walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample app (“Recipes”) in Iris to show how to use the Domino Adapter, connects Volt Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt Foundry by:
@@ -62,5 +64,5 @@ The HCL Domino Adapter makes Domino a core part of the Foundry Object Services s
 
 HCL Domino REST API provides secure REST API-based access to HCL Domino servers and databases. Designed to highlight Domino as a world class, modern, standards-compliant, cloud native and enterprise-level collaboration platform, it adds contemporary REST APIs to Notes and Domino, enabling a modern programming experience with the tools of your choice. 
 
-For more information, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
+For more information, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank"}.
 

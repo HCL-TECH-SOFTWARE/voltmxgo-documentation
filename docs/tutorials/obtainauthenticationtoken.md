@@ -5,7 +5,7 @@ The binary images and Helm charts for Volt MX GO server components are pulled fr
 
 ## To obtain your authentication token
 
-1. Go to the [HCL Container Repository](https://hclcr.io).
+1. Go to the [HCL Container Repository](https://hclcr.io){: target="_blank"}.
 2. On the login page, click **LOGIN VIA OIDC Provider**, and then login using your corporate email address.
 3. On the **Projects** page, enter `voltmxgo` in the search field, and then click `voltmxgo-ea` on the search result. 
 
