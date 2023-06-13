@@ -12,6 +12,10 @@ The section provides information on the latest features, improvements, and resol
 #### VoltFormula
 - Added Typeahead IntelliSence in the [configuration](../howto/configrosetta.md) which can be seen in the rosetta formula. 
 
+#### Design Import
+
+- Added support for multi-value fields in creation of  DominoForm and grid table in Domino View.
+- Add **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
 ### Improvements
 
 ##### First Touch
@@ -32,6 +36,16 @@ The section provides information on the latest features, improvements, and resol
 ##### VoltFormula
 - IntelliSense improvements on category beside each formula.
 - Update the Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
+- 
+##### Design Import
+- Improvements on the error toggle button on the **VoltMX Design Import Wizard**.
+- Improve the sortation configuration in importing the forms generated.
+- Updated the warning message for supported **Project** type.
+
+### Resolve Issues
+
+##### Design Import
+- 
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
