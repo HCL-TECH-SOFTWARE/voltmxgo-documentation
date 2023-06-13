@@ -54,7 +54,7 @@ kubectl config set-context --current --namespace=mxgo
 
 ## 4. Add Early Access Preview Host Names
 
-For the Early Access 3 preview, the following host names are no longer being **hard-coded**:
+For the Early Access 3 preview, the following host names are no longer **hard-coded**:
 
 ```
 drapi.mymxgo.com
