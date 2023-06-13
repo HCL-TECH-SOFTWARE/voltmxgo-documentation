@@ -10,7 +10,7 @@ This procedure describes how to configure the Rosetta API based on what you need
 - Converter Configuration
 - Use Native vs API Conversion
 
-### To configure settings in Rosetta API
+## To configure settings in Rosetta API
 
 
 1. Click the **Project Settings** icon.

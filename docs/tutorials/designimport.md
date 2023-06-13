@@ -88,7 +88,7 @@
 
 	![](../assets/images/dikeep.png){: style="height:80%;width:80%"}
 
-	1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has pubished, your service name should be named as MXGO(service name). Example: MXGODigiApp1
+	1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has published, your service name should be named as MXGO(service name). Example: MXGODigiSample1
 
 		![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
@@ -108,7 +108,7 @@
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
 	!!!tip
-		It may take a while of publishing the imported Irish app.
+		It may take a while of publishing the imported Iris app.
 
 	
 	![](../assets/images/disummary.png){: style="height:80%;width:80%"}	
@@ -119,6 +119,7 @@
 		- The **check mark icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
 		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
 		- Turn on `show only error` toggle to see all the fields with warning icon.
+		- You may expand and collapse the forms.
 
 	![](../assets/images/diresult.png){: style="height:80%;width:80%"}	
 
@@ -151,7 +152,7 @@
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
 	!!!tip
-		It may take a while of publishing the imported Irish app.
+		It may take a while of publishing the imported Iris app.
 
 
 7. On the final step **Result** , you can see the final `forms` and `views`. 
@@ -160,6 +161,7 @@
 		- The **check mark icon** besides each of the `forms`, `fields` and `views` means that it was successfully created.
 		- The **warning icon** besides each of the `forms`, `fields` and `views` means that the supported datatype doesn't match with the Iris app datatype.
 		- Turn on `show only error` toggle to see all the fields with warning icon.
+		- You may expand and collapse the forms.
 
 
 	Once you click **Done**, each of the selected form, views and agents have imported in the  Iris through the use of Forms in Volt MX Go Iris.
