@@ -77,7 +77,7 @@ Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&
 
 Windows 11, Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems
 
-Installer File (mandatory)
+<!--Installer File (mandatory)-->
 
 ### Hardware
 
