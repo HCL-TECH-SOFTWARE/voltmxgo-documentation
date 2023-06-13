@@ -8,20 +8,27 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md). 
 - You have noted the following Domino REST API details:
 
-    - Server URL: `http://drapi.mymxgo.com` 
+    - Domino REST API server URL 
     - username: `mxgo admin`
     - password: `password`
+
+    !!!note
+        If you used the native installer to install Domino REST API, use your Domino server administrator username and password.
 
 - You have added and configured a schema and a scope in the Domino REST API. 
 
     !!!tip
-        For more information, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation. 
+        For more information, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"} in the Domino REST API documentation. 
 
 - Your schema should have a configured form with a `dql` mode similar to the `default` mode. 
 
 ## Log in to Volt MX Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` in your browser.  
+1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry host name concatenated with `/mfconsole/` in your browser.
+
+    !!!tip
+        If you used the native installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
+  
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
 
@@ -34,7 +41,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 3.	Click the **Edit App Name** icon to give a unique name to your app.
 
 !!!tip
-    For more information, see [How to Add Applications](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html) in the HCL Volt MX documentation. 
+    For more information, see [How to Add Applications](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html){: target="_blank"} in the HCL Volt MX documentation. 
 
 ## Configure an Identity service
 
@@ -71,7 +78,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     3. Enter the App Secret of your app in Domino REST API in the **Client Secret** text box.
 
     !!!tip
-        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Using Web UI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html) in the Domino REST API documentation.  
+        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Using Web UI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"} in the Domino REST API documentation.  
 
 6.	Under **Advanced**:
     

@@ -7,21 +7,25 @@ nav:
             - prerequisite.md
             - portaldownload.md
             - obtainauthenticationtoken.md
-        - Deploy Kubernetes:
-            - deploykubernetes.md
-            - Install and configure K3s: k3sinstall.md
-            - Install Rancher Desktop: installrancher.md
-        - Complete preparatory procedure:
-            - prereqindex.md
-            - For first time installation of Volt MX Go: prereq.md
-            - For upgrading existing installation of Volt MX Go: prereqnew.md
-        - Install Domino REST API: downloadhelmchart.md
-        - Install MySQL for Foundry: installmysqlfoundry.md
-        - Install Foundry: installfoundry.md
+        - Install Volt MX Go via containerized deployment:
+            - containerdeployment.md
+            - Deploy Kubernetes:
+                - deploykubernetes.md
+                - Install and configure K3s: k3sinstall.md
+                - Install Rancher Desktop: installrancher.md
+            - Complete preparatory procedure:
+                - prereqindex.md
+                - For first time installation of Volt MX Go: prereq.md
+                - For upgrading existing installation of Volt MX Go: prereqnew.md
+            - Install Domino REST API: downloadhelmchart.md
+            - Install MySQL for Foundry: installmysqlfoundry.md
+            - Install Foundry: installfoundry.md
+        - Install Volt MX Go via native installers: nativeinstallers.md
         - Install Volt MX Go Iris: installiris.md
     - firsttouch.md
+    - adaptertutorial.md
     - designimport.md
     - voltformula.md
-    - adaptertutorial.md
+
 
 
