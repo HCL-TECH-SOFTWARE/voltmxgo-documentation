@@ -16,7 +16,7 @@ The section provides information on the latest features, improvements, and resol
 #### Design Import
 
 - Added support for multi-value fields in creation of  DominoForm and grid table in Domino View.
-- Add **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
+- Added **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
 ### Improvements
 
 ##### First Touch
@@ -44,7 +44,8 @@ The section provides information on the latest features, improvements, and resol
 - Updated the warning message for supported **Project** type.
 
 ### Resolve Issues
-
+- Fixed the error when choosing a new scope in Scope and Form step in **VoltMX Design Import Wizard**.
+- Fixed the list of scopes if the service has changed.
 ##### Design Import
 - 
 ### Others
