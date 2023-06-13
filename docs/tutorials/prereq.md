@@ -54,7 +54,7 @@ kubectl config set-context --current --namespace=mxgo
 
 ## 4. Add Early Access Preview Host Names
 
-For the Early Access preview, the following host names are **hard-coded**:
+For the Early Access 3 preview, the following host names are no longer being **hard-coded**:
 
 ```
 drapi.mymxgo.com
@@ -62,10 +62,12 @@ drapi-management.mymxgo.com
 foundry.mymxgo.com
 ```
 
+You can either provide your own host names, or continue to use these if you choose. Additionally, documentation has been added to direct you to provide the host names you have chosen when you install the Domino Rest API and Foundry.
+
 !!!tip
     Obtain your machine's IP ADDRESS as you will need it in the following step.
 
-Add these host names in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name** as shown in the following example:
+Add the host names that you have chosen to use in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name**. The previously hard-coded values are shown in this example:
 
 ```
 10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
@@ -91,7 +93,7 @@ Add these host names in your `/etc/hosts` file together with your **IP ADDRESS**
     kind: ConfigMap
     ```
 
-3. Before the line that starts with `kind: ConfigMap`, add a new line that uses the same IP address, but adds the hard-coded host names. When done, the segment of the file looks like the following, but with your IP address and your own host name:
+3. Before the line that starts with `kind: ConfigMap`, add a new line that uses the same IP address, but adds the host names you have chosen to use. When done, the segment of the file looks like the following code, but with your IP address and your own host name. The previously hard-coded values are shown in this example:
 
     ```{ .yaml .no-copy }
         import /etc/coredns/custom/*.server
