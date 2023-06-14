@@ -6,7 +6,6 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-- You have [downloaded the FirstTouchRecipes_NSF_EA3.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
 
 ### Additional prerequisites
 
@@ -18,6 +17,7 @@ If you used the Volt MX Go native installers, you need to perform the following 
     !!!note
         You don't need to perform The *Create Foundry Identity Service* and the *Set up Domino REST API application and database* procedures included in the same webpage that contain the *Set up Domino REST API* procedure as they aren't applicable to First Touch.
 
+- You have [downloaded the FirstTouchRecipes_NSF_EA3.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
 
 ## Log in to Volt MX Go Foundry
 

@@ -92,6 +92,7 @@ The procedures will guide you in the installation of Foundry.
 **Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
 
 !!!note
+    - If you defined a different Foundry host name, the Foundry URL would be the defined Foundry host name concatenated with `/mfconsole/`.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
     - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
