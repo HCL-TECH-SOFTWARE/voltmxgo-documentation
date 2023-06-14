@@ -11,8 +11,13 @@ The section provides information on the latest features, improvements, and resol
 - Added installers for **Domino REST API** and **Volt MX Go Foundry**.
 
 ##### VoltFormula
-- Added Typeahead IntelliSence in the [configuration](../howto/configrosetta.md) which can be seen in the rosetta formula. 
+- Added Typeahead IntelliSense in the [configuration](../howto/configrosetta.md) which can be seen in the rosetta formula. 
 
+##### Design Import
+
+- Added support for multi-value fields in the creation of  DominoForm and grid table in Domino View.
+- Added **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
+- Added unconfigured and configured forms in **VoltMX Design Import Wizard**.
 ### Improvements
 
 ##### First Touch
@@ -32,7 +37,18 @@ The section provides information on the latest features, improvements, and resol
 
 ##### VoltFormula
 - IntelliSense improvements on category beside each formula.
-- Update the Rosetta API and Rosetta converter which can be seen in Rosetta API reference documentation.
+- Update the Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
+##### Design Import
+- Improvements on the error toggle button on the **VoltMX Design Import Wizard**.
+- Improve the sort configuration in importing the forms generated.
+- Updated the warning message for supported **Project** type.
+- Improve the integration services operations in Foundry app.
+
+### Resolve Issues
+
+##### Design Import
+- Fixed the error when choosing a new scope in the Scope and Form step in **VoltMX Design Import Wizard**.
+- Fixed the list of scopes if the service has changed.
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
