@@ -15,7 +15,7 @@ The section provides information on the latest features, improvements, and resol
 
 ##### Design Import
 
-- Added support for multi-value fields in creation of  DominoForm and grid table in Domino View.
+- Added support for multi-value fields in the creation of  DominoForm and grid table in Domino View.
 - Added **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
 - Added unconfigured and configured forms in **VoltMX Design Import Wizard**.
 ### Improvements
@@ -42,11 +42,12 @@ The section provides information on the latest features, improvements, and resol
 - Improvements on the error toggle button on the **VoltMX Design Import Wizard**.
 - Improve the sort configuration in importing the forms generated.
 - Updated the warning message for supported **Project** type.
+- Improve the integration services operations in Foundry app.
 
 ### Resolve Issues
 
 ##### Design Import
-- Fixed the error when choosing a new scope in Scope and Form step in **VoltMX Design Import Wizard**.
+- Fixed the error when choosing a new scope in the Scope and Form step in **VoltMX Design Import Wizard**.
 - Fixed the list of scopes if the service has changed.
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
