@@ -37,7 +37,7 @@ For more information, see the [Installation and configuration](https://opensourc
 3. Follow the links to the installation guides based on your preferred installation platform/option:
 
     !!!warning "Important"
-        Make sure to check all the details and complete all the procedures indicated in the sections in the installation guides. 
+        Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides. 
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank"}
     - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank"}

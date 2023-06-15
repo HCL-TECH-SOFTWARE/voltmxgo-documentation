@@ -22,6 +22,17 @@ The full specification of the API is available in a structured format in the [Ro
 
 Describes different [logging levels](reflogginglevels.md) for better monitoring and evaluation of activities and events. 
 
+## Documentation references
+
+[HCL Volt MX Documentation V9.5](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html){: target="_blank"}
+
+- Provides documentation and more information about Iris and Foundry.
+
+[HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank"}
+
+- Provides documentation and more information about Domino REST API. 
+
+
 <!--## HCL Domino REST API formerly known as HCL Project KEEP
 
 HCL Project KEEP has been re-branded to HCL Domino REST API to align with the HCL Volt MX Go strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.
