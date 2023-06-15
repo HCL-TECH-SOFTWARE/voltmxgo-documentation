@@ -6,7 +6,7 @@ The section provides information on the latest features, improvements, and resol
 
 ### New Features
 
-- Added Summernote Editor component in Iris to allow users to enter or edit rich text content in  **Create** and **Update** forms generated from Domino objects.
+- Added Summernote Editor component in Iris to allow users to enter or edit rich text content in  **Create** and **Update** forms generated from Domino objects. For more information, see [Import Summernote Editor](../howto/summernote.md) and [SummernoteEditor widget](summernotewidget.md).
 - Added readiness and liveness probes support to the Domino REST API Helm chart. The readiness probe is used by a service to know if a container is available to handle requests. If it fails the configured thresholds, the service is marked as not ready and won't route requests. The liveness probe is similar to the readiness probe. However, if it fails the configured thresholds, the container is killed and restarted. These probes are present and customizable.
 - Added installers for **Domino REST API** and **Volt MX Go Foundry**.
 
@@ -15,7 +15,7 @@ The section provides information on the latest features, improvements, and resol
 
 ##### Design Import
 
-- Added support for multi-value fields in the creation of  DominoForm and grid table in Domino View.
+- Added support for multi-value fields in the creation of DominoForm and grid table in Domino View.
 - Added **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
 - Added unconfigured and configured forms in **VoltMX Design Import Wizard**.
 ### Improvements
@@ -33,8 +33,6 @@ The section provides information on the latest features, improvements, and resol
     - The CREATE form allows users to specify the rich text field content using the Summernote Editor Iris component.
     - The UPDATE form allows users to edit the rich text using the Summernote Editor Iris component.  
 
-<!-- Added support for *GET document with an unknown form* OData filter parameter for the GET method on form-based data models.-->
-
 ##### VoltFormula
 - IntelliSense improvements on category beside each formula.
 - Update the Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html).
@@ -47,13 +45,14 @@ The section provides information on the latest features, improvements, and resol
 ### Resolve Issues
 
 ##### Design Import
-- Fixed the error when choosing a new scope in the Scope and Form step in **VoltMX Design Import Wizard**.
-- Fixed the list of scopes if the service has changed.
+- An error occurred when choosing a new scope in the Scope and Form step in the **VoltMX Design Import Wizard**.
+- The list of scopes wasn't fetched again when the service was changed.
+
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
-- Added [installation procedures](../tutorials/nativeinstallers.md) for installing Domino REST API and Volt MX Go Foundry using native installers. 
-
+- Added [installation procedures](../tutorials/nativeinstallers.md) for installing Domino REST API and Volt MX Go Foundry using native installers.
+- Updated system requirements for installing [Volt MX Go Foundry](../tutorials/sysreq.md#for-installing-volt-mx-go-foundry-using-native-installers) and [Domino REST API](../tutorials/sysreq.md#for-installing-domino-rest-api-using-native-installer) using native installers.  
 
 
 ## Early Access v2

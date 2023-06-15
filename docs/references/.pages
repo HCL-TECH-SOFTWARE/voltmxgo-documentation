@@ -5,4 +5,5 @@ nav:
     - kubecheatsheet.md
     - Rosetta API reference documentation: https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html
     - reflogginglevels.md
+    - Widgets: summernotewidget.md
     - Documentation references: ../references/index.html#documentation-references

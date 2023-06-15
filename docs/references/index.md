@@ -20,8 +20,11 @@ The full specification of the API is available in a structured format in the [Ro
 
 ## Logging levels
 
-Describes different [logging levels](reflogginglevels.md) for better monitoring and evaluation of activities and events. 
+Describes different [logging levels](reflogginglevels.md) for better monitoring and evaluation of activities and events.
 
+## Widgets
+
+- [SummernoteEditor widget](summernotewidget.md)
 ## Documentation references
 
 [HCL Volt MX Documentation V9.5](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html){: target="_blank"}

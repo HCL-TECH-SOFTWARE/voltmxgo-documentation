@@ -128,7 +128,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
      
     !!!note
         - The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
-        - MIME is the default if no option is selected in **Rich Text Mode**.
+        - MIME is the default if no option is selected in **Rich Text Mode**. MIME might be removed in future updates.    
         - If you want to use MIME and HTML as Rich Text modes, you have to create separate object services, one for HTML and one for MIME.    
 
     ![](../assets/images/objectconparam.png)
