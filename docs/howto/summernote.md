@@ -75,3 +75,6 @@ The Summernote Editor component is now successfully imported.
 
     ![Summernote editor rich text field](../assets/images/snrichtextfield.png)
 
+## Additional information
+
+To learn more, see [SummernoteEditor widget](../references/summernotewidget.md). 
