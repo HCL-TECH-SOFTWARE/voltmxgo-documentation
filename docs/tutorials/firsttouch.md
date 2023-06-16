@@ -21,7 +21,7 @@ If you used the Volt MX Go native installers, you need to perform the following 
 
 ## Log in to Volt MX Go Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry host name concatenated with `/mfconsole/`in your browser.
+1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/`in your browser.
 
 
     !!!tip

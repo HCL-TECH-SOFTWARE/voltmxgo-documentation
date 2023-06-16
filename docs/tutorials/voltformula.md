@@ -36,7 +36,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 	
 1. Open the **Volt MX Iris** menu bar for **Mac** or **Edit** menu bar for **Windows** and click **Preferences**.
 2. This opens the **Volt MX Iris Preferences**. Click to **Volt MX Foundry**.
-3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` or your provided Foundry host name, and click **Validate**. A confirmation displays.
+3. Fill-in the Foundry URL with `http://foundry.mymxgo.com` or your provided Foundry hostname, and click **Validate**. A confirmation displays.
 
     ![Validate Foundry](../assets/images/dipreference.png){: style="height:80%;width:80%"}
 

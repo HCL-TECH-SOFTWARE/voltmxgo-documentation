@@ -39,7 +39,7 @@
     
 1. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
 2. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
-3. Fill in the Foundry URL with `http://foundry.mymxgo.com` or your provided Foundry host name, and click **Validate**.
+3. Fill in the Foundry URL with `http://foundry.mymxgo.com` or your provided Foundry hostname, and click **Validate**.
 4. Click **Done**. 
 
 ![Preferences](../assets/images/dipreference.png){: style="height:80%;width:80%"}
