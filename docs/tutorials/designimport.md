@@ -60,7 +60,7 @@
 
 5. You can see your project name in the upper-right corner of the Iris canvass.
 
-    ![](../assets/images/diappname.png){: style="height:70%;width:70%"}
+    ![](../assets/images/diappname.png){: style="height:100%;width:100%"}
 
 
 ## Import a Domino Application using the new Foundry app
@@ -88,11 +88,11 @@
 
     ![](../assets/images/dikeep.png){: style="height:80%;width:80%"}
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGODigiSample1
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyDemoSample
 
         ![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
-    2. Log in to your credential to Domino Rest API within this wizard modal dialog and click **allow**.
+    2. Log in your credential to Domino Rest API within this wizard modal dialog and click **allow**.
 
         ![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 

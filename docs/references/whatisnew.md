@@ -15,7 +15,7 @@ The section provides information on the latest features, improvements, and resol
 
 ##### Design Import
 
-- Added support for multi-value fields in the creation of  DominoForm and grid table in Domino View.
+- Added support for multi-value fields configured in Domino Rest API with the value returned to the imported Domino App as a bulleted list.
 - Added **Collapse All** and **Expand All** features in **VoltMX Design Import Wizard**.
 - Added unconfigured and configured forms in **VoltMX Design Import Wizard**.
 ### Improvements
