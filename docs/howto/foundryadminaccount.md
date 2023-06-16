@@ -12,10 +12,10 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 ### For Volt MX Go Foundry installed via containerized deployment
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry host name concatenated with `/mfconsole/` in your browser. The **Welcome to Volt MX Foundry setup** page opens.
+1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/` in your browser. The **Welcome to Volt MX Foundry setup** page opens.
 
     !!!note
-        The **Identity Service URL** text box is already populated with the Identity Service URL. In case it's empty, enter `http://foundry.mymxgo.com/authService` or your provided Foundry host name concatenated with `/authService`.
+        The **Identity Service URL** text box is already populated with the Identity Service URL. In case it's empty, enter `http://foundry.mymxgo.com/authService` or your provided Foundry hostname concatenated with `/authService`.
 
 2. Under **Admin Details**: 
 
