@@ -1,6 +1,10 @@
 # Obtain authentication token from HCL Container Repository
 
 ## About this procedure
+
+!!!warning "Important"
+    This procedure is for containerized deployment only.
+    
 The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. This requires you to get your authentication token from the HCL Container Repository. This procedure guides you on how to obtain your authentication token. 
 
 ## To obtain your authentication token
