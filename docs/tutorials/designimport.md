@@ -76,6 +76,9 @@
     !!!note
         Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
 
+    ![](../assets/images/dicreatenew.png){: style="height:80%;width:80%"}
+            
+
 4. The third step **Identity Service**, fill in the **Create New Identity Service** and click **Next**,
 
     |  **Fields**     | **Description** |
@@ -101,6 +104,8 @@
         ![](../assets/images/difoundry.png){: style="height:80%;width:80%"}
 
 5. On the fourth step **Scope and Forms**, select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
+
+    ![](../assets/images/discope.png){: style="height:80%;width:80%"}
 
     - You can **select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. Only the configured forms will be able to select.
         ![](../assets/images/discopeform.png){: style="height:80%;width:80%"}
@@ -173,11 +178,13 @@
     Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
     To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
 
-1. Log in to your account in Domino REST API using the newly published imported Domino application.
+1. Log in your account in Domino REST API using the newly published imported Domino application.
 
     !!!note
         Your configuration in Domino REST API decides what operations you can include in the **design import** form.
         All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
+
+     ![Screenshot](../assets/images/dilogincrud.png)   
 
 2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
     
