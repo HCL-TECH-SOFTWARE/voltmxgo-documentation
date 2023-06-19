@@ -115,11 +115,7 @@
     !!!tip
         It may take a while of publishing the imported Iris app.
 
-    <figure markdown>
-    ![Image title](../assets/images/disummary.png){: style="height:80%;width:80%"} 
-    <figcaption>Image caption</figcaption>
-</figure>
-    <!--![](../assets/images/disummary.png){: style="height:80%;width:80%"} -->
+        ![](../assets/images/disummary.png){: style="height:80%;width:80%"}
 
 7. On the final step **Result**, you can see the final `forms` and `views`. 
  
