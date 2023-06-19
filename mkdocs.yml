@@ -49,6 +49,8 @@ markdown_extensions:
         - "docs/.snippets"          
   - footnotes
   - def_list
+  - toc:
+     title: On this page
   
 
 # Copyright
