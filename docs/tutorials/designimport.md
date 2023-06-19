@@ -69,7 +69,7 @@
 
 2. The VoltMX Design Import wizard appears. Go to the first step **Getting Started** and click **Next**.
 
-    ![](../assets/images/diwizard.png){: style="height:80%;width:80%"}
+    ![](../assets/images/diwizard.png){: style="height:100%;width:100%"}
     
 3. On the second step **Associate Foundry App**, click **Create New** and click **Next**.
 
