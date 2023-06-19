@@ -26,7 +26,7 @@
 3. Go to [Validate Volt MX GO Foundry](#validate-volt-mx-go-foundry) procedure.
 
 
-4.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
+4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
 
     ![Log in screen](../assets/images/dilogin.png){: style="height:60%;width:60%"}
 
@@ -49,16 +49,16 @@
 1. On the top menu, **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-    ![](../assets/images/distart.png){: style="height:70%;width:70%"}
+    ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
 3. On the **Which device size do you want to start building for first?** dialog, select Desktop and click **Next**.
 
-    ![](../assets/images/didevice.png){: style="height:70%;width:70%"}
+    ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
 4. Enter your **Project Name** and click **Create**.    
     ![](../assets/images/diprojectname.png){: style="height:70%;width:70%"} 
 
-5. You can see your project name in the upper-right corner of the Iris canvass.
+5. You can see your project name in the upper-left corner of the Iris canvass.
 
     ![](../assets/images/diappname.png){: style="height:100%;width:100%"}
 
@@ -76,7 +76,7 @@
     !!!note
         Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
 
-    ![](../assets/images/dicreatenew.png){: style="height:80%;width:80%"}
+    ![](../assets/images/dicreatenew.png){: style="height:100%;width:100%"}
             
 
 4. The third step **Identity Service**, fill in the **Create New Identity Service** and click **Next**,
@@ -95,7 +95,7 @@
 
         ![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
-    2. Log in your credential to Domino Rest API within this wizard modal dialog and click **allow**.
+    2. Login with your **Domino credentials** within this wizard modal dialogand click **allow**.
 
         ![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 
@@ -115,8 +115,11 @@
     !!!tip
         It may take a while of publishing the imported Iris app.
 
-    
-    ![](../assets/images/disummary.png){: style="height:80%;width:80%"} 
+    <figure markdown>
+    ![Image title](../assets/images/disummary.png){: style="height:80%;width:80%"} 
+    <figcaption>Image caption</figcaption>
+</figure>
+    <!--![](../assets/images/disummary.png){: style="height:80%;width:80%"} -->
 
 7. On the final step **Result**, you can see the final `forms` and `views`. 
  
@@ -178,7 +181,7 @@
     Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
     To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
 
-1. Log in your account in Domino REST API using the newly published imported Domino application.
+1. Log in to your account in Domino REST API using the newly published imported Domino application.
 
     !!!note
         Your configuration in Domino REST API decides what operations you can include in the **design import** form.
@@ -186,7 +189,7 @@
 
      ![Screenshot](../assets/images/dilogincrud.png)   
 
-2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
+2. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
     
     ![Screenshot](../assets/images/dinewview.png)
 
@@ -195,7 +198,7 @@
 
     ![Screenshot](../assets/images/dinewview1.png)
 
-5. Go back to the **Dashboard**, and then click your Table (example: carListView) under **Views**. 
+5. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer) to see the fields that you've added.
 
     ![Screenshot](../assets/images/diviews.png)
 
@@ -203,6 +206,6 @@
 
     ![Screenshot](../assets/images/dilist.png)
 
-    Since changes to the form are reflected in the Domino Server, they're also visible in the Domino Designer.
+    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
     ![Screenshot](../assets/images/didesigner.png)
