@@ -180,8 +180,7 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 - `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
 
 !!!note
-    - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
-    - `$skip` can only be used if `$top` is also specified.
+    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
 
 With `$filter`, the following canonical functions are supported:
 

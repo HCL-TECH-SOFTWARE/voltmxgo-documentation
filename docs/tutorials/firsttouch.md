@@ -21,7 +21,7 @@ If you used the Volt MX Go native installers, you need to perform the following 
 
 ## Log in to Volt MX Go Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry host name concatenated with `/mfconsole/`in your browser.
+1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/`in your browser.
 
 
     !!!tip
@@ -52,7 +52,8 @@ If you used the Volt MX Go native installers, you need to perform the following 
     - password: `password`
 
     !!!note
-        If you used the native installer to install Domino REST API, use your Domino server administrator username and password. 
+        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.  
+        - If you used the native installer to install Domino REST API, use your Domino server administrator username and password. 
 
 3. Click **Next**. An installation progress dialog appears.
 
