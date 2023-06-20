@@ -67,6 +67,9 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 ### Supported browsers
 Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html){: target="_blank"} for the Volt MX Go Foundry Console.
 
+### Prerequisites for Foundry command line installer
+Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites){: target="_blank"} when using the Foundry command line installer. 
+
 ## For installing Domino REST API using native installer
 
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank"} for installing Domino REST API using the native installer. 

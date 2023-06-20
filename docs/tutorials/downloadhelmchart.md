@@ -34,14 +34,14 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
             password: your-authentication-token
         ```
 
-    2. Locate the following lines in the file and add your DNS host name settings:
+    2. Locate the following lines in the file and add your DNS hostname settings:
 
         ```{ .yaml .no-copy }
         ingress:
             drapiDnsName:
             drapiManagementDnsName:
         ```
-        Whatever host names you specify here and later in the Foundry install, you need to ensure that the host names are resolvable. There is no additional work if you have already registered the host names in DNS. However, if you haven't registered them, you must add the host names to the server's /etc/hosts file as described in [Add Early Access Preview Host Names](prereq.md#4-add-early-access-preview-host-names), substituting your host names. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your host names.
+        Whatever hostnames you specify here and later in the Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [Add Early Access Preview Hostnames](prereq.md#4-add-early-access-preview-host-names), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your hostnames.
 
         !!!note
             The default names used in previous Early Access releases were `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.

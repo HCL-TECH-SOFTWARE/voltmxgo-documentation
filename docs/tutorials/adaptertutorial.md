@@ -25,7 +25,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Log in to Volt MX Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry host name concatenated with `/mfconsole/` in your browser.
+1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!!tip
         If you used the native installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
