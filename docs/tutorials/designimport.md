@@ -31,7 +31,7 @@
 3. Go to [Validate Volt MX GO Foundry](#validate-volt-mx-go-foundry) procedure.
 
 
-4.  Enter your **credentials** in Volt MX Go Iris and click **Sign-In.**
+4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
 
     ![Log in screen](../assets/images/dilogin.png){: style="height:60%;width:60%"}
 
@@ -54,18 +54,18 @@
 1. On the top menu, **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-    ![](../assets/images/distart.png){: style="height:70%;width:70%"}
+    ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
 3. On the **Which device size do you want to start building for first?** dialog, select Desktop and click **Next**.
 
-    ![](../assets/images/didevice.png){: style="height:70%;width:70%"}
+    ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
 4. Enter your **Project Name** and click **Create**.    
     ![](../assets/images/diprojectname.png){: style="height:70%;width:70%"} 
 
-5. You can see your project name in the upper-right corner of the Iris canvass.
+5. You can see your project name in the upper-left corner of the Iris canvass.
 
-    ![](../assets/images/diappname.png){: style="height:70%;width:70%"}
+    ![](../assets/images/diappname.png){: style="height:100%;width:100%"}
 
 
 ## Import a Domino Application using the new Foundry app
@@ -74,12 +74,15 @@
 
 2. The VoltMX Design Import wizard appears. Go to the first step **Getting Started** and click **Next**.
 
-    ![](../assets/images/diwizard.png){: style="height:80%;width:80%"}
+    ![](../assets/images/diwizard.png){: style="height:100%;width:100%"}
     
 3. On the second step **Associate Foundry App**, click **Create New** and click **Next**.
 
     !!!note
         Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+
+    ![](../assets/images/dicreatenew.png){: style="height:100%;width:100%"}
+            
 
 4. The third step **Identity Service**, fill in the **Create New Identity Service** and click **Next**,
 
@@ -93,11 +96,14 @@
 
     ![](../assets/images/dikeep.png){: style="height:80%;width:80%"}
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGODigiSample1
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyDemoSample
 
         ![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
-    2. Log in to your credential to Domino Rest API within this wizard modal dialog and click **allow**.
+    2. Login with your **Domino credentials** within this wizard modal dialog and click **allow**.
+
+        !!!note
+        This documents assumes you are using the Domino IdP which uses your Domino directory credentials.  If you are not, enter the credentials for the IdP you've configured for Domino REST API. 
 
         ![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 
@@ -107,6 +113,8 @@
 
 5. On the fourth step **Scope and Forms**, select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
+    ![](../assets/images/discope.png){: style="height:80%;width:80%"}
+
     - You can **select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. Only the configured forms will be able to select.
         ![](../assets/images/discopeform.png){: style="height:80%;width:80%"}
 
@@ -115,8 +123,7 @@
     !!!tip
         It may take a while of publishing the imported Iris app.
 
-    
-    ![](../assets/images/disummary.png){: style="height:80%;width:80%"} 
+        ![](../assets/images/disummary.png){: style="height:80%;width:80%"}
 
 7. On the final step **Result**, you can see the final `forms` and `views`. 
  
@@ -184,7 +191,9 @@
         Your configuration in Domino REST API decides what operations you can include in the **design import** form.
         All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
 
-2. On the **Dashboard**, click your Table (example: newCar) under **Forms**.  
+     ![Screenshot](../assets/images/dilogincrud.png)   
+
+2. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
     
     ![Screenshot](../assets/images/dinewview.png)
 
@@ -193,7 +202,7 @@
 
     ![Screenshot](../assets/images/dinewview1.png)
 
-5. Go back to the **Dashboard**, and then click your Table (example: carListView) under **Views**. 
+5. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer) to see the fields that you've added.
 
     ![Screenshot](../assets/images/diviews.png)
 
@@ -201,6 +210,6 @@
 
     ![Screenshot](../assets/images/dilist.png)
 
-    Since changes to the form are reflected in the Domino Server, they're also visible in the Domino Designer.
+    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
     ![Screenshot](../assets/images/didesigner.png)
