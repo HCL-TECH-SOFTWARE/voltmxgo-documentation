@@ -124,7 +124,7 @@
     !!!tip
         It may take a while of publishing the imported Iris app.
 
-        ![](../assets/images/disummary.png){: style="height:80%;width:80%"}
+    ![](../assets/images/disummary.png){: style="height:80%;width:80%"}
 
 7. On the final step **Result**, you can see the final `forms` and `views`. 
  
