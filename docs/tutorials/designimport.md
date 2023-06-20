@@ -100,7 +100,10 @@
 
         ![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
-    2. Login with your **Domino credentials** within this wizard modal dialogand click **allow**.
+    2. Login with your **Domino credentials** within this wizard modal dialog and click **allow**.
+
+        !!!note
+        This documents assumes you are using the Domino IdP which uses your Domino directory credentials.  If you are not, enter the credentials for the IdP you've configured for Domino REST API. 
 
         ![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 
