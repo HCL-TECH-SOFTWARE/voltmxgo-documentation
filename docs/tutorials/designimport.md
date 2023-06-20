@@ -102,7 +102,7 @@
 
     2. Login with your **Domino credentials** within this wizard modal dialog and click **allow**.
 
-        !!!warning
+        !!!note
             This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
 
 
