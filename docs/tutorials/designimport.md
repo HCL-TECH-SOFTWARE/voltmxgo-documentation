@@ -102,8 +102,9 @@
 
     2. Login with your **Domino credentials** within this wizard modal dialog and click **allow**.
 
-        !!!note
-        This documents assumes you are using the Domino IdP which uses your Domino directory credentials.  If you are not, enter the credentials for the IdP you've configured for Domino REST API. 
+        !!!warning
+            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
+
 
         ![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 
