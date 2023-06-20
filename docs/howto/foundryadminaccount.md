@@ -28,7 +28,7 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 ![Welcome to Volt MX Foundry setup](../assets/images/Foundryaccountsetup.png)
 
-### For Volt MX Go Foundry installed via native installers
+### For Volt MX Go Foundry installed via installers
 
 - Check the procedure on [how to get started with Volt MX Foundry Console](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/How_to_access_VoltMX_Foundry_Portal_on-Prem.html){: target="_blank"}.
 

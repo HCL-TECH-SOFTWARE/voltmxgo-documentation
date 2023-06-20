@@ -9,7 +9,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 ### Additional prerequisites
 
-If you used the Volt MX Go native installers, you need to perform the following in addition to the requirements listed above:
+If you used the Volt MX Go installers, you need to perform the following in addition to the requirements listed above:
 
 - You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html){: target="_blank"}.
 - You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api){: target="_blank"}.
@@ -25,7 +25,7 @@ If you used the Volt MX Go native installers, you need to perform the following 
 
 
     !!!tip
-        If you used the native installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
+        If you used the installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
  
 
 2. Enter your username and password on the **Sign in to your account** page. 
@@ -53,7 +53,7 @@ If you used the Volt MX Go native installers, you need to perform the following 
 
     !!!note
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.  
-        - If you used the native installer to install Domino REST API, use your Domino server administrator username and password. 
+        - If you used the installer to install Domino REST API, use your Domino server administrator username and password. 
 
 3. Click **Next**. An installation progress dialog appears.
 

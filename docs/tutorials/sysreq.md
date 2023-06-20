@@ -49,10 +49,10 @@ Rancher Desktop requires the following on Windows:
 - Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
 
-## For installing Volt MX Go Foundry using native installers
+## For installing Volt MX Go Foundry using installers
 
 ### Software requirements
-Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html){: target="_blank"} to know the software requirements for installing Volt MX Go Foundry using native installers.
+Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html){: target="_blank"} to know the software requirements for installing Volt MX Go Foundry using installers.
 
 ### Hardware requirements
 
@@ -70,9 +70,9 @@ Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/
 ### Prerequisites for Foundry command line installer
 Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites){: target="_blank"} when using the Foundry command line installer. 
 
-## For installing Domino REST API using native installer
+## For installing Domino REST API using an installer
 
-Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank"} for installing Domino REST API using the native installer. 
+Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank"} for installing Domino REST API using the installer. 
 
 ## For installing Volt MX Go Iris on Windows
 

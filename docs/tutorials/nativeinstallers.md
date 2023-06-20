@@ -1,6 +1,6 @@
-# Install Volt MX Go via native installers
+# Install Volt MX Go via installers
 
-The following server components of the Early Access version of Volt MX Go can be deployed using native installers:
+The following server components of the Early Access version of Volt MX Go can be deployed using installers:
 
 - Volt MX Go Foundry
 - Domino REST API
