@@ -33,7 +33,7 @@
 
 4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
 
-    ![Log in screen](../assets/images/dilogin.png){: style="height:60%;width:60%"}
+    ![Log in screen](../assets/images/dilogin.png)
 
 ## Validate Volt MX GO Foundry
     
@@ -42,7 +42,7 @@
 3. Fill in the Foundry URL with `http://foundry.mymxgo.com` or your provided Foundry hostname, and click **Validate**.
 4. Click **Done**. 
 
-![Preferences](../assets/images/dipreference.png){: style="height:80%;width:80%"}
+    ![Preferences](../assets/images/dipreference.png)
 
 
 ## Create a new project
@@ -61,11 +61,11 @@
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
 4. Enter your **Project Name** and click **Create**.    
-    ![](../assets/images/diprojectname.png){: style="height:70%;width:70%"} 
+    ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
 5. You can see your project name in the upper-left corner of the Iris canvass.
 
-    ![](../assets/images/diappname.png){: style="height:100%;width:100%"}
+    ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
 
 ## Import a Domino Application using the new Foundry app
@@ -74,14 +74,14 @@
 
 2. The VoltMX Design Import wizard appears. Go to the first step **Getting Started** and click **Next**.
 
-    ![](../assets/images/diwizard.png){: style="height:100%;width:100%"}
+    ![](../assets/images/diwizard.png)
     
 3. On the second step **Associate Foundry App**, click **Create New** and click **Next**.
 
     !!!note
         Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
 
-    ![](../assets/images/dicreatenew.png){: style="height:100%;width:100%"}
+    ![](../assets/images/dicreatenew.png)
             
 
 4. The third step **Identity Service**, fill in the **Create New Identity Service** and click **Next**,
@@ -94,11 +94,11 @@
     |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
 
-    ![](../assets/images/dikeep.png){: style="height:80%;width:80%"}
+    ![](../assets/images/dikeep.png)
 
     1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyDemoSample
 
-        ![](../assets/images/didrapi.png){: style="height:80%;width:80%"}
+        ![](../assets/images/didrapi.png)
 
     2. Login with your **Domino credentials** within this wizard modal dialog and click **allow**.
 
@@ -106,25 +106,24 @@
             This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
 
 
-        ![](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
+        ![](../assets/images/didrapilogin.png)
 
     3. Select your **Foundry Identity Service** name  associated to Domino REST API and click **Next.**
 
-        ![](../assets/images/difoundry.png){: style="height:80%;width:80%"}
+        ![](../assets/images/difoundry.png)
 
 5. On the fourth step **Scope and Forms**, select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
-    ![](../assets/images/discope.png){: style="height:80%;width:80%"}
-
+    ![](../assets/images/discope.png)
     - You can **select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. Only the configured forms will be able to select.
-        ![](../assets/images/discopeform.png){: style="height:80%;width:80%"}
+        ![](../assets/images/discopeform.png)
 
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
     !!!tip
         It may take a while of publishing the imported Iris app.
 
-        ![](../assets/images/disummary.png){: style="height:80%;width:80%"}
+    ![](../assets/images/disummary.png)
 
 7. On the final step **Result**, you can see the final `forms` and `views`. 
  
@@ -134,7 +133,7 @@
         - Turn on the `show only error` toggle to see all the fields with the warning icon.
 
 
-    ![](../assets/images/diresult.png){: style="height:80%;width:80%"}  
+    ![](../assets/images/diresult.png) 
 
     Once you click **Done**, each of the selected forms, views, and agents have imported into the  Iris through the use of Forms in Volt MX Go Iris.
     **The App Events [desktop]** appears.
@@ -151,7 +150,7 @@
 
 1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
 2. A wizard modal dialog appears. Go to the first step "**Getting Started**" and click **Next**.
-3. On the second step **Associate Foundry App"**, click **Create New** and click **Next**.
+3. On the second step **Associate Foundry App"**, click **Use Existing** and click **Next**.
     - Select from the Volt MX Go Application the foundry app and click **Associate**. The existing Foundry app is selected and click **Next**.
 
 4. The third step **Identity Service**, click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
