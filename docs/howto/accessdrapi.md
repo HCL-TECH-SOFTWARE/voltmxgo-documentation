@@ -22,7 +22,7 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 3. Click **Log in**.
 
-### For Domino REST API installed via native installer
+### For Domino REST API installed via an installer
 
 - Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login){: target="_blank"}.
 - Use your Domino server administrator username and password to log in. 

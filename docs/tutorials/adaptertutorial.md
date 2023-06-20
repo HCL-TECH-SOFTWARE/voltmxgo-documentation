@@ -14,7 +14,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     !!!note
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
-        - If you used the native installer to install Domino REST API, use your Domino server administrator username and password.
+        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.
 
 - You have added and configured a schema and a scope in the Domino REST API. 
 
@@ -28,7 +28,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!!tip
-        If you used the native installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
+        If you used the installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
   
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  

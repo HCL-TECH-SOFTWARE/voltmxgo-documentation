@@ -15,7 +15,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
     !!!note
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
-        - If you used the native installer to install Domino REST API, use your Domino server administrator username and password.
+        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.
 
 - You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank"} in Volt MX Iris.
 

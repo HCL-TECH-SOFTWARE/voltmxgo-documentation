@@ -20,7 +20,7 @@ nav:
             - Install Domino REST API: downloadhelmchart.md
             - Install MySQL for Foundry: installmysqlfoundry.md
             - Install Foundry: installfoundry.md
-        - Install Volt MX Go via native installers: nativeinstallers.md
+        - Install Volt MX Go via installers: nativeinstallers.md
         - Install Volt MX Go Iris: installiris.md
     - firsttouch.md
     - adaptertutorial.md

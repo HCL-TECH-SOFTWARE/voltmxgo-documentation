@@ -51,8 +51,8 @@ The section provides information on the latest features, improvements, and resol
 ### Others
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
-- Added [installation procedures](../tutorials/nativeinstallers.md) for installing Domino REST API and Volt MX Go Foundry using native installers.
-- Updated system requirements for installing [Volt MX Go Foundry](../tutorials/sysreq.md#for-installing-volt-mx-go-foundry-using-native-installers) and [Domino REST API](../tutorials/sysreq.md#for-installing-domino-rest-api-using-native-installer) using native installers.  
+- Added [installation procedures](../tutorials/nativeinstallers.md) for installing Domino REST API and Volt MX Go Foundry using installers.
+- Updated system requirements for installing [Volt MX Go Foundry](../tutorials/sysreq.md#for-installing-volt-mx-go-foundry-using-native-installers) and [Domino REST API](../tutorials/sysreq.md#for-installing-domino-rest-api-using-native-installer) using installers.  
 
 
 ## Early Access v2
