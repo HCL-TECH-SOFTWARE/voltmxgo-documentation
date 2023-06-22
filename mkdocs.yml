@@ -82,7 +82,7 @@ extra:
 
 # Repository
 repo_url: https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation
-repo_name: voltmxgo-documentation
+repo_name: HCL-TECH-SOFTWARE/voltmxgo-documentation
 edit_uri: edit/main/docs
 
 # Customization
@@ -97,3 +97,5 @@ plugins:
   - git-revision-date-localized:
       type: date
   - markdownextradata: {}
+     
+      

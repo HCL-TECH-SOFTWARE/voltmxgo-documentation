@@ -5,7 +5,7 @@ The server components of the Early Access version of Volt MX Go can be deployed 
 - using K3s on an Ubuntu, RHEL, SLES machine or VM
 - using Rancher Desktop running on Windows
 
-!!!info "Important"
+!!!warning "Important"
 
     - Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures.
     - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).

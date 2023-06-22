@@ -5,7 +5,7 @@ The following server components of the Early Access version of Volt MX Go can be
 - Volt MX Go Foundry
 - Domino REST API
 
-!!!info "Important"
+!!!warning "Important"
     - Using this installation option would require you to use your own Domino server.
     - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md). 
     
