@@ -20,7 +20,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 3. Run the following commands to unpack the chart and make the DRAPI directory your current directory:
 
     ```
-    tar -xzvf drapi-0.3.2.tgz
+    tar -xzvf drapi-0.3.3.tgz
     cd drapi
     ```
 
