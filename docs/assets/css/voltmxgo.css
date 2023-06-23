@@ -4,27 +4,34 @@ pre {
     white-space: pre-wrap;
   }
   
-  /*header {
-    background-color: #000000;
-  }*/
-  
   header {
-    background-image: linear-gradient(to right, #5f1ebe, #3c91ff);
+    background-color: #000000;
   }
+  
+  /*header {
+    background-image: linear-gradient(to right, #5f1ebe, #3c91ff);
+  }*/
 
   /*footer {
     background-image: linear-gradient(to right, #00005A 0.41%, #000032 85.07%);
   }*/
 
-  footer {
+  /*footer {
     background-image: linear-gradient(to right, #5f1ebe, #3c91ff);
-  }
+  }*/
   
-  nav.md-tabs {
+  footer {
+    background-color: #000000;
+  }
+  /*nav.md-tabs {
     background-image: linear-gradient(to right, #5f1ebe, #3c91ff);
+  }*/
+
+  .md-search__inner {
+    background-color: #1d2123;
   }
 
-  /*nav.md-tabs {
+  nav.md-tabs {
     background-color: #000000;
   }
   .md-header__title {
@@ -32,7 +39,7 @@ pre {
   }
   .md-header {
     background-color: #000000;
-  }*/
+  }
   @font-face {
     font-family: 'HCLTech Roobert';
     src: url(HCLTechRoobert-Regular.otf);
