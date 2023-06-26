@@ -42,7 +42,7 @@ pre {
   }
   @font-face {
     font-family: 'HCLTech Roobert';
-    src: url(HCLTechRoobert-Regular.otf);
+    src: url(../fonts/HCLTechRoobert-Regular.otf);
   }
   
   :root {
