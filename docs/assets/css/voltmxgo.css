@@ -5,7 +5,7 @@ pre {
   }
   
   header {
-    background-color: #000000;
+    background-color: #4051b5;
   }
   
   /*header {
@@ -25,7 +25,7 @@ pre {
   }
   /*nav.md-tabs {
     background-image: linear-gradient(to right, #5f1ebe, #3c91ff);
-  }*/
+  }
 
   .md-search__inner {
     background-color: #1d2123;
@@ -39,7 +39,8 @@ pre {
   }
   .md-header {
     background-color: #000000;
-  }
+  }*/
+  
   @font-face {
     font-family: 'HCLTech Roobert';
     src: url(../fonts/HCLTechRoobert-Regular.otf);
