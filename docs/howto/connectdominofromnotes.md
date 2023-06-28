@@ -2,7 +2,7 @@
 
 ## About this procedure
 
-The procedure guides you in connecting to the Domino server from your Notes client.
+The procedure guides you in connecting to the Domino server from your Notes client.  If you installed Domino using the MXGO Domino Helm chart [](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) you should configure a Server Connection document to enabling connecting to Domino from your Notes client.  Follow the steps below.
 
 ## Before you start
 
@@ -49,6 +49,22 @@ Make sure that your `/etc/hosts` file has the early access preview hostnames. Yo
     1. On the Notes client, select **Advanced** &rarr; **New** &rarr; **Server Connection**. The **Server Connection** page opens.
     2. On the **Basics** tab, enter `drapi` in the **Server name** text box and then select the **TCPIP** checkbox for **Use LAN port**.
     3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
+    4.  During the DRAPI Helm install you configured the parameter `exposeNRPC` with `do-not-expose`, `hostPort` or `nodePort`.  If you chose `hostPort`, you are done.  If you chose `nodePort`, you must add the port which Kubernetes picked for the `nodePort`.  Run the following `kubectl` command to get the port number:
+
+    ```
+    kubectl get services domino-drapi-nrpc-external -n mxgo
+    ```
+
+    The output should be similar to the following:
+
+    ```{ .yaml .no-copy }
+    kubectl get services domino-drapi-nrpc-external -n mxgo
+    NAME                         TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)
+    domino-drapi-nrpc-external   NodePort   10.43.84.236   <none>        1352:31657/TCP
+    ```
+
+    Under the PORT(S) column you can see that port 1352 is being exposed on port 31657.  Using this example, you would append ":31657" to the host name in the **Destination server address** text box making a final value of "drapi.mymxgo.com:31657".
+
     4. Click **Save & Close**.
     !!!note
         `drapi` is the abbreviation for Domino REST API.

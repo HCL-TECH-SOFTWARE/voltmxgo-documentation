@@ -70,6 +70,15 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         - dominoServerName = SERVERSETUP_SERVER_NAME
         - dominoNetworkHostname = SERVERSETUP_NETWORK_HOSTNAME
 
+    3. Determine how you want to expose the Domino server to Notes clients.  The Notes client communicates with Domino over TCP port 1352 using the Notes Remote Procedure Call protocol (NRPC).  For simple developer based deployments this is easily done in Kubernetes with the `hostPort`.  This option requires port 1352 on your machine to be available for use.  The other option you can specify is `nodePort`.  When `nodePort` is ified Kubernetes will allocate a random port in a specified range (by default between 30000-32767) that will be available on every worker node in the cluster.  Kubernetes will automatically route traffic on this port from the Kubernetes node to the backend Domino pod.  Each option has its strengths and weaknesses, you can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).  If you specify `exposeNRPC: do-not-expose` port 1352 will not be exposed to the network.
+
+        Locate the following lines in the file and specify how to want to expose Domino for Notes clients:
+
+        ```{ .yaml .no-copy }
+        exposeNRPC: do-not-expose
+        ```
+        Specify either `do-not-expose`, `nodePort`, or `hostPort`.
+
     4. Save the file and exit.
 
 ## 2. Deploy Domino REST API
