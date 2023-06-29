@@ -49,9 +49,39 @@ Make sure that your `/etc/hosts` file has the early access preview hostnames. Yo
     1. On the Notes client, select **Advanced** &rarr; **New** &rarr; **Server Connection**. The **Server Connection** page opens.
     2. On the **Basics** tab, enter `drapi` in the **Server name** text box and then select the **TCPIP** checkbox for **Use LAN port**.
     3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
-    4.  During the DRAPI Helm install you configured the parameter `exposeNRPC` with `do-not-expose`, `hostPort` or `nodePort`.  If you chose `hostPort`, you are done.  If you chose `nodePort`, you must add the port which Kubernetes picked for the `nodePort`.  Run the following `kubectl` command to get the port number:
 
-    ```
+    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `nodePort` during the [DRAPI Helm installation](../tutorials/downloadhelmchart.md):
+
+        1. Run the following `kubectl` command to get the port number of the port picked by Kubernetes for the `nodePort`:
+
+            ```text
+            kubectl get services domino-drapi-nrpc-external -n mxgo
+            ```
+        
+            The output should be similar to the following:
+
+            ```{ .yaml .no-copy }
+            kubectl get services domino-drapi-nrpc-external -n mxgo
+            NAME                         TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)
+            domino-drapi-nrpc-external   NodePort   10.43.84.236   <none>        1352:31657/TCP
+            ```
+        
+        2. Get the port number from the output and append it to the host name in the **Destination server address** text box.
+
+            Using the output example, the PORT(S) column show that port 1352 is being exposed on port 31657.  Append `:31657` to the host name in the **Destination server address** text box making a final value of `drapi.mymxgo.com:31657`.
+
+    5. Click **Save & Close**.
+    !!!note
+        `drapi` is the abbreviation for Domino REST API.
+
+## Expected result
+
+In your Notes client, you should now be able to select **File** &rarr; **Open** &rarr; **HCL Notes Application**, specify `drapi` as the server name, and connect to your new Domino server.
+
+
+<!--4.  During the DRAPI Helm install you configured the parameter `exposeNRPC` with `do-not-expose`, `hostPort` or `nodePort`.  If you chose `hostPort`, you are done.  If you chose `nodePort`, you must add the port which Kubernetes picked for the `nodePort`.  Run the following `kubectl` command to get the port number:
+
+    ```text
     kubectl get services domino-drapi-nrpc-external -n mxgo
     ```
 
@@ -63,13 +93,4 @@ Make sure that your `/etc/hosts` file has the early access preview hostnames. Yo
     domino-drapi-nrpc-external   NodePort   10.43.84.236   <none>        1352:31657/TCP
     ```
 
-    Under the PORT(S) column you can see that port 1352 is being exposed on port 31657.  Using this example, you would append ":31657" to the host name in the **Destination server address** text box making a final value of "drapi.mymxgo.com:31657".
-
-    4. Click **Save & Close**.
-    !!!note
-        `drapi` is the abbreviation for Domino REST API.
-
-## Expected result
-
-In your Notes client, you should now be able to select **File** &rarr; **Open** &rarr; **HCL Notes Application**, specify `drapi` as the server name, and connect to your new Domino server.
-
+    Under the PORT(S) column you can see that port 1352 is being exposed on port 31657.  Using this example, you would append ":31657" to the host name in the **Destination server address** text box making a final value of "drapi.mymxgo.com:31657".-->
