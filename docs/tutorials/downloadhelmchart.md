@@ -70,7 +70,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         - dominoServerName = SERVERSETUP_SERVER_NAME
         - dominoNetworkHostname = SERVERSETUP_NETWORK_HOSTNAME
 
-    4. Save the file and exit.
+    4. If you would like to configure Ingress for DRAPI proceed to [DRAPI Ingress](../howto/drapiingress.md).
+
+    5. Save the file and exit.
 
 ## 2. Deploy Domino REST API
 
