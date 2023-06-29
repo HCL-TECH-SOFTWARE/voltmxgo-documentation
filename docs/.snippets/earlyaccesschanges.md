@@ -1,11 +1,3 @@
-# What's new
-
-The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
-
-## Volt MX Go v1
-
-- First release of Volt MX Go.
-
 ## Early Access v3
 
 ### New Features
@@ -88,9 +80,3 @@ The section provides information on the latest features, improvements, and resol
 ## Early Access v1
 
 - First release of the early access version of Volt MX Go.
-
-???+ note "Early Access changes"
-
-    --8<-- "earlyaccesschanges.md"
-    
-

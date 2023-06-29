@@ -19,14 +19,14 @@ Volt MX Go includes the following components:
 
 ## First Touch
 
-The First Touch app walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample app (“Recipes”) in Iris to show how to use the Domino Adapter, connects Volt Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt Foundry by:
+The First Touch app walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample recipe catalog app in Iris to show how to use the Domino Adapter, connects Volt Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt Foundry by:
 
 - gathering necessary data from the administrator to connect to the Domino REST API server
 - authenticating using the credentials, creating schema and scope, creating views and applications, and initializing inside the Domino REST API
 - preparing a zip file for import into Volt Foundry and importing the app
 - displaying a message informing the user that everything is ready
 
-The sample app has features such as:
+The [sample recipe catalog app](firsttouchapp.md) has features such as:
 
 - displaying recipe cards that are clickable to show list of ingredients and instructions
 - performing CRUD operations on Domino back end to create, edit, delete a recipe 
@@ -55,10 +55,12 @@ VoltFormula expands who can code Domino applications by allowing application mod
 
 ## Domino Adapter
 
-The HCL Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX applications can interact with Domino databases in the same way they can for relational databases. With the Domino Adapter, you can connect to your Domino database as an endpoint via the Domino REST API. Domino Adapter includes the following features: 
+Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX applications can interact with Domino databases in the same way they can for relational databases. With the Domino Adapter, you can connect to your Domino database as an endpoint via the Domino REST API. Domino Adapter includes the following features: 
 
 - Form-based CRUD (post, get, put, delete)
-- View-based GET 
+- Form-based PATCH
+- View-based GET
+- Offline objects within the limits of Foundry 
 
 ## Domino REST API
 
