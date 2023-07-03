@@ -89,8 +89,8 @@ The section provides information on the latest features, improvements, and resol
 
 - First release of the early access version of Volt MX Go.
 
-???+ note "Early Access changes"
+<!--???+ note "Early Access changes"
 
-    --8<-- "earlyaccesschanges.md"
+    --8<-- "earlyaccesschanges.md"-->
     
 

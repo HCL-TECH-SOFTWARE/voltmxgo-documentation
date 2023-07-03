@@ -1,8 +1,55 @@
 # First Touch app
 
-The First Touch Recipe Catalog app is a Domino app written using Volt MX Go. It shows recipe cards for various dishes. The front end of the app is created using Volt MX Go Iris. The information used by the app is accessed from the `FirstTouchRecipes.nsf` in Domino via Domino REST API using the Domino Adapter in Volt MX Go Foundry.
+## Overview
+
+The First Touch Recipe Catalog app is an app built with Volt MX Go for showing recipe cards of various dishes. The front-end user interface is created using Volt MX Go Iris, while the Domino database file `FirstTouchRecipes.nsf` stores the recipe data used by the app. The app is an excellent working example of how data in your Domino database files might be accessed, displayed, and used in different ways and on various devices using Volt MX Go. 
+
+<!--The First Touch Recipe Catalog app is a Domino app written using Volt MX Go. It shows recipe cards for various dishes. The front end of the app is created using Volt MX Go Iris. The information used by the app is accessed from the `FirstTouchRecipes.nsf` in Domino via Domino REST API using the Domino Adapter in Volt MX Go Foundry.
+
+The First Touch Recipes App is built with Volt MX Go providing the front-end user interface and using a Domino Database file (FirstTouchRecipes.nsf) for storing actual recipe data. For clients with a lot of data in their database files, the Recipes App is a working example of how that existing data might be accessed and displayed in different ways and on various devices.-->
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
+
+## Database file
+
+The Domino database file `FirstTouchRecipes.nsf` stores the recipe data used by the the First Touch Recipe Catalog app. The database file consists of rows, each representing a recipe:
+
+![First Touch NSF](../assets/images/recipensf.png)
+
+Each cell in a row represents a field containing recipe information: 
+
+|Field name|Field description|
+|----|----|
+|Name|Name of the recipe|
+|Prep Time|Time needed for preparing the ingredients|
+|Cook Time|Time needed to cook the dish|
+|Servings|Number of servings|
+|Ingredients|List of ingredients|
+|Directions|Cooking instructions|
+|Picture|Photo of the dish|
+
+All the data is available in a single Domino View named `$All` by default.
+
+## Accessing the data
+
+Accessing the recipe data is straightforward using the Domino REST API, which provides direct access to Domino data from Volt MX Go. The First Touch Recipe Catalog app uses new Volt MX Go object-oriented APIs by modeling each recipe as a Recipe Object:
+
+![Recipe object data model](../assets/images/recipedatamodel.png){: style="height:70%;width:70%"}
+
+The following image shows how the various Recipe operations map to particular APIs:
+
+![Recipe operations map to APIs](../assets/images/recipemapping.png)
+
+The table explains what each of the operations do:
+
+|Operation|Description|
+|----|----|
+|GET|gets/reads a recipe|
+|PUT|edits a recipe|
+|POST|creates a recipe|
+|DELETE|deletes a recipe|
+
+## Using the app
 
 You can click a recipe card to open an expanded view that shows recipe details such as ingredients and cooking instructions.
 
