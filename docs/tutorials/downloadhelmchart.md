@@ -70,7 +70,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         - `dominoServerName = SERVERSETUP_SERVER_NAME`
         - `dominoNetworkHostname = SERVERSETUP_NETWORK_HOSTNAME`
 
-    3. Determine how you want to expose the Domino server to Notes clients by setting the value of the `exposeNRPC` parameter to any of the following options:
+    4. Determine how you want to expose the Domino server to Notes clients by setting the value of the `exposeNRPC` parameter to any of the following options:
 
         - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol.
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
@@ -78,14 +78,16 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         
         You can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).   
 
-    4. Locate the following lines in the file and specify how to want to expose Domino for Notes clients by specifying the value of `exposeNRPC` parameter to either `do-not-expose`, `nodePort`, or `hostPort`
+    5. Locate the following lines in the file and specify how to want to expose Domino for Notes clients by specifying the value of `exposeNRPC` parameter to either `do-not-expose`, `nodePort`, or `hostPort`
 
         ```{ .yaml .no-copy }
         exposeNRPC: do-not-expose
         ```
         In this example, `do-not-expose` is the selected option. 
+        
+    6. If you would like to configure Ingress for DRAPI proceed to [DRAPI Ingress](../howto/drapiingress.md).
 
-    5. Save the file and exit.
+    7. Save the file and exit.
 
 ## 2. Deploy Domino REST API
 
