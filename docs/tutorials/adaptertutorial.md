@@ -125,14 +125,14 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     1. Enter the Domino REST API server URL in the **Domino REST API Base URL** text field.
     2. Enter a value in the **Connection Timeout** text field. By default, the value is set to 30 ms.
-    3. Choose either MIME or HTML from the **Rich Text Mode** dropdown list. 
+    <!--3. Choose either MIME or HTML from the **Rich Text Mode** dropdown list.-->
      
     !!!note
-        - The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
-        - MIME is the default if no option is selected in **Rich Text Mode**. MIME might be removed in future updates.    
-        - If you want to use MIME and HTML as Rich Text modes, you have to create separate object services, one for HTML and one for MIME.    
+        The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
+        <!--- MIME is the default if no option is selected in **Rich Text Mode**. MIME might be removed in future updates.    
+        - If you want to use MIME and HTML as Rich Text modes, you have to create separate object services, one for HTML and one for MIME.-->    
 
-    ![](../assets/images/objectconparam.png)
+    ![](../assets/images/objectconparam1.png)
 
     !!!tip
         To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a "Connection Successful" message if the configured connection parameters are correct.
