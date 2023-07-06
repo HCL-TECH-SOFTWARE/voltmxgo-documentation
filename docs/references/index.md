@@ -16,7 +16,7 @@ Useful [FAQ and common procedures](kubecheatsheet.md) related to [Volt MX Go ins
 
 ## Rosetta API reference documentation
 
-The full specification of the API is available in a structured format in the [Rosetta API reference documentation](https://help.hcltechsw.com/docs/voltmxgo/javadoc/index.html){: target="_blank"}.
+The full specification of the API is available in a structured format in the [Rosetta API reference documentation](../javadoc/index.html){: target="_blank"}.
 
 ## Logging levels
 
