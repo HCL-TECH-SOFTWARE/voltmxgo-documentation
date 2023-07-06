@@ -85,9 +85,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         ```
         In this example, `do-not-expose` is the selected option. 
         
-    6. If you would like to configure Ingress for DRAPI proceed to [DRAPI Ingress](../howto/drapiingress.md).
+5. **(Optional)** If you would like to configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).
 
-    7. Save the file and exit.
+6. Save the file and exit.
 
 ## 2. Deploy Domino REST API
 
