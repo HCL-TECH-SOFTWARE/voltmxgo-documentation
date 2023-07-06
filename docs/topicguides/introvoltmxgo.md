@@ -19,7 +19,7 @@ Volt MX Go includes the following components:
 
 ## First Touch
 
-The First Touch app walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample recipe catalog app in Iris to show how to use the Domino Adapter, connects Volt Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt Foundry by:
+First Touch walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample recipe catalog app in Iris to show how to use the Domino Adapter, connects Volt Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt Foundry by:
 
 - gathering necessary data from the administrator to connect to the Domino REST API server
 - authenticating using the credentials, creating schema and scope, creating views and applications, and initializing inside the Domino REST API
@@ -50,7 +50,7 @@ VoltFormula expands who can code Domino applications by allowing application mod
     - Use IntelliSense for suggestions of APIs available and associated help text.
     - Choose UI widgets from the default widget library equivalent to NotesFormula UI widgets (for example, @prompt to paint dialog in a window).
 - Provides sample formulas
-- Configuration of Rosetta in Iris to specify how the conversion of formulas to Javascript behaves. For example, should the “If” statement become a Rosetta call to API or convert it to native Javascript “If”.
+- Configuration of Rosetta in Iris to specify how the conversion of formulas to Javascript behaves. For example, should the `If` statement become a Rosetta call to API or convert it to native Javascript `If`.
 - Configuration of Rosetta for how API behaves when running under an application created in Iris. For example, should the API execute OpenFormula ABS formula or NotesFormula ABS formula.
 
 ## Domino Adapter
