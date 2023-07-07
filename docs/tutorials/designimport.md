@@ -182,34 +182,69 @@
 ## CRUD operation upon importing the `.nsf` file
 
 !!!note
-    Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
+    - Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
     To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
 
-1. Log in to your account in Domino REST API using the newly published imported Domino application.
+    - Log in to your account in Domino REST API using the newly published imported Domino application.
+      Your configuration in Domino REST API decides what operations you can include in the **design import** form.
+      All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
 
-    !!!note
-        Your configuration in Domino REST API decides what operations you can include in the **design import** form.
-        All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
+### Create entry
 
-     ![Screenshot](../assets/images/dilogincrud.png)   
 
-2. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
-    
+1. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
     ![Screenshot](../assets/images/dinewview.png)
 
-3. Click **Add New**.
-4. Fill in the fields and click **Add**. This adds the data to the `.nsf` file.
+2. Click **Add New**.
+3. Fill in the fields and click **Add**. This adds the data to the `.nsf` file.
 
     ![Screenshot](../assets/images/dinewview1.png)
 
-5. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer) to see the fields that you've added.
+4. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-6. In the **Views** window, you can see here the added values on your **Forms**.
+5. In the **Dashboard/Views** (example: CustomerView) page, you can see here the added entry.
 
     ![Screenshot](../assets/images/dilist.png)
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
     ![Screenshot](../assets/images/didesigner.png)
+
+### Update data
+
+1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+
+    ![Screenshot](../assets/images/diviews.png)
+
+2. In the **Dashboard/Views** (example: CostumerView) page, search the data you want to update.
+
+4. Click the **View** button on the right-side.
+ 
+5. Click **Edit**.
+
+6. Edit the field(s) that you want to update.
+
+7. Click **Save**. 
+
+    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+
+    !!!note
+        You can also delete here the entry that you have chosen.
+
+### Delete an entry
+
+1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+
+    ![Screenshot](../assets/images/diviews.png)
+
+2. In the **Dashboard/Views** (example: CostumerView) page, search the data you want to delete.
+
+4. Click the **Delete** button on the right-side. This delete the entry.
+
+    !!!warning 
+        As for now, this delete function does't have a modal dialog to warn the user for the deletion. Be cautious.
+ 
+    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+
