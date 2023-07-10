@@ -1,3 +1,7 @@
+# Early Access version changes
+
+The section provides information on the features, improvements, and resolved issues related to the early access version of Volt MX Go.
+
 ## Early Access v3
 
 ### New Features
