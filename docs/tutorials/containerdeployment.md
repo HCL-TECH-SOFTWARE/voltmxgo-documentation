@@ -1,6 +1,6 @@
 # Install Volt MX Go via containerized deployment
 
-The server components of the Early Access version of Volt MX Go can be deployed with Kubernetes via the following options:
+The server components of Volt MX Go can be deployed with Kubernetes via the following options:
 
 - using K3s on an Ubuntu, RHEL, SLES machine or VM
 - using Rancher Desktop running on Windows
@@ -31,7 +31,7 @@ Follow the order for completing the procedures according to your preferred deplo
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
 
-### For upgrading an existing installation of Volt MX Go
+<!--### For upgrading an existing installation of Volt MX Go
 
 !!!warning "Important"
     The Early Access release doesn't support actual upgrades. You must remove the prior release deployment and install a new deployment to upgrade. This removes all the data from the prior release deployment.
@@ -41,7 +41,7 @@ Follow the order for completing the procedures according to your preferred deplo
 1. [Complete preparatory procedure for upgrading existing installation of Volt MX Go](prereqnew.md)
 2. [Install Domino REST API](downloadhelmchart.md)
 3. [Install MySql for Foundry](installmysqlfoundry.md)
-4. [Install Foundry](installfoundry.md)
+4. [Install Foundry](installfoundry.md)-->
 
 ### Additional information
 

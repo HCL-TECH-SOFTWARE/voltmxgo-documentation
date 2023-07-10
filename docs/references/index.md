@@ -8,7 +8,7 @@ Check the [latest information](whatisnew.md) about Volt MX Go.
 
 ## System requirements
 
-Check the minimum [System requirements](../tutorials/sysreq.md) for deploying the Early Access version of Volt MX Go.
+Check the minimum [System requirements](../tutorials/sysreq.md) for deploying Volt MX Go.
 
 ## FAQ and common procedures
 
