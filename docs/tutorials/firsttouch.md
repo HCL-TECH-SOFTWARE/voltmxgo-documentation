@@ -7,9 +7,9 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 
-### Additional prerequisites
+<!--### Additional prerequisites
 
-If you used the Volt MX Go installers, you need to perform the following in addition to the requirements listed above:
+If you used the Volt MX Go installers, you need to perform the following in addition to the requirements listed above:-->
 
 - You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html){: target="_blank"}.
 - You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api){: target="_blank"}.
@@ -21,11 +21,11 @@ If you used the Volt MX Go installers, you need to perform the following in addi
 
 ## Log in to Volt MX Go Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/`in your browser.
+1. Open <!--`http://foundry.mymxgo.com/mfconsole/` or your provided--> the Foundry hostname concatenated with `/mfconsole/`in your browser.
 
 
     !!!tip
-        If you used the installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
+        <!--If you used the installer to install Volt MX Go Foundry, -->Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
  
 
 2. Enter your username and password on the **Sign in to your account** page. 
@@ -48,12 +48,13 @@ If you used the Volt MX Go installers, you need to perform the following in addi
 2. On the **Welcome to Volt MX Go** dialog, enter the following information:
 
     - Domino REST API server URL
-    - username: `mxgo admin`
-    - password: `password`
+    - username<!--: `mxgo admin`-->
+    - password<!--: `password`-->
 
     !!!note
-        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.  
-        - If you used the installer to install Domino REST API, use your Domino server administrator username and password. 
+        This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
+        <!-- If you used the installer to install Domino REST API, Use your Domino server administrator username and password.
+        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) procedure as part of the dev/test only deployment, use the updated values for the username and password.-->  
 
 3. Click **Next**. An installation progress dialog appears.
 
@@ -67,6 +68,9 @@ If you used the Volt MX Go installers, you need to perform the following in addi
 5. On the **Congratulations!** dialog, click **Launch** to launch the First Touch Recipe Catalog app. The First Touch Recipe Catalog app opens in another tab. 
 6. Click **Sign In**.
 7. On the **HCL Domino Login** page, enter your Domino REST API username and password, and click **Login**.
+
+    !!!note
+        This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API.
 
     ![HCL Domino Login page](../assets/images/fthcllogin.png){: style="height:60%;width:60%"}
 

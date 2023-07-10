@@ -6,15 +6,16 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md). 
-- You have noted the following Domino REST API details:
+<!-- You have noted the following Domino REST API details:
 
     - Domino REST API server URL 
-    - username: `mxgo admin`
-    - password: `password`
+    - username<!--: `mxgo admin`
+    - password<!--: `password`
 
     !!!note
-        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
-        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.
+        This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API.
+        <!-- If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
+        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
 
 - You have added and configured a schema and a scope in the Domino REST API. 
 
@@ -25,10 +26,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Log in to Volt MX Foundry
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Foundry hostname concatenated with `/mfconsole/` in your browser.
+1. Open <!--`http://foundry.mymxgo.com/mfconsole/` or your provided--> the Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!!tip
-        If you used the installer to install Volt MX Go Foundry, use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
+        <!--If you used the installer to install Volt MX Go Foundry,-->Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
   
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
@@ -62,12 +63,12 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     4. In the **Callback URL** text box, click **Copy**. <br/> You need the callback URL when configuring your app in Domino REST API.
     5. [Create and configure an application](#create-and-configure-an-application-in-domino-rest-api) in Domino REST API. 
 
-        !!!note "Caution"
+        !!!warning "Important"
             You need to pause the execution of the **Configure an Identity Service** procedure without saving your initial changes and complete the creation and configuration of an app in Domino REST API before proceeding. 
 
     6. Enter the name of the scope that you have configured in your app in Domino REST API in the **Scope** text box. 
 
-        !!!note "Important"
+        !!!warning "Important"
             Make sure that the name of the scope you enter in the **Scope** text box matches the name of the scope that you have configured in your app in Domino REST API. 
 
     ![](../assets/images/identityproviderdetails.png)
@@ -169,8 +170,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Test the GET method by viewing a record
 
-!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
+<!--!!!note
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
+    Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **GET**. 
@@ -191,8 +193,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Test the POST method by creating a record
 
-!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
+<!--!!!note
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **POST**.
@@ -207,8 +210,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Test the PUT method by updating a record
 
-!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
+<!--!!!note
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PUT**.
@@ -228,8 +232,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Test the DELETE method by deleting a record
 
-!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.
+<!--!!!note
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
+    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **DELETE**.
