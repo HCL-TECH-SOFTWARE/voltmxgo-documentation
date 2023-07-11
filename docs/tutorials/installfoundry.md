@@ -18,9 +18,15 @@ The procedures will guide you in the installation of Foundry.
     tar -xzf voltmx-foundry-1.2.4.tgz
     tar -xzf voltmx-dbupdate-1.2.4.tgz
     mv voltmx-foundry/values.yaml  ./
+    mv voltmx-foundry/init-guids.sh  ./
     ```
 
-3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
+    ```
+    ./init-guids.sh --new
+    ```
+
+4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     ```{ .yaml .no-copy }
     imageCredentials:
@@ -28,7 +34,7 @@ The procedures will guide you in the installation of Foundry.
       password: your-authentication-token
     ```
 
-4. Locate the following line in the file and add your Foundry server domain name setting:
+5. Locate the following line in the file and add your Foundry server domain name setting:
 
     ```{ .yaml .no-copy }
     serverDomainName:
@@ -38,7 +44,7 @@ The procedures will guide you in the installation of Foundry.
     !!!note
         The default name used is `foundry.mymxgo.com`.
 
-5. Save the file and exit.
+6. Save the file and exit.
 
 ## 2. Deploy Foundry's dbupdate to create the databases in MySql
 
