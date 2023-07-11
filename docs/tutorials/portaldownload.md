@@ -43,3 +43,6 @@ The HCL Volt MX GO Release package includes:
 !!!tip
     For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine. 
 
+## Next step
+
+Proceed to [Install Volt MX Go server components](nativeinstallers.md).

@@ -167,4 +167,4 @@ After Rancher Desktop installation, users have access to these supporting utilit
 
 ## Next step
 
-Proceed to [Complete preparatory procedures](prereq.md).
+Proceed to [Complete preparatory procedure](prereq.md).

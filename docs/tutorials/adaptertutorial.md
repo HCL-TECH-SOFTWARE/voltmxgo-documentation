@@ -47,9 +47,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Configure an Identity service
 
-1. On the **Identity** page, enter a name for the identity service in the **Name** text box.
-2. From the **Type of Identity** drop-down list, select `OAuth2.0`.
-3. Under **Provider Details**:
+1. On the **Identity** page, click **Configure New**.
+2. Enter a name for the identity service in the **Name** text box.
+3. From the **Type of Identity** drop-down list, select `OAuth2.0`.
+4. Under **Provider Details**:
     
     1. Select `Authorization Code` in the **Grant Type** dropdown list.
     2. Enter the Domino REST API server URL concatenated with `/oauth/authorization` in the **Authorize Endpoint** field.

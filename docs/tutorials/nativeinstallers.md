@@ -1,6 +1,7 @@
-# Install Volt MX Go via installers
+<!--# Install Volt MX Go via installers-->
+# Install Volt MX Go server components
 
-The following server components of Volt MX Go can be deployed using installers:
+The following server components of Volt MX Go are deployed using installers:
 
 - Volt MX Go Foundry
 - Domino REST API
@@ -12,7 +13,7 @@ The following server components of Volt MX Go can be deployed using installers:
 
 ## Install Domino REST API
 
-1. Downloaded `Domino_REST_API_for_MXGO_EA3_Installer.tar.gz`. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+1. Downloaded <!--`Domino_REST_API_for_MXGO_EA3_Installer.tar.gz`-->the Domino REST API installer. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
     - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html){: target="_blank"}
@@ -25,11 +26,11 @@ For more information, see the [Installation and configuration](https://opensourc
 
 ## Install Volt MX Go Foundry
 
-1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option:
+1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option.
 
-    - For Windows: `HCLVoltMXGO_Foundry_Installer_Windows_EA3.zip`
+    <!--- For Windows: `HCLVoltMXGO_Foundry_Installer_Windows_EA3.zip`
     - For Linux: `HCLVoltMXGO_Foundry_Installer_Linux_EA3.zip`
-    - For command line installer: `HCLVoltMXGO_Foundry_Installer_CommandLine_EA3.zip`
+    - For command line installer: `HCLVoltMXGO_Foundry_Installer_CommandLine_EA3.zip`-->
 
     For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 
