@@ -4,9 +4,9 @@ Guides you through the procedures for installing Volt MX Go.
 
 ## Before you start
 
-The server components of Volt MX Go are deployed using installers. 
+The components of Volt MX Go are deployed using installers. 
 
-In case you would like to deploy the server components of Volt MX Go in a **dev/test only environment**, you can do so with Kubernetes using the following options:
+In case you would like to deploy Volt MX Go in a **dev/test only environment**, you can do so with Kubernetes using the following options:
 
 - using [K3s](https://docs.k3s.io){: target="_blank"} on an Ubuntu, RHEL, SLES machine or VM
 - using [Rancher Desktop](https://docs.rancherdesktop.io){: target="_blank"} running on Windows
