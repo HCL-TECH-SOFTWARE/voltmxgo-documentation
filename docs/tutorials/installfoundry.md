@@ -96,3 +96,7 @@ The procedures will guide you in the installation of Foundry.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
     - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
+
+## Next step
+
+Proceed to [Install Volt MX Go Iris](installiris.md).

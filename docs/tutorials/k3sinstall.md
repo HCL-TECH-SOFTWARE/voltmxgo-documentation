@@ -102,4 +102,4 @@ For more information, see [Installing Helm](https://helm.sh/docs/intro/install/)
 
 ## Next step
 
-Proceed to [Complete preparatory procedures](prereq.md). 
+Proceed to [Complete preparatory procedure](prereq.md). 

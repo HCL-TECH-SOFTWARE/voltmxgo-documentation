@@ -1,14 +1,16 @@
-# Install Volt MX Go via containerized deployment
+<!--# Install Volt MX Go via containerized deployment-->
+# Install Volt MX Go to dev/test only environment
+
+The procedure intends to install Volt MX Go server components to a dev/test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
 
 The server components of Volt MX Go can be deployed with Kubernetes via the following options:
 
 - using K3s on an Ubuntu, RHEL, SLES machine or VM
 - using Rancher Desktop running on Windows
 
-!!!warning "Important"
-
-    - Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures.
-    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
+!!!note 
+    <!-- Make sure that you have completed all the [prerequisite procedures](prerequisite.md) before proceeding with the following procedures.-->
+    Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
 ### For installing Volt MX Go for the first time
 
@@ -16,8 +18,9 @@ Follow the order for completing the procedures according to your preferred deplo
 
 **When using K3s on an Ubuntu, RHEL, SLES machine or VM:**
 
+1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md)
 1. [Install and configure K3s](k3sinstall.md)
-2. [Complete preparatory procedure for first time installation of Volt MX Go](prereq.md)
+2. [Complete preparatory procedure for installation of Volt MX Go](prereq.md)
 3. [Install Domino REST API](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
@@ -25,8 +28,9 @@ Follow the order for completing the procedures according to your preferred deplo
 
 **When using Rancher Desktop running on Windows:**
 
+1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md)
 1. [Install Rancher Desktop](installrancher.md)
-2. [Complete preparatory procedure for first time installation of Volt MX Go](prereq.md)
+2. [Complete preparatory procedure for installation of Volt MX Go](prereq.md)
 3. [Install Domino REST API](downloadhelmchart.md)
 4. [Install MySql for Foundry](installmysqlfoundry.md)
 5. [Install Foundry](installfoundry.md)
