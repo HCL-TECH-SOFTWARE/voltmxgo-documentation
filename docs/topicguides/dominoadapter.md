@@ -125,6 +125,7 @@ x_0040unid
 ```
 
 !!!note
+    - **All `metal-fields` are not sortable**. 
     - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
     - Meta-fields are included in generated data models by default. The Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
     - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata for with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
@@ -212,11 +213,12 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 
 - `$skip`: Specific the number of documents to skip (zero-based row index of the first returned document).
 - `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
-- `$orderby`: Sort the result-set in ascending or descending order based on a specified column. The column must be specified as `sortable` in the database design. 
-- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. Only `sortable` columns can be filtered.
+- `$orderby`: Sort the result-set in ascending or descending order based on a specified column. **The column must be specified as `sortable` in the database design**. 
+- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. **Only `sortable` columns can be filtered**.
 
 !!!note
-    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+    - You can use the formula `@Text(@Universalid)` to make columns sortable and enable the use of `$filter` and `$orderby`.
+    - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.
 
 With `$filter`, the canonical function `startswith` is supported.
 

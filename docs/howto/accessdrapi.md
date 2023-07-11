@@ -9,7 +9,13 @@ The procedure guides you in accessing Domino REST API Admin UI to add and config
 You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 ## Procedure
-### For Domino REST API installed via containerized deployment
+
+### For Domino REST API installed via an installer
+
+- Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login){: target="_blank"}.
+- Use your Domino server administrator username and password to log in.
+
+### For Domino REST API installed as part of the installation on a dev/test only environment
 
 1. Open `http://drapi.mymxgo.com/admin/ui` or your provided Domino REST API hostname concatenated with `/admin/ui` in your browser. 
 2. Enter the following credentials in the login page: 
@@ -18,14 +24,9 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
     - password: `password` 
 
     !!!note
-        If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
+        If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure <!--as part of the containerized deployment-->, use the updated values for the username and password.
 
 3. Click **Log in**.
-
-### For Domino REST API installed via an installer
-
-- Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login){: target="_blank"}.
-- Use your Domino server administrator username and password to log in. 
 
 ## Expected result  
 
