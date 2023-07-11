@@ -4,12 +4,12 @@
 
 ## Before you start
 
-!!!note
-    Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.
+<!--!!!note
+    Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.-->
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-- You have noted the following Domino REST API details:
+<!-- You have noted the following Domino REST API details:
     
     - Domino REST API server URL 
     - username: `mxgo admin`
@@ -17,7 +17,7 @@
 
     !!!note
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
-        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.
+        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
 
 - You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"}.
 - You have credentials for Volt MX Foundry and Domino REST API.
@@ -39,12 +39,12 @@
     
 1. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
 2. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
-3. Fill in the Foundry URL with `http://foundry.mymxgo.com` or your provided Foundry hostname, and click **Validate**.
-4. Click **Done**. 
-
+3. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or--> your Foundry hostname, and click **Validate**.
+    
     ![Preferences](../assets/images/dipreference.png)
 
-
+4. Click **Done**. 
+    
 ## Create a new project
     
 !!!note

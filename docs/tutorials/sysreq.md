@@ -1,6 +1,6 @@
 # System requirements
 
-This section describes the minimum system requirements for deploying the Early Access version of Volt MX Go. 
+This section describes the minimum system requirements for deploying Volt MX Go. 
 
 ## For deploying Volt MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM
 

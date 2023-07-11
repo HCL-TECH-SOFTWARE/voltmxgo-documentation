@@ -52,9 +52,9 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
-## 4. Add Early Access Preview Hostnames
+## 4. Add Preview Hostnames
 
-For the Early Access 3 preview, the following hostnames are no longer **hard-coded**:
+<!--For the Early Access 3 preview,-->The following hostnames are no longer **hard-coded**:
 
 ```
 drapi.mymxgo.com

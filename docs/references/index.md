@@ -6,9 +6,11 @@ Provides technical references and descriptions for using Volt MX Go.
 
 Check the [latest information](whatisnew.md) about Volt MX Go.
 
+To know the details in the early access version, see [Early Access Version changes](earlyaccesschanges.md){: target="blank"}.
+
 ## System requirements
 
-Check the minimum [System requirements](../tutorials/sysreq.md) for deploying the Early Access version of Volt MX Go.
+Check the minimum [System requirements](../tutorials/sysreq.md) for deploying Volt MX Go.
 
 ## FAQ and common procedures
 
@@ -35,10 +37,4 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 - Provides documentation and more information about Domino REST API. 
 
-
-<!--## HCL Domino REST API formerly known as HCL Project KEEP
-
-HCL Project KEEP has been re-branded to HCL Domino REST API to align with the HCL Volt MX Go strategy. However, you might still find references to the KEEP branding throughout the product and in the documentation.
-
-To learn more about Domino REST API, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).-->
 

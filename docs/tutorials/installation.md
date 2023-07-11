@@ -1,10 +1,10 @@
 # Installation
 
-Guides you through the procedures for installing the Early Access version of Volt MX Go.
+Guides you through the procedures for installing Volt MX Go.
 
 ## Before you start
 
-The server components of the Early Access version of Volt MX Go are deployed:
+The server components Volt MX Go are deployed:
 
 - **with Kubernetes via containerized deployment using the following options**:
 
@@ -18,7 +18,7 @@ Before starting the installation, make sure to verify that you meet the [System 
 
 ## Installation guide
 
-You can install the server components of the Early Access version of Volt MX Go using any of the following options:
+You can install the server components of Volt MX Go using any of the following options:
 
 - [Install Volt MX Go via containerized deployment](containerdeployment.md)
 - [Install Volt MX Go via installers](nativeinstallers.md)

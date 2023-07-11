@@ -5,7 +5,7 @@ The procedure guides you in installing Rancher Desktop on Windows, which is deli
 ## Before you start
 
 !!!note
-    If you will use K3s in deploying the Early Access version of Volt MX Go, you don't need to execute this procedure. Rancher Desktop includes a customized configuration of K3s and is geared to enabling developers with a small, desktop style Kubernetes cluster. It includes other developer centric tooling not included in K3s.
+    If you will use K3s in deploying Volt MX Go, you don't need to execute this procedure. Rancher Desktop includes a customized configuration of K3s and is geared to enabling developers with a small, desktop style Kubernetes cluster. It includes other developer centric tooling not included in K3s.
 
 Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying Volt MX Go using Rancher Desktop running on Windows](sysreq.md#for-deploying-volt-mx-go-using-rancher-desktop-running-on-windows) are met.
 
@@ -106,7 +106,7 @@ Rancher Desktop needs the forwarding of specific ports to WSL2. The script you n
 
 **Prerequisite**
 
-You have already downloaded and saved the port forwarding script `mxgo-port-forwarding.ps1`. For more information, see [Download HCL Volt MX GO Early Access Release](portaldownload.md).
+You have already downloaded and saved the port forwarding script `mxgo-port-forwarding.ps1`. For more information, see [Download HCL Volt MX GO Release package](portaldownload.md).
 
 **To enable port forwarding**
 
