@@ -49,7 +49,8 @@ VoltFormula expands who can code Domino applications by allowing application mod
     - See the results of the formula being written.
     - Use IntelliSense for suggestions of APIs available and associated help text.
     - Choose UI widgets from the default widget library equivalent to NotesFormula UI widgets (for example, @prompt to paint dialog in a window).
-- Provides sample formulas
+- Provides sample formulas.
+- Maintains list of formulas used in applications.
 - Configuration of Rosetta in Iris to specify how the conversion of formulas to Javascript behaves. For example, should the `If` statement become a Rosetta call to API or convert it to native Javascript `If`.
 - Configuration of Rosetta for how API behaves when running under an application created in Iris. For example, should the API execute OpenFormula ABS formula or NotesFormula ABS formula.
 
