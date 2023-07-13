@@ -1,55 +1,8 @@
 # System requirements
 
-This section describes the minimum system requirements for deploying the Early Access version of Volt MX Go. 
+This section describes the minimum system requirements for deploying Volt MX Go. 
 
-## For deploying Volt MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM
-
-!!!note
-    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank"}.
-    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements){: target="_blank"}.
-
-### Operating System
-
-- RHEL9
-- Ubuntu
-- SLES
-
-### Hardware 
-
-| Spec | Minimum |
-| ---- | ------- |
-| CPU | 4 cores |
-| RAM | 16 GB |
-
-## For deploying Volt MX Go using Rancher Desktop running on Windows
-
-!!!note
-    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/){: target="_blank"}.
-    
-    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows){: target="_blank"}.
-
-### Operating System
-
-- Windows 10 build 1909 or higher
-- Windows 11
-
-### Hardware
-
-| Spec | Minimum |
-| ---- | ------- |
-| CPU | 4 cores |
-| RAM | 32 GB |
-
-### Additional requirements
-
-Rancher Desktop requires the following on Windows:
-
-- Running on a machine with virtualization capabilities.
-- Persistent internet connection.
-- Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
-
-
-## For installing Volt MX Go Foundry using installers
+## For installing Volt MX Go Foundry
 
 ### Software requirements
 Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html){: target="_blank"} to know the software requirements for installing Volt MX Go Foundry using installers.
@@ -70,7 +23,7 @@ Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/
 ### Prerequisites for Foundry command line installer
 Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites){: target="_blank"} when using the Foundry command line installer. 
 
-## For installing Domino REST API using an installer
+## For installing Domino REST API
 
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank"} for installing Domino REST API using the installer. 
 
@@ -106,6 +59,54 @@ Mac OS X 10.9 and above
 |RAM	    |8 GB |
 |Internal Storage|	24 GB|
 |Network Ethernet |Port|
+
+## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
+
+--8<-- "devtestenvironment.md"
+### Operating System
+
+- RHEL9
+- Ubuntu
+- SLES
+
+### Hardware 
+
+| Spec | Minimum |
+| ---- | ------- |
+| CPU | 4 cores |
+| RAM | 16 GB |
+
+!!!note
+    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank"}.
+    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements){: target="_blank"}.
+
+## For deploying Volt MX Go using Rancher Desktop running on Windows
+
+--8<-- "devtestenvironment.md"
+
+### Operating System
+
+- Windows 10 build 1909 or higher
+- Windows 11
+
+### Hardware
+
+| Spec | Minimum |
+| ---- | ------- |
+| CPU | 4 cores |
+| RAM | 32 GB |
+
+### Additional requirements
+
+Rancher Desktop requires the following on Windows:
+
+- Running on a machine with virtualization capabilities.
+- Persistent internet connection.
+- Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
+
+!!!note
+    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/){: target="_blank"}. 
+    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows){: target="_blank"}.
 
 ## Next step
 

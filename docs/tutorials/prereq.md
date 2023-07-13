@@ -1,6 +1,9 @@
-# Complete preparatory procedure for first time installation of Volt MX Go
+<!--# Complete preparatory procedure for first time installation of Volt MX Go-->
+# Complete preparatory procedure for installation of Volt MX Go
 
-The following procedure must be performed when installing Volt MX Go for the first time. It should be performed post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Foundry installation.
+--8<-- "devtestenvironment.md"
+
+The following procedure must be performed <!--when installing Volt MX Go for the first time. It should be performed-->post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Foundry installation.
 
 !!!warning "Important"
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
@@ -30,7 +33,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 1. Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo-ea  --username $HCLCR_USERNAME
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo  --username $HCLCR_USERNAME
     ```
 
 2. When prompted for a password, enter your authentication token for HCL Container Repository.
@@ -38,7 +41,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 If you get an error message similar to the following:
 
 ``` { .yaml .no-copy }
-Error: looks like https://hclcr.io/chartrepo/voltmxgo-ea is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo-ea/index.yaml : 401 Unauthorized
+Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
 ```
 
 Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
@@ -52,9 +55,9 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
-## 4. Add Early Access Preview Hostnames
+## 4. Add Preview Hostnames
 
-For the Early Access 3 preview, the following hostnames are no longer **hard-coded**:
+<!--For the Early Access 3 preview,-->The following hostnames are no longer **hard-coded**:
 
 ```
 drapi.mymxgo.com
@@ -128,7 +131,7 @@ cd ~/mxgo
 
 ## 6. Install wget and curl into your Linux environment
 
-Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using if they are not already installed.
+Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using if they're not already installed.
 
 ## Next step
 

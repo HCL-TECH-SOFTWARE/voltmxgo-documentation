@@ -70,3 +70,10 @@ In the **Update Recipe** window, you can change the values of the different fiel
 If you want to remove a recipe, click the menu icon in the recipe card and select **Delete**. You can also click **Delete** when in the expanded view.
 
 ![Delete recipe](../assets/images/deleterecipe.png){: style="height:40%;width:40%"}
+
+## Mobile phone version 
+
+Volt MX Go makes it easy to develop apps for many platforms. The First Touch Recipe Catalog app also works on mobile phones, such as iPhones and Android phones, using the same Domino REST APIs. In the mobile phone version of the app, you can also use all its features, such as viewing a recipe, editing a recipe, and adding a recipe.
+
+![Mobile phone version of First Touch recipe catalog app](../assets/images/mobilerecipe1.png)
+

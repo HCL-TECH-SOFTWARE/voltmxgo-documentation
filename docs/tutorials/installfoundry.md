@@ -1,5 +1,7 @@
 # Install Foundry
 
+--8<-- "devtestenvironment.md"
+
 The procedures will guide you in the installation of Foundry.
 
 ## 1. Download Foundry charts
@@ -18,9 +20,15 @@ The procedures will guide you in the installation of Foundry.
     tar -xzf voltmx-foundry-1.2.4.tgz
     tar -xzf voltmx-dbupdate-1.2.4.tgz
     mv voltmx-foundry/values.yaml  ./
+    mv voltmx-foundry/init-guids.sh  ./
     ```
 
-3. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
+    ```
+    ./init-guids.sh --new
+    ```
+
+4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     ```{ .yaml .no-copy }
     imageCredentials:
@@ -28,17 +36,17 @@ The procedures will guide you in the installation of Foundry.
       password: your-authentication-token
     ```
 
-4. Locate the following line in the file and add your Foundry server domain name setting:
+5. Locate the following line in the file and add your Foundry server domain name setting:
 
     ```{ .yaml .no-copy }
     serverDomainName:
     ```
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Add Early Access Preview Hostnames](prereq.md#4-add-early-access-preview-host-names), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
     !!!note
-        The default name used in previous Early Access releases was `foundry.mymxgo.com`.
+        The default name used is `foundry.mymxgo.com`.
 
-5. Save the file and exit.
+6. Save the file and exit.
 
 ## 2. Deploy Foundry's dbupdate to create the databases in MySql
 
@@ -96,3 +104,7 @@ The procedures will guide you in the installation of Foundry.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
     - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
+
+## Next step
+
+Proceed to [Install Volt MX Go Iris](installiris.md).

@@ -7,3 +7,4 @@ nav:
     - reflogginglevels.md
     - Widgets: summernotewidget.md
     - Documentation references: ../references/index.html#documentation-references
+    - knownlimitation.md
