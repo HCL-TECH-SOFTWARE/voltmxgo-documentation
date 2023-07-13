@@ -1,5 +1,7 @@
 # Install Rancher Desktop
 
+--8<-- "devtestenvironment.md"
+
 The procedure guides you in installing Rancher Desktop on Windows, which is delivered as a desktop app.
 
 ## Before you start

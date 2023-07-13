@@ -1,5 +1,7 @@
 # Install and configure K3s 
 
+--8<-- "devtestenvironment.md"
+
 K3s is a fully compliant Kubernetes distribution. For more information, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank"}.
 
 !!!warning "Caution"

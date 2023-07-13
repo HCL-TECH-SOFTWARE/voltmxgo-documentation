@@ -54,7 +54,7 @@ If you used the Volt MX Go installers, you need to perform the following in addi
     !!!note
         This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
         <!-- If you used the installer to install Domino REST API, Use your Domino server administrator username and password.
-        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) procedure as part of the dev/test only deployment, use the updated values for the username and password.-->  
+        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) procedure as part of the development or test only deployment, use the updated values for the username and password.-->  
 
 3. Click **Next**. An installation progress dialog appears.
 

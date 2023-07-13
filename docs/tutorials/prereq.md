@@ -1,6 +1,8 @@
 <!--# Complete preparatory procedure for first time installation of Volt MX Go-->
 # Complete preparatory procedure for installation of Volt MX Go
 
+--8<-- "devtestenvironment.md"
+
 The following procedure must be performed <!--when installing Volt MX Go for the first time. It should be performed-->post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Foundry installation.
 
 !!!warning "Important"

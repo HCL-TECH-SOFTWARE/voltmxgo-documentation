@@ -1,5 +1,7 @@
 # Deploy Kubernetes
 
+--8<-- "devtestenvironment.md"
+
 Volt MX Go is deployable with Kubernetes via the following options:
 
 - using [K3s](https://docs.k3s.io){: target="_blank"} on an Ubuntu, RHEL, SLES machine or VM
