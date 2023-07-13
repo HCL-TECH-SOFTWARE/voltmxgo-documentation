@@ -221,12 +221,14 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: CostumerView) page, search the data you want to update.
+2. In the **Dashboard/Views** (example: Costumer) page, search the data you want to update.
 
 4. Click the **View** button on the right-side.
     ![Screenshot](../assets/images/dieditdata.png)
+
 5. Click **Edit**.
     ![Screenshot](../assets/images/dipressedit.png)
+
 6. Edit the field(s) that you want to update and click **Save**.
     ![Screenshot](../assets/images/dieditsave.png)
 
@@ -236,22 +238,29 @@
     !!!note
         You can also delete here the entry that you have chosen.
 
-### Delete an entry
+### Delete entry
 
 !!!Warning
-    - Before you delete any of the the data, you must set Formula for Delete Access to @True in Default mode 
+    - Before you delete any of the the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
 
 
 1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: CostumerView) page, search the data you want to delete.
+2. In the **Dashboard/Views** (example: Costumer - view ) page, search the data you want to delete.
+  ![Screenshot](../assets/images/disearchdel.png)
 
-4. Click the **Delete** button on the right-side. This delete the entry.
+4. Click the **Delete** button on the right-side. 
+    ![Screenshot](../assets/images/dipressdel.png)
 
-    !!!warning 
-        As for now, this delete function does't have a modal dialog to warn the user for the deletion. Be cautious.
+    There is a modal pop-up message box to confirm the deletion of data, click OK.
+
+     ![Screenshot](../assets/images/dimsgdelete.png)
+
+    Another pop-up message box appears.
+
+    ![Screenshot](../assets/images/diconfirmdel.png)
  
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
