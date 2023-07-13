@@ -20,6 +20,10 @@
         - If you used the installer to install Domino REST API, use your Domino server administrator username and password.
 
 - You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"}.
+    -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
+    -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer)
+
+
 - You have credentials for Volt MX Foundry and Domino REST API.
 
 ## Launch Volt MX Go Iris
@@ -96,7 +100,7 @@
 
     ![](../assets/images/dikeep.png)
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyDemoSample
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyProjectGA
 
         ![](../assets/images/didrapi.png)
 
@@ -191,7 +195,6 @@
 
 ### Create entry
 
-
 1. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
     ![Screenshot](../assets/images/dinewview.png)
 
@@ -221,12 +224,12 @@
 2. In the **Dashboard/Views** (example: CostumerView) page, search the data you want to update.
 
 4. Click the **View** button on the right-side.
- 
+    ![Screenshot](../assets/images/dieditdata.png)
 5. Click **Edit**.
+    ![Screenshot](../assets/images/dipressedit.png)
+6. Edit the field(s) that you want to update and click **Save**.
+    ![Screenshot](../assets/images/dieditsave.png)
 
-6. Edit the field(s) that you want to update.
-
-7. Click **Save**. 
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
@@ -234,6 +237,10 @@
         You can also delete here the entry that you have chosen.
 
 ### Delete an entry
+
+!!!Warning
+    - Before you delete any of the the data, you must set Formula for Delete Access to @True in Default mode 
+
 
 1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
 
