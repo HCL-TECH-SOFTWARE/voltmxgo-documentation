@@ -37,4 +37,6 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 - Provides documentation and more information about Domino REST API. 
 
+## Known limitations
 
+List [known limitations](knownlimitation.md) of Volt MX Go.

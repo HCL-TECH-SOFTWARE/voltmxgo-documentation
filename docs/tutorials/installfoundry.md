@@ -1,5 +1,7 @@
 # Install Foundry
 
+--8<-- "devtestenvironment.md"
+
 The procedures will guide you in the installation of Foundry.
 
 ## 1. Download Foundry charts

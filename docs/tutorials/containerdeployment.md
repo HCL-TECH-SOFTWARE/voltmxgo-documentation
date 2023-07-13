@@ -1,7 +1,7 @@
 <!--# Install Volt MX Go via containerized deployment-->
-# Install Volt MX Go to dev/test only environment
+# Install Volt MX Go to development or test only environment
 
-The procedure intends to install Volt MX Go server components to a dev/test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
+The procedure intends to install Volt MX Go server components to a development or test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
 
 The server components of Volt MX Go can be deployed with Kubernetes via the following options:
 

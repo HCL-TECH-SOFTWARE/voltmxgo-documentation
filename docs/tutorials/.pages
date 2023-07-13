@@ -10,7 +10,7 @@ nav:
         #- Complete prerequisite procedures:
         #    - prerequisite.md
         #    - portaldownload.md
-        - Install Volt MX Go to dev/test only environment:
+        - Install Volt MX Go to development or test only environment:
             - containerdeployment.md
             - obtainauthenticationtoken.md
             - Deploy Kubernetes:

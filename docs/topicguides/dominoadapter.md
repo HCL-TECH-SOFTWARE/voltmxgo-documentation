@@ -125,6 +125,7 @@ x_0040unid
 ```
 
 !!!note
+    - **All `metal-fields` are not sortable**. 
     - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
     - Meta-fields are included in generated data models by default. The Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
     - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata for with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
@@ -162,10 +163,10 @@ For form-based data models, a number of methods including standard CRUD operatio
 - GET :`Read` an existing Domino document, returning all non-null fields for that document.
 - PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
 - Delete :`Delete` the specified document.
-- createBinary 
-- getBinary 
-- updateBinary 
-- deleteBinary 
+- createBinary - `Create` a new attachment file to attach to a specified Domino document.
+- getBinary - `Read` an existing attachment from a specified Domino document. 
+- updateBinary - `Update` an existing attachment from a specified Domino document, replacing it with a new one. 
+- deleteBinary - `Delete` an existing attachment from a specified Domino document.
 - Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 <!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.-->
 
@@ -212,11 +213,12 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 
 - `$skip`: Specific the number of documents to skip (zero-based row index of the first returned document).
 - `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
-- `$orderby`: Sort the result-set in ascending or descending order based on a specified column. The column must be specified as `sortable` in the database design. 
-- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. Only `sortable` columns can be filtered.
+- `$orderby`: Sort the result-set in ascending or descending order based on a specified column. **The column must be specified as `sortable` in the database design**. 
+- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. **Only `sortable` columns can be filtered**.
 
 !!!note
-    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+    - You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula `@Text(@Universalid)` to create a new sortable column in Domino Designer so that `$filter` and `$orderby` can be used to find a view row by UNID or to order the view by UNID.
+    - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.
 
 With `$filter`, the canonical function `startswith` is supported.
 
@@ -234,6 +236,36 @@ With `$filter`, the canonical function `startswith` is supported.
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
 <!--|`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|-->
+
+### Attachments
+
+Domino documents can have associated attachments, which are accessible to Volt MX Go through the binary API.
+
+You may perform the following binary operations:
+
+ - getBinary: `GET <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&type=<input type>`
+     - Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
+ - createBinary: `POST <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
+     - Takes the file’s binary content or accepts it as a base64 encoded string.
+     - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
+
+!!!warning "Important"
+    - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
+    - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.  
+ 
+<!--In testing, we have been able to send and receive files up to 1 GB in size, however this was pretty unreliable and could on occasion cause the server to freeze up. For now, large files of that size will need further work before being supported. We would recommend keeping attachment sizes down to around 100 MB as a max until larger files can be fully supported and performance tested.-->
+
+<!-- This limit can be raised, or even set to unlimited by creating a file `uploadconfig.json` in the keepconfig.d folder under your notes data. You can set it to unlimited by setting __bodyLimit__ to -1. The file should look like:
+ ```
+ {
+   "bodyHandler": {
+     "uploadsDirectory": "keep-file-uploads.d",
+     "bodyLimit": -1
+   }
+ }
+ ```
+ -->
+
 ## Limitations
 
 - Supports only Foundry Object services.
@@ -241,8 +273,13 @@ With `$filter`, the canonical function `startswith` is supported.
 
 ### MX core limitations (Iris, client SDK, Foundry)
 
-- Naming limitations:
+- Naming limitations
 
     - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
     - Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
-   
+
+- Data conversion   
+
+    - As Domino REST API and Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
+
+ 

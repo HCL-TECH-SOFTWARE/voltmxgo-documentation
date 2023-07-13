@@ -1,5 +1,7 @@
 # Install MySQL for Foundry
 
+--8<-- "devtestenvironment.md"
+
 The procedure guides you in installing MySQL for Foundry.
 
 1. Run the following commands to create a Foundry directory in the proper location, and make the Foundry directory the current directory:

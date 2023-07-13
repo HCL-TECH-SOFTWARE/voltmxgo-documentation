@@ -1,5 +1,7 @@
 # Install Domino REST API
 
+--8<-- "devtestenvironment.md"
+
 The procedure guides you in downloading the Domino REST API Helm chart and deploying Domino REST API.
 
 ## 1. Download the Domino REST API Helm chart
