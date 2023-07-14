@@ -141,7 +141,7 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
     - resort-asc: indicates that clicking the column header sorts the view in ascending order
     - resort-desc: indicates that clicking the column header sorts the view in descending order.
         
-        !!!not
+        !!!note
             If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.
 
     - title: displays the title of the column
