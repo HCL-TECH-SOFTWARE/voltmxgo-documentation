@@ -21,7 +21,7 @@
 
 - You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"}.
     -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
-    -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer)
+    -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer.
 
 
 - You have credentials for Volt MX Foundry and Domino REST API.
@@ -185,7 +185,7 @@
 
 ## CRUD operation upon importing the `.nsf` file
 
-!!!note
+!!!note "Published the web app in Iris"
     - Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
     To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
 
@@ -207,7 +207,7 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-5. In the **Dashboard/Views** (example: CustomerView) page, you can see here the added entry.
+    You can see in  **Dashboard/Views** (example: CustomerView) page, you can see here the added entry.
 
     ![Screenshot](../assets/images/dilist.png)
 
