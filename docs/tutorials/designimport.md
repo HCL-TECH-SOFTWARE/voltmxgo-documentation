@@ -19,7 +19,13 @@
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
         - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
 
-- You have a configured `.nsf` file, `schema` and `scopes` in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"}.
+- You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"}.
+
+    -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
+    -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer).
+    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and your scope to the Scope listbox in order to return proper values.
+
+
 - You have credentials for Volt MX Foundry and Domino REST API.
 
 ## Launch Volt MX Go Iris
@@ -96,7 +102,7 @@
 
     ![](../assets/images/dikeep.png)
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyDemoSample
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyProjectGA
 
         ![](../assets/images/didrapi.png)
 
@@ -181,35 +187,82 @@
 
 ## CRUD operation upon importing the `.nsf` file
 
-!!!note
-    Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
+!!!note "Published the web app in Iris"
+    - Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
     To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
 
-1. Log in to your account in Domino REST API using the newly published imported Domino application.
+    - Log in to your account in Domino REST API using the newly published imported Domino application.
+      Your configuration in Domino REST API decides what operations you can include in the **design import** form.
+      All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
 
-    !!!note
-        Your configuration in Domino REST API decides what operations you can include in the **design import** form.
-        All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
+### Create entry
 
-     ![Screenshot](../assets/images/dilogincrud.png)   
-
-2. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
-    
+1. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
     ![Screenshot](../assets/images/dinewview.png)
 
-3. Click **Add New**.
-4. Fill in the fields and click **Add**. This adds the data to the `.nsf` file.
+2. Click **Add New**.
+3. Fill in the fields and click **Add**. This adds the data to the `.nsf` file.
 
     ![Screenshot](../assets/images/dinewview1.png)
 
-5. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer) to see the fields that you've added.
+4. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-6. In the **Views** window, you can see here the added values on your **Forms**.
+    You can see in  **Dashboard/Views** (example: CustomerView) page, the added entry.
 
     ![Screenshot](../assets/images/dilist.png)
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
     ![Screenshot](../assets/images/didesigner.png)
+
+### Update data
+
+1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+
+    ![Screenshot](../assets/images/diviews.png)
+
+2. In the **Dashboard/Views** (example: Costumer) page, search the data you want to update.
+
+4. Click the **View** button on the right-side.
+    ![Screenshot](../assets/images/dieditdata.png)
+
+5. Click **Edit**.
+    ![Screenshot](../assets/images/dipressedit.png)
+
+6. Edit the field(s) that you want to update and click **Save**.
+    ![Screenshot](../assets/images/dieditsave.png)
+
+
+    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+
+    !!!note
+        You can also delete here the entry that you have chosen.
+
+### Delete entry
+
+!!!Warning
+    - Before you delete any of the the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
+
+
+1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+
+    ![Screenshot](../assets/images/diviews.png)
+
+2. In the **Dashboard/Views** (example: Costumer - view ) page, search the data you want to delete.
+  ![Screenshot](../assets/images/disearchdel.png)
+
+4. Click the **Delete** button on the right-side. 
+    ![Screenshot](../assets/images/dipressdel.png)
+
+    There is a modal pop-up message box to confirm the deletion of data, click OK.
+
+     ![Screenshot](../assets/images/dimsgdelete.png)
+
+    Another pop-up message box appears.
+
+    ![Screenshot](../assets/images/diconfirmdel.png)
+ 
+    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+
