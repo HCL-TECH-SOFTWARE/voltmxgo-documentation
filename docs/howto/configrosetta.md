@@ -19,7 +19,7 @@ This procedure describes how to configure the Rosetta API based on what you need
 2. In the **Project Setting** window, click the **Rosetta** tab
 
     !!!Tips
-        When you hover the **info** toolip icon beside each of the label or textbox, you can see the description of each function.
+        When you hover over the **info** tooltip icon beside each of the label or textbox, you can see the description of each function.
     
     ![settings](../assets/images/vfsetting.png)
 

@@ -20,9 +20,10 @@
         - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
 
 - You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"}.
+
     -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
     -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer).
-    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and your scope to the Scope listbox in order to return proper values.
+    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and your scope to the Scope listbox in order to return propervalues.
 
 
 - You have credentials for Volt MX Foundry and Domino REST API.
