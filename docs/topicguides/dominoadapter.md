@@ -125,7 +125,7 @@ x_0040unid
 ```
 
 !!!note
-    - **All `metal-fields` are not sortable**. 
+    - **All `meta-fields` aren't sortable**. 
     - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
     - Meta-fields are included in generated data models by default. The Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
     - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata for with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
@@ -138,6 +138,14 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
     - position: refers to column number
     - sorted: refers to whether the column is sortable
     - direction: refers to sort direction, either ascending or descending
+    - resort-asc: indicates that clicking the column header sorts the view in ascending order
+    - resort-desc: indicates that clicking the column header sorts the view in descending order.
+        
+        !!!note
+            If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.
+
+    - title: displays the title of the column
+    - multiValueSeparator: NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.
     
 - Form aliases: For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, the `Main Document` form in the Domino Teamroom database has three aliases, so the **Metadata** properties look like the following:
 
@@ -244,27 +252,20 @@ Domino documents can have associated attachments, which are accessible to Volt M
 You may perform the following binary operations:
 
  - getBinary: `GET <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&type=<input type>`
-     - Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
+     Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
  - createBinary: `POST <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
      - Takes the file’s binary content or accepts it as a base64 encoded string.
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
+- updateBinary: `PUT <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
+    - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
+    - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
+- deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>`
+    - The file is deleted from the Domino database and its name is removed from the `$FILES` field.
 
 !!!warning "Important"
     - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
     - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.  
  
-<!--In testing, we have been able to send and receive files up to 1 GB in size, however this was pretty unreliable and could on occasion cause the server to freeze up. For now, large files of that size will need further work before being supported. We would recommend keeping attachment sizes down to around 100 MB as a max until larger files can be fully supported and performance tested.-->
-
-<!-- This limit can be raised, or even set to unlimited by creating a file `uploadconfig.json` in the keepconfig.d folder under your notes data. You can set it to unlimited by setting __bodyLimit__ to -1. The file should look like:
- ```
- {
-   "bodyHandler": {
-     "uploadsDirectory": "keep-file-uploads.d",
-     "bodyLimit": -1
-   }
- }
- ```
- -->
 
 ## Limitations
 
