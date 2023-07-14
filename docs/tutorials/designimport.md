@@ -207,7 +207,7 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-    You can see in  **Dashboard/Views** (example: CustomerView) page, you can see here the added entry.
+    You can see in  **Dashboard/Views** (example: CustomerView) page, the added entry.
 
     ![Screenshot](../assets/images/dilist.png)
 
