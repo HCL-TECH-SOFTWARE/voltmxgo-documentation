@@ -19,7 +19,7 @@
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
         - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
 
-- You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://github01.hclpnp.com/pages/Volt-MX-GO/volt-mx-go-documentation-public/tutorials/designimport.html){: target="_blank"}.
+- You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"}.
 
     -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
     -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer).
