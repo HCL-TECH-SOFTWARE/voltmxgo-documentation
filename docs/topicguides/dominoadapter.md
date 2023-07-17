@@ -219,10 +219,10 @@ The Domino Adapter supports these OData filter parameters for the GET method on 
 - column data equal filter using `$filter`: filters records and shows only the record with the defined column and column value
 - column data `startswith` filter using `$filter`: filters records and shows the record or records with the defined column name and column value starting with a defined string-->
 
-- `$skip`: Specific the number of documents to skip (zero-based row index of the first returned document).
-- `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
+- `$skip`: Specifies the number of view entries to skip (zero-based row index of the first returned view entry).
+- `$top`: Specifies the number of view entries to return, starting from the beginning or from the row specified by `$skip`.
 - `$orderby`: Sort the result-set in ascending or descending order based on a specified column. **The column must be specified as `sortable` in the database design**. 
-- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. **Only `sortable` columns can be filtered**.
+- `$filter`: Specifies conditions that must be met by a view entry for it to be returned in the set of matching view entries. **Only `sortable` columns can be filtered**.
 
 !!!note
     - You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula `@Text(@Universalid)` to create a new sortable column in Domino Designer so that `$filter` and `$orderby` can be used to find a view row by UNID or to order the view by UNID.
@@ -237,9 +237,9 @@ With `$filter`, the canonical function `startswith` is supported.
 |Example query|Expected result|
 |----|----|
 |`$top=10`|Returns 10 rows of data unless the total number of data rows in the view database is less than 10.|
-|`$skip=0`|Returns rows starting from the first document in the view (skip zero rows), equivalent to omitting `$skip`.|
-|`$skip=5`|Returns data starting from the sixth document in the view.|
-|`$filter=Year eq 2021`|Returns all documents in the view whose `Year` field is equal to `2021`.|
+|`$skip=0`|Returns rows starting from the first view entry in the view (skip zero rows), equivalent to omitting `$skip`.|
+|`$skip=5`|Returns data starting from the sixth view entry in the view.|
+|`$filter=Year eq 2021`|Returns all view entries in the view whose `Year` field is equal to `2021`.|
 |`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
