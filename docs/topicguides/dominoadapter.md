@@ -254,7 +254,7 @@ You may perform the following binary operations:
  - getBinary: `GET <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&type=<input type>`
      Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
  - createBinary: `POST <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
-     - Takes the file’s binary content or accepts it as a base64 encoded string.
+     - Takes the file’s binary content encoded as a base64 string
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
 - updateBinary: `PUT <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
