@@ -74,19 +74,19 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
     4. Determine how you want to expose the Domino server to Notes clients by setting the value of the `exposeNRPC` parameter to any of the following options:
 
-        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol.
+        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol.  This is only recommended when using Rancher Desktop.
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
-        - `nodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod.
-        
-        You can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).   
+        - `nodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod.  This is the recommended option if you want to expose NRPC to your Notes Clients utilizing non Rancher Desktop clusters.
+
+        You can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).
 
     5. Locate the following lines in the file and specify how to want to expose Domino for Notes clients by specifying the value of `exposeNRPC` parameter to either `do-not-expose`, `nodePort`, or `hostPort`
 
         ```{ .yaml .no-copy }
         exposeNRPC: do-not-expose
         ```
-        In this example, `do-not-expose` is the selected option. 
-        
+        In this example, `do-not-expose` is the selected option.
+
 5. **(Optional)** If you would like to configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).
 
 6. Save the file and exit.
