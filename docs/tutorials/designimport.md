@@ -23,7 +23,7 @@
 
     -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
     -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer).
-    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and your scope to the Scope listbox in order to return proper values.
+    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and `$DATA` to the Scope list in order to return proper values.
 
 
 - You have credentials for Volt MX Foundry and Domino REST API.
@@ -95,14 +95,14 @@
     |  **Fields**     | **Description** |
     | -----------     | -----------     |
     | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
-    | Scope       | This is the name of your configured scope described in your App of Domino REST API app management. |
+    | Scope       | For this release, the $DATA scope is set as the default for the Identity Service.|   <!--  This is the name of your configured scope described in your App of Domino REST API app management.  |
     |Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
 
     ![](../assets/images/dikeep.png)
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyProjectGA
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOProjectGA
 
         ![](../assets/images/didrapi.png)
 
@@ -229,6 +229,10 @@
     ![Screenshot](../assets/images/dieditdata.png)
 
 5. Click **Edit**.
+
+    !!!note
+        You can also see here the delete button to remove information.  
+
     ![Screenshot](../assets/images/dipressedit.png)
 
 6. Edit the field(s) that you want to update and click **Save**.
