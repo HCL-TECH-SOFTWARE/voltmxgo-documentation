@@ -225,24 +225,23 @@
 
 2. In the **Dashboard/Views** (example: Costumer) page, search the data you want to update.
 
-4. Click the **View** button on the right-side.
-    ![Screenshot](../assets/images/dieditdata.png)
 
-5. Click **Edit**.
+3. Click the **View** button on the right-side.
 
     !!!note
-        You can also see here the delete button to remove information.  
+        You can also see here the delete button to remove the data you have chosen.
+
+    ![Screenshot](../assets/images/dieditdata.png)
+
+4. Click **Edit**.
 
     ![Screenshot](../assets/images/dipressedit.png)
 
-6. Edit the field(s) that you want to update and click **Save**.
+5. Edit the field(s) that you want to update and click **Save**.
     ![Screenshot](../assets/images/dieditsave.png)
 
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
-
-    !!!note
-        You can also delete here the entry that you have chosen.
 
 ### Delete entry
 
