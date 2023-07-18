@@ -44,10 +44,38 @@ The procedures will guide you in the installation of Foundry.
     ```
     Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
-    !!!note
-        The default name used is `foundry.mymxgo.com`.
+6. Locate the following lines in the file and add your Foundry database details:
 
-6. Save the file and exit.
+    ```{ .yaml .no-copy }
+    ### Database details ###
+
+    # Database type which you want to use for Volt MX Foundry (String)
+    # Possible values:
+    #   "mysql" for MySQL DB server
+    #   "sqlserver" for Azure MSSQL or SQLServer
+    #   "oracle" for Oracle DB server
+    dbType:
+
+    # Database server hostname (String)
+    dbHost:
+
+    # Database server port number (Number). This can be empty for cloud managed service.
+    dbPort:
+
+    # Database User and password - you may set a single general userid/password here,
+    # or you may set specific userid/password combinations below.  If set, the
+    # specific values override the general dbUser/dbPass.
+
+    # Database server user (String)
+    dbUser:
+
+    # Database server password (String) enclosed in quotes
+    dbPass:
+    ```
+    See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
+    for more details.
+
+7. Save the file and exit.
 
 ## 2. Deploy Foundry's dbupdate to create the databases in MySql
 
