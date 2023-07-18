@@ -6,17 +6,6 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md). 
-<!-- You have noted the following Domino REST API details:
-
-    - Domino REST API server URL 
-    - username<!--: `mxgo admin`
-    - password<!--: `password`
-
-    !!!note
-        This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API.
-        <!-- If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
-        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
-
 - You have added and configured a schema and a scope in the Domino REST API. 
 
     !!!tip

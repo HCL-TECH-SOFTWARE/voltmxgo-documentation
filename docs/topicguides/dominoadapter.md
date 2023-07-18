@@ -213,12 +213,6 @@ With `$filter`, the following canonical functions are supported:
 
 The Domino Adapter supports these OData filter parameters for the GET method on view-based data models:
 
-<!-- `$top`: limits the number of returned data rows
-- `$skip`: defines the number of rows to skip or in what row index should the data query start
-- `$orderby`: sorts records in either ascending or descending order based on the values of the defined column
-- column data equal filter using `$filter`: filters records and shows only the record with the defined column and column value
-- column data `startswith` filter using `$filter`: filters records and shows the record or records with the defined column name and column value starting with a defined string-->
-
 - `$skip`: Specifies the number of view entries to skip (zero-based row index of the first returned view entry).
 - `$top`: Specifies the number of view entries to return, starting from the beginning or from the row specified by `$skip`.
 - `$orderby`: Sort the result-set in ascending or descending order based on a specified column. **The column must be specified as `sortable` in the database design**. 

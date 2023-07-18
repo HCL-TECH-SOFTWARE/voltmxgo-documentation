@@ -6,36 +6,7 @@ The procedure guides you in importing the Summernote Editor component in Iris. T
 
 ## Before you start
 - You have created a Domino data model in a Foundry Object Service for which you want to generate forms.
-<!-- You have completed the [Volt MX Go installation](../tutorials/installation.md) and opened Volt MX Iris.
-- You have created your [Foundry admin account](foundryadminaccount.md).
-- You have checked your Foundry settings. To check your Foundry settings:
 
-    1. (For Windows) On the top menu, select **Edit** &rarr; **Preferences**.
-
-        or
-
-        (For Mac) On the main menu, select **Volt MX Iris** &rarr; **Preferences**.
-
-    2. On the **Volt MX Iris Preferences** dialog, click **Volt MX Foundry**.
-    3. On the **Volt MX Foundry** tab, enter `http://foundry.mymxgo.com` in the **Foundry URL** text box, and then click **Validate**.
-
-        ![Preferences](../assets/images/dipreference.png)
-
-        You should see the “Validation Successful” message at the top of the screen if the Foundry is available.
-
-    4. Click **Done**.
-
-- You have connected Iris to Foundry. To connect to Foundry:
-
-    1. Click the **Profile** icon on the upper right corner of the Iris screen.
-    2. Enter your username and password for Foundry. Your username appears next to the **Profile** icon.
-    3. Click the **Data & Services** tab under your username.
-    4. Click the menu icon, and then select **Link to an Existing App**. The Volt MX Applications dialog opens.
-    5. Click **Associate** to link your app to the data stored on Foundry.
-    6. Click **Project Services** and see the connections to the Foundry data.
-
-        ![Project Services](../assets/images/projectservices.png)
--->
 ## Procedure
 
 ### To import Summernote Editor:

@@ -50,7 +50,7 @@ Make sure that your `/etc/hosts` file has the preview hostnames. You will need t
     2. On the **Basics** tab, enter `drapi` in the **Server name** text box and then select the **TCPIP** checkbox for **Use LAN port**.
     3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
 
-    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `hostPort` during the [DRAPI Helm installation](../tutorials/downloadhelmchart.md) no further configuration is required, proceed to step e.  If instead you specified `nodePort`:
+    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `hostPort` during the [DRAPI Helm installation](../tutorials/downloadhelmchart.md), no further configuration is required and you can proceed to **Save & Close**. If instead you specified `nodePort`:
 
         1. Run the following `kubectl` command to get the port number of the port picked by Kubernetes for the `nodePort`:
 
@@ -79,18 +79,3 @@ Make sure that your `/etc/hosts` file has the preview hostnames. You will need t
 In your Notes client, you should now be able to select **File** &rarr; **Open** &rarr; **HCL Notes Application**, specify `drapi` as the server name, and connect to your new Domino server.
 
 
-<!--4.  During the DRAPI Helm install you configured the parameter `exposeNRPC` with `do-not-expose`, `hostPort` or `nodePort`.  If you chose `hostPort`, you are done.  If you chose `nodePort`, you must add the port which Kubernetes picked for the `nodePort`.  Run the following `kubectl` command to get the port number:
-
-    ```text
-    kubectl get services domino-drapi-nrpc-external -n mxgo
-    ```
-
-    The output should be similar to the following:
-
-    ```{ .yaml .no-copy }
-    kubectl get services domino-drapi-nrpc-external -n mxgo
-    NAME                         TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)
-    domino-drapi-nrpc-external   NodePort   10.43.84.236   <none>        1352:31657/TCP
-    ```
-
-    Under the PORT(S) column you can see that port 1352 is being exposed on port 31657.  Using this example, you would append ":31657" to the host name in the **Destination server address** text box making a final value of "drapi.mymxgo.com:31657".-->
