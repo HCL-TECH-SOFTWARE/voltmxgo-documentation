@@ -17,11 +17,11 @@ The procedures will guide you in the installation of Foundry.
     ```
     helm pull hclcr/voltmx-dbupdate
     helm pull hclcr/voltmx-foundry
-    tar -xzf voltmx-foundry-1.2.4.tgz
-    tar -xzf voltmx-dbupdate-1.2.4.tgz
+    tar -xzf voltmx-foundry-1.2.5.tgz
+    tar -xzf voltmx-dbupdate-1.2.5.tgz
     mv voltmx-foundry/values.yaml  ./
     mv voltmx-foundry/init-guids.sh  ./
-    chmod 777 init-guids.sh
+    chmod +x init-guids.sh
     ```
 
 3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
