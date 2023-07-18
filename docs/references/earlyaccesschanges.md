@@ -6,7 +6,7 @@ The section provides information on the features, improvements, and resolved iss
 
 ### New Features
 
-- Added Summernote Editor component in Iris to allow users to enter or edit rich text content in  **Create** and **Update** forms generated from Domino objects. For more information, see [Import Summernote Editor](../howto/summernote.md) and [SummernoteEditor widget](summernotewidget.md).
+- Added Summernote Editor component in Iris to allow users to enter or edit rich text content in  **Create** and **Update** forms generated from Domino objects. For more information, see *Import Summernote Editor*<!--(../howto/summernote.md)--> and *Summernote Editor widget*<!--(summernotewidget.md)-->.
 - Added readiness and liveness probes support to the Domino REST API Helm chart. The readiness probe is used by a service to know if a container is available to handle requests. If it fails the configured thresholds, the service is marked as not ready and won't route requests. The liveness probe is similar to the readiness probe. However, if it fails the configured thresholds, the container is killed and restarted. These probes are present and customizable.
 - Added installers for **Domino REST API** and **Volt MX Go Foundry**.
 

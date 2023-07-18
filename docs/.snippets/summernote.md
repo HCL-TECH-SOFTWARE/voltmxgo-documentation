@@ -48,4 +48,4 @@ The Summernote Editor component is now successfully imported.
 
 ## Additional information
 
-To learn more, see [SummernoteEditor widget](../references/summernotewidget.md). 
+To learn more, see [Summernote Editor component](../references/summernotewidget.md). 
