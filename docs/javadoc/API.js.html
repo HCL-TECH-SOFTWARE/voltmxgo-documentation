@@ -1,73 +1,14 @@
 <!DOCTYPE html><html lang="en" style="font-size:16px"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="resources/favicon.ico"><title>Source: API.js</title><!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="";baseURL=(baseURL=(baseURL="/docs/voltmxgo/javadoc/").replace(/https?:\/\//i,"")).substr(baseURL.indexOf("/"))</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body class="dark" data-theme="dark"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.1</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="X7qiGlwDwFeSAU25mv-6o"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="94ax0cWOreGQbb5l42r9Z"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">API.js</h1></header><article><pre class="prettyprint source lang-js"><code>"use strict";
+    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="";baseURL=(baseURL=(baseURL="/docs/voltmxgo/javadoc/").replace(/https?:\/\//i,"")).substr(baseURL.indexOf("/"))</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body class="dark" data-theme="dark"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.32</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="mG9m8MXzZAZ2WGorakgKG"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-context.html">rosetta-api-context</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-volt-formula.html">volt-formula</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="LxORzb4bn-vp-UYfnFabH"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">API.js</h1></header><article><pre class="prettyprint source lang-js"><code>"use strict";
 /* eslint-disable complexity */
 /**
  * @file Rosetta API
  * @module rosetta-api
  * @category API
  */
-/*
- * Note:
- * These are functions that exist with the same name in the underlying API layer implementations.
- * The inputs/outputs for notes vs openformula may differ based on what is expected from the original API
- *
- * Function Equivalents in OpenFormula &lt;-> Notes:
- *
- * OpenFormula  @Function        Category
- * -----------  ---------------  --------------------
- * ABS          Abs              math-trig
- * ACOS         ACos             math-trig
- * ASIN         ASin             math-trig
- * ATAN         ATan             math-trig
- * ATAN2        ATan2            math-trig
- * CHAR         Char             text
- * COS          Cos              math-trig
- * COUNT        Count            lists,statistical
- * DATE         Date             date-time
- * DAY          Day              date-time
- * EXP          Exp              math-trig
- * FALSE        False            logical
- * HOUR         Hour             date-time
- * IF           If               logical
- * INT          Integer          math-trig
- * ISNUMBER     IsNumber         text,information
- * ISTEXT       IsText           text,information
- * LEFT         Left             text
- * LEN          Length           text
- * LN           Ln               math-trig
- * LOG          Log              math-trig
- * MATCH        Matches          text
- * MAX          Max              math-trig,statistical
- * MID          Middle           text
- * MIN          Min              math-trig,statistical
- * MINUTE       Minute           date-time
- * MOD          Modulo           math-trig
- * MONTH        Month            date-time
- * NOW          Now              date-time
- * PI           Pi               math-trig
- * POWER        Power            math-trig
- * RAND         Random           math-trig
- * REPLACE      Replace          lists,text
- * RIGHT        Right            text
- * ROUND        Round            math-trig
- * SECOND       Second           date-time
- * SIGN         Sign             math-trig
- * SIN          Sin              math-trig
- * SQRT         Sqrt             math-trig
- * SUM          Sum              math-trig
- * TAN          Tan              math-trig
- * TIME         Time             date-time
- * TODAY        Today            date-time
- * TRIM         Trim             text
- * TRUE         True             logical
- * UNIQUE       Unique           lists,miscellaneous
- * UPPER        UpperCase        text
- * WEEKDAY      Weekday          date-time
- * YEAR         Year             date-time
- */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTernFileNames = exports.registerAPIs = exports.registerAPI = exports.isDefaultFrameworkJS = exports.isDefaultFrameworkVoltMX = exports.setDefaultFrameworkAsJS = exports.setDefaultFrameworkAsVoltMX = exports.getDefaultFramework = exports.isDefaultOpenFormula = exports.isDefaultNotes = exports.setDefaultAPIAsOpenFormula = exports.setDefaultAPIAsNotes = exports.getDefaultAPI = exports._config = exports.build = exports.version = void 0;
+exports.getTernFileNames = exports.registerAPIs = exports.registerAPI = exports.isDefaultContextDb = exports.isDefaultContextLocal = exports.setDefaultContextAsDb = exports.setDefaultContextAsLocal = exports.getDefaultContext = exports.isDefaultFrameworkJS = exports.isDefaultFrameworkVoltMX = exports.setDefaultFrameworkAsJS = exports.setDefaultFrameworkAsVoltMX = exports.getDefaultFramework = exports.isDefaultOpenFormula = exports.isDefaultNotes = exports.setDefaultAPIAsOpenFormula = exports.setDefaultAPIAsNotes = exports.getDefaultAPI = exports._config = exports.build = exports.version = void 0;
 const tslib_1 = require("tslib");
 // set the API version as a rosettajs prop
 exports.version = require('../../package.json').version;
@@ -87,13 +28,19 @@ exports._config = {
     framework: {
         _voltmx: "vmx",
         _javascript: "js",
-        _defaultFramework: "js"
+        default: "js"
+    },
+    context: {
+        local: "local",
+        db: "db",
+        default: "db"
     }
 };
+/*------------------------------------------[  API implementation selection  ] */
 /**
  * Set getDefaultAPI
  * @returns {string} the default API currently set
- */
+*/
 const getDefaultAPI = () => { return exports._config._defaultAPI; };
 exports.getDefaultAPI = getDefaultAPI;
 /**
@@ -128,12 +75,13 @@ exports.isDefaultNotes = isDefaultNotes;
  */
 function isDefaultOpenFormula() { return (0, exports.getDefaultAPI)() === exports._config._openFormula; }
 exports.isDefaultOpenFormula = isDefaultOpenFormula;
+/*------------------------------------------[  FRAMEWORK  ] */
 /**
  * Get default framework
  * @returns {string} default framework (JS or VMX)
  */
 function getDefaultFramework() {
-    return exports._config.framework._defaultFramework;
+    return exports._config.framework.default;
 }
 exports.getDefaultFramework = getDefaultFramework;
 /**
@@ -141,7 +89,7 @@ exports.getDefaultFramework = getDefaultFramework;
  * @returns {string} The default framework
  */
 function setDefaultFrameworkAsVoltMX() {
-    exports._config.framework._defaultFramework = exports._config.framework._voltmx;
+    exports._config.framework.default = exports._config.framework._voltmx;
     return getDefaultFramework();
 }
 exports.setDefaultFrameworkAsVoltMX = setDefaultFrameworkAsVoltMX;
@@ -150,7 +98,7 @@ exports.setDefaultFrameworkAsVoltMX = setDefaultFrameworkAsVoltMX;
  * @returns {string} The default framework
  */
 function setDefaultFrameworkAsJS() {
-    exports._config.framework._defaultFramework = exports._config.framework._javascript;
+    exports._config.framework.default = exports._config.framework._javascript;
     return getDefaultFramework();
 }
 exports.setDefaultFrameworkAsJS = setDefaultFrameworkAsJS;
@@ -168,6 +116,46 @@ exports.isDefaultFrameworkVoltMX = isDefaultFrameworkVoltMX;
  */
 function isDefaultFrameworkJS() { return getDefaultFramework() === exports._config.framework._javascript; }
 exports.isDefaultFrameworkJS = isDefaultFrameworkJS;
+/*------------------------------------------[  CONTEXT  ] */
+/**
+ * Get default context
+ * @returns {string} default context (Local or DB)
+ */
+function getDefaultContext() {
+    return exports._config.context.default;
+}
+exports.getDefaultContext = getDefaultContext;
+/**
+ * Set default context to local
+ * @returns {string} The default context
+ */
+function setDefaultContextAsLocal() {
+    exports._config.context.default = exports._config.context.local;
+    return getDefaultContext();
+}
+exports.setDefaultContextAsLocal = setDefaultContextAsLocal;
+/**
+ * Set default context to db
+ * @returns {string} The default context
+ */
+function setDefaultContextAsDb() {
+    exports._config.context.default = exports._config.context.db;
+    return getDefaultContext();
+}
+exports.setDefaultContextAsDb = setDefaultContextAsDb;
+/**
+ * Is default context local?
+ * @returns {boolean} true if the default context is set to local; false otherwise
+ */
+function isDefaultContextLocal() { return getDefaultContext() === exports._config.context.local; }
+exports.isDefaultContextLocal = isDefaultContextLocal;
+/**
+ * Is default context database?
+ * @returns {boolean} true if the default context is set to db; false otherwise
+ */
+function isDefaultContextDb() { return getDefaultContext() === exports._config.context.db; }
+exports.isDefaultContextDb = isDefaultContextDb;
+/*------------------------------------------[  EXTENSIONS  ] */
 /**
  * Register an API by adding it as an object to the referential array of APIs
  * Defines/redefines the Rosetta API library by creating/updating a node in the API object
@@ -183,25 +171,62 @@ exports.isDefaultFrameworkJS = isDefaultFrameworkJS;
  *   "namef": &lt;String>  optional. the method name to use in the formula lang implementations layer. default: name arg
  *   "code" : &lt;String|Function>  optional. a string with the formula to convert or a callback function. default: noop: () => {}
  *
- * @example:
+ * @example
+ * // code as actual js arrow function object, default params for the rest
+ * // defines &lt;rosettaObj>.Custom.hello = s => alert(`hello $(s)}`)
  * registerAPI(
  *   apiRef:rosettajs,
  *   {
- *     "name":"hello",
+ *     "name":"hello(s)",
  *     "code": s => alert(`hello $(s)}`)
  *   }
- * ); // defines &lt;rosettaObj>.Custom.hello = &lt;code prop>
+ * );
  *
+ * // code as actual js function object,
+ * // defines &lt;rosettaObj>.Text.hello(args...) -> .Text._notes.Hello_Test(args...) = function(name) { return "hello " + name; }
  * registerAPI(
  *   apiRef:rosettajs,
  *   {
- *     "name": "hello",
+ *     "name": "hello(name)",
  *     "cat": "Text",
  *     "lang": "notes",
  *     "namef": "Hello_Test",
  *     "code": function(name) { return "hello " + name; }
  *   }
- * ); // defines &lt;rosettaObj>.Text.hello(args...) -> .Text._notes.Hello_Test(args...) = &lt;code prop>
+ * );
+ *
+ * // code as stringified js function body,
+ * // defines &lt;rosettaObj>.Text.hellop(args...) -> .Text._notes.HelloPhone_Test(args...) = function(name,phone) { return `hello ${name}. phone is ${phone}` }
+ * registerAPI(
+ *   apiRef:rosettajs,
+ *   {
+ *     "name": "hellop(name,phone)",
+ *     "cat": "Text",
+ *     "lang": "notes",
+ *     "namef": "HelloPhone_Test",
+ *     "code": "{ return `hello ${name}. phone is ${phone}` }"
+ *   }
+ *
+ * // code as stringified notes formula code (gets auto-converted to rosettajs),
+ * // defines &lt;rosettaObj>.Custom.myAbs -> .Custom._notes.myAbs(args...) = n => { return rosettajs.Math.abs(n)+10 }`)
+ * registerAPI(
+ *   apiRef:rosettajs,
+ *   {
+ *     "name":"myAbs(n)",
+ *     "code": "@Abs(n)+10;"
+ *   }
+ * );
+ *
+ * // code as stringified open formula code (gets auto-converted to rosettajs),
+ * // defines &lt;rosettaObj>.Custom.myAbs -> .Custom._openFormula.MYABS(args...) = n => { return rosettajs.Math.abs(n)+10 }`)
+ * registerAPI(
+ *   apiRef:rosettajs,
+ *   {
+ *     "name":"myAbs(n)",
+ *     "namef": "MYABS"
+ *     "code": "=ABS(n)+10;"
+ *   }
+ * );
  *
  * @returns {Object} the return value from registerCustomAPI
  * @throws {String}  Error string reprensenting registration failure
@@ -215,7 +240,6 @@ function registerAPI(apiRef, data) {
     const isExcel = (s) => converter.isOpenFormula(s);
     const isFormula = (s) => isNotes(s) || isExcel(s);
     const capFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1);
-    const lowFirstLetter = (str) => str.charAt(0).toLowerCase() + str.slice(1);
     // check and normalize params to expected rosettajs API object schema
     if (!apiRef) {
         throw new Error(`API reference was not supplied!`);
@@ -224,14 +248,14 @@ function registerAPI(apiRef, data) {
     if (typeof name === 'undefined' || !name) {
         throw new Error(`API name was not supplied!`);
     }
-    const argsInName = name.match(/\b[^()]+\((.*)\)$/) || []; // nameArgs[0] will contain the function name+args, args[1] the arguments
+    const argsInName = name.match(/\b[^()]+\((.*)\)$/) || ['', '']; // nameArgs[0] will contain the function name+args, args[1] the arguments
+    const funcArgs = argsInName[1].replace(/;/g, ',');
     if (argsInName &amp;&amp; argsInName[0])
         name = argsInName[0].split('(')[0]; // strip args from name arguments since name will be used as the prop in the API object
     if (!name) {
         throw new Error(`API name null after stripping arguments!`);
     }
     namef = namef || name; // name in formula, default to name if none suppied; note, after stripping args
-    name = lowFirstLetter(name); // force name in rosetta to start with lowercase first letter
     // CATEGORY:
     // set the category of API (eg. Text, Math, or custom supplied)
     cat = cat || 'Custom';
@@ -252,9 +276,7 @@ function registerAPI(apiRef, data) {
         case '':
             _lang = '';
             break; // no formula language representing the API
-        default:
-            _lang = lowFirstLetter(lang); // lowercase first letter
-            _lang = lang.charAt(0) === '_' ? _lang : '_' + _lang; // langs start with _ to follow pattern as _notes and _openFormula
+        default: _lang = lang.charAt(0) === '_' ? lang : `_${lang}`; // langs start with _ to follow pattern as _notes and _openFormula
     }
     // langRef is the underlying formula language implementations object; example: _notes, _openFormula
     let langRef;
@@ -265,25 +287,26 @@ function registerAPI(apiRef, data) {
     // CREATE A CALLBACK FUNCTION FROM THE CODE SUPPLIED:
     code = code || noop;
     let callback;
-    if (typeof (code) === 'string') {
-        // set callback to the conversion of the code string supplied
-        if (isFormula(code)) {
-            const src = converter.getRosettaJSFromFormula(apiRef, code.trim()).converted || '';
-            if (isNotes(code) &amp;&amp; argsInName[1])
-                argsInName[1] = argsInName[1].replace(/;/g, ','); // replace ; with ,
-            callback = extenderEvals.createFunction(src, argsInName[1]);
+    try {
+        if (typeof (code) === 'string') { // code supplied is in the form of a string
+            if (isFormula(code)) { // code string is a formula; convert it to  string supplied
+                const rosettaJsSrc = converter.getRosettaJSFromFormula(apiRef, code.trim()).converted || '';
+                callback = extenderEvals.createFunction(rosettaJsSrc, funcArgs);
+            }
+            else { // assume code is stringified javascript
+                callback = extenderEvals.createFunction(code, funcArgs);
+            }
+        }
+        else if (typeof (code) === 'function') { // code supplied is an actual Function Object
+            callback = code;
         }
         else {
-            throw new Error(`Code supplied is not a supported formula language syntax`);
+            // default to empty function throwing unimplemented err; same as APIs not yet implemented
+            callback = () => { throw new Error(`API ${Cat}:${name} is not implemented!`); };
         }
     }
-    else if (typeof (code) === 'function') {
-        // callback is the code supplied
-        callback = code;
-    }
-    else {
-        // default to empty function throwing unimplemented err; same as APIs not yet implemented
-        callback = () => { throw new Error(`API ${Cat}:${name} is not implemented!`); };
+    catch (err) {
+        throw new Error(`Error converting code supplied into a callable method: ${err}`);
     }
     // CREATE INTERFACE TO CALLBACK FUNCTION IN FORMULA OR DIRECT
     let ifc;
@@ -309,7 +332,7 @@ exports.registerAPI = registerAPI;
  * @param {String} apiRef required. reference to the rosetta api object tree
  * @param {Array} data an array of JSON objects, each representing a custom API to register. see registerAPI for schema
  *
- * @example:
+ * @example
  * registerAPI(
  *   apiRef:rosettajs,
  *   [
@@ -321,18 +344,18 @@ exports.registerAPI = registerAPI;
  *       "cat": "Text",
  *     },
  *     { // defines: &lt;rosettajs>.Text.simple = function(x) { return x+1; }
- *       "name": "simple",
+ *       "name": "simple(x)",
  *       "cat": "Text",
  *       "code": function(x) { return x+1; }
  *     },
  *     { // defines: &lt;rosettajs>.Text.simple = function(x) { this._notes.simple(): function(x) { return x+1; } }
- *       "name": "simpleNotes",
+ *       "name": "simpleNotes(x)",
  *       "cat": "Text",
  *       "lang": "notes",
  *       "code": function(x) { return x+1; }
  *     },
  *     { // defines: &lt;rosettajs>.Text.simple = function(x) { this._notes.ADVanceNOTES123(): function(x) { return x+1; } }
- *       "name": "advancedNotes",
+ *       "name": "advancedNotes(x)",
  *       "cat": "Text",
  *       "lang": "notes",
  *       "namef": "ADVanceNOTES123",
@@ -340,29 +363,29 @@ exports.registerAPI = registerAPI;
  *     },
  *     {
  *       "cat": "Text",
- *       "name": "hello",
+ *       "name": "hello(name)",
  *       "lang": "notes",
  *       "namef": "Hello",
  *       "code": function(name) { return "hello " + name; }
  *     },
  *     {
- *       "name": "goodbye",
+ *       "name": "goodbye(name)",
  *       "lang": "notes",
  *       "cat": "Text",
  *       "code": function(name) { return "bye bye " + name; }
  *     },
  *     { // defines: &lt;rosettajs>.Custom.weather = function(x) { this._openFormula.WEATHER(): function(zip) { return "Sunny in " + zip; } }
- *       "name": "WEATHER",
+ *       "name": "WEATHER(zip)",
  *       "lang": "open formula",
  *       "cat": "Custom",
  *       "code": function (zip) { return "Sunny in " + zip; }
  *     },
- *     { // defines: &lt;rosettajs>.Custom.absPlusX = function(x) { this._notes.AbsPlusX(): javascript conversion result from "@Abs(n)+x" }
+ *     { // defines: &lt;rosettajs>.Custom.absPlusX = function(n,x) { this._notes.absPlusX(): javascript conversion result from "@Abs(n)+x" }
  *       "name": "AbsPlusX(n; x)",
  *       "lang": "notes",
  *       "cat": "Custom",
  *       "code": "@Abs(n)+x;"
- *     },
+ *     }
  *   ]
  * );
  *
@@ -395,4 +418,4 @@ const getTernFileNames = function () {
     return { API: "rosetta_api_tern.json", Notes: "notes_formula_tern.json", OpenFormula: "open_formula_tern.json" };
 };
 exports.getTernFileNames = getTernFileNames;
-//# sourceMappingURL=API.js.map</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper">Copyright © 2023, HCL Technologies Limited</div></footer></div></div></div><div class="search-container" id="PkfLWpAbet" style="display:none"><div class="wrapper" id="iCxFxjkHbP"><button class="icon-button search-close-button" id="VjLlGakifb" aria-label="close search"><svg><use xlink:href="#close-icon"></use></svg></button><div class="search-box-c"><svg><use xlink:href="#search-icon"></use></svg> <input type="text" id="vpcKVYIppa" class="search-input" placeholder="Search..." autofocus></div><div class="search-result-c" id="fWwVHRuDuN"><span class="search-result-c-text">Type anything to view search result</span></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.1</a><div class="mobile-nav-links"></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="X7qiGlwDwFeSAU25mv-6o"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="94ax0cWOreGQbb5l42r9Z"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
+//# sourceMappingURL=API.js.map</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper">Licensed Materials - Property of HCL. (c) Copyright HCL America, Inc. 2023</div></footer></div></div></div><div class="search-container" id="PkfLWpAbet" style="display:none"><div class="wrapper" id="iCxFxjkHbP"><button class="icon-button search-close-button" id="VjLlGakifb" aria-label="close search"><svg><use xlink:href="#close-icon"></use></svg></button><div class="search-box-c"><svg><use xlink:href="#search-icon"></use></svg> <input type="text" id="vpcKVYIppa" class="search-input" placeholder="Search..." autofocus></div><div class="search-result-c" id="fWwVHRuDuN"><span class="search-result-c-text">Type anything to view search result</span></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.32</a><div class="mobile-nav-links"></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="mG9m8MXzZAZ2WGorakgKG"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-context.html">rosetta-api-context</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-volt-formula.html">volt-formula</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="LxORzb4bn-vp-UYfnFabH"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
