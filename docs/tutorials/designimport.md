@@ -22,8 +22,8 @@
 - You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"}.
 
     -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
-    -  When you configure the `schema` in dql `mode`, you must include all the fields of the `Form` (example: Customer).
-    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and your scope to the Scope listbox in order to return proper values.
+    -  When you configure the `schema` in `dql mode`, you must include all the fields of the `Form` (example: Customer).
+    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and `$DATA` to the Scope list in order to return proper values.
 
 
 - You have credentials for Volt MX Foundry and Domino REST API.
@@ -95,14 +95,14 @@
     |  **Fields**     | **Description** |
     | -----------     | -----------     |
     | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
-    | Scope       | This is the name of your configured scope described in your App of Domino REST API app management. |
+    | Scope       | For this release, the $DATA scope is set as the default for the Identity Service.|   <!--  This is the name of your configured scope described in your App of Domino REST API app management.  |
     |Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
 
     ![](../assets/images/dikeep.png)
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOmyProjectGA
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOProjectGA
 
         ![](../assets/images/didrapi.png)
 
@@ -155,35 +155,63 @@
 ## Import a Domino Application from the existing Foundry app
 
 1. Click on **Project** &rarr; **Import** &rarr; **Domino Application** on **Volt MX Go Iris** app.
-2. A wizard modal dialog appears. Go to the first step "**Getting Started**" and click **Next**.
-3. On the second step **Associate Foundry App"**, click **Use Existing** and click **Next**.
-    - Select from the Volt MX Go Application the foundry app and click **Associate**. The existing Foundry app is selected and click **Next**.
+2. The VoltMX Design Import wizard appears. Go to the first step "**Getting Started**" and click **Next**.
+
+    ![](../assets/images/diwizard.png)
+
+
+3. On the second step **Associate Foundry App**, click **Use Existing**.
+
+    !!!info
+        If you have an existing Domino Application Project on your canvass and you want to import and associate it with another Foundry app, use the **Unlink App**. This unlink the Foundry App and returns to selecting *Create New* or *Use Existing* 
+
+    ![](../assets/images/dicreatenew.png)
+
+    - Select the **Foundry App** generated from the wizard, click **Associate** and close the form. 
+
+        ![](../assets/images/diassociate.png)
+
+    - Click **Next**.
+
+        ![](../assets/images/diexfoundry.png)
 
 4. The third step **Identity Service**, click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
+
+    ![](../assets/images/diexistingid.png)
+
+    !!!warning "Important"
+        Use the *Identity Service* that was built by the VoltMX Design Import wizard. Use the one with the prefix MXGO. **DO NOT** make use of manually created *Identity Service* in the Foundry app. This may **NOT** continue your process of importing identity service.
+
     - Select your **active app** from your Domino Rest API Identity Service.
+
+        ![](../assets/images/dimxgoid.png)
+
     
 5. On the fourth step **Scope and Forms**, select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
+    ![](../assets/images/discope.png)
+
     - You can **select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. Only the configured forms will be able to select.
 
+    ![](../assets/images/discopeform.png)
 
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
 
     !!!tip
         It may take a while of publishing the imported Iris app.
+    
+    ![](../assets/images/disummary.png)
 
 
 7. On the final step **Result**, you can see the final `forms` and `views`. 
  
-    !!!tip
-        - The **check mark icon** beside each of the `forms`, `fields`, and `views` means that it was successfully created.
-        - The **warning icon** beside each of the `forms`, `fields`, and `views` means that the supported datatype doesn't match with the Iris app datatype.
-        - Turn on the `show only error` toggle to see all the fields with the warning icon.
-   
-
+    ![](../assets/images/diresult.png) 
 
     Once you click **Done**, each of the selected forms, views, and agents have imported into the  Iris through the use of Forms in Volt MX Go Iris.
     **The App Events [desktop]** appears.
+
+    ![](../assets/images/dioutput.png)
+
 
 ## CRUD operation upon importing the `.nsf` file
 
@@ -225,20 +253,23 @@
 
 2. In the **Dashboard/Views** (example: Costumer) page, search the data you want to update.
 
-4. Click the **View** button on the right-side.
+
+3. Click the **View** button on the right-side.
+
     ![Screenshot](../assets/images/dieditdata.png)
 
-5. Click **Edit**.
+4. Click **Edit**.
+
+    !!!note
+        You may also see the delete button here, which allows you to erase or remove the data you've selected.
+
     ![Screenshot](../assets/images/dipressedit.png)
 
-6. Edit the field(s) that you want to update and click **Save**.
+5. Edit the field(s) that you want to update and click **Save**.
     ![Screenshot](../assets/images/dieditsave.png)
 
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
-
-    !!!note
-        You can also delete here the entry that you have chosen.
 
 ### Delete entry
 
