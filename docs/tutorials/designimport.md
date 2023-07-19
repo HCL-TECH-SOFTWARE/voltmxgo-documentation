@@ -21,8 +21,10 @@
 
 - You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"}.
 
-    -  When you configure the `schema`, you must set **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.
-    -  When you configure the `schema` in `dql mode`, you must include all the fields of the `Form` (example: Customer).
+    -  When you configure the `schema`, open Configured Database Form and set the **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.See [Changes in Configuration Forms of Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#configure-a-form)
+    -  When you configure the `schema`, open Configured Database Form and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in design import.
+    -  When you configure the `scopes`, you need a **Maximum Access Level** set to Designer or Manager. See [Scope in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#add-a-scope)
+
     -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and `$DATA` to the Scope list in order to return proper values.
 
 
