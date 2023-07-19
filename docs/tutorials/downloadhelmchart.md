@@ -17,14 +17,16 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     ```
     helm pull hclcr/drapi
     ```
-    The file `drapi-n.n.n.tgz` is downloaded.
+    The file `drapi-1.0.0.tgz` is downloaded.
 
 3. Run the following commands to unpack the chart and make the DRAPI directory your current directory:
 
     ```
-    tar -xzvf drapi-0.3.3.tgz
+    tar -xzvf drapi-1.0.0.tgz
     cd drapi
     ```
+    !!!note
+        Ensure the version number specified here with tar matches the version you downloaded.
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials, and the DNS name settings.
 
@@ -46,9 +48,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         Whatever hostnames you specify here and later in the Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your hostnames.
 
         !!!note
-            The default names used are `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
+            The example names used are `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Locate the following lines in the file for the Administrator's first name, last name, and password. You can leave these values as the current default if you desire. However, if you choose to change them, remember the new values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and [Access Domino REST API](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
+    3. Locate the following lines in the file for the Administrator's first name, last name, and password. Set values for each of these settings.  In our example we are using "mxgo", "admin" and "password". However, if you use your own values, remember the values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and [Access Domino REST API](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
 
         ```{ .yaml .no-copy }
         dominoAdminFirstName: "mxgo"
@@ -56,7 +58,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         dominoAdminPassword: "password"
         ```
 
-        The following fields may be of interest to you as well:
+        The following fields may be of interest to you as well and may be customized to suite your deployment:
 
         ```{ .yaml .no-copy }
         dominoServerDomainName: "ocp"
@@ -74,8 +76,8 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
     4. Determine how you want to expose the Domino server to Notes clients by setting the value of the `exposeNRPC` parameter to any of the following options:
 
-        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol.  This is only recommended when using Rancher Desktop for Kubernetes.
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
+        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol.  This is only recommended when using Rancher Desktop for Kubernetes.
         - `nodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod.  This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster.
 
         You can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).
