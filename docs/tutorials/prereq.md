@@ -55,22 +55,24 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
-## 4. Add Preview Hostnames
+## 4. Ensure Foundry Hostnames are resolvable
 
-<!--For the Early Access 3 preview,-->The following hostnames are no longer **hard-coded**:
+You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use.  This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
+
+In the examples that follow we are going to use these hostnames as examples:
 
 ```
-drapi.mymxgo.com
-drapi-management.mymxgo.com
-foundry.mymxgo.com
+drapi.mymxgo.com - used to access Domino REST API.
+drapi-management.mymxgo.com - used to access the Domino REST API Management interface.
+foundry.mymxgo.com - used to access HCL Volt MX Foundry
 ```
 
-You can either provide your own hostnames, or continue to use these if you choose. Additionally, documentation has been added to direct you to provide the hostnames you have chosen when you install the Domino Rest API and Foundry.
+You can either provide your own hostnames, or use these example names. Either the name to IP address mapping must be made in your DNS configuration, or you must modify your system hosts file. Further documentation here assumes you are not using a DNS system and configuration and are therefore modifying local hosts file entries.
 
 !!!tip
     Obtain your machine's IP ADDRESS as you will need it in the following step.
 
-Add the hostnames that you have chosen to use in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name**. The previously hard-coded values are shown in this example:
+Add the hostnames that you have chosen to use in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name**. As an example:
 
 ```
 10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com

@@ -23,6 +23,9 @@ The procedures will guide you in the installation of Foundry.
     mv voltmx-foundry/init-guids.sh  ./
     chmod +x init-guids.sh
     ```
+    !!!note
+        The foundry and dbupdate chart names have a version string in the filename.  The `helm pull` command will pull down the latest version of the charts.  Please ensure your tar command uses the correct matching file names.
+
 
 3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
@@ -74,6 +77,8 @@ The procedures will guide you in the installation of Foundry.
     ```
     See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
     for more details.
+    !!!note
+        In our example here, the dbUser is "root" and the password is "Password123!". If you specified different values when installing MySQL you must use the appropriate values here.
 
 7. Save the file and exit.
 
