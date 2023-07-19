@@ -80,7 +80,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 7.	Click **Save**.
 
 !!!tip
-    You can click **Test Login** to verify if the configured Identity service works. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the  Domino REST API **Access consent required** dialog. 
+    You can click **Test Login** to verify if the configured Identity service works. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the  Domino REST API **Access consent required** dialog. If the configuration doesn't work, an error message is shown. 
 
 ## Add an environment 
 
@@ -154,15 +154,13 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     ![Import Objects from Backend](../assets/images/importobject2.png)
 
     !!!tip
-        You can change the data model object names of the selected forms and view entities.
+        - You can change the data model object names of the selected forms and view entities.
+        - For more information on naming limitations, see [naming limitations](../topicguides/dominoadapter.md#mx-core-limitations-iris-client-sdk-foundry).
 
 5. Click **Generate**. The forms and view entities are now added to the **Data Model**. 
 
 ## Test the GET method by viewing a record
 
-<!--!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
-    Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **GET**. 
@@ -178,31 +176,24 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     ![Filtered record](../assets/images/getoneunid.png)
 
 3. Click **Send**.
-4. The record is displayed on the **Response** console. Click **Save** after viewing. 
+4. The record is displayed on the **Response** console. 
 
+For more information on supported parameters, see [Supported OData filter parameters, form-based GET](../topicguides/dominoadapter.md#supported-odata-filter-parameters-form-based-get) and [Supported OData filter parameters, view-based GET](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
 
 ## Test the POST method by creating a record
-
-<!--!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **POST**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
 4. On the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the values, then click **Send**. 
-6. The ID of the record is displayed on the **Response** console after the successful insertion of the record. Click **Save** after viewing.
+6. The ID of the record is displayed on the **Response** console after the successful insertion of the record. 
 
     !!!tip
         Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
 
 
 ## Test the PUT method by updating a record
-
-<!--!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PUT**.
@@ -215,16 +206,12 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     ![Input updated values](../assets/images/putrequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the fields with updated values and the number of updated records. Click **Save** after viewing. 
+6. The **Response** console shows the fields with updated values and the number of updated records. 
 
     ![Update result](../assets/images/putresponse.png){: style="height:60%;width:60%"}
 
 
 ## Test the DELETE method by deleting a record
-
-<!--!!!note
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. After logging in, click **Allow** when the Domino REST API **Access consent required** dialog appears.
-    For every action on the Mappings tab, there may be a Domino REST API authorization prompt. Enter your administrator credentials to log in to Domino REST API and click **Allow** when the Domino REST API **Access consent required** dialog appears.-->
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **DELETE**.
@@ -234,15 +221,32 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     ![Delete request](../assets/images/deleterequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the number of deleted records. Click **Save** after viewing.
+6. The **Response** console shows the number of deleted records. 
 
     ![Delete result](../assets/images/deleteresponse.png){: style="height:60%;width:60%"}
+
+## Test the PATCH method by updating a record
+
+1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
+2. From the list, click **PATCH**.
+3. Expand the **base mapper1**, and then select the **Test** tab.	
+4. On the **Request Payload**, the fields of the data model should be displaying.
+5. Beside the fields, input the updated values, then click **Send**.
+
+    <!--!!!note
+        All fields, updated or not, must be specified to maintain the fields in the note after the update.--> 
+
+    ![Input updated values](../assets/images/patchrequest.png){: style="height:60%;width:60%"}
+
+6. The **Response** console shows the fields with updated values and the number of updated records. 
+
+    ![Update result](../assets/images/patchresponse.png){: style="height:60%;width:60%"}
 
 ## Additional procedure
 
 ### Create and configure an application in Domino REST API
 
-1. Log in to Domino REST AP].
+1. Log in to Domino REST API.
 
     !!!tip
         For more details, see [Access Domino REST API](../howto/accessdrapi.md).
@@ -259,7 +263,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 6. Hover over the application tile and click **Generate Application Secret**. Take note of the App secret and the App ID.
 
 !!!note
-    Make sure to take note of the App ID and App secret as you need these information in configuring the Identity Service in Foundry. 
+    Make sure to take note of the App ID and App secret as you need these details in configuring the Identity Service in Foundry. 
 
 
  

@@ -277,4 +277,6 @@ You may perform the following binary operations:
 
     - As Domino REST API and Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
 
+- Verb mapping isn't supported for binary verbs in the Foundry Console. 
+
  
