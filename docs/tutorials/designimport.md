@@ -267,10 +267,12 @@
 
 3. Click the **View** button on the right-side. 
 
-!!!note
-    If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
+    !!!note
+        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
 
-![Screenshot](../assets/images/dieditdata.png)
+
+
+    ![Screenshot](../assets/images/dieditdata.png)
 
 4. Click **Edit**.
 
