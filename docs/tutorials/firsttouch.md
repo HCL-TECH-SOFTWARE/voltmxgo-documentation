@@ -7,9 +7,8 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 
-<!--### Additional prerequisites
-
-If you used the Volt MX Go installers, you need to perform the following in addition to the requirements listed above:-->
+!!!note
+    You can skip the setup of `oauth.nsf`, Domino REST API, and download of the First Touch recipe ZIP file if you are performing the Volt MX Go install to a development or test only environment. 
 
 - You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html){: target="_blank"}.
 - You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api){: target="_blank"}.
@@ -19,13 +18,14 @@ If you used the Volt MX Go installers, you need to perform the following in addi
 
 - You have [downloaded the FirstTouchRecipesNSF.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
 
+   
 ## Log in to Volt MX Go Foundry
 
-1. Open <!--`http://foundry.mymxgo.com/mfconsole/` or your provided--> the Foundry hostname concatenated with `/mfconsole/`in your browser.
+1. Open the Foundry hostname concatenated with `/mfconsole/`in your browser.
 
 
     !!!tip
-        <!--If you used the installer to install Volt MX Go Foundry, -->Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
+        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
  
 
 2. Enter your username and password on the **Sign in to your account** page. 
@@ -48,13 +48,11 @@ If you used the Volt MX Go installers, you need to perform the following in addi
 2. On the **Welcome to Volt MX Go** dialog, enter the following information:
 
     - Domino REST API server URL
-    - username<!--: `mxgo admin`-->
-    - password<!--: `password`-->
+    - username
+    - password
 
     !!!note
         This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
-        <!-- If you used the installer to install Domino REST API, Use your Domino server administrator username and password.
-        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) procedure as part of the development or test only deployment, use the updated values for the username and password.-->  
 
 3. Click **Next**. An installation progress dialog appears.
 

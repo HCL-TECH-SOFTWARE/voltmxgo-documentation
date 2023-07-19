@@ -213,16 +213,10 @@ With `$filter`, the following canonical functions are supported:
 
 The Domino Adapter supports these OData filter parameters for the GET method on view-based data models:
 
-<!-- `$top`: limits the number of returned data rows
-- `$skip`: defines the number of rows to skip or in what row index should the data query start
-- `$orderby`: sorts records in either ascending or descending order based on the values of the defined column
-- column data equal filter using `$filter`: filters records and shows only the record with the defined column and column value
-- column data `startswith` filter using `$filter`: filters records and shows the record or records with the defined column name and column value starting with a defined string-->
-
-- `$skip`: Specific the number of documents to skip (zero-based row index of the first returned document).
-- `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
+- `$skip`: Specifies the number of view entries to skip (zero-based row index of the first returned view entry).
+- `$top`: Specifies the number of view entries to return, starting from the beginning or from the row specified by `$skip`.
 - `$orderby`: Sort the result-set in ascending or descending order based on a specified column. **The column must be specified as `sortable` in the database design**. 
-- `$filter`: Specifies conditions that must be met by a document for it to be returned in the set of matching documents. **Only `sortable` columns can be filtered**.
+- `$filter`: Specifies conditions that must be met by a view entry for it to be returned in the set of matching view entries. **Only `sortable` columns can be filtered**.
 
 !!!note
     - You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula `@Text(@Universalid)` to create a new sortable column in Domino Designer so that `$filter` and `$orderby` can be used to find a view row by UNID or to order the view by UNID.
@@ -237,9 +231,9 @@ With `$filter`, the canonical function `startswith` is supported.
 |Example query|Expected result|
 |----|----|
 |`$top=10`|Returns 10 rows of data unless the total number of data rows in the view database is less than 10.|
-|`$skip=0`|Returns rows starting from the first document in the view (skip zero rows), equivalent to omitting `$skip`.|
-|`$skip=5`|Returns data starting from the sixth document in the view.|
-|`$filter=Year eq 2021`|Returns all documents in the view whose `Year` field is equal to `2021`.|
+|`$skip=0`|Returns rows starting from the first view entry in the view (skip zero rows), equivalent to omitting `$skip`.|
+|`$skip=5`|Returns data starting from the sixth view entry in the view.|
+|`$filter=Year eq 2021`|Returns all view entries in the view whose `Year` field is equal to `2021`.|
 |`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
@@ -254,7 +248,7 @@ You may perform the following binary operations:
  - getBinary: `GET <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&type=<input type>`
      Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
  - createBinary: `POST <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
-     - Takes the file’s binary content or accepts it as a base64 encoded string.
+     - Takes the file’s binary content encoded as a base64 string
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
 - updateBinary: `PUT <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
@@ -282,5 +276,7 @@ You may perform the following binary operations:
 - Data conversion   
 
     - As Domino REST API and Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
+
+- Verb mapping isn't supported for binary verbs in the Foundry Console. 
 
  

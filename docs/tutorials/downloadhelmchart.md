@@ -50,7 +50,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         !!!note
             The example names used are `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Locate the following lines in the file for the Administrator's first name, last name, and password. Set values for each of these settings.  In our example we are using "mxgo", "admin" and "password". However, if you use your own values, remember the values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and [Access Domino REST API](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
+    3. Locate the following lines in the file for the Administrator's first name, last name, and password. Set values for each of these settings. In our example we're using "mxgo", "admin" and "password". However, if you use your own values, remember the values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and [Access Domino REST API](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
 
         ```{ .yaml .no-copy }
         dominoAdminFirstName: "mxgo"
@@ -77,8 +77,8 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     4. Determine how you want to expose the Domino server to Notes clients by setting the value of the `exposeNRPC` parameter to any of the following options:
 
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
-        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol.  This is only recommended when using Rancher Desktop for Kubernetes.
-        - `nodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod.  This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster.
+        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol. **This is only recommended when using Rancher Desktop for Kubernetes**.
+        - `nodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod. **This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster**.
 
         You can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).
 

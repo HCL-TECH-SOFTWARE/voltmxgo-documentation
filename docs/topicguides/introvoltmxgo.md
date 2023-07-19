@@ -1,6 +1,6 @@
 # Introducing Volt MX Go
 
-Volt MX Go modernizes and extends the value of your Domino applications with the market leading, multi-experience platform Volt MX by:
+Volt MX Go modernizes and extends the value of your Domino applications with the market-leading, multi-experience platform Volt MX by:
 
 - connecting Volt Foundry to your Domino applications with a dedicated Domino Adapter via the Domino REST API while guided by the simple and fast First Touch app
 - modernizing or creating new multi-experience applications in Volt Iris on your Domino back-end data and applications

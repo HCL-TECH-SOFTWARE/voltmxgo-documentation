@@ -4,7 +4,7 @@ nav:
     - accessdrapi.md
     - connectdominofromnotes.md
     - logginglevel.md
-    - summernote.md
+#    - summernote.md
     - configrosetta.md
     - drapiingress.md
     - k3suninstall.md
