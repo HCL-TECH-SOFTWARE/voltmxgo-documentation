@@ -18,17 +18,26 @@
     !!!note
         - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
         - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
+- You have created Domino REST API.
+
+-All users in VoltMX Go that are performing a Design Import need to be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html) group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List for access to administrative API used by Design Import. 
 
 - You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"}.
 
     -  When you configure the `schema`, open Configured Database Form and set the **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.See [Changes in Configuration Forms of Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#configure-a-form)
-    -  When you configure the `schema`, open Configured Database Form and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in design import.
-    -  When you configure the `scopes`, you need a **Maximum Access Level** set to Designer or Manager. See [Scope in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#add-a-scope)
+
+    -  When you configure the `schema`, open Database Form (configured) and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in the design import.
+
+    -  When you configure the `schema`, open Database Views and set the Status to active.
+
+    -  When you configure the `scopes`, you need a *Maximum Access Level* set to Designer or Manager. See [Scope in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#add-a-scope)
+
+
 
     -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and `$DATA` to the Scope list in order to return proper values.
 
 
-- You have credentials for Volt MX Foundry and Domino REST API.
+
 
 ## Launch Volt MX Go Iris
 
@@ -253,10 +262,13 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: Costumer) page, search the data you want to update.
+2. In the **Dashboard/Views** (example: Costumer) page, search for the data you want to update.
 
 
-3. Click the **View** button on the right-side.
+3. Click the **View** button on the right-side. 
+
+!!!note
+    If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
 
     ![Screenshot](../assets/images/dieditdata.png)
 
@@ -276,14 +288,14 @@
 ### Delete entry
 
 !!!Warning
-    - Before you delete any of the the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
+    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
 
 
 1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: Costumer - view ) page, search the data you want to delete.
+2. In the **Dashboard/Views** (example: Costumer - view ) page, search for the data you want to delete.
   ![Screenshot](../assets/images/disearchdel.png)
 
 4. Click the **Delete** button on the right-side. 
