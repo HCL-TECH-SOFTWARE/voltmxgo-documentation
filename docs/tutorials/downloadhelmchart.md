@@ -17,12 +17,12 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     ```
     helm pull hclcr/drapi
     ```
-    The file `drapi-n.n.n.tgz` is downloaded (n.n.n is actually a version identifier and will be updated to reflect the most recent version of the Helm chart).
+    The file `drapi-1.0.0.tgz` is downloaded.
 
 3. Run the following commands to unpack the chart and make the DRAPI directory your current directory:
 
     ```
-    tar -xzvf drapi-0.3.3.tgz
+    tar -xzvf drapi-1.0.0.tgz
     cd drapi
     ```
     !!!note
