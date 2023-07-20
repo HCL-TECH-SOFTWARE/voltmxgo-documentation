@@ -252,7 +252,7 @@
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
-    ![Screenshot](../assets/images/didesigner.png)
+   <!-- ![Screenshot](../assets/images/didesigner.png) -->
 
 ### Update data
 
@@ -281,6 +281,9 @@
 
 5. Edit the field(s) that you want to update and click **Save**.
     ![Screenshot](../assets/images/dieditsave.png)
+
+
+    You can see in  **Dashboard/Views** (example: CustomerView) page, the updated entry.
 
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
