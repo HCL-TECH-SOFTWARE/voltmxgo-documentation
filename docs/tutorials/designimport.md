@@ -130,7 +130,9 @@
 5. On the fourth step **Scope and Forms**, select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
     ![](../assets/images/discope.png)
+
     - You can **select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. Only the configured forms will be able to select.
+
         ![](../assets/images/discopeform.png)
 
 6. On the fifth step **Summary**, you can review here the final `Form` and `views` fields you want to import. Once reviewed, click **Build Iris Application.**. 
@@ -260,10 +262,7 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: Costumer) page, search for the data you want to update.
-
-
-3. Click the **View** button on the right-side. 
+2. In the **Dashboard/Views** (example: Costumer) page, search and click the **View** button. 
 
     !!!note
         If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
@@ -272,19 +271,20 @@
 
     ![Screenshot](../assets/images/dieditdata.png)
 
-4. Click **Edit**.
+3. Click **Edit**.
 
     !!!note
         You may also see the delete button here, which allows you to erase or remove the data you've selected.
 
     ![Screenshot](../assets/images/dipressedit.png)
 
-5. Edit the field(s) that you want to update and click **Save**.
+4. Edit the field(s) that you want to update and click **Save**.
     ![Screenshot](../assets/images/dieditsave.png)
 
 
     You can see in  **Dashboard/Views** (example: CustomerView) page, the updated entry.
 
+    ![Screenshot](../assets/images/diupdated.png)
 
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
@@ -298,15 +298,13 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: Costumer - view ) page, search for the data you want to delete.
-  ![Screenshot](../assets/images/disearchdel.png)
+2. In the **Dashboard/Views** (example: Costumer - view ) page, search and click the **Delete** button.
 
-4. Click the **Delete** button on the right-side. 
-    ![Screenshot](../assets/images/dipressdel.png)
+    ![Screenshot](../assets/images/disearchdel.png)
 
     There is a modal pop-up message box to confirm the deletion of data, click OK.
 
-     ![Screenshot](../assets/images/dimsgdelete.png)
+    ![Screenshot](../assets/images/dimsgdelete.png)
 
     Another pop-up message box appears.
 
