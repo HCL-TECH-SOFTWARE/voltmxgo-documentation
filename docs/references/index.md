@@ -38,6 +38,12 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 List [known limitations](knownlimitation.md) of Volt MX Go.
 
+## Support 
+
+- To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm){: target="_blank"} portal.  
+
+- To share information, ask questions, and learn about Volt MX Go, go to the [Community](){: target:"blank"} portal.
+
 <!--## Widgets
 
 - [SummernoteEditor widget](summernotewidget.md)-->
