@@ -178,6 +178,14 @@ For form-based data models, a number of methods including standard CRUD operatio
 - Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 <!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.-->
 
+### GET method
+
+The GET method requests data from a specified source. When using GET method, the returned documents are affected by form attributes. 
+
+For view-based data models, the *view selection formula* may or may not limit which documents are returned based on the documents' form name, alias name, and other OData parameter settings.
+
+For form-based data models, the GET method returns only documents having a form with only one alias name since there is no way to retrieve documents having other alias names.  
+
 ### Supported OData filter parameters, form-based GET
 
 The Domino Adapter supports these OData filter parameters for the GET method on form-based data models:

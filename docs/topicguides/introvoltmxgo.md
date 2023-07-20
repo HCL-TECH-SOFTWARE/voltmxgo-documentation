@@ -56,7 +56,7 @@ VoltFormula expands who can code Domino applications by allowing application mod
 
 ## Domino Adapter
 
-Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX applications can interact with Domino databases in the same way they can for relational databases. With the Domino Adapter, you can connect to your Domino database as an endpoint via the Domino REST API. Domino Adapter includes the following features: 
+Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX applications can interact with Domino databases in the same way they can for other object service endpoint types, such as relational databases. Domino Adapter access to a Domino database is via the Domino REST API. Domino Adapter includes the following features: 
 
 - Form-based CRUD (post, get, put, delete)
 - Form-based PATCH
