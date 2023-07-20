@@ -93,12 +93,10 @@
 
     ![](../assets/images/diwizard.png)
     
-3. On the second step **Associate Foundry App**, click **Create New** and click **Next**.
+3. On the second step **Associate Foundry App**, click **Create New**.
 
     !!!note
         Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
-
-    ![](../assets/images/dicreatenew.png)
             
 
 4. The third step **Identity Service**, fill in the **Create New Identity Service** and click **Next**,
