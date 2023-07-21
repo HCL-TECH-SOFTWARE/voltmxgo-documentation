@@ -143,10 +143,10 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     # Database server password (String) enclosed in quotes
     dbPass:
     ```
-    See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
+    See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html){: target="_blank"}
     for more details.
-    !!!note
-        In our example here, the dbUser is "root" and the password is "Password123!". If you specified different values when installing MySQL you must use the appropriate values here.
+    <!--!!!note
+        In our example here, the dbUser is "root" and the password is "Password123!". If you specified different values when installing MySQL you must use the appropriate values here.-->
 
 7. Save the file and exit.
 
