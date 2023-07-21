@@ -31,16 +31,14 @@ export HCLCR_TOKEN=<your hclcr authentication token>
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
-1. Run the following command to set up Helm:
+- Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username --password 
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
     ```
 
-    !!!note
-        Replace `username` with your HCL Container Repository username and `password` with your HCL Container Repository authentication token. 
-
-2. When prompted for a password, enter your authentication token for HCL Container Repository.
+    !!!example
+         `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
 If you get an error message similar to the following:
 
@@ -61,7 +59,7 @@ kubectl config set-context --current --namespace=mxgo
 
 ## 3. Ensure Foundry Hostnames are resolvable
 
-You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use.  This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
+You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
 
 In the examples that follow we are going to use these hostnames as examples:
 

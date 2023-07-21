@@ -56,16 +56,15 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
-1. Run the following command to set up Helm:
+- Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username --password 
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
     ```
 
-    !!!note
-        Replace `username` with your HCL Container Repository username and `password` with your HCL Container Repository authentication token.
+    !!!example
+         `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
-2. When prompted for a password, enter your authentication token for HCL Container Repository.
 
     If you get an error message similar to the following:
 
