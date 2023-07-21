@@ -262,7 +262,7 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: Costumer) page, search and click the **View** button. 
+2. In the **Dashboard/Customer** page, search and click the **View** button. 
 
     !!!note
         If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
@@ -282,7 +282,7 @@
     ![Screenshot](../assets/images/dieditsave.png)
 
 
-    You can see in  **Dashboard/Views** (example: CustomerView) page, the updated entry.
+    You can see in  **Dashboard/Detail** page, the updated entry.
 
     ![Screenshot](../assets/images/diupdated.png)
 
@@ -298,7 +298,7 @@
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Views** (example: Costumer - view ) page, search and click the **Delete** button.
+2. In the **Dashboard/Customer** page, search and click the **Delete** button.
 
     ![Screenshot](../assets/images/disearchdel.png)
 
