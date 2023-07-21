@@ -31,7 +31,7 @@ The HCL Volt MX GO Release package includes:
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **Search Downloads**.
 4. On the **Download Search** page, enter `Volt MX GO` in the **Search for** field, and then click **Search**.
-5. Click the **Volt MX Go** package from the search result.
+5. Click the **HCL Volt MX Go Version x.x** package from the search result.
 6. On the **Files** tab in the **Downloads** page, select all the files and click **Download Selected Files**.
 
     **OR** 

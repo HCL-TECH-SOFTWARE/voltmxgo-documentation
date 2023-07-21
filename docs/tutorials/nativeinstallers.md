@@ -13,7 +13,7 @@ The following server components of Volt MX Go are deployed using installers:
 
 ## Install Domino REST API
 
-1. Downloaded <!--`Domino_REST_API_for_MXGO_EA3_Installer.tar.gz`-->the Domino REST API installer. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api){: target="_blank"}.
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
     - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html){: target="_blank"}
