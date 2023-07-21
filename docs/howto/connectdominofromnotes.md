@@ -29,7 +29,7 @@ Make sure that your `/etc/hosts` file has the preview hostnames. You will need t
         `kubectl cp -n mxgo -c restapi-log domino-drapi-6989796bdc-nnmdg:/local/notesdata/admin.id ./k8s-notes-admin.id`
 
         !!!note
-            You may see a warning about "Removing leading '\' from member names" which is typical when specifying full paths in the copy command.  Ignore the warning.
+            You may see a warning about "Removing leading '/' from member names" which is typical when specifying full paths in the copy command.  Ignore the warning.
 
     **If necessary, copy the `k8s-notes-admin.id` file to your laptop**.
 
