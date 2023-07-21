@@ -94,7 +94,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     chmod +x init-guids.sh
     ```
     !!!note
-        The foundry and dbupdate chart names have a version string in the filename.  The `helm pull` command will pull down the latest version of the charts.  Please ensure your tar command uses the correct matching file names.
+        The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
 
 
 3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
@@ -115,7 +115,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     ```{ .yaml .no-copy }
     serverDomainName:
     ```
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file<!-- as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames)-->, substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
 6. Locate the following lines in the file and add your Foundry database details:
 
