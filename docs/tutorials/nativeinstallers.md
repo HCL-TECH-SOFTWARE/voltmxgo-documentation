@@ -59,8 +59,11 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 1. Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo  --username $HCLCR_USERNAME
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username --password 
     ```
+
+    !!!note
+        Replace `username` with your HCL Container Repository username and `password` with your HCL Container Repository authentication token.
 
 2. When prompted for a password, enter your authentication token for HCL Container Repository.
 
