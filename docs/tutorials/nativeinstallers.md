@@ -147,10 +147,9 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     dbPass:
     ```
     
-    For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
+7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
 
-
-7. Save the file and exit.
+8. Save the file and exit.
 
 #### 3. (Optional) Perform advanced scenario procedures
 
