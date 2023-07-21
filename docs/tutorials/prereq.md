@@ -9,7 +9,7 @@ The following procedure must be performed <!--when installing Volt MX Go for the
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
 
-## 1. Export username and authentication token
+<!--## 1. Export username and authentication token
 
 The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. You must [obtain your authentication token from the HCL Container Repository](obtainauthenticationtoken.md) before running the commands.
 
@@ -25,18 +25,20 @@ export HCLCR_USERNAME=<your hclcr username>
 ```
 export HCLCR_TOKEN=<your hclcr authentication token>
 ```
+-->
 
-## 2. Configure Helm to pull from HCL Container Repository
+## 1. Configure Helm to pull from HCL Container Repository
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
-1. Run the following command to set up Helm:
+- Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo  --username $HCLCR_USERNAME
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
     ```
 
-2. When prompted for a password, enter your authentication token for HCL Container Repository.
+    !!!example
+         `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
 If you get an error message similar to the following:
 
@@ -46,7 +48,7 @@ Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repos
 
 Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
-## 3. Create a namespace for MXGO
+## 2. Create a namespace for MXGO
 
 Run the following commands to create a namespace and set the current context to **mxgo**:
 
@@ -55,9 +57,9 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
-## 4. Ensure Foundry Hostnames are resolvable
+## 3. Ensure Foundry Hostnames are resolvable
 
-You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use.  This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
+You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
 
 In the examples that follow we are going to use these hostnames as examples:
 
@@ -122,7 +124,7 @@ You must restart Rancher Desktop:
 1. Select **File** &rarr; **Exit** to close the current session.
 2. Open a new session by opening Rancher Desktop via the desktop icon.
 
-## 5. Create a temp directory for the charts
+## 4. Create a temp directory for the charts
 
 Run the following commands to create a temp directory for the charts and make it the current directory:
 
@@ -131,7 +133,7 @@ mkdir ~/mxgo
 cd ~/mxgo
 ```
 
-## 6. Install wget and curl into your Linux environment
+## 5. Install wget and curl into your Linux environment
 
 Use a search engine, such as Google, to search for instructions on installing **wget** and **curl** to the Linux environment that you are using if they're not already installed.
 

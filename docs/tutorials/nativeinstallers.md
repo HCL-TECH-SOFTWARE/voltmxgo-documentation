@@ -26,11 +26,15 @@ For more information, see the [Installation and configuration](https://opensourc
 
 ## Install Volt MX Go Foundry
 
-1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option.
+Volt MX Go Foundry supports the following installation mechanisms:
 
-    <!--- For Windows: `HCLVoltMXGO_Foundry_Installer_Windows_EA3.zip`
-    - For Linux: `HCLVoltMXGO_Foundry_Installer_Linux_EA3.zip`
-    - For command line installer: `HCLVoltMXGO_Foundry_Installer_CommandLine_EA3.zip`-->
+- Use the Windows or Linux installers that use Install Anywhere to do the installation. It allows you to install a bundled Tomcat or JBoss app server or install it onto an existing app server (JBOSS single or multi-node, or WebLogic).
+- Use the Command Line installer for advanced deployments.
+- Use helm charts on one of the supported Kubernetes platforms, including OpenShift, AKS (Azure), EKS (AWS), and GKE (Google).
+
+### For using an installer
+
+1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option.
 
     For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 
@@ -38,11 +42,159 @@ For more information, see the [Installation and configuration](https://opensourc
 3. Follow the links to the installation guides based on your preferred installation platform/option:
 
     !!!warning "Important"
-        Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides. 
+        - The installation guides will indicate installation files and installation file download locations. **You must use the installer you downloaded in Step 1.**
+        - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides. 
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank"}
     - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank"}
     - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank"}
+
+### For using helm charts on a supported Kubernetes platform
+
+
+#### 1. Configure Helm to pull from HCL Container Repository.
+
+The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+
+- Run the following command to set up Helm:
+
+    ```
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
+    ```
+
+    !!!example
+         `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
+
+
+    If you get an error message similar to the following:
+
+    ``` { .yaml .no-copy }
+    Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
+    ```
+
+    Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
+
+#### 2. Download Foundry charts
+
+1. Run the following command to make sure that the chart information for the repositories is up-to-date.
+
+    ```
+    helm repo update
+    ```
+
+2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
+
+    ```
+    helm pull hclcr/voltmx-dbupdate
+    helm pull hclcr/voltmx-foundry
+    tar -xzf voltmx-foundry-1.2.5.tgz
+    tar -xzf voltmx-dbupdate-1.2.5.tgz
+    mv voltmx-foundry/values.yaml  ./
+    mv voltmx-foundry/init-guids.sh  ./
+    chmod +x init-guids.sh
+    ```
+    !!!note
+        The foundry and dbupdate chart names have a version string in the filename.  The `helm pull` command will pull down the latest version of the charts.  Please ensure your tar command uses the correct matching file names.
+
+
+3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
+    ```
+    ./init-guids.sh --new
+    ```
+
+4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+
+    ```{ .yaml .no-copy }
+    imageCredentials:
+      username: your-email
+      password: your-authentication-token
+    ```
+
+5. Locate the following line in the file and add your Foundry server domain name setting:
+
+    ```{ .yaml .no-copy }
+    serverDomainName:
+    ```
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+
+6. Locate the following lines in the file and add your Foundry database details:
+
+    ```{ .yaml .no-copy }
+    ### Database details ###
+
+    # Database type which you want to use for Volt MX Foundry (String)
+    # Possible values:
+    #   "mysql" for MySQL DB server
+    #   "sqlserver" for Azure MSSQL or SQLServer
+    #   "oracle" for Oracle DB server
+    dbType:
+
+    # Database server hostname (String)
+    dbHost:
+
+    # Database server port number (Number). This can be empty for cloud managed service.
+    dbPort:
+
+    # Database User and password - you may set a single general userid/password here,
+    # or you may set specific userid/password combinations below.  If set, the
+    # specific values override the general dbUser/dbPass.
+
+    # Database server user (String)
+    dbUser:
+
+    # Database server password (String) enclosed in quotes
+    dbPass:
+    ```
+    
+7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
+
+8. Save the file and exit.
+
+#### 3. (Optional) Perform advanced scenario procedures
+
+- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"} 
+
+#### 4. Install Foundry
+
+1. Run the following Helm install command to deploy Foundry:
+
+    ```
+    helm install foundry voltmx-foundry -f values.yaml
+    ```
+
+2. Run the following command to verify when the Foundry install is ready:
+
+    ```
+    kubectl get pods -o wide -w
+    ```
+
+    The output should be similar to the following and will update over time:
+
+    ![output](../assets/images/output1.png)
+
+
+3. Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.
+
+**Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
+
+!!!note
+    - If you defined a different Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
+    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
+    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
+    - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
+
+
+#### 5. (Optional) Perform monitoring procedures
+    
+- Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank"}.
+
+!!!note
+    The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
+
+#### 6. (Optional) Perform post installation tasks
+
+- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}
+
 
 ## Additional information
 

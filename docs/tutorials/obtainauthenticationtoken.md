@@ -3,9 +3,9 @@
 ## About this procedure
 
 <!--!!!warning "Important"
-    This procedure is for containerized deployment only.-->
+    This procedure is for containerized deployment only.
 
---8<-- "devtestenvironment.md"
+--8<-- "devtestenvironment.md"-->
     
 The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. This requires you to get your authentication token from the HCL Container Repository. This procedure guides you on how to obtain your authentication token. 
 

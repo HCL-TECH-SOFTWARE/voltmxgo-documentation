@@ -2,7 +2,7 @@
 
 The procedure intends to install Volt MX Go server components to a development or test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
 
-The server components of Volt MX Go can be deployed with Kubernetes via the following options:
+The server components of Volt MX Go can be deployed with Kubernetes via the following options, which have been tailored for a self contained, fewer prerequisites, and well specified procedure:
 
 - using K3s on an Ubuntu, RHEL, SLES machine or VM
 - using Rancher Desktop running on Windows
