@@ -161,14 +161,14 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
 
 ## Methods (Verbs)
 
-Methods for interacting with the generated data models are also generated when generating the data models. 
+Methods for interacting with the data models are generated when generating the data models. 
 
 For view-based data model, only the GET method is generated.
 
 For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported: 
 
 - POST :`Create` new Domino document containing the specified fields.
-- GET :`Read` existing Domino documents, returning zero or more <!--all non-null fields for that-->documents.
+- GET :`Read` existing Domino documents, returning zero or more documents.
 - PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
 - Delete :`Delete` the specified document.
 - createBinary - `Create` a new attachment file to attach to a specified Domino document.
@@ -177,24 +177,17 @@ For form-based data models, a number of methods including standard CRUD operatio
 - deleteBinary - `Delete` an existing attachment from a specified Domino document.
 - Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 <!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.
-- GET :`Read` an existing Domino document, returning all non-null fields for that document.
 -->
 
-<!--### GET method
-
-The GET method requests data from a specified source. When using GET method, the returned documents are affected by form attributes. 
-
-For view-based data models, the *view selection formula* may or may not limit which documents are returned based on the documents' form name, alias name, and other OData parameter settings.
-
-For form-based data models, the GET method returns only documents having a form with only one alias name since there is no way to retrieve documents having other alias names.  -->
+Data models in Foundry are associated with specific Domino forms, so each operation (GET, Update, etc.) only applies to the form associated with the data model. 
 
 ### Supported OData query parameters for form-based GET method
 
 !!!note
     The results of the GET method are influenced by the OData query parameters, if specified, and by the document's *form attribute* values.
 
-    - If there are no defined form name aliases for the form, the method returns only documents with the form attribute equal to the form name. 
-    - If there are defined form name aliases for the form, the method returns only documents with the form attribute equal to the last name alias.  
+    - If there are no defined form name aliases in Domino design for the form, the method returns only documents with the form attribute equal to the form name. 
+    - If there are defined form name aliases in Domino design for the form, the method returns only documents with the form attribute equal to the last name alias.  
 
 The Domino Adapter supports these OData query parameters for the GET method on form-based data models:
 
