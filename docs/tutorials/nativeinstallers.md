@@ -115,7 +115,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     ```{ .yaml .no-copy }
     serverDomainName:
     ```
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file<!-- as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames)-->, substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
 6. Locate the following lines in the file and add your Foundry database details:
 
