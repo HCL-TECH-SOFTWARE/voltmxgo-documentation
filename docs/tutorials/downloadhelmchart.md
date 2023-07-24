@@ -45,7 +45,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
             drapiDnsName:
             drapiManagementDnsName:
         ```
-        Whatever hostnames you specify here and later in the Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [Add Preview Hostnames](prereq.md#4-add-preview-hostnames), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your hostnames.
+        Whatever hostnames you specify here and later in the Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your hostnames.
 
         !!!note
             The example names used are `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.

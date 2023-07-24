@@ -25,7 +25,11 @@ The binary images and Helm charts for Volt MX GO server components are pulled fr
 
     ![user profile dialog](../assets/images/userprofile.png)
 
-6. Save the **CLI secret** value as it's required in the next steps. 
+6. Save the **CLI secret** value as it's required in the next steps.
+
+    !!!note
+        You will use the **CLI secret** value as your authentication token or password when using Docker or Helm CLI to access HCL Container Repository. 
+
 7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.
 
 ## Next step
