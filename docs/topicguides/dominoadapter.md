@@ -192,7 +192,7 @@ Data models in Foundry are associated with specific Domino forms, so each operat
 The Domino Adapter supports these OData query parameters for the GET method on form-based data models:
 
 - `$select`: List of fields to include in the returned documents.
-- `$filter`: Specifies conditions that must be met by a document for it to be returned to the set of matching documents.
+- `$filter`: Specifies field conditions that must be met by a document for it to be in the returned document set.
 - `$filter (unknown Form)`: Specifies the UNID of the document to return without knowing the document's form name.
 - `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
 - `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
@@ -270,6 +270,87 @@ You may perform the following binary operations:
     - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
     - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.  
  
+#### Using binary APIs from SDK
+
+ Using the binary APIs with Domino Adapter requires more properties in the functional call. You need to add an object with a `queryParams` key to the options argument of the `createBinaryContent`. The object should contain query parameters required for using the binary APIs with Domino Adapter, including `unid` and `name` parameters. 
+
+!!!note
+    - For more information, see the general use of the [binary APIs from the Volt MX SDK](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method){: target="_blank"}.
+    - There is no function in the Volt MX SDK for calling `deleteBinary`.
+
+#### Examples
+
+Refer to the code examples for using the SDK's binary functions:
+
+```text
+onCreateBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService("myObj", {
+      "access": "online"
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject("dataObj");
+    var binaryText = "SGVsbG8gd29ybGQh";
+    dataObject.addField("data", binaryText);
+    dataObject.addField("x_0040unid", "123");
+    objSvc.createBinaryContent({
+      "dataObject": dataObject,
+      "queryParams": {
+        "unid": "123",
+        "name": "helloworld.txt"
+      },
+      "binaryAttrName": "data"
+    },
+    function(response) {
+        voltmx.print("Binary content created: " + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print("Failed: " + JSON.stringify(error));
+    });
+  },
+  onUpdateBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService("myObj", {
+      "access": "online"
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject("dataObj");
+    var binaryText = "VXBkYXRlZCBIZWxsbyBXb3JsZCE=";
+    dataObject.addField("data", binaryText);
+    dataObject.addField("x_0040unid", "123");
+    objSvc.updateBinaryContent({
+      "dataObject": dataObject,
+      "queryParams": {
+        "unid": "123",
+        "name": "helloworld.txt"
+      },
+      "binaryAttrName": "data"
+    },
+    function(response) {
+        voltmx.print("Binary content created: " + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print("Failed: " + JSON.stringify(error));
+    });
+  },
+  onGetBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService("myObj", {
+      "access": "online"
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject("dataObj");
+    dataObject.addField("x_0040unid", "123");
+    objSvc.getBinaryContent({
+      "dataObject": dataObject,
+      "queryParams": {
+        "unid": "123",
+        "name": "helloworld.txt"
+      },
+      "binaryAttrName": "data"
+    },
+    function(response) {
+        voltmx.print("Binary content: " + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print("Failed: " + JSON.stringify(error));
+    });
+  }
+```
 
 ## Limitations
 
