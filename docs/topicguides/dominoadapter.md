@@ -268,7 +268,8 @@ You may perform the following binary operations:
 
 !!!warning "Important"
     - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
-    - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.  
+    - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.
+    - The `$FILES` item is a meta-type field that represents the names of the attachments in a document. It's built from the `$FILE` items in a note, and it represents a list of file names attached to the document. The `$FILES` field can't be used for `$filters` to find notes with a specified attachment, such as `$filter=x_0024FILES eq attName.txt`. However, you can use `$FILES` in a select command, such as `$select=x_0024FILES`.   
  
 #### Using binary APIs from SDK
 
