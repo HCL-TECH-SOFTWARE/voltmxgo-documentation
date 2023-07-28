@@ -40,7 +40,7 @@ List [known limitations](knownlimitation.md) of Volt MX Go.
 
 ## Troubleshooting
 
-To learn about identified issues and their corresponding workaround and resolution, see [Troubleshooting](troubleshoot.md).
+To learn about identified issues and their corresponding workarounds and resolutions, see [Troubleshooting](troubleshoot.md).
 ## Support 
 
 - To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm){: target="_blank"} portal.  
