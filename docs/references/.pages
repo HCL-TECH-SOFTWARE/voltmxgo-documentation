@@ -8,4 +8,5 @@ nav:
 #    - Widgets: summernotewidget.md
     - Documentation references: ../references/index.html#documentation-references
     - knownlimitation.md
+    - troubleshoot.md
     - Support: ../references/index.html#support

@@ -58,6 +58,9 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
     ![Installation progress dialog](../assets/images/firsttouchinstalldialog.png){: style="height:60%;width:60%"}
 
+    !!!note
+        If an *Uploading web binary for First Touch Recipes app* error occurs in the installation progress dialog, see **First Touch or Custom Application Fails to Install on Foundry** issue in [Troubleshooting](../references/troubleshoot.md).
+
 4. Wait for the completion of the installation. Once completed, a **Congratulations!** dialog appears confirming the successful installation of the First Touch app and the verification of the connection to the Domino database via Domino REST API.
 
     ![Congratulations dialog](../assets/images/firsttouchcongrats.png){: style="height:60%;width:60%"}
