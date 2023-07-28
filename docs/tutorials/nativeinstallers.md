@@ -13,6 +13,8 @@ The following server components of Volt MX Go are deployed using installers:
 
 ## Install Domino REST API
 
+--8<-- "drapiversion.md"
+
 1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api){: target="_blank"}.
 2. Follow the links to the installation procedure based on your preferred installation platform:
 

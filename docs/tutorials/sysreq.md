@@ -28,6 +28,8 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 
 ## For installing Domino REST API
 
+--8<-- "drapiversion.md"
+
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank"} for installing Domino REST API using the installer. 
 
 ## For installing Volt MX Go Iris on Windows
