@@ -40,6 +40,9 @@ The procedures will guide you in the installation of Foundry.
       password: your-authentication-token
     ```
 
+    !!!note
+        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+
 5. Locate the following line in the file and add your Foundry server domain name setting:
 
     ```{ .yaml .no-copy }

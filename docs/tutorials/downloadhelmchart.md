@@ -38,6 +38,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
             password: your-authentication-token
         ```
 
+        !!!note
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+
     2. Locate the following lines in the file and add your DNS hostname settings:
 
         ```{ .yaml .no-copy }

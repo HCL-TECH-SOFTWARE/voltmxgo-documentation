@@ -33,4 +33,7 @@ The binary images and Helm charts for Volt MX GO server components are pulled fr
 7. Take note of exactly how your email address is written in the **User Profile** dialog as authentication is case sensitive on the user email.
 
 ## Next step
-Proceed to [Deploy Kubernetes](deploykubernetes.md).
+
+For installing Volt MX Go using helm charts on a supported Kubernetes platform, proceed to [Configure Helm to pull from HCL Container Repository](nativeinstallers.md#1-configure-helm-to-pull-from-hcl-container-repository).  
+
+For installing Volt MX Go to **development or test only environment**, proceed to [Deploy Kubernetes](deploykubernetes.md).

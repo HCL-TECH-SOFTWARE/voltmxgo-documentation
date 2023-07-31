@@ -6,6 +6,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
+- Make sure that the maximum allowed packet size in MySQL is 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Foundry** issue in [Troubleshooting](../references/troubleshoot.md). 
 
 !!!note
     You can skip the setup of `oauth.nsf`, Domino REST API, and download of the First Touch recipe ZIP file if you are performing the Volt MX Go install to a development or test only environment. 

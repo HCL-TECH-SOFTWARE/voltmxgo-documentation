@@ -40,6 +40,9 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     !!!example
          `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
+    !!!note
+        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+
 If you get an error message similar to the following:
 
 ``` { .yaml .no-copy }
