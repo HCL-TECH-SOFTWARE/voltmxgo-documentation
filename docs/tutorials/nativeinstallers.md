@@ -53,8 +53,10 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
 ### For using helm charts on a supported Kubernetes platform
 
+!!!note "Prerequisite"
+    [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
 
-#### 1. Configure Helm to pull from HCL Container Repository.
+#### 1. Configure Helm to pull from HCL Container Repository
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
@@ -67,6 +69,9 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     !!!example
          `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
+
+    !!!note
+        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
 
     If you get an error message similar to the following:
 
@@ -111,6 +116,9 @@ The procedure sets up Helm with the details necessary to authenticate with the H
       username: your-email
       password: your-authentication-token
     ```
+
+    !!!note
+        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
 
 5. Locate the following line in the file and add your Foundry server domain name setting:
 
