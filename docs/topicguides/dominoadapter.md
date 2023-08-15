@@ -180,7 +180,7 @@ For form-based data models, a number of methods including standard CRUD operatio
 -->
 
 !!!tip 
-    The binary verbs, `createBinary`, `getBinary`, `updateBinary`, `deleteBinary`, are generated only when the Domino REST API administrator includes the **$FILES** virtual field in the form mode of the corresponding schema form. 
+    The binary verbs, `createBinary`, `getBinary`, `updateBinary`, `deleteBinary`, are generated only when the Domino REST API administrator includes the **$FILES** virtual field in the form mode. 
 
 Data models in Foundry are associated with specific Domino forms, so each operation (GET, Update, etc.) only applies to the form associated with the data model. 
 
