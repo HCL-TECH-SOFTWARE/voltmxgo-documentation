@@ -171,13 +171,16 @@ For form-based data models, a number of methods including standard CRUD operatio
 - GET :`Read` existing Domino documents, returning zero or more documents.
 - PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
 - Delete :`Delete` the specified document.
+- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 - createBinary - `Create` a new attachment file to attach to a specified Domino document.
 - getBinary - `Read` an existing attachment from a specified Domino document. 
 - updateBinary - `Update` an existing attachment from a specified Domino document, replacing it with a new one. 
 - deleteBinary - `Delete` an existing attachment from a specified Domino document.
-- Patch :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 <!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.
 -->
+
+!!!tip 
+    The binary verbs, `createBinary`, `getBinary`, `updateBinary`, `deleteBinary`, are generated only when the Domino REST API administrator includes the **$FILES** virtual field in the form mode. 
 
 Data models in Foundry are associated with specific Domino forms, so each operation (GET, Update, etc.) only applies to the form associated with the data model. 
 

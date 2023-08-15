@@ -12,6 +12,9 @@ To know the details in the early access version, see [Early Access Version chang
 
 Check the minimum [System requirements](../tutorials/sysreq.md) for deploying Volt MX Go.
 
+<!--## Compatibility matrix
+
+Check [version compatibility](compatibilitymatrix.md) between Volt MX Go and Domino REST API.-->
 ## FAQ and common procedures
 
 Useful [FAQ and common procedures](kubecheatsheet.md) related to [Volt MX Go installation](../tutorials/installation.md).
