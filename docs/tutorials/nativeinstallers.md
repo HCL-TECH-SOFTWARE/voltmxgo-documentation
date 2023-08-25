@@ -8,8 +8,8 @@ The following server components of Volt MX Go are deployed using installers:
 
 !!!warning "Important"
     - Using this installation option would require you to use your own Domino server.
-    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md). 
-    
+    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
+
 
 ## Install Domino REST API
 
@@ -40,12 +40,12 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
     For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 
-2. Extract the installer from the downloaded ZIP file. 
+2. Extract the installer from the downloaded ZIP file.
 3. Follow the links to the installation guides based on your preferred installation platform/option:
 
     !!!warning "Important"
         - The installation guides will indicate installation files and installation file download locations. **You must use the installer you downloaded in Step 1.**
-        - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides. 
+        - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank"}
     - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank"}
@@ -63,7 +63,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 - Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
     ```
 
     !!!example
@@ -155,16 +155,46 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     # Database server password (String) enclosed in quotes
     dbPass:
     ```
-    
+
 7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
 
 8. Save the file and exit.
 
 #### 3. (Optional) Perform advanced scenario procedures
 
-- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"} 
+- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"}
 
-#### 4. Install Foundry
+
+#### 4. Deploy Foundry's dbupdate to create the databases
+
+1. Run the following Helm install command to deploy Foundry's dbupdate:
+
+    ```
+    helm install dbupdate voltmx-dbupdate -f values.yaml
+    ```
+
+2. Run the following command to verify deployment completion of Foundry's dbupdate:
+
+    ```
+    kubectl get pods -o wide -w
+    ```
+
+    The output should be similar to the following and will update over time:
+
+    ```{ .yaml .no-copy }
+    NAME                            READY   STATUS      RESTARTS   AGE
+    domino-drapi-6d755b68df-2sfhb   3/3     Running     0          6m13s
+    mysql-0                         1/1     Running     0          2m37s
+    foundry-db-update-dzdrx         1/1     Running     0          24s
+    foundry-db-update-dzdrx         0/1     Completed   0          65s
+    foundry-db-update-dzdrx         0/1     Completed   0          67s
+    foundry-db-update-dzdrx         0/1     Completed   0          68s
+    ```
+
+3. Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created. Press `Ctrl-c` to stop the kubectl command.
+
+
+#### 5. Install Foundry
 
 1. Run the following Helm install command to deploy Foundry:
 
@@ -194,14 +224,14 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
 
-#### 5. (Optional) Perform monitoring procedures
-    
+#### 6. (Optional) Perform monitoring procedures
+
 - Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank"}.
 
 !!!note
     The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
 
-#### 6. (Optional) Perform post installation tasks
+#### 7. (Optional) Perform post installation tasks
 
 - Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}
 
