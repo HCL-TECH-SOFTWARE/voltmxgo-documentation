@@ -26,7 +26,10 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
     1. Enter your first name in the **First Name** text box. 
     2. Enter your last name in the **Last Name** text box.
     3. Enter your email address in the **Email** text box. 
-    4. Enter your password in the **Enter password** and **Re-enter password** text boxes. 
+    4. Enter your password in the **Enter password** and **Re-enter password** text boxes.
+
+        !!!note
+            Your password must be a combination of alphanumeric and special characters, and at least 8-characters long. 
 
 3. Click **Setup**.
 
