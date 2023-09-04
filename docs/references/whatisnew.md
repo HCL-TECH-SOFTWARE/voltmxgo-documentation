@@ -2,6 +2,18 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
+<!--
+## Volt MX Go v2.0.1
+
+### New features
+
+### Improvements
+
+### Resolved issues
+
+### Others
+-->
+
 ## Volt MX Go v2.0
 
 HCL Volt MX Go v2.0 allows you to extend the value of your Domino applications using the industry-leading, multi-experience platform Volt MX. The innovative features of Volt MX Go include:
