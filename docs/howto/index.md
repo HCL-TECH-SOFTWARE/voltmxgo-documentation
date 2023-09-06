@@ -3,6 +3,7 @@
 How-to guides instruct users in completing key goals and tasks related to Volt MX Go.
 
 - [Create a Foundry administrator account](foundryadminaccount.md)
+- [Generate CRUD forms for Object Service](codegen.md)
 - [Access Domino REST API](accessdrapi.md)
 - [Connect to Domino server from Notes client](connectdominofromnotes.md)
 - [Set logging level](logginglevel.md)
