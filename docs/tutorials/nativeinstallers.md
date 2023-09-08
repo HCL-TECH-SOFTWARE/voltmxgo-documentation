@@ -63,7 +63,9 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 !!!warning "Important"
     If you participated in the Early Access program, you must remove your reference to the `voltmxgo-ea` repo before proceeding using the following command:
     
-    `helm repo remove hclcr`
+    ```
+    helm repo remove hclcr
+    ```
 
 - Run the following command to set up Helm:
 
