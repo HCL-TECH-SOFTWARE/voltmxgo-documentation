@@ -17,10 +17,10 @@ nav:
                 - deploykubernetes.md
                 - Install and configure K3s: k3sinstall.md
                 - Install Rancher Desktop: installrancher.md
-            #- Complete preparatory procedure:
-            #    - prereqindex.md
-            - Complete preparatory procedure: prereq.md
- #               - For upgrading existing installation of Volt MX Go: prereqnew.md
+            - Complete preparatory procedure:
+                - prereqindex.md
+                - For first time installation of Volt MX Go: prereq.md
+                - For upgrading existing installation of Volt MX Go: prereqnew.md
             - Install Domino REST API: downloadhelmchart.md
             - Install MySQL for Foundry: installmysqlfoundry.md
             - Install Foundry: installfoundry.md
