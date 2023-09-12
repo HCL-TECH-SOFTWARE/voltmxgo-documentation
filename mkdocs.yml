@@ -96,7 +96,7 @@ plugins:
   - tags
   - git-revision-date-localized:
       type: date
-  - markdownextradata: 
-      data: docs/assets/variable
+#  - markdownextradata: 
+#      data: docs/assets/variable
      
       
