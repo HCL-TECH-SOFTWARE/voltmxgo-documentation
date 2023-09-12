@@ -75,7 +75,7 @@ You are now ready to install Rancher Desktop.
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        The latest version, 1.9.1, fixes a serious defect that was present in 1.8. Therefore, its recommended that you upgrade from version 1.7.0.
+        The latest version fixes a serious defect that was present in 1.8. Therefore, its recommended that you upgrade from version 1.7.0.
 
 2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
 3. Review the License Agreement, and then click **I Agree** to proceed with the installation.
