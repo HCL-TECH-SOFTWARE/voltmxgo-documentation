@@ -60,6 +60,13 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
+!!!warning "Important"
+    If you participated in the Early Access program, you must remove your reference to the `voltmxgo-ea` repo before proceeding using the following command:
+
+    ```
+    helm repo remove hclcr
+    ```
+
 - Run the following command to set up Helm:
 
     ```
@@ -94,8 +101,8 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     ```
     helm pull hclcr/voltmx-dbupdate
     helm pull hclcr/voltmx-foundry
-    tar -xzf voltmx-foundry-1.2.5.tgz
-    tar -xzf voltmx-dbupdate-1.2.5.tgz
+    tar -xzf voltmx-foundry-1.n.n.tgz
+    tar -xzf voltmx-dbupdate-1.n.n.tgz
     mv voltmx-foundry/values.yaml  ./
     mv voltmx-foundry/init-guids.sh  ./
     chmod +x init-guids.sh

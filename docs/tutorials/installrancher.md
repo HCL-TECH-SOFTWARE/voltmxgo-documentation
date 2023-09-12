@@ -72,18 +72,17 @@ You are now ready to install Rancher Desktop.
 
 ## To install Rancher Desktop
 
-1. Download the [Rancher.Desktop.Setup.1.7.0.msi](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.7.0/Rancher.Desktop.Setup.1.7.0.msi) installer.
+1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        There is a serious defect in 1.8 that makes 1.8 difficult to use. It's strongly recommended to skip 1.8.
+        The latest version fixes a serious defect that was present in 1.8. Therefore, its recommended that you upgrade from version 1.7.0.
 
 2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
 3. Review the License Agreement, and then click **I Agree** to proceed with the installation.
 4. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to installing the Rancher Desktop Privileged Service.
 5. Follow the prompts to confirm installation.
-6. In the **General** settings for Rancher Desktop, toggle off the **Check for updates automatically** as you don't want to be upgraded to version 1.8.n.
-7. When the installation completes, click **Finish** to close the installation wizard.
-8. Make sure that **Ubuntu-22.04** is selected under **WSL** in Rancher Desktop:
+6. When the installation completes, click **Finish** to close the installation wizard.
+7. Make sure that **Ubuntu-22.04** is selected under **WSL** in Rancher Desktop:
 
     1. Open Rancher Desktop, and then click the **Settings** icon.
 
