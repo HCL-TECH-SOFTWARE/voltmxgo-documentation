@@ -1,5 +1,7 @@
 # Install Volt MX Go to development or test only environment
 
+If you participated in the Early Access (EA) program, you can skip to directly to the steps that will assist you in [moving from the EA to the GA release of Volt MX Go](eatogamove.md). Otherwise, use the following information to set up your environment.
+
 The procedure intends to install Volt MX Go server components to a development or test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
 
 The server components of Volt MX Go can be deployed with Kubernetes via the following options, which have been tailored for a self contained, fewer prerequisites, and well specified procedure:
