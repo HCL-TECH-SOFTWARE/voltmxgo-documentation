@@ -3,14 +3,14 @@ nav:
     - Installation:
         - installation.md
         - sysreq.md
-        - Install Volt MX Go in a Production Environment:
+        - Install Volt MX Go in a production environment:
             - prerequisite.md
             - portaldownload.md
             - Install Volt MX Go server components: nativeinstallers.md
         #- Complete prerequisite procedures:
         #    - prerequisite.md
         #    - portaldownload.md
-        - Install Volt MX Go to development or test only environment:
+        - Install Volt MX Go in a development or test only environment:
             - containerdeployment.md
             - obtainauthenticationtoken.md
             - Deploy Kubernetes:
@@ -21,6 +21,7 @@ nav:
                 - prereqindex.md
                 - For first time installation of Volt MX Go: prereq.md
                 - For upgrading existing installation of Volt MX Go: prereqnew.md
+                - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
             - Install Domino REST API: downloadhelmchart.md
             - Install MySQL for Foundry: installmysqlfoundry.md
             - Install Foundry: installfoundry.md
