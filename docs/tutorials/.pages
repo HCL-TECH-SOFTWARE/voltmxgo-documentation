@@ -3,7 +3,7 @@ nav:
     - Installation:
         - installation.md
         - sysreq.md
-        - Install Volt MX Go:
+        - Install Volt MX Go in a Production Environment:
             - prerequisite.md
             - portaldownload.md
             - Install Volt MX Go server components: nativeinstallers.md
@@ -24,7 +24,7 @@ nav:
             - Install Domino REST API: downloadhelmchart.md
             - Install MySQL for Foundry: installmysqlfoundry.md
             - Install Foundry: installfoundry.md
-        
+
         - Install Volt MX Go Iris: installiris.md
     - firsttouch.md
     - adaptertutorial.md
