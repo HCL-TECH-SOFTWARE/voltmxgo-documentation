@@ -1,5 +1,5 @@
 
-# Install Volt MX Go
+# Install Volt MX Go in a Production Environment
 
 You must complete the following procedures:
 
@@ -11,7 +11,7 @@ After completing the procedures, proceed to [Install Volt MX Go Iris](installiri
 
 <!--# Complete prerequisite procedures
 
-You must complete the following procedures before starting the installation of Volt MX Go server components and Volt MX Go Iris. 
+You must complete the following procedures before starting the installation of Volt MX Go server components and Volt MX Go Iris.
 
 - [Download HCL Volt MX GO Release package](portaldownload.md)
 - [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md)-->

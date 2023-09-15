@@ -53,19 +53,32 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
 ### For using helm charts on a supported Kubernetes platform
 
-!!!note "Prerequisite"
-    [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
-
-#### 1. Configure Helm to pull from HCL Container Repository
-
-The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
-
 !!!warning "Important"
-    If you participated in the Early Access program, you must remove your reference to the `voltmxgo-ea` repo before proceeding using the following command:
+    If you participated in the Early Access program, you must cleanup your environment before proceeding, such as deleting the `mxgo` namespace, removing the EA repository reference, and removing the `mxgo` directory. You may want to create a backup copy of the `~/mxgo/drapi/values.yaml` and `~/mxgo/foundry/values.yaml` files so you can reuse the settings from them if you are using the same information such as hostnames, userids, and passwords. Use the following commands to cleanup your environment:
 
     ```
     helm repo remove hclcr
+    kubectl delete namespace mxgo
+    rm -rf ~/mxgo
     ```
+
+!!!note "Prerequisite"
+    [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
+
+#### 1. Create a namespace and a temp directory for the charts
+
+Run the following commands to create a namespace, set the current context to **mxgo**, create a temp directory for downloading the charts, and make it the current directory:
+
+```
+kubectl create namespace mxgo
+kubectl config set-context --current --namespace=mxgo
+mkdir ~/mxgo
+cd ~/mxgo
+```
+
+#### 2. Configure Helm to pull from HCL Container Repository
+
+The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
 - Run the following command to set up Helm:
 
@@ -88,7 +101,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
     Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
-#### 2. Download Foundry charts
+#### 3. Download Foundry charts
 
 1. Run the following command to make sure that the chart information for the repositories is up-to-date.
 
@@ -99,6 +112,8 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
     ```
+    mkdir foundry
+    cd foundry
     helm pull hclcr/voltmx-dbupdate
     helm pull hclcr/voltmx-foundry
     tar -xzf voltmx-foundry-1.n.n.tgz
@@ -167,12 +182,12 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 8. Save the file and exit.
 
-#### 3. (Optional) Perform advanced scenario procedures
+#### 4. (Optional) Perform advanced scenario procedures
 
 - Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"}
 
 
-#### 4. Deploy Foundry's dbupdate to create the databases
+#### 5. Deploy Foundry's dbupdate to create the databases
 
 1. Run the following Helm install command to deploy Foundry's dbupdate:
 
@@ -201,7 +216,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 3. Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created. Press `Ctrl-c` to stop the kubectl command.
 
 
-#### 5. Install Foundry
+#### 6. Install Foundry
 
 1. Run the following Helm install command to deploy Foundry:
 
@@ -231,14 +246,14 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
 
-#### 6. (Optional) Perform monitoring procedures
+#### 7. (Optional) Perform monitoring procedures
 
 - Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank"}.
 
 !!!note
     The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
 
-#### 7. (Optional) Perform post installation tasks
+#### 8. (Optional) Perform post installation tasks
 
 - Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}
 
