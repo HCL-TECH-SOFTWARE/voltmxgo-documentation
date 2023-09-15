@@ -3,7 +3,7 @@
 
 --8<-- "devtestenvironment.md"
 
-The following procedure must be performed if you participated in the Early Access program, and you are moving from the EA release version to the GA release version, as there is no upgrade mechanism.
+The following procedure must be performed if you participated in the Early Access (EA) program, and you are moving from the EA program to the GA release, as there is no upgrade mechanism.
 
 ## 1. Configure Helm to pull from HCL Container Repository
 

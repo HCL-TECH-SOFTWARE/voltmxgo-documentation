@@ -2,9 +2,6 @@
 
 The procedure intends to install Volt MX Go server components to a development or test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
 
-<!--!!!warning "Important"
-    If you participated in the Early Access (EA) program, you can skip directly to the steps that will assist you in [moving from the EA release to the GA release of Volt MX Go](eatogamove.md). Otherwise, use the following information to set up your environment.-->
-
 The server components of Volt MX Go can be deployed with Kubernetes via the following options, which have been tailored for a self contained, fewer prerequisites, and well specified procedure:
 
 - using K3s on an Ubuntu, RHEL, SLES machine or VM
@@ -42,6 +39,7 @@ Follow the order for completing the procedures according to your preferred deplo
 2. [Install Domino REST API](downloadhelmchart.md)
 3. [Install MySql for Foundry](installmysqlfoundry.md)
 4. [Install Foundry](installfoundry.md)
+
 ## For moving from early access version to GA version of Volt MX Go
 
 If you participated in the Early Access (EA) program, you need to perform the procedures to move to the GA version of Volt MX Go. 
