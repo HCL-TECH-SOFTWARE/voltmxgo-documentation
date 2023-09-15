@@ -39,7 +39,7 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 ## Known limitations
 
-List [known limitations](knownlimitation.md) of Volt MX Go.
+List of [known limitations](knownlimitation.md) of Volt MX Go.
 
 ## Troubleshooting
 
@@ -50,6 +50,6 @@ To learn about identified issues and their corresponding workarounds and resolut
 
 - To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d){: target="_blank"} portal.
 
-<!--## Widgets
+## Widgets
 
 - [SummernoteEditor widget](summernotewidget.md)-->
