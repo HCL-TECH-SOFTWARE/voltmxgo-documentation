@@ -1,9 +1,9 @@
 <!--# Complete preparatory procedure for first time installation of Volt MX Go-->
-# Procedure for moving from an Early Access (EA) release of Volt MX Go to the GA release
+# Complete preparatory procedure for moving from Early Access release version to GA release version of Volt MX Go
 
 --8<-- "devtestenvironment.md"
 
-The following procedure must be performed if you participated in the Early Access program, and you are moving from the EA to the GA release, as there is no upgrade mechanism.
+The following procedure must be performed if you participated in the Early Access program, and you are moving from the EA release version to the GA release version, as there is no upgrade mechanism.
 
 ## 1. Configure Helm to pull from HCL Container Repository
 
@@ -51,11 +51,11 @@ kubectl config set-context --current --namespace=mxgo
 ## 4. Ensure Foundry Hostnames are resolvable
 
 !!!note
-    If you are using the same hostnames for GA as you configured for EA, and your IP address has not changed, you can skip this step.
+    If you are using the same hostnames for GA as you configured for EA, and your IP address hasn't changed, you can skip this step.
 
 You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
 
-In the examples that follow we are going to use these hostnames as examples:
+In the examples that follow you're going to use these hostnames as examples:
 
 ```
 drapi.mymxgo.com - used to access Domino REST API.
@@ -63,7 +63,7 @@ drapi-management.mymxgo.com - used to access the Domino REST API Management inte
 foundry.mymxgo.com - used to access HCL Volt MX Foundry
 ```
 
-You can either provide your own hostnames, or use these example names. Either the name to IP address mapping must be made in your DNS configuration, or you must modify your system hosts file. Further documentation here assumes you are not using a DNS system and configuration and are therefore modifying local hosts file entries.
+You can either provide your own hostnames, or use these example names. Either the name to IP address mapping must be made in your DNS configuration, or you must modify your system hosts file. Further documentation here assumes you aren't using a DNS system and configuration and are therefore modifying local hosts file entries.
 
 !!!tip
     Obtain your machine's IP ADDRESS as you will need it in the following step.
@@ -80,7 +80,7 @@ Add the hostnames that you have chosen to use in your `/etc/hosts` file together
 ### For K3s only
 
 !!!note
-    If you are using the same hostnames for GA as you configured for EA, and your IP address has not changed, you can skip this step.
+    If you are using the same hostnames for GA as you configured for EA, and your IP address hasn't changed, you can skip this step.
 
 1. Run the following command to make these name/IP address matches available within the Kubernetes:
 
