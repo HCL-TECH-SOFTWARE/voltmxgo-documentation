@@ -70,7 +70,7 @@ HCL Domino REST API provides secure REST API-based access to HCL Domino servers 
 
 For more information, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank"}.
 
-<!--## VoltScript
+## VoltScript
 
 VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} scripting language evolved from LotusScript&#174;, which was developed for the Lotus Software family of products. The language has been extended for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. VoltScript includes:
 
@@ -81,5 +81,5 @@ VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} 
 - A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
 - Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
 
-For more information, see [HCL VoltScript Documentation](){: target="_blank"}.
--->
+To learn more about the **early access version** of VoltScript, see [HCL VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.
+

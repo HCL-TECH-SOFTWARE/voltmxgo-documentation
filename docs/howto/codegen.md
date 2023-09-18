@@ -58,6 +58,7 @@ The procedure guides you in generating CRUD forms and associated form-navigation
     !!!note
         - Perform this step if the forms you’ll generate have Rich Text fields. 
         - Summernote Editor is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris.
+        - For more information, see [Summernote Editor](../references/summernotewidget.md).
 
     1. On the top menu of Volt MX Go Iris, select **Project** &rarr; **Import** &rarr; **Summernote Editor**.
 
