@@ -34,7 +34,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 - Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
     ```
 
     !!!example
@@ -59,6 +59,9 @@ Run the following commands to create a namespace and set the current context to 
 kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
+
+!!!note
+    You must run the `kubectl config set-context --current --namespace=mxgo` command to set the current namespace context after each restart of Windows or Rancher Desktop.
 
 ## 3. Ensure Foundry Hostnames are resolvable
 
