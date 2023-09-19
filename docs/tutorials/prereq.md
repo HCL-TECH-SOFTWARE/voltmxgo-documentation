@@ -60,8 +60,7 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
-!!!note
-    You must run the `kubectl config set-context --current --namespace=mxgo` command to set the current namespace context after each restart of Windows or Rancher Desktop.
+--8<-- "restartwindows.md"
 
 ## 3. Ensure Foundry Hostnames are resolvable
 
