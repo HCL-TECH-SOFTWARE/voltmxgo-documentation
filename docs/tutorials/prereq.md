@@ -1,5 +1,4 @@
-<!--# Complete preparatory procedure for first time installation of Volt MX Go-->
-# Complete preparatory procedure for installation of Volt MX Go
+# Complete preparatory procedure for first time installation of Volt MX Go
 
 --8<-- "devtestenvironment.md"
 
@@ -128,6 +127,8 @@ You must restart Rancher Desktop:
 
 1. Select **File** &rarr; **Exit** to close the current session.
 2. Open a new session by opening Rancher Desktop via the desktop icon.
+
+--8<-- "restartwindows.md"
 
 ## 4. Create a temp directory for the charts
 
