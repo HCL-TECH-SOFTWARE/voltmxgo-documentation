@@ -48,6 +48,8 @@ kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
 
+--8<-- "restartwindows.md"
+
 ## 4. Ensure Foundry Hostnames are resolvable
 
 !!!note
