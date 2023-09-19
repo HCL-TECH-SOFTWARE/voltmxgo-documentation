@@ -4,6 +4,10 @@
 
 Volt MX Go doesn't support the use of the Open API Adapter in the Foundry Integration Services to connect to Domino via Domino REST API. 
 
+## Using helm charts on supported Kubernetes platform
+
+When using helm charts on a supported Kubernetes platform, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context after restarting Windows or Rancher Desktop. If you don't run the command after restarting Windows or Rancher Desktop, your kubectl commands might fail.
+
 ## Naming 
 
 - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
@@ -37,3 +41,4 @@ To resolve stranded documents in an offline app:
 
 - Supports only Foundry Object services.
 - Authenticated app users metadata and verb security only. You must have a valid Domino REST API token for all Domino REST API calls. Customers that have such a requirement may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and to inject Authorization headers in each request.
+ 

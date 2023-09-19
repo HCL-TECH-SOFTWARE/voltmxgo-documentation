@@ -76,6 +76,8 @@ mkdir ~/mxgo
 cd ~/mxgo
 ```
 
+--8<-- "restartwindows.md"
+
 #### 2. Configure Helm to pull from HCL Container Repository
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.

@@ -1,5 +1,4 @@
-<!--# Complete preparatory procedure for first time installation of Volt MX Go-->
-# Complete preparatory procedure for installation of Volt MX Go
+# Complete preparatory procedure for first time installation of Volt MX Go
 
 --8<-- "devtestenvironment.md"
 
@@ -34,7 +33,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 - Run the following command to set up Helm:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password> 
+    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
     ```
 
     !!!example
@@ -59,6 +58,8 @@ Run the following commands to create a namespace and set the current context to 
 kubectl create namespace mxgo
 kubectl config set-context --current --namespace=mxgo
 ```
+
+--8<-- "restartwindows.md"
 
 ## 3. Ensure Foundry Hostnames are resolvable
 
@@ -126,6 +127,8 @@ You must restart Rancher Desktop:
 
 1. Select **File** &rarr; **Exit** to close the current session.
 2. Open a new session by opening Rancher Desktop via the desktop icon.
+
+--8<-- "restartwindows.md"
 
 ## 4. Create a temp directory for the charts
 

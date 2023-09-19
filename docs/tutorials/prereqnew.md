@@ -48,6 +48,8 @@
     kubectl config set-context --current --namespace=mxgo
     ```
 
+    --8<-- "restartwindows.md"
+
 6.	Run the following commands to recreate the temporary directory to download the helm charts and make it the current directory:
 
     ```
