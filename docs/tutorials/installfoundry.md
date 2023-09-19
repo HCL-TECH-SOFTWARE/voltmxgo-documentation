@@ -24,7 +24,7 @@ The procedures will guide you in the installation of Foundry.
     chmod +x init-guids.sh
     ```
     !!!note
-        The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
+        The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names, such as `voltmx-foundry-1.2.6.tgz` and `voltmx-dbupdate-1.2.6.tgz`.
 
 
 3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
