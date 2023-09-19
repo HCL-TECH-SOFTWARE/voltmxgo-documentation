@@ -9,4 +9,4 @@ List of issues and corresponding resolutions.
 
 - **The kubectl commands fail after restarting Windows or Rancher Desktop**
 
-    When your kubectl commands fail after restarting Windows or Rancher Desktop, you must run the `kubectl config set-context --current --namespace=mxgo` command to set the current namespace context and bring up your Ubuntu terminal session.
+    When your kubectl commands fail after restarting Windows or Rancher Desktop, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context.
