@@ -271,9 +271,10 @@ You may perform the following binary operations:
     - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to emove the attachment
 
 !!!warning "Important"
-    - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
+    - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat){: target="_blank"} or updating `integration.resourceMemoryLimit` in `values.yaml` for Foundry on supported Kubernetes platform.
+    <!-- Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.-->
     - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.
-    - The `$FILES` item is a meta-type field that represents the names of the attachments in a document. It's built from the `$FILE` items in a note, and it represents a list of file names attached to the document. The `$FILES` field can't be used for `$filters` to find notes with a specified attachment, such as `$filter=x_0024FILES eq attName.txt`. However, you can use `$FILES` in a select command, such as `$select=x_0024FILES`.   
+    <!-- The `$FILES` item is a meta-type field that represents the names of the attachments in a document. It's built from the `$FILE` items in a note, and it represents a list of file names attached to the document. The `$FILES` field can't be used for `$filters` to find notes with a specified attachment, such as `$filter=x_0024FILES eq attName.txt`. However, you can use `$FILES` in a select command, such as `$select=x_0024FILES`.-->   
  
 #### Using binary APIs from SDK
 
