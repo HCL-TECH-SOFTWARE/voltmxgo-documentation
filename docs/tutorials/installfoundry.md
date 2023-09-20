@@ -50,7 +50,7 @@ The procedures will guide you in the installation of Foundry.
     ```
     Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
-6. Locate the following lines in the file and add your Foundry database details:
+6. Locate the following lines in the file and add your Foundry database details. Use the example values as they match the values used for the MySQL install in the previous section, **Install MySQL for Foundry**.
 
     ```{ .yaml .no-copy }
     ### Database details ###
@@ -60,23 +60,23 @@ The procedures will guide you in the installation of Foundry.
     #   "mysql" for MySQL DB server
     #   "sqlserver" for Azure MSSQL or SQLServer
     #   "oracle" for Oracle DB server
-    dbType:
+    dbType: "mysql"
 
     # Database server hostname (String)
-    dbHost:
+    dbHost: "mysql"
 
     # Database server port number (Number). This can be empty for cloud managed service.
-    dbPort:
+    dbPort: 3306
 
     # Database User and password - you may set a single general userid/password here,
     # or you may set specific userid/password combinations below.  If set, the
     # specific values override the general dbUser/dbPass.
 
     # Database server user (String)
-    dbUser:
+    dbUser: "root"
 
     # Database server password (String) enclosed in quotes
-    dbPass:
+    dbPass: "Password123\!"
     ```
     See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
     for more details.
