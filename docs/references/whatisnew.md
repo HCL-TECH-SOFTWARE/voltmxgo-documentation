@@ -23,10 +23,10 @@ To learn more about the **early access version** of VoltScript and related compo
 ### Resolved issues
 
 ##### Domino Adapter
-- Using special characters as part of the search parameter for the `$filter` in the `GET` method returned errors as the regex that decoded special characters didn't decode all hex characters.
-- The `$FILES` field wasn't usable for the `$filter` query parameter to find notes with a specified attachment, for example, `$filter=x_0024FILES eq attName.txt`. 
-- An incorrect token was used for an operation when multiple users performed operations simultaneously while using a shared connection instance to a Domino REST API server.  
-- Iris throws an exception on a `GET` operation on view data models when the maximum depth of the view hierarchy is more than two hierarchy levels, for example, 1.1.1 or 1.2.1.
+- Using special characters as part of the search parameter for the `$filter` in the `GET` method returned errors as the regex that decoded special characters didn't decode all hex characters. An example is the `=` sign in the search parameter value `col1 eq "B=S"`. Performing a GET method with `$filter=col1 eq "B=S"` returned an error.  
+- The `$FILES` field wasn't usable for the `$filter` query parameter to find documents with a specified attachment, for example, `$filter=x_0024FILES eq attName.txt`. 
+- An incorrect access token was used for an operation when multiple users performed operations simultaneously while using a shared connection instance to a Domino REST API server.  
+- Iris threw an exception on a `GET` operation on view data models when the maximum depth of the view hierarchy is more than two hierarchy levels. An example of a view hierarchy with more than two hierarchy levels is a document with a response and a response to that response. 
 
 ### Others
 

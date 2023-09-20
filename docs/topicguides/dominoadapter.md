@@ -265,9 +265,10 @@ You may perform the following binary operations:
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
 - updateBinary: `PUT <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
-    - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
-- deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>`
+    - The `field` parameter is optional. If the attachment you wish to update is associated with a field in the Domino database, include the field in the update request to remove the attachment.
+- deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - The file is deleted from the Domino database and its name is removed from the `$FILES` field.
+    - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to emove the attachment
 
 !!!warning "Important"
     - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
@@ -299,7 +300,8 @@ onCreateBinary: function() {
       "dataObject": dataObject,
       "queryParams": {
         "unid": "123",
-        "name": "helloworld.txt"
+        "name": "helloworld.txt",
+        "field": "Body"
       },
       "binaryAttrName": "data"
     },
@@ -322,7 +324,8 @@ onCreateBinary: function() {
       "dataObject": dataObject,
       "queryParams": {
         "unid": "123",
-        "name": "helloworld.txt"
+        "name": "helloworld.txt",
+        "field": "Body"
       },
       "binaryAttrName": "data"
     },
@@ -349,6 +352,29 @@ onCreateBinary: function() {
     },
     function(response) {
         voltmx.print("Binary content: " + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print("Failed: " + JSON.stringify(error));
+    });
+  },
+
+  onDeleteBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService("myObj", {
+      "access": "online"
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject("dataObj");
+    dataObject.addField("x_0040unid", "123");
+    objSvc.deleteBinaryContent({
+      "dataObject": dataObject,
+      "queryParams": {
+        "unid": "123",
+        "name": "helloworld.txt",
+        "field": "Body"
+      },
+      "binaryAttrName": "data"
+    },
+    function(response) {
+        voltmx.print("Binary deleted: " + JSON.stringify(response));
     },
     function(error) {
         voltmx.print("Failed: " + JSON.stringify(error));

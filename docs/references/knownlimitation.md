@@ -34,8 +34,9 @@ If a document is hard deleted in the Domino DB by another application, the devic
 
 To resolve stranded documents in an offline app:
 
-- Use the [`clearOfflineData`](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/offline_objectsapi_reference_guide/Content/Object_clearOfflineData.html){: target="_blank} function provided by the Volt MX SDK in Iris. The function clears out the device's sync DB at the level you choose (app level, object service level, object level) so that syncing the app with the back end fully syncs all data without sending any hard deleted documents and allows the device's sync DB to match up with what's in the back end.  
-- Disable document deletion on the Domino DB if using it with an offline app. Disabling deletion combined with a script on the Domino REST API, which periodically clears soft-deleted documents, ensures that documents can't be stranded on the device DB while still clearing them out after some time.
+- Use the [`clearOfflineData`](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/offline_objectsapi_reference_guide/Content/Object_clearOfflineData.html){: target="_blank} function provided by the Volt MX SDK in Iris. The function clears out the device's sync DB at the level you choose (app level, object service level, object level) so that syncing the app with the back end fully syncs all data without sending any hard deleted documents and allows the device's sync DB to match up with what's in the back end.
+- Disable document deletion on the Domino DB if using it with an offline-enabled app. Disabling deletion combined with an agent script on the Domino REST API, which periodically clears soft-deleted documents, enforces soft delete on the Domino DB and keeps the soft-deleted documents long enough for the user devices to have performed a sync before pruning the deleted documents. This ensures that the Domino DB doesn't have too many soft-deleted documents.  
+<!-- Disable document deletion on the Domino DB if using it with an offline app. Disabling deletion combined with a script on the Domino REST API, which periodically clears soft-deleted documents, ensures that documents can't be stranded on the device DB while still clearing them out after some time.-->
 
 ## Domino Adapter
 
