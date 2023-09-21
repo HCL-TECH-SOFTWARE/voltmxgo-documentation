@@ -81,7 +81,13 @@ The procedures will guide you in the installation of Foundry.
     See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
     for more details.
 
-7. Save the file and exit.
+7. **(Optional)** If you would like to install the `Engagement` component, you can do so by locating the following line in the file and setting the value to `true`.
+
+    ```{ .yaml .no-copy }
+    engagementEnabled: true
+    ```
+
+8. Save the file and exit.
 
 ## 2. Deploy Foundry's dbupdate to create the databases in MySql
 
