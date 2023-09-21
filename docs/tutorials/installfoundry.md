@@ -24,7 +24,7 @@ The procedures will guide you in the installation of Foundry.
     chmod +x init-guids.sh
     ```
     !!!note
-        The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names, such as `voltmx-foundry-1.2.6.tgz` and `voltmx-dbupdate-1.2.6.tgz`.
+        The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names, such as `voltmx-foundry-1.2.7.tgz` and `voltmx-dbupdate-1.2.7.tgz`.
 
 
 3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
@@ -81,7 +81,13 @@ The procedures will guide you in the installation of Foundry.
     See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
     for more details.
 
-7. Save the file and exit.
+7. **(Optional)** If you would like to install the `Engagement` component, you can do so by locating the following line in the file and setting the value to `true`.
+
+    ```{ .yaml .no-copy }
+    engagementEnabled: true
+    ```
+
+8. Save the file and exit.
 
 ## 2. Deploy Foundry's dbupdate to create the databases in MySql
 

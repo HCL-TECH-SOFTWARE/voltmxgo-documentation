@@ -26,7 +26,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     cd drapi
     ```
     !!!note
-        Ensure the version number specified here with tar matches the version you downloaded, such as `drapi-1.0.6.tgz`.
+        Ensure the version number specified here with tar matches the version you downloaded, such as `drapi-1.0.7.tgz`.
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials, and the DNS name settings.
 
@@ -80,8 +80,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     4. Determine how you want to expose the Domino server to Notes clients by setting the value of the `exposeNRPC` parameter to any of the following options:
 
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
-        - `hostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol. **This is only recommended when using Rancher Desktop for Kubernetes**.
-        - `nodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod. **This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster**. See [Create a new server connection under Procedure](../howto/connectdominofromnotes.md#procedure) for instructions on how to obtain the random port number.
+        - `HostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol. **This is only recommended when using Rancher Desktop for Kubernetes**.
+        - `NodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod. **This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster**. See [Create a new server connection under Procedure](../howto/connectdominofromnotes.md#procedure) for instructions on how to obtain the random port number.
+        - `LoadBalancer`: Set this value if you want an external load balancer to be provisioned by a cloud provider which supports external load balancers. Traffic from the external load balancer is directed at the Domino pod, and the cloud provider decides how it is load balanced. Kubernetes typically starts off by making the changes that are equivalent to you requesting NodePort. The cloud-controller-manager component then configures the external load balancer to forward traffic to that assigned node port.
 
         You can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/).
 
@@ -126,5 +127,5 @@ Proceed to [Install MySql for Foundry](installmysqlfoundry.md).
 
 
 
-<!--The Notes client communicates with Domino over TCP port 1352 using the Notes Remote Procedure Call protocol (NRPC). For simple developer based deployments, this is done in Kubernetes with the `hostPort`. This option requires port 1352 on your machine to be available for use. The other option you can specify is `nodePort`.  When `nodePort` is specified Kubernetes will allocate a random port in a specified range (by default between 30000-32767) that will be available on every worker node in the cluster. Kubernetes will automatically route traffic on this port from the Kubernetes node to the backend Domino pod. Each option has its strengths and weaknesses, you can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/). If you specify `exposeNRPC: do-not-expose` port 1352 will not be exposed to the network.
+<!--The Notes client communicates with Domino over TCP port 1352 using the Notes Remote Procedure Call protocol (NRPC). For simple developer based deployments, this is done in Kubernetes with the `HostPort`. This option requires port 1352 on your machine to be available for use. The other option you can specify is `NodePort`.  When `NodePort` is specified Kubernetes will allocate a random port in a specified range (by default between 30000-32767) that will be available on every worker node in the cluster. Kubernetes will automatically route traffic on this port from the Kubernetes node to the backend Domino pod. Each option has its strengths and weaknesses, you can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/). If you specify `exposeNRPC: do-not-expose` port 1352 will not be exposed to the network.
         -->
