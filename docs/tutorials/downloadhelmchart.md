@@ -26,7 +26,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     cd drapi
     ```
     !!!note
-        Ensure the version number specified here with tar matches the version you downloaded, such as `drapi-1.0.6.tgz`.
+        Ensure the version number specified here with tar matches the version you downloaded, such as `drapi-1.0.7.tgz`.
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials, and the DNS name settings.
 
