@@ -53,9 +53,9 @@ Make sure that your `/etc/hosts` file has the preview hostnames. You will need t
     2. On the **Basics** tab, enter `drapi` in the **Server name** text box and then select the **TCPIP** checkbox for **Use LAN port**.
     3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
 
-    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `hostPort` during the [DRAPI Helm installation](../tutorials/downloadhelmchart.md), no further configuration is required and you can proceed to **Save & Close**. If instead you specified `nodePort`:
+    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `HostPort` during the [DRAPI Helm installation](../tutorials/downloadhelmchart.md), no further configuration is required and you can proceed to **Save & Close**. If instead you specified `NodePort`:
 
-        1. Run the following `kubectl` command to get the port number of the port picked by Kubernetes for the `nodePort`:
+        1. Run the following `kubectl` command to get the port number of the port picked by Kubernetes for the `NodePort`:
 
             ```text
             kubectl get services domino-drapi-nrpc-external -n mxgo
