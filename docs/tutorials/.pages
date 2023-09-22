@@ -7,6 +7,7 @@ nav:
             - prerequisite.md
             - portaldownload.md
             - Install Volt MX Go server components: nativeinstallers.md
+            - Upgrade Volt MX Go server components: versionupgrade.md
         #- Complete prerequisite procedures:
         #    - prerequisite.md
         #    - portaldownload.md

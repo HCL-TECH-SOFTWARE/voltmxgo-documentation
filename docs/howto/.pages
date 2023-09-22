@@ -4,6 +4,7 @@ nav:
     - codegen.md
     - accessdrapi.md
     - connectdominofromnotes.md
+    - Import First Touch: importft.md
     - logginglevel.md
 #    - summernote.md
     - configrosetta.md

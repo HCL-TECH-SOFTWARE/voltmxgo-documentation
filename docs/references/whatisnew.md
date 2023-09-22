@@ -19,6 +19,9 @@ To learn more about the **early access version** of VoltScript and related compo
 
 ### Improvements
 
+##### First Touch
+
+-  Improved First Touch Recipes app by adding function that brings up a list of related recipes from the same cuisine when checking a recipe, and implemented general improvements to the mobile version. 
 
 ### Resolved issues
 
@@ -30,8 +33,10 @@ To learn more about the **early access version** of VoltScript and related compo
 
 ### Others
 
-- Added troubleshooting entry related to kubectl commands failing.
-- Added known limitation related to using helm charts on supported Kubernetes platform. 
+- Added details related to kubectl commands failing in [Troubleshooting](troubleshoot.md).
+- Added details related to using helm charts on supported Kubernetes platform in [Known limitations](knownlimitation.md). 
+##### First Touch
+- Added procedure for [importing First Touch into Iris](../howto/importft.md).
 ##### Domino Adapter
 - Added procedure for [generating CRUD forms for an Object Service](../howto/codegen.md).
 - Added known limitation related to deleting offline documents. 
