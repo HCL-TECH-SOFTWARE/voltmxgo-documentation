@@ -1,6 +1,7 @@
 nav:
     - index.md
     - foundryadminaccount.md
+    - codegen.md
     - accessdrapi.md
     - connectdominofromnotes.md
     - logginglevel.md

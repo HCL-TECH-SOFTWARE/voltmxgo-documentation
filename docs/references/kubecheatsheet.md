@@ -1,4 +1,4 @@
-# FAQ and common procedures
+# Helm and Kubectl commands
 
 !!!note
     You can copy and update the pod names from the code examples. We plan to improve this experience in future updates by adding label support.

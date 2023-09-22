@@ -76,7 +76,7 @@ The procedures will guide you in the installation of Foundry.
     dbUser: "root"
 
     # Database server password (String) enclosed in quotes
-    dbPass: "Password123\!"
+    dbPass: "Password123!"
     ```
     See [Installing_Containers_With_Helm.html](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html)
     for more details.

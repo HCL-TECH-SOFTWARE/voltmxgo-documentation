@@ -265,14 +265,16 @@ You may perform the following binary operations:
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
 - updateBinary: `PUT <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
-    - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
-- deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>`
+    - The `field` parameter is optional. If the attachment you wish to update is associated with a field in the Domino database, include the field in the update request to remove the attachment.
+- deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - The file is deleted from the Domino database and its name is removed from the `$FILES` field.
+    - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to emove the attachment
 
 !!!warning "Important"
-    - Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.
+    - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat){: target="_blank"} or updating `integration.resourceMemoryLimit` in `values.yaml` for Foundry on supported Kubernetes platform.
+    <!-- Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.-->
     - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.
-    - The `$FILES` item is a meta-type field that represents the names of the attachments in a document. It's built from the `$FILE` items in a note, and it represents a list of file names attached to the document. The `$FILES` field can't be used for `$filters` to find notes with a specified attachment, such as `$filter=x_0024FILES eq attName.txt`. However, you can use `$FILES` in a select command, such as `$select=x_0024FILES`.   
+    <!-- The `$FILES` item is a meta-type field that represents the names of the attachments in a document. It's built from the `$FILE` items in a note, and it represents a list of file names attached to the document. The `$FILES` field can't be used for `$filters` to find notes with a specified attachment, such as `$filter=x_0024FILES eq attName.txt`. However, you can use `$FILES` in a select command, such as `$select=x_0024FILES`.-->   
  
 #### Using binary APIs from SDK
 
@@ -299,7 +301,8 @@ onCreateBinary: function() {
       "dataObject": dataObject,
       "queryParams": {
         "unid": "123",
-        "name": "helloworld.txt"
+        "name": "helloworld.txt",
+        "field": "Body"
       },
       "binaryAttrName": "data"
     },
@@ -322,7 +325,8 @@ onCreateBinary: function() {
       "dataObject": dataObject,
       "queryParams": {
         "unid": "123",
-        "name": "helloworld.txt"
+        "name": "helloworld.txt",
+        "field": "Body"
       },
       "binaryAttrName": "data"
     },
@@ -353,10 +357,33 @@ onCreateBinary: function() {
     function(error) {
         voltmx.print("Failed: " + JSON.stringify(error));
     });
+  },
+
+  onDeleteBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService("myObj", {
+      "access": "online"
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject("dataObj");
+    dataObject.addField("x_0040unid", "123");
+    objSvc.deleteBinaryContent({
+      "dataObject": dataObject,
+      "queryParams": {
+        "unid": "123",
+        "name": "helloworld.txt",
+        "field": "Body"
+      },
+      "binaryAttrName": "data"
+    },
+    function(response) {
+        voltmx.print("Binary deleted: " + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print("Failed: " + JSON.stringify(error));
+    });
   }
 ```
 
-## Limitations
+<!--## Limitations
 
 - Supports only Foundry Object services.
 - Authenticated app users metadata and verb security only. You must have a valid Domino REST API token for all Domino REST API calls. Customers that have such a requirement may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and to inject Authorization headers in each request.
@@ -372,6 +399,6 @@ onCreateBinary: function() {
 
     - As Domino REST API and Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
 
-- Verb mapping isn't supported for binary verbs in the Foundry Console. 
+- Verb mapping isn't supported for binary verbs in the Foundry Console.--> 
 
  

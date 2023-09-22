@@ -54,6 +54,6 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 
 ### Additional information
 
-See [FAQ and common procedures](../references/kubecheatsheet.md) for more information about Kubernetes commands.
+See [Helm and Kubectl commands](../references/kubecheatsheet.md) for more information.
 
 After completing the procedures based on your preferred deployment option or your installed version, proceed to [Install Volt MX Go Iris](installiris.md).

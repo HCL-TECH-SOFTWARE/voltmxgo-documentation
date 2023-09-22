@@ -1,4 +1,4 @@
-# Summernote Editor component
+# Summernote Editor 
 
 The Summernote Editor component enables you to add a WYSIWYG editor to your form for handling rich text with links, tables, images, videos, and character styles. 
 
@@ -36,4 +36,4 @@ For more information on components in Iris, see [Use Components](https://opensou
 
 ## Additional information
 
-To learn how to import the Summernote Editor component, see [Import Summernote Editor](../howto/summernote.md).
+To learn more, see [Summernote Editor](https://summernote.org/){: target="_blank" rel="noopener noreferrer"}.
