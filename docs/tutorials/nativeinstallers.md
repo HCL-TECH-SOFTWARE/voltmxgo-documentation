@@ -1,7 +1,7 @@
 <!--# Install Volt MX Go via installers-->
 # Install Volt MX Go server components
 
-The following server components of Volt MX Go are deployed using installers:
+The procedures guide you in installing the following server components of Volt MX Go:
 
 - Volt MX Go Foundry
 - Domino REST API
@@ -10,6 +10,8 @@ The following server components of Volt MX Go are deployed using installers:
     - Using this installation option would require you to use your own Domino server.
     - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
+!!!info
+    When clicking the links in the steps in the following procedures, some links open in a new tab and direct you to related product documentation.
 
 ## Install Domino REST API
 

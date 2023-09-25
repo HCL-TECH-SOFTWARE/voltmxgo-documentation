@@ -27,4 +27,6 @@ The procedure guides you on how to search and download the HCL Volt MX Go Releas
 
 ## Next step
 
-Proceed to [Install Volt MX Go server components](nativeinstallers.md).
+For a new installation, proceed to [Install Volt MX Go server components](nativeinstallers.md).
+
+For an upgrade installation, proceed to [Upgrade Volt MX Go server components](versionupgrade.md)

@@ -1,12 +1,9 @@
 # Upgrade Volt MX Go server components
 
-The following server components of Volt MX Go are deployed using installers:
-
-- Volt MX Go Foundry
-- Domino REST API
+The following procedures guide you in upgrading the server components of Volt MX Go.
 
 !!!info
-    When clicking the links in the steps in the following procedures, the some open in a new tab and direct you to related product documentation.  
+    When clicking the links in the steps in the following procedures, some links open in a new tab and direct you to related product documentation.  
 
 ## Upgrade Domino REST API
 
@@ -29,36 +26,59 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 ### For using an installer
 
-1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option.
+#### Before you start
 
-    For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+- Ensure that the installer has execute permission.
+- Ensure that you have the path of your previous installation directory.
+- Ensure that you stop the application server of your existing Foundry instance, which you want to upgrade.
+#### Procedure
 
-2. Extract the installer from the downloaded ZIP file.
-3. Follow the links to the installation guides based on your preferred installation platform/option:
+- Follow the link to the upgrade procedure based on your used installation platform/option:
 
     !!!warning "Important"
-        - The installation guides will indicate installation files and installation file download locations. **You must use the installer you downloaded in Step 1.**
-        - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
+        - The upgrade procedure will indicate installation files and installation file download locations. **You must use the installer you downloaded in *Before you start*.**
+        - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
 
-    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank"}
-    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank"}
-    - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank"}
+    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank"}
+    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank"}
+    <!-- [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank"}-->
 
 ### For using helm charts on a supported Kubernetes platform
 
 !!!warning "Important"
-    If you participated in the Early Access program, you must cleanup your environment before proceeding, such as deleting the `mxgo` namespace, removing the EA repository reference, and removing the `mxgo` directory. You may want to create a backup copy of the `~/mxgo/drapi/values.yaml` and `~/mxgo/foundry/values.yaml` files so you can reuse the settings from them if you are using the same information such as hostnames, userids, and passwords. Use the following commands to cleanup your environment:
+    Create a backup copy of the `~/mxgo/drapi/values.yaml` and `~/mxgo/foundry/values.yaml` files so you can reuse the settings from them if you are using the same information such as hostnames, userids, and passwords.
+
+#### 1. Clean up your environment.
+
+1. Run the following command to delete the `mxgo` namespace, which removes all MXGO components and configurations:
 
     ```
-    helm repo remove hclcr
     kubectl delete namespace mxgo
-    rm -rf ~/mxgo
     ```
 
-!!!note "Prerequisite"
-    [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
+    !!!note
+        Deletion processing time may take a few minutes as Domino, Foundry, MySQL, and associated configurations are being removed.
 
-#### 1. Create a namespace and a temp directory for the charts
+2.	After completing the namespace deletion, run the following command to make sure the deletion of the namespace:
+
+    ```
+    kubectl get all -n mxgo
+    ```
+
+	!!!tip
+        You'll get the notification `No resources found in mxgo namespace` if the deletion is successful.
+
+3.	Run the following command to delete the directory where you initially pulled the helm charts:
+
+    ```
+    rm -rf ~/mxgo/
+    ```
+
+    !!!note
+        `~/mxgo` is the usual directory where you initially pulled the helm charts. If you used a different directory, replace `~/mxgo` in the command with the directory you used.
+
+#### 2. Create a namespace and a temp directory for the charts
 
 Run the following commands to create a namespace, set the current context to **mxgo**, create a temp directory for downloading the charts, and make it the current directory:
 
@@ -71,7 +91,7 @@ cd ~/mxgo
 
 --8<-- "restartwindows.md"
 
-#### 2. Configure Helm to pull from HCL Container Repository
+#### 3. Configure Helm to pull from HCL Container Repository
 
 The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
@@ -96,7 +116,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
     Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
-#### 3. Download Foundry charts
+#### 4. Download Foundry charts
 
 1. Run the following command to make sure that the chart information for the repositories is up-to-date.
 
@@ -177,12 +197,12 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 8. Save the file and exit.
 
-#### 4. (Optional) Perform advanced scenario procedures
+#### 5. (Optional) Perform advanced scenario procedures
 
 - Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"}
 
 
-#### 5. Deploy Foundry's dbupdate to create the databases
+#### 6. Deploy Foundry's dbupdate to create the databases
 
 1. Run the following Helm install command to deploy Foundry's dbupdate:
 
@@ -210,8 +230,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 3. Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created. Press `Ctrl-c` to stop the kubectl command.
 
-
-#### 6. Install Foundry
+#### 7. Install Foundry
 
 1. Run the following Helm install command to deploy Foundry:
 
@@ -241,19 +260,19 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
 
-#### 7. (Optional) Perform monitoring procedures
+#### 8. (Optional) Perform monitoring procedures
 
 - Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank"}.
 
 !!!note
     The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
 
-#### 8. (Optional) Perform post installation tasks
+#### 9. (Optional) Perform post installation tasks
 
 - Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}
 
 
 ## Additional information
 
-After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).-->
 
