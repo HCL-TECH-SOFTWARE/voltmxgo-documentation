@@ -16,7 +16,7 @@ This procedure describes how to configure the Rosetta API based on what you need
     
     ![settings](../assets/images/vfrosettasetting.png){: style="height:80%;width:80%"}
 
-2. In the **Project Setting** window, click the **Rosetta** tab
+2. In the **Project Setting** window, click the **Volt Formula** tab
 
     !!!Tips
         When you hover over the **info** tooltip icon beside each of the label or textbox, you can see the description of each function.
