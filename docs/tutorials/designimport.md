@@ -32,35 +32,34 @@
 
     -  When you configure the `scopes`, you need a *Maximum Access Level* set to Designer or Manager. See [Scope in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#add-a-scope)
 
-
-
-    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` and `$DATA` to the Scope list in order to return proper values.
-
+    -  When you configure your DRAPI application, it's mandatory to add `$SETUP` to return proper values.
 
 
 
 ## Launch Volt MX Go Iris
 
-1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen.
-        
-2. On launching Iris, the Volt MX Go cloud login screen appears for license validation. Click **Close.**
+1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
 
-3. Go to [Validate Volt MX GO Foundry](#validate-volt-mx-go-foundry) procedure.
+    !!!note
+        If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close icon will no longer appear during login.
+
+    Wait until the MX Go Foundry preference has been verified before logging in.
+
+    **Validation of MX Go preference:**
+        
+    1. Click  the home ![](../assets/images/dihome.png){: style="height:3%;width:3%"} icon.
+    2. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
+    3. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
+    4. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or--> your Foundry hostname, and click **Validate**.
+        ![Preferences](../assets/images/dipreference.png)
+
+    5. Click **Done**. 
 
 
 4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
 
     ![Log in screen](../assets/images/dilogin.png)
 
-## Validate Volt MX GO Foundry
-    
-1. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
-2. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
-3. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or--> your Foundry hostname, and click **Validate**.
-    
-    ![Preferences](../assets/images/dipreference.png)
-
-4. Click **Done**. 
     
 ## Create a new project
     
@@ -104,14 +103,14 @@
     |  **Fields**     | **Description** |
     | -----------     | -----------     |
     | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
-    | Scope       | For this release, the $DATA scope is set as the default for the Identity Service.|   <!--  This is the name of your configured scope described in your App of Domino REST API app management.  |
+    | Scope       | This is the name of your configured scope described in your App of Domino REST API app management. $DATA scope show all the scopes in your App in Domino REST API.  |
     |Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
 
     ![](../assets/images/dikeep.png)
 
-    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOProjectGA
+    1. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOkeepRecipe201
 
         ![](../assets/images/didrapi.png)
 
@@ -190,12 +189,6 @@
 
     ![](../assets/images/diexistingid.png)
 
-    !!!warning "Important"
-        Use the *Identity Service* that was built by the VoltMX Design Import wizard. Use the one with the prefix MXGO. **DO NOT** make use of manually created *Identity Service* in the Foundry app. This may **NOT** continue your process of importing identity service.
-
-    - Select your **active app** from your Domino Rest API Identity Service.
-
-        ![](../assets/images/dimxgoid.png)
 
     
 5. On the fourth step **Scope and Forms**, select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
