@@ -19,6 +19,7 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ## Get started
 
 - [System requirements](tutorials/sysreq.md)
+- [Compatibility matrix](references/compatibilitymatrix.md)
 - [Installation](tutorials/installation.md)
 - [Tutorials](tutorials/index.md)
 
@@ -26,6 +27,15 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ## What's new
 
 For the latest release information about Volt MX Go, see [What's new](references/whatisnew.md).
+
+---
+
+## Quick links
+
+- [Rosetta API reference documentation](javadoc/index.html){: target="_blank"}
+- [Known limitations](references/knownlimitation.md)
+- [Support](references/index.md#support)
+- [Documentation references](references/index.md#documentation-references)
 
 ---
 ## How the documentation is organized

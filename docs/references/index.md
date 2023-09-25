@@ -29,7 +29,7 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 ## Documentation references
 
-[HCL Volt MX Documentation V9.5](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html){: target="_blank"}
+[HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html){: target="_blank"}
 
 - Provides documentation and more information about Iris and Foundry.
 
@@ -37,9 +37,9 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 - Provides documentation and more information about Domino REST API. 
 
-[HCL VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}
+[VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}
 
-- Provides documentation and more information about VoltScript and related components.
+- Provides documentation and more information about the **early access version** of VoltScript and related components.
 
 ## Known limitations
 

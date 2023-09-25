@@ -22,21 +22,17 @@ As Domino REST API and Foundry administrators can redefine field data types, it 
 Verb mapping isn't supported for binary verbs in the Foundry Console.
 
 ## Deleting offline documents 
+### Hard delete
+
+If a document is hard deleted in the Domino DB by another app, the devices using the offline sync DB won't know about this deletion, and any subsequent sync calls won't remove the document from the sync DB. This results in a stranded document on the device, but not in the back end.
+
+To resolve stranded documents in an offline app, use the [`clearOfflineData`](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/offline_objectsapi_reference_guide/Content/Object_clearOfflineData.html){: target="_blank} function provided by the Volt MX SDK in Iris. The function clears out the device's sync DB at the level you choose (app level, object service level, object level) so that syncing the app with the back end fully syncs all data without sending any hard deleted documents and allows the device's sync DB to match up with what's in the back end.
 
 ### Soft delete
 
 Offline-enabled apps use soft delete to remove deleted documents from a device's sync DB. Add the `IsDeleted` property to the Domino REST API schema to enable soft delete. The property will contain the value *deleted* when the document has been soft deleted and removed entirely from the device’s sync DB upon a sync with the DB.
 
-### Hard delete
-
-If a document is hard deleted in the Domino DB by another application, the devices using the offline sync DB won't know about this deletion, and any subsequent sync calls won't remove the document from the sync DB. This results in a stranded document on the device, but not in the back end.
-         
-
-To resolve stranded documents in an offline app:
-
-- Use the [`clearOfflineData`](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/offline_objectsapi_reference_guide/Content/Object_clearOfflineData.html){: target="_blank} function provided by the Volt MX SDK in Iris. The function clears out the device's sync DB at the level you choose (app level, object service level, object level) so that syncing the app with the back end fully syncs all data without sending any hard deleted documents and allows the device's sync DB to match up with what's in the back end.
-- Disable document deletion on the Domino DB if using it with an offline-enabled app. Disabling deletion combined with an agent script on the Domino REST API, which periodically clears soft-deleted documents, enforces soft delete on the Domino DB and keeps the soft-deleted documents long enough for the user devices to have performed a sync before pruning the deleted documents. This ensures that the Domino DB doesn't have too many soft-deleted documents.  
-<!-- Disable document deletion on the Domino DB if using it with an offline app. Disabling deletion combined with a script on the Domino REST API, which periodically clears soft-deleted documents, ensures that documents can't be stranded on the device DB while still clearing them out after some time.-->
+Disabling document deletion on the Domino DB if using it with an offline-enabled app combined with an agent script on the Domino REST API, which periodically clears soft-deleted documents, enforces soft delete on the Domino DB. These keep the soft-deleted documents long enough for the user devices to sync before pruning the deleted documents and ensure that the Domino DB doesn't have too many soft-deleted documents. 
 
 ## Domino Adapter
 
