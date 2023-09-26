@@ -11,7 +11,7 @@ Write a function called `sayHello` to show a prompt box add formula.
 ```js
 @Prompt([Ok];"Greeting";"Hello, World!");
 ```
-![](../assets/images//assets/images/vfhelloworld.png)
+![](../assets/images/vfhelloworld.png)
 
 
 ### Change a name
