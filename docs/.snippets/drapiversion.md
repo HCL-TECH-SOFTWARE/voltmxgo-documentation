@@ -1,2 +1,2 @@
 !!!warning "Important"
-    For Volt MX Go v2.0, the supported version of Domino REST API is v1.0.6.
+    Make sure to check [version compatibility](../references/compatibilitymatrix.md) between Volt MX Go and Domino REST API.

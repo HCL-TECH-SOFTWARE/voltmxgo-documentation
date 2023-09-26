@@ -14,17 +14,22 @@ The procedure guides you on how to search and download the HCL Volt MX Go Releas
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
 4. On the **Downloads** page, search for and click `HCL Volt MX `.
 5. On the **Download Packages** page, click the **HCL Volt MX Go Version x.x** package.
+
+    !!!note
+        Select the appropriate package version based on whether you want to perform a new installation or an upgrade. 
+
 6. On the **Files** tab in the **Downloads** page, select all the files and click **Download Selected Files**.
 
     **OR** 
 
     Click the download icon beside the filename of each file. 
 
-<!--![Download HCL Volt MX GO Early Access Release package](../assets/images/downloadearelease.png)-->
 
 !!!tip
     For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine. 
 
 ## Next step
 
-Proceed to [Install Volt MX Go server components](nativeinstallers.md).
+For a new installation, proceed to [Install Volt MX Go server components](nativeinstallers.md).
+
+For an upgrade installation, proceed to [Upgrade Volt MX Go server components](versionupgrade.md)

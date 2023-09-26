@@ -6,6 +6,7 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Generate CRUD forms for Object Service](codegen.md)
 - [Access Domino REST API](accessdrapi.md)
 - [Connect to Domino server from Notes client](connectdominofromnotes.md)
+- [Import First Touch into Iris](importft.md)
 - [Set logging level](logginglevel.md)
 - [Configure Rosetta API](configrosetta.md)
 - [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)

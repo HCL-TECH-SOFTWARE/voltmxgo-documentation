@@ -1,0 +1,2 @@
+!!!info
+    When clicking the links in the steps in the following procedures, some links open in a new tab and direct you to related product documentation. Expect to switch between browser tabs when executing the procedures.
