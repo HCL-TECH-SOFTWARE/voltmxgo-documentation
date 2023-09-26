@@ -41,7 +41,7 @@
 1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
 
     !!!note
-        If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close icon will no longer appear during login.
+        If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close button is no longer appear during login.
 
     Wait until the MX Go Foundry preference has been verified before logging in.
 
