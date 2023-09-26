@@ -52,8 +52,8 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 3. [Install MySql for Foundry](installmysqlfoundry.md)
 4. [Install Foundry](installfoundry.md)
 
-### Additional information
+## Additional information
 
 See [Helm and Kubectl commands](../references/kubecheatsheet.md) for more information.
 
-After completing the procedures based on your preferred deployment option or your installed version, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the relevant procedures, proceed to [Install Volt MX Go Iris](installiris.md).

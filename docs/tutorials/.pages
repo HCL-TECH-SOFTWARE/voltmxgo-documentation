@@ -1,6 +1,6 @@
 nav:
     - index.md
-    - Installation:
+    - Installation and upgrade:
         - installation.md
         - sysreq.md
         - Install and upgrade Volt MX Go in a production environment:

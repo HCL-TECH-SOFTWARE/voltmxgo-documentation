@@ -10,8 +10,7 @@ The procedures guide you in installing the following server components of Volt M
     - Using this installation option would require you to use your own Domino server.
     - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
-!!!info
-    When clicking the links in the steps in the following procedures, some links open in a new tab and direct you to related product documentation.
+--8<-- "browsertab.md"
 
 ## Install Domino REST API
 

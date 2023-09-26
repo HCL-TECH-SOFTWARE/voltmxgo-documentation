@@ -2,8 +2,7 @@
 
 The following procedures guide you in upgrading the server components of Volt MX Go.
 
-!!!info
-    When clicking the links in the steps in the following procedures, some links open in a new tab and direct you to related product documentation.  
+--8<-- "browsertab.md"
 
 ## Upgrade Domino REST API
 
