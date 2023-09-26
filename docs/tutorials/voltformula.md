@@ -155,5 +155,5 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 !!!Info
     - The default Rosetta voltFormula setting can be modified according to your need for your app. To change the configuration, go to this link [Configure VoltFormula's Rosetta API Options](../howto/configrosetta.md)
 
-    - To know 
+    - To know more about the proper way of handling codes, go to this link [Recommended Volt Formula Coding Practices in MX Go Iris](../references/vfcodingguides.md)
 
