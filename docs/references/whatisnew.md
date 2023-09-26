@@ -30,7 +30,11 @@ To learn more about the **early access version** of VoltScript and related compo
 - Sort scope list alphabetically in the view form.
 - Unconfigured forms is now hiding all the fields. (optimization).
 
+##### VoltFormula
 
+-
+-
+-
 
 ### Resolved issues
 
