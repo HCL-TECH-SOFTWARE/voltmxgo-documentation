@@ -34,6 +34,6 @@ The binary images and Helm charts for Volt MX GO server components are pulled fr
 
 ## Next step
 
-For installing Volt MX Go using helm charts on a supported Kubernetes platform for a production environment, proceed to [Configure Helm to pull from HCL Container Repository](nativeinstallers.md#1-configure-helm-to-pull-from-hcl-container-repository).
+For installing Volt MX Go using helm charts on a supported Kubernetes platform for a production environment, proceed to [Configure Helm to pull from HCL Container Repository](nativeinstallers.md#1-create-a-namespace-and-a-temp-directory-for-the-charts).
 
 For installing Volt MX Go to **development or test only environment**, proceed to [Deploy Kubernetes](deploykubernetes.md).

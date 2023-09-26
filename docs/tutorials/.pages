@@ -1,12 +1,13 @@
 nav:
     - index.md
-    - Installation:
+    - Installation and upgrade:
         - installation.md
         - sysreq.md
-        - Install Volt MX Go in a production environment:
+        - Install and upgrade Volt MX Go in a production environment:
             - prerequisite.md
             - portaldownload.md
             - Install Volt MX Go server components: nativeinstallers.md
+            - Upgrade Volt MX Go server components: versionupgrade.md
         #- Complete prerequisite procedures:
         #    - prerequisite.md
         #    - portaldownload.md

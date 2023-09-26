@@ -3,6 +3,7 @@ nav:
     - whatisnew.md
 #    - System requirements: ../tutorials/sysreq.html
     - compatibilitymatrix.md
+    - VoltForumla coding practices: vfcodingguides.md
     - kubecheatsheet.md
 #    - Rosetta API reference documentation: ../javadoc/index.html
     - reflogginglevels.md 

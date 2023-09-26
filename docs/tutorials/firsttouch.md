@@ -84,9 +84,13 @@ You can now view and explore the First Touch Recipe Catalog app.
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
 
-For more information, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
+
 
 !!!tip
     - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Foundry to view the app’s Foundry configuration.
     - To launch the app again from Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.    
 
+## Additional information
+
+- To learn more about the app, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
+- To know how to import the First Touch Recipe app project to Iris, see [Import First Touch into Iris](../howto/importft.md).

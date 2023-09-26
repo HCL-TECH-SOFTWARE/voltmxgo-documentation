@@ -1,6 +1,6 @@
-# Install Volt MX Go to development or test only environment
+# Install and upgrade Volt MX Go to development or test only environment
 
-The procedure intends to install Volt MX Go server components to a development or test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
+Perform a new or an upgrade installation of Volt MX Go server components to a development or test only environment to allow you to try its different features in a safe environment. **This isn't intended for a production environment**.
 
 The server components of Volt MX Go can be deployed with Kubernetes via the following options, which have been tailored for a self contained, fewer prerequisites, and well specified procedure:
 
@@ -52,8 +52,8 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 3. [Install MySql for Foundry](installmysqlfoundry.md)
 4. [Install Foundry](installfoundry.md)
 
-### Additional information
+## Additional information
 
 See [Helm and Kubectl commands](../references/kubecheatsheet.md) for more information.
 
-After completing the procedures based on your preferred deployment option or your installed version, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the relevant procedures, proceed to [Install Volt MX Go Iris](installiris.md).

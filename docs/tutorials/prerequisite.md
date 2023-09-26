@@ -1,12 +1,19 @@
 
-# Install Volt MX Go in a Production Environment
+# Install and upgrade Volt MX Go in a Production Environment
 
-You must complete the following procedures:
+Perform a new or an upgrade installation of Volt MX Go in a production environment.
+
+For a new install, complete the following procedures:
 
 1. [Download HCL Volt MX GO Release package](portaldownload.md)
 2. [Install Volt MX Go server components](nativeinstallers.md)
 
-After completing the procedures, proceed to [Install Volt MX Go Iris](installiris.md).
+For an upgrade install, complete the following procedures:
+
+1. [Download HCL Volt MX GO Release package](portaldownload.md)
+2. [Upgrade Volt MX Go server components](versionupgrade.md)
+
+After completing the relevant procedures, proceed to [Install Volt MX Go Iris](installiris.md).
 
 
 <!--# Complete prerequisite procedures
