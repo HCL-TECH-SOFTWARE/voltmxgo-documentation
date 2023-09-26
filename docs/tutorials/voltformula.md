@@ -7,15 +7,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-<!-- You have noted the following Domino REST API details:
-    
-    - Domino REST API server URL 
-    - username: `mxgo admin`
-    - password: `password`
 
-    !!!note
-        - If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](http://localhost:8000/HCL-TECH-SOFTWARE/voltmxgo-documentation/tutorials/downloadhelmchart.html#1-download-the-domino-rest-api-helm-chart) procedure as part of the containerized deployment, use the updated values for the username and password.
-        - If you used the installer to install Domino REST API, use your Domino server administrator username and password.-->
 
 - You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank"} in Volt MX Iris.
 
@@ -33,7 +25,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
     1. Click  the home ![](../assets/images/dihome.png){: style="height:3%;width:3%"} icon.
     2. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
     3. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
-    4. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or--> your Foundry hostname, and click **Validate**.
+    4. Fill in the **Foundry URL** with your Foundry hostname, and click **Validate**.
         ![Preferences](../assets/images/dipreference.png)
 
     5. Click **Done**. 
