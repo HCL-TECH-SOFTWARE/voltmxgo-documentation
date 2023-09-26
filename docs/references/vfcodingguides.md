@@ -13,7 +13,7 @@ Write a function called `sayHello` to show a prompt box add formula.
 ![](../assets/images/vfhelloworld.png)
 
 
-### EChange a Name
+### Change a Name
 #### Description:
 Write a function called `changeName` that takes a string from a prompt box and update a field and add formula.
 
