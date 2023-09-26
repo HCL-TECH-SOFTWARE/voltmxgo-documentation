@@ -13,13 +13,13 @@
     - [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing){: target="_blank"}
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing){: target="_blank"}
 
-# Updating Volt MX Go Iris
+## Updating Volt MX Go Iris
 
-## Prerequisite
+### Prerequisite
 
 - You have installed the Volt MX Go Iris before.
 
-## Procedure
+### Procedure
     
 - For this Volt MX Go Iris version 2.0.1, you must use download the installer from this link [downloaded the HCL Volt MX GO Release package](portaldownload.md). 
 
