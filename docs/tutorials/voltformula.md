@@ -48,7 +48,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
     The **Action Editor** opens and creates an action sequence for you to configure.
 
-4. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**.
+4. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**
     
     ![](../assets/images/vfactioneditor.png){: style="height:80%;width:80%"}
 
