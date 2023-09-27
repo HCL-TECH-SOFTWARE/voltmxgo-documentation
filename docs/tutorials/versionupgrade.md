@@ -45,10 +45,9 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 ### For using helm charts on a supported Kubernetes platform
 
-!!!warning "Important"
-    Create a backup copy of the `~/mxgo/drapi/values.yaml` and `~/mxgo/foundry/values.yaml` files so you can reuse the settings from them if you are using the same information such as hostnames, userids, and passwords.
+#### Before you start
 
-#### 1. Clean up your environment.
+<!--#### 1. Clean up your environment.
 
 1. Run the following command to delete the `mxgo` namespace, which removes all MXGO components and configurations:
 
@@ -66,7 +65,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     ```
 
 	!!!tip
-        You'll get the notification `No resources found in mxgo namespace` if the deletion is successful.
+        You'll get the notification `No resources found in mxgo namespace` if the deletion is successful.-->
 
 3.	Run the following command to delete the directory where you initially pulled the helm charts:
 
@@ -77,70 +76,80 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     !!!note
         `~/mxgo` is the usual directory where you initially pulled the helm charts. If you used a different directory, replace `~/mxgo` in the command with the directory you used.
 
-#### 2. Create a namespace and a temp directory for the charts
+2. Create a namespace and a temp directory for the charts.
 
-Run the following commands to create a namespace, set the current context to **mxgo**, create a temp directory for downloading the charts, and make it the current directory:
-
-```
-kubectl create namespace mxgo
-kubectl config set-context --current --namespace=mxgo
-mkdir ~/mxgo
-cd ~/mxgo
-```
-
---8<-- "restartwindows.md"
-
-#### 3. Configure Helm to pull from HCL Container Repository
-
-The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
-
-- Run the following command to set up Helm:
+    Run the following commands to create a namespace, set the current context to **mxgo**, create a temp directory for downloading the charts, and make it the current directory:
 
     ```
-    helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
+    kubectl create namespace mxgo
+    kubectl config set-context --current --namespace=mxgo
+    mkdir ~/mxgo
+    cd ~/mxgo
     ```
 
-    !!!example
-         `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
+    --8<-- "restartwindows.md"
+
+3. Configure Helm to pull from HCL Container Repository.
+
+    You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+
+    - Run the following command to set up Helm:
+
+        ```
+        helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
+        ```
+
+        !!!example
+             `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
 
-    !!!note
-        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+        !!!note
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
 
-    If you get an error message similar to the following:
+        If you get an error message similar to the following:
 
-    ``` { .yaml .no-copy }
-    Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
-    ```
+        ``` { .yaml .no-copy }
+        Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
+        ```
 
-    Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
+        Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
-#### 4. Download Foundry charts
+4. Download Foundry charts.
 
-1. Run the following command to make sure that the chart information for the repositories is up-to-date.
+    1. Run the following command to make sure that the chart information for the repositories is up-to-date.
 
-    ```
-    helm repo update
-    ```
+        ```
+        helm repo update
+        ```
 
-2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
+    2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
-    ```
-    mkdir foundry
-    cd foundry
-    helm pull hclcr/voltmx-dbupdate
-    helm pull hclcr/voltmx-foundry
-    tar -xzf voltmx-foundry-1.n.n.tgz
-    tar -xzf voltmx-dbupdate-1.n.n.tgz
-    mv voltmx-foundry/values.yaml  ./
-    mv voltmx-foundry/init-guids.sh  ./
-    chmod +x init-guids.sh
-    ```
-    !!!note
-        The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
+        ```
+        mkdir foundry
+        cd foundry
+        helm pull hclcr/voltmx-dbupdate
+        helm pull hclcr/voltmx-foundry
+        tar -xzf voltmx-foundry-1.n.n.tgz
+        tar -xzf voltmx-dbupdate-1.n.n.tgz
+        mv voltmx-foundry/values.yaml  ./
+        mv voltmx-foundry/init-guids.sh  ./
+        chmod +x init-guids.sh
+        ```
+        
+        !!!note
+            The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
 
+#### Procedure
 
-3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
+- Follow the links to the upgrade procedures based on whether how you want to upgrade the Foundry components. 
+
+    !!!warning "Important"
+        - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
+        - Check all the details and complete all the applicable steps indicated in the upgrade procedures. 
+
+    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components)
+    - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components)
+<!--3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
     ./init-guids.sh --new
     ```
@@ -268,10 +277,10 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 #### 9. (Optional) Perform post installation tasks
 
-- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}
+- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}-->
 
 
 ## Additional information
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).-->
+After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
 
