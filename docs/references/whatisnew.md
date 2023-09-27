@@ -20,6 +20,9 @@ To learn more about the **early access version** of VoltScript and related compo
 ##### Design Import
 - Added Summernote Editor component in the Design Import wizard.
 
+#### VoltFormula
+-Added new API implementation in Date-Time category, List category and User environment category on the Notes Formula.
+
 ### Improvements
 
 ##### Design Import
@@ -29,6 +32,33 @@ To learn more about the **early access version** of VoltScript and related compo
 - Sort the scope list alphabetically in the view form.
 - Unconfigured forms are now hiding all the fields. 
 
+#### VoltFormula
+
+- Internal improvements on converters, prettifier and evaluator.
+- API
+  - Document Category
+    - Change `SetField` to Commit DB changes to server
+    - New default for API Context: `'all'`; for use by `GetField`/`SetField`
+    - `FileSave` enhancements
+  - Export Volt MX specific functions in API
+  - Export converter as a module
+  - Updates to formula documentation.
+  - Add method to generate Tern definitions for custom APIs.
+
+- MX Go Iris Improvements
+  - Intellisense:
+    - Allow Tern lookups for multiple levels in Open Formula.
+    - Call new API to generate tern for custom formulas.
+    - Support wildcard category search for Rosetta api intellisense search by using asterisk.
+    - Argument intellisense for Notes formula.
+    - Find the component body for a module.
+    - Open Formula arg hints.
+    - Set min-width for intellisense with category.
+  - Code Editors:
+    - Action editor improvements for formula snippet
+    - Delay formula conversion call with configurable milliseconds timer
+    - Show formula results on-demand
+    - Apply CSS changes to header in controller
 ##### First Touch
 
 -  Improved First Touch Recipes app by adding function that brings up a list of related recipes from the same cuisine when checking a recipe, and implemented general improvements to the mobile version. 
@@ -51,6 +81,7 @@ To learn more about the **early access version** of VoltScript and related compo
 ##### Domino Adapter
 - Added procedure for [generating CRUD forms for an Object Service](../howto/codegen.md).
 - Added known limitation related to deleting offline documents. 
+
 
 
 ## Volt MX Go v2.0
