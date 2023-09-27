@@ -48,7 +48,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
     The **Action Editor** opens and creates an action sequence for you to configure.
 
-4. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**
+4. On the left side of the **Action Editor**, go to **Formula** and click the **Add Formula**.
     
     ![](../assets/images/vfactioneditor.png){: style="height:80%;width:80%"}
 
@@ -65,11 +65,16 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
     !!!note
         In Formula language  window, it can detect the **Notes** and **Open** formula. You must enter the **@** character before the formula in NotesFormula and enter the **=** character before the formula in OpenFormula.
+
+        Upon typing your formula, the intellisence will appear and returns the syntax, descriptions and example of the said formula.
     
-    You can see the JavaScript code and the result.
+    You can see the JavaScript code.
 
     ![](../assets/images/vfactionformula.png){: style="height:90%;width:90%"}
 
+    You can also see the result upon clicking the **`**Results** button.
+
+    ![](../assets/images/vfjavaresults.png){: style="height:90%;width:90%"}
 4. Click **Save**.
  
 ## Use VoltFormula in a Controller module
