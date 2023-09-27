@@ -147,8 +147,8 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedures. 
 
-    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components)
-    - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components)
+    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}
+    - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components){: target="_blank"}
 <!--3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
     ./init-guids.sh --new
