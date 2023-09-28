@@ -81,5 +81,5 @@ VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} 
 - A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
 - Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
 
-To learn more about the **early access version** of VoltScript, see [HCL VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.
+To learn more about the **early access version** of VoltScript, see [VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.
 

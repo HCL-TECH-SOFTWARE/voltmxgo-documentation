@@ -27,10 +27,12 @@ Data models can be generated in an object service by Foundry administrators. For
     `Forms` and `views` are created in a Domino REST API `schema` and named by a Domino REST API `scope`.
      
 
-In addition to some Meta fields, generated data models include: 
+In addition to some Meta fields, generated data models include fields defined in the Domino REST API `schema` for the associated Domino `Form` or `View`. 
 
+<!--
 - `Form` data models include all fields defined by the associated Domino REST API `schema` and can be a subset of the fields defined by the `form` in the NSF design. 
 - `View` data models include all view columns defined in the NSF design.
+-->
 
 Foundry data models are in sync with the Domino REST API `schema` at the time of data model generation. The data models may be out of sync with the `schema`, which may lead to undesired or unexpected results, because of the following:
 
@@ -154,7 +156,7 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
 
 - Extended data types: Rich text and multi-value (array) form fields are seen as string fields in the data model. For these fields, `dominoSpecialType` and `dominoArrayComponentType` properties are added to metadata.
 
-    |For...|dominoSpecialType=|dominoArrayComponentType=|
+    |For...|dominoSpecialType|dominoArrayComponentType|
     |----|----|----|
     |RICH TEXT|richtext|not used|
     |MULTI-VALUE|array|the array type, such as string, number|
@@ -201,7 +203,8 @@ The Domino Adapter supports these OData query parameters for the GET method on f
 - `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
 
 !!!note
-    `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+    - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
+    - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`. 
 
 With `$filter`, the following canonical functions are supported:
 
@@ -214,6 +217,7 @@ With `$filter`, the following canonical functions are supported:
 |Example query|Expected result|
 |----|----|
 |`$filter=Type eq 'Dessert'`|Returns all documents whose `Type` field is equal to `Dessert`.|
+|`$filter=Name eq CNx_003dadmin`|Returns all documents whose `Name` field is equal to `CN=admin`|
 |`$top=2`|Returns the first two documents.|
 |`$skip=3`|Returns documents starting from the fourth document onwards.|
 |`$select=Name&$filter=substringof(Name,'Hot') eq true`|Returns documents with `Hot` included in the `Name` field, only returning the `Name` field.|
@@ -234,6 +238,7 @@ The Domino Adapter supports these OData query parameters for the GET method on v
     - For view-based data models, the *view selection formula* may or may not limit which documents are returned based on the documents' form name, alias name, and other OData parameter settings.
     - You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula `@Text(@Universalid)` to create a new sortable column in Domino Designer so that `$filter` and `$orderby` can be used to find a view row by UNID or to order the view by UNID.
     - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.
+    - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`.
 
 With `$filter`, the canonical function `startswith` is supported.
 
@@ -247,6 +252,7 @@ With `$filter`, the canonical function `startswith` is supported.
 |`$skip=0`|Returns rows starting from the first view entry in the view (skip zero rows), equivalent to omitting `$skip`.|
 |`$skip=5`|Returns data starting from the sixth view entry in the view.|
 |`$filter=Year eq 2021`|Returns all view entries in the view whose `Year` field is equal to `2021`.|
+|`$filter=Name eq CNx_003dadmin`|Returns all view entries in the view whose `Name` field is equal to `CN=admin`|
 |`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
