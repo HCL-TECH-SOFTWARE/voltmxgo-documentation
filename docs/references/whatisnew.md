@@ -2,7 +2,6 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
-
 ## Volt MX Go v2.0.1
 
 ### New features
@@ -15,13 +14,13 @@ The section provides information on the latest features, improvements, and resol
 - A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
 - Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
 
-To learn more about the **early access version** of VoltScript and related components, see [HCL VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.  
+To learn more about the **early access version** of VoltScript and related components, see [VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.  
 
 ##### Design Import
 - Added Summernote Editor component in the Design Import wizard.
 
-#### VoltFormula
--Added new API implementation in Date-Time category, List category and User environment category on the Notes Formula.
+##### VoltFormula
+- Added new API implementation in Date-Time category, List category, and User environment category on the Notes Formula.
 
 ### Improvements
 
@@ -32,7 +31,7 @@ To learn more about the **early access version** of VoltScript and related compo
 - Sort the scope list alphabetically in the view form.
 - Unconfigured forms are now hiding all the fields. 
 
-#### VoltFormula
+##### VoltFormula
 
 - Internal improvements on converters, prettifier and evaluator.
 - API
@@ -66,7 +65,7 @@ To learn more about the **early access version** of VoltScript and related compo
 ### Resolved issues
 
 ##### Domino Adapter
-- Using special characters as part of the search parameter for the `$filter` in the `GET` method returned errors as the regex that decoded special characters didn't decode all hex characters. An example is the `=` sign in the search parameter value `col1 eq "B=S"`. Performing a GET method with `$filter=col1 eq "B=S"` would return an error, while performing the GET method with `$filter=col1 eq Bx_003dS` would work.    
+- Using special characters as part of the search parameter for the `$filter` in the `GET` method returned errors. An example is the `=` sign in the search parameter value `col1 eq B=S`. Performing GET method with `$filter=col1 eq B=S` would return an error. You have to enter it as `$filter=col1 eq Bx_003dS`.
 - The `$FILES` field wasn't usable for the `$filter` query parameter to find documents with a specified attachment, for example, `$filter=x_0024FILES eq attName.txt`. 
 - An incorrect access token was used for an operation when multiple users performed operations simultaneously while using a shared connection instance to a Domino REST API server.  
 - Iris threw an exception on a `GET` operation on view data models when the maximum depth of the view hierarchy is more than two hierarchy levels. An example of a view hierarchy with more than two hierarchy levels is a document with a response and a response to that response. 
@@ -80,8 +79,7 @@ To learn more about the **early access version** of VoltScript and related compo
 - Added procedure for [importing First Touch into Iris](../howto/importft.md).
 ##### Domino Adapter
 - Added procedure for [generating CRUD forms for an Object Service](../howto/codegen.md).
-- Added known limitation related to deleting offline documents. 
-
+- Added details related to deleting offline documents in [Known limitations](knownlimitation.md).
 
 
 ## Volt MX Go v2.0
