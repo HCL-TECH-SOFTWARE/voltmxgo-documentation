@@ -12,8 +12,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
     helm repo update
     ```
 
-    --8<-- "helmversion.md" 
-
+    --8<-- "helmversion.md"
+    
+     
 2. Run the following command to download the chart:
 
     ```
