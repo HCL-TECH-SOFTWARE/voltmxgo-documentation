@@ -6,12 +6,15 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
 ## 1. Download the Domino REST API Helm chart
 
-1. Run the following command to make sure that the chart information for the repositories is up-to-date.
+1. Run the following command to make sure that the chart information for the repositories is up-to-date. 
 
     ```
     helm repo update
     ```
 
+    --8<-- "helmversion.md"
+    
+     
 2. Run the following command to download the chart:
 
     ```

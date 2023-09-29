@@ -1,6 +1,8 @@
 # Compatibility matrix
 
-This section provides compatibility information between different versions of Volt MX Go and Domino REST API.
+This section provides compatibility information between different versions of Volt MX Go and Domino REST API. The section also provides version compability information between Volt MX Go version and Helm chart versions.
+
+## Volt MX Go and Domino REST API version compatibility 
 
 !!!warning "Important"
     Using non-compatible versions of Volt MX Go and Domino REST API may result in operation issues. Always use compatible software versions.
@@ -9,3 +11,14 @@ This section provides compatibility information between different versions of Vo
 |----|----|
 |version 2.0|version 1.0.6|
 |version 2.0.1|version 1.0.7|
+
+## Volt MX Go and Helm chart version compatibility
+
+|Helm chart component|Volt MX Go version|Helm chart version|
+|----|----|----|
+|Foundry DB Update|2.0.0|1.2.5|
+|Foundry apps|2.0.0|1.2.5|
+|Foundry DB Update|2.0.1|1.2.7|
+|Foundry apps|2.0.1|1.2.7|
+
+

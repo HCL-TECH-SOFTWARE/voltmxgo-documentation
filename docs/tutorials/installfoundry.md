@@ -12,6 +12,8 @@ The procedures will guide you in the installation of Foundry.
     helm repo update
     ```
 
+    --8<-- "helmversion.md"
+
 2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
     ```
