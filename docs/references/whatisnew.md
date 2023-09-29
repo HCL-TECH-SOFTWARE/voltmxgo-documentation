@@ -36,18 +36,18 @@ To learn more about the **early access version** of VoltScript and related compo
 ##### VoltFormula
 
 - API
-    - Document Category API's
-        - Change `SetField` to Commit DB changes to server
+    - Document Category APIs
+        - Change `SetField` to Commit DB changes to the server
         - New default for API Context: `'all'`; for use by `GetField`/`SetField`
          - `FileSave` enhancements.
-    - Expose Volt MX specific functions in the API config category.
+    - Expose Volt MX-specific functions in the API config category.
     - Updates to API Reference Documentation. See [API reference documentation](../javadoc/index.html)
 
 
 - MX Go Iris
     - Intellisense:
         - Allow lookups for multiple levels in Open Formula.
-        - Support wildcard category search by using asterisk.
+        - Support wildcard category search by using an asterisk.
         - Type-ahead is now function arguments for formula language as well as JavaScript.
         - Find the component body for a module.
     - Code Editors:
@@ -55,8 +55,7 @@ To learn more about the **early access version** of VoltScript and related compo
         - Delay formula conversion call with configurable milliseconds timer
         - Show formula results on-demand.
     - Additional logged information about VoltFormula download and initialization status.
-    - Additional configuration settings and statics in project configuration.
-
+    - Additional configuration settings and statics in the project configuration
   
 ##### First Touch
 
@@ -76,7 +75,7 @@ To learn more about the **early access version** of VoltScript and related compo
     - Fixes the 0 seconds or minutes in @Date function.
     - Fix: documentation of arrays
     - In the API Reference, the `Compatibility` category has been removed.
-    - Fixes the use of function MROUND instead of ROUND.
+    - Fixes the use of the function MROUND instead of ROUND.
     - Fixes the  Notes @ReplaceSubstring  bug.
     - Fixes the API reference for Note `businessDays`.
 
