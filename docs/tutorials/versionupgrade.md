@@ -25,8 +25,15 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 ### For using an installer
 
+!!!warning "Important"
+    The upgrade process works by upgrading the existing database to the latest version, and installing fresh application server artifacts, such as data sources and WARs. For installation details such as hostname, database port, prefix, suffix, you must refer to the installation logs of your previous setup.
+    
+    The installer does not support automatic backups of database and other artifacts. You must clean up the existing application server artifacts and take a backup of the custom artifacts.
+    The installer also does not support rollback in case of a failure during the upgrade. To roll back, restore the database and server artifacts you backed up before upgrading.
+
 #### Before you start
 
+- Back up your databases and server artifacts. 
 - You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 - Ensure that the installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
@@ -47,6 +54,8 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Before you start
 
+!!!note
+    Make sure to back up your databases.
 <!--#### 1. Clean up your environment.
 
 1. Run the following command to delete the `mxgo` namespace, which removes all MXGO components and configurations:
@@ -65,7 +74,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     ```
 
 	!!!tip
-        You'll get the notification `No resources found in mxgo namespace` if the deletion is successful.-->
+        You'll get the notification `No resources found in mxgo namespace` if the deletion is successful.
 
 3.	Run the following command to delete the directory where you initially pulled the helm charts:
 
@@ -74,26 +83,50 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     ```
 
     !!!note
-        `~/mxgo` is the usual directory where you initially pulled the helm charts. If you used a different directory, replace `~/mxgo` in the command with the directory you used.
+        `~/mxgo` is the usual directory where you initially pulled the helm charts. If you used a different directory, replace `~/mxgo` in the command with the directory you used.-->
 
-2. Create a namespace and a temp directory for the charts.
-
-    Run the following commands to create a namespace, set the current context to **mxgo**, create a temp directory for downloading the charts, and make it the current directory:
+1. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
+2. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command: 
 
     ```
+    ./init-guids.sh --upgrade
+    ```
+
+2. Create <!--a namespace and -->a temp directory for the charts.
+
+    Run the following commands to <!--create a new namespace, set the current context to `mxgo`,-->create a temp directory for downloading the charts, and make it the current directory:
+
+    <!--```
     kubectl create namespace mxgo
     kubectl config set-context --current --namespace=mxgo
-    mkdir ~/mxgo
-    cd ~/mxgo
+    mkdir ~/mxgo201
+    cd ~/mxgo201
+    ```-->
+    ```
+    mkdir ~/mxgo201
+    cd ~/mxgo201
     ```
 
-    --8<-- "restartwindows.md"
+    In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions. 
+
+    <!----8<-- "restartwindows.md"-->
 
 3. Configure Helm to pull from HCL Container Repository.
 
     You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
-    - Run the following command to set up Helm:
+    1. Run the following command to check if `hclcr` is already defined:
+
+        ```
+        helm repo list
+        ```
+    
+    2. If `hclcr` is already defined, proceed to **Download Foundry charts** step. Otherwise, execute the following step to set up Helm. 
+
+        !!!note
+            If `hclcr` points to voltmxgo-ea, you should remove it and then proceed to the next step to set up Helm.
+
+    3. Run the following command to set up Helm:
 
         ```
         helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
@@ -147,8 +180,9 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedures. 
 
-    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}
     - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components){: target="_blank"}
+    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}
+    
 <!--3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
     ./init-guids.sh --new
