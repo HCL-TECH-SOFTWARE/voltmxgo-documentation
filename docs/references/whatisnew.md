@@ -3,7 +3,7 @@
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
 ## Volt MX Go v2.0.1
-
+*Release date: October 2, 2023*
 ### New features
 ##### Design Import
 

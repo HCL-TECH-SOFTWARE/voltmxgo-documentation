@@ -175,7 +175,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Procedure
 
-- Follow the links to the upgrade procedures based on whether how you want to upgrade the Foundry components. 
+- Follow the links to the upgrade procedures based on how you want to upgrade the Foundry components. 
 
     !!!warning "Important"
         - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
