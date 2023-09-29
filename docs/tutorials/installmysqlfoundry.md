@@ -18,6 +18,8 @@ The procedure guides you in installing MySQL for Foundry.
     helm repo update
     ```
 
+    --8<-- "helmversion.md"
+
 3. Run the following commands to install the Bitnami MySQL Helm chart to use for the Foundry database storage:
 
     ```

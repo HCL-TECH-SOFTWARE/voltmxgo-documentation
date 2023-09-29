@@ -13,7 +13,22 @@
     ```
     kubectl get pods -n mxgo
     ```
+    
+2.	Run the following commands to recreate the temporary directory to download the helm charts and make it the current directory:
 
+    ```
+    mkdir ~/mxgo201
+    cd ~/mxgo201
+    ```
+
+    In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions.
+
+## Next step
+
+Proceed to [Install Domino REST APIs](downloadhelmchart.md).
+
+
+<!--
 2.	Run the following command to delete the `mxgo` namespace, which removes all MXGO components and configurations:
 
     ```
@@ -49,14 +64,4 @@
     ```
 
     --8<-- "restartwindows.md"
-
-6.	Run the following commands to recreate the temporary directory to download the helm charts and make it the current directory:
-
-    ```
-    mkdir ~/mxgo
-    cd ~/mxgo
-    ```
-
-## Next step
-
-Proceed to [Install Domino REST APIs](downloadhelmchart.md).
+-->

@@ -54,8 +54,6 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Before you start
 
-!!!note
-    Make sure to back up your databases.
 <!--#### 1. Clean up your environment.
 
 1. Run the following command to delete the `mxgo` namespace, which removes all MXGO components and configurations:
@@ -85,14 +83,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     !!!note
         `~/mxgo` is the usual directory where you initially pulled the helm charts. If you used a different directory, replace `~/mxgo` in the command with the directory you used.-->
 
-1. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
-2. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command: 
-
-    ```
-    ./init-guids.sh --upgrade
-    ```
-
-2. Create <!--a namespace and -->a temp directory for the charts.
+1. Create <!--a namespace and -->a temp directory for the charts.
 
     Run the following commands to <!--create a new namespace, set the current context to `mxgo`,-->create a temp directory for downloading the charts, and make it the current directory:
 
@@ -111,7 +102,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
     <!----8<-- "restartwindows.md"-->
 
-3. Configure Helm to pull from HCL Container Repository.
+2. Configure Helm to pull from HCL Container Repository.
 
     You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
@@ -147,13 +138,15 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
         Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
 
-4. Download Foundry charts.
+3. Download Foundry charts.
 
     1. Run the following command to make sure that the chart information for the repositories is up-to-date.
 
         ```
         helm repo update
         ```
+
+        --8<-- "helmversion.md"
 
     2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
@@ -172,13 +165,22 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         !!!note
             The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
 
+
+4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
+5. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command: 
+
+    ```
+    ./init-guids.sh --upgrade
+    ```
+
 #### Procedure
 
 - Follow the links to the upgrade procedures based on whether how you want to upgrade the Foundry components. 
 
     !!!warning "Important"
         - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
-        - Check all the details and complete all the applicable steps indicated in the upgrade procedures. 
+        - Check all the details and complete all the applicable steps indicated in the upgrade procedures.
+        - Make sure to back up your databases.  
 
     - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components){: target="_blank"}
     - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}

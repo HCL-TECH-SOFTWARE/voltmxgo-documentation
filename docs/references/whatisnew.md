@@ -6,16 +6,6 @@ The section provides information on the latest features, improvements, and resol
 ## Volt MX Go v2.0.1
 
 ### New features
-*VoltScript* is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} scripting language for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. *VoltScript* includes:
-
-- Visual Studio Code extension for allowing developers to write code in VS Code
-- Linux Docker image for allowing Mac developers to use the VS Code extension
-- Language enhancements for improving consistency and ease of use
-- Open-source helpers, such as a library with advanced collection and map collections, a unit testing framework, and a serializer and deserializer for JSON-based object persistence
-- A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
-- Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
-
-To learn more about the **early access version** of VoltScript and related components, see [HCL VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.  
 
 ##### Design Import
 - Added Summernote Editor component in the Design Import wizard.
@@ -51,6 +41,19 @@ To learn more about the **early access version** of VoltScript and related compo
 ##### Domino Adapter
 - Added procedure for [generating CRUD forms for an Object Service](../howto/codegen.md).
 - Added known limitation related to deleting offline documents. 
+
+### VoltScript Early Access
+
+*VoltScript* is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} scripting language for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. *VoltScript* includes:
+
+- Visual Studio Code extension for allowing developers to write code in VS Code
+- Linux Docker image for allowing Mac developers to use the VS Code extension
+- Language enhancements for improving consistency and ease of use
+- Open-source helpers, such as a library with advanced collection and map collections, a unit testing framework, and a serializer and deserializer for JSON-based object persistence
+- A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
+- Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
+
+To learn more about the **early access version** of VoltScript and related components, see [HCL VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.  
 
 
 ## Volt MX Go v2.0
