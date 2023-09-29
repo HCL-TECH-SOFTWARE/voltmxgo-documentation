@@ -20,7 +20,12 @@ To learn more about the **early access version** of VoltScript and related compo
 - Added Summernote Editor component in the Design Import wizard.
 
 ##### VoltFormula
-- Added new API implementation in Date-Time category, List category, and User environment category on the Notes Formula.
+- New Notes Formula function API implementations in the Date-Time, List, and User-Environment categories.
+
+##### VoltFormula
+- New Notes Formula function API implementations in the Date-Time, List, and User-Environment categories.
+
+
 
 ### Improvements
 
@@ -33,31 +38,30 @@ To learn more about the **early access version** of VoltScript and related compo
 
 ##### VoltFormula
 
-- Internal improvements on converters, prettifier and evaluator.
 - API
-  - Document Category
+  - Document Category API's
     - Change `SetField` to Commit DB changes to server
     - New default for API Context: `'all'`; for use by `GetField`/`SetField`
-    - `FileSave` enhancements
-  - Export Volt MX specific functions in API
-  - Export converter as a module
-  - Updates to formula documentation.
-  - Add method to generate Tern definitions for custom APIs.
+    - `FileSave` enhancements.
+  - Expose Volt MX specific functions in the API config category.
+  - UUpdates to API Reference Documentation. See [API reference documentation](../javadoc/index.html)
+  - Add method to generate Tern definitions for custom APIs
 
-- MX Go Iris Improvements
+
+- MX Go Iris
   - Intellisense:
-    - Allow Tern lookups for multiple levels in Open Formula.
-    - Call new API to generate tern for custom formulas.
-    - Support wildcard category search for Rosetta api intellisense search by using asterisk.
-    - Argument intellisense for Notes formula.
-    - Find the component body for a module.
-    - Open Formula arg hints.
-    - Set min-width for intellisense with category.
+      - Allow lookups for multiple levels in Open Formula.
+      - Support wildcard category search by using asterisk.
+      - Type-ahead is now function arguments for formula language as well as JavaScript.
+      - Find the component body for a module.
   - Code Editors:
-    - Action editor improvements for formula snippet
-    - Delay formula conversion call with configurable milliseconds timer
-    - Show formula results on-demand
-    - Apply CSS changes to header in controller
+      - Action editor improvements for formula snippet
+      - Delay formula conversion call with configurable milliseconds timer
+      - Show formula results on-demand.
+  - Additional logged information about VoltFormula download and initialization status.
+  - Additional configuration settings and statics in project configuration.
+
+  
 ##### First Touch
 
 -  Improved First Touch Recipes app by adding function that brings up a list of related recipes from the same cuisine when checking a recipe, and implemented general improvements to the mobile version. 
@@ -69,6 +73,16 @@ To learn more about the **early access version** of VoltScript and related compo
 - The `$FILES` field wasn't usable for the `$filter` query parameter to find documents with a specified attachment, for example, `$filter=x_0024FILES eq attName.txt`. 
 - An incorrect access token was used for an operation when multiple users performed operations simultaneously while using a shared connection instance to a Domino REST API server.  
 - Iris threw an exception on a `GET` operation on view data models when the maximum depth of the view hierarchy is more than two hierarchy levels. An example of a view hierarchy with more than two hierarchy levels is a document with a response and a response to that response. 
+
+##### VoltFormula
+
+- API Fixes
+    - Fixes the 0 seconds or minutes in @Date function.
+    - Fix: documentation of arrays
+    - In the API Reference, the `Compatibility` category has been removed.
+    - Fixes the use of function MROUND instead of ROUND.
+    - Fixes the  Notes @ReplaceSubstring  bug.
+    - Fixes the API reference for Note `businessDays`.
 
 ### Others
 
