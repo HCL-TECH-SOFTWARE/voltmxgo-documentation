@@ -22,9 +22,6 @@ To learn more about the **early access version** of VoltScript and related compo
 ##### VoltFormula
 - New Notes Formula function API implementations in the Date-Time, List, and User-Environment categories.
 
-##### VoltFormula
-- New Notes Formula function API implementations in the Date-Time, List, and User-Environment categories.
-
 
 
 ### Improvements
@@ -39,27 +36,26 @@ To learn more about the **early access version** of VoltScript and related compo
 ##### VoltFormula
 
 - API
-  - Document Category API's
-    - Change `SetField` to Commit DB changes to server
-    - New default for API Context: `'all'`; for use by `GetField`/`SetField`
-    - `FileSave` enhancements.
-  - Expose Volt MX specific functions in the API config category.
-  - UUpdates to API Reference Documentation. See [API reference documentation](../javadoc/index.html)
-  - Add method to generate Tern definitions for custom APIs
+    - Document Category API's
+        - Change `SetField` to Commit DB changes to server
+        - New default for API Context: `'all'`; for use by `GetField`/`SetField`
+         - `FileSave` enhancements.
+    - Expose Volt MX specific functions in the API config category.
+    - Updates to API Reference Documentation. See [API reference documentation](../javadoc/index.html)
 
 
 - MX Go Iris
-  - Intellisense:
-      - Allow lookups for multiple levels in Open Formula.
-      - Support wildcard category search by using asterisk.
-      - Type-ahead is now function arguments for formula language as well as JavaScript.
-      - Find the component body for a module.
-  - Code Editors:
-      - Action editor improvements for formula snippet
-      - Delay formula conversion call with configurable milliseconds timer
-      - Show formula results on-demand.
-  - Additional logged information about VoltFormula download and initialization status.
-  - Additional configuration settings and statics in project configuration.
+    - Intellisense:
+        - Allow lookups for multiple levels in Open Formula.
+        - Support wildcard category search by using asterisk.
+        - Type-ahead is now function arguments for formula language as well as JavaScript.
+        - Find the component body for a module.
+    - Code Editors:
+        - Action editor improvements for formula snippet
+        - Delay formula conversion call with configurable milliseconds timer
+        - Show formula results on-demand.
+    - Additional logged information about VoltFormula download and initialization status.
+    - Additional configuration settings and statics in project configuration.
 
   
 ##### First Touch
