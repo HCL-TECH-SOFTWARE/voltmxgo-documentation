@@ -175,6 +175,69 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Procedure
 
+1. Update the `values.yaml` file of the target upgrade version with custom settings you want to apply from the `values.yaml` file of your current installation. 
+2. Remove the dbupdate deployment by running the following command:
+	
+    ```
+    helm uninstall dbupdate -n mxgo
+    ```
+
+3. Scale down existing Foundry deployments to zero by running the following commands:
+
+    ```
+    kubectl scale deployment --replicas=0 voltmx-foundry-console
+    kubectl scale deployment --replicas=0 voltmx-foundry-apiportal
+    kubectl scale deployment --replicas=0 voltmx-foundry-integration
+    kubectl scale deployment --replicas=0 voltmx-foundry-identity
+    ```
+
+4. Confirm that the ready count has dropped to zero by running the following command:
+
+    ```
+    kubectl get deployment 
+    ```
+
+    You should get an output similar to the following where the ready count has dropped to zero:
+
+    ```{ .yaml .no-copy }
+    NAME                         READY   UP-TO-DATE   AVAILABLE   AGE
+    drapi                        1/1     1            1           5h40m
+    voltmx-foundry-console       0/0     0            0           51m
+    voltmx-foundry-identity      0/0     0            0           51m
+    voltmx-foundry-integration   0/0     0            0           51m
+    voltmx-foundry-apiportal     0/0     0            0           51m
+    ```
+
+5. Confirm the removal of the pods by running the following command:
+
+    ```
+    kubectl get pods
+    ```
+
+    You should get an output similar to the following where the Foundry pods have been removed:
+
+    ```{ .yaml .no-copy}
+    NAME                      READY   STATUS      RESTARTS   AGE
+    drapi-6949c45b8-wghbz     3/3     Running     0          5h40m
+    mysql-0                   1/1     Running     0          5h36m
+    ```
+
+6. Within the directory containing the new Foundry charts, upgrade the databases by running the following command:
+
+    ```
+    helm install dbupdate voltmx-dbupdate -f values.yaml
+    ```
+
+7. After a successful database upgrade, upgrade the Foundry applications by running the following command:
+
+    ```
+    helm upgrade foundry voltmx-foundry -f values.yaml
+    ```
+
+    This updates the deployment configuration and spins up new pods to run the latest version of the applications.
+
+
+<!--
 - Follow the links to the upgrade procedures based on how you want to upgrade the Foundry components. 
 
     !!!warning "Important"
@@ -183,7 +246,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         - Make sure to back up your databases.  
 
     - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components){: target="_blank"}
-    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}
+    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}-->
     
 <!--3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
