@@ -27,13 +27,13 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 !!!warning "Important"
     The upgrade process works by upgrading the existing database to the latest version, and installing fresh application server artifacts, such as data sources and WARs. For installation details such as hostname, database port, prefix, suffix, you must refer to the installation logs of your previous setup.
-    
+
     The installer does not support automatic backups of database and other artifacts. You must clean up the existing application server artifacts and take a backup of the custom artifacts.
     The installer also does not support rollback in case of a failure during the upgrade. To roll back, restore the database and server artifacts you backed up before upgrading.
 
 #### Before you start
 
-- Back up your databases and server artifacts. 
+- Back up your databases and server artifacts.
 - You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 - Ensure that the installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
@@ -98,7 +98,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     cd ~/mxgo201
     ```
 
-    In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions. 
+    In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions.
 
     <!----8<-- "restartwindows.md"-->
 
@@ -111,8 +111,8 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         ```
         helm repo list
         ```
-    
-    2. If `hclcr` is already defined, proceed to **Download Foundry charts** step. Otherwise, execute the following step to set up Helm. 
+
+    2. If `hclcr` is already defined, proceed to **Download Foundry charts** step. Otherwise, execute the following step to set up Helm.
 
         !!!note
             If `hclcr` points to voltmxgo-ea, you should remove it and then proceed to the next step to set up Helm.
@@ -161,23 +161,23 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         mv voltmx-foundry/init-guids.sh  ./
         chmod +x init-guids.sh
         ```
-        
+
         !!!note
             The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
 
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
-5. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command: 
+5. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command:
 
     ```
-    ./init-guids.sh --upgrade
+    ./init-guids.sh --upgrade ./
     ```
 
 #### Procedure
 
-1. Update the `values.yaml` file of the target upgrade version with custom settings you want to apply from the `values.yaml` file of your current installation. 
+1. Update the `values.yaml` file of the target upgrade version with custom settings you want to apply from the `values.yaml` file of your current installation.
 2. Remove the dbupdate deployment by running the following command:
-	
+
     ```
     helm uninstall dbupdate -n mxgo
     ```
@@ -194,7 +194,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 4. Confirm that the ready count has dropped to zero by running the following command:
 
     ```
-    kubectl get deployment 
+    kubectl get deployment
     ```
 
     You should get an output similar to the following where the ready count has dropped to zero:
@@ -238,16 +238,16 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 
 <!--
-- Follow the links to the upgrade procedures based on how you want to upgrade the Foundry components. 
+- Follow the links to the upgrade procedures based on how you want to upgrade the Foundry components.
 
     !!!warning "Important"
         - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedures.
-        - Make sure to back up your databases.  
+        - Make sure to back up your databases.
 
     - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components){: target="_blank"}
     - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}-->
-    
+
 <!--3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
     ./init-guids.sh --new
