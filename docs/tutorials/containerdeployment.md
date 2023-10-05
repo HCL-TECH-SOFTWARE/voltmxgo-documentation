@@ -36,9 +36,7 @@ Follow the order for completing the procedures according to your preferred deplo
 ## For upgrading an existing installation of Volt MX Go
 
 1. [Complete preparatory procedure for upgrading an existing installation of Volt MX Go](prereqnew.md)
-2. [Install Domino REST API](downloadhelmchart.md)
-3. [Install MySql for Foundry](installmysqlfoundry.md)
-4. [Install Foundry](installfoundry.md)
+2. [Upgrade Volt MX Go server components](versionupgrade1.md)
 
 ## For moving from early access version to GA version of Volt MX Go
 
@@ -56,4 +54,4 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 
 See [Helm and Kubectl commands](../references/kubecheatsheet.md) for more information.
 
-After completing the relevant procedures, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the relevant procedures, proceed to [Install and upgrade Volt MX Go Iris](installiris.md).
