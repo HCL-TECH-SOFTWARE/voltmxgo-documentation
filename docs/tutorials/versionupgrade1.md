@@ -83,7 +83,7 @@
     ./init-guids.sh --upgrade ./
     ```
 
---8<-- "versionupgrade.md"
+--8<-- "verupgrade.md"
 
 ## Additional information
 

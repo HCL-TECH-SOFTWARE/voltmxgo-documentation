@@ -138,7 +138,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Procedure
 
---8<-- "versionupgrade.md"
+--8<-- "verupgrade.md"
 
 ## Additional information
 
