@@ -23,9 +23,45 @@
 
     In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions.
 
+3. Configure Helm to pull from HCL Container Repository.
+
+    You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+
+    1. Run the following command to check if `hclcr` is already defined:
+
+        ```
+        helm repo list
+        ```
+
+    2. If `hclcr` is already defined, proceed to [Next step](#next-step). Otherwise, execute the following step to set up Helm.
+
+        !!!note
+            If `hclcr` points to voltmxgo-ea, you should remove it and then proceed to the next step to set up Helm.
+
+    3. Run the following command to set up Helm:
+
+        ```
+        helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
+        ```
+
+        !!!example
+             `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
+
+
+        !!!note
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+
+        If you get an error message similar to the following:
+
+        ``` { .yaml .no-copy }
+        Error: looks like https://hclcr.io/chartrepo/voltmxgo is not a valid chart repository or cannot be reached: failed to fetch https://hclcr.io/chartrepo/voltmxgo/index.yaml : 401 Unauthorized
+        ```
+
+        Most likely, you haven't specified your username or authentication token correctly. Make sure the case and content matches exactly what's listed on the HCL Container Repository site and retry.
+
 ## Next step
 
-Proceed to [Install Domino REST APIs](downloadhelmchart.md).
+Proceed to [Upgrade Volt MX Go server components](versionupgrade1.md).
 
 
 <!--

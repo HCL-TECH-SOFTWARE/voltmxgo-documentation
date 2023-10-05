@@ -11,7 +11,7 @@ nav:
         #- Complete prerequisite procedures:
         #    - prerequisite.md
         #    - portaldownload.md
-        - Install Volt MX Go in a development or test only environment:
+        - Install and upgrade Volt MX Go in a development or test only environment:
             - containerdeployment.md
             - obtainauthenticationtoken.md
             - Deploy Kubernetes:
@@ -26,8 +26,8 @@ nav:
             - Install Domino REST API: downloadhelmchart.md
             - Install MySQL for Foundry: installmysqlfoundry.md
             - Install Foundry: installfoundry.md
-
-        - Install Volt MX Go Iris: installiris.md
+            - Upgrade Volt MX Go server components: versionupgrade1.md
+        - Install and upgrade Volt MX Go Iris: installiris.md
     - firsttouch.md
     - adaptertutorial.md
     - designimport.md

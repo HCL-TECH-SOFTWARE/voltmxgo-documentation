@@ -19,4 +19,4 @@ To install and upgrade the server components of Volt MX Go, proceed to [Install 
 
 To install and upgrade the server components of Volt MX Go in a development or test only environment, proceed to [Install and upgrade Volt MX Go in development or test only environment](containerdeployment.md).
 
-After installing the server components, proceed to [Install Volt MX Go Iris](installiris.md). 
+After installing the server components, proceed to [Install and upgrade Volt MX Go Iris](installiris.md). 

@@ -54,53 +54,16 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Before you start
 
-<!--#### 1. Clean up your environment.
+1. Create a temp directory for the charts.
 
-1. Run the following command to delete the `mxgo` namespace, which removes all MXGO components and configurations:
+    Run the following commands to create a temp directory for downloading the charts, and make it the current directory:
 
-    ```
-    kubectl delete namespace mxgo
-    ```
-
-    !!!note
-        Deletion processing time may take a few minutes as Domino, Foundry, MySQL, and associated configurations are being removed.
-
-2.	After completing the namespace deletion, run the following command to make sure the deletion of the namespace:
-
-    ```
-    kubectl get all -n mxgo
-    ```
-
-	!!!tip
-        You'll get the notification `No resources found in mxgo namespace` if the deletion is successful.
-
-3.	Run the following command to delete the directory where you initially pulled the helm charts:
-
-    ```
-    rm -rf ~/mxgo/
-    ```
-
-    !!!note
-        `~/mxgo` is the usual directory where you initially pulled the helm charts. If you used a different directory, replace `~/mxgo` in the command with the directory you used.-->
-
-1. Create <!--a namespace and -->a temp directory for the charts.
-
-    Run the following commands to <!--create a new namespace, set the current context to `mxgo`,-->create a temp directory for downloading the charts, and make it the current directory:
-
-    <!--```
-    kubectl create namespace mxgo
-    kubectl config set-context --current --namespace=mxgo
-    mkdir ~/mxgo201
-    cd ~/mxgo201
-    ```-->
     ```
     mkdir ~/mxgo201
     cd ~/mxgo201
     ```
 
     In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions.
-
-    <!----8<-- "restartwindows.md"-->
 
 2. Configure Helm to pull from HCL Container Repository.
 
@@ -175,211 +138,9 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Procedure
 
-1. Update the `values.yaml` file of the target upgrade version with custom settings you want to apply from the `values.yaml` file of your current installation.
-2. Remove the dbupdate deployment by running the following command:
-
-    ```
-    helm uninstall dbupdate -n mxgo
-    ```
-
-3. Scale down existing Foundry deployments to zero by running the following commands:
-
-    ```
-    kubectl scale deployment --replicas=0 voltmx-foundry-console
-    kubectl scale deployment --replicas=0 voltmx-foundry-apiportal
-    kubectl scale deployment --replicas=0 voltmx-foundry-integration
-    kubectl scale deployment --replicas=0 voltmx-foundry-identity
-    ```
-
-4. Confirm that the ready count has dropped to zero by running the following command:
-
-    ```
-    kubectl get deployment
-    ```
-
-    You should get an output similar to the following where the ready count has dropped to zero:
-
-    ```{ .yaml .no-copy }
-    NAME                         READY   UP-TO-DATE   AVAILABLE   AGE
-    drapi                        1/1     1            1           5h40m
-    voltmx-foundry-console       0/0     0            0           51m
-    voltmx-foundry-identity      0/0     0            0           51m
-    voltmx-foundry-integration   0/0     0            0           51m
-    voltmx-foundry-apiportal     0/0     0            0           51m
-    ```
-
-5. Confirm the removal of the pods by running the following command:
-
-    ```
-    kubectl get pods
-    ```
-
-    You should get an output similar to the following where the Foundry pods have been removed:
-
-    ```{ .yaml .no-copy}
-    NAME                      READY   STATUS      RESTARTS   AGE
-    drapi-6949c45b8-wghbz     3/3     Running     0          5h40m
-    mysql-0                   1/1     Running     0          5h36m
-    ```
-
-6. Within the directory containing the new Foundry charts, upgrade the databases by running the following command:
-
-    ```
-    helm install dbupdate voltmx-dbupdate -f values.yaml
-    ```
-
-7. After a successful database upgrade, upgrade the Foundry applications by running the following command:
-
-    ```
-    helm upgrade foundry voltmx-foundry -f values.yaml
-    ```
-
-    This updates the deployment configuration and spins up new pods to run the latest version of the applications.
-
-
-<!--
-- Follow the links to the upgrade procedures based on how you want to upgrade the Foundry components.
-
-    !!!warning "Important"
-        - The following links direct you to upgrade procedures instructing to download the upgrade version of the Helm charts from the HCL Software License & Download Portal. **Disregard that step and follow the steps in *Before you start*.**
-        - Check all the details and complete all the applicable steps indicated in the upgrade procedures.
-        - Make sure to back up your databases.
-
-    - [For upgrading all Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components){: target="_blank"}
-    - [For upgrading individual Foundry components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components){: target="_blank"}-->
-
-<!--3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
-    ```
-    ./init-guids.sh --new
-    ```
-
-4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
-
-    ```{ .yaml .no-copy }
-    imageCredentials:
-      username: your-email
-      password: your-authentication-token
-    ```
-
-    !!!note
-        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
-
-5. Locate the following line in the file and add your Foundry server domain name setting:
-
-    ```{ .yaml .no-copy }
-    serverDomainName:
-    ```
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
-
-6. Locate the following lines in the file and add your Foundry database details:
-
-    ```{ .yaml .no-copy }
-    ### Database details ###
-
-    # Database type which you want to use for Volt MX Foundry (String)
-    # Possible values:
-    #   "mysql" for MySQL DB server
-    #   "sqlserver" for Azure MSSQL or SQLServer
-    #   "oracle" for Oracle DB server
-    dbType:
-
-    # Database server hostname (String)
-    dbHost:
-
-    # Database server port number (Number). This can be empty for cloud managed service.
-    dbPort:
-
-    # Database User and password - you may set a single general userid/password here,
-    # or you may set specific userid/password combinations below.  If set, the
-    # specific values override the general dbUser/dbPass.
-
-    # Database server user (String)
-    dbUser:
-
-    # Database server password (String) enclosed in quotes
-    dbPass:
-    ```
-
-7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
-
-8. Save the file and exit.
-
-#### 5. (Optional) Perform advanced scenario procedures
-
-- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"}
-
-
-#### 6. Deploy Foundry's dbupdate to create the databases
-
-1. Run the following Helm install command to deploy Foundry's dbupdate:
-
-    ```
-    helm install dbupdate voltmx-dbupdate -f values.yaml
-    ```
-
-2. Run the following command to verify deployment completion of Foundry's dbupdate:
-
-    ```
-    kubectl get pods -o wide -w
-    ```
-
-    The output should be similar to the following and will update over time:
-
-    ```{ .yaml .no-copy }
-    NAME                            READY   STATUS      RESTARTS   AGE
-    domino-drapi-6d755b68df-2sfhb   3/3     Running     0          6m13s
-    mysql-0                         1/1     Running     0          2m37s
-    foundry-db-update-dzdrx         1/1     Running     0          24s
-    foundry-db-update-dzdrx         0/1     Completed   0          65s
-    foundry-db-update-dzdrx         0/1     Completed   0          67s
-    foundry-db-update-dzdrx         0/1     Completed   0          68s
-    ```
-
-3. Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created. Press `Ctrl-c` to stop the kubectl command.
-
-#### 7. Install Foundry
-
-1. Run the following Helm install command to deploy Foundry:
-
-    ```
-    helm install foundry voltmx-foundry -f values.yaml
-    ```
-
-2. Run the following command to verify when the Foundry install is ready:
-
-    ```
-    kubectl get pods -o wide -w
-    ```
-
-    The output should be similar to the following and will update over time:
-
-    ![output](../assets/images/output1.png)
-
-
-3. Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.
-
-**Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
-
-!!!note
-    - If you defined a different Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
-    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
-    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
-    - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
-
-
-#### 8. (Optional) Perform monitoring procedures
-
-- Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank"}.
-
-!!!note
-    The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
-
-#### 9. (Optional) Perform post installation tasks
-
-- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}-->
-
+--8<-- "verupgrade.md"
 
 ## Additional information
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installiris.md).
 
