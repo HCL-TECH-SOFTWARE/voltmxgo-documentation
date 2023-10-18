@@ -1,6 +1,8 @@
-# Update FirstTouchRecipes.nsf database
+# Update FirstTouchRecipes.nsf 
 
 ## About this procedure 
+
+--8<-- "devtestenvironment.md"
 
 The procedure guides you in manually updating your Domino container if you obtain a new version of the Notes database *FirstTouchRecipes.nsf*.
 
@@ -126,4 +128,4 @@ The procedure guides you in manually updating your Domino container if you obtai
     [hcl@drapi-6949c45b8-wghbz ~]$
     ```
 
-You should now be set to re-install the First Touch Foundry application by following the instructions starting at "Log in to Volt MX Go Foundry" at http://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/firsttouch.html
+You are now set to re-install the First Touch Recipe Catalog application in Foundry by following the [Log in to Volt MX Go Foundry](../tutorials/firsttouch.md#log-in-to-volt-mx-go-foundry) instructions. 
