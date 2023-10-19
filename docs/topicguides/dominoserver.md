@@ -8,16 +8,16 @@ The [Volt MX Go installation in a development or test only environment](../tutor
 
 When you deploy the Volt MX Go Domino REST API Helm chart, you instruct Kubernetes to create a [pod](https://kubernetes.io/docs/concepts/workloads/pods/){: target="_blank" rel="noopener noreferrer"}<!--that you can think of as a small lightweight Virtual Machine-->. The Helm chart provides the specifics for what program (Image) will run when the pod starts, the details around what ports to expose, such as port 80 for Domino HTTP server, port 8880 for Domino REST API, and the memory and CPU allocations among other things.
 
-The chart also tells Kubernetes about [liveness and readiness probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/){: target="_blank" rel="noopener noreferrer"}. Kubernetes runs these probes periodically to determine container health. If a readiness probe fails many times, the container is marked as unready and won't receive any HTTP traffic. If a liveness probe fails many times, Kubernetes assumes the container has unrecoverable errors and then kills and restarts the container. 
+The chart also tells Kubernetes about [liveness and readiness probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/){: target="_blank" rel="noopener noreferrer"}. Kubernetes runs these probes periodically to determine container health. If a readiness probe fails more than a specified threshold, the container is marked as unready and won't receive any HTTP traffic. If a liveness probe fails many times, Kubernetes assumes the container has unrecoverable errors and then kills and restarts the container. 
 
-These probes are important to understand as some operations require you to stop and restart Domino. If Domino fails to answer liveness probes, such as when Domino is stopped, Kubernetes may remove the container and start a new one. By default, this period is 10 minutes for the Domino container.
+These probes are important to understand as some operations require you to stop and restart Domino. If Domino fails to answer liveness probes more than the specified threshold, such as when Domino is stopped, Kubernetes may remove the container and start a new one. By default, this period is 10 minutes for the Domino container.
 
 The Domino data directory resides in `/local/notesdata` within the Domino container. This directory is actually a mount point for a persistent, initially empty file system created by Kubernetes.
 
 !!!tip
     For more information, see [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){: target="_blank" rel="noopener noreferrer"}.
 
-It's used to store the Domino server configuration, Notes databases, templates, and other details specific to the Domino server instance. During initial startup, Domino sees the empty directory and triggers the Domino One Touch setup process to populate the directory with databases, templates, and configuration files. Logs are in `/local/notesdata/IBM_TECHNICAL_SUPPORT/`.
+The directory is used to store the Domino server configuration, Notes databases, templates, and other details specific to the Domino server instance. During initial startup, Domino sees the empty directory and triggers the Domino One Touch setup process to populate the directory with databases, templates, and configuration files. Logs are in `/local/notesdata/IBM_TECHNICAL_SUPPORT/`.
 
 Domino runs under the Unix user ID of `hcl` with primary group of `root`.
 
@@ -51,7 +51,7 @@ Kubernetes uses pods as its fundamental scheduling unit because they provide a w
 
 ## Pod names
 
-Pods have names that usually consist of developer defined prefix and runtime defined unique suffix. Together they make each pod name unique. Because of this, you often have to get a list of the running pods to determine the exact name before taking action on the pod. Use the kubectl command [`get pods`](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get){: target="_blank" rel="noopener noreferrer"} as shown here:
+Pods have names that usually consist of developer defined prefix and runtime defined unique suffix. Together, they make each pod name unique. Because of this, you often have to get a list of the running pods to determine the exact name before taking action on the pod. Use the kubectl command [`get pods`](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get){: target="_blank" rel="noopener noreferrer"} as shown here:
 
 ```{ .yaml .no-copy }
 kubectl get pods -n mxgo
@@ -70,6 +70,9 @@ voltmx-foundry-identity-85f9854f8b-n6b2d     1/1     Running     0          7d22
 voltmx-foundry-console-664c75c6b5-8lm6v      1/1     Running     0          7d22h
 ```
 Locate the entry that starts with "drapi" and you can see the full pod name is **drapi-6949c45b8-wghbz**.
+
+!!!note
+    If the pod is restarted for any reason, the pod will have a new name, so you need to get the list of running pods to know the exact name.
 
 ## Copy files into and out of Domino container
 
@@ -148,7 +151,7 @@ To close console, always type 'close' or 'stop'.
 [000588:000002-00007FF2B92FC740] 10/09/2023 06:45:42 PM  Admin Process: Searching Administration Requests database
 ```
 
-Once in the console, you can run other Domino console command such as `show tasks`:
+Once in the console, you can run other Domino console commands such as `show tasks`:
 
 ```{ .yaml .no-copy }
 show tasks

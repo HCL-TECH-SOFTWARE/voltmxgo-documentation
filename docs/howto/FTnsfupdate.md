@@ -8,7 +8,7 @@ The procedure guides you in manually updating your Domino container if you obtai
 
 ## Procedure
 
-1. [Uninstall the First Touch](uninstallfirsttouch.md). 
+1. [Uninstall the First Touch app](uninstallfirsttouch.md) from Foundry. 
 2. Identify the name of the Domino container by running the following command:
 
     ```
@@ -96,7 +96,7 @@ The procedure guides you in manually updating your Domino container if you obtai
     [hcl@drapi-6949c45b8-wghbz ~]$
     ```
 
-7.  Rename of original First Touch database and copy in the new database file:
+7.  Rename original First Touch database and copy in the new database file:
 
     ```
     mv /local/notesdata/FirstTouchRecipes.nsf  /local/notesdata/FirstTouchRecipes.nsf.original
@@ -105,7 +105,7 @@ The procedure guides you in manually updating your Domino container if you obtai
     mv /tmp/FirstTouchRecipes.nsf  /local/notesdata/FirstTouchRecipes.nsf
     ```
 
-8.   Restart Domino by running the following command:
+8.  Restart Domino by running the following command:
     
     ```
     rc_domino_script start
