@@ -124,6 +124,10 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
 3. Once you see the READY column showing 3/3, press `Ctrl-c` to cancel the command.
 
+## Additional information
+
+- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/FTnsfupdate.md).
+- To know more about Domino server processes within a Domino container, see [Interacting with Domino server process within Domino container](../topicguides/dominoserver.md).
 ## Next step
 
 Proceed to [Install MySql for Foundry](installmysqlfoundry.md).
