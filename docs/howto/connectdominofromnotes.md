@@ -2,6 +2,8 @@
 
 ## About this procedure
 
+--8<-- "devtestenvironment.md"
+
 The procedure guides you in connecting to the Domino server from your Notes client. If you installed Domino using the MXGO Domino Helm chart [](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) you should configure a Server Connection document to enable connecting to Domino from your Notes client. Follow the steps below.
 
 ## Before you start

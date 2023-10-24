@@ -4,6 +4,8 @@
 
 ## About this procedure
 
+--8<-- "devtestenvironment.md"
+
 The procedure guides you in configuring Kubernetes Ingress for Domino REST API. Ingress provides and manages external access to the services in your Kubernetes cluster. It's required to enable browsers to access the applications and back-end services to communicate with each other. 
 
 ## Before you start
