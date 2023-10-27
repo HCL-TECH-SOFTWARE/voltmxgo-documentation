@@ -56,14 +56,21 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 1. Create a temp directory for the charts.
 
-    Run the following commands to create a temp directory for downloading the charts, and make it the current directory:
+    Run the following to create a temp directory for downloading the charts, and make it the current directory:
 
+    **Command:**
+    ```
+    mkdir ~/<new directory name>
+    cd ~/<new directory name>
+    ```
+
+    **Example:**
     ```
     mkdir ~/mxgo201
     cd ~/mxgo201
     ```
 
-    In the example above, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions.
+    In the example, you create a new directory `mxgo201` that will contain the new helm charts. Creating the new directory allows you to differentiate and compare the helm charts from different MX Go versions.
 
 2. Configure Helm to pull from HCL Container Repository.
 

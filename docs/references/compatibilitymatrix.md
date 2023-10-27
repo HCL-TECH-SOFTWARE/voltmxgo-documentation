@@ -1,6 +1,6 @@
 # Compatibility matrix
 
-This section provides compatibility information between different versions of Volt MX Go and Domino REST API. The section also provides version compability information between Volt MX Go version and Helm chart versions.
+This section provides compatibility information between different versions of Volt MX Go and Domino REST API. The section also provides version compatibility information between Volt MX Go version and Helm chart versions.
 
 ## Volt MX Go and Domino REST API version compatibility 
 
@@ -11,6 +11,7 @@ This section provides compatibility information between different versions of Vo
 |----|----|
 |version 2.0|version 1.0.6|
 |version 2.0.1|version 1.0.7|
+|version 2.0.1|version 1.0.8|
 
 ## Volt MX Go and Helm chart version compatibility
 

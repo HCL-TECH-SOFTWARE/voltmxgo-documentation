@@ -4,7 +4,7 @@ The section provides information on the latest features, improvements, and resol
 
 <!--
 ## Volt MX Go v2.0.2
-*Release date: November , 2023*
+*Release date: November 16, 2023*
 ### New features
 
 ### Improvements
