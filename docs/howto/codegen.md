@@ -53,27 +53,6 @@ The procedure guides you in generating CRUD forms and associated form-navigation
 
     3. Click **Project Services** on the **Data & Services** tab and see the connections to the Foundry data.
 
-5.	(**Optional**) Import Summernote Editor.
-
-    !!!note
-        - Perform this step if the forms you’ll generate have Rich Text fields. 
-        - Summernote Editor is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris.
-        - For more information, see [Summernote Editor](../references/summernotewidget.md).
-
-    1. On the top menu of Volt MX Go Iris, select **Project** &rarr; **Import** &rarr; **Summernote Editor**.
-
-        ![Select form](../assets/images/snimport.png){: style="height:80%;width:80%"}  
-        
-        An **Import Component** dialog opens and shows the import progress.
-
-        ![Select form](../assets/images/snimportcomp.png){: style="height:80%;width:80%"} 
-
-    2. Wait for the import completion. Once completed, the **Import Component** dialog shows the “Component imported successfully” message.
-
-        ![Select form](../assets/images/snimportsuccess.png){: style="height:80%;width:80%"}
-
-    3. Click **Close**.
-
 6. Generate forms.
     1. Go to the **Data & Services** tab, and expand **Project Services**.  
     2. Right-click the Object Service, and then select **Generate Forms** &rarr; **Responsive Web**.
@@ -81,6 +60,9 @@ The procedure guides you in generating CRUD forms and associated form-navigation
     Using the *First Touch Recipes* app as an example, right-click the **FirstTouchRecipesObj** and then select **Generate Forms** &rarr; **Responsive Web**. 
 
     ![Generate Form](../assets/images/genform.png){: style="height:80%;width:80%"}
+
+!!!note
+    **Summernote Editor** is automatically applied on Rich Text fields when generating entry forms (CREATE/UPDATE) from the data panel. **Summernote Editor** is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a Rich Text field in a form in Iris. For more information, see [Summernote Editor](../references/summernotewidget.md).
 
 ## Expected result
 
