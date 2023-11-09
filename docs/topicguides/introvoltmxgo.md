@@ -14,7 +14,7 @@ Volt MX Go includes the following components:
 - VoltFormula
 - Domino Adapter
 - Domino REST API
-<!--- VoltScript-->
+- VoltScript
 
 ![Volt MX Go](../assets/images/VoltMXGoDiagram.png)
 

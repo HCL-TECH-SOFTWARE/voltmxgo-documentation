@@ -274,7 +274,7 @@ You may perform the following binary operations:
     - The `field` parameter is optional. If the attachment you wish to update is associated with a field in the Domino database, include the field in the update request to remove the attachment.
 - deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - The file is deleted from the Domino database and its name is removed from the `$FILES` field.
-    - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to emove the attachment
+    - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to remove the attachment.
 
 !!!warning "Important"
     - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat){: target="_blank"} or updating `integration.resourceMemoryLimit` in `values.yaml` for Foundry on supported Kubernetes platform.
