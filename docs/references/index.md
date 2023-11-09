@@ -45,6 +45,10 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 - Provides documentation and more information about the **early access version** of VoltScript and related components.
 
+[Guide to documentation](docguide.md)
+
+- Provides information on effectively using the Volt MX Go documentation.
+
 ## Known limitations
 
 List of [known limitations](knownlimitation.md) of Volt MX Go.
@@ -61,3 +65,4 @@ To learn about identified issues and their corresponding workarounds and resolut
 ## Summernote Editor
 
 [Summernote Editor](summernotewidget.md) enables you to add a WYSIWYG editor to your form for handling rich text.
+
