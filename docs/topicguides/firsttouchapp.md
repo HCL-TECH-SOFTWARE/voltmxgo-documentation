@@ -6,8 +6,8 @@ The First Touch Recipe Catalog app is built with Volt MX Go to demonstrate how a
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
 
-!!!tip
-    Clicking **Recipe Catalog** at the lower right corner opens the **First Touch Recipe Catalog** dialog that shows the app description, app ID and version, and copyright information.
+<!--!!!tip
+    Clicking **Recipe Catalog** at the lower right corner opens the **First Touch Recipe Catalog** dialog that shows the app description, app ID and version, and copyright information.-->
 
 ## Database file
 
