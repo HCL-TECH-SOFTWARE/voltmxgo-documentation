@@ -2,10 +2,8 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
-
 ## Volt MX Go v2.0.2
 *Release date: November 16, 2023*
-### New features
 
 ### Improvements
 
@@ -14,11 +12,7 @@ The section provides information on the latest features, improvements, and resol
 
 ##### Domino Adapter 
 
-- Summernote Editor is automatically applied on Rich Text fields when generating entry forms (CREATE/UPDATE) from the data panel. 
-
-##### First Touch
-
-- The First Touch Recipe Catalog app now has an **About** dialog that shows the app description, app ID and version, and copyright information when opened. 
+- Summernote Editor is automatically applied on Rich Text fields of CREATE and UPDATE forms when generating CRUD forms for Object Service.
 
 ### Resolved issues
 
@@ -28,7 +22,7 @@ The section provides information on the latest features, improvements, and resol
 
 ### Others
 
-
+- Updated [Compatibility matrix](compatibilitymatrix.md).
 
 ## Volt MX Go v2.0.1
 *Release date: October 2, 2023*
