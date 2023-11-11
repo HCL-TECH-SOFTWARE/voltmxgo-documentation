@@ -26,7 +26,9 @@
 
     -  When you configure the `schema`, open Configured Database Form and set the **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.See [Changes in Configuration Forms of Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#configure-a-form)
 
-    -  When you configure the `schema`, open Database Form (configured) and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in the design import.
+    -  When you configure the `schema`, open Database Form (configured) and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in the design import. 
+
+    - When you configure the `schema`, open the Database Form (configured) and include the `$Files` field to capture the uploading and downloading of files in the Design Import.
 
     -  When you configure the `schema`, open Database Views and set the Status to active.
 
@@ -60,19 +62,18 @@
 
     ![Log in screen](../assets/images/dilogin.png)
 
-    
+!!!note
+    This tutorial is for Mobile app and Responsive Desktop
+
 ## Create a new project
     
-!!!note
-    Design Import currently only supports projects for desktop web apps. Before importing a Domino Application, select or create a project set for the Responsive Web desktop.
         
-
 1. On the top menu, **Project** &rarr; **New Project**.
-2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
+2. On the **What do you want to start with now?** dialog, select **Web App** or **Native App** and click **Next**.
 
     ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
-3. On the **Which device size do you want to start building for first?** dialog, select Desktop and click **Next**.
+3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App or **Mobile** for Native App and click **Next**.
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
@@ -83,6 +84,7 @@
 
     ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
+See this link for [**Mobile App new project**]()
 
 ## Import a Domino Application using the new Foundry app
 
@@ -232,12 +234,23 @@
 1. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
     ![Screenshot](../assets/images/dinewview.png)
 
-2. Click **Add New**.
-3. Fill in the fields and click **Add**. This adds the data to the `.nsf` file.
+2. Fill in the fields.
+3. Click **Select Files** to upload a file. (The file upload will appear only if the schema included the `$Files` field in the configuration of DRAPI)
+
+    1. Select the file you want to upload. You can more than one file to upload. 
+    
+        !!!notes
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
+
+    2. Click **Open**. If the file is pre-existing, a dialogue prompt will appear with the option to overwrite it.
+    
+4. Click **Add**. This adds the data to the `.nsf` file.
 
     ![Screenshot](../assets/images/dinewview1.png)
 
-4. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+### Viewing data
+
+1. In the Dashboard, click the **Views** , click the views or table (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
@@ -245,7 +258,11 @@
 
     ![Screenshot](../assets/images/dilist.png)
 
-    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+    
+2. Select the **Download All Attachments** link. Files will be downloaded.
+
+
+Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
    <!-- ![Screenshot](../assets/images/didesigner.png) -->
 
@@ -271,15 +288,24 @@
 
     ![Screenshot](../assets/images/dipressedit.png)
 
-4. Edit the field(s) that you want to update and click **Save**.
+4. Edit the field(s) that you want to update.
     ![Screenshot](../assets/images/dieditsave.png)
 
 
-    You can see in  **Dashboard/Detail** page, the updated entry.
 
-    ![Screenshot](../assets/images/diupdated.png)
+5. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button.
 
-    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+    1. Select the file you want to upload. You can more than one file to upload. 
+    
+        !!!notes
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
+
+    2. Click **Open**. If the file is pre-existing, a dialogue prompt will appear with the option to overwrite it.
+
+6. Click **Save**.
+        ![Screenshot](../assets/images/diupdated.png)
+
+Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
 ### Delete entry
 
