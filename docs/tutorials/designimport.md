@@ -77,14 +77,14 @@
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
-4. Enter your **Project Name** and click **Create**.    
+4. Enter your **Project Name** and click **Create**.  
+  
     ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
 5. You can see your project name in the upper-left corner of the Iris canvass.
 
     ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
-See this link for [**Mobile App new project**]()
 
 ## Import a Domino Application using the new Foundry app
 
