@@ -19,7 +19,7 @@ This procedure describes how to configure the mobile app browser before  buildin
 
     ![](../assets/images/didesignaction.png)
 
-6. The Action Editor will open. Click the **Invoke Service**.
+6. The **Action Editor** will open. Click the **Invoke Service**.
 
     !!!note
         The default view is in Diagram View.   Make sure to click on the Diagram view tab if it's not already selected.
