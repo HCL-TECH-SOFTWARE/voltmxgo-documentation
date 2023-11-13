@@ -16,13 +16,13 @@ The section provides information on the latest features, improvements, and resol
 
 ##### Design Import
 
-- The DRAPI now allows for configuration of the $FILES field, enabling the uploading and downloading of attachments in Domino applications through Design Import. 
-- The import of domino applications now includes support for mobile and tablets. 
+- Uploading and downloading attachments in Domino applications are now enabled through Design Import as Domino REST API allows configuration of the `$FILES` field.  
+- The import of Domino applications now includes support for mobile and tablets. 
 - The configuration of a single scope is now possible in the Identity Service of the Design Import wizard.
 
-##### voltFormula
+##### VoltFormula
 
-- New version of [RosettaJS API reference](../javadoc/index.html).
+- Implemented updates to the [API Reference Documentation](../javadoc/index.html).
 
 ### Resolved issues
 
@@ -31,18 +31,18 @@ The section provides information on the latest features, improvements, and resol
 - An updated document wasn't displayed on the Details form, and updates were reflected on the first document of the NSF file due to the empty filter query parameter on one of the Service Action objects on the Details form. The issue was encountered for forms without the `$FILES` Domino field.
 
 ##### Design Import
-- Remove unnecessary Form1 when migration completes.
-- Allow scope reload if DRAPI modifications are performed.
-- Fix import crash on duplicate form and field names.
-- Fix potential import crash or hang on lack of array for forms, fields, views, agents.
 
-#### voltFormula
-
-- Removed the App Dev API Framework and App Dev Target Context from the Rosetta configuration file.
+- There was an unnecessary `Form1` after import completion.
+- The scope can't be reloaded after performing Domino REST API modifications.
+- Import crashed or stopped responding when there were duplicate form and field names, or there was a lack of array for forms, fields, views, and agents. 
 
 ### Others
 
 - Updated [Compatibility matrix](compatibilitymatrix.md).
+
+##### VoltFormula
+
+- Removed the App Dev API Framework and App Dev Target Context from the Rosetta configuration file.
 
 ## Volt MX Go v2.0.1
 *Release date: October 2, 2023*
