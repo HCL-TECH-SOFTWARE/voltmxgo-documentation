@@ -50,3 +50,5 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
 **[References](references/index.md)** - Technical references and descriptions on using Volt MX Go
 
+!!!tip
+    For more information on effectively using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md). 

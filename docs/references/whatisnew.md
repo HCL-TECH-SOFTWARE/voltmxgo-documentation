@@ -2,6 +2,28 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
+## Volt MX Go v2.0.2
+*Release date: November 16, 2023*
+
+### Improvements
+
+- Volt IQ capabilities are now functional in Volt MX Go. For more information, see [Volt IQ](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Volt_IQ.html){: target="_blank" rel="noopener noreferrer"} in the Volt MX documentation.
+- You can now build Windows and macOS Desktop applications with the latest release of Volt MX Go.
+
+##### Domino Adapter 
+
+- Summernote Editor is automatically applied on Rich Text fields of CREATE and UPDATE forms when generating CRUD forms for Object Service.
+
+### Resolved issues
+
+##### Domino Adapter 
+
+- An updated document wasn't displayed on the Details form, and updates were reflected on the first document of the NSF file due to the empty filter query parameter on one of the Service Action objects on the Details form. The issue was encountered for forms without the `$FILES` Domino field.
+
+### Others
+
+- Updated [Compatibility matrix](compatibilitymatrix.md).
+
 ## Volt MX Go v2.0.1
 *Release date: October 2, 2023*
 ### New features
@@ -50,7 +72,7 @@ and User environment category on the Notes Formula.
   
 ##### First Touch
 
-- First Touch Recipes app includes additional functionality to bring up a list of related recipes from the same cuisine when checking a recipe. 
+- First Touch Recipes Catalog app includes additional functionality to bring up a list of related recipes from the same cuisine when checking a recipe. 
 - Implemented general improvements to the mobile version. 
 
 ### Resolved issues

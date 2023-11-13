@@ -14,8 +14,15 @@
     kubectl get pods -n mxgo
     ```
     
-2.	Run the following commands to recreate the temporary directory to download the helm charts and make it the current directory:
+2.	Run the following to recreate the temporary directory to download the helm charts and make it the current directory:
 
+    **Command:**
+    ```
+    mkdir ~/<new directory name>
+    cd ~/<new directory name>
+    ```
+
+    **Example:**
     ```
     mkdir ~/mxgo201
     cd ~/mxgo201

@@ -39,10 +39,12 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 - Supports only Foundry Object services.
 - Domino object services in Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
  
-## Volt IQ
+<!--## Volt IQ
+
 The Volt IQ capabilities aren't functional in Volt MX Go v2.0.1. This will be addressed in an upcoming release.
 
 ## Windows and macOS desktop applications
 
-It's not possible to build Windows and macOS Desktop applications with Volt MX Go v2.0.1. This will be addressed in an upcoming release.
+It's not possible to build Windows and macOS Desktop applications with the latest release of Volt MX Go v2.0.1. This will be addressed in an upcoming release.
+-->
 
