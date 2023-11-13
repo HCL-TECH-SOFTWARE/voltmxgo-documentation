@@ -229,7 +229,7 @@
         - If your app is in **Native App:**
             1. Go with this link to configure your mobile app browser: [**Mobile App browser**](../howto/configmobile.md).
             
-            2. After you finished configuring mobile app browser, see this link [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html#generate-native-app){: target="_blank"} to view the mobile app.
+            2. After you finished configuring mobile app browser, see this link [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html){: target="_blank"} to view the mobile app.
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.
       Your configuration in Domino REST API decides what operations you can include in the **design import** form.
