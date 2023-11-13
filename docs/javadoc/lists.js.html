@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en" style="font-size:16px"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="resources/favicon.ico"><title>Source: lists.js</title><!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="";baseURL=(baseURL=(baseURL="/docs/voltmxgo/javadoc/").replace(/https?:\/\//i,"")).substr(baseURL.indexOf("/"))</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body data-theme="dark"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.66</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="5ENs9TgvrdutVie2gmyWy"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-context.html">rosetta-api-context</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-volt-formula.html">volt-formula</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="W7egit57sTsIIt1boZyxr"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">lists.js</h1></header><article><pre class="prettyprint source lang-js"><code>"use strict";
+    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="";baseURL=(baseURL=(baseURL="/docs/voltmxgo/javadoc/").replace(/https?:\/\//i,"")).substr(baseURL.indexOf("/"))</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body data-theme="dark"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.106</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-modules"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-context.html">rosetta-api-context</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-volt-formula.html">volt-formula</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-classes"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-math-trig.iso.html">iso</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div><div class="sidebar-section-children"><a href="module-statistical.beta.html">beta</a></div><div class="sidebar-section-children"><a href="module-statistical.binom.html">binom</a></div><div class="sidebar-section-children"><a href="module-statistical.chiSq.html">chiSq</a></div><div class="sidebar-section-children"><a href="module-statistical.confidence.html">confidence</a></div><div class="sidebar-section-children"><a href="module-statistical.coVariance.html">coVariance</a></div><div class="sidebar-section-children"><a href="module-statistical.expon.html">expon</a></div><div class="sidebar-section-children"><a href="module-statistical.f.html">f</a></div><div class="sidebar-section-children"><a href="module-statistical.logNorm.html">logNorm</a></div><div class="sidebar-section-children"><a href="module-statistical.mode.html">mode</a></div><div class="sidebar-section-children"><a href="module-statistical.norm.html">norm</a></div><div class="sidebar-section-children"><a href="module-statistical.percentile.html">percentile</a></div><div class="sidebar-section-children"><a href="module-statistical.percentRank.html">percentRank</a></div><div class="sidebar-section-children"><a href="module-statistical.poisson.html">poisson</a></div><div class="sidebar-section-children"><a href="module-statistical.quartile.html">quartile</a></div><div class="sidebar-section-children"><a href="module-statistical.rank.html">rank</a></div><div class="sidebar-section-children"><a href="module-statistical.stDev.html">stDev</a></div><div class="sidebar-section-children"><a href="module-statistical.t.html">t</a></div><div class="sidebar-section-children"><a href="module-statistical.Var.html">Var</a></div><div class="sidebar-section-children"><a href="module-statistical.weiBull.html">weiBull</a></div><div class="sidebar-section-children"><a href="module-statistical.z.html">z</a></div><div class="sidebar-section-children"><a href="module-statistical-gamma.html">gamma</a></div><div class="sidebar-section-children"><a href="module-statistical-gammaLn.html">gammaLn</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">lists.js</h1></header><article><pre class="prettyprint source lang-js"><code>"use strict";
 /**
  * @file Lists
  * @module lists
@@ -9,6 +9,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.unique = exports.transform = exports.subset = exports.sort = exports.select = exports.replace = exports.nothing = exports.member = exports.keywords = exports.isNotMember = exports.isMember = exports.implode = exports.explode = exports.elements = exports.count = exports._notes = void 0;
 const tslib_1 = require("tslib");
+const common_1 = require("../utils/common");
 const notesf = tslib_1.__importStar(require("../notes/lists"));
 exports._notes = notesf;
 //-----------------------------
@@ -46,33 +47,58 @@ function elements(items) {
 exports.elements = elements;
 /**
  * Returns a text list composed of the elements of a text string or date range.
- *
- * - If you specify a text string, elements are defined as sequences of characters
- * separated by separator characters and newlines.
- * - If you specify a time-date range, elements are defined as individual days within
- * the range.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_EXPLODE.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * - If you specify a text string, elements are defined as sequences of characters separated by separator characters and newlines.
+ * - If you specify a time-date range, elements are defined as individual days within the range.
+ * @param {TextOrTextList|DateRangeOrDateRangeList} stringOrDateRange Can be one of the following:
+ * - The string that you want to make into a text list.
+ * - The range of dates that you want to make into a text list. Specify a valid date-time range, not a string
+ * representation of one. For example, rosetta.explode( "05/01/96 - 05/02/96" ) is invalid because the parameter is a string.
+ * Use rosetta.explode( {start: "05/01/96", end: "05/02/96"} ).
+ * @param {string} [separators] One or more characters that define the end of an element in string. The default
+ * separators are " ,;" (space, comma, semicolon), which means that Domino® adds a new element to the text list
+ * each time a space, comma, or semicolon occurs in the original string. When you use more than one character to
+ * specify separators, each character defines one separator. For example, the specification "and" breaks the string
+ * at each occurrence of "a," "n," and "d"; it does not break the string at each occurrence of the word "and."
+ * The newline is a separator, regardless of the specification of this parameter, unless newlineAsSeparator is
+ * specified as False.
+ * @param {boolean} [includeEmpties] Specify True (1) to place an empty string ("") in the returned list when a
+ * separatorappears at the beginning or end of the string, or two separators appear consecutively in the string.
+ * Specify False (0) to not include empty list elements for leading, trailing, and consecutive separators. Defaults to False.
+ * @param {boolean} [newlineAsSeparator] Specify True (1) to treat the newline as a separator. Specify False (0) to not
+ * treat the newline as a separator. Defaults to True.
+ * @returns {string[]} A list containing each element found in string, or each date found in dateRange.
+ * @see For further information, see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_EXPLODE.html|www.hcltechsw.com}
+ * @example
+ * rosetta.explode("a,b,c"); // Returns ["a","b","c"]
+ * @example
+ * const dateRange = {start:"07/02/2023", end:"07/05/2023"};
+ * rosetta.explode(dateRange); // Returns ["07/02/2023", "07/03/2023", "07/04/2023", "07/05/2023"]
  */
-function explode() {
-    return notesf.Explode();
+function explode(stringOrDateRange, separators = " ,;", includeEmpties = false, newlineAsSeparator = true) {
+    return notesf.Explode(stringOrDateRange, separators, includeEmpties, newlineAsSeparator);
 }
 exports.explode = explode;
 /**
  * Concatenates all members of a text list and returns a text string.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_IMPLODE.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * @param {TextOrTextList} textlistValue List containing the items you want to concatenate into a single string.
+ * If you send a single piece of text instead of a list, implode returns the text unaltered.
+ * @param {string} separator Used to separate the values in the concatenated string. If you don't specify a _separator_,
+ * a space is used.
+ * @returns {string} String containing each member of textListValue, separated by separator.
+ * @see For further information, see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_IMPLODE.html|www.hcltechsw.com}
+ * @example
+ * rosetta.implode("Minneapolis":"Detroit":"Chicago"); // Returns "Minneapolis Detroit Chicago"
+ * @example
+ * rosetta.implode("Minneapolis":"Detroit":"Chicago";","); // Returns "Minneapolis,Detroit,Chicago"
  */
-function implode() {
-    return notesf.Implode();
+function implode(textlistValue, separator = " ") {
+    return notesf.Implode(textlistValue, separator);
 }
 exports.implode = implode;
 /**
  * Indicates if a piece of text (or a text list) is contained within another text list. The function is case-sensitive.
- * @param textValue The text or text list used to check if it is contained in another text list.
- * @param textListValue The text list to check if it contains the text or text list.
+ * @param {TextOrTextList} textValue The text or text list used to check if it is contained in another text list.
+ * @param {string} textListValue The text list to check if it contains the text or text list.
  * @returns True if the _textValue_ is contained in _textListValue_ or false if not. If both parameters are lists,
  * returns true if all elements of _textValue_ are contained in _textListValue_.
  * @see For further information, see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_ISMEMBER.html|www.hcltechsw.com }
@@ -86,31 +112,62 @@ function isMember(textValue, textListValue) {
 }
 exports.isMember = isMember;
 /**
- * Indicates if a text string (or a text list) is not contained within another text
- * list. The function is case-sensitive.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_ISNOTMEMBER.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * Indicates if a text string (or a text list) is not contained within another text list. The function is case-sensitive.
+ * @param {TextOrTextList} textValue The text or text list used to check if it is not contained in another text list.
+ * @param {string} textListValue The text list to check if it does not contain the text or text list.
+ * @returns True if the _textValue_ is not contained in _textListValue_ or false if it is. If both parameters are lists,
+ * returns true if all elements of _textValue_ are not contained in _textListValue_.
+ * @see For further information, see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_ISNOTMEMBER.html|www.hcltechsw.com }
+ * @example
+ * rosetta.isNotMember("keyboard", ["printer", "computer", "monitor"]); // This example returns 1
+ * @example
+ * rosetta.isNotMember("computer", ["printer", "computer", "monitor"]); // This example returns 0
  */
-function isNotMember() {
-    return notesf.IsNotMember();
+function isNotMember(textValue, textListValue) {
+    return notesf.IsNotMember(textValue, textListValue);
 }
 exports.isNotMember = isNotMember;
 /**
- * Given two text lists, returns only those items from the second list that are
- * found in the first list.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_KEYWORDS.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * Given two text lists, returns only those items from the second list that are found in the first list.
+ *
+ * This function is case-sensitive; you must standardize the case of _textList1_ and _textList2_ if you want case
+ * to be ignored (use rosetta.lowerCase, rosetta.properCase or rosetta.upperCase).
+ *
+ * @param {string[]} textList1 A list of items.
+ * @param {string[]} textList2 A list of items that you want to compare to _textList1_.
+ * @param {string} separator One or more characters to be used as delimiters between words. rosetta.keywords considers
+ * each character (not the combination of multiple characters) to be a delimiter. For example, defining separator
+ * as ". ," (period, space, comma) tells the function to separate the text at each period, space, and comma into
+ * separate words.
+ *
+ * When you do not specify a separator, the following word delimiters are used by default:
+ * ?. ,!;:[](){}"&lt;> (question mark, period, space, comma, exclamation point, semicolon, colon, (brackets, parentheses,
+ * braces, quotation mark, and angle brackets)
+ *
+ * A null separator, represented by an empty string (""), tells the function to use no delimiters.
+ * @returns {string[]} When a _separator_ is in effect, either by default or specification, &amp;#64;Keywords parses _textList1_
+ * into words delimited by the separator and returns any word that exactly matches a keyword in _textList2_. When
+ * no separator is in effect (when you specify a null separator), &amp;#64;Keywords returns any sequence of characters in
+ * _textList1_ that matches a keyword specified in _textList2_.
+ * @see For further information, see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_KEYWORDS.html|www.hcltechsw.com }
+ * @example
+ * // This returns Harvard;Yale
+ * rosetta.keywords(@ProperCase("EPA Head speaks at Harvard and yale":"The UCLA Chancellor Retires":"Ohio State wins big game":"Reed and University of Oregon share research facilities");"Harvard":"Brown":"Stanford":"Yale":"Vassar":"UCLA");
+ * @example
+ * // This formula returns "", a null string
+ * rosetta.keywords("EPA Head speaks at Harvard,Yale":"UCLA Chancellor Retires":"Ohio State wins big game":"Reed and University of Oregon share research facilities";"harvard":"brown":"stanford":"vassar":"ucla");
+ * @example
+ * // This formula returns Harvard;Yale. It searches textList1 for the textList2 keywords that follow either a comma or a space
+ * rosetta.keywords("EPA Head speaks at Harvard, Yale hosts her next month":"UCLA Chancellor Retires":"Ohio State wins big game":"Reed and University of Oregon share research facilities";"Harvard":"Brown":"Stanford":"Yale":"UCLA";", ");
  */
-function keywords() {
-    return notesf.Keywords();
+function keywords(textList1, textList2, separator = "?. ,!;:[](){}\"&lt;>") {
+    return notesf.Keywords(textList1, textList2, separator);
 }
 exports.keywords = keywords;
 /**
  * Given a value, finds its position in a text list.
- * @param value The value you want to find in _stringlist_.
- * @param stringlist The text list to search.
+ * @param {string} value The value you want to find in _stringlist_.
+ * @param {string[]} stringlist The text list to search.
  * @returns Returns 0 if the _value_ is not contained in _stringlist_. Returns 1 to n if the value is contained in _stringlist_,
  * where 1 to n is the position of the value in the stringlist.
  * @see For further information, see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_MEMBER.html|www.hcltechsw.com}
@@ -124,11 +181,12 @@ function member(value, stringlist) {
 }
 exports.member = member;
 /**
- * Use with an &amp;#64;Transform formula. Returns no list element (reducing the return
- * list by one element). Not valid in any other context.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_NOTHING.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * Use with a transform function. Returns no list element (reducing the return list by one element). Not valid in any other context.
+ * @returns Returns null in an transform function.
+ * @see For further information, see &amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.2/basic/H_NOTHING.html|www.hcltechsw.com}
+ * @example
+ * // Returns a 2-element list whose values are 2 and 4;
+ * rosetta.transform([4, -4, 16], "x", x => { if (x >= 0) return Math.sqrt(x); else return rosetta.nothing(); });
  */
 function nothing() {
     return notesf.Nothing();
@@ -154,22 +212,63 @@ exports.replace = replace;
  * than the number of values, &amp;#64;Select returns the last value in the list. If
  * the value in the number position is a list, returns the entire list contained
  * within the value.
- * @throws {Error} method not implemented
+ * @param {number} position The position of the value you want to retrieve.
+ * @param {NumberOrNumberList|TextOrTextList|DateOrDateList} values Any number of values, separated by
+ * semicolons. A value may be a number, text, time-date, or a number list, text list, or time-date list.
+ * @returns The value that appears in the number position.
  * @see For further information, see &amp;nbsp; {@link https://help.hcltechsw.com/dom_designer/12.0.2/basic/H_SELECT_AT.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * @example
+ * rosetta.select(2,1,2,3); // Returns 2
+ * @example
+ * // Returns [Apr,May,Jun]
+ * rosetta.select(2, ["Jan","Feb","Mar"], ["Apr","May","Jun"], ["Jul","August","Sep"], ["Oct","Nov","Dec"]);
  */
-function select() {
-    return notesf.Select();
+function select(position, ...values) {
+    return notesf.Select(position, ...values);
 }
 exports.select = select;
 /**
  * Sorts a list.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_SORT.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ *
+ * The ascending, case-, and accent-sensitive sort sequence for the English character set is as follows: the numbers 0-9,
+ * the alphabetic characters aA-zZ, the apostrophe, the dash, and the remaining special characters. Pitch-sensitivity
+ * affects double-byte languages.
+ *
+ *
+ * @param {string[]|number[]|Date[]} list The values to be sorted. Any alternate data types are returned unchanged.
+ * @param {string|string[]} [order] You can use the following keywords to specify the order of the sort:
+ * - "ACCENTSENSITIVE"
+ * - "ACCENTINSENSITIVE"
+ * - "ASCENDING"
+ * - "CASESENSITIVE"
+ * - "CASEINSENSITIVE"
+ * - "CUSTOMSORT"
+ * - "DESCENDING"
+ * - "PITCHSENSITIVE"
+ * - "PITCHINSENSITIVE"
+ *
+ * By default, the following keywords automatically format the sort order:
+ * &lt;pre>["ASCENDING", "CASESENSITIVE", "ACCENTSENSITIVE", "PITCHSENSITIVE"]&lt;/pre>
+ * You can override a default sort order keyword by specifying its opposite keyword. For example, to override "ASCENDING",
+ * specify "DESCENDING" in the sort function. If conflicting keywords are passed, the last one in the list affects the sort order.
+ * @param {any} [customSortExpression] Required when the "CUSTOMSORT" keyword is specified. A formula accepts two parameters,
+ * $A and $B, to compare the values of elements in the list two at a time. Return true or a number greater than 0 to specify that $A is
+ * greater than $B. Return false or a number less than or equal to 0 to specify that $B is greater than $A.
+ * An error is produced if the return value is a data type other than a number or boolean.
+ * @returns Text, number, or time-date list. The sorted values.
+ * @see For further information, see &amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.2/basic/H_SORT.html|www.hcltechsw.com }
+ * @example
+ * // Returns ["Albany", "New Boston", "new york", "San Francisco"]
+ * rosetta.sort(["New Boston", "San Francisco", "Albany", "new york"]);
+ * @example
+ * // Returns ["San Francisco", "New Boston", "new york", "Albany"]
+ * rosetta.sort(["New Boston", "San Francisco", "Albany", "new york"], "DESCENDING");
+ * @example
+ * // Returns the movies list in order from the shortest title to the longest; it returns ["ET", "casablanca", "The Great Escape"]
+ * rosetta.sort(["casablanca", "The Great Escape", "ET"], ["CASESENSITIVE", "CUSTOMSORT"], ()=> {if(globalThis.$A.length &lt;= globalThis.$B.length) return false; return true;});
  */
-function sort() {
-    return notesf.Sort();
+function sort(list, order = [common_1.SortOptions.ASCENDING, common_1.SortOptions.CASESENSITIVE, common_1.SortOptions.ACCENTSENSITIVE, common_1.SortOptions.PITCHSENSITIVE], customSortExpression) {
+    return notesf.Sort(list, order, customSortExpression);
 }
 exports.sort = sort;
 /**
@@ -190,29 +289,46 @@ function subset(list, numReturned) {
 }
 exports.subset = subset;
 /**
- * Applies a formula to each element of a list and returns the results in a list.
- * @returns {Error} method not implemented
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_TRANSFORM.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * Function called for each item in an input list for the {@link module:lists~transform transform} function.
+ * @callback transformFunction
+ * @param {string|number|Date} s The item being processed.
+ * @returns {string|number|Date|null} The item to be added to the list. null indicates no item added.
  */
-function transform() {
-    return notesf.Transform();
+/**
+ * Applies a function to each element of a list and returns the results in a list.
+ * @param {TextOrTextList|NumberOrNumberList|DateOrDateList} list The list to be acted upon.
+ * @param {string} variableName The name of a variable passed to the function. This variable is not used.
+ * @param {transformFunction} aFunction Valid function that evaluates to a result. The function must return a value or null to indicate no element is added to the return list.
+ * @returns The result of the transformation on the input list. The first value returned by the formula determines the data type of the list. Subsequent return values must be of the same type.
+ * @see For more information see &amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.2/basic/H_TRANSFORM.html|www.hcltechsw.com}
+ * @example
+ * // Returns a 3-element array whose values are 2, -2, and 4;
+ * rosetta.transform([4, -4, 16], "x", x => { if (x >= 0) return Math.sqrt(x); else return -Math.sqrt(Math.abs(x)); });
+ * @example
+ * // Returns a 2-element list whose values are 2 and 4;
+ * rosetta.transform([4, -4, 16], "x", x => { if (x >= 0) return Math.sqrt(x); else return null; });
+ */
+function transform(list, variableName, aFunction) {
+    return notesf.Transform(list, variableName, aFunction);
 }
 exports.transform = transform;
 /**
  * Without a parameter, returns a random, unique text value. With a parameter,
  * removes duplicate values from a text list by returning only the first occurrence
- * of each member of the list.
- * @param text - list of values
+ * of each member of the list. rosetta.unique is case-sensitive.
+ * @param {string[]} textList - list of values
  * @returns If no parameter is specified, returns a random, unique text value. Otherwise, the _text_ list, with
  * duplicate values removed.
- * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_UNIQUE.html|www.hcltechsw.com }
- * @TODO this needs to be implemented
+ * @see For more information see&amp;nbsp;{@link https://help.hcltechsw.com/dom_designer/12.0.0/basic/H_UNIQUE.html|www.hcltechsw.com}
+ * @example
+ * rosetta.unique(["red", "green", "blue", "green", "red"]); // Returns ["red", "green", "blue"]
+ * @example
+ * rosetta.unique("red", "green", "blue", "Green", "red"); // Returns ["red", "green", "blue", "Green"]
  */
-function unique(...text) {
-    return notesf.Unique(...text);
+function unique(textList) {
+    return notesf.Unique(textList);
 }
 exports.unique = unique;
 //-----------------------------
 // Notes @Commands lists
-//# sourceMappingURL=lists.js.map</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper">Licensed Materials - Property of HCL. (c) Copyright HCL America, Inc. 2023</div></footer></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.66</a><div class="mobile-nav-links"></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="5ENs9TgvrdutVie2gmyWy"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-context.html">rosetta-api-context</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-volt-formula.html">volt-formula</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="W7egit57sTsIIt1boZyxr"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
+//# sourceMappingURL=lists.js.map</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper">Licensed Materials - Property of HCL. (c) Copyright HCL America, Inc. 2023</div></footer></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 1.9.106</a><div class="mobile-nav-links"></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-modules"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-context.html">rosetta-api-context</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-volt-formula.html">volt-formula</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-classes"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-math-trig.iso.html">iso</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div><div class="sidebar-section-children"><a href="module-statistical.beta.html">beta</a></div><div class="sidebar-section-children"><a href="module-statistical.binom.html">binom</a></div><div class="sidebar-section-children"><a href="module-statistical.chiSq.html">chiSq</a></div><div class="sidebar-section-children"><a href="module-statistical.confidence.html">confidence</a></div><div class="sidebar-section-children"><a href="module-statistical.coVariance.html">coVariance</a></div><div class="sidebar-section-children"><a href="module-statistical.expon.html">expon</a></div><div class="sidebar-section-children"><a href="module-statistical.f.html">f</a></div><div class="sidebar-section-children"><a href="module-statistical.logNorm.html">logNorm</a></div><div class="sidebar-section-children"><a href="module-statistical.mode.html">mode</a></div><div class="sidebar-section-children"><a href="module-statistical.norm.html">norm</a></div><div class="sidebar-section-children"><a href="module-statistical.percentile.html">percentile</a></div><div class="sidebar-section-children"><a href="module-statistical.percentRank.html">percentRank</a></div><div class="sidebar-section-children"><a href="module-statistical.poisson.html">poisson</a></div><div class="sidebar-section-children"><a href="module-statistical.quartile.html">quartile</a></div><div class="sidebar-section-children"><a href="module-statistical.rank.html">rank</a></div><div class="sidebar-section-children"><a href="module-statistical.stDev.html">stDev</a></div><div class="sidebar-section-children"><a href="module-statistical.t.html">t</a></div><div class="sidebar-section-children"><a href="module-statistical.Var.html">Var</a></div><div class="sidebar-section-children"><a href="module-statistical.weiBull.html">weiBull</a></div><div class="sidebar-section-children"><a href="module-statistical.z.html">z</a></div><div class="sidebar-section-children"><a href="module-statistical-gamma.html">gamma</a></div><div class="sidebar-section-children"><a href="module-statistical-gammaLn.html">gammaLn</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
