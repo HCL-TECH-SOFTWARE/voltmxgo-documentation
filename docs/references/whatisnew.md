@@ -20,6 +20,9 @@ The section provides information on the latest features, improvements, and resol
 - The import of domino applications now includes support for mobile and tablets. 
 - The configuration of a single scope is now possible in the Identity Service of the Design Import wizard.
 
+##### voltFormula
+
+- New version of [RosettaJS API reference](../javadoc/index.html).
 
 ### Resolved issues
 
@@ -32,6 +35,10 @@ The section provides information on the latest features, improvements, and resol
 - Allow scope reload if DRAPI modifications are performed.
 - Fix import crash on duplicate form and field names.
 - Fix potential import crash or hang on lack of array for forms, fields, views, agents.
+
+#### voltFormula
+
+- Removed the App Dev API Framework and App Dev Target Context from the Rosetta configuration file.
 
 ### Others
 
