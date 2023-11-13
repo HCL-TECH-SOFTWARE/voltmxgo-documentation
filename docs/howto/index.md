@@ -9,6 +9,7 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Import First Touch into Iris](importft.md)
 - [Set logging level](logginglevel.md)
 - [Configure Rosetta API](configrosetta.md)
+- [Configure mobile app browser](configmobile.md) 
 - [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)
 - [Uninstall K3s](k3suninstall.md)
 - [Uninstall Rancher Desktop on Windows](rancheruninstall.md)

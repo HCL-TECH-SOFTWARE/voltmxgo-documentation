@@ -14,11 +14,24 @@ The section provides information on the latest features, improvements, and resol
 
 - Summernote Editor is automatically applied on Rich Text fields of CREATE and UPDATE forms when generating CRUD forms for Object Service.
 
+##### Design Import
+
+- The DRAPI now allows for configuration of the $FILES field, enabling the uploading and downloading of attachments in Domino applications through Design Import. 
+- The import of domino applications now includes support for mobile and tablets. 
+- The configuration of a single scope is now possible in the Identity Service of the Design Import wizard.
+
+
 ### Resolved issues
 
 ##### Domino Adapter 
 
 - An updated document wasn't displayed on the Details form, and updates were reflected on the first document of the NSF file due to the empty filter query parameter on one of the Service Action objects on the Details form. The issue was encountered for forms without the `$FILES` Domino field.
+
+##### Design Import
+- Remove unnecessary Form1 when migration completes.
+- Allow scope reload if DRAPI modifications are performed.
+- Fix import crash on duplicate form and field names.
+- Fix potential import crash or hang on lack of array for forms, fields, views, agents.
 
 ### Others
 

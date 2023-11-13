@@ -26,7 +26,9 @@
 
     -  When you configure the `schema`, open Configured Database Form and set the **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.See [Changes in Configuration Forms of Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#configure-a-form)
 
-    -  When you configure the `schema`, open Database Form (configured) and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in the design import.
+    -  When you configure the `schema`, open Database Form (configured) and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in the design import. 
+
+    - When you configure the `schema`, open the Database Form (configured) and include the `$Files` field to capture the uploading and downloading of files in the Design Import.
 
     -  When you configure the `schema`, open Database Views and set the Status to active.
 
@@ -60,23 +62,23 @@
 
     ![Log in screen](../assets/images/dilogin.png)
 
-    
+!!!note
+    This tutorial is for Mobile app and Responsive Desktop
+
 ## Create a new project
     
-!!!note
-    Design Import currently only supports projects for desktop web apps. Before importing a Domino Application, select or create a project set for the Responsive Web desktop.
         
-
 1. On the top menu, **Project** &rarr; **New Project**.
-2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
+2. On the **What do you want to start with now?** dialog, select **Web App** or **Native App** and click **Next**.
 
     ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
-3. On the **Which device size do you want to start building for first?** dialog, select Desktop and click **Next**.
+3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App or **Mobile** for Native App and click **Next**.
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
-4. Enter your **Project Name** and click **Create**.    
+4. Enter your **Project Name** and click **Create**.  
+  
     ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
 5. You can see your project name in the upper-left corner of the Iris canvass.
@@ -102,7 +104,7 @@
 
     |  **Fields**     | **Description** |
     | -----------     | -----------     |
-    | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL    |
+    | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL.    |
     | Scope       | This is the name of your configured scope described in your App of Domino REST API app management. $DATA scope show all the scopes in your App in Domino REST API.  |
     |Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
     |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
@@ -219,43 +221,69 @@
 
 ## CRUD operation upon importing the `.nsf` file
 
-!!!note "Published the web app in Iris"
-    - Before you can do the CRUD operation in your imported Domino application, you must first build and published the web in Iris.
-    To do this, go to [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
+!!!note "Published the web app and native app in Iris"
+    - Before you can do the CRUD operation in your imported Domino application, you must first build and published the web and native app in Iris.
+    
+        - If your app is in **Web App**, see this link [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank"}.
+
+        - If your app is in **Native App:**
+            1. Go with this link to configure your mobile app browser: [**Mobile App browser**](../howto/configmobile.md).
+            
+            2. After you finished configuring mobile app browser, see this link [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html){: target="_blank"} to view the mobile app.
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.
       Your configuration in Domino REST API decides what operations you can include in the **design import** form.
       All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
 
+    - The Native App (mobile) and the Web App (Responsive Desktop) has the same capability of doing the CRUD operation.
+
+
 ### Create entry
 
-1. On the **Dashboard**, click your desired forms or table (example: Customer) under **Forms** label.  
+1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: Customer).
+
     ![Screenshot](../assets/images/dinewview.png)
 
-2. Click **Add New**.
-3. Fill in the fields and click **Add**. This adds the data to the `.nsf` file.
+2. Fill in the fields.
+3. Click **Select Files** to upload a file. (The **File Upload** will appear only if the schema included the `$Files` field in the configuration of DRAPI)
+
+    1. Select the file you want to upload. You can select more than one file to upload. 
+    
+        !!!notes
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
+
+    2. Click **Open**. If the file is pre-existing, a dialogue prompt will appear with the option to overwrite it.
+    
+4. Click **Add**. This adds the data to the `.nsf` file.
 
     ![Screenshot](../assets/images/dinewview1.png)
 
-4. Go back to the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+### Viewing data
+
+1. In the Dashboard, go to the **Views** section and click your preferred document.(example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-    You can see in  **Dashboard/Views** (example: CustomerView) page, the added entry.
+2. This will open the Customer's document page. Go to your preferred Customer and click **View**.
 
     ![Screenshot](../assets/images/dilist.png)
 
-    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+    
+3. This will open the Customer's detail. Select the **Download All Attachments** link. Files will be downloaded. 
+
+    !!!note
+        - You can download the attachments in your document (e.g Customer's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
+        - You can also see here the **Delete** and **Edit** button.
 
    <!-- ![Screenshot](../assets/images/didesigner.png) -->
 
 ### Update data
 
-1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Customer** page, search and click the **View** button. 
+2. In the **Dashboard/Customer** page, search the customer and click **View**. 
 
     !!!note
         If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
@@ -269,17 +297,23 @@
     !!!note
         You may also see the delete button here, which allows you to erase or remove the data you've selected.
 
-    ![Screenshot](../assets/images/dipressedit.png)
-
-4. Edit the field(s) that you want to update and click **Save**.
-    ![Screenshot](../assets/images/dieditsave.png)
+4. Edit the field(s) that you want to modify.
 
 
-    You can see in  **Dashboard/Detail** page, the updated entry.
+5. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button.
 
-    ![Screenshot](../assets/images/diupdated.png)
+    1. Select the file you want to upload. You can select more than one file to upload. 
+    
+        !!!notes
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
 
-    Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+    2. Click **Open**. If the file is pre-existing, a dialogue prompt will appear with the option to overwrite it.
+
+6. Click **Save**.
+
+      ![Screenshot](../assets/images/dieditsave.png)
+
+
 
 ### Delete entry
 
@@ -287,15 +321,15 @@
     - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
 
 
-1. On the **Dashboard**, and under the **Views** label, click the views or table (example: Customer).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: Customer).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Customer** page, search and click the **Delete** button.
+2. In the **Dashboard/Customer** page, search customer and click the **Delete** button.
 
     ![Screenshot](../assets/images/disearchdel.png)
 
-    There is a modal pop-up message box to confirm the deletion of data, click OK.
+    There is a confirmation message box to confirm the deletion of data, click **OK**.
 
     ![Screenshot](../assets/images/dimsgdelete.png)
 
@@ -303,5 +337,7 @@
 
     ![Screenshot](../assets/images/diconfirmdel.png)
  
+
+!!!note
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
