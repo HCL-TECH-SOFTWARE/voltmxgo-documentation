@@ -1,6 +1,6 @@
 # VoltFormula tutorial
 
-This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank"} and have it translated automatically into JavaScript code.
+This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank"} and have it translated automatically into JavaScript code.
 ## Before you start
 <!--!!!note
     Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.-->
@@ -9,11 +9,39 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 
 
-- You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank"} in Volt MX Iris.
+- You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank"} in Volt Iris.
 
 ## Launch Volt MX Go Iris
 
-1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
+1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
+
+    !!!note
+        If you have already configured the login settings while performing the other tutorials, enter your email and password for Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
+
+2. Configure the login settings.
+
+    1. Go to **Preferences**.
+        
+        For Windows, select **Edit** &rarr; **Preferences**. 
+        
+        For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**.
+
+    2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
+
+        ![Preferences](../assets/images/dipreference.png)
+
+    3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**.
+        
+        You should see the “Validation Successful” message at the top of the dialog.
+    
+    4. Click **Done**.
+
+3. Log in to Volt MX Go Iris.
+    1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
+    2. Enter your email and password for Foundry on the **Sign in to your account** page.
+    3. Click **Sign In**. Your username appears next to the profile icon.
+
+<!--1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
 
     !!!note
         If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close button is no longer appear during login.
@@ -23,8 +51,8 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
     **Validation of MX Go preference:**
         
     1. Click  the home ![](../assets/images/dihome.png){: style="height:3%;width:3%"} icon.
-    2. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
-    3. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
+    2. Open the **Volt Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
+    3. This opens the **Volt Iris Preferences**. Click on **Volt MX Foundry**.
     4. Fill in the **Foundry URL** with your Foundry hostname, and click **Validate**.
         ![Preferences](../assets/images/dipreference.png)
 
@@ -33,7 +61,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
 4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
 
-    ![Log in screen](../assets/images/dilogin.png)
+    ![Log in screen](../assets/images/dilogin.png)-->
 
 ## Open VoltFormula using the Action Editor
 

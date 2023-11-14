@@ -29,10 +29,10 @@ If you want to build and publish the First Touch Recipes app to see how it looks
 
 1. Check Foundry settings.
     1. Go to **Preferences**.
-        - For Windows, select **Edit** → **Preferences**. 
-        - For Mac, select **Volt MX Iris** → **Preferences**.
-    2. On the **Volt MX Iris Preferences** dialog, click **Volt MX Foundry**.
-    3. On the **Volt MX Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**. You should see the “Validation Successful” message at the top of the dialog.
+        - For Windows, select **Edit** &rarr; **Preferences**. 
+        - For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**.
+    2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
+    3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**. You should see the “Validation Successful” message at the top of the dialog.
     4. Click **Done**.
 
 2.	Log in to Iris.

@@ -11,7 +11,7 @@ The procedure guides you in importing the Summernote Editor component in Iris. T
 
 ### To import Summernote Editor:
 
-1. On the top menu of Volt MX Iris, select **Project** &rarr; **Import** &rarr; **Summernote Editor**. 
+1. On the top menu of Volt Iris, select **Project** &rarr; **Import** &rarr; **Summernote Editor**. 
 
     ![Select Summernote](../assets/images/summernoteselect.png)
 
