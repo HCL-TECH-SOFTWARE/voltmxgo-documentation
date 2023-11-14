@@ -1,6 +1,6 @@
 # Design Import tutorial
  
- This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronously to the **Domino Designer** server. 
+ This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronously to the **Domino Designer** server. 
 
 !!!note
     This tutorial is for Mobile app and Responsive Desktop
@@ -42,7 +42,7 @@
         
         For Windows, select **Edit** &rarr; **Preferences**. 
         
-        For Mac, depending on your macOS, select **Volt MX Iris** &rarr; **Preferences** or **Settings**.
+        For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**.
 
     2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
 
@@ -69,8 +69,8 @@
     **Validation of MX Go preference:**
         
     1. Click  the home ![](../assets/images/dihome.png){: style="height:3%;width:3%"} icon.
-    2. Open the **Volt MX Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
-    3. This opens the **Volt MX Iris Preferences**. Click on **Volt MX Foundry**.
+    2. Open the **Volt Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
+    3. This opens the **Volt Iris Preferences**. Click on **Volt MX Foundry**.
     4. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or your Foundry hostname, and click **Validate**.
         ![Preferences](../assets/images/dipreference.png)
 

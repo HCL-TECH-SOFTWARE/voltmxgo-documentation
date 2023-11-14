@@ -2,7 +2,7 @@
 
 ## About this task
 
-The procedure guides you in generating CRUD forms and associated form-navigation links for an Object Service after linking your Volt MX Iris project to your Volt MX Foundry app with a defined Object Service data model. 
+The procedure guides you in generating CRUD forms and associated form-navigation links for an Object Service after linking your Volt Iris project to your Volt MX Foundry app with a defined Object Service data model. 
 
 ## Before you start
 
@@ -24,7 +24,7 @@ The procedure guides you in generating CRUD forms and associated form-navigation
         
         For Windows, select **Edit** &rarr; **Preferences**. 
         
-        For Mac, depending on your macOS, select Volt MX Iris &rarr; **Preferences** or **Settings**. 
+        For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**. 
 
     2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
     3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**.
