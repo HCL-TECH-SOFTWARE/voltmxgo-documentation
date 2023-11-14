@@ -71,11 +71,11 @@
 1. On the top menu, **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** or **Native App** and click **Next**.
 
-    ![](../assets/images/distart.png){: style="height:80%;width:80%"}
+    ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
 3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App or **Mobile** for Native App and click **Next**.
 
-    ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
+    ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
 4. Enter your **Project Name** and click **Create**.  
   
