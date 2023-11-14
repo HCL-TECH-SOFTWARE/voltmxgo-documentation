@@ -13,7 +13,35 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
 ## Launch Volt MX Go Iris
 
-1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
+1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
+
+    !!!note
+        If you have already configured the login settings while performing the other tutorials, enter your email and password for Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
+
+2. Configure the login settings.
+
+    1. Go to **Preferences**.
+        
+        For Windows, select **Edit** &rarr; **Preferences**. 
+        
+        For Mac, depending on your macOS, select **Volt MX Iris** &rarr; **Preferences** or **Settings**.
+
+    2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
+
+        ![Preferences](../assets/images/dipreference.png)
+
+    3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**.
+        
+        You should see the “Validation Successful” message at the top of the dialog.
+    
+    4. Click **Done**.
+
+3. Log in to Volt MX Go Iris.
+    1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
+    2. Enter your email and password for Foundry on the **Sign in to your account** page.
+    3. Click **Sign In**. Your username appears next to the profile icon.
+
+<!--1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
 
     !!!note
         If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close button is no longer appear during login.
@@ -33,7 +61,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Iris to convert formul
 
 4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
 
-    ![Log in screen](../assets/images/dilogin.png)
+    ![Log in screen](../assets/images/dilogin.png)-->
 
 ## Open VoltFormula using the Action Editor
 
