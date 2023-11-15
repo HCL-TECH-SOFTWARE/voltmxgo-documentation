@@ -1,6 +1,7 @@
 nav:
     - index.md
-    - whatisnew.md
+    - What's new: whatsnew
+#    - whatisnew.md
 #    - System requirements: ../tutorials/sysreq.html
     - compatibilitymatrix.md
     - VoltFormula coding practices: vfcodingguides.md
