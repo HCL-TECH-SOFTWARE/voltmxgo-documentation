@@ -217,13 +217,13 @@ With `$filter`, the following canonical functions are supported:
 |Example query|Expected result|
 |----|----|
 |`$filter=Type eq 'Dessert'`|Returns all documents whose `Type` field is equal to `Dessert`.|
-|`$filter=Name eq CNx_003dadmin`|Returns all documents whose `Name` field is equal to `CN=admin`|
+|`$filter=Name eq CNx_003dadmin`|Returns all documents whose `Name` field is equal to `CN=admin`.|
 |`$top=2`|Returns the first two documents.|
 |`$skip=3`|Returns documents starting from the fourth document onwards.|
 |`$select=Name&$filter=substringof(Name,'Hot') eq true`|Returns documents with `Hot` included in the `Name` field, only returning the `Name` field.|
-|`$select=Name,Ingredients`|Returned documents include only the `Name` and `Ingredients` fields.|
-|`$filter=x_0040unid eq xxxx and Form eq unknown`|returns only the form name and form alias names for the document specified by UNID xxxx|
-
+|`$select=Name,Ingredients`|Returns documents that include only the `Name` and `Ingredients` fields.|
+|`$filter=x_0040unid eq xxxx and Form eq unknown`|Returns only the form name and form alias names for the document specified by UNID xxxx.|
+|`$select=Name,mydate,x_0040created&$filter=mydate ge '2022-03-10T05:00:00Z'`|Returns documents that include only the `Name` field, `mydate` field, and `x_0040created` columns, with `mydate` values on or after 2022-03-10T05:00:00Z.|
 
 ### Supported OData query parameters for view-based GET method 
 

@@ -26,7 +26,7 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ---
 ## What's new
 
-For the latest release information about Volt MX Go, see [What's new](references/whatisnew.md).
+For the latest release information about Volt MX Go, see [What's new](references/whatsnew/whatisnew.md).
 
 ---
 
