@@ -14,7 +14,7 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Uninstall K3s](k3suninstall.md)
 - [Uninstall Rancher Desktop on Windows](rancheruninstall.md)
 - [Uninstall First Touch](uninstallfirsttouch.md)
-- [Update FirstTouchRecipes.nsf](FTnsfupdate.md)
+- [Register and unregister custom Rosetta API](regunregconfig.md)
 
 <!-- [Import Summernote Editor component](summernote.md)-->
 
