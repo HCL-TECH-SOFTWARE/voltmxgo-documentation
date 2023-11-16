@@ -2,7 +2,7 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
-- [Volt MX Go v2.0.2](v202.md)
+<!-- [Volt MX Go v2.0.2](v202.md)-->
 - [Volt MX Go v2.0.1](v201.md)
 - [Volt MX Go v2.0](v200.md)
 
