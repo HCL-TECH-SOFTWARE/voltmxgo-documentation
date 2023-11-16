@@ -8,11 +8,12 @@ nav:
     - logginglevel.md
 #    - summernote.md
     - configrosetta.md
+    - regunregconfig.md
     - configmobile.md
     - drapiingress.md
     - k3suninstall.md
     - rancheruninstall.md
     - uninstallfirsttouch.md
     - FTnsfupdate.md
-    - regunregconfig.md
+    
     
