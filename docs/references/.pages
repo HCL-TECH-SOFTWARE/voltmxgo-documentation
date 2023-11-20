@@ -2,15 +2,15 @@ nav:
     - index.md
     - What's new: whatsnew
 #    - whatisnew.md
-#    - System requirements: ../tutorials/sysreq.html
+    - System requirements: tutorials/sysreq.html
     - compatibilitymatrix.md
     - VoltFormula coding practices: vfcodingguides.md
     - kubecheatsheet.md
-#    - Rosetta API reference documentation: ../javadoc/index.html
+    - Rosetta API reference documentation: javadoc/index.html
     - reflogginglevels.md 
-#    - Documentation references: ../references/index.html#documentation-references
+    - Documentation references: references/index.html#documentation-references
     - knownlimitation.md
     - troubleshoot.md
-#    - Support: ../references/index.html#support
+    - Support: references/index.html#support
     - summernotewidget.md
     - docguide.md
