@@ -70,7 +70,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     3. Enter the App Secret of your app in Domino REST API in the **Client Secret** text box.
 
     !!!tip
-        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Using Web UI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"} in the Domino REST API documentation.  
+        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html){: target="_blank"} in the Domino REST API documentation.  
 
 6.	Under **Advanced**:
     
@@ -155,7 +155,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     !!!tip
         - You can change the data model object names of the selected forms and view entities.
-        - For more information on naming limitations, see [naming limitations](../topicguides/dominoadapter.md#mx-core-limitations-iris-client-sdk-foundry).
+        - For more information on naming limitations, see [naming limitations](../references/knownlimitation.md#naming).
 
 5. Click **Generate**. The forms and view entities are now added to the **Data Model**. 
 
@@ -178,7 +178,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 3. Click **Send**.
 4. The record is displayed on the **Response** console. 
 
-For more information on supported parameters, see [Supported OData filter parameters, form-based GET](../topicguides/dominoadapter.md#supported-odata-filter-parameters-form-based-get) and [Supported OData filter parameters, view-based GET](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
+For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-view-based-get-method).
 
 ## Test the POST method by creating a record
 
