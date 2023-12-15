@@ -64,7 +64,7 @@ For Domino object types not found in Foundry, the Foundry object field type is s
 
 Two properties are used for Domino data type information:
 
-- `dominoSpecialType` property indicates if the data is `Rich Text` or `Array` (multi-value). 
+- `dominoSpecialType` property indicates if the data is `Rich Text`, `Array` (multi-value), or `Date Only`. 
 - `dominoArrayComponentType` property indicates the array type for multi-value fields, for example, a multi-value array of strings as shown in the following example:
 
 ![](../assets/images/recipe-richtext.png)
@@ -160,6 +160,7 @@ The `metadata` attribute of a Foundry data model field retains extended Domino d
     |----|----|----|
     |RICH TEXT|richtext|not used|
     |MULTI-VALUE|array|the array type, such as string, number|
+    |DATE ONLY|date|not used|
 
 ## Methods (Verbs)
 
@@ -191,8 +192,9 @@ Data models in Foundry are associated with specific Domino forms, so each operat
 !!!note
     The results of the GET method are influenced by the OData query parameters, if specified, and by the document's *form attribute* values.
 
-    - If there are no defined form name aliases in Domino design for the form, the method returns only documents with the form attribute equal to the form name. 
-    - If there are defined form name aliases in Domino design for the form, the method returns only documents with the form attribute equal to the last name alias.  
+    - If there are no defined form name aliases in the Domino design for the form, the method returns only documents with the form attribute equal to the form name.
+    - If there are defined form name aliases in the Domino design for the form, the method returns only the documents that have the form value set equal to the last alias in Domino.  
+    <!-- If there are defined form name aliases in Domino design for the form, the method returns only documents with the form attribute equal to the last name alias.-->  
 
 The Domino Adapter supports these OData query parameters for the GET method on form-based data models:
 
@@ -235,7 +237,7 @@ The Domino Adapter supports these OData query parameters for the GET method on v
 - `$filter`: Specifies conditions that must be met by a view entry for it to be returned in the set of matching view entries. **Only `sortable` columns can be filtered**.
 
 !!!note
-    - For view-based data models, the *view selection formula* may or may not limit which documents are returned based on the documents' form name, alias name, and other OData parameter settings.
+    - For view-based data models, the *view selection formula* determines which documents will be returned. Additionally, the returning documents may be further filtered by the OData parameter settings.
     - You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula `@Text(@Universalid)` to create a new sortable column in Domino Designer so that `$filter` and `$orderby` can be used to find a view row by UNID or to order the view by UNID.
     - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.
     - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`.
@@ -389,22 +391,5 @@ onCreateBinary: function() {
   }
 ```
 
-<!--## Limitations
-
-- Supports only Foundry Object services.
-- Authenticated app users metadata and verb security only. You must have a valid Domino REST API token for all Domino REST API calls. Customers that have such a requirement may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and to inject Authorization headers in each request.
-
-### MX core limitations (Iris, client SDK, Foundry)
-
-- Naming limitations
-
-    - Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
-    - Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
-
-- Data conversion   
-
-    - As Domino REST API and Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
-
-- Verb mapping isn't supported for binary verbs in the Foundry Console.--> 
 
  
