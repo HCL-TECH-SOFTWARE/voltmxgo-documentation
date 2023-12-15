@@ -26,7 +26,7 @@ The section provides information on the features, improvements, and resolved iss
 ##### Domino Adapter
 - Updated the Rich Text field format in Foundry Object Services to Base64-encoded HTML
 - Added support for the PATCH method for form-based data models.
-- Support OData filter parameter for the GET method on form-based data models to return a document’s unknown form name using the document's UNID. For more information, see [Supported OData filter parameters, form-based GET](../topicguides/dominoadapter.md#supported-odata-filter-parameters-form-based-get).
+- Support OData filter parameter for the GET method on form-based data models to return a document’s unknown form name using the document's UNID. For more information, see [Supported OData filter parameters, form-based GET](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-form-based-get-method).
 - Enhanced object service code generation in Iris for Domino objects so that when using the **Generate Forms** function: 
 
     - The GRID and DETAILS forms show rich text via the Rich Text widget.
@@ -52,7 +52,7 @@ The section provides information on the features, improvements, and resolved iss
 - Changed instances of *Keep* to *REST API* in steps and commands in the installation procedures.
 - Updated [Install Domino REST API](../tutorials/downloadhelmchart.md#install-domino-rest-api) procedure by including a step for adding DNS name settings.
 - Added [installation procedures](../tutorials/nativeinstallers.md) for installing Domino REST API and Volt MX Go Foundry using installers.
-- Updated system requirements for installing [Volt MX Go Foundry](../tutorials/sysreq.md#for-installing-volt-mx-go-foundry-using-native-installers) and [Domino REST API](../tutorials/sysreq.md#for-installing-domino-rest-api-using-native-installer) using installers.  
+- Updated system requirements for installing [Volt MX Go Foundry](../tutorials/sysreq.md#for-installing-volt-mx-go-foundry) and [Domino REST API](../tutorials/sysreq.md#for-installing-domino-rest-api) using installers.  
 
 
 ## Early Access v2
@@ -68,7 +68,7 @@ The section provides information on the features, improvements, and resolved iss
 - Simplified [uninstall procedure](../howto/uninstallfirsttouch.md) and improved progress view for both install and uninstall for better user experience.
 
 ##### Domino Adapter
-- Supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-filter-parameters-view-based-get).
+- Supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-view-based-get-method).
 - Added Domino form alias names to `@form` attribute metadata in form-based data models.
 
 ##### Design Import

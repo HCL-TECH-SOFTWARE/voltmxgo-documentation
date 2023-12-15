@@ -14,19 +14,19 @@
 
 <!-- All users in Volt MX Go that are performing a Design Import need to be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html) group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List for access to administrative API used by Design Import.--> 
 
-- You have a configured `.nsf` file, `schema`,`scopes` and application in [Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html){: target="_blank"}.
+- You have a configured `.nsf` file, schema, scopes, and application in [Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html){: target="_blank"}.
 
-    -  When you configure the `schema`, open Configured Database Form and set the **Formula for Delete Access** to `@True` in default `Mode` in all `Forms`.See [Changes in Configuration Forms of Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#configure-a-form){: target="_blank"}.
+    - When you configure the schema, set the **Formula for Delete Access** to `@True` in `default` mode in all the forms in the schema. For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank"}.
 
-    -  When you configure the `schema`, open Database Form (configured) and set in `dql mode`, you must include all the fields of the `Form`. Both the `default` and `dql modes` fields must match for the form and fields to be seen as configured in the design import. 
+    - When you configure the `schema`, add a `dql` mode to each configured form. The `dql` mode must include all the fields of the form. Both the `default` and `dql` modes must have matching fields<!-- for the form and fields to be seen as configured in the Design Import-->. 
 
-    - When you configure the `schema`, open the Database Form (configured) and include the `$Files` field to capture the uploading and downloading of files in the Design Import.
+    - When you configure the `schema`, include the `$Files` field in the configured form to capture the uploading and downloading of files in the Design Import.
 
-    -  When you configure the `schema`, open Database Views and set the Status to active.
+    - When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view){: target="_blank"}.
 
-    -  When you configure the `scopes`, you need a *Maximum Access Level* set to Designer or Manager. See [Scope in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#add-a-scope){: target="_blank"}.
+    - When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank"}.
 
-    -  When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
+    - When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
 
 
 ## Launch Volt MX Go Iris
@@ -302,7 +302,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 2. In the **Dashboard/Customer** page, search the customer and click **View**. 
 
     !!!note
-        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingdominorestapi/administrationui.html#list-available-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
+        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
 
 
     ![Screenshot](../assets/images/dieditdata.png)
