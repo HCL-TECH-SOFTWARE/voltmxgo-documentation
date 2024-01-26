@@ -26,7 +26,7 @@ The section provides information on the features, improvements, and resolved iss
 ##### Domino Adapter
 - Updated the Rich Text field format in Foundry Object Services to Base64-encoded HTML
 - Added support for the PATCH method for form-based data models.
-- Support OData filter parameter for the GET method on form-based data models to return a document’s unknown form name using the document's UNID. For more information, see [Supported OData filter parameters, form-based GET](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-form-based-get-method).
+- Support OData filter parameter for the GET method on form-based data models to return a document’s unknown form name using the document's UNID. For more information, see [Supported OData filter parameters, form-based GET](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method).
 - Enhanced object service code generation in Iris for Domino objects so that when using the **Generate Forms** function: 
 
     - The GRID and DETAILS forms show rich text via the Rich Text widget.
@@ -68,7 +68,7 @@ The section provides information on the features, improvements, and resolved iss
 - Simplified [uninstall procedure](../howto/uninstallfirsttouch.md) and improved progress view for both install and uninstall for better user experience.
 
 ##### Domino Adapter
-- Supports [OData filter parameters for the GET method on view-based data models](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-view-based-get-method).
+- Supports [OData filter parameters for the GET method on view-based data models](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 - Added Domino form alias names to `@form` attribute metadata in form-based data models.
 
 ##### Design Import

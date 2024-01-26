@@ -22,6 +22,7 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 - [Compatibility matrix](references/compatibilitymatrix.md)
 - [Installation and upgrade](tutorials/installation.md)
 - [Tutorials](tutorials/index.md)
+- [Trainings and webinars](tutorials/webinar.md)
 
 ---
 ## What's new

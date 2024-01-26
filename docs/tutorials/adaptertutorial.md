@@ -178,7 +178,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 3. Click **Send**.
 4. The record is displayed on the **Response** console. 
 
-For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/dominoadapter.md#supported-odata-query-parameters-for-view-based-get-method).
+For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
 ## Test the POST method by creating a record
 

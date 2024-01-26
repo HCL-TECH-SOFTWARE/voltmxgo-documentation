@@ -22,7 +22,7 @@ The full specification of the API is available in a structured format in the [Ro
 
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](vfcodingguides.md) in MX Go Iris.
+Recommended [VoltFormula coding practices](vfcodingguides.md) in MX Go Iris.   
 
 ## Helm and Kubectl commands
 
@@ -41,13 +41,17 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 - Provides documentation and more information about Domino REST API. 
 
+[HCL Domino Documentation](https://help.hcltechsw.com/domino/welcome/index.html){: target="_blank"}
+
+- Provides documentation and more information on how to install, configure, and manage Domino servers and related components.
+
+[HCL Software Product Documentation](https://help.hcltechsw.com/){: target="_blank"}
+
+- Provides a complete list of links to the documentation of different HCL Software products. 
+
 [VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}
 
 - Provides documentation and more information about the **early access version** of VoltScript and related components.
-
-[Guide to documentation](docguide.md)
-
-- Provides information on effectively using the Volt MX Go documentation.
 
 ## Known limitations
 
@@ -66,3 +70,6 @@ To learn about identified issues and their corresponding workarounds and resolut
 
 [Summernote Editor](summernotewidget.md) enables you to add a WYSIWYG editor to your form for handling rich text.
 
+## Guide to documentation
+
+Provides a [guide](docguide.md) on effectively using the Volt MX Go documentation.

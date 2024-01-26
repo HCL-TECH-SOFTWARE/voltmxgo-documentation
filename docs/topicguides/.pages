@@ -2,7 +2,10 @@ nav:
     - index.md
     - introvoltmxgo.md
     - voltformulaintro.md
-    - dominoadapter.md
+    - Domino Adapter: 
+        - dominoadapter.md
+        - datamodel.md
+        - method.md
     - designimportintro.md
     - firsttouchapp.md
     - dominoserver.md
