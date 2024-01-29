@@ -68,11 +68,11 @@ Domino Adapter makes Domino a core part of the Foundry Object Services so that V
 
 HCL Domino REST API provides secure REST API-based access to HCL Domino servers and databases. Designed to highlight Domino as a world class, modern, standards-compliant, cloud native and enterprise-level collaboration platform, it adds contemporary REST APIs to Notes and Domino, enabling a modern programming experience with the tools of your choice. 
 
-For more information, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank"}.
+For more information, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank" rel="noopener noreferrer"}.
 
 ## VoltScript
 
-VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} scripting language evolved from LotusScript&#174;, which was developed for the Lotus Software family of products. The language has been extended for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. VoltScript includes:
+VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank" rel="noopener noreferrer"} scripting language evolved from LotusScript&#174;, which was developed for the Lotus Software family of products. The language has been extended for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. VoltScript includes:
 
 - Visual Studio Code extension for allowing developers to write code in VS Code
 - Linux Docker image for allowing Mac developers to use the VS Code extension
@@ -81,5 +81,5 @@ VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC){: target="_blank"} 
 - A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
 - Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
 
-To learn more about the **early access version** of VoltScript, see [VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank"}.
+To learn more about the **early access version** of VoltScript, see [VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html){: target="_blank" rel="noopener noreferrer"}.
 

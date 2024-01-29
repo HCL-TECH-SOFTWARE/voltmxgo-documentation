@@ -9,7 +9,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 - You have added and configured a schema and a scope in the Domino REST API. 
 
     !!!tip
-        For more information, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"} in the Domino REST API documentation. 
+        For more information, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank" rel="noopener noreferrer"} in the Domino REST API documentation. 
 
 - Your schema should have a configured form with a `dql` mode similar to the `default` mode. 
 
@@ -32,7 +32,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 3.	Click the **Edit App Name** icon to give a unique name to your app.
 
 !!!tip
-    For more information, see [How to Add Applications](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html){: target="_blank"} in the HCL Volt MX documentation. 
+    For more information, see [How to Add Applications](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html){: target="_blank" rel="noopener noreferrer"} in the HCL Volt MX documentation. 
 
 ## Configure an Identity service
 
@@ -70,7 +70,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     3. Enter the App Secret of your app in Domino REST API in the **Client Secret** text box.
 
     !!!tip
-        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html){: target="_blank"} in the Domino REST API documentation.  
+        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html){: target="_blank" rel="noopener noreferrer"} in the Domino REST API documentation.  
 
 6.	Under **Advanced**:
     

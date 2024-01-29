@@ -29,7 +29,7 @@ The Volt MX Go documentation has a top menu bar that includes the main document 
 
 Each topic page has a main body, containing the content, and sidebars. The left sidebar shows all the topics under the selected main document section. The right sidebar shows all the sections in the topic page.
 
-A topic page may include a link to another topic within the documentation and an external link. The link to another topic opens in the same browser tab, while the external link opens in a new browser tab.  
+A topic page may include links to other topics within the documentation and links to external references. The links to topics within the documentation open in the same browser tab, while links to external references open in new browser tabs.  
   
 ## Searching for information
 
@@ -39,6 +39,6 @@ The search result shows the number of documents with content matching all or any
 
 ## Support and community
 
-- To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm){: target="_blank"} portal.  
-- To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d){: target="_blank"} portal.
+- To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm){: target="_blank" rel="noopener noreferrer"} portal.  
+- To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d){: target="_blank" rel="noopener noreferrer"} portal.
 

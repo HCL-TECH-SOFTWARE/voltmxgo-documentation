@@ -19,7 +19,7 @@ Foundry data models are in sync with the Domino REST API `schema` at the time of
 - schema is modified in Domino REST API
 - changes in the NSF design
 
-For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank"} in the Domino REST API documentation.  
+For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html){: target="_blank" rel="noopener noreferrer"} in the Domino REST API documentation.  
 
 ## Data model artifact names
 

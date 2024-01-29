@@ -14,4 +14,4 @@ The procedure guides you in uninstalling K3s in case you want to start over with
 sudo k3s-uninstall.sh
 ```
 
-For more information, see [Uninstalling K3s](https://docs.k3s.io/installation/uninstall){: target="_blank"}.
+For more information, see [Uninstalling K3s](https://docs.k3s.io/installation/uninstall){: target="_blank" rel="noopener noreferrer"}.
