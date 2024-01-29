@@ -16,15 +16,15 @@ The procedures guide you in installing the following server components of Volt M
 
 --8<-- "drapiversion.md"
 
-1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api){: target="_blank"}.
+1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api){: target="_blank" rel="noopener noreferrer"}.
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
-    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html){: target="_blank"}
-    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html){: target="_blank"}
+    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html){: target="_blank" rel="noopener noreferrer"}
+    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html){: target="_blank" rel="noopener noreferrer"}
 
-3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html){: target="_blank"}.
+3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html){: target="_blank" rel="noopener noreferrer"}.
 
-For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html){: target="_blank"} page in the Domino REST API documentation.
+For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html){: target="_blank" rel="noopener noreferrer"} page in the Domino REST API documentation.
 
 
 ## Install Volt MX Go Foundry
@@ -48,9 +48,9 @@ Volt MX Go Foundry supports the following installation mechanisms:
         - The installation guides will indicate installation files and installation file download locations. **You must use the installer you downloaded in Step 1.**
         - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
 
-    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank"}
-    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank"}
-    - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank"}
+    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank" rel="noopener noreferrer"}
+    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank" rel="noopener noreferrer"}
+    - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank" rel="noopener noreferrer"}
 
 ### For using helm charts on a supported Kubernetes platform
 
@@ -183,13 +183,13 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     dbPass:
     ```
 
-7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
+7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank" rel="noopener noreferrer"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
 
 8. Save the file and exit.
 
 #### 4. (Optional) Perform advanced scenario procedures
 
-- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank"}
+- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank" rel="noopener noreferrer"}
 
 
 #### 5. Deploy Foundry's dbupdate to create the databases
@@ -253,14 +253,14 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 #### 7. (Optional) Perform monitoring procedures
 
-- Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank"}.
+- Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank" rel="noopener noreferrer"}.
 
 !!!note
     The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
 
 #### 8. (Optional) Perform post installation tasks
 
-- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank"}
+- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank" rel="noopener noreferrer"}
 
 
 ## Additional information

@@ -2,10 +2,10 @@
 
 --8<-- "devtestenvironment.md"
 
-K3s is a fully compliant Kubernetes distribution. For more information, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank"}.
+K3s is a fully compliant Kubernetes distribution. For more information, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank" rel="noopener noreferrer"}.
 
 !!!warning "Caution"
-    In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must with sudo permissions. For these commands, you need to configure your non-root user with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906){: target="_blank"}.
+    In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must with sudo permissions. For these commands, you need to configure your non-root user with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906){: target="_blank" rel="noopener noreferrer"}.
 
 ## Before you start
 
@@ -16,7 +16,7 @@ Before starting with the procedure, make sure that you have checked and verified
 
 ## 1. Install K3s
 
-Before installing K3s, make sure you have met any operating system configuration required by K3s, specifically for [RHEL and CENTOS](https://docs.k3s.io/advanced#red-hat-enterprise-linux--centos){: target="_blank"}.
+Before installing K3s, make sure you have met any operating system configuration required by K3s, specifically for [RHEL and CENTOS](https://docs.k3s.io/advanced#red-hat-enterprise-linux--centos){: target="_blank" rel="noopener noreferrer"}.
 
 1. Run the following command:
 
@@ -63,7 +63,7 @@ export KUBECONFIG=~/.kube/config
 
 ## 4. Install Helm
 
-Helm is the package manager for Kubernetes and is used to install Volt MX Go. For more information, see [Helm](https://helm.sh/){: target="_blank"}.
+Helm is the package manager for Kubernetes and is used to install Volt MX Go. For more information, see [Helm](https://helm.sh/){: target="_blank" rel="noopener noreferrer"}.
 
 To install Helm, run the following commands:
 
@@ -74,7 +74,7 @@ sudo mv linux-386/helm  /usr/local/bin/helm
 sudo rm -rf helm-v3.11.2-linux-386.tar.gz linux-386
 ```
 
-For more information, see [Installing Helm](https://helm.sh/docs/intro/install/){: target="_blank"} and [Helm releases](https://github.com/helm/helm/releases){: target="_blank"}.
+For more information, see [Installing Helm](https://helm.sh/docs/intro/install/){: target="_blank" rel="noopener noreferrer"} and [Helm releases](https://github.com/helm/helm/releases){: target="_blank" rel="noopener noreferrer"}.
 
 
 ## 5. Ensure K3s is active and ready

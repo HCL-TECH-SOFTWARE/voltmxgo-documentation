@@ -11,9 +11,9 @@ The following procedures guide you in upgrading the server components of Volt MX
 1. Downloaded the required version of the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api){: target="_blank" rel="noopener noreferrer"}.
 2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html){: target="_blank" rel="noopener noreferrer"} based on your installation platform.
 
-<!--3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html){: target="_blank"}.
+<!--3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html){: target="_blank" rel="noopener noreferrer"}.
 
-For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html){: target="_blank"} page in the Domino REST API documentation.-->
+For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html){: target="_blank" rel="noopener noreferrer"} page in the Domino REST API documentation.-->
 
 ## Upgrade Volt MX Go Foundry
 
@@ -46,9 +46,9 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
         - The upgrade procedure will indicate installation files and installation file download locations. **You must use the installer you downloaded in *Before you start*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
 
-    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank"}
-    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank"}
-    <!-- [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank"}-->
+    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank" rel="noopener noreferrer"}
+    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank" rel="noopener noreferrer"}
+    <!-- [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank" rel="noopener noreferrer"}-->
 
 ### For using helm charts on a supported Kubernetes platform
 

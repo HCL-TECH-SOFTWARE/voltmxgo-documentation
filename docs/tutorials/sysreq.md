@@ -5,32 +5,32 @@ This section describes the minimum system requirements for deploying Volt MX Go.
 ## For installing Volt MX Go Foundry
 
 ### Software requirements
-Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html){: target="_blank"} to know the software requirements for installing Volt MX Go Foundry using installers.
+Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html){: target="_blank" rel="noopener noreferrer"} to know the software requirements for installing Volt MX Go Foundry using installers.
 
 ### Hardware requirements
 
-- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#hardware-requirements){: target="_blank"}
-- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#hardware-requirements){: target="_blank"}
+- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#hardware-requirements){: target="_blank" rel="noopener noreferrer"}
+- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#hardware-requirements){: target="_blank" rel="noopener noreferrer"}
 
 ### Network settings
 
-- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#network-settings){: target="_blank"}
-- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#network-settings){: target="_blank"}
+- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#network-settings){: target="_blank" rel="noopener noreferrer"}
+- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#network-settings){: target="_blank" rel="noopener noreferrer"}
 
 ### Supported browsers
-Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html){: target="_blank"} for the Volt MX Go Foundry Console.
+Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html){: target="_blank" rel="noopener noreferrer"} for the Volt MX Go Foundry Console.
 
 ### Prerequisites for Foundry command line installer
-Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites){: target="_blank"} when using the Foundry command line installer. 
+Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites){: target="_blank" rel="noopener noreferrer"} when using the Foundry command line installer. 
 
 ### Prerequisites for Volt MX Foundry Containers Helm Installation
-Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites){: target="_blank"} when using the Volt MX Foundry Containers Helm Installation. 
+Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites){: target="_blank" rel="noopener noreferrer"} when using the Volt MX Foundry Containers Helm Installation. 
 
 ## For installing Domino REST API
 
 --8<-- "drapiversion.md"
 
-Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank"} for installing Domino REST API using the installer. 
+Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789){: target="_blank" rel="noopener noreferrer"} for installing Domino REST API using the installer. 
 
 ## For installing Volt MX Go Iris on Windows
 
@@ -82,8 +82,8 @@ Mac OS X 10.9 and above
 | RAM | 16 GB |
 
 !!!note
-    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank"}.
-    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements){: target="_blank"}.
+    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/){: target="_blank" rel="noopener noreferrer"}.
+    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements){: target="_blank" rel="noopener noreferrer"}.
 
 ## For deploying Volt MX Go using Rancher Desktop running on Windows
 
@@ -110,8 +110,8 @@ Rancher Desktop requires the following on Windows:
 - Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
 !!!note
-    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/){: target="_blank"}. 
-    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows){: target="_blank"}.
+    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/){: target="_blank" rel="noopener noreferrer"}. 
+    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows){: target="_blank" rel="noopener noreferrer"}.
 
 ## Next step
 

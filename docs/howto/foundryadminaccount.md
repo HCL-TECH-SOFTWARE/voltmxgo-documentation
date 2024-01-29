@@ -12,7 +12,7 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 ### For Volt MX Go Foundry installed via installers
 
-- Check the procedure on [how to get started with Volt MX Foundry Console](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/How_to_access_VoltMX_Foundry_Portal_on-Prem.html){: target="_blank"}.
+- Check the procedure on [how to get started with Volt MX Foundry Console](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/How_to_access_VoltMX_Foundry_Portal_on-Prem.html){: target="_blank" rel="noopener noreferrer"}.
 
 ### For Volt MX Go Foundry installed as part of the installation on a development or test only environment
 
