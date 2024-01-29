@@ -5,9 +5,9 @@ Check the following platforms to learn how to modernize your Domino applications
 ## HCLSoftware U
 
 !!!info "Embark On Your Journey"
-    Realize the power of possibility for you and your business. Visit the **HCLSoftware U** for technical education on all products in the HCL Software portfolio. Start learning today!
+    Realize the power of possibility for you and your business. Visit **[HCLSoftware U](https://hclsoftwareu.hcltechsw.com/){: target="_blank" rel="noopener noreferrer"}** for technical education on all products in the HCL Software portfolio. Start learning today!
 
-Learn how to modernize your Domino apps while avoiding the cost, time, and risk of a total rewrite. Check out the [Volt MX Go learning journey in HCLSoftware U](https://hclsoftwareu.hcltechsw.com/volt-mx-go){: target="_blank" rel="noopener noreferrer"}.
+Get hands-on development experience modernizing a Domino application with Volt MX Go and learn how to install and configure HCL Volt MX Go as an administrator. Check out the [Volt MX Go learning journey in HCLSoftware U](https://hclsoftwareu.hcltechsw.com/volt-mx-go){: target="_blank" rel="noopener noreferrer"}.
 
 ## Volt MX Go Webinar Series
 
@@ -30,7 +30,7 @@ The webinar series includes the following webinars:
 
 ## Volt MX Go on SoFy
 
-Try out HCL Volt MX Go from [HCL SoFy](https://hclsofy.com/){: target="_blank" rel="noopener noreferrer"}. HCL SoFy lets you try out HCL products in a sandbox environment and helps you run them in containers orchestrated by Kubernetes. Check the following links for more information:
+Explore everything Volt MX Go can do in a free, hosted trial environment on [HCL SoFy](https://hclsofy.com/){: target="_blank" rel="noopener noreferrer"}. Your sandbox will be up and running in 10 minutes and provides access to a hosted Domino server (where you can copy or replicate your own Domino applications), the Domino REST API, Volt Foundry, and Iris, a step-by-step wizard to connect Volt MX to Domino, Design Import, and VoltFormula. Check the following links for more information:
 
 - [Overview of Volt MX Go](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=documentation.md){: target="_blank" rel="noopener noreferrer"}
 - [Using Volt MX Go in Sofy](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=using-voltmxgo.md){: target="_blank" rel="noopener noreferrer"}
