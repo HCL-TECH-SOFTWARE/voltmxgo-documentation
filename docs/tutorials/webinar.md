@@ -25,13 +25,13 @@ The webinar series includes the following webinars:
 - [Volt MX Go: First Touch, Domino REST API, and Design Import](https://www.youtube.com/watch?v=ipelDFuYjHw&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=3&pp=iAQB){: target="_blank" rel="noopener noreferrer"}
 - [Get started with Volt Iris and Foundry](https://www.youtube.com/watch?v=rWQKhgb_Ang&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=4&pp=iAQB){: target="_blank" rel="noopener noreferrer"}
 - [Try VoltScript with Early Access](https://www.youtube.com/watch?v=Nfl6LCFySPA&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=5&pp=iAQB){: target="_blank" rel="noopener noreferrer"}
-- [Build beautiful apps with Volt MX Go and Domino](https://www.youtube.com/watch?v=Nfl6LCFySPA&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=5&pp=iAQB){: target="_blank" rel="noopener noreferrer"}
+- [Build beautiful apps with Volt MX Go and Domino](https://www.youtube.com/watch?v=IqQcBGMcjl4&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=6&pp=iAQB){: target="_blank" rel="noopener noreferrer"}
 
 
-## Volt MX Go on SoFy
+## Volt MX Go on HCL SoFy
 
 Explore everything Volt MX Go can do in a free, hosted trial environment on [HCL SoFy](https://hclsofy.com/){: target="_blank" rel="noopener noreferrer"}. Your sandbox will be up and running in 10 minutes and provides access to a hosted Domino server (where you can copy or replicate your own Domino applications), the Domino REST API, Volt Foundry, and Iris, a step-by-step wizard to connect Volt MX to Domino, Design Import, and VoltFormula. Check the following links for more information:
 
 - [Overview of Volt MX Go](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=documentation.md){: target="_blank" rel="noopener noreferrer"}
-- [Using Volt MX Go in Sofy](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=using-voltmxgo.md){: target="_blank" rel="noopener noreferrer"}
+- [Using Volt MX Go on Sofy](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=using-voltmxgo.md){: target="_blank" rel="noopener noreferrer"}
 - [Video Walkthrough](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=video-walkthrough.md){: target="_blank" rel="noopener noreferrer"}
