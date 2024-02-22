@@ -12,23 +12,16 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
     You can skip the setup of `oauth.nsf`, Domino REST API, and download of the First Touch recipe ZIP file if you are performing the Volt MX Go install to a development or test only environment. 
 
 - You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html){: target="_blank" rel="noopener noreferrer"}.
-- You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/configuring-keep-idplite-with-identity-service.html?h=oauth.json#set-up-domino-rest-api){: target="_blank" rel="noopener noreferrer"}.
-
-    !!!note
-        You don't need to perform The *Create Foundry Identity Service* and the *Set up Domino REST API application and database* procedures included in the same webpage that contain the *Set up Domino REST API* procedure as they aren't applicable to First Touch.
-
+- You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/IdP/configuredrapiIdP.html){: target="_blank" rel="noopener noreferrer"}.
 - You have [downloaded the FirstTouchRecipes.nsf.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
-
    
 ## Log in to Volt MX Go Foundry
 
 1. Open the Foundry hostname concatenated with `/mfconsole/`in your browser.
 
-
     !!!tip
         Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
  
-
 2. Enter your username and password on the **Sign in to your account** page. 
 3. Click **Sign In**.  
 
@@ -83,8 +76,6 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 You can now view and explore the First Touch Recipe Catalog app. 
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
-
-
 
 !!!tip
     - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Foundry to view the app’s Foundry configuration.
