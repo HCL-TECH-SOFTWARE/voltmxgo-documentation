@@ -91,7 +91,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     !!!note
         Your environment name can only contain letters, numbers, and hyphens (-). A hyphen can't appear at the beginning or at the end of a name. A number can't appear at the beginning of a name. A name should be a minimum of three characters and a maximum of 20 characters long.
 
-4.	In the **Server** tab, enter the URL of your Volt MX Foundry in the **URL** text box.
+4.	On the **Server** tab, enter the URL of your Volt MX Foundry in the **URL** text box.
     The URL format is: `<http or https>://<server_host>:<server_port>`
     
     For example: `http://mbaastest30.hcl.net:53504`
@@ -103,7 +103,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Configure an Object service
 
-1. On the left pane on the **Volt MX Foundry Console**, click **Apps**.
+1. In the left pane on the **Volt MX Foundry Console**, click **Apps**.
 2. On the **Apps** page, select the app you created. 
 3. Go to **Configure Services** &rarr; **Objects**, and then click **Configure New**.
 4. Enter the object service name in the **Name** text field. For example, `EmployeeModelSchema`.
@@ -166,7 +166,8 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 2. From the list, click **GET**. 
 4. Expand the **base mapper1**, and then select the **Test** tab.
 5. Click **Send**.
-6. All records are displayed on the **Response** console. Click **Save** after viewing. 
+    
+    All records are displayed on the **Response** console. Click **Save** after viewing. 
 
 **To view a filtered record**
 
@@ -176,7 +177,8 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     ![Filtered record](../assets/images/getoneunid.png)
 
 3. Click **Send**.
-4. The record is displayed on the **Response** console. 
+    
+    The record is displayed on the **Response** console. 
 
 For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
@@ -185,9 +187,10 @@ For more information on supported parameters, see [Supported OData query paramet
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **POST**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the fields of the data model should be displaying.
+4. In the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the values, then click **Send**. 
-6. The ID of the record is displayed on the **Response** console after the successful insertion of the record. 
+    
+    The ID of the record is displayed on the **Response** console after the successful insertion of the record. 
 
     !!!tip
         Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
@@ -198,7 +201,7 @@ For more information on supported parameters, see [Supported OData query paramet
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PUT**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the fields of the data model should be displaying.
+4. In the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the updated values, then click **Send**.
 
     !!!note
@@ -206,7 +209,7 @@ For more information on supported parameters, see [Supported OData query paramet
 
     ![Input updated values](../assets/images/putrequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the fields with updated values and the number of updated records. 
+    The **Response** console shows the fields with updated values and the number of updated records. 
 
     ![Update result](../assets/images/putresponse.png){: style="height:60%;width:60%"}
 
@@ -216,12 +219,12 @@ For more information on supported parameters, see [Supported OData query paramet
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **DELETE**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the field of the data model should be displaying.
+4. In the **Request Payload**, the field of the data model should be displaying.
 5. Beside the field, input the ID of the record to be deleted, then click **Send**.
 
     ![Delete request](../assets/images/deleterequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the number of deleted records. 
+    The **Response** console shows the number of deleted records. 
 
     ![Delete result](../assets/images/deleteresponse.png){: style="height:60%;width:60%"}
 
@@ -230,7 +233,7 @@ For more information on supported parameters, see [Supported OData query paramet
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PATCH**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the fields of the data model should be displaying.
+4. In the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the updated values, then click **Send**.
 
     <!--!!!note
@@ -238,9 +241,29 @@ For more information on supported parameters, see [Supported OData query paramet
 
     ![Input updated values](../assets/images/patchrequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the fields with updated values and the number of updated records. 
+    The **Response** console shows the fields with updated values and the number of updated records. 
 
     ![Update result](../assets/images/patchresponse.png){: style="height:60%;width:60%"}
+
+## Test the BULK UPDATE method for updating a collection of records
+
+1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
+2. From the list, click **BULK UPDATE**.
+3. Expand the **base mapper1**, and then select the **Test** tab.
+4. Enter a `$filter` ODATA query parameter in the **Enter the Query Params** text box.
+
+    !!!warning "Important"
+        You must use the $filter ODATA query parameter to tell Domino REST API which documents to update. Otherwise, an error occurs.
+
+    In the following example image, `$filter=Subject eq ‘old subject’` is used as the ODATA query parameter.
+
+    ![Query parameter](../assets/images/bulkupdate2.png){: style="height:70%;width:70%"}
+    
+5. In the **Request Payload**, specify the field to update and the updated value, and then click **Send**.
+
+    The **Response** console shows all the documents with the specified field having the updated value. As shown in the example image, `Subject` is the updated field with an updated value of `new subject`.
+
+    ![Update result](../assets/images/bulkupdate3.png){: style="height:60%;width:60%"}
 
 ## Additional procedure
 
@@ -266,4 +289,3 @@ For more information on supported parameters, see [Supported OData query paramet
     Make sure to take note of the App ID and App secret as you need these details in configuring the Identity Service in Foundry. 
 
 
- 
