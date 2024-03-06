@@ -167,7 +167,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 4. Expand the **base mapper1**, and then select the **Test** tab.
 5. Click **Send**.
     
-    All records are displayed on the **Response** console. Click **Save** after viewing. 
+    All records are displayed on the **Response** console. 
+    
+6. Click **Save** after viewing. 
 
 **To view a filtered record**
 
@@ -179,6 +181,8 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 3. Click **Send**.
     
     The record is displayed on the **Response** console. 
+
+4. Click **Save** after viewing.
 
 For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
@@ -195,6 +199,7 @@ For more information on supported parameters, see [Supported OData query paramet
     !!!tip
         Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
 
+6. Click **Save** after viewing.
 
 ## Test the PUT method by updating a record
 
@@ -213,6 +218,7 @@ For more information on supported parameters, see [Supported OData query paramet
 
     ![Update result](../assets/images/putresponse.png){: style="height:60%;width:60%"}
 
+6. Click **Save** after viewing.
 
 ## Test the DELETE method by deleting a record
 
@@ -227,6 +233,8 @@ For more information on supported parameters, see [Supported OData query paramet
     The **Response** console shows the number of deleted records. 
 
     ![Delete result](../assets/images/deleteresponse.png){: style="height:60%;width:60%"}
+
+6. Click **Save** after viewing.
 
 ## Test the PATCH method by updating a record
 
@@ -244,6 +252,8 @@ For more information on supported parameters, see [Supported OData query paramet
     The **Response** console shows the fields with updated values and the number of updated records. 
 
     ![Update result](../assets/images/patchresponse.png){: style="height:60%;width:60%"}
+
+6. Click **Save** after viewing.
 
 ## Test the BULK UPDATE method for updating a collection of records
 
@@ -264,6 +274,8 @@ For more information on supported parameters, see [Supported OData query paramet
     The **Response** console shows all the documents with the specified field having the updated value. As shown in the example image, `Subject` is the updated field with an updated value of `new subject`.
 
     ![Update result](../assets/images/bulkupdate3.png){: style="height:60%;width:60%"}
+
+6. Click **Save** after viewing.
 
 ## Additional procedure
 
