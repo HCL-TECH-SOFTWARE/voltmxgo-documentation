@@ -84,7 +84,7 @@ kubectl cp voltmxgo-drapi-848d9fc9f9-9vcgf:/local/notesdata/admin.id domino-id.i
 
 Here, the `cp` command copies the file `/local/notesdata/admin.id` out of the container `voltmxgo-drapi-848d9fc9f9-9vcgf` to the file `domino-id.id` in the current working directory. The flag `-n mxgo` indicates that the Kubernetes namespace is `mxgo` and the flag `-c drapi` indicates using the drapi container within the Domino DRAPI pod.
 
-Similiarly, you could copy the local file `foo.bar` into the container's `/tmp` directory like this:
+Similarly, you could copy the local file `foo.bar` into the container's `/tmp` directory like this:
 
 ```{ .yaml .no-copy }
 kubectl cp foo.bar  voltmxgo-drapi-848d9fc9f9-9vcgf:/tmp/foo.bar -n mxgo -c drapi
