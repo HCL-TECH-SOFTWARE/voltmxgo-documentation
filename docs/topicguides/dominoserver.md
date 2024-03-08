@@ -135,7 +135,7 @@ You can attach to the Domino console with the `live` command and see something l
 Using Domino config File [/etc/sysconfig/rc_domino_config]
 
 
---- Live Console for hcl ---
+--- Live Console for notes ---
 
 To close console, always type 'close' or 'stop'.
 
@@ -203,14 +203,14 @@ kubectl exec -it domino-drapi-6fc766ccd4-55d9n  -n voltmxgo -c drapi -- bash
 [notes@domino-drapi-6fc766ccd4-55d9n /]$ domino stop
 Using Domino config File [/etc/sysconfig/rc_domino_config]
 
-Stopping Domino for xLinux (hcl)
+Stopping Domino for xLinux (notes)
 KEEP started in task mode, no pre_shutdown action required
  ... waiting for shutdown to complete
  ... waiting 10 seconds
  ... waiting 20 seconds
 KEEP started in task mode, no post_shutdown action required
 Domino stopped (26 sec)
-Domino for xLinux (hcl) shutdown completed
+Domino for xLinux (notes) shutdown completed
 ```
 
 Restart using the `start` command:
@@ -220,10 +220,10 @@ Restart using the `start` command:
 Using Domino config File [/etc/sysconfig/rc_domino_config]
 
 
-Archived log file to '/local/notesdata/hcl_231009_193905.log'
+Archived log file to '/local/notesdata/notes_231009_193905.log'
 Removed LoadMon-Data '/local/notesdata/loadmon.ncf'
 
-Starting Domino for xLinux (hcl)
+Starting Domino for xLinux (notes)
 done PID is 20210
 
 KEEP starting in task mode, no post_startup action required
