@@ -1,0 +1,2952 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="HCL Volt MX Go documentation site">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation/topicguides/method.html">
+      
+      
+        <link rel="prev" href="datamodel.html">
+      
+      
+        <link rel="next" href="designimportintro.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Methods (Verbs) - HCL Volt MX Go Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/voltmxgo.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","UA-169645537-2"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","UA-169645537-2",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=UA-169645537-2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#methods-verbs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="HCL Volt MX Go Documentation" class="md-header__button md-logo" aria-label="HCL Volt MX Go Documentation" data-md-component="logo">
+      
+  <img src="../assets/images/VoltMXGoLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HCL Volt MX Go Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Methods (Verbs)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HCL-TECH-SOFTWARE/voltmxgo-documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tutorials/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Tutorials
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../howto/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  How-to guides
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Topic guides
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../references/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  References
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="HCL Volt MX Go Documentation" class="md-nav__button md-logo" aria-label="HCL Volt MX Go Documentation" data-md-component="logo">
+      
+  <img src="../assets/images/VoltMXGoLogo.png" alt="logo">
+
+    </a>
+    HCL Volt MX Go Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HCL-TECH-SOFTWARE/voltmxgo-documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorials/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorials/installation.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Installation and upgrade
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Installation and upgrade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/sysreq.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorials/prerequisite.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Install and upgrade Volt MX Go in a production environment
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install and upgrade Volt MX Go in a production environment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/portaldownload.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download HCL Volt MX Go Release package
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/nativeinstallers.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install Volt MX Go server components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/versionupgrade.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Upgrade Volt MX Go server components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorials/containerdeployment.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Install and upgrade Volt MX Go in a development or test only environment
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Install and upgrade Volt MX Go in a development or test only environment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/obtainauthenticationtoken.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obtain authentication token from HCL Container Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorials/deploykubernetes.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Deploy Kubernetes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_3_2" id="__nav_2_1_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Deploy Kubernetes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/k3sinstall.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install and configure K3s
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/installrancher.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install Rancher Desktop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorials/prereqindex.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Complete preparatory procedure
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_3_3" id="__nav_2_1_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Complete preparatory procedure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/prereq.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    For first time installation of Volt MX Go
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/prereqnew.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    For upgrading existing installation of Volt MX Go
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/eatogamove.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    For moving from early access version to GA version of Volt MX Go
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/downloadhelmchart.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install Domino REST API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/installmysqlfoundry.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install MySQL for Foundry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/installfoundry.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install Foundry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/versionupgrade1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Upgrade Volt MX Go server components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/installiris.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install and upgrade Volt MX Go Iris
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/firsttouch.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Touch tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/adaptertutorial.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domino Adapter tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/designimport.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Import tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/voltformula.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VoltFormula tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/webinar.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trainings and webinars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../howto/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/foundryadminaccount.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a Foundry administrator account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/codegen.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate CRUD forms for Object Service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/accessdrapi.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Domino REST API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/connectdominofromnotes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connect to Domino server from your Notes client
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/importft.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import First Touch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/logginglevel.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set logging level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/configrosetta.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure VoltFormula's Rosetta API Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/regunregconfig.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Register and unregister custom Rosetta API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/configmobile.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure mobile app browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/drapiingress.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure Kubernetes Ingress for Domino REST API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/k3suninstall.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uninstall K3s
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/rancheruninstall.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uninstall Rancher Desktop on Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/uninstallfirsttouch.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uninstall First Touch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howto/FTnsfupdate.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Update FirstTouchRecipes.nsf
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Topic guides
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Topic guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introvoltmxgo.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducing Volt MX Go
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="voltformulaintro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VoltFormula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="dominoadapter.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Domino Adapter
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Domino Adapter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="datamodel.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Methods (Verbs)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="method.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Methods (Verbs)
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-odata-query-parameters-for-form-based-get-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported OData query parameters for form-based GET method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-odata-query-parameters-for-view-based-get-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported OData query parameters for view-based GET method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attachments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attachments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-patch-verb-from-volt-mx-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using PATCH verb from Volt MX SDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-binary-apis-from-volt-mx-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using binary APIs from Volt MX SDK
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="designimportintro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Import
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="firsttouchapp.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Touch app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dominoserver.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with Domino server process within Domino container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../references/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../references/whatsnew/whatisnew.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    What's new
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            What's new
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/whatsnew/v202.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volt MX Go v2.0.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/whatsnew/v201.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volt MX Go v2.0.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/whatsnew/v200.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volt MX Go v2.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/sysreq.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/compatibilitymatrix.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatibility matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/vfcodingguides.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VoltFormula coding practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/kubecheatsheet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Helm and Kubectl commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../javadoc/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rosetta API reference documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/reflogginglevels.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logging levels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/index.html#documentation-references" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation references
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/knownlimitation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Known limitations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/troubleshoot.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/index.html#support" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/summernotewidget.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summernote Editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/docguide.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide to documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-odata-query-parameters-for-form-based-get-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported OData query parameters for form-based GET method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-odata-query-parameters-for-view-based-get-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported OData query parameters for view-based GET method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attachments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attachments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-patch-verb-from-volt-mx-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using PATCH verb from Volt MX SDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-binary-apis-from-volt-mx-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using binary APIs from Volt MX SDK
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="methods-verbs">Methods (Verbs)</h1>
+<p>Methods for interacting with the data models are generated when generating the data models. </p>
+<p>For view-based data model, only the GET method is generated.</p>
+<p>For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported: </p>
+<ul>
+<li>POST :<code>Create</code> new Domino document containing the specified fields.</li>
+<li>GET :<code>Read</code> existing Domino documents, returning zero or more documents.</li>
+<li>PUT :<code>Update</code> an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.</li>
+<li>DELETE :<code>Delete</code> the specified document.</li>
+<li>PATCH :<code>Update</code> an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.</li>
+<li>createBinary - <code>Create</code> a new attachment file to attach to a specified Domino document.</li>
+<li>getBinary - <code>Read</code> an existing attachment from a specified Domino document. </li>
+<li>updateBinary - <code>Update</code> an existing attachment from a specified Domino document, replacing it with a new one. </li>
+<li>deleteBinary - <code>Delete</code> an existing attachment from a specified Domino document.</li>
+</ul>
+<!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.
+-->
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The binary verbs, <code>createBinary</code>, <code>getBinary</code>, <code>updateBinary</code>, <code>deleteBinary</code>, are generated only when the Domino REST API administrator includes the <strong>$FILES</strong> virtual field in the form mode. </p>
+</div>
+<p>Data models in Foundry are associated with specific Domino forms, so each operation (GET, Update, etc.) only applies to the form associated with the data model. </p>
+<h2 id="supported-odata-query-parameters-for-form-based-get-method">Supported OData query parameters for form-based GET method</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The results of the GET method are influenced by the OData query parameters, if specified, and by the document's <em>form attribute</em> values.</p>
+<ul>
+<li>If there are no defined form name aliases in the Domino design for the form, the method returns only documents with the form attribute equal to the form name.</li>
+<li>If there are defined form name aliases in the Domino design for the form, the method returns only the documents that have the form value set equal to the last alias in Domino.<br />
+<!-- If there are defined form name aliases in Domino design for the form, the method returns only documents with the form attribute equal to the last name alias.-->  </li>
+</ul>
+</div>
+<p>The Domino Adapter supports these OData query parameters for the GET method on form-based data models:</p>
+<ul>
+<li><code>$select</code>: List of fields to include in the returned documents.</li>
+<li><code>$filter</code>: Specifies field conditions that must be met by a document for it to be in the returned document set.</li>
+<li><code>$filter (unknown Form)</code>: Specifies the UNID of the document to return without knowing the document's form name.</li>
+<li><code>$top</code>: Specifies the number of documents to return, starting from the beginning or from the row specified by <code>$skip</code>.</li>
+<li><code>$skip</code>: Specifies the number of documents to skip (zero-based row index of the first returned document).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><code>$top</code> and <code>$skip</code> are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.</li>
+<li><strong>When using a special character as part of the search parameter for the <code>$filter</code></strong>, you must encode the special character using <code>x_00</code> concatenated with its corresponding hex code. For example, when filtering a <code>Name</code> field whose value is <code>CN=admin/O=ocp</code>, you must encode the special characters <code>=</code> and <code>/</code>. So the filter should be <code>$filter=Name eq CNx_003dadminx_002fOx_003docp</code>, where we encoded <code>=</code> as <code>x_003d</code> and <code>/</code> as <code>x_002f</code>. </li>
+</ul>
+</div>
+<p>With <code>$filter</code>, the following canonical functions are supported:</p>
+<ul>
+<li><code>substringof</code></li>
+<li><code>endswith</code></li>
+<li><code>startswith</code></li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<table>
+<thead>
+<tr>
+<th>Example query</th>
+<th>Expected result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$filter=Type eq 'Dessert'</code></td>
+<td>Returns all documents whose <code>Type</code> field is equal to <code>Dessert</code>.</td>
+</tr>
+<tr>
+<td><code>$filter=Name eq CNx_003dadmin</code></td>
+<td>Returns all documents whose <code>Name</code> field is equal to <code>CN=admin</code>.</td>
+</tr>
+<tr>
+<td><code>$top=2</code></td>
+<td>Returns the first two documents.</td>
+</tr>
+<tr>
+<td><code>$skip=3</code></td>
+<td>Returns documents starting from the fourth document onwards.</td>
+</tr>
+<tr>
+<td><code>$select=Name&amp;$filter=substringof(Name,'Hot') eq true</code></td>
+<td>Returns documents with <code>Hot</code> included in the <code>Name</code> field, only returning the <code>Name</code> field.</td>
+</tr>
+<tr>
+<td><code>$select=Name,Ingredients</code></td>
+<td>Returns documents that include only the <code>Name</code> and <code>Ingredients</code> fields.</td>
+</tr>
+<tr>
+<td><code>$filter=x_0040unid eq xxxx and Form eq unknown</code></td>
+<td>Returns only the form name and form alias names for the document specified by UNID xxxx.</td>
+</tr>
+<tr>
+<td><code>$select=Name,mydate,x_0040created&amp;$filter=mydate ge '2022-03-10T05:00:00Z'</code></td>
+<td>Returns documents that include only the <code>Name</code> field, <code>mydate</code> field, and <code>x_0040created</code> columns, with <code>mydate</code> values on or after 2022-03-10T05:00:00Z.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="supported-odata-query-parameters-for-view-based-get-method">Supported OData query parameters for view-based GET method</h2>
+<p>The Domino Adapter supports these OData query parameters for the GET method on view-based data models:</p>
+<ul>
+<li><code>$skip</code>: Specifies the number of view entries to skip (zero-based row index of the first returned view entry).</li>
+<li><code>$top</code>: Specifies the number of view entries to return, starting from the beginning or from the row specified by <code>$skip</code>.</li>
+<li><code>$orderby</code>: Sort the result-set in ascending or descending order based on a specified column. <strong>The column must be specified as <code>sortable</code> in the database design</strong>. </li>
+<li><code>$filter</code>: Specifies conditions that must be met by a view entry for it to be returned in the set of matching view entries. <strong>Only <code>sortable</code> columns can be filtered</strong>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>For view-based data models, the <em>view selection formula</em> determines which documents will be returned. Additionally, the returning documents may be further filtered by the OData parameter settings.</li>
+<li>You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula <code>@Text(@Universalid)</code> to create a new sortable column in Domino Designer so that <code>$filter</code> and <code>$orderby</code> can be used to find a view row by UNID or to order the view by UNID.</li>
+<li><code>$top</code> and <code>$skip</code> are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.</li>
+<li><strong>When using a special character as part of the search parameter for the <code>$filter</code></strong>, you must encode the special character using <code>x_00</code> concatenated with its corresponding hex code. For example, when filtering a <code>Name</code> field whose value is <code>CN=admin/O=ocp</code>, you must encode the special characters <code>=</code> and <code>/</code>. So the filter should be <code>$filter=Name eq CNx_003dadminx_002fOx_003docp</code>, where we encoded <code>=</code> as <code>x_003d</code> and <code>/</code> as <code>x_002f</code>.</li>
+</ul>
+</div>
+<p>With <code>$filter</code>, the canonical function <code>startswith</code> is supported.</p>
+<!--- `documentsonly` - this function isn't part of the OData standards, but for Domino use only-->
+
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<table>
+<thead>
+<tr>
+<th>Example query</th>
+<th>Expected result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$top=10</code></td>
+<td>Returns 10 rows of data unless the total number of data rows in the view database is less than 10.</td>
+</tr>
+<tr>
+<td><code>$skip=0</code></td>
+<td>Returns rows starting from the first view entry in the view (skip zero rows), equivalent to omitting <code>$skip</code>.</td>
+</tr>
+<tr>
+<td><code>$skip=5</code></td>
+<td>Returns data starting from the sixth view entry in the view.</td>
+</tr>
+<tr>
+<td><code>$filter=Year eq 2021</code></td>
+<td>Returns all view entries in the view whose <code>Year</code> field is equal to <code>2021</code>.</td>
+</tr>
+<tr>
+<td><code>$filter=Name eq CNx_003dadmin</code></td>
+<td>Returns all view entries in the view whose <code>Name</code> field is equal to <code>CN=admin</code></td>
+</tr>
+<tr>
+<td><code>$filter=startswith(Model,'HR') eq true</code></td>
+<td>The result-set only has data that starts with "HR" in column <code>Model</code>.</td>
+</tr>
+<tr>
+<td><code>$orderby=Year</code> or <code>$orderby=Year asc</code></td>
+<td>Returned rows are ordered by ascending values in the <code>Year</code> column.<code>asc</code> is the default if direction is omitted.</td>
+</tr>
+<tr>
+<td><code>$orderby=Year desc</code></td>
+<td>Returned rows are ordered by descending values in the <code>Year</code> column.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--|`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|-->
+
+<h2 id="attachments">Attachments</h2>
+<p>Domino documents can have associated attachments, which are accessible to Volt MX Go through the binary API.</p>
+<p>You may perform the following binary operations:</p>
+<ul>
+<li>getBinary: <code>GET &lt;objSvc&gt;/binary/&lt;data model&gt;?unid=&lt;document unid&gt;&amp;name=&lt;file name&gt;&amp;type=&lt;input type&gt;</code>
+     Downloads file content in base64 format by default. The <code>type</code> parameter is optional. You can provide <code>type</code> as an input with value <code>bytes</code> or <code>file</code>. If you specify <code>bytes</code>, the response is in a stream format. If you specify <code>file</code>, the response is in a downloadable format.</li>
+<li>createBinary: <code>POST &lt;objSvc&gt;/binary/&lt;data model&gt;?unid=&lt;document unid&gt;&amp;name=&lt;file name&gt;&amp;field=&lt;field name&gt;</code><ul>
+<li>Takes the file’s binary content encoded as a base64 string</li>
+<li>The <code>field</code> parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.</li>
+</ul>
+</li>
+<li>updateBinary: <code>PUT &lt;objSvc&gt;/binary/&lt;data model&gt;?unid=&lt;document unid&gt;&amp;name=&lt;file name&gt;&amp;field=&lt;field name&gt;</code><ul>
+<li>Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.</li>
+<li>The <code>field</code> parameter is optional. If the attachment you wish to update is associated with a field in the Domino database, include the field in the update request to remove the attachment.</li>
+</ul>
+</li>
+<li>deleteBinary: <code>DELETE &lt;objSvc&gt;/binary/&lt;data model&gt;?unid=&lt;document unid&gt;&amp;name=&lt;file name&gt;&amp;field=&lt;field name&gt;</code><ul>
+<li>The file is deleted from the Domino database and its name is removed from the <code>$FILES</code> field.</li>
+<li>The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to remove the attachment.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<ul>
+<li>Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Foundry configured memory resource by <a href="https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat" rel="noopener noreferrer" target="_blank">configuring heap size</a> or updating <code>integration.resourceMemoryLimit</code> in <code>values.yaml</code> for Foundry on supported Kubernetes platform.
+<!-- Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.--></li>
+<li>By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see <a href="https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html" target="blank">Change file size limit</a> in the Domino REST API documentation.
+<!-- The <code>$FILES</code> item is a meta-type field that represents the names of the attachments in a document. It's built from the <code>$FILE</code> items in a note, and it represents a list of file names attached to the document. The <code>$FILES</code> field can't be used for <code>$filters</code> to find notes with a specified attachment, such as <code>$filter=x_0024FILES eq attName.txt</code>. However, you can use <code>$FILES</code> in a select command, such as <code>$select=x_0024FILES</code>.-->   </li>
+</ul>
+</div>
+<h2 id="using-patch-verb-from-volt-mx-sdk">Using PATCH verb from Volt MX SDK</h2>
+<p>The Volt MX SDK has CRUD functions allowing an end-user application to use the REST API to interact with the Domino data in the back end. If you want to use the PATCH verb, you need to use the <code>customVerb</code> function from the Volt MX SDK. For more information, see <a href="https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#customverb-method" rel="noopener noreferrer" target="_blank">customVerb method</a> in the HCL Volt MX Documentation.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Refer to the code example for using the SDK's <code>customVerb</code> function. </p>
+<div class="highlight"><pre><span></span><code>onPatchDocument: function() {
+var objSvc = voltmx.sdk.getCurrentInstance().getObjectService(&quot;myObj&quot;, {
+    &quot;access&quot;: &quot;online&quot;
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject(&quot;dataObj&quot;);
+    dataObject.addField(&quot;x_0040unid&quot;, &quot;unid&quot;);
+    dataObject.addField(&quot;field&quot;, &quot;value&quot;);
+    var options = {
+    &quot;dataObject&quot;: dataObject
+    };
+    objSvc.customVerb(&quot;partialupdate&quot;, options,
+    function(response) {
+    voltmx.print(&quot;Partial update succeeded: &quot; + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print(&quot;Partial update failed:&quot; + JSON.stringify(error));
+    });
+    } 
+</code></pre></div>
+</div>
+<h2 id="using-binary-apis-from-volt-mx-sdk">Using binary APIs from Volt MX SDK</h2>
+<p>Using the binary APIs with Domino Adapter requires more properties in the functional call. You need to add an object with a <code>queryParams</code> key to the options argument of the <code>createBinaryContent</code>. The object should contain query parameters required for using the binary APIs with Domino Adapter, including <code>unid</code> and <code>name</code> parameters. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>For more information, see the general use of the <a href="https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method" rel="noopener noreferrer" target="_blank">binary APIs from the Volt MX SDK</a>.</li>
+<li>There is no function in the Volt MX SDK for calling <code>deleteBinary</code>.</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Refer to the code examples for using the SDK's binary functions:</p>
+<div class="highlight"><pre><span></span><code>onCreateBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService(&quot;myObj&quot;, {
+    &quot;access&quot;: &quot;online&quot;
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject(&quot;dataObj&quot;);
+    var binaryText = &quot;SGVsbG8gd29ybGQh&quot;;
+    dataObject.addField(&quot;data&quot;, binaryText);
+    dataObject.addField(&quot;x_0040unid&quot;, &quot;123&quot;);
+    objSvc.createBinaryContent({
+    &quot;dataObject&quot;: dataObject,
+    &quot;queryParams&quot;: {
+        &quot;unid&quot;: &quot;123&quot;,
+        &quot;name&quot;: &quot;helloworld.txt&quot;,
+        &quot;field&quot;: &quot;Body&quot;
+    },
+    &quot;binaryAttrName&quot;: &quot;data&quot;
+    },
+    function(response) {
+        voltmx.print(&quot;Binary content created: &quot; + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print(&quot;Failed: &quot; + JSON.stringify(error));
+    });
+},
+onUpdateBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService(&quot;myObj&quot;, {
+    &quot;access&quot;: &quot;online&quot;
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject(&quot;dataObj&quot;);
+    var binaryText = &quot;VXBkYXRlZCBIZWxsbyBXb3JsZCE=&quot;;
+    dataObject.addField(&quot;data&quot;, binaryText);
+    dataObject.addField(&quot;x_0040unid&quot;, &quot;123&quot;);
+    objSvc.updateBinaryContent({
+    &quot;dataObject&quot;: dataObject,
+    &quot;queryParams&quot;: {
+        &quot;unid&quot;: &quot;123&quot;,
+        &quot;name&quot;: &quot;helloworld.txt&quot;,
+        &quot;field&quot;: &quot;Body&quot;
+    },
+    &quot;binaryAttrName&quot;: &quot;data&quot;
+    },
+    function(response) {
+        voltmx.print(&quot;Binary content created: &quot; + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print(&quot;Failed: &quot; + JSON.stringify(error));
+    });
+},
+onGetBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService(&quot;myObj&quot;, {
+    &quot;access&quot;: &quot;online&quot;
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject(&quot;dataObj&quot;);
+    dataObject.addField(&quot;x_0040unid&quot;, &quot;123&quot;);
+    objSvc.getBinaryContent({
+    &quot;dataObject&quot;: dataObject,
+    &quot;queryParams&quot;: {
+        &quot;unid&quot;: &quot;123&quot;,
+        &quot;name&quot;: &quot;helloworld.txt&quot;
+    },
+    &quot;binaryAttrName&quot;: &quot;data&quot;
+    },
+    function(response) {
+        voltmx.print(&quot;Binary content: &quot; + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print(&quot;Failed: &quot; + JSON.stringify(error));
+    });
+},
+
+onDeleteBinary: function() {
+    var objSvc = voltmx.sdk.getCurrentInstance().getObjectService(&quot;myObj&quot;, {
+    &quot;access&quot;: &quot;online&quot;
+    });
+    var dataObject = new voltmx.sdk.dto.DataObject(&quot;dataObj&quot;);
+    dataObject.addField(&quot;x_0040unid&quot;, &quot;123&quot;);
+    objSvc.deleteBinaryContent({
+    &quot;dataObject&quot;: dataObject,
+    &quot;queryParams&quot;: {
+        &quot;unid&quot;: &quot;123&quot;,
+        &quot;name&quot;: &quot;helloworld.txt&quot;,
+        &quot;field&quot;: &quot;Body&quot;
+    },
+    &quot;binaryAttrName&quot;: &quot;data&quot;
+    },
+    function(response) {
+        voltmx.print(&quot;Binary deleted: &quot; + JSON.stringify(response));
+    },
+    function(error) {
+        voltmx.print(&quot;Failed: &quot; + JSON.stringify(error));
+    });
+}
+</code></pre></div>
+</div>
+<!--*[CRUD]: create read update delete
+*[HTML]: Hyper Text Markup Language
+*[W3C]: World Wide Web Consortium
+*[URL]: Uniform Resource Locator
+*[NSF]: Notes Storage Facility
+*[WYSIWYG]: what you see is what you get-->
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 13, 2024</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023, HCL America, Inc. | <a href="https://www.hcl-software.com/legal/privacy" target="_blank">Privacy Statement</a> | <a href="https://www.hcl-software.com/legal/terms-use" target="_blank">Terms of Use</a> <br/> <a href="#__consent">Change cookie settings</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>
