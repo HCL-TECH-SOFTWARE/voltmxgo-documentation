@@ -1,16 +1,23 @@
 # Methods (Verbs)
 
+## Overview
+
 Methods for interacting with the data models are generated when generating the data models. 
 
 For view-based data model, only the GET method is generated.
 
 For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported: 
 
-- POST :`Create` new Domino document containing the specified fields.
-- GET :`Read` existing Domino documents, returning zero or more documents.
-- PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
-- DELETE :`Delete` the specified document.
-- PATCH :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
+- POST : *Create* a new Domino document containing the specified fields.
+- GET : *Read* existing Domino documents, returning zero or more documents.
+- PUT : *Update* an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
+- DELETE : *Delete* the specified document.
+- PATCH : *Update* an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
+- BULK UPDATE: *Update* an existing collection of documents, replacing only the specified fields in those documents. If a field is omitted from the payload, the field value in the collection of Domino documents isn’t modified.
+
+    !!!warning "Important"
+        You must use the `$filter` ODATA query parameter to tell Domino REST API which documents to update. Otherwise, an error occurs.
+
 - createBinary - `Create` a new attachment file to attach to a specified Domino document.
 - getBinary - `Read` an existing attachment from a specified Domino document. 
 - updateBinary - `Update` an existing attachment from a specified Domino document, replacing it with a new one. 

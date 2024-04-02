@@ -79,15 +79,15 @@ Locate the entry that starts with "drapi" and you can see the full pod name is *
 Using the [kubectl cp](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp){: target="_blank" rel="noopener noreferrer"} command, you can copy files into and out of the container. For example, if you want to copy the domino administrative ID out of the Domino data directory, you use a command like this:
 
 ```{ .yaml .no-copy }
-kubectl cp voltmxgo-drapi-848d9fc9f9-9vcgf:/local/notesdata/admin.id domino-id.id -n mxgo -c drapi
+kubectl cp domino-drapi-6fc766ccd4-55d9n:/local/notesdata/admin.id domino-id.id -n mxgo -c drapi
 ```
 
-Here, the `cp` command copies the file `/local/notesdata/admin.id` out of the container `voltmxgo-drapi-848d9fc9f9-9vcgf` to the file `domino-id.id` in the current working directory. The flag `-n mxgo` indicates that the Kubernetes namespace is `mxgo` and the flag `-c drapi` indicates using the drapi container within the Domino DRAPI pod.
+Here, the `cp` command copies the file `/local/notesdata/admin.id` out of the container `domino-drapi-6fc766ccd4-55d9n` to the file `domino-id.id` in the current working directory. The flag `-n mxgo` indicates that the Kubernetes namespace is `mxgo` and the flag `-c drapi` indicates using the drapi container within the Domino DRAPI pod.
 
 Similarly, you could copy the local file `foo.bar` into the container's `/tmp` directory like this:
 
 ```{ .yaml .no-copy }
-kubectl cp foo.bar  voltmxgo-drapi-848d9fc9f9-9vcgf:/tmp/foo.bar -n mxgo -c drapi
+kubectl cp foo.bar  domino-drapi-6fc766ccd4-55d9n:/tmp/foo.bar -n mxgo -c drapi
 ```
 
 Refer to [Kubernetes documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp) for more details on `cp`.
@@ -98,43 +98,44 @@ Refer to [Kubernetes documentation](https://kubernetes.io/docs/reference/generat
 You can get a bash prompt within the Domino container much like when you SSH into a remote Linux host. You do this with the `kubectl exec` command. You may start a bash command session like this:
 
 ```{ .yaml .no-copy }
-kubectl exec -it voltmxgo-drapi-848d9fc9f9-9vcgf  -n mxgo -c drapi -- bash
+kubectl exec -it domino-drapi-6fc766ccd4-55d9n  -n mxgo -c drapi -- bash
 ```
 
 The response should look like the following, which indicates you are now in a bash shell command prompt within the Domino REST API container:
 
 ```{ .yaml .no-copy }
-[hcl@voltmxgo-drapi-848d9fc9f9-9vcgf ~]$
+[notes@domino-drapi-6fc766ccd4-55d9n /]$
 ```
 
 You can use the nashcom [Domino Start Script](https://nashcom.github.io/domino-startscript/) to interact with the Domino server. This script is already installed and available for use.
 
-First add the program directory `/opt/nashcom/startscript/` to your path:
+<!--First add the program directory `/opt/nashcom/startscript/` to your path:
 
 ```{ .yaml .no-copy }
 export PATH=$PATH:/opt/nashcom/startscript/
 ```
+-->
 
-You can now show the status of the Domino server by using this command:
+You can show the status of the Domino server by using this command:
 
 ```{ .yaml .no-copy }
-rc_domino_script status
+domino status
 ```
 
 You should see:
 
 ```{ .yaml .no-copy }
-Domino Server is running (hcl)
+Domino Server is running (notes)
 ```
 
 You can attach to the Domino console with the `live` command and see something like this:
 
 ```{ .yaml .no-copy }
-[hcl@voltmxgo-drapi-848d9fc9f9-9vcgf ~]$ rc_domino_script live
+[notes@domino-drapi-6fc766ccd4-55d9n /]$ domino live
 Using Domino config File [/etc/sysconfig/rc_domino_config]
 
 
---- Live Console for hcl ---
+--- Live Console for notes ---
 
 To close console, always type 'close' or 'stop'.
 
@@ -197,37 +198,37 @@ For the full set of server commands and syntax, see the [HCL Domino Documentatio
 If you need to stop and restart the Domino server without killing the entire pod, you may exec into the Domino pod and issue the command to stop and then restart Domino. Here is an example with a typical output:
 
 ```{ .yaml .no-copy }
-kubectl exec -it voltmxgo-drapi-848d9fc9f9-9vcgf  -n voltmxgo -c drapi -- bash
-[hcl@voltmxgo-drapi-848d9fc9f9-9vcgf ~]$ export PATH=$PATH:/opt/nashcom/startscript/
-[hcl@voltmxgo-drapi-848d9fc9f9-9vcgf ~]$ rc_domino_script stop
+kubectl exec -it domino-drapi-6fc766ccd4-55d9n  -n voltmxgo -c drapi -- bash
+[notes@domino-drapi-6fc766ccd4-55d9n /]$ export PATH=$PATH:/opt/nashcom/startscript/
+[notes@domino-drapi-6fc766ccd4-55d9n /]$ domino stop
 Using Domino config File [/etc/sysconfig/rc_domino_config]
 
-Stopping Domino for xLinux (hcl)
+Stopping Domino for xLinux (notes)
 KEEP started in task mode, no pre_shutdown action required
  ... waiting for shutdown to complete
  ... waiting 10 seconds
  ... waiting 20 seconds
 KEEP started in task mode, no post_shutdown action required
 Domino stopped (26 sec)
-Domino for xLinux (hcl) shutdown completed
+Domino for xLinux (notes) shutdown completed
 ```
 
 Restart using the `start` command:
 
 ```{ .yaml .no-copy }
-[hcl@voltmxgo-drapi-848d9fc9f9-9vcgf ~]$ rc_domino_script start
+[notes@domino-drapi-6fc766ccd4-55d9n /]$ domino start
 Using Domino config File [/etc/sysconfig/rc_domino_config]
 
 
-Archived log file to '/local/notesdata/hcl_231009_193905.log'
+Archived log file to '/local/notesdata/notes_231009_193905.log'
 Removed LoadMon-Data '/local/notesdata/loadmon.ncf'
 
-Starting Domino for xLinux (hcl)
+Starting Domino for xLinux (notes)
 done PID is 20210
 
 KEEP starting in task mode, no post_startup action required
 
-[hcl@voltmxgo-drapi-848d9fc9f9-9vcgf ~]$
+[notes@domino-drapi-6fc766ccd4-55d9n /]$
 ```
 
 You can also use the `restart` command.
