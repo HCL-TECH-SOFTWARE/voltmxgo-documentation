@@ -1,7 +1,8 @@
 # Install and upgrade Volt MX Go Iris
 
 !!!warning "Important!"
-    Make sure to download and install the latest version of the Volt MX Go Iris.
+    - Make sure to download and install the latest version of the Volt MX Go Iris.
+    - Volt MX Iris and Volt MX Go Iris have different capabilities. Please ensure you are using the Volt MX Go Iris software.
 
 ## Install Volt MX Go Iris
    
