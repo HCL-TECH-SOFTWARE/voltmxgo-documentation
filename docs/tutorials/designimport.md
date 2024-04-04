@@ -12,13 +12,11 @@
 - You have created Domino REST API.
 - Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List to access administrative APIs used by Design Import. 
 
-<!-- All users in Volt MX Go that are performing a Design Import need to be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html) group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List for access to administrative API used by Design Import.--> 
-
 - You have a configured `.nsf` file, schema, scopes, and application in [Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html){: target="_blank" rel="noopener noreferrer"}.
 
     - When you configure the schema, set the **Formula for Delete Access** to `@True` in `default` mode in all the forms in the schema. For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
 
-    - When you configure the `schema`, add a `dql` mode to each configured form. The `dql` mode must include all the fields of the form. Both the `default` and `dql` modes must have matching fields<!-- for the form and fields to be seen as configured in the Design Import-->. 
+    - When you configure the `schema`, add a `dql` mode to each configured form. The `dql` mode must include all the fields of the form. Both the `default` and `dql` modes must have matching fields.
 
     - When you configure the `schema`, include the `$Files` field in the configured form to capture the uploading and downloading of files in the Design Import.
 
@@ -46,49 +44,30 @@
 
     2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
 
-        ![Preferences](../assets/images/dipreference.png)
-
     3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**.
         
-        You should see the “Validation Successful” message at the top of the dialog.
+        <!-- You should see the “Validation Successful” message at the top of the dialog.-->
     
     4. Click **Done**.
+    ![Preferences](../assets/images/dipreference.png)
+
+    !!!note "Note"
+        If the **Foundry URL** is incorrect, a prompt error will appear.
 
 3. Log in to Volt MX Go Iris.
     1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
-    2. Enter your email and password for Foundry on the **Sign in to your account** page.
+    2. Enter your email and password for **Volt MX Foundry** on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon.
-
-<!--1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
-
-    !!!note
-        If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close button is no longer appear during login.
-
-    Wait until the MX Go Foundry preference has been verified before logging in.
-
-    **Validation of MX Go preference:**
-        
-    1. Click  the home ![](../assets/images/dihome.png){: style="height:3%;width:3%"} icon.
-    2. Open the **Volt Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
-    3. This opens the **Volt Iris Preferences**. Click on **Volt MX Foundry**.
-    4. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or your Foundry hostname, and click **Validate**.
-        ![Preferences](../assets/images/dipreference.png)
-
-    5. Click **Done**. 
-
-
-4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
-
-    ![Log in screen](../assets/images/dilogin.png)-->
 
 ## Create a new project
     
 1. On the top menu, select **Project** &rarr; **New Project**.
-2. On the **What do you want to start with now?** dialog, select **Web App** or **Native App** and click **Next**.
+2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
+    For other platforms, please see this link:()
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
-3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App or **Mobile** for Native App and click **Next**.
+3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App and click **Next**.
 
     ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
@@ -96,7 +75,7 @@
   
     ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
-You can now see your project name in the upper-left corner of the Iris canvass.
+You can now see your project name in the upper-left corner of the **Volt MXGo Iris** canvass.
 
 ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
@@ -111,8 +90,13 @@ You can now see your project name in the upper-left corner of the Iris canvass.
     
 3. On **Associate Foundry App**, click **Create New**.
 
-    !!!note
-        Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+    ![](../assets/images/difoundryapp.png)
+
+    a. Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+
+    ![](../assets/images/difoundrybackend.png) 
+
+    b. For **Use Existing**, click here.()
             
 
 4. On **Identity Service**:
@@ -129,29 +113,29 @@ You can now see your project name in the upper-left corner of the Iris canvass.
 
         ![](../assets/images/dikeep.png)
 
-    2. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOkeepRecipe201
+    2. Select the **service name**, that you added from the previous page and click **Next**. Once your **Foundry Application** has been published, your service name should be named as MXGO(service name). Example: MXGOISMyApp
 
         ![](../assets/images/didrapi.png)
 
-    2. Login with your **Domino credentials** within this wizard modal dialog and click **Allow**.
+    3. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
         !!!note
-            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
+            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you are not, enter the credentials for the IdP you've configured for Domino REST API. 
 
 
         ![](../assets/images/didrapilogin.png)
 
-    3. Select your **Foundry Identity Service** name associated to Domino REST API and click **Next**.
+    4. Select your **Foundry Identity Service** name associated to Domino REST API and click **Next**.
 
         ![](../assets/images/difoundry.png)
 
 5. On **Scope and Forms**:
 
-    1. Select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
         ![](../assets/images/discope.png)
 
-    2. **Select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
+    2. **Select** or **deselect** the configured `forms`, `fields` in each form, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
         ![](../assets/images/discopeform.png)
 
