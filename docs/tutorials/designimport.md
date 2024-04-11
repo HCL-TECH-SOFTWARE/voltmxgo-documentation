@@ -10,7 +10,7 @@
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have created Domino REST API.
-- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List to access administrative APIs used by Design Import. 
+- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
 
 - You have a configured `.nsf` file, schema, scopes, and application in [Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html){: target="_blank" rel="noopener noreferrer"}.
 
@@ -187,7 +187,9 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         ![](../assets/images/diexfoundry.png)
 
         !!!info
-            If you have an existing Domino Application Project on your canvass and you want to import and associate it with another Foundry app, use the **Unlink App**. This unlinks the Foundry App and returns to selecting *Create New* or *Use Existing* 
+            - If you have an existing Domino Application Project on your canvass and you want to import and associate it with another Foundry app, click the **Unlink App**.
+            - There is a prompt to delete the Foundry App, click **delete**.
+            - This unlinks the Foundry App and returns to selecting *Create New* or *Use Existing* 
 
 4. On **Identity Service**, click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
 
@@ -240,12 +242,12 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Create entry
 
-1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: Customer).
+1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: ContactProfile).
 
     ![Screenshot](../assets/images/dinewview.png)
 
 2. Fill in the fields.
-3. Click **Select Files** to upload a file. The **File Upload** appears only if the schema included the `$Files` field in the configuration of Domino REST API.
+3. Click **Select Files** to upload a file.(This step is for those fields that needed to upload a certain file). The **File Upload** appears only if the schema included the `$Files` field in the configuration of Domino REST API.
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -260,7 +262,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Viewing data
 
-1. In the Dashboard, go to the **Views** section and click your preferred document.(example: Customer).
+1. In the Dashboard, go to the **Views** section and click your preferred document.(example: AllContacts).
 
     ![Screenshot](../assets/images/diviews.png)
 
@@ -279,27 +281,25 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Update data
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: Customer).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Customer** page, search the customer and click **View**. 
+2. In the **Dashboard/AllContacts** page, search the contacts, click the row and select **Edit**. 
 
     !!!note
-        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
+        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the **Database View** is **active** and the columns in the view are added during the import.
 
 
     ![Screenshot](../assets/images/dieditdata.png)
 
-3. Click **Edit**.
-
     !!!note
         You may also see the delete button here, which allows you to erase or remove the data you've selected.
 
-4. Edit the fields that you want to modify.
+3. **Edit** the fields that you want to modify.
 
 
-5. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button.
+4. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button.(This step is for those fields that needed to upload a certain file).
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -310,30 +310,30 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 6. Click **Save**.
 
-      ![Screenshot](../assets/images/dieditsave.png)
+     <!-- ![Screenshot](../assets/images/dieditsave.png)-->
 
 
 ### Delete entry
 
 !!!note
-    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
+    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **Default** and **dql** `mode` during your schema configuration.
 
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: Customer).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Customer** page, search customer and click the **Delete** button.
+2. In the **Dashboard/AllContacts** page, search the contacts, click the row and select **Delete**.
 
     ![Screenshot](../assets/images/disearchdel.png)
 
-    There is a confirmation message box to confirm the deletion of data, click **OK**.
+    <!--There is a confirmation message box to confirm the deletion of data, click **OK**.
 
     ![Screenshot](../assets/images/dimsgdelete.png)
 
     Another pop-up message box appears.
 
-    ![Screenshot](../assets/images/diconfirmdel.png)
+    ![Screenshot](../assets/images/diconfirmdel.png) -->
  
 
 !!!note
