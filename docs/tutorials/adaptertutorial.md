@@ -15,10 +15,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Log in to Volt MX Foundry
 
-1. Open <!--`http://foundry.mymxgo.com/mfconsole/` or your provided--> the Foundry hostname concatenated with `/mfconsole/` in your browser.
+1. Open the Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!!tip
-        <!--If you used the installer to install Volt MX Go Foundry,-->Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
+        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
   
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
@@ -80,7 +80,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 7.	Click **Save**.
 
 !!!tip
-    You can click **Test Login** to verify if the configured Identity service works. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the  Domino REST API **Access consent required** dialog. If the configuration doesn't work, an error message is shown. 
+    - Click **Test Login** to verify if the configured Identity service works. 
+    - If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything.  
+    - If the configuration doesn't work, an error message is shown. 
 
 ## Add an environment 
 
@@ -116,17 +118,19 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     1. Enter the Domino REST API server URL in the **Domino REST API Base URL** text field.
     2. Enter a value in the **Connection Timeout** text field. By default, the value is set to 30 ms.
-    <!--3. Choose either MIME or HTML from the **Rich Text Mode** dropdown list.-->
-     
-    !!!note
-        The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
-        <!--- MIME is the default if no option is selected in **Rich Text Mode**. MIME might be removed in future updates.    
-        - If you want to use MIME and HTML as Rich Text modes, you have to create separate object services, one for HTML and one for MIME.-->    
+        
+        !!!note
+            The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
 
-    ![](../assets/images/objectconparam1.png)
+    3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*. 
+
+        !!!note
+            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/method.md).   
+
+    <!--![](../assets/images/objectconparam1.png)-->
 
     !!!tip
-        To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a "Connection Successful" message if the configured connection parameters are correct.
+        To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a *Connection Successful* message if the configured connection parameters are correct.
 
 6.	Under **Authentication**: 
 
@@ -134,7 +138,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     2. Select the identity service you configured in the drop-down list.
     
     !!!tip
-        To test the authentication, click **Test Login**. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the Domino REST API **Access consent required** dialog. A Test Login Successful message is then displayed. 
+        Click **Test Login** to test the authentication. If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and then click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything. A *Test Login Successful* message is then displayed.
 
     ![](../assets/images/objectauthentication.png)
 
