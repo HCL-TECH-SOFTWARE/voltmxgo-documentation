@@ -2,12 +2,24 @@
 
 The Summernote Editor component enables you to add a WYSIWYG editor to your form for handling rich text with links, tables, images, videos, and character styles. 
 
+Summernote Editor is integrated into Volt Iris using custom components. A component acts as a widget configured to provide a specific feature. This component uses the Browser widget to display the UI of the Summernote Editor and enable its functionality. It links to the HTML file found in the local files associated with Summernote Editor. 
+
+Once imported, you can find the Summernote Editor component by navigating to **Templates** and expanding **Components**. Under the **Modules** folder of the Summernote Editor component, you can find the controller that holds the defined methods exposed to the form for usage.
+
 Following are some use cases of the Summernote Editor component:
 
-- **Feedback**: User feedback can comprise multiple lines of text. The Summernote Editor component is apt in all the scenarios for taking user feedback.
-- **Comments section**: The Summernote Editor component is apt for applications that support users’ comments. 
+- **For replacing rich text fields during code generation of existing forms**
+
+    When generating Create and Update forms for the first time, the Summernote Editor component is created before the forms to replace rich text fields and enable input of rich text content. After submitting the form, the HTML content from the editor is encoded in Base64 and stored in the rich text field. The Base64 content is decoded and displayed on the Summernote Editor component when loading the Update form. 
+
+- **For use in custom forms**
+
+    You will find the Summernote Editor component in the Default Library. To use the Summernote Editor component, drag and drop it onto the custom form. You can then configure its placement and utilize its properties to retrieve and set data on the editor.
 
 For more information on components in Iris, see [Use Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_UsingComponents.html){: target="blank"} and [Creating Applications with Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_DesigningWorkingWithComponents.html).
+
+!!!note
+    When performing code generation of forms, the Summernote Editor component is included only if a rich text field is found on the form in the Domino REST API. For more information on code generation of forms, see [Generate CRUD forms for Object Service](../howto/codegen.md).
 
 ## Methods
 
@@ -22,6 +34,7 @@ Methods are used by the form to interact with the Summernote Editor component.
 
 You can now configure the component methods. For more information, see [Manage Methods](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_CreatingComponent.html#manage-methods-of-a-component-with-a-contract){: target="_blank" rel="noopener noreferrer"}.
 
+**Methods**
 
 |setData| | |
 |---|---|---|
@@ -43,8 +56,7 @@ You can now configure the component methods. For more information, see [Manage M
 ||Parameters|`fileName`</br> A string value parameter for checking if a specified filename exists on the content of the Summernote Editor component. </br></br> `removeFile` </br> An optional boolean parameter for enabling the removal of the file from the content of the Summernote Editor component when it's set to *true*. By default, the parameter is set to *false*.|
 ||Return value|Returns a Boolean value of *true* if a file exists, and *false* if a file isn't found in the content ofthe  Summernote Editor component.|
 ||Remarks|The `removeFile` parameter can be left out if you won't remove a file from the Summernote Editor component. Only the `fileName` parameter is required.|
-||Example|For only checking if a file exists: </br> `self.instanceDetails.checkOrRemoveFile (“TestFile.pdf”)` </br></br> For removing a file:</br> `self.instanceDetails.checkOrRemoveFile(“TestFile.pdf”, true)`
-|
+||Example|For only checking if a file exists: </br> `self.instanceDetails.checkOrRemoveFile (“TestFile.pdf”)` </br></br> For removing a file:</br> `self.instanceDetails.checkOrRemoveFile(“TestFile.pdf”, true)`|
 
 ## Properties
 
@@ -58,6 +70,8 @@ You need a default property to build the Summernote Editor component. The table 
 4. Click **Manage Properties** to open the **Manage Properties** dialog.
 
 You can now configure the component properties. For more information, see [Manage Properties](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_CreatingComponent.html#manage-properties-of-a-component-with-a-contract){: target="_blank" rel="noopener noreferrer"}.
+
+**Properties**
 
 |data|||
 |---|---|---|
