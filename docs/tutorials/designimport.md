@@ -63,7 +63,7 @@
     
 1. On the top menu, select **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
-    For other platforms, please see this link:()
+    For other platforms, please see [Native App]( ../howto/dicreatenativeapp.md)
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
