@@ -80,19 +80,16 @@ For form-based data models, the document's `@unid` is an obvious example. Below 
 ```{ .yaml .no-copy }
 x_0040addedtofile
 x_0040aliases	
-x_0040created	
-x_0040etag	
+x_0040created
+x_0040editable		
 x_0040lastaccessed	
 x_0040lastmodified	
 x_0040lastmodifiedinfile	
 x_0040noteclass	
 x_0040noteid	
 x_0040parentunid	
-x_0040revision	
-x_0040seq	
-x_0040seqtime	
-x_0040size	
-x_0040threadid	
+x_0040revision		
+x_0040size		
 x_0040unid	
 x_0040unread
 ```
