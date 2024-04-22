@@ -2,6 +2,7 @@ nav:
     - index.md
     - foundryadminaccount.md
     - codegen.md
+    - insertattachments.md
     - accessdrapi.md
     - connectdominofromnotes.md
     - Import First Touch: importft.md
