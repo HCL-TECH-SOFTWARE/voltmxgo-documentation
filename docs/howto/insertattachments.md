@@ -61,3 +61,4 @@ You can download attachments from the Grid or Details form of a document.
 -	To download all attachments, click **Download All Attachments**.
 -	To download an individual attachment, click the attachment file link on the rich text field.
 
+To learn more about attachments, see [Attachments](../topicguides/method.md#attachments). 
