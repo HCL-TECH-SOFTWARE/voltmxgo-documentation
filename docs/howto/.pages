@@ -7,6 +7,7 @@ nav:
     - Import First Touch: importft.md
     - logginglevel.md
 #    - summernote.md
+    - deleteform.md
     - configrosetta.md
     - regunregconfig.md
     - configmobile.md
