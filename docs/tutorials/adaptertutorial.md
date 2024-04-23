@@ -15,10 +15,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Log in to Volt MX Foundry
 
-1. Open <!--`http://foundry.mymxgo.com/mfconsole/` or your provided--> the Foundry hostname concatenated with `/mfconsole/` in your browser.
+1. Open the Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!!tip
-        <!--If you used the installer to install Volt MX Go Foundry,-->Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
+        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
   
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
@@ -80,7 +80,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 7.	Click **Save**.
 
 !!!tip
-    You can click **Test Login** to verify if the configured Identity service works. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the  Domino REST API **Access consent required** dialog. If the configuration doesn't work, an error message is shown. 
+    - Click **Test Login** to verify if the configured Identity service works. 
+    - If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything.  
+    - If the configuration doesn't work, an error message is shown. 
 
 ## Add an environment 
 
@@ -91,7 +93,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     !!!note
         Your environment name can only contain letters, numbers, and hyphens (-). A hyphen can't appear at the beginning or at the end of a name. A number can't appear at the beginning of a name. A name should be a minimum of three characters and a maximum of 20 characters long.
 
-4.	In the **Server** tab, enter the URL of your Volt MX Foundry in the **URL** text box.
+4.	On the **Server** tab, enter the URL of your Volt MX Foundry in the **URL** text box.
     The URL format is: `<http or https>://<server_host>:<server_port>`
     
     For example: `http://mbaastest30.hcl.net:53504`
@@ -103,7 +105,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 ## Configure an Object service
 
-1. On the left pane on the **Volt MX Foundry Console**, click **Apps**.
+1. In the left pane on the **Volt MX Foundry Console**, click **Apps**.
 2. On the **Apps** page, select the app you created. 
 3. Go to **Configure Services** &rarr; **Objects**, and then click **Configure New**.
 4. Enter the object service name in the **Name** text field. For example, `EmployeeModelSchema`.
@@ -116,17 +118,19 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
     1. Enter the Domino REST API server URL in the **Domino REST API Base URL** text field.
     2. Enter a value in the **Connection Timeout** text field. By default, the value is set to 30 ms.
-    <!--3. Choose either MIME or HTML from the **Rich Text Mode** dropdown list.-->
-     
-    !!!note
-        The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
-        <!--- MIME is the default if no option is selected in **Rich Text Mode**. MIME might be removed in future updates.    
-        - If you want to use MIME and HTML as Rich Text modes, you have to create separate object services, one for HTML and one for MIME.-->    
+        
+        !!!note
+            The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
 
-    ![](../assets/images/objectconparam1.png)
+    3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*. 
+
+        !!!note
+            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/method.md).   
+
+    <!--![](../assets/images/objectconparam1.png)-->
 
     !!!tip
-        To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a "Connection Successful" message if the configured connection parameters are correct.
+        To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a *Connection Successful* message if the configured connection parameters are correct.
 
 6.	Under **Authentication**: 
 
@@ -134,7 +138,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     2. Select the identity service you configured in the drop-down list.
     
     !!!tip
-        To test the authentication, click **Test Login**. If the configuration works, a Domino REST API login dialog opens where you need to enter your Domino REST API administrator username and password. After successful login, click **Allow** in the Domino REST API **Access consent required** dialog. A Test Login Successful message is then displayed. 
+        Click **Test Login** to test the authentication. If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and then click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything. A *Test Login Successful* message is then displayed.
 
     ![](../assets/images/objectauthentication.png)
 
@@ -166,7 +170,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 2. From the list, click **GET**. 
 4. Expand the **base mapper1**, and then select the **Test** tab.
 5. Click **Send**.
-6. All records are displayed on the **Response** console. Click **Save** after viewing. 
+    
+    All records are displayed on the **Response** console. 
+    
+6. Click **Save** after viewing. 
 
 **To view a filtered record**
 
@@ -176,7 +183,10 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     ![Filtered record](../assets/images/getoneunid.png)
 
 3. Click **Send**.
-4. The record is displayed on the **Response** console. 
+    
+    The record is displayed on the **Response** console. 
+
+4. Click **Save** after viewing.
 
 For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
@@ -185,20 +195,22 @@ For more information on supported parameters, see [Supported OData query paramet
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **POST**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the fields of the data model should be displaying.
+4. In the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the values, then click **Send**. 
-6. The ID of the record is displayed on the **Response** console after the successful insertion of the record. 
+    
+    The ID of the record is displayed on the **Response** console after the successful insertion of the record. 
 
     !!!tip
         Save the ID for updating or deleting the record using PUT or DELETE method, respectively.
 
+6. Click **Save** after viewing.
 
 ## Test the PUT method by updating a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PUT**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the fields of the data model should be displaying.
+4. In the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the updated values, then click **Send**.
 
     !!!note
@@ -206,31 +218,34 @@ For more information on supported parameters, see [Supported OData query paramet
 
     ![Input updated values](../assets/images/putrequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the fields with updated values and the number of updated records. 
+    The **Response** console shows the fields with updated values and the number of updated records. 
 
     ![Update result](../assets/images/putresponse.png){: style="height:60%;width:60%"}
 
+6. Click **Save** after viewing.
 
 ## Test the DELETE method by deleting a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **DELETE**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the field of the data model should be displaying.
+4. In the **Request Payload**, the field of the data model should be displaying.
 5. Beside the field, input the ID of the record to be deleted, then click **Send**.
 
     ![Delete request](../assets/images/deleterequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the number of deleted records. 
+    The **Response** console shows the number of deleted records. 
 
     ![Delete result](../assets/images/deleteresponse.png){: style="height:60%;width:60%"}
+
+6. Click **Save** after viewing.
 
 ## Test the PATCH method by updating a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PATCH**.
 3. Expand the **base mapper1**, and then select the **Test** tab.	
-4. On the **Request Payload**, the fields of the data model should be displaying.
+4. In the **Request Payload**, the fields of the data model should be displaying.
 5. Beside the fields, input the updated values, then click **Send**.
 
     <!--!!!note
@@ -238,9 +253,33 @@ For more information on supported parameters, see [Supported OData query paramet
 
     ![Input updated values](../assets/images/patchrequest.png){: style="height:60%;width:60%"}
 
-6. The **Response** console shows the fields with updated values and the number of updated records. 
+    The **Response** console shows the fields with updated values and the number of updated records. 
 
     ![Update result](../assets/images/patchresponse.png){: style="height:60%;width:60%"}
+
+6. Click **Save** after viewing.
+
+## Test the BULK UPDATE method for updating a collection of records
+
+1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
+2. From the list, click **BULK UPDATE**.
+3. Expand the **base mapper1**, and then select the **Test** tab.
+4. Enter a `$filter` ODATA query parameter in the **Enter the Query Params** text box.
+
+    !!!warning "Important"
+        You must use the $filter ODATA query parameter to tell Domino REST API which documents to update. Otherwise, an error occurs.
+
+    In the following example image, `$filter=Subject eq ‘old subject’` is used as the ODATA query parameter.
+
+    ![Query parameter](../assets/images/bulkupdate2.png){: style="height:70%;width:70%"}
+    
+5. In the **Request Payload**, specify the field to update and the updated value, and then click **Send**.
+
+    The **Response** console shows all the documents with the specified field having the updated value. As shown in the example image, `Subject` is the updated field with an updated value of `new subject`.
+
+    ![Update result](../assets/images/bulkupdate3.png){: style="height:60%;width:60%"}
+
+6. Click **Save** after viewing.
 
 ## Additional procedure
 
@@ -266,4 +305,3 @@ For more information on supported parameters, see [Supported OData query paramet
     Make sure to take note of the App ID and App secret as you need these details in configuring the Identity Service in Foundry. 
 
 
- 

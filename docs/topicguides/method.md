@@ -1,16 +1,23 @@
 # Methods (Verbs)
 
+## Overview
+
 Methods for interacting with the data models are generated when generating the data models. 
 
 For view-based data model, only the GET method is generated.
 
 For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported: 
 
-- POST :`Create` new Domino document containing the specified fields.
-- GET :`Read` existing Domino documents, returning zero or more documents.
-- PUT :`Update` an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
-- DELETE :`Delete` the specified document.
-- PATCH :`Update` an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
+- POST : *Create* a new Domino document containing the specified fields.
+- GET : *Read* existing Domino documents, returning zero or more documents.
+- PUT : *Update* an existing document, replacing all specified fields. If a field is omitted from the payload, it's removed from the document in Domino.
+- DELETE : *Delete* the specified document.
+- PATCH : *Update* an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
+- BULK UPDATE: *Update* an existing collection of documents, replacing only the specified fields in those documents. If a field is omitted from the payload, the field value in the collection of Domino documents isn’t modified.
+
+    !!!warning "Important"
+        You must use the `$filter` ODATA query parameter to tell Domino REST API which documents to update. Otherwise, an error occurs.
+
 - createBinary - `Create` a new attachment file to attach to a specified Domino document.
 - getBinary - `Read` an existing attachment from a specified Domino document. 
 - updateBinary - `Update` an existing attachment from a specified Domino document, replacing it with a new one. 
@@ -101,14 +108,26 @@ Domino documents can have associated attachments, which are accessible to Volt M
 
 You may perform the following binary operations:
 
- - getBinary: `GET <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&type=<input type>`
-     Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
- - createBinary: `POST <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
-     - Takes the file’s binary content encoded as a base64 string
+ - getBinary: `GET <objSvc>/operations/<data model>/getBinary?unid=<document unid>&name=<file name>&type=<input type>`
+     - Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
+     
+        !!!tip
+            To download files larger than 50 MB, use a type argument, such as `bytes`, to avoid memory issues with the default base64 format. This enables downloading of files up to 1 GB.
+         
+ - createBinary: `POST <objSvc>/operations/<data model>/createBinary?unid=<document unid>&name=<file name>&field=<field name>`
+     - Takes the file’s binary content encoded as a base64 string or in the multipart/form-data format
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
-- updateBinary: `PUT <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
+
+        !!!tip
+            To upload large files, upload them to the createBinary API with a Content-Type of multipart/form-data. Pass the UNID and document name as arguments to the API together with a form, having the key `data`, which contains the file content to be uploaded. This enables uploading of files up to 1 GB.
+
+- updateBinary: `PUT <objSvc>/operations/<data model>/updateBinary?unid=<document unid>&name=<file name>&field=<field name>`
     - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
     - The `field` parameter is optional. If the attachment you wish to update is associated with a field in the Domino database, include the field in the update request to remove the attachment.
+
+        !!!tip
+            To upload large files, upload them to the updateBinary API with a Content-Type of multipart/form-data. Pass the UNID and document name as arguments to the API together with a form, having the key `data`, which contains the file content to be uploaded. This enabled uploading of files up to 1 GB.
+
 - deleteBinary: `DELETE <objSvc>/binary/<data model>?unid=<document unid>&name=<file name>&field=<field name>`
     - The file is deleted from the Domino database and its name is removed from the `$FILES` field.
     - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to remove the attachment.
@@ -123,8 +142,7 @@ You may perform the following binary operations:
 
 The Volt MX SDK has CRUD functions allowing an end-user application to use the REST API to interact with the Domino data in the back end. If you want to use the PATCH verb, you need to use the `customVerb` function from the Volt MX SDK. For more information, see [customVerb method](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#customverb-method){: target="_blank" rel="noopener noreferrer"} in the HCL Volt MX Documentation.
 
-!!!example
-    Refer to the code example for using the SDK's `customVerb` function. 
+???example "Refer to the code example for using the SDK's `customVerb` function."   
 
     ```
     onPatchDocument: function() {
@@ -155,8 +173,7 @@ The Volt MX SDK has CRUD functions allowing an end-user application to use the R
     - For more information, see the general use of the [binary APIs from the Volt MX SDK](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method){: target="_blank" rel="noopener noreferrer"}.
     - There is no function in the Volt MX SDK for calling `deleteBinary`.
 
-!!!example
-    Refer to the code examples for using the SDK's binary functions:
+???example "Refer to the code examples for using the SDK's binary functions."
 
     ```text
     onCreateBinary: function() {
