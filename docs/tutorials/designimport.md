@@ -24,7 +24,11 @@
 
     - When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank" rel="noopener noreferrer"}.
 
+    - When you configure `scope`, the scope name must be limited to 30 character.
+
     - When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
+    
+    
 
 
 ## Launch Volt MX Go Iris
@@ -63,7 +67,7 @@
     
 1. On the top menu, select **Project** &rarr; **New Project**.
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
-    For other platforms, please see [Native App]( ../howto/dicreatenativeapp.md)
+    For other platforms, please see [Native App]( ../howto/dicreatenativeapp.md).
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
@@ -96,9 +100,7 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
     ![](../assets/images/difoundrybackend.png) 
 
-    b. For **Use Existing**, click here.()
             
-
 4. On **Identity Service**:
     
     1. Enter the required details in the **Create New Identity Service** and click **Next**. 
@@ -131,9 +133,16 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
 5. On **Scope and Forms**:
 
+    !!!info
+        The scope name is limited to 30 character. In case your scope name is more than 30 character, it will give a prompt:
+        ![](../assets/images/discopechar.png)    
+
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
-        ![](../assets/images/discope.png)
+
+
+
+    ![](../assets/images/discope.png)
 
     2. **Select** or **deselect** the configured `forms`, `fields` in each form, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
@@ -197,6 +206,10 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     
 5. On **Scope and Forms**: 
 
+    !!!info
+        The scope name is limited to 30 character. In case your scope name is more than 30 character, it will give a prompt:
+        ![](../assets/images/discopechar.png)   
+
     1. Select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
         ![](../assets/images/discope.png)
@@ -247,7 +260,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     ![Screenshot](../assets/images/dinewview.png)
 
 2. Fill in the fields.
-3. Click **Select Files** to upload a file.(This step is for those fields that needed to upload a certain file). The **File Upload** appears only if the schema included the `$Files` field in the configuration of Domino REST API.
+3. Click **Select Files** to upload a file. Keep in mind that this step only applies to fields that need you to upload an attachment. The **File Upload** appears only if the schema included the `$Files` field in the configuration of Domino REST API.
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -266,18 +279,16 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. This will open the Customer's document page. Go to your preferred Customer and click **View**.
+2. This will open the ContactProfile's document page. Go to your preferred ContactProfile and click **View**.
 
     ![Screenshot](../assets/images/dilist.png)
 
     
-3. This will open the Customer's detail. Select the **Download All Attachments** link. Files will be downloaded. 
+3. This will open the ContactProfile's detail. Select the **Download All Attachments** link. Files will be downloaded. 
 
     !!!note
-        - You can download the attachments in your document (e.g Customer's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
+        - You can download the attachments in your document (e.g ContactProfile's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
         - You can also see here the **Delete** and **Edit** button.
-
-   <!-- ![Screenshot](../assets/images/didesigner.png) -->
 
 ### Update data
 
@@ -299,7 +310,8 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 3. **Edit** the fields that you want to modify.
 
 
-4. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button.(This step is for those fields that needed to upload a certain file).
+4. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button. Keep in mind that this step only applies to fields that need you to upload an attachment.
+
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -316,7 +328,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ### Delete entry
 
 !!!note
-    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **Default** and **dql** `mode` during your schema configuration.
+    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
 
 
 1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
@@ -327,13 +339,13 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     ![Screenshot](../assets/images/disearchdel.png)
 
-    <!--There is a confirmation message box to confirm the deletion of data, click **OK**.
+    There is a confirmation message box to confirm the deletion of data, click **OK**.
 
     ![Screenshot](../assets/images/dimsgdelete.png)
 
     Another pop-up message box appears.
 
-    ![Screenshot](../assets/images/diconfirmdel.png) -->
+    ![Screenshot](../assets/images/diconfirmdel.png)
  
 
 !!!note
