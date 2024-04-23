@@ -1,6 +1,6 @@
 # Domino App troubleshooting
 
-## DRAPI schema issues
+## Domino Rest API schema issues
 
 If the Domino Rest API settings encounter an issue, a prompt will appear. While it may proceed, there is no guarantee that the resulting program will function correctly.
 
