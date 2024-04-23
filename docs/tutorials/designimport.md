@@ -139,10 +139,9 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
+        ![](../assets/images/discope.png)
 
-
-
-    ![](../assets/images/discope.png)
+        When a **Domino Rest API Issues Report** prompt appears, check [here](../references/ditroubleshoot.md).
 
     2. **Select** or **deselect** the configured `forms`, `fields` in each form, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
@@ -213,6 +212,8 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     1. Select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
 
         ![](../assets/images/discope.png)
+
+         When a **Domino Rest API Issues Report** prompt appears, check [here](../references/ditroubleshoot.md).       
 
     2. **Select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 

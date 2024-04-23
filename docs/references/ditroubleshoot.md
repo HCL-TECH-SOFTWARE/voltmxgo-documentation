@@ -1,19 +1,22 @@
-## Design Import troubleshooting
+# Domino App troubleshooting
 
-## DRAPI schema issues and report
+## DRAPI schema issues
 
-If the wizard encounters a problem with the DRAPI settings, this **alert box** appears. It will proceed, but there is no assurance that the created app will launch or perform properly. 
+If the Domino Rest API settings encounter an issue, a prompt will appear. While it may proceed, there is no guarantee that the resulting program will function correctly.
 
 ![](../assets/images/didrapissues.png)
 
-Issues in DRAPI when importing Domino Application:
 
-These issues are applicable only to **Default** and **DQL** mode.
+**Issues in Domino Rest API when importing Domino Application:**
 
-- **Field value mismatch between modes** - this issue occurs when the **DQL** and **Default** mode have different property values (like fields, type, field access, etc.,) in declaring each mode. They have to be in parallel or similar in property values.
+!!!important
+    These issues are applicable only to default mode and dql mode.
 
-- **Form missing Default mode Fields and DQL mode** - This issue occurs when you have a **DQL** and **Default** mode that isn't declared all the fields. Note that you have to declare the same fields in **DQL** and **Default** mode.
+- **Field value mismatch between modes**: This issue occurs when the dql mode and default mode have different property values (like fields, type, field access, etc.,) in declaring each mode. They have to be in parallel or similar in property values.
 
-- **Form missing Fields on Default mode** - This issue occurs when you save the **Form** without declaring any fields or fail to declare all fields in the **Default Mode**. You must declare all the fields in the **Default** mode. 
+- **Form missing Default mode Fields and DQL mode**: This issue occurs when you have a dql mode and default mode that aren't declared for all the fields. Note that you have to declare the same fields in dql mode and default mode.
 
-- **Missing DQL mode** - this issue occurs when only **Default mode** is declared. The **DQL** and **Default** mode must be parallel or similar to each other before importing the schema.
+- **Form missing Fields on Default mode**: This issue occurs when you save the form without declaring any fields or fail to declare all fields in default mode. You must declare all the fields in the default mode.
+- **Missing DQL mode**: This issue occurs when only the default mode is declared. The dql mode and default mode must be parallel or similar to each other before importing the schema.
+
+It is recommended to consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites mentioned [here](../tutorials/designimport.md#before-you-start).
