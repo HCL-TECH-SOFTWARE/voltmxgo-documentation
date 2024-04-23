@@ -143,11 +143,20 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
         When a **Domino Rest API Issues Report** prompt appears, check [here](../references/ditroubleshoot.md).
 
-    2. **Select** or **deselect** the configured `forms`, `fields` in each form, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
+    2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
         ![](../assets/images/discopeform.png)
 
-6. On **Summary**, review the final `forms` and `views` fields you want to import, and then click **Build Iris Application.**. 
+        On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
+
+        ![](../assets/images/didbviews.png)
+
+        On the **Agents** tab, you may select or deselect agents. These **agents** are often configured within the `.nsf` file and can only be modified in the **Domino Designer**. 
+
+        ![alt text](../assets/images/diagents.png)
+
+
+6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application.**. 
 
     !!!note
         It may take a while to complete the publishing of the imported Iris app.
