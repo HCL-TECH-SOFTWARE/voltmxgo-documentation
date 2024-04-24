@@ -7,20 +7,14 @@ This procedure describes how to configure the Rosetta API based on what you need
 - API Configuration
 - Intellisense Configuration
 - Conversion Configuration 
-<!-- Register Custom API
-- Preferred API implementation
-- Typeahead Intellisense
-- Converter Configuration
-- Use Native vs API Conversion-->
 
-<!--## To configure settings in Rosetta API-->
 ## Procedure
 
 1. Click the **Project Settings** icon .
     
     ![settings](../assets/images/vfrosettasetting.png){: style="height:80%;width:80%"}
 
-2. In the **Project Setting** window, click the **Volt Formula** tab.
+2. In the **Project Setting** window, click the **VoltFormula** tab.
 
     !!!tip
         Hover over the **info** tooltip icon beside the labels or text boxes for more information.
