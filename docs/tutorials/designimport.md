@@ -10,15 +10,13 @@
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).
 - You have created Domino REST API.
-- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List to access administrative APIs used by Design Import. 
-
-<!-- All users in Volt MX Go that are performing a Design Import need to be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html) group in the Domino Keep Configuration (KeepConfig.nsf) Access Control List for access to administrative API used by Design Import.--> 
+- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
 
 - You have a configured `.nsf` file, schema, scopes, and application in [Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html){: target="_blank" rel="noopener noreferrer"}.
 
     - When you configure the schema, set the **Formula for Delete Access** to `@True` in `default` mode in all the forms in the schema. For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
 
-    - When you configure the `schema`, add a `dql` mode to each configured form. The `dql` mode must include all the fields of the form. Both the `default` and `dql` modes must have matching fields<!-- for the form and fields to be seen as configured in the Design Import-->. 
+    - When you configure the `schema`, add a `dql` mode to each configured form. The `dql` mode must include all the fields of the form. Both the `default` and `dql` modes must have matching fields.
 
     - When you configure the `schema`, include the `$Files` field in the configured form to capture the uploading and downloading of files in the Design Import.
 
@@ -26,7 +24,11 @@
 
     - When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank" rel="noopener noreferrer"}.
 
+    - When you configure `scope`, the scope name must be limited to 30 characters.
+
     - When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
+    
+    
 
 
 ## Launch Volt MX Go Iris
@@ -46,49 +48,30 @@
 
     2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
 
-        ![Preferences](../assets/images/dipreference.png)
-
     3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**.
         
-        You should see the “Validation Successful” message at the top of the dialog.
+        <!-- You should see the “Validation Successful” message at the top of the dialog.-->
     
     4. Click **Done**.
+    ![Preferences](../assets/images/dipreference.png)
+
+    !!!note "Note"
+        If the **Foundry URL** is incorrect, a prompt error will appear.
 
 3. Log in to Volt MX Go Iris.
     1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
-    2. Enter your email and password for Foundry on the **Sign in to your account** page.
+    2. Enter your email and password for **Volt MX Foundry** on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon.
-
-<!--1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
-
-    !!!note
-        If the Iris newly installed, the close button is accessible. However, once the preference is modified, the close button is no longer appear during login.
-
-    Wait until the MX Go Foundry preference has been verified before logging in.
-
-    **Validation of MX Go preference:**
-        
-    1. Click  the home ![](../assets/images/dihome.png){: style="height:3%;width:3%"} icon.
-    2. Open the **Volt Iris** menu bar for Mac and **Edit** menu bar for Windows and click **Preferences**.
-    3. This opens the **Volt Iris Preferences**. Click on **Volt MX Foundry**.
-    4. Fill in the **Foundry URL** with <!--`http://foundry.mymxgo.com` or your Foundry hostname, and click **Validate**.
-        ![Preferences](../assets/images/dipreference.png)
-
-    5. Click **Done**. 
-
-
-4. Enter your **Foundry app credentials** in Volt MX Go Iris and click **Sign-in**.
-
-    ![Log in screen](../assets/images/dilogin.png)-->
 
 ## Create a new project
     
 1. On the top menu, select **Project** &rarr; **New Project**.
-2. On the **What do you want to start with now?** dialog, select **Web App** or **Native App** and click **Next**.
+2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
+    For other platforms, please see [Native App]( ../howto/dicreatenativeapp.md).
 
     ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
-3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App or **Mobile** for Native App and click **Next**.
+3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App and click **Next**.
 
     ![](../assets/images/distart.png){: style="height:80%;width:80%"}
 
@@ -96,7 +79,7 @@
   
     ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
-You can now see your project name in the upper-left corner of the Iris canvass.
+You can now see your project name in the upper-left corner of the **Volt MXGo Iris** canvass.
 
 ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
@@ -111,10 +94,13 @@ You can now see your project name in the upper-left corner of the Iris canvass.
     
 3. On **Associate Foundry App**, click **Create New**.
 
-    !!!note
-        Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
-            
+    ![](../assets/images/difoundryapp.png)
 
+    a. Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+
+    ![](../assets/images/difoundrybackend.png) 
+
+            
 4. On **Identity Service**:
     
     1. Enter the required details in the **Create New Identity Service** and click **Next**. 
@@ -129,33 +115,47 @@ You can now see your project name in the upper-left corner of the Iris canvass.
 
         ![](../assets/images/dikeep.png)
 
-    2. Select your **service name**, that you added from the earlier page and click **Next**. Once your Foundry Application has been published, your service name should be named as MXGO(service name). Example: MXGOkeepRecipe201
+    2. Select the **service name**, that you added from the previous page and click **Next**. Once your **Foundry Application** has been published, your service name should be named as MXGO(service name). Example: MXGOISMyApp
 
         ![](../assets/images/didrapi.png)
 
-    2. Login with your **Domino credentials** within this wizard modal dialog and click **Allow**.
+    3. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
         !!!note
-            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
+            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you are not, enter the credentials for the IdP you've configured for Domino REST API. 
 
 
         ![](../assets/images/didrapilogin.png)
 
-    3. Select your **Foundry Identity Service** name associated to Domino REST API and click **Next**.
+    4. Select your **Foundry Identity Service** name associated to Domino REST API and click **Next**.
 
         ![](../assets/images/difoundry.png)
 
 5. On **Scope and Forms**:
 
-    1. Select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
+
+        !!!note
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
-    2. **Select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
+        When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
+
+    2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
         ![](../assets/images/discopeform.png)
 
-6. On **Summary**, review the final `forms` and `views` fields you want to import, and then click **Build Iris Application.**. 
+        On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
+
+        ![](../assets/images/didbviews.png)
+
+        On the **Agents** tab, you may select or deselect agents. These **agents** are often configured within the `.nsf` file and can only be modified in the **Domino Designer**. 
+
+        ![alt text](../assets/images/diagents.png)
+
+
+6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application.**. 
 
     !!!note
         It may take a while to complete the publishing of the imported Iris app.
@@ -165,8 +165,8 @@ You can now see your project name in the upper-left corner of the Iris canvass.
 7. On **Result**, see the final `forms` and `views`, and then click **Done**.
  
     !!!tip
-        - The **check mark icon** beside each of the `forms`, `fields`, and `views` means that it was successfully created.
-        - The **warning icon** beside each of the `forms`, `fields`, and `views` means that the supported datatype doesn't match with the Iris app datatype.
+        - The **check mark icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that it was successfully created.
+        - The **warning icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that the supported datatype doesn't match with the Iris app datatype.
         - Turn on the **Show only error** toggle to see all the fields with the warning icon.
 
 
@@ -178,7 +178,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
 !!!note
     - You can view the final result of the `.nsf` file that you configured in Domino REST API.
-    - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms on one page.
+    - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms on one .page
 
 
 ## Import a Domino Application from the existing Foundry app
@@ -203,23 +203,39 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         ![](../assets/images/diexfoundry.png)
 
         !!!info
-            If you have an existing Domino Application Project on your canvass and you want to import and associate it with another Foundry app, use the **Unlink App**. This unlinks the Foundry App and returns to selecting *Create New* or *Use Existing* 
+            - If you have an existing Domino Application Project on your canvass and you want to import and associate it with another Foundry app, click the **Unlink App**.
+            - There is a prompt to delete the Foundry App, click **delete**.
+            - This unlinks the Foundry App and returns to selecting *Create New* or *Use Existing* 
 
 4. On **Identity Service**, click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
 
     ![](../assets/images/diexistingid.png)
     
-5. On **Scope and Forms**: 
+5. On **Scope and Forms**:  
 
-    1. Select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
+
+        !!!note
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
-    2. **Select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
+        When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
+
+    2. **Select** or **deselect** the configured `forms`, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
         ![](../assets/images/discopeform.png)
 
-6. On **Summary**, review the final `forms` and `views` fields you want to import, and then click **Build Iris Application.**. 
+
+        On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
+
+        ![](../assets/images/didbviews.png)
+
+        On the **Agents** tab, you may select or deselect agents. These **agents** are often configured within the `.nsf` file and can only be modified in the **Domino Designer**. 
+
+        ![alt text](../assets/images/diagents.png)
+
+6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application.**. 
 
     !!!note
         It may take a while to complete the publishing of the imported Iris app.
@@ -227,11 +243,11 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     ![](../assets/images/disummary.png)
 
 
-7. On **Result**, see the final `forms` and `views`, and then click **Done**.
+7. On **Result**, see the final `forms`, `views` and `agents`, and then click **Done**.
  
     ![](../assets/images/diresult.png) 
 
-Once you click **Done**, each of the selected forms, views, and agents have imported into the  Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
+Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MXGo Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
 
@@ -256,12 +272,12 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Create entry
 
-1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: Customer).
+1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: ContactProfile).
 
     ![Screenshot](../assets/images/dinewview.png)
 
 2. Fill in the fields.
-3. Click **Select Files** to upload a file. The **File Upload** appears only if the schema included the `$Files` field in the configuration of Domino REST API.
+3. Click **Select Files** to upload a file. Keep in mind that this step only applies to fields that need you to upload an attachment. The **File Upload** appears only if the schema included the `$Files` field in the configuration of Domino REST API.
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -276,46 +292,43 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Viewing data
 
-1. In the Dashboard, go to the **Views** section and click your preferred document.(example: Customer).
+1. In the Dashboard, go to the **Views** section and click your preferred document.(example: AllContacts).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. This will open the Customer's document page. Go to your preferred Customer and click **View**.
+2. This will open the ContactProfile's document page. Go to your preferred ContactProfile and click **View**.
 
     ![Screenshot](../assets/images/dilist.png)
 
     
-3. This will open the Customer's detail. Select the **Download All Attachments** link. Files will be downloaded. 
+3. This will open the ContactProfile's detail. Select the **Download All Attachments** link. Files will be downloaded. 
 
     !!!note
-        - You can download the attachments in your document (e.g Customer's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
+        - You can download the attachments in your document (e.g ContactProfile's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
         - You can also see here the **Delete** and **Edit** button.
-
-   <!-- ![Screenshot](../assets/images/didesigner.png) -->
 
 ### Update data
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: Customer).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Customer** page, search the customer and click **View**. 
+2. In the **Dashboard/AllContacts** page, search the contacts, click the row and select **Edit**. 
 
     !!!note
-        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the Database View is active and the columns in the view are added during the import.
+        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the **Database View** is **active** and the columns in the view are added during the import.
 
 
     ![Screenshot](../assets/images/dieditdata.png)
 
-3. Click **Edit**.
-
     !!!note
         You may also see the delete button here, which allows you to erase or remove the data you've selected.
 
-4. Edit the fields that you want to modify.
+3. **Edit** the fields that you want to modify.
 
 
-5. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button.
+4. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button. Keep in mind that this step only applies to fields that need you to upload an attachment.
+
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -326,20 +339,20 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 6. Click **Save**.
 
-      ![Screenshot](../assets/images/dieditsave.png)
+     <!-- ![Screenshot](../assets/images/dieditsave.png)-->
 
 
 ### Delete entry
 
 !!!note
-    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in Default `mode` during your schema configuration.
+    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
 
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: Customer).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/Customer** page, search customer and click the **Delete** button.
+2. In the **Dashboard/AllContacts** page, search the contacts, click the row and select **Delete**.
 
     ![Screenshot](../assets/images/disearchdel.png)
 

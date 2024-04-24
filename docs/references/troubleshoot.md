@@ -10,3 +10,26 @@ List of issues and corresponding resolutions.
 - **The kubectl commands fail after restarting Windows or Rancher Desktop**
 
     When your kubectl commands fail after restarting Windows or Rancher Desktop, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context.
+
+## Domino Rest API schema issues
+
+If the Domino Rest API settings encounter an issue, a prompt will appear. While it may proceed, there is no guarantee that the resulting program will function correctly.
+
+![](../assets/images/didrapissues.png)
+
+
+**Issues in Domino Rest API when importing Domino Application:**
+
+!!!important
+    These issues apply only to **default** mode and **dql** mode.
+
+- **Field value mismatch between modes**: This issue occurs when the **dql** mode and **default** mode have different property values (like fields, type, field access, etc.,) in declaring each mode. They have to be in parallel or similar in property values.
+
+- **Form missing Default mode Fields and DQL mode**: This issue occurs when you have not declared the same property values in both **dql** mode and **default** mode. Note that you have to declare the same property values in **dql** mode and **default** mode.
+
+- **Form missing Fields on Default mode**: This issue occurs when you save the form without declaring any property values or fail to declare all property values in **default** mode. You must declare all the fields in the **default** mode.
+
+- **Missing DQL mode**: This issue occurs when only the default mode is declared. The **dql** mode and **default** mode must be parallel or similar to each other before importing the schema.
+
+It is recommended to consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+
