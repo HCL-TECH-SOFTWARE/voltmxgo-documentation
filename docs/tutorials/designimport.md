@@ -136,7 +136,7 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
         !!!note
-            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites that are required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
@@ -216,7 +216,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
         !!!note
-            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites that are required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
@@ -235,7 +235,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
         ![alt text](../assets/images/diagents.png)
 
-6. On **Summary**, review the final `forms` and `views` fields you want to import, and then click **Build Iris Application.**. 
+6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application.**. 
 
     !!!note
         It may take a while to complete the publishing of the imported Iris app.
