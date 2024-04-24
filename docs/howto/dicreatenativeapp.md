@@ -1,11 +1,11 @@
 # Create new project using native app
 
 ## About this procedure
- This procedure will walk you through the process of starting a new project using a mobile or tablet platform.
+ This procedure walks you through the process of starting a new project using a mobile or tablet platform.
 
 ## Before you start
 
-  - You must read and familiarize yourself with the design import tutorial.
+  - You must read and familiarize yourself with the Design Import tutorial.
 
 ## Procedure
     
@@ -26,7 +26,7 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
 ![](../assets/images/diappnamemob.png){: style="height:80%;width:80%"}
 
-For tutorial on how to import domino application, please see the following link:
+For tutorials on how to import Domino application, see the following links:
 
-- [Import a Domino Application using the new Foundry app](../tutorials/designimport.md#import-a-domino-application-using-the-new-foundry-app.)
+- [Import a Domino Application using the new Foundry app](../tutorials/designimport.md#import-a-domino-application-using-the-new-foundry-app)
 - [Import a Domino Application from the existing Foundry app](../tutorials/designimport.md#import-a-domino-application-from-the-existing-foundry-app)

@@ -96,7 +96,7 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
     ![](../assets/images/difoundryapp.png)
 
-    a. Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+    Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
 
     ![](../assets/images/difoundrybackend.png) 
 
