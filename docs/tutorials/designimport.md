@@ -24,7 +24,7 @@
 
     - When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank" rel="noopener noreferrer"}.
 
-    - When you configure `scope`, the scope name must be limited to 30 character.
+    - When you configure `scope`, the scope name must be limited to 30 characters.
 
     - When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
     
@@ -133,15 +133,14 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
 5. On **Scope and Forms**:
 
-    !!!info
-        The scope name is limited to 30 character. In case your scope name is more than 30 character, it will give a prompt:
-        ![](../assets/images/discopechar.png)    
-
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
+
+        !!!note
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites that are required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
-        When a **Domino Rest API Issues Report** prompt appears, check [here](../references/ditroubleshoot.md).
+        When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
     2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
@@ -166,8 +165,8 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 7. On **Result**, see the final `forms` and `views`, and then click **Done**.
  
     !!!tip
-        - The **check mark icon** beside each of the `forms`, `fields`, and `views` means that it was successfully created.
-        - The **warning icon** beside each of the `forms`, `fields`, and `views` means that the supported datatype doesn't match with the Iris app datatype.
+        - The **check mark icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that it was successfully created.
+        - The **warning icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that the supported datatype doesn't match with the Iris app datatype.
         - Turn on the **Show only error** toggle to see all the fields with the warning icon.
 
 
@@ -179,7 +178,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
 !!!note
     - You can view the final result of the `.nsf` file that you configured in Domino REST API.
-    - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, and app forms on one page.
+    - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms on one .page
 
 
 ## Import a Domino Application from the existing Foundry app
@@ -212,21 +211,29 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
     ![](../assets/images/diexistingid.png)
     
-5. On **Scope and Forms**: 
+5. On **Scope and Forms**:  
 
-    !!!info
-        The scope name is limited to 30 character. In case your scope name is more than 30 character, it will give a prompt:
-        ![](../assets/images/discopechar.png)   
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
-    1. Select the scope that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from Domino and Notes.
+        !!!note
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites that are required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
-         When a **Domino Rest API Issues Report** prompt appears, check [here](../references/ditroubleshoot.md).       
+        When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
-    2. **Select** or **deselect** the configured `forms`, `fields`, and `views` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
+    2. **Select** or **deselect** the configured `forms`, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
         ![](../assets/images/discopeform.png)
+
+
+        On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
+
+        ![](../assets/images/didbviews.png)
+
+        On the **Agents** tab, you may select or deselect agents. These **agents** are often configured within the `.nsf` file and can only be modified in the **Domino Designer**. 
+
+        ![alt text](../assets/images/diagents.png)
 
 6. On **Summary**, review the final `forms` and `views` fields you want to import, and then click **Build Iris Application.**. 
 
@@ -236,11 +243,11 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     ![](../assets/images/disummary.png)
 
 
-7. On **Result**, see the final `forms` and `views`, and then click **Done**.
+7. On **Result**, see the final `forms`, `views` and `agents`, and then click **Done**.
  
     ![](../assets/images/diresult.png) 
 
-Once you click **Done**, each of the selected forms, views, and agents have imported into the  Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
+Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MXGo Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
 
