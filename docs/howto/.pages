@@ -14,14 +14,11 @@ nav:
     - configmobile.md
     - drapiingress.md
     - FTnsfupdate.md
-<<<<<<< HEAD
     - dicreatenativeapp.md
     
-=======
     - Uninstall:
         - uninstall.md
         - k3suninstall.md
         - rancheruninstall.md
         - uninstallfirsttouch.md
->>>>>>> 7a5f2c87f49aa6a617a216ecf209b6f3400fdcd6
     
