@@ -7,8 +7,8 @@ The procedure will guide you through the process of importing the **Domino app**
 ## Before you start
 
 - You must complete the [Design Import tutorial](../tutorials/designimport.md)
-- You need to have **actions** on your Domino view configuration. 
-- You need to configure your Domino view as **Active**.
+- You need to have **actions** on your Domino view configuration 
+- You need to configure your Domino view as **Active**
 
 ## Procedure
 
