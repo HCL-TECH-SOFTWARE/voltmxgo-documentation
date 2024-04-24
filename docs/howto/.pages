@@ -2,6 +2,7 @@ nav:
     - index.md
     - foundryadminaccount.md
     - codegen.md
+    - insertattachments.md
     - accessdrapi.md
     - connectdominofromnotes.md
     - Import First Touch: importft.md
@@ -12,10 +13,12 @@ nav:
     - regunregconfig.md
     - configmobile.md
     - drapiingress.md
-    - k3suninstall.md
-    - rancheruninstall.md
-    - uninstallfirsttouch.md
     - FTnsfupdate.md
     - dicreatenativeapp.md
     
+    - Uninstall:
+        - uninstall.md
+        - k3suninstall.md
+        - rancheruninstall.md
+        - uninstallfirsttouch.md
     
