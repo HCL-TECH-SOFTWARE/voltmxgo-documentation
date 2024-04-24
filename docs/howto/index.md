@@ -9,16 +9,14 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Connect to Domino server from Notes client](connectdominofromnotes.md)
 - [Import First Touch into Iris](importft.md)
 - [Set logging level](logginglevel.md)
+- [Delete existing forms while using the Design Import wizard](deleteform.md)
 - [Configure Rosetta API](configrosetta.md)
 - [Register and unregister custom Rosetta API](regunregconfig.md)
 - [Configure mobile app browser](configmobile.md) 
 - [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)
-- [Uninstall K3s](k3suninstall.md)
-- [Uninstall Rancher Desktop on Windows](rancheruninstall.md)
-- [Uninstall First Touch](uninstallfirsttouch.md)
+- [Update FirstTouchRecipes.nsf](FTnsfupdate.md)
 - [Create new project using native app](dicreatenativeapp.md)
+- [Uninstall](uninstall.md)
 
-
-<!-- [Import Summernote Editor component](summernote.md)-->
 
 
