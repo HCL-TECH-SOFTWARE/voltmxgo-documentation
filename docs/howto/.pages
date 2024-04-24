@@ -8,11 +8,14 @@ nav:
     - Import First Touch: importft.md
     - logginglevel.md
 #    - summernote.md
+    - deleteform.md
     - configrosetta.md
     - regunregconfig.md
     - configmobile.md
     - drapiingress.md
     - FTnsfupdate.md
+    - dicreatenativeapp.md
+    
     - Uninstall:
         - uninstall.md
         - k3suninstall.md
