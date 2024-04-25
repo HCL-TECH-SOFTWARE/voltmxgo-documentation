@@ -22,7 +22,7 @@ The full specification of the API is available in a structured format in the [Ro
 
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](vfcodingguides.md) in MX Go Iris.   
+Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in MX Go Iris.   
 
 ## Helm and Kubectl commands
 
