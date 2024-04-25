@@ -47,25 +47,25 @@ Sample array of JSON objects used to extend the API via the `<rosettajs>.API.reg
 
 Sample array of JSON objects used to extend the API via the `<rosettajs>.API.registerAPIs()` method (note mixed code):
 
-``` json
+``` json    
 [
     {
-    'name': 'MyAbs(n)',
-    'lang': 'notes function',
-    'cat': 'Math',
-    'code': '@Abs(n);'
+        'name': 'MyAbs(n)',
+        'lang': 'notes function',
+        'cat': 'Math',
+        'code': '@Abs(n);'
     },
     {
-    'name': 'AbsPlus1',
-    'lang': 'notes function',
-    'cat': 'Custom',
-    'code': n => Math.abs(n) + 1
+        'name': 'AbsPlus1',
+        'lang': 'notes function',
+        'cat': 'Custom',
+        'code': n => Math.abs(n) + 1
     },
     {
-    'name': 'MyExcelAbs(n)',
-    'lang': 'open formula',
-    'cat': 'Custom',
-    'code': '=ABS(n)'
+        'name': 'MyExcelAbs(n)',
+        'lang': 'open formula',
+        'cat': 'Custom',
+        'code': '=ABS(n)'
     }
 ]
 ```
