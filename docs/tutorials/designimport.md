@@ -169,7 +169,7 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
         - The **check mark icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that it was successfully created.
         - The **warning icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that the supported datatype doesn't match with the Iris app datatype.
         - Turn on the **Show only error** toggle to see all the fields with the warning icon.
-        - When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms**tab is displayed.
+        - When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
 
 
     ![](../assets/images/diresult.png) 
@@ -254,8 +254,8 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
 7. On **Result**, see the final `forms`, `views` and `agents`, and then click **Done**.
 
-   !!!note
-       - When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms**tab is displayed.
+    !!!note
+        When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
  
     ![](../assets/images/diresult.png) 
 
