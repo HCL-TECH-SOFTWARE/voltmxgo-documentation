@@ -151,11 +151,10 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
         ![alt text](../assets/images/diagents.png)
 
-6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application.**. 
+6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
 
     !!!note
-        - It may take a while to complete the publishing of the imported Iris app.
-        - When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms**tab is displayed.
+        - It may take a while to complete the publishing of the imported Domino app.
 
     ![](../assets/images/disummary.png)
 
@@ -233,7 +232,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application.**. 
 
     !!!note
-        - It may take a while to complete the publishing of the imported Iris app.
+        - It may take a while to complete the publishing of the imported Domino app.
 
     ![](../assets/images/disummary.png)
 
@@ -265,6 +264,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     - The Native App (mobile) and the Web App (Responsive Desktop) have the same capability of doing the CRUD operation.
 
+
 ### Create entry
 
 1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: ContactProfile).
@@ -285,6 +285,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     ![Screenshot](../assets/images/dinewview1.png)
 
+
 ### Viewing data
 
 1. In the Dashboard, go to the **Views** section and click your preferred document.(example: AllContacts).
@@ -300,6 +301,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     !!!note
         - You can download the attachments in your document (e.g ContactProfile's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
         - You can also see here the **Delete** and **Edit** button.
+
 
 ### Update data
 
@@ -330,7 +332,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 6. Click **Save**.
 
-     <!-- ![Screenshot](../assets/images/dieditsave.png)-->
+
 ### Delete entry
 
 !!!note
