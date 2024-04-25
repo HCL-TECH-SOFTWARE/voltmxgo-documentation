@@ -1,7 +1,7 @@
 nav:
     - index.md
     - introvoltmxgo.md
-    - voltformulaintro.mid
+    - voltformulaintro.md
         - rosettamxgo.md
         - rosettaapischema.md
         - rosettapai.md
