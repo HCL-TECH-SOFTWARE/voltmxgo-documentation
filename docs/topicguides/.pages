@@ -1,10 +1,12 @@
 nav:
     - index.md
     - introvoltmxgo.md
-    - voltformulaintro.md
-        - rosettamxgo.md
+    - VoltFormula:  
+        - voltformulaintro.md
+        - rosettavmxgo.md
         - rosettaapischema.md
-        - rosettapai.md
+        - rosettaapi.md
+        - vfcodingguides.md
     - Domino Adapter: 
         - dominoadapter.md
         - datamodel.md
