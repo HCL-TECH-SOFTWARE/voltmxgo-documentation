@@ -2,7 +2,7 @@
 
 ## About this procedure
 
-The procedure will guide you through the process of importing the **Domino app** and integrating the VoltFormula function. The imported actions from the Domino view will automatically convert with `voltmx.rosettajs` syntax, incorporating formula languages like **Notes** and **OpenFormula**.
+This procedure will guide you through the process of importing the **Domino app** and integrating the VoltFormula function. The imported actions from the Domino view will automatically convert with `voltmx.rosettajs` syntax, incorporating formula languages like **Notes** and **OpenFormula**.
 
 ## Before you start
 
@@ -14,14 +14,14 @@ The procedure will guide you through the process of importing the **Domino app**
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 2. Finished all the steps in the **VoltMX Design Import Wizard**.
-3. Find the form that has the actions (i.e., Create Customer) button in Domino view.
+3. On the Volt MXGo Iris project, open the form that has the **actions** (i.e., Create Customer) button imported from Domino view.
 
     ![](../assets/images/dibutton.png)
 
 4. On **Action** properties tab, select **onClick**.
 5. Click **Edit**. The **Action Editor** page will appear.
 6. Double-click **Add Formula** in the flowchart.
-7. The formula language window will appear containing the *Formula Language* and the auto-converted `voltmmx.rosettajs` syntax.
+7. The formula language window will appear containing the *Formula Language* and `voltmmx.rosettajs` syntax.
 
     ![](../assets/images/divoltformula.png) 
 
