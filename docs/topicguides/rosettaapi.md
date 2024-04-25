@@ -1,4 +1,4 @@
-# Runtime Configuration options
+# Runtime configuration options
 
 ## Rosetta API
 

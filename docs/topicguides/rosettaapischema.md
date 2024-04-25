@@ -1,4 +1,4 @@
-# The Rosetta API Schema
+# The Rosetta API schema
 
 The Rosetta API is instantiated as a multi-nested JavaScript object defining the each API implementation as methods structured within the object. The structure can be broken down as follows:
 

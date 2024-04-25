@@ -1,4 +1,4 @@
-# Serving Rosetta under VMX Go via SDK Plug-in Architecture
+# Serving Rosetta under Volt MXGo via SDK plug-in architecture
 
 ## Flow overview
 
