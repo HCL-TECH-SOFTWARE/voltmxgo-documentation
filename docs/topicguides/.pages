@@ -8,7 +8,6 @@ nav:
         - rosettaapi.md
         - extendrosettapi.md
         - vfcodingguides.md
-        - extendrosettapi.md
         - declvariables.md
     - Domino Adapter: 
         - dominoadapter.md

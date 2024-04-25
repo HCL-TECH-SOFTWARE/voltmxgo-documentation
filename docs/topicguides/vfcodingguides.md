@@ -1,10 +1,10 @@
-# Recommended VoltFormula coding practices in MX Go Iris
+# Recommended VoltFormula coding practices in Volt MXGo Iris
 
-This section has a series of coding exercises designed to help you understand how to use Volt Formula in Iris. Each exercise comes with a description of the problem, followed by a code template where you can write your solution.
+This section has a series of coding exercises designed to help you understand how to use Volt Formula in Volt MXGo Iris. Each exercise comes with a description of the problem, followed by a code template where you can write your solution.
 
 ### Hello, World!
 #### Description
-Write a function called `sayHello` to show a prompt box add formula.
+Write a function named `sayHello` that displays a prompt and adds a formula.
 
 #### Formula code template
 
@@ -16,7 +16,7 @@ Write a function called `sayHello` to show a prompt box add formula.
 
 ### Change a name
 #### Description
-Write a function called `changeName` that takes a string from a prompt box and update a field and add formula.
+Write a function called `changeName` that takes a string from a prompt, update a field and add formula.
 #### Formula code template
 
 ```js

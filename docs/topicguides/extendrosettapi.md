@@ -1,6 +1,4 @@
-# Extending The Rosetta API
-
-## Extending Rosetta
+# Extending Rosetta API
 
 Since the API is a **JavaScript object**, we can extend the API library by adding to the object structure any number of custom categories and/or method definitions, as long as we adhere to the schema structure. For this we have provided helper extension registration methods within the API configuration object of the Rosetta library.
 
@@ -73,4 +71,3 @@ Sample array of JSON objects used to extend the API via the `<rosettajs>.API.reg
 ## Using Formula language the extension code
 
 In addition to extending via **JavaScript implementations**, when the code property of the extension input contains formula language (instead of a ***JavaScript*** function), the registration method will convert the formula into ***JavaScript*** and register the resulting JavaScript as the code for the particular extension.
-
