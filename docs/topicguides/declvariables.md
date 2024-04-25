@@ -8,7 +8,7 @@ There are two mechanism by which the Rosetta Converter accepts and converts vari
 
 ## Using LET function with OpenFormula
 
-- [**Let function**](https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999)
+- **Let function**
 
 ```
 =LET(x, 5, SUM(x, 1))
