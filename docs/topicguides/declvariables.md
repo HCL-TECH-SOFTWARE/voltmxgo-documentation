@@ -17,7 +17,7 @@ There are two mechanism by which the Rosetta Converter accepts and converts vari
 
 - **JSP Style Syntax**
 
-The converter will make use of **JSP expression** syntax in **OpenFormula** formulas to provide capabilities to formula conversion (eg. resulting javascript) not currently possible with strictly open formula syntax. Go to  [**JSP expression syntax**](https://docs.oracle.com/javaee/5/tutorial/doc/bnaov.html).
+The converter will make use of **JSP expression** syntax in **OpenFormula** formulas to provide capabilities to formula conversion (eg. resulting JavaScript) not currently possible with strictly open formula syntax. For more info, check this link [**JSP expression syntax**](https://docs.oracle.com/javaee/5/tutorial/doc/bnaov.html).
 
 Example:
 
