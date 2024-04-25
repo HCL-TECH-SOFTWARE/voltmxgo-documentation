@@ -56,19 +56,19 @@ framework: {
 
 ```java
 {
-  _allowPassthrough: false,
-  _nativeness: {
-    "_global": true, // true =all native js
-    "@Do": true,
-    "@DoWhile": true,
-    "@For": true,
-    "@If": true,
-    "@While": true,
-    "@True": true,
-    "@False": true
-  },
-  _stripNumbers: true,
-  _paramAsFieldName: true
+_allowPassthrough: false,
+_nativeness: {
+  "_global": true, // true =all native js
+  "@Do": true,
+  "@DoWhile": true,
+  "@For": true,
+  "@If": true,
+  "@While": true,
+  "@True": true,
+  "@False": true
+},
+_stripNumbers: true,
+_paramAsFieldName: true
 }
 ```
 
