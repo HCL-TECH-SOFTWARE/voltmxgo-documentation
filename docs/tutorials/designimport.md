@@ -229,8 +229,6 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
     2. **Select** or **deselect** the configured `forms`, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
-        !!!note
-            When you import an active Agent
 
         ![](../assets/images/discopeform.png)
 
