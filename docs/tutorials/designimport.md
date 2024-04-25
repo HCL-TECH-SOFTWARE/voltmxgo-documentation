@@ -28,9 +28,6 @@
 
     - When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
     
-    
-
-
 ## Launch Volt MX Go Iris
 
 1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
@@ -154,7 +151,6 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
         ![alt text](../assets/images/diagents.png)
 
-
 6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application.**. 
 
     !!!note
@@ -171,11 +167,7 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
         - Turn on the **Show only error** toggle to see all the fields with the warning icon.
         - When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
 
-
     ![](../assets/images/diresult.png) 
-    
-
-       
 
 Once you click **Done**, each of the selected forms, views, and agents are imported into Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
 
@@ -184,7 +176,6 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 !!!note
     - You can view the final result of the `.nsf` file that you configured in Domino REST API.
     - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms on one .page
-
 
 ## Import a Domino Application from the existing Foundry app
 
@@ -229,9 +220,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
     2. **Select** or **deselect** the configured `forms`, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
 
-
         ![](../assets/images/discopeform.png)
-
 
         On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
 
@@ -246,9 +235,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     !!!note
         - It may take a while to complete the publishing of the imported Iris app.
 
-    
     ![](../assets/images/disummary.png)
-
 
 7. On **Result**, see the final `forms`, `views` and `agents`, and then click **Done**.
 
@@ -260,7 +247,6 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MXGo Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
-
 
 ## CRUD operation upon importing the `.nsf` file
 
@@ -278,7 +264,6 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
       All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
 
     - The Native App (mobile) and the Web App (Responsive Desktop) have the same capability of doing the CRUD operation.
-
 
 ### Create entry
 
@@ -309,8 +294,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 2. This will open the ContactProfile's document page. Go to your preferred ContactProfile and click **View**.
 
     ![Screenshot](../assets/images/dilist.png)
-
-    
+   
 3. This will open the ContactProfile's detail. Select the **Download All Attachments** link. Files will be downloaded. 
 
     !!!note
@@ -328,7 +312,6 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     !!!note
         If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the **Database View** is **active** and the columns in the view are added during the import.
 
-
     ![Screenshot](../assets/images/dieditdata.png)
 
     !!!note
@@ -336,9 +319,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 3. **Edit** the fields that you want to modify.
 
-
 4. Click **Select Files** to add a new file. The uploaded file will show below the **Select Files** button. Keep in mind that this step only applies to fields that need you to upload an attachment.
-
 
     1. Select the file you want to upload. You can select more than one file to upload. 
     
@@ -350,13 +331,10 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 6. Click **Save**.
 
      <!-- ![Screenshot](../assets/images/dieditsave.png)-->
-
-
 ### Delete entry
 
 !!!note
     - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
-
 
 1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
 
@@ -374,7 +352,6 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     ![Screenshot](../assets/images/diconfirmdel.png)
  
-
 !!!note
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
 
