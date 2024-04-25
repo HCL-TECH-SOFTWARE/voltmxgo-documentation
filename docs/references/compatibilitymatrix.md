@@ -18,8 +18,8 @@ This section provides compatibility information between different versions of Vo
 
 |Helm chart component|Volt MX Go version|Helm chart version|
 |----|----|----|
-|Foundry DB Update|2.0.3|1.2.5|
-|Foundry apps|2.0.3|1.2.5|
+|Foundry DB Update|2.0.3|1.2.12|
+|Foundry apps|2.0.3|1.2.12|
 |Foundry DB Update|2.0.2|1.2.8|
 |Foundry apps|2.0.2|1.2.8|
 |Foundry DB Update|2.0.1|1.2.7|
