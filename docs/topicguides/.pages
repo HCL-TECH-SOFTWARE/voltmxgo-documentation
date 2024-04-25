@@ -6,7 +6,9 @@ nav:
         - rosettavmxgo.md
         - rosettaapischema.md
         - rosettaapi.md
+        - extendrosettapi.md
         - vfcodingguides.md
+        - extendrosettapi.md
     - Domino Adapter: 
         - dominoadapter.md
         - datamodel.md
