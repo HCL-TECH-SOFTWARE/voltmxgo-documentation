@@ -2,7 +2,7 @@
 
 ## Rosetta API
 
-### defaults:
+### Defaults:
 
 ```java
 {
