@@ -75,20 +75,30 @@ You are now ready to install Rancher Desktop.
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        The latest version fixes a serious defect that was present in 1.8. Therefore, its recommended that you upgrade from version 1.7.0.
+        We recommend installing the latest version of Rancher Desktop.  There are continuous improvments with every release.  Version 1.7.0 is known not to work well because of some port forwarding issues.  In older versions of Rancher Desktop manual port-forwarding was required to enable your Windows broswer to connect Foundry applications running in Rancher Desktop. This is not required in current versions (1.13+).
+
+2. If you are upgrading from a prior version of MXGO, we recommend resetting port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
+
+    1. Open a **Windows PowerShell** as the Administrator.
+    2. Run the following command:
+
+    ```
+    netsh interface portproxy reset
+    ```
+
 
 2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
 3. Review the License Agreement, and then click **I Agree** to proceed with the installation.
 4. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to installing the Rancher Desktop Privileged Service.
 5. Follow the prompts to confirm installation.
 6. When the installation completes, click **Finish** to close the installation wizard.
-7. Make sure that **Ubuntu-22.04** is selected under **WSL** in Rancher Desktop:
+7. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
 
-    1. Open Rancher Desktop, and then click the **Settings** icon.
+    1. Open Rancher Desktop, and then click the **Preferences** icon on the bottom left of the Rancher Desktop application screen.
 
         ![Settings icon](../assets/images/rancherpreference1.png)
 
-    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then select the **Ubuntu** checkbox.
+    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then click on the **Integrations** tab.  Now select the **Ubuntu** checkbox.
 
         ![Rancher Desktop - Preferences](../assets/images/rancherpreference.png)
 
@@ -97,62 +107,6 @@ You are now ready to install Rancher Desktop.
 !!!warning "Important"
     Use an Ubuntu terminal session to run all the commands presented in the [Complete preparatory procedures](prereq.md) and the other sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
-
-## Enable port forwarding for ports 80, 443 and 1352
-
-Rancher Desktop needs the forwarding of specific ports to WSL2. The script you need to run forwards ports 80, 443, and 1352 on all network interfaces to WSL2.
-
-!!!note
-    Make sure Ubuntu is running before proceeding and also **stop** Rancher Desktop. If Rancher Desktop isn't stopped for this step, you may experience problems connecting to your Foundry and Domino deployments.
-
-**Prerequisite**
-
-You have already downloaded and saved the port forwarding script `mxgo-port-forwarding.ps1`. For more information, see [Download HCL Volt MX GO Release package](portaldownload.md).
-
-**To enable port forwarding**
-
-1. Open a **Windows PowerShell** as the Administrator.
-2. Run the following command and answer `A` when prompted.
-
-    ```
-    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-    ```
-
-3. Change to the directory where you downloaded the script and run it as follows:
-
-    ```
-    .\mxgo-port-forwarding.ps1
-    ```
-
-4. Run the following command to confirm that ports 80, 443, and 1352 are being forwarded:
-
-    ```
-    netsh interface portproxy show all
-    ```
-
-    The output should appear as follows:
-
-    ![Port confirmation result](../assets/images/portforwarding.png)
-
-5. Close the **Windows PowerShell**.
-6. Restart Rancher Desktop.
-
-!!!note
-    Repeat the steps if either of the following occurs:
-
-    - Rancher Desktop stops and restarts.
-    - WSL instances stop and restart.
-
-## Reset port forwarding for ports 80, 443 and 1352
-
-If you need to reset (disable or stop) port forwarding for ports 80, 443, and 1352, perform the following steps:
-
-1. Open a **Windows PowerShell** as the Administrator.
-2. Run the following command:
-
-    ```
-    netsh interface portproxy reset
-    ```
 
 ## Additional information
 
