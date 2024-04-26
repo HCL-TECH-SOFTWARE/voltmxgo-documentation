@@ -224,18 +224,24 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
     2. **Select** or **deselect** the configured `forms`, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
-
+        
+        !!!note
+            - The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the **configured** forms, views, agents, actions within forms and actions within views. Within the **unconfigured** forms, views and agents, you can only view the names.
+            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino `.nsf` file and can only be modified in the **Domino Designer**. 
+      
+        a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
+        
         ![](../assets/images/discopeform.png)
 
-        On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
+        b. On the **Views** tab, you may select or deselect **views** and **actions**. 
 
         ![](../assets/images/didbviews.png)
 
-        On the **Agents** tab, you may select or deselect agents. These **agents** are often configured within the `.nsf` file and can only be modified in the **Domino Designer**. 
+        c. On the **Agents** tab, you may select or deselect **agents**. 
 
         ![alt text](../assets/images/diagents.png)
 
-6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application.**. 
+6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application**. 
 
     !!!note
         - It may take a while to complete the publishing of the imported Domino app.
@@ -256,7 +262,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ## CRUD operation upon importing the `.nsf` file
 
 !!!note "Published the web app and native app in Iris"
-    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Iris.
+    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MXGo Iris.
     
         - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.
 
@@ -266,14 +272,14 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.
       Your configuration in Domino REST API decides what operations you can include in the **design import** form.
-      All the `views` and `forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
+      All the `views`, `agents`,`forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
 
-    - The Native App (mobile) and the Web App (Responsive Desktop) have the same capability of doing the CRUD operation.
+    - The **Native App (mobile and tablet)** and the **Web App (Responsive Desktop)** have the same capability of doing the CRUD operation.
 
 
 ### Create entry
 
-1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: ContactProfile).
+1. In the **Dashboard**, go to the **Forms** section and click your preferred document. (example: NewCustomers).
 
     ![Screenshot](../assets/images/dinewview.png)
 
@@ -294,28 +300,28 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Viewing data
 
-1. In the Dashboard, go to the **Views** section and click your preferred document.(example: AllContacts).
+1. In the Dashboard, go to the **Views** section and click your preferred document.(example: AllCustomers_Lead).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. This will open the ContactProfile's document page. Go to your preferred ContactProfile and click **View**.
+2. This will open the AllCustomers_Lead's document page. Go to your preferred AllCustomers_Lead and click **View**.
 
     ![Screenshot](../assets/images/dilist.png)
    
-3. This will open the ContactProfile's detail. Select the **Download All Attachments** link. Files will be downloaded. 
+3. This will open the AllCustomers_Lead's detail. Select the **Download All Attachments** link. Files will be downloaded. 
 
     !!!note
-        - You can download the attachments in your document (e.g ContactProfile's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
+        - You can download the attachments in your document (e.g AllCustomers_Lead's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
         - You can also see here the **Delete** and **Edit** button.
 
 
 ### Update data
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllCustomers_Lead).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/AllContacts** page, search the contacts, click the row and select **Edit**. 
+2. In the **Dashboard/AllCustomers_Leads** page, search the customer, click the name and select **Edit**. 
 
     !!!note
         If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the **Database View** is **active** and the columns in the view are added during the import.
@@ -336,19 +342,20 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     2. Click **Open**. If the file is pre-existing, a dialog prompt will appear with the option to overwrite it.
 
-6. Click **Save**.
+    ![](../assets/images/dieditsave.png)
 
+6. Click **Save**.
 
 ### Delete entry
 
 !!!note
     - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllContacts).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllCustomers_Leads).
 
     ![Screenshot](../assets/images/diviews.png)
 
-2. In the **Dashboard/AllContacts** page, search the contacts, click the row and select **Delete**.
+2. In the **Dashboard/AllCustomers_Leads** page, find the row corresponding to the customer and select the **Delete** option.
 
     ![Screenshot](../assets/images/disearchdel.png)
 
