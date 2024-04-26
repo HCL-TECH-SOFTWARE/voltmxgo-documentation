@@ -139,15 +139,21 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
         When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
-    2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views` and `agents` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
-
+    2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views`,`agents`, `actions` and click **Next**. 
+    
+        !!!note
+            - The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the **configured** forms, views, agents, actions within forms and actions within views. Within the **unconfigured** forms, views and agents, you can only view the names.
+            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino `.nsf` file and can only be modified in the **Domino Designer**. 
+      
+        a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
+        
         ![](../assets/images/discopeform.png)
 
-        On the **Views** tab, you may select or deselect **views** and **actions**. These **actions**, which are basically *buttons* that can be added to your imported app. These actions are often configured within the `.nsf` file and can only be modified in the **Domino Designer**.
+        b. On the **Views** tab, you may select or deselect **views** and **actions**. 
 
         ![](../assets/images/didbviews.png)
 
-        On the **Agents** tab, you may select or deselect agents. These **agents** are often configured within the `.nsf` file and can only be modified in the **Domino Designer**. 
+        c. On the **Agents** tab, you may select or deselect **agents**. 
 
         ![alt text](../assets/images/diagents.png)
 
@@ -158,13 +164,13 @@ You can now see your project name in the upper-left corner of the **Volt MXGo Ir
 
     ![](../assets/images/disummary.png)
 
-7. On **Result**, see the final `forms` and `views`, and then click **Done**.
+7. On **Result**, see the final `forms`, `views`, `actions`,`agent` and then click **Done**.
  
     !!!tip
         - The **check mark icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that it was successfully created.
-        - The **warning icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that the supported datatype doesn't match with the Iris app datatype.
+        - The **warning icon** beside each of the `forms`, `fields from the forms`, `views` and `agents` means that the supported property values doesn't match with the Volt MXGo Iris app property values.
         - Turn on the **Show only error** toggle to see all the fields with the warning icon.
-        - When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
+        - When selecting a scope with ***active Agents***, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
 
     ![](../assets/images/diresult.png) 
 
