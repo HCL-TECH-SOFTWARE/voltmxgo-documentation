@@ -75,7 +75,7 @@ You are now ready to install Rancher Desktop.
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        We recommend installing the latest version of Rancher Desktop.  There are continuous improvments with every release.  Version 1.7.0 is known not to work well because of some port forwarding issues.  In older versions of Rancher Desktop manual port-forwarding was required to enable your Windows broswer to connect Foundry applications running in Rancher Desktop. This is not required in current versions (1.13+).
+        We recommend installing the latest version of Rancher Desktop.  There are continuous improvements with every release.  Version 1.7.0 is known not to work well because of some port forwarding issues.  In older versions of Rancher Desktop manual port-forwarding was required to enable your Windows broswer to connect Foundry applications running in Rancher Desktop. This is not required in current versions (1.13+).
 
 2. If you are upgrading from a prior version of MXGO, we recommend resetting port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
 
