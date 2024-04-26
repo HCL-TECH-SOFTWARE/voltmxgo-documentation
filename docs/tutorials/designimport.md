@@ -233,7 +233,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
         When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
-    2. **Select** or **deselect** the configured `forms`, `views`, `agents` and `actions` and click **Next**. The lists you see here are the configured and unconfigured forms you set in the Domino Rest API. You can only select the configured forms.
+    2. **Select** or **deselect** the configured `forms`, `views`, `agents` and `actions` and click **Next**. 
         
         !!!note
             - The following lists show the forms, views and action  you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
@@ -260,7 +260,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
     ![](../assets/images/disummary.png)
 
-7. On **Result**, see the final `forms`, `views` and `agents`, and then click **Done**.
+7. On **Result**, see the final `forms`, `views`, `actions` and `agents`, and then click **Done**.
 
     !!!note
         When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
