@@ -131,8 +131,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 5. On **Scope and Forms**
 
     !!!Important
-            - On this Volt MX Go v.2.0.3 release, the **actions** will be import as inactive button.
-            - Not all Agents are supported.
+        In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
 
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
@@ -161,7 +160,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
         ![alt text](../assets/images/diagents.png)
         
-    Follow this link to learn more on [importing Domino Agents](../howto/diagents.md)
+    Follow this link to learn more on [importing Domino Agents.](../howto/diagents.md)
 
 6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
 
@@ -221,8 +220,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 5. On **Scope and Forms**
     
     !!!Important
-            - On this Volt MX Go v.2.0.3 release, the **actions** will be import as inactive button.
-            - Not all Agents are supported.
+        In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
 
     1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
 
@@ -251,7 +249,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
         ![alt text](../assets/images/diagents.png)
 
-        Follow this link to learn more on [importing Domino Agents](../howto/diagents.md)
+        Follow this link to learn more on [importing Domino Agents.](../howto/diagents.md)
 
 6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application**. 
 
