@@ -52,7 +52,7 @@ This procedure shows you how the **Agents** is imported to the Volt MX Iris Go D
 
   5. All customers in the *West* Region will move to the *East* Region.
 
-     ![alt text](diactionsresult.png)
+     ![alt text](../assets/images/diactionsresult.png)
 
 
 
