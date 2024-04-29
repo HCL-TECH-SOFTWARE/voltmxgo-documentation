@@ -21,7 +21,6 @@ This procedure shows you how the **Agents** is imported to the Volt MX Iris Go D
     - The Design Import App shows the following conditions for using Domino Agents:
         - If the Domino Agents' trigger type configuration is **action menu**.
         - If the Domino Agents' document setting is configured to  **All**.
-        - If the Domino Agents' formula type is configured as null or undefined.
 
 **Importing Agents in Volt  MX Go Iris using the Design Import capability**
 
