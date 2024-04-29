@@ -36,7 +36,7 @@ List of issues and corresponding resolutions related to Domino REST API when imp
 
 - **Form missing Fields on Default mode**
 
-    This issue occurs when you save the form without declaring any property values or fail to declare all property values in **default** mode. You must declare all the fields in the **default** mode.
+    This issue occurs when you save the form without declaring any property values or fail to declare property values in **default** mode which is in the **dql** mode. You must declare all the fields in the **default** mode.
 
 - **Missing DQL mode**
 
