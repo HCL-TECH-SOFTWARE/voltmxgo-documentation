@@ -2,7 +2,7 @@
 
   **Domino Agents** which are part the HCL Domino are part of the `nsf` that only Domino Designer can be able to modify. These `nsf` will be able to use by the Domino REST API to be able to use it for other services. Only those configured Agents in a `nsf` will be available to amend by the Domino REST API. These **Agents** will be imported to Volt MX Go Iris as part of the Design Import. 
 
-  To learn more about [Domino Agents, follow this link.](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_ABOUT_DESIGNING_AGENTS.html)
+  To learn more about Agents, follow this link [Domino Agents.](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_ABOUT_DESIGNING_AGENTS.html)
 
 ## About this procedure
 
@@ -16,6 +16,12 @@ This procedure shows you how the **Agents** is imported to the Volt MX Iris Go D
 
 1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-the-new-foundry-app).
 
+!!!important
+    - For the Volt MX Go release v2.0.3, only limited Agents are supported.
+    - The Design Import App shows the following conditions for using Domino Agents:
+        - If the Domino Agents' trigger type configuration is **action menu**.
+        - If the Domino Agents' document setting is configured to  **All**.
+        - If the Domino Agents' formula type is configured as null or undefined.
 
 **Importing Agents in Volt  MX Go Iris using the Design Import capability**
 
@@ -30,6 +36,8 @@ This procedure shows you how the **Agents** is imported to the Volt MX Iris Go D
   1. On the **Views**, click the **Customers B ByRegion**. 
 
       ![alt text](../assets/images/diviewagent.png)
+
+
       
        The **Customers B ByRegion** will open. 
        
