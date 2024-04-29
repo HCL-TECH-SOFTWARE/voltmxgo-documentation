@@ -17,7 +17,7 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Update FirstTouchRecipes.nsf](FTnsfupdate.md)
 - [Create new project using native app](dicreatenativeapp.md)
 - [Import actions from Domino view and forms](importvoltformula.md)
-- [Import Agent](diagents.md)
+- [Import Domino Agents](diagents.md)
 - [Uninstall](uninstall.md)
 
 
