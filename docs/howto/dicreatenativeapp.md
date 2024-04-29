@@ -22,7 +22,7 @@
   
     ![](../assets/images/diprojectnamemob.png){: style="height:80%;width:80%"}
  
-You can now see your project name in the upper-left corner of the **Volt MXGo Iris** canvass.
+You can now see your project name in the upper-left corner of the **Volt MX Go Iris** canvass.
 
 ![](../assets/images/diappnamemob.png){: style="height:80%;width:80%"}
 

@@ -1,6 +1,6 @@
-# Recommended VoltFormula coding practices in Volt MXGo Iris
+# VoltFormula coding practices in Volt MX Go Iris
 
-This section has a series of coding exercises designed to help you understand how to use Volt Formula in Volt MXGo Iris. Each exercise comes with a description of the problem, followed by a code template where you can write your solution.
+This section has a series of coding exercises designed to help you understand how to use Volt Formula in Volt MX Go Iris. Each exercise comes with a description of the problem, followed by a code template where you can write your solution.
 
 ### Hello, World!
 #### Description

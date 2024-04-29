@@ -14,7 +14,7 @@ This procedure will guide you through the process of importing the **Domino app*
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 2. Finished all the steps in the **VoltMX Design Import Wizard**.
-3. On the Volt MXGo Iris project, open the form that has the **actions** (i.e., Create Customer) button imported from Domino view.
+3. On the Volt MX Go Iris project, open the form that has the **actions** (i.e., Create Customer) button imported from Domino view.
 
     ![](../assets/images/dibutton.png)
 

@@ -273,7 +273,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ## CRUD operation upon importing the `.nsf` file
 
 !!!note "Published the web app and native app in Iris"
-    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MXGo Iris.
+    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MX Go Iris.
     
         - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.
 

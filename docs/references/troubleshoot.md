@@ -32,15 +32,15 @@ List of issues and corresponding resolutions related to Domino REST API when imp
 
 - **Form missing Default mode Fields and DQL mode**
 
-    This issue occurs when you have not declared the same property values in both **dql** mode and **default** mode. You have to declare the same property values in **dql** mode and **default** mode.
+    This issue occurs when you haven't declared the same property values in both the **dql** mode and **default** mode. You have to declare the same property values in **dql** mode and **default** mode.
 
 - **Form missing Fields on Default mode**
 
-    This issue occurs when you save the form without declaring any property values or fail to declare property values in **default** mode which is in the **dql** mode. You must declare all the fields in the **default** mode.
+    This issue occurs when you save the form without declaring any property values or fail to declare property values in **default** mode that's in the **dql** mode. You must declare all the fields in the **default** mode.
 
 - **Missing DQL mode**
 
      This issue occurs when only the default mode is declared. The **dql** mode and **default** mode must be parallel or similar to each other before importing the schema.
 
-It is recommended to consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+Consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 

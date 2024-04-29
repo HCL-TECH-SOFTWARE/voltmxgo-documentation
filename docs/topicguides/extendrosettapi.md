@@ -1,10 +1,12 @@
 # Extending Rosetta API
 
-Since the API is a **JavaScript object**, we can extend the API library by adding to the object structure any number of custom categories and/or method definitions, as long as we adhere to the schema structure. For this we have provided helper extension registration methods within the API configuration object of the Rosetta library.
+## Overview
 
-### Samples
+Since the API is a **JavaScript object**, you can extend the API library by adding to the object structure any number of custom categories and/or method definitions, as long as you adhere to the schema structure. For this, helper extension registration methods are provided within the API configuration object of the Rosetta library.
 
-Sample array of JSON objects used to extend the API via the `<rosettajs>.API.registerAPIs()` method using note custom category and custom language capabilities:
+## Samples
+
+- Sample array of JSON objects used to extend the API via the `<rosettajs>.API.registerAPIs()` method using note custom category and custom language capabilities:
 
 ```json
 [
@@ -43,7 +45,7 @@ Sample array of JSON objects used to extend the API via the `<rosettajs>.API.reg
 ]
 ```
 
-Sample array of JSON objects used to extend the API via the `<rosettajs>.API.registerAPIs()` method (note mixed code):
+- Sample array of JSON objects used to extend the API via the `<rosettajs>.API.registerAPIs()` method (note mixed code):
 
 ``` json    
 [
@@ -70,4 +72,4 @@ Sample array of JSON objects used to extend the API via the `<rosettajs>.API.reg
 
 ## Using Formula language the extension code
 
-In addition to extending via **JavaScript implementations**, when the code property of the extension input contains formula language (instead of a ***JavaScript*** function), the registration method will convert the formula into ***JavaScript*** and register the resulting JavaScript as the code for the particular extension.
+In addition to extending via **JavaScript implementations**, when the code property of the extension input has formula language instead of a ***JavaScript*** function, the registration method converts the formula into ***JavaScript*** and registers the resulting JavaScript as the code for the particular extension.
