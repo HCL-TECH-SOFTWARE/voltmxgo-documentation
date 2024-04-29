@@ -173,9 +173,9 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
  
     !!!tip
         - The **check mark icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that it was successfully created.
-        - The **error icon** beside each of the `forms`, `fields from the forms`, `views` and `agents` means that the supported property values doesn't match with the Volt MX Go Iris app property values.
+        - The **warning icon** beside each of the `forms`, `fields from the forms`, `views` and `agents` means that the supported property values doesn't match with the Volt MX Go Iris app property values.
         
-        - Turn on the **Show only error** toggle to see all the fields with the warning icon.
+        - Turn on the **Show only error** toggle to see all the fields with the error icon.
         - When selecting a scope with ***active Agents***, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
 
     ![](../assets/images/diresult.png) 
