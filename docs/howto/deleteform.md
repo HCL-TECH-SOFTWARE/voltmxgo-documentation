@@ -1,5 +1,7 @@
 # Delete existing forms while using the Design Import wizard
 
+--8<-- "mxgoversion.md"
+
 ## About this procedure
 
 The procedure guides you on how to delete forms when importing a Domino application into an existing project.
