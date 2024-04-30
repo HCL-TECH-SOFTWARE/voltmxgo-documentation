@@ -17,9 +17,9 @@ The procedure guides you on how to delete forms when importing a Domino applicat
 
 2. Click the **Build Iris Application**. If existing MX Go Iris forms are detected, a prompt will occur. This prompt will notify the user whether to overwrite the current forms.
 
- ![Screenshot](../assets/images/dideleteform.png)
+    ![Screenshot](../assets/images/dideleteform.png)
 
-3. Click **Yes** to delete the existing forms or click **No** to keep the existing forms. T
+3. Click **Yes** to delete the existing forms or click **No** to keep the existing forms.
 
     This will **not** guarantee you that your imported application will generate and build successfully.
 
