@@ -15,6 +15,8 @@ List of issues and corresponding resolutions.
 
 ## Domino Rest API schema issues
 
+--8<-- "mxgoversion.md"
+
 List of issues and corresponding resolutions related to Domino REST API when importing Domino applications using Design Import.
 
 !!!warning "Important"

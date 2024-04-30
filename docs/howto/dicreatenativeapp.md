@@ -1,5 +1,7 @@
 # Create new project using native app
 
+--8<-- "mxgoversion.md"
+
 ## About this procedure
  This procedure walks you through the process of starting a new project using a mobile or tablet platform.
 

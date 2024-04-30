@@ -1,5 +1,7 @@
 # Import Domino Agents
 
+--8<-- "mxgoversion.md"
+
   **Domino Agents** which are part the HCL Domino are part of the `nsf` that only Domino Designer can be able to modify. These `nsf` will be able to use by the Domino REST API to be able to use it for other services. Only those configured Agents in a `nsf` will be available to amend by the Domino REST API. These **Agents** will be imported to Volt MX Go Iris as part of the Design Import. 
 
   To learn more about Agents, follow this link [Domino Agents.](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_ABOUT_DESIGNING_AGENTS.html)
