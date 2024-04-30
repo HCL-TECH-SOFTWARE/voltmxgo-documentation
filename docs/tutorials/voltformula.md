@@ -182,7 +182,6 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
     ![Edit Rosetta JS](../assets/images/vfjavaedit.png)
      
 !!!Info
-    - The default Rosetta voltFormula setting can be modified according to your need for your app. To change the configuration, go to this link [Configure VoltFormula's Rosetta API Options](../howto/configrosetta.md)
-
-    - To know more about the proper way of handling codes, go to this link [Recommended Volt Formula Coding Practices in MX Go Iris](../topicguides/vfcodingguides.md)
+    - The default Rosetta VoltFormula setting can be modified according to your need for your app. To change the configuration, see [Configure VoltFormula's Rosetta API Options](../howto/configrosetta.md).
+    - To know more about the proper way of handling codes, see [Recommended Volt Formula Coding Practices in MX Go Iris](../topicguides/vfcodingguides.md).
 

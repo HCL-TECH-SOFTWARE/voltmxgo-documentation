@@ -83,6 +83,6 @@ _paramAsFieldName: true
 - `<converter>.config.setParamAsFieldName(convert)`
 - `<converter>.config.setStripNumbers(strip)`
 
-## Volt MXGo
+## Volt MX Go
 
-See the [Rosetta options](../howto/configrosetta.md) under the project settings in Volt MXGo Iris.
+See the [Rosetta options](../howto/configrosetta.md) under the project settings in Volt MX Go Iris.

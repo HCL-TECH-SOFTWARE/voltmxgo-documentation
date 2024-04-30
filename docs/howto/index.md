@@ -15,7 +15,7 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Configure mobile app browser](configmobile.md) 
 - [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)
 - [Update FirstTouchRecipes.nsf](FTnsfupdate.md)
-- [Create new project using native app](dicreatenativeapp.md)
+- [Create a new native app project](dicreatenativeapp.md)
 - [Import actions from Domino view and forms](importvoltformula.md)
 - [Import Domino Agents](diagents.md)
 - [Uninstall](uninstall.md)

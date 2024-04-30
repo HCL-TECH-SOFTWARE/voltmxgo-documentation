@@ -70,14 +70,14 @@ It's not required to enter more information, simply hit the **Enter** key and re
 You are now ready to install Rancher Desktop.
 
 
-## To install Rancher Desktop
+## Install Rancher Desktop
 
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        We recommend installing the latest version of Rancher Desktop.  There are continuous improvements with every release.  Version 1.7.0 is known not to work well because of some port forwarding issues.  In older versions of Rancher Desktop manual port-forwarding was required to enable your Windows browser to connect Foundry applications running in Rancher Desktop. This is not required in current versions (1.13+).
+        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).
 
-2. If you are upgrading from a prior version of MXGO, we recommend resetting port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
+2. If you are upgrading from a prior version of MX Go (v2.0.2 or earlier), it's recommended to reset port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
 
     1. Open a **Windows PowerShell** as the Administrator.
     2. Run the following command:
@@ -86,19 +86,19 @@ You are now ready to install Rancher Desktop.
     netsh interface portproxy reset
     ```
 
+3. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
+4. Review the License Agreement, and then click **I Agree** to proceed with the installation.
+5. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to installing the Rancher Desktop Privileged Service.
+6. Follow the prompts to confirm installation.
+7. When the installation completes, click **Finish** to close the installation wizard.
+8. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
 
-2. Navigate to the directory where you downloaded the installer to and run the installer. This is usually the **Downloads** folder.
-3. Review the License Agreement, and then click **I Agree** to proceed with the installation.
-4. If prompted, choose between installing for everyone on the machine or installing just for the current user. Installing for everyone is preferred to installing the Rancher Desktop Privileged Service.
-5. Follow the prompts to confirm installation.
-6. When the installation completes, click **Finish** to close the installation wizard.
-7. Make sure that **Ubuntu** is selected under **WSL** in Rancher Desktop:
-
-    1. Open Rancher Desktop, and then click the **Preferences** icon on the bottom left of the Rancher Desktop application screen.
+    1. Open Rancher Desktop, and then click **Preferences**.
 
         ![Settings icon](../assets/images/rancherpreference1.png)
 
-    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then click on the **Integrations** tab.  Now select the **Ubuntu** checkbox.
+    2. On the **Rancher Desktop - Preferences** dialog, click **WSL** and then click the **Integrations** tab.
+    3. Select the **Ubuntu** checkbox.
 
         ![Rancher Desktop - Preferences](../assets/images/rancherpreference.png)
 
