@@ -49,6 +49,7 @@ This tutorial guides you in accessing Design Import in Volt MX Go through the us
         <!-- You should see the “Validation Successful” message at the top of the dialog.-->
     
     4. Click **Done**.
+    
     ![Preferences](../assets/images/dipreference.png)
 
 
