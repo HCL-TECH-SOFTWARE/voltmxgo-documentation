@@ -2,11 +2,11 @@
 
 --8<-- "mxgoversion.md"
 
-## About this procedure
+## About this task
 
-The procedure guides you on how to delete forms when importing a Domino application into an existing project.
+Guides you on how to delete forms when importing a Domino application into an existing project.
 
-## Before you start
+## Before you begin
 
 - You must complete the [Volt MX Go installation](../tutorials/installation.md).
 - You already imported a Domino application on your project.

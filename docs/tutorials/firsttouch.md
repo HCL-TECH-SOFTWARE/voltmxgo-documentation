@@ -2,7 +2,7 @@
 
 This tutorial guides you in accessing and running the First Touch Recipe Catalog app from Volt Foundry to view and explore the app.
 
-## Before you start
+## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
 - You have created your [Foundry admin account](../howto/foundryadminaccount.md).

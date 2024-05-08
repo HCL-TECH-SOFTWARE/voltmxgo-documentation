@@ -2,13 +2,13 @@
 
 <!--# DRAPI Ingress-->
 
-## About this procedure
-
 --8<-- "devtestenvironment.md"
 
-The procedure guides you in configuring Kubernetes Ingress for Domino REST API. Ingress provides and manages external access to the services in your Kubernetes cluster. It's required to enable browsers to access the applications and back-end services to communicate with each other. 
+## About this task
 
-## Before you start
+Configures Kubernetes Ingress for Domino REST API. Ingress provides and manages external access to the services in your Kubernetes cluster. It's required to enable browsers to access the applications and back-end services to communicate with each other. 
+
+## Before you begin
 
 Familiarize yourself with the various properties and parameters related to Kubernetes Ingress. Expand the following to learn more:
 
@@ -152,7 +152,7 @@ keytool -import -alias drapi2 -file ./drapi-server.pem -keypass changeit -storep
 !!!note
     - `-alias drapi2` is the alias for the new certificate. You can use any alias but we recommend foundry.
     - `-file ./drapi-server.pem` is the file path to your certificate. Use the proper path for your circumstances.
-    - `-keystore ../foundry/voltmx-foundry/certs/cacerts` is the location of the truststore your certificate will be imported to and later use by Tomcat.  This file path shouldn't be changed.
+    - `-keystore ../foundry/voltmx-foundry/certs/cacerts` is the location of the truststore your certificate will be imported to and later use by Tomcat. This file path shouldn't be changed.
     - `changeit` is the default password and shouldn't be changed.
 
 For more information about `keytool`, see [Java Keytool documentation](https://docs.oracle.com/en/java/javase/11/tools/keytool.html){: target="_blank" rel="noopener noreferrer"}.
@@ -161,7 +161,7 @@ For more information about `keytool`, see [Java Keytool documentation](https://d
 
 - Update your `values.yaml` with the following configuration details to properly configure SSL.  
 
-    Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you start](#before-you-start) for more details on each parameter.
+    Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
 
 
 ``` bash

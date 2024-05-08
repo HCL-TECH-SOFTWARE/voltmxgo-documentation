@@ -4,7 +4,7 @@
 
 The procedure guides you in generating CRUD forms and associated form-navigation links for an Object Service after linking your Volt Iris project to your Volt MX Foundry app with a defined Object Service data model. 
 
-## Before you start
+## Before you begin
 
 - You have [created an app in Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#create-an-app-in-volt-mx-foundry).
 - You have [configured an Identity Service for your app in Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-identity-service).

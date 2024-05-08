@@ -1,10 +1,10 @@
 # Update FirstTouchRecipes.nsf 
 
-## About this procedure 
-
 --8<-- "devtestenvironment.md"
 
-The procedure guides you in manually updating your Domino container if you obtain a new version of the Notes database *FirstTouchRecipes.nsf*.
+## About this task 
+
+Guides you in manually updating your Domino container if you obtain a new version of the Notes database *FirstTouchRecipes.nsf*.
 
 ## Procedure
 

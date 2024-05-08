@@ -1,8 +1,8 @@
 # Uninstall First Touch
 
-## About this procedure
+## About this task
 
-The procedure guides you in uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
+Guides you in uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
 
 ## Procedure
 

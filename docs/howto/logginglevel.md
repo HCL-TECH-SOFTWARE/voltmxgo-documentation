@@ -1,7 +1,8 @@
 # Set logging level
 
-## About this procedure
-This procedure guides you on how to check and set the logging level, and access the log files. For more information, see [Logging levels](../references/reflogginglevels.md). 
+## About this task
+
+Guides you on how to check and set the logging level, and access the log files. For more information, see [Logging levels](../references/reflogginglevels.md). 
 
 !!!note
     The logging level in Volt MX Go Iris only affects the logs for importing a Domino application at the moment.

@@ -1,7 +1,8 @@
 # VoltFormula tutorial
 
 This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank" rel="noopener noreferrer"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank" rel="noopener noreferrer"} and have it translated automatically into JavaScript code.
-## Before you start
+
+## Before you begin
 <!--!!!note
     Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.-->
 

@@ -7,6 +7,7 @@ nav:
     - VoltFormula coding practices: topicguides/vfcodingguides.html
     - kubecheatsheet.md
     - Rosetta API reference documentation: javadoc/index.html
+    - Rosetta API implementation status: javadoc/api_status.html
     - reflogginglevels.md 
     - Documentation references: references/index.html#documentation-references
     - knownlimitation.md

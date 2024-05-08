@@ -2,11 +2,11 @@
 
 --8<-- "mxgoversion.md"
 
-## About this procedure
+## About this task
 
-This procedure walks you through the process of creating a new project for a mobile or tablet platform.
+Walks you through the process of creating a new project for a mobile or tablet platform.
 
-## Before you start
+## Before you begin
 
 - You have launched Volt MX Go Iris. 
 <!-- You must read and familiarize yourself with the Design Import tutorial.-->

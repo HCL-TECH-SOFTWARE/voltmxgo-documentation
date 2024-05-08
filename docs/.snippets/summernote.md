@@ -1,10 +1,11 @@
 # Import Summernote Editor
 
-## About this procedure 
+## About this task 
 
-The procedure guides you in importing the Summernote Editor component in Iris. The Summernote Editor component is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris.  
+Imports the Summernote Editor component in Iris. The Summernote Editor component is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris.  
 
-## Before you start
+## Before you begin
+
 - You have created a Domino data model in a Foundry Object Service for which you want to generate forms.
 
 ## Procedure

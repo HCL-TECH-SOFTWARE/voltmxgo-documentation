@@ -1,10 +1,10 @@
 # Create a Foundry administrator account
 
-## About this procedure
+## About this task
 
-The procedure guides you in creating an administrator account to log in to Foundry.
+Guides you in creating an administrator account to log in to Foundry.
 
-## Before you start
+## Before you begin
 
 You must complete the [Volt MX Go installation](../tutorials/installation.md). 
 

@@ -2,9 +2,9 @@
 
 ## About this task
 
-The procedure guides you in importing the First Touch Recipes app into Iris so that you can try out the different development features of Iris. 
+Imports the First Touch Recipes app into Iris so that you can try out the different development features of Iris. 
 
-## Before you start
+## Before you begin 
 
 - You have installed the First Touch app in Foundry. For more information, see [First Touch tutorial](../tutorials/firsttouch.md).  
 - You have downloaded the First Touch Recipes project (*FirstTouchRecipe.zip*) from the HCL License & Download Portal. For more information, see [Download HCL Volt MX Go Release package](../tutorials/portaldownload.md).

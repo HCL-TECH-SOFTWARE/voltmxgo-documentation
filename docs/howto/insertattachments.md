@@ -1,10 +1,10 @@
 # Insert attachments via Summernote Editor
 
-## About this procedure
+## About this task
 
-The procedure guides you on how to insert attachments via the [Summernote Editor](../references/summernotewidget.md). 
+Guides you on how to insert attachments via the [Summernote Editor](../references/summernotewidget.md). 
 
-## Before you start
+## Before you begin
 
 - You have [generated CRUD forms for Object Service](codegen.md).
 - You have [built and published your app in Volt Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build){: target="_blank" rel="noopener noreferrer"}.
