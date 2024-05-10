@@ -8,7 +8,7 @@
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
 
 
-1.	Run the following command to get a list of pods running Foundry:
+1.	Run the following command to get a list of pods running Volt MX Go Foundry:
 
     ```
     kubectl get pods -n mxgo

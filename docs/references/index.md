@@ -37,7 +37,7 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 [HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html){: target="_blank" rel="noopener noreferrer"}
 
-- Provides documentation and more information about Iris and Foundry.
+- Provides documentation and more information about Volt MX Iris and Volt MX Foundry.
 
 [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank" rel="noopener noreferrer"}
 

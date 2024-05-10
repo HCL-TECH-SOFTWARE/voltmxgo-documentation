@@ -37,7 +37,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 - You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 - Ensure that the installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
-- Ensure that you stop the application server of your existing Foundry instance, which you want to upgrade.
+- Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
 #### Procedure
 
 - Follow the link to the upgrade procedure based on your used installation platform/option:

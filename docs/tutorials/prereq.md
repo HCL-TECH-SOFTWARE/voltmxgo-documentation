@@ -2,7 +2,7 @@
 
 --8<-- "devtestenvironment.md"
 
-The following procedure must be performed <!--when installing Volt MX Go for the first time. It should be performed-->post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Foundry installation.
+The following procedure must be performed <!--when installing Volt MX Go for the first time. It should be performed-->post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Volt MX Go Foundry installation.
 
 !!!warning "Important"
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
@@ -63,14 +63,14 @@ kubectl config set-context --current --namespace=mxgo
 
 ## 3. Ensure Foundry Hostnames are resolvable
 
-You must ensure the url used to access Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
+You must ensure the url used to access Volt MX Go Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
 
 In the examples that follow we are going to use these hostnames as examples:
 
 ```
 drapi.mymxgo.com - used to access Domino REST API.
 drapi-management.mymxgo.com - used to access the Domino REST API Management interface.
-foundry.mymxgo.com - used to access HCL Volt MX Foundry
+foundry.mymxgo.com - used to access HCL Volt MX Go Foundry
 ```
 
 You can either provide your own hostnames, or use these example names. Either the name to IP address mapping must be made in your DNS configuration, or you must modify your system hosts file. Further documentation here assumes you are not using a DNS system and configuration and are therefore modifying local hosts file entries.

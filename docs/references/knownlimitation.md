@@ -2,7 +2,7 @@
 
 ## Using Open API Adapter
 
-Volt MX Go doesn't support the use of the Open API Adapter in the Foundry Integration Services to connect to Domino via Domino REST API. 
+Volt MX Go doesn't support the use of the Open API Adapter in the Volt MX Go Foundry Integration Services to connect to Domino via Domino REST API. 
 
 ## Using helm charts on supported Kubernetes platform
 
@@ -10,16 +10,16 @@ When using helm charts on a supported Kubernetes platform, you must run the `kub
 
 ## Naming 
 
-- Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
-- Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
+- Volt MX Go Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
+- Volt MX Go Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
 
 ## Data conversion   
 
-As Domino REST API and Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
+As Domino REST API and Volt MX Go Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Volt MX Go Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
 
 ## Verb mapping
 
-Verb mapping isn't supported for binary verbs in the Foundry Console.
+Verb mapping isn't supported for binary verbs in the Volt MX Go Foundry Console.
 
 ## Deleting offline documents 
 ### Hard delete
@@ -36,15 +36,11 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 
 ## Domino Adapter
 
-- Supports only Foundry Object services.
-- Domino object services in Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
+- Supports only Volt MX Go Foundry Object services.
+- Domino object services in Volt MX Go Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
  
-<!--## Volt IQ
+## VoltFormula
 
-The Volt IQ capabilities aren't functional in Volt MX Go v2.0.1. This will be addressed in an upcoming release.
-
-## Windows and macOS desktop applications
-
-It's not possible to build Windows and macOS Desktop applications with the latest release of Volt MX Go v2.0.1. This will be addressed in an upcoming release.
--->
+- Date APIs for Notes implementations return JavaScript Date Objects, which differ from Notes Date Objects.
+- Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt MX Go Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml){: target="_blank" rel="noopener noreferrer"} are allowed in [voltmx.io.FileSystem](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html){: target="_blank" rel="noopener noreferrer"}.
 

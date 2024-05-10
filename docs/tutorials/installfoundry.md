@@ -1,8 +1,8 @@
-# Install Foundry
+# Install Volt MX Go Foundry
 
 --8<-- "devtestenvironment.md"
 
-The procedures will guide you in the installation of Foundry.
+The procedures will guide you in the installation of Volt MX Go Foundry.
 
 ## 1. Download Foundry charts
 
@@ -29,7 +29,7 @@ The procedures will guide you in the installation of Foundry.
         The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names, such as `voltmx-foundry-1.2.7.tgz` and `voltmx-dbupdate-1.2.7.tgz`.
 
 
-3. Foundry uses several Global Unique IDs to distinguish different installations of Foundry. Invoke the init-guids script to generate the IDs using the following command:
+3. Volt MX Go Foundry uses several Global Unique IDs to distinguish different installations of Volt MX Go Foundry. Invoke the init-guids script to generate the IDs using the following command:
     ```
     ./init-guids.sh --new
     ```
@@ -45,19 +45,19 @@ The procedures will guide you in the installation of Foundry.
     !!!note
         Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
 
-5. Locate the following line in the file and add your Foundry server domain name setting:
+5. Locate the following line in the file and add your Volt MX Go Foundry server domain name setting:
 
     ```{ .yaml .no-copy }
     serverDomainName:
     ```
     Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
 
-6. Locate the following lines in the file and add your Foundry database details. Use the example values as they match the values used for the MySQL install in the previous section, **Install MySQL for Foundry**.
+6. Locate the following lines in the file and add your Volt MX Go Foundry database details. Use the example values as they match the values used for the MySQL install in the previous section, **Install MySQL for Volt MX Go Foundry**.
 
     ```{ .yaml .no-copy }
     ### Database details ###
 
-    # Database type which you want to use for Volt MX Foundry (String)
+    # Database type which you want to use for Volt MX Go Foundry (String)
     # Possible values:
     #   "mysql" for MySQL DB server
     #   "sqlserver" for Azure MSSQL or SQLServer
@@ -119,15 +119,15 @@ The procedures will guide you in the installation of Foundry.
 
 3. Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created in MySql. Press `Ctrl-c` to stop the kubectl command.
 
-## 3. Install Foundry
+## 3. Install Volt MX Go Foundry
 
-1. Run the following Helm install command to deploy Foundry:
+1. Run the following Helm install command to deploy Volt MX Go Foundry:
 
     ```
     helm install foundry voltmx-foundry -f values.yaml
     ```
 
-2. Run the following command to verify when the Foundry install is ready:
+2. Run the following command to verify when the Volt MX Go Foundry install is ready:
 
     ```
     kubectl get pods -o wide -w
@@ -140,12 +140,12 @@ The procedures will guide you in the installation of Foundry.
 
 3. Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.
 
-**Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
+**Volt MX Go Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
 
 !!!note
     - If you defined a different Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
-    - To create an account, see [Create a Foundry administrator account](../howto/foundryadminaccount.md).
+    - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
 ## Next step

@@ -2,7 +2,7 @@
 
 ## About this task
 
-Describes how to register and unregister custom Rosetta API in the **API Configuration**.
+Describes how to register and unregister custom Rosetta API in the **API Configuration** section of the **VoltFormula** tab in the **Project Settings**.
 
 ## Before you begin
 

@@ -8,7 +8,7 @@ Guides you in manually updating your Domino container if you obtain a new versio
 
 ## Procedure
 
-1. [Uninstall the First Touch app](uninstallfirsttouch.md) from Foundry. 
+1. [Uninstall the First Touch app](uninstallfirsttouch.md) from Volt MX Go Foundry. 
 2. Identify the name of the Domino container by running the following command:
 
     ```
@@ -128,4 +128,4 @@ Guides you in manually updating your Domino container if you obtain a new versio
     [hcl@drapi-6949c45b8-wghbz ~]$
     ```
 
-You are now set to re-install the First Touch Recipe Catalog application in Foundry by following the [Log in to Volt MX Go Foundry](../tutorials/firsttouch.md#log-in-to-volt-mx-go-foundry) instructions. 
+You are now set to re-install the First Touch Recipe Catalog application in Volt MX Go Foundry by following the [Log in to Volt MX Go Foundry](../tutorials/firsttouch.md#log-in-to-volt-mx-go-foundry) instructions. 

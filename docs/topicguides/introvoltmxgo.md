@@ -2,10 +2,10 @@
 
 Volt MX Go modernizes and extends the value of your Domino applications with the market-leading, multi-experience platform Volt MX by:
 
-- connecting Volt Foundry to your Domino applications with a dedicated Domino Adapter via the Domino REST API while guided by the simple and fast First Touch app
-- modernizing or creating new multi-experience applications in Volt Iris on your Domino back-end data and applications
+- connecting Volt MX Go Foundry to your Domino applications with a dedicated Domino Adapter via the Domino REST API while guided by the simple and fast First Touch app
+- modernizing or creating new multi-experience applications in Volt MX Go Iris on your Domino back-end data and applications
 - expanding who can code applications built in Domino through VoltFormula, allowing for app modernization or migration without requiring a complete rewrite of the code
-- importing existing Domino views, forms, and fields into Volt Foundry via Design Import to get a head start on your Volt MX Go applications 
+- importing existing Domino views, forms, and fields into Volt MX Go Foundry via Design Import to get a head start on your Volt MX Go applications 
 
 Volt MX Go includes the following components:
 
@@ -20,11 +20,11 @@ Volt MX Go includes the following components:
 
 ## First Touch
 
-First Touch walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample recipe catalog app in Iris to show how to use the Domino Adapter, connects Volt Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt Foundry by:
+First Touch walks the administrator through establishing a connection to the Domino server and installs and presents users with a sample recipe catalog app in Iris to show how to use the Domino Adapter, connects Volt MX Go Foundry to the Domino back end, and leverages the Domino Adapter and Domino REST APIs. The First Touch app promotes a good user experience when establishing connections and importing sample apps into Volt MX Go Foundry by:
 
 - gathering necessary data from the administrator to connect to the Domino REST API server
 - authenticating using the credentials, creating schema and scope, creating views and applications, and initializing inside the Domino REST API
-- preparing a zip file for import into Volt Foundry and importing the app
+- preparing a zip file for import into Volt MX Go Foundry and importing the app
 - displaying a message informing the user that everything is ready
 
 The [sample recipe catalog app](firsttouchapp.md) has features such as:
@@ -43,26 +43,26 @@ Design Import builds the forms and views within Volt Iris and makes them actiona
 VoltFormula expands who can code Domino applications by allowing application modernization or migration without requiring a complete rewrite of the code. VoltFormula includes the following features:
 
 - Execution of a defined list of APIs for NotesFormula and OpenFormula through the Rosetta API library.
-- Conversion of formulas into Rosetta API Javascript through Rosetta converter.
+- Conversion of formulas into Rosetta API JavaScript through Rosetta converter.
 - Provides developers with a custom version of Volt Iris to allow them to:
-    - Add formulas and convert them to the appropriate Rosetta API Javascript.
-    - Edit resulting Javascript formulas.
+    - Add formulas and convert them to the appropriate Rosetta API JavaScript.
+    - Edit resulting JavaScript formulas.
     - See the results of the formula being written.
     - Use IntelliSense for suggestions of APIs available and associated help text.
     - Choose UI widgets from the default widget library equivalent to NotesFormula UI widgets (for example, @prompt to paint dialog in a window).
 - Provides sample formulas.
 - Maintains list of formulas used in applications.
-- Configuration of Rosetta in Iris to specify how the conversion of formulas to Javascript behaves. For example, should the `If` statement become a Rosetta call to API or convert it to native Javascript `If`.
+- Configuration of Rosetta in Iris to specify how the conversion of formulas to JavaScript behaves. For example, should the `If` statement become a Rosetta call to API or convert it to native JavaScript `If`.
 - Configuration of Rosetta for how API behaves when running under an application created in Iris. For example, should the API execute OpenFormula ABS formula or NotesFormula ABS formula.
 
 ## Domino Adapter
 
-Domino Adapter makes Domino a core part of the Foundry Object Services so that Volt MX applications can interact with Domino databases in the same way they can for other object service endpoint types, such as relational databases. Domino Adapter access to a Domino database is via the Domino REST API. Domino Adapter includes the following features: 
+Domino Adapter makes Domino a core part of the Volt MX Go Foundry Object Services so that Volt MX applications can interact with Domino databases in the same way they can for other object service endpoint types, such as relational databases. Domino Adapter access to a Domino database is via the Domino REST API. Domino Adapter includes the following features: 
 
 - Form-based CRUD (post, get, put, delete)
 - Form-based PATCH
 - View-based GET
-- Offline objects within the limits of Foundry 
+- Offline objects within the limits of Volt MX Go Foundry 
 
 ## Domino REST API
 

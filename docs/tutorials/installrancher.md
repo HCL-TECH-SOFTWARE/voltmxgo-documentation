@@ -75,7 +75,7 @@ You are now ready to install Rancher Desktop.
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).
+        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Volt MX Go Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).
 
 2. If you are upgrading from a prior version of MX Go (v2.0.2 or earlier), it's recommended to reset port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
 

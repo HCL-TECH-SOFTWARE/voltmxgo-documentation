@@ -21,10 +21,10 @@ The section provides information on the features, improvements, and resolved iss
 ### Improvements
 
 ##### First Touch
-- Users can now view and explore the First Touch Recipe Catalog app by launching it from Foundry. 
+- Users can now view and explore the First Touch Recipe Catalog app by launching it from Volt MX Go Foundry. 
 
 ##### Domino Adapter
-- Updated the Rich Text field format in Foundry Object Services to Base64-encoded HTML
+- Updated the Rich Text field format in Volt MX Go Foundry Object Services to Base64-encoded HTML
 - Added support for the PATCH method for form-based data models.
 - Support OData filter parameter for the GET method on form-based data models to return a document’s unknown form name using the document's UNID. For more information, see [Supported OData filter parameters, form-based GET](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method).
 - Enhanced object service code generation in Iris for Domino objects so that when using the **Generate Forms** function: 
@@ -40,7 +40,7 @@ The section provides information on the features, improvements, and resolved iss
 - Improvements on the error toggle button on the **VoltMX Design Import Wizard**.
 - Improve the sort configuration in importing the forms generated.
 - Updated the warning message for supported **Project** type.
-- Improve the integration services operations in Foundry app.
+- Improve the integration services operations in Volt MX Go Foundry app.
 
 ### Resolve Issues
 

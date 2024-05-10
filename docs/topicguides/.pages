@@ -3,9 +3,11 @@ nav:
     - introvoltmxgo.md
     - VoltFormula:  
         - voltformulaintro.md
-        - rosettavmxgo.md
+#        - rosettavmxgo.md
         - rosettaapischema.md
+        - rosettaconverterconfig.md
         - rosettaapi.md
+        - vfcodingpractices.md
         - extendrosettapi.md
         - vfcodingguides.md
         - declvariables.md

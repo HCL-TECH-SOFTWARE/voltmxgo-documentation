@@ -6,7 +6,7 @@ Imports the Summernote Editor component in Iris. The Summernote Editor component
 
 ## Before you begin
 
-- You have created a Domino data model in a Foundry Object Service for which you want to generate forms.
+- You have created a Domino data model in a Volt MX Go Foundry Object Service for which you want to generate forms.
 
 ## Procedure
 

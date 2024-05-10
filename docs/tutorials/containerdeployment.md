@@ -20,8 +20,8 @@ Follow the order for completing the procedures according to your preferred deplo
 1. [Install and configure K3s](k3sinstall.md)
 2. [Complete preparatory procedure for installation of Volt MX Go](prereq.md)
 3. [Install Domino REST API](downloadhelmchart.md)
-4. [Install MySql for Foundry](installmysqlfoundry.md)
-5. [Install Foundry](installfoundry.md)
+4. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md)
+5. [Install Volt MX Go Foundry](installfoundry.md)
 
 
 **When using Rancher Desktop running on Windows:**
@@ -30,8 +30,8 @@ Follow the order for completing the procedures according to your preferred deplo
 1. [Install Rancher Desktop](installrancher.md)
 2. [Complete preparatory procedure for installation of Volt MX Go](prereq.md)
 3. [Install Domino REST API](downloadhelmchart.md)
-4. [Install MySql for Foundry](installmysqlfoundry.md)
-5. [Install Foundry](installfoundry.md)
+4. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md)
+5. [Install Volt MX Go Foundry](installfoundry.md)
 
 ## For upgrading an existing installation of Volt MX Go
 
@@ -47,8 +47,8 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 
 1. [Complete preparatory procedure for moving from early access version to GA version of Volt MX Go](eatogamove.md)
 2. [Install Domino REST API](downloadhelmchart.md)
-3. [Install MySql for Foundry](installmysqlfoundry.md)
-4. [Install Foundry](installfoundry.md)
+3. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md)
+4. [Install Volt MX Go Foundry](installfoundry.md)
 
 ## Additional information
 

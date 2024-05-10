@@ -1,24 +1,26 @@
-# Declaring variables in formulas
+# Using variables in formulas
 
-## Using variables in formulas
+## Overview
 
-There are two mechanism by which the Rosetta Converter accepts and converts variables into JavasScript:
+There are two mechanisms by which the Rosetta Converter accepts and converts variables into JavasScript. They are:
 
-- LET function
+- LET function in Excel[^1]
 - JSP style syntax (code passthrough)
 
-## LET function with OpenFormula
+[^1]: Excel is a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.
 
-**Let function**
+## Using LET function with OpenFormula
+
+**LET function**
 
 ```
 =LET(x, 5, SUM(x, 1))
 ```
 ![alt text](../assets/images/vflet.png)
 
-## JSP Style Syntax
+## Using JSP style syntax
 
-The converter makes use of **JSP expression** syntax in **OpenFormula** formulas to provide capabilities to formula conversion not currently possible with strict OpenFormula syntax. For more information, see [**JSP expression syntax**](https://docs.oracle.com/javaee/5/tutorial/doc/bnaov.html){: target="_blank" rel="noopener noreferrer"}.
+The converter uses **JSP expression** syntax in **OpenFormula** formulas to provide capabilities for formula conversion not currently possible with strict OpenFormula syntax. For more information, see [**JSP expression syntax**](https://docs.oracle.com/javaee/5/tutorial/doc/bnaov.html){: target="_blank" rel="noopener noreferrer"}.
 
 Example:
 
@@ -26,7 +28,7 @@ Example:
 
     ![alt text](../assets/images/vfjsp.png)
 
-Although Notes formula language already provides means to declare variables, the converter can also make use of the **JSP expression** syntax in a ***Notes*** formula.
+Although Notes formula language already provides means to declare variables, the converter can also use the **JSP expression** syntax in a ***Notes*** formula.
 
 Examples:
 
@@ -35,7 +37,7 @@ Examples:
     ![alt text](../assets/images/vfnotesnative.png)
 
 
-- **Notes formula** with JSP based variable declaration expression:
+- **Notes formula** with JSP-based variable declaration expression:
 
     ![alt text](../assets/images/vfnotesjsp.png)
 

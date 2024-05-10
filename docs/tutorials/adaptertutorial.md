@@ -1,11 +1,11 @@
 # Domino Adapter tutorial
 
-The tutorial guides you in creating an app in Foundry and connecting the app to your Domino database as an endpoint via the Domino REST API, and testing the methods.
+The tutorial guides you in creating an app in Volt MX Go Foundry and connecting the app to your Domino database as an endpoint via the Domino REST API, and testing the methods.
 
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
-- You have created your [Foundry admin account](../howto/foundryadminaccount.md). 
+- You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md). 
 - You have added and configured a schema and a scope in the Domino REST API. 
 
     !!!tip
@@ -13,9 +13,9 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
 - Your schema should have a configured form with a `dql` mode similar to the `default` mode. 
 
-## Log in to Volt MX Foundry
+## Log in to Volt MX Go Foundry
 
-1. Open the Foundry hostname concatenated with `/mfconsole/` in your browser.
+1. Open the Volt MX Go Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!!tip
         Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
@@ -25,7 +25,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
 
    The **Volt MX Foundry Console** opens with the **Apps** page shown by default. 
 
-## Create an app in Volt MX Foundry
+## Create an app in Volt MX Go Foundry
 
 1. On the **Apps** page, click **Add New**. 
 2.	A new app is added, and you are directed to the **Configure Services** &rarr; **Identity** page of the new app. 
@@ -93,7 +93,7 @@ The tutorial guides you in creating an app in Foundry and connecting the app to 
     !!!note
         Your environment name can only contain letters, numbers, and hyphens (-). A hyphen can't appear at the beginning or at the end of a name. A number can't appear at the beginning of a name. A name should be a minimum of three characters and a maximum of 20 characters long.
 
-4.	On the **Server** tab, enter the URL of your Volt MX Foundry in the **URL** text box.
+4.	On the **Server** tab, enter the URL of your Volt MX Go Foundry in the **URL** text box.
     The URL format is: `<http or https>://<server_host>:<server_port>`
     
     For example: `http://mbaastest30.hcl.net:53504`
@@ -295,13 +295,13 @@ For more information on supported parameters, see [Supported OData query paramet
 4. Under **Add New Application**, fill in the form:
     1. Enter an **Application Name**.
     2. Provide a **Description**.
-    3. Paste the callback URL that you have copied when configuring the Identity Service in Foundry in the **Callback URLs** text box.
+    3. Paste the callback URL that you have copied when configuring the Identity Service in Volt MX Go Foundry in the **Callback URLs** text box.
     4. Provide the application startup page URL under **Startup Page**. 
     4. Select and add a scope in the **Scope** field.
 5. Click **Add**. 
 6. Hover over the application tile and click **Generate Application Secret**. Take note of the App secret and the App ID.
 
 !!!note
-    Make sure to take note of the App ID and App secret as you need these details in configuring the Identity Service in Foundry. 
+    Make sure to take note of the App ID and App secret as you need these details in configuring the Identity Service in Volt MX Go Foundry. 
 
 
