@@ -8,7 +8,7 @@
    
 ### Prerequisite
 
-- You have [downloaded the HCL Volt MX GO Release package](portaldownload.md). 
+- You have [downloaded the HCL Volt MX Go Release package](portaldownload.md). 
 
 ### Procedure
 

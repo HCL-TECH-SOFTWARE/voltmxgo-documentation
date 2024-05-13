@@ -2,7 +2,7 @@
 
 ## About this task
 
-The binary images and Helm charts for Volt MX GO server components are pulled from the HCL Container Repository. This requires you to get your authentication token from the HCL Container Repository. This task guides you on how to obtain your authentication token.
+The binary images and Helm charts for Volt MX Go server components are pulled from the HCL Container Repository. This requires you to get your authentication token from the HCL Container Repository. This task guides you on how to obtain your authentication token.
 
 ## To obtain your authentication token
 

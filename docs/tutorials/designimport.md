@@ -2,7 +2,7 @@
 
 --8<-- "mxgoversion.md"
 
-This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Go Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronously to the **Domino Designer** server. 
+This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Go Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX Go Iris** synchronously to the **Domino Designer** server. 
 
 ## Before you begin
 
