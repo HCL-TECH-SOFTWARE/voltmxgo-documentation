@@ -112,7 +112,7 @@ x_0040unid
 
 ## Data model metadata attribute
 
-The `metadata` attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Iris.
+The `metadata` attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt MX Go Iris.
 
 - Column characteristics: For View columns (only non-meta columns), the data model field Metadata attribute includes additional column properties:
     - position: refers to column number

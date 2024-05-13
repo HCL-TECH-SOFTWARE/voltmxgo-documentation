@@ -24,7 +24,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
         - If the Domino Agents' trigger type configuration is **action menu**.
         - If the Domino Agents' document setting is configured to  **All**.
 
-**Importing Agents in Volt  MX Go Iris using the Design Import capability**
+**Importing Agents in Volt MX Go Iris using the Design Import capability**
 
 - The **Domino Agent** will be imported as **actions**. These will available on **Views** for all the configured `views` on the imported Domino app.
 

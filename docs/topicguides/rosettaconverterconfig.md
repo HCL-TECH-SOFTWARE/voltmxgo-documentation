@@ -10,7 +10,7 @@ The Rosetta Converter is an integral part of the VoltFormula process. It allow
 
 ## Configuration options
 
-The Rosetta Converter has several options to manipulate the formula to JavaScript conversion behaviors. All options are accessible directly through the converter's configuration object getters and setters. In MX Go Iris, you can access these options on the VoltFormula tab in the Project Settings dialog.
+The Rosetta Converter has several options to manipulate the formula to JavaScript conversion behaviors. All options are accessible directly through the converter's configuration object getters and setters. In Volt MX Go Iris, you can access these options on the VoltFormula tab in the Project Settings dialog.
 
 - **allowPassthrough** 
 

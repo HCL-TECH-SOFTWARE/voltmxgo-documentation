@@ -21,7 +21,7 @@ Guides you on how to check and set the logging level, and access the log files. 
 - Go to **Help** &rarr; **Logging Level**, and then choose a logging level based on the level of details you want to find in the logs. To learn the description of each logging level, see [Logging levels](../references/reflogginglevels.md).
 
     !!!note
-        You must restart Volt MX GO Iris after setting a new logging level.
+        You must restart Volt MX Go Iris after setting a new logging level.
 
 ### To view the logs
 

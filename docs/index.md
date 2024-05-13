@@ -9,7 +9,7 @@ hide:
 Volt MX Go modernizes and extends the value of your Domino applications with the market-leading, multi-experience platform Volt MX by:
 
 - connecting Volt MX Go Foundry to your Domino applications
-- modernizing or creating new multi-experience applications in Volt Iris on your Domino back-end data and applications
+- modernizing or creating new multi-experience applications in Volt MX Go Iris on your Domino back-end data and applications
 - expanding who can code applications built in Domino, allowing for app modernization or migration without requiring a complete rewrite of the code
 - importing existing Domino views, forms, and fields into Volt MX Go Foundry to	get a head start on your Volt MX Go applications 
 

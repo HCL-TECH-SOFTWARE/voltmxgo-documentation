@@ -2,7 +2,7 @@
 
 --8<-- "mxgoversion.md"
 
-This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronously to the **Domino Designer** server. 
+This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Go Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronously to the **Domino Designer** server. 
 
 ## Before you begin
 
@@ -180,7 +180,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/diresult.png) 
 
-Once you click **Done**, each of the selected forms, views, and agents are imported into Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
+Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
 
@@ -272,7 +272,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ## CRUD operation upon importing the `.nsf` file
 
-!!!note "Published the web app and native app in Iris"
+!!!note "Published the web app and native app in Volt MX Go Iris"
     - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MX Go Iris.
     
         - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.

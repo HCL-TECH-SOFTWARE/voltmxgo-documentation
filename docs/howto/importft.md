@@ -1,8 +1,8 @@
-# Import First Touch Recipes app into Iris
+# Import First Touch Recipes app into Volt MX Go Iris
 
 ## About this task
 
-Imports the First Touch Recipes app into Iris so that you can try out the different development features of Iris. 
+Imports the First Touch Recipes app into Volt MX Go Iris so that you can try out the different development features of Volt MX Go Iris. 
 
 ## Before you begin 
 
@@ -13,7 +13,7 @@ Imports the First Touch Recipes app into Iris so that you can try out the differ
 
 ### To import the First Touch Recipes app project
 
-1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt Iris home icon.
+1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt MX Go Iris home icon.
 
     ![Volt MX Go Iris icon](../assets/images/irisicon.png)
 
@@ -21,7 +21,7 @@ Imports the First Touch Recipes app into Iris so that you can try out the differ
     1. On the top menu, select **Projects** &rarr; **Import** &rarr; **Local Project** &rarr; **Open as New Project** &rarr; **From an Archive**. A file selector dialog opens.
     2. Search and select the *FirstTouchRecipe.zip* file, and click **Open**. 
 
-The First Touch Recipes app is now imported into your workspace in Iris and you can now try and experience the different development features of Iris to edit and update the First Touch Recipes app. 
+The First Touch Recipes app is now imported into your workspace in Volt MX Go Iris and you can now try and experience the different development features of Volt MX Go Iris to edit and update the First Touch Recipes app. 
 
 ### To build and publish the First Touch Recipes app
 
@@ -35,7 +35,7 @@ If you want to build and publish the First Touch Recipes app to see how it looks
     3. On the **Volt MX Go Foundry** tab, enter your Volt MX Go Foundry URL in the **Foundry URL** text box, and then click **Validate**. You should see the “Validation Successful” message at the top of the dialog.
     4. Click **Done**.
 
-2.	Log in to Iris.
+2.	Log in to Volt MX Go Iris.
 
     1. Click **Login** on the upper right corner of the page.
     2. Enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page.

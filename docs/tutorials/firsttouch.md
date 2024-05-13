@@ -84,5 +84,5 @@ You can now view and explore the First Touch Recipe Catalog app.
 ## Additional information
 
 - To learn more about the app, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
-- To know how to import the First Touch Recipe app project to Iris, see [Import First Touch into Iris](../howto/importft.md).
+- To know how to import the First Touch Recipe app project to Volt MX Go Iris, see [Import First Touch into Volt MX Go Iris](../howto/importft.md).
 - To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/FTnsfupdate.md).

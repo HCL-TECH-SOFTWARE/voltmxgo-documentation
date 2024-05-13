@@ -2,7 +2,7 @@
 
 ## About this task 
 
-Imports the Summernote Editor component in Iris. The Summernote Editor component is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Iris.  
+Imports the Summernote Editor component in Volt MX Go Iris. The Summernote Editor component is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a rich text field in a form in Volt MX Go Iris.  
 
 ## Before you begin
 
@@ -12,7 +12,7 @@ Imports the Summernote Editor component in Iris. The Summernote Editor component
 
 ### To import Summernote Editor:
 
-1. On the top menu of Volt Iris, select **Project** &rarr; **Import** &rarr; **Summernote Editor**. 
+1. On the top menu of Volt MX Go Iris, select **Project** &rarr; **Import** &rarr; **Summernote Editor**. 
 
     ![Select Summernote](../assets/images/summernoteselect.png)
 
