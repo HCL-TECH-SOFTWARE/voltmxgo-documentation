@@ -7,10 +7,10 @@ nav:
         - rosettaapischema.md
         - rosettaconverterconfig.md
         - rosettaapi.md
-        - vfcodingpractices.md
+        - declvariables.md
         - extendrosettapi.md
         - vfcodingguides.md
-        - declvariables.md
+        - vfcodingpractices.md    
     - Domino Adapter: 
         - dominoadapter.md
         - datamodel.md
