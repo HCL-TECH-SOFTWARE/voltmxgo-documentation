@@ -38,7 +38,7 @@ The selected file also appears in the File List section of the form where you ma
 ![File List section](../assets/images/filelistsection.png){: style="height:80%;width:80%"}
 
 !!!note
-    When inserting a new attachment with the same file name and file type as an existing attachment, you will be prompted that the attachment already exists and asked if you would like to overwrite the existing attachment with the new one.
+    When inserting a new attachment with the same filename and file type as an existing attachment, you will be prompted that the attachment already exists and asked if you would like to overwrite the existing attachment with the new one.
 
 ## Additional information
 

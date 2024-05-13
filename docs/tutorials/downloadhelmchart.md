@@ -131,8 +131,3 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 ## Next step
 
 Proceed to [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md).
-
-
-
-<!--The Notes client communicates with Domino over TCP port 1352 using the Notes Remote Procedure Call protocol (NRPC). For simple developer based deployments, this is done in Kubernetes with the `HostPort`. This option requires port 1352 on your machine to be available for use. The other option you can specify is `NodePort`.  When `NodePort` is specified Kubernetes will allocate a random port in a specified range (by default between 30000-32767) that will be available on every worker node in the cluster. Kubernetes will automatically route traffic on this port from the Kubernetes node to the backend Domino pod. Each option has its strengths and weaknesses, you can read more about these options at [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/). If you specify `exposeNRPC: do-not-expose` port 1352 will not be exposed to the network.
-        -->

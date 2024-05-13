@@ -14,6 +14,8 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 - Check the procedure on [how to get started with Volt MX Foundry Console](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/How_to_access_VoltMX_Foundry_Portal_on-Prem.html){: target="_blank" rel="noopener noreferrer"}.
 
+You can also contact the Volt MX Go Foundry administrator to request for an administrator account. 
+
 ### For Volt MX Go Foundry installed as part of the installation on a development or test only environment
 
 1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Volt MX Go Foundry hostname concatenated with `/mfconsole/` in your browser. The **Welcome to Volt MX Foundry setup** page opens.
@@ -38,3 +40,4 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 ## Expected result
 
 Once the details are validated for one-time configuration, the system associates your credentials with Volt MX Go Foundry identity services and authorization services, and then opens the **Sign in to your account** page. 
+

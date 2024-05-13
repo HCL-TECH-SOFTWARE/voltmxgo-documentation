@@ -4,7 +4,7 @@
 
 ## About this task 
 
-Guides you in manually updating your Domino container if you obtain a new version of the Notes database *FirstTouchRecipes.nsf*.
+Guides you in manually updating your Domino container if you obtain a new version of the Domino database *FirstTouchRecipes.nsf*.
 
 ## Procedure
 

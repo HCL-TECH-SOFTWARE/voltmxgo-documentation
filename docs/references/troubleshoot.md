@@ -44,5 +44,5 @@ List of issues and corresponding resolutions related to Domino REST API when imp
 
      This issue occurs when only the default mode is declared. The **dql** mode and **default** mode must be parallel or similar to each other before importing the schema.
 
-Consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+Consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-begin).
 

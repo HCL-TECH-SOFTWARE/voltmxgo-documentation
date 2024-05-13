@@ -35,7 +35,7 @@ Follow any instructions given by the WSL update process. Afterward, from a Windo
 wsl --set-default Ubuntu-22.04
 ```
 
-Proceed [to install Rancher Desktop](#to-install-rancher-desktop).
+Proceed [to install Rancher Desktop](#install-rancher-desktop).
 
 ### Install WSL2
 

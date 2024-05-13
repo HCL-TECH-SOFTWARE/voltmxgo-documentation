@@ -4,7 +4,6 @@ Guides you through the procedures for installing and upgrading Volt MX Go.
 
 ## Before you begin
 
-
 In case you would like to deploy Volt MX Go in a **development or test only environment**, you can do so with Kubernetes using the following options:
 
 - using [K3s](https://docs.k3s.io){: target="_blank" rel="noopener noreferrer"} on an Ubuntu, RHEL, SLES machine or VM

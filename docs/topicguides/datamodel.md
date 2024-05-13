@@ -10,11 +10,6 @@ Data models can be generated in an object service by Volt MX Go Foundry administ
 
 In addition to some Meta fields, generated data models include fields defined in the Domino REST API `schema` for the associated Domino `Form` or `View`. 
 
-<!--
-- `Form` data models include all fields defined by the associated Domino REST API `schema` and can be a subset of the fields defined by the `form` in the NSF design. 
-- `View` data models include all view columns defined in the NSF design.
--->
-
 Volt MX Go Foundry data models are in sync with the Domino REST API `schema` at the time of data model generation. The data models may be out of sync with the `schema`, which may lead to undesired or unexpected results, because of the following:
 
 - data models are edited in Volt MX Go Foundry

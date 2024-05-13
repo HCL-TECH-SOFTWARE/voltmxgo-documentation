@@ -16,7 +16,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
 ## Procedure
 
-1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-the-new-foundry-app).
+1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-the-new-volt-mx-go-foundry-app).
 
 !!!important
     - For the Volt MX Go release v2.0.3, only limited Agents are supported.
@@ -51,7 +51,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
       The four configured Agent will appear as **actions**. These **actions** are imported from the Domino Agent, which is already set up inside the `nsf` file.
 
-  3. Click the **actions** "*West to East*". 
+  3. Click the **actions** *West to East*. 
 
      ![alt text](../assets/images/diactionclick.png)
 

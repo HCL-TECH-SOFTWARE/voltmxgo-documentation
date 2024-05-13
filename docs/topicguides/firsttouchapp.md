@@ -8,7 +8,7 @@ The First Touch Recipe Catalog app is built with Volt MX Go to demonstrate how a
 
 ## Database file
 
-The Domino database file `FirstTouchRecipes.nsf` stores the recipe data used by the the First Touch Recipe Catalog app. The database file consists of rows, each representing a recipe:
+The Domino database `FirstTouchRecipes.nsf` stores the recipe data used by the the First Touch Recipe Catalog app. The database file consists of rows, each representing a recipe:
 
 ![First Touch NSF](../assets/images/recipensf.png)
 

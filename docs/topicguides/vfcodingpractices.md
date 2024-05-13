@@ -1,9 +1,5 @@
 # VoltFormula useful tips and information 
 
-<!--## Overview
-
-Provides useful tips and information about VoltFormula.-->
-
 ## Accessing data from UI context versus database context
 
 ### How does VoltFormula address Database Fields vs Form Fields DOM elements?
