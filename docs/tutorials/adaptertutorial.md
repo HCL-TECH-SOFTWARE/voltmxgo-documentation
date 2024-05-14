@@ -26,6 +26,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
     !!!tip
         Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
   
+
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
 
