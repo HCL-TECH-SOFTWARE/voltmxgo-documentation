@@ -2,13 +2,13 @@
 
 <!--# DRAPI Ingress-->
 
-## About this procedure
-
 --8<-- "devtestenvironment.md"
 
-The procedure guides you in configuring Kubernetes Ingress for Domino REST API. Ingress provides and manages external access to the services in your Kubernetes cluster. It's required to enable browsers to access the applications and back-end services to communicate with each other. 
+## About this task
 
-## Before you start
+Configures Kubernetes Ingress for Domino REST API. Ingress provides and manages external access to the services in your Kubernetes cluster. It's required to enable browsers to access the applications and back-end services to communicate with each other. 
+
+## Before you begin
 
 Familiarize yourself with the various properties and parameters related to Kubernetes Ingress. Expand the following to learn more:
 
@@ -21,7 +21,7 @@ Familiarize yourself with the various properties and parameters related to Kuber
 
      - **ingress.drapiManagementDnsName**: The DNS host name that administrators will use to access the Domino REST API. The default setting is `drapi-management.mymxgo.com`.
 
-     - **ingress.protocol**: The communication protocol for accessing Volt MX Foundry. Its value can be either http or https. This should reflect the type of traffic you want the Ingress or Load Balancer to accept. *If `ingress.tls` is enabled, this setting must be https*.
+     - **ingress.protocol**: The communication protocol for accessing Volt MX Go Foundry. Its value can be either http or https. This should reflect the type of traffic you want the Ingress or Load Balancer to accept. *If `ingress.tls` is enabled, this setting must be https*.
 
      - **ingress.tls**: Use this property to configure Ingress with either a Cluster or a Custom SSL certificate.
 
@@ -47,16 +47,16 @@ Familiarize yourself with the various properties and parameters related to Kuber
 You can configure Kubernetes Ingress to accept connections over HTTP or HTTPS. HTTP isn't secure but works without any extra configuration. It's recommended to use HTTPS for most deployments.
 
 !!!note
-    You can't easily change the deployment domain name once installed, this includes changing from HTTP to HTTPS. For more information, see [How to change Hostname/IP address and port details of Volt MX Foundry Server?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0089025){: target="_blank" rel="noopener noreferrer"}.
+    You can't easily change the deployment domain name once installed, this includes changing from HTTP to HTTPS. For more information, see [How to change Hostname/IP address and port details of Volt MX Go Foundry Server?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0089025){: target="_blank" rel="noopener noreferrer"}.
 
-One approach to enable HTTPS is to use a self-signed SSL certificate, which avoids purchasing your own certificate from a Certificate Authority (CA). However, since Foundry makes back-end server to server requests between applications, there are more steps to enable Foundry to trust the secured communication channel when utilizing a self-signed certificate.
+One approach to enable HTTPS is to use a self-signed SSL certificate, which avoids purchasing your own certificate from a Certificate Authority (CA). However, since Volt MX Go Foundry makes back-end server to server requests between applications, there are more steps to enable Volt MX Go Foundry to trust the secured communication channel when utilizing a self-signed certificate.
 
-If you configure your Kubernetes Ingress to use a self-signed SSL certificate or an SSL certificate from your enterprise's own Certificate Authority that's not within a trusted root certification path, or if you use the cluster default cert created from a self-signed CA, you need to add the SSL certificate or CA certificate to the trust store used by Tomcat. Failure to do so results in runtime errors when Foundry components need to communicate with each other. For more information, see [Certification Authority Trust Model](http://technet.microsoft.com/en-us/library/cc962065.aspx){: target="_blank" rel="noopener noreferrer"}.
+If you configure your Kubernetes Ingress to use a self-signed SSL certificate or an SSL certificate from your enterprise's own Certificate Authority that's not within a trusted root certification path, or if you use the cluster default cert created from a self-signed CA, you need to add the SSL certificate or CA certificate to the trust store used by Tomcat. Failure to do so results in runtime errors when Volt MX Go Foundry components need to communicate with each other. For more information, see [Certification Authority Trust Model](http://technet.microsoft.com/en-us/library/cc962065.aspx){: target="_blank" rel="noopener noreferrer"}.
 
 ## Procedure
 
 !!! note
-    In general, perform the following procedure before installing Foundry to enable secure HTTPS communication.
+    In general, perform the following procedure before installing Volt MX Go Foundry to enable secure HTTPS communication.
 
 ### 1. Obtain SSL Certificates
 
@@ -113,7 +113,7 @@ The following procedure could be used to generate a self-signed certificate:
     ```
 
     !!!note
-        The parameter following `-connect` must be a DNS name or IP address that resolves to your OpenShift ingress. The `-servername` parameter specifies the DNS name you use to access your foundry deployment. This should match the value you specified for `serverDomainName` in `values.yaml`. The DNS names could be the same as long as they resolve to the IP address of your Kubernetes load balancer in front of Ingress or Ingress itself.
+        The parameter following `-connect` must be a DNS name or IP address that resolves to your OpenShift ingress. The `-servername` parameter specifies the DNS name you use to access your Volt MX Go Foundry deployment. This should match the value you specified for `serverDomainName` in `values.yaml`. The DNS names could be the same as long as they resolve to the IP address of your Kubernetes load balancer in front of Ingress or Ingress itself.
 
 
 2. Proceed to [Import the Certificate into the truststore with keytool](#3-import-certificate-into-the-truststore-with-keytool).
@@ -152,7 +152,7 @@ keytool -import -alias drapi2 -file ./drapi-server.pem -keypass changeit -storep
 !!!note
     - `-alias drapi2` is the alias for the new certificate. You can use any alias but we recommend foundry.
     - `-file ./drapi-server.pem` is the file path to your certificate. Use the proper path for your circumstances.
-    - `-keystore ../foundry/voltmx-foundry/certs/cacerts` is the location of the truststore your certificate will be imported to and later use by Tomcat.  This file path shouldn't be changed.
+    - `-keystore ../foundry/voltmx-foundry/certs/cacerts` is the location of the truststore your certificate will be imported to and later use by Tomcat. This file path shouldn't be changed.
     - `changeit` is the default password and shouldn't be changed.
 
 For more information about `keytool`, see [Java Keytool documentation](https://docs.oracle.com/en/java/javase/11/tools/keytool.html){: target="_blank" rel="noopener noreferrer"}.
@@ -161,7 +161,7 @@ For more information about `keytool`, see [Java Keytool documentation](https://d
 
 - Update your `values.yaml` with the following configuration details to properly configure SSL.  
 
-    Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you start](#before-you-start) for more details on each parameter.
+    Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
 
 
 ``` bash

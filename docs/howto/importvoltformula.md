@@ -2,11 +2,11 @@
 
 --8<-- "mxgoversion.md"
 
-## About this procedure
+## About this task
 
-This procedure will guide you through the process of importing the **Domino app** and integrating the VoltFormula function. The imported actions from the Domino view will automatically convert with `voltmx.rosettajs` syntax, incorporating formula languages like **Notes** and **OpenFormula**.
+Guides you through the process of importing the **Domino app** and integrating the VoltFormula function. The imported actions from the Domino view will automatically convert with `voltmx.rosettajs` syntax, incorporating formula languages like **Notes** and **OpenFormula**.
 
-## Before you start
+## Before you begin
 
 - You must complete the [Design Import tutorial](../tutorials/designimport.md)
 - You need to have **actions** on your Domino view configuration 

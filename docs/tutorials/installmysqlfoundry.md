@@ -1,10 +1,10 @@
-# Install MySQL for Foundry
+# Install MySQL for Volt MX Go Foundry
 
 --8<-- "devtestenvironment.md"
 
-The procedure guides you in installing MySQL for Foundry.
+The procedure guides you in installing MySQL for Volt MX Go Foundry.
 
-1. Run the following commands to create a Foundry directory in the proper location, and make the Foundry directory the current directory:
+1. Run the following commands to create a Volt MX Go Foundry directory in the proper location, and make the Volt MX Go Foundry directory the current directory:
 
     ```
     cd ..
@@ -20,14 +20,14 @@ The procedure guides you in installing MySQL for Foundry.
 
     --8<-- "helmversion.md"
 
-3. Run the following commands to install the Bitnami MySQL Helm chart to use for the Foundry database storage:
+3. Run the following commands to install the Bitnami MySQL Helm chart to use for the Volt MX Go Foundry database storage:
 
     ```
     helm repo add bitnami https://charts.bitnami.com/bitnami
     helm install mysql bitnami/mysql --version "9.6.0" --set image.tag="8.0.32-debian-11-r17",auth.rootPassword="Password123\!",auth.createDatabase=false,auth.username=dbclient,auth.password="Password123\!" -n mxgo
     ```
     !!!note
-        The command is specifying a simple password (Password123!) for the root account. You may want to change this password. If you do, make note of it, as the correct password must be specified again when you install Foundry.
+        The command is specifying a simple password (Password123!) for the root account. You may want to change this password. If you do, make note of it, as the correct password must be specified again when you install Volt MX Go Foundry.
 
 4. Run the following command to verify when the database is in the ready state:
 
@@ -47,4 +47,4 @@ The procedure guides you in installing MySQL for Foundry.
 
 ## Next step
 
-Proceed to [Install Foundry](installfoundry.md).
+Proceed to [Install Volt MX Go Foundry](installfoundry.md).

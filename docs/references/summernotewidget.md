@@ -2,7 +2,7 @@
 
 The Summernote Editor component enables you to add a WYSIWYG editor to your form for handling rich text with links, tables, images, videos, and character styles. 
 
-Summernote Editor is integrated into Volt Iris using custom components. A component acts as a widget configured to provide a specific feature. This component uses the Browser widget to display the UI of the Summernote Editor and enable its functionality. It links to the HTML file found in the local files associated with Summernote Editor. 
+Summernote Editor is integrated into Volt MX Go Iris using custom components. A component acts as a widget configured to provide a specific feature. This component uses the Browser widget to display the UI of the Summernote Editor and enable its functionality. It links to the HTML file found in the local files associated with Summernote Editor. 
 
 Once imported, you can find the Summernote Editor component by navigating to **Templates** and expanding **Components**. Under the **Modules** folder of the Summernote Editor component, you can find the controller that holds the defined methods exposed to the form for usage.
 
@@ -16,7 +16,7 @@ Following are some use cases of the Summernote Editor component:
 
     You will find the Summernote Editor component in the Default Library. To use the Summernote Editor component, drag and drop it onto the custom form. You can then configure its placement and utilize its properties to retrieve and set data on the editor.
 
-For more information on components in Iris, see [Use Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_UsingComponents.html){: target="blank"} and [Creating Applications with Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_DesigningWorkingWithComponents.html).
+For more information on components, see [Use Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_UsingComponents.html){: target="blank"} and [Creating Applications with Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_DesigningWorkingWithComponents.html).
 
 !!!note
     When performing code generation of forms, the Summernote Editor component is included only if a rich text field is found on the form in the Domino REST API. For more information on code generation of forms, see [Generate CRUD forms for Object Service](../howto/codegen.md).
@@ -27,7 +27,7 @@ Methods are used by the form to interact with the Summernote Editor component.
 
 **To configure a method**:
 
-1. In the Project Explorer in Volt Iris, click the Templates tab.
+1. In the Project Explorer in Volt MX Go Iris, click the Templates tab.
 2. Expand the components node, if needed, and then select the component. In this case, select Summernote Editor.
 3. In the **Properties** pane, click the **Action** tab.
 4. Click **Manage Methods** to open the **Manage Methods** dialog.
@@ -64,7 +64,7 @@ You need a default property to build the Summernote Editor component. The table 
 
 **To configure a property**:
 
-1. In the **Project Explorer** in Volt Iris, click the **Templates** tab.
+1. In the **Project Explorer** in Volt MX Go Iris, click the **Templates** tab.
 2. Expand the components node, if needed, and then select the component. In this case, select Summernote Editor. 
 3. In the **Properties** pane, click the **Component** tab.
 4. Click **Manage Properties** to open the **Manage Properties** dialog.

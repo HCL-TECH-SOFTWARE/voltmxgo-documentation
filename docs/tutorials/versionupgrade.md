@@ -31,19 +31,19 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
     The installer does not support automatic backups of database and other artifacts. You must clean up the existing application server artifacts and take a backup of the custom artifacts.
     The installer also does not support rollback in case of a failure during the upgrade. To roll back, restore the database and server artifacts you backed up before upgrading.
 
-#### Before you start
+#### Before you begin
 
 - Back up your databases and server artifacts.
 - You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 - Ensure that the installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
-- Ensure that you stop the application server of your existing Foundry instance, which you want to upgrade.
+- Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
 #### Procedure
 
 - Follow the link to the upgrade procedure based on your used installation platform/option:
 
     !!!warning "Important"
-        - The upgrade procedure will indicate installation files and installation file download locations. **You must use the installer you downloaded in *Before you start*.**
+        - The upgrade procedure will indicate installation files and installation file download locations. **You must use the installer you downloaded in *Before you begin*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html){: target="_blank" rel="noopener noreferrer"}
@@ -52,7 +52,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 ### For using helm charts on a supported Kubernetes platform
 
-#### Before you start
+#### Before you begin
 
 1. Create a temp directory for the charts.
 

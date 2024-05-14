@@ -1,13 +1,13 @@
 # Insert attachments via Summernote Editor
 
-## About this procedure
+## About this task
 
-The procedure guides you on how to insert attachments via the [Summernote Editor](../references/summernotewidget.md). 
+Guides you on how to insert attachments via the [Summernote Editor](../references/summernotewidget.md). 
 
-## Before you start
+## Before you begin
 
 - You have [generated CRUD forms for Object Service](codegen.md).
-- You have [built and published your app in Volt Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build){: target="_blank" rel="noopener noreferrer"}.
+- You have [built and published your app in Volt MX Go Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build){: target="_blank" rel="noopener noreferrer"}.
 
 !!!note "Important"
     Make sure that you included the virtual field `$FILES` in the form configured in Domino REST API. 
@@ -38,7 +38,7 @@ The selected file also appears in the File List section of the form where you ma
 ![File List section](../assets/images/filelistsection.png){: style="height:80%;width:80%"}
 
 !!!note
-    When inserting a new attachment with the same file name and file type as an existing attachment, you will be prompted that the attachment already exists and asked if you would like to overwrite the existing attachment with the new one.
+    When inserting a new attachment with the same filename and file type as an existing attachment, you will be prompted that the attachment already exists and asked if you would like to overwrite the existing attachment with the new one.
 
 ## Additional information
 

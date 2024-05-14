@@ -2,13 +2,13 @@
 
 !!!warning "Important!"
     - Make sure to download and install the latest version of the Volt MX Go Iris.
-    - Volt MX Iris and Volt MX Go Iris have different capabilities. Please ensure you are using the Volt MX Go Iris software.
+    - Volt MX Iris and Volt MX Go Iris have different capabilities. Make sure you are using the Volt MX Go Iris software.
 
 ## Install Volt MX Go Iris
    
 ### Prerequisite
 
-- You have [downloaded the HCL Volt MX GO Release package](portaldownload.md). 
+- You have [downloaded the HCL Volt MX Go Release package](portaldownload.md). 
 
 ### Procedure
 

@@ -1,10 +1,10 @@
 # Access Domino REST API
 
-## About this procedure
+## About this task
 
-The procedure guides you in accessing Domino REST API Admin UI to add and configure a schema, add a scope, and add an application.
+Access Domino REST API Admin UI so you can add and configure a schema, add a scope, and add an application.
 
-## Before you start
+## Before you begin
 
 You must complete the [Volt MX Go installation](../tutorials/installation.md).
 

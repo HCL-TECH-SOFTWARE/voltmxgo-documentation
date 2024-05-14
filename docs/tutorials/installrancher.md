@@ -4,7 +4,7 @@
 
 The procedure guides you in installing Rancher Desktop on Windows, which is delivered as a desktop app.
 
-## Before you start
+## Before you begin
 
 !!!note
     If you will use K3s in deploying Volt MX Go, you don't need to execute this procedure. Rancher Desktop includes a customized configuration of K3s and is geared to enabling developers with a small, desktop style Kubernetes cluster. It includes other developer centric tooling not included in K3s.
@@ -35,7 +35,7 @@ Follow any instructions given by the WSL update process. Afterward, from a Windo
 wsl --set-default Ubuntu-22.04
 ```
 
-Proceed [to install Rancher Desktop](#to-install-rancher-desktop).
+Proceed [to install Rancher Desktop](#install-rancher-desktop).
 
 ### Install WSL2
 
@@ -75,7 +75,7 @@ You are now ready to install Rancher Desktop.
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).
+        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Volt MX Go Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).
 
 2. If you are upgrading from a prior version of MX Go (v2.0.2 or earlier), it's recommended to reset port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
 

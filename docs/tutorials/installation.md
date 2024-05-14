@@ -2,8 +2,7 @@
 
 Guides you through the procedures for installing and upgrading Volt MX Go.
 
-## Before you start
-
+## Before you begin
 
 In case you would like to deploy Volt MX Go in a **development or test only environment**, you can do so with Kubernetes using the following options:
 
@@ -11,6 +10,7 @@ In case you would like to deploy Volt MX Go in a **development or test only envi
 - using [Rancher Desktop](https://docs.rancherdesktop.io){: target="_blank" rel="noopener noreferrer"} running on Windows
 
 ## System requirements
+
 Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
 ## Installation and upgrade guide

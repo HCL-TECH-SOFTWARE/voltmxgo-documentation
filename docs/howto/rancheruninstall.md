@@ -1,10 +1,10 @@
 # Uninstall Rancher Desktop on Windows
 
-## About this procedure
-
 --8<-- "devtestenvironment.md"
 
-The procedure guides you in uninstalling Rancher Desktop in case you want to start over with the installation or you want to completely remove Rancher Desktop.
+## About this task
+
+Guides you in uninstalling Rancher Desktop in case you want to start over with the installation or you want to completely remove Rancher Desktop.
 
 ## Procedure
 
