@@ -4,7 +4,7 @@ List of issues and corresponding resolutions.
 
 ## General issues
 
-- [**First Touch or Custom Application Fails to Install on Foundry**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0106427){: target="_blank" rel="noopener noreferrer"}
+- [**First Touch or Custom Application Fails to Install on Volt MX Go Foundry**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0106427){: target="_blank" rel="noopener noreferrer"}
 
     !!!note
         This issue and its corresponding resolution aren't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.   
@@ -44,5 +44,5 @@ List of issues and corresponding resolutions related to Domino REST API when imp
 
      This issue occurs when only the default mode is declared. The **dql** mode and **default** mode must be parallel or similar to each other before importing the schema.
 
-Consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+Consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-begin).
 

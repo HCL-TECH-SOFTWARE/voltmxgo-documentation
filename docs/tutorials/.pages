@@ -8,9 +8,6 @@ nav:
             - portaldownload.md
             - Install Volt MX Go server components: nativeinstallers.md
             - Upgrade Volt MX Go server components: versionupgrade.md
-        #- Complete prerequisite procedures:
-        #    - prerequisite.md
-        #    - portaldownload.md
         - Install and upgrade Volt MX Go in a development or test only environment:
             - containerdeployment.md
             - obtainauthenticationtoken.md
@@ -24,8 +21,8 @@ nav:
                 - For upgrading existing installation of Volt MX Go: prereqnew.md
                 - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
             - Install Domino REST API: downloadhelmchart.md
-            - Install MySQL for Foundry: installmysqlfoundry.md
-            - Install Foundry: installfoundry.md
+            - Install MySQL for Volt MX Go Foundry: installmysqlfoundry.md
+            - Install Volt MX Go Foundry: installfoundry.md
             - Upgrade Volt MX Go server components: versionupgrade1.md
         - Install and upgrade Volt MX Go Iris: installiris.md
     - firsttouch.md
@@ -34,34 +31,5 @@ nav:
     - voltformula.md
     - webinar.md
 
-
-#nav:
-#    - index.md
-#    - Installation:
-#        - installation.md
-#        - sysreq.md
-#        - Complete prerequisite procedures:
-#            - prerequisite.md
-#            - portaldownload.md
-#            - obtainauthenticationtoken.md
-#        - Install Volt MX Go via containerized deployment:
-#            - containerdeployment.md
-#            - Deploy Kubernetes:
-#                - deploykubernetes.md
-#                - Install and configure K3s: k3sinstall.md
-#                - Install Rancher Desktop: installrancher.md
-#            - Complete preparatory procedure:
-#                - prereqindex.md
-#                - For first time installation of Volt MX Go: prereq.md
-#                - For upgrading existing installation of Volt MX Go: prereqnew.md
-#            - Install Domino REST API: downloadhelmchart.md
-#            - Install MySQL for Foundry: installmysqlfoundry.md
-#            - Install Foundry: installfoundry.md
-#        - Install Volt MX Go via installers: nativeinstallers.md
-#        - Install Volt MX Go Iris: installiris.md
-#    - firsttouch.md
-#    - adaptertutorial.md
-#    - designimport.md
-#    - voltformula.md
 
 

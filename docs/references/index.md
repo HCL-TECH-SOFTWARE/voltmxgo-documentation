@@ -20,9 +20,11 @@ Check [version compatibility](compatibilitymatrix.md) between Volt MX Go and Dom
 
 The full specification of the API is available in a structured format in the [Rosetta API reference documentation](../javadoc/index.html){: target="_blank" rel="noopener noreferrer"}.
 
+For the implementation status, see [Rosetta API implementation status](../javadoc/api_status.html){: target="_blank" rel="noopener noreferrer"}. 
+
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in MX Go Iris.   
+Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in Volt MX Go Iris.   
 
 ## Helm and Kubectl commands
 
@@ -35,7 +37,7 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 [HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html){: target="_blank" rel="noopener noreferrer"}
 
-- Provides documentation and more information about Iris and Foundry.
+- Provides documentation and more information about Volt MX Iris and Volt MX Foundry.
 
 [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html){: target="_blank" rel="noopener noreferrer"}
 

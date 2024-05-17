@@ -2,18 +2,28 @@
 
 --8<-- "mxgoversion.md"
 
+<<<<<<< HEAD
 This tutorial will walk you through the Design Import process in Volt MX Go. With the Volt MX Go Iris client, you can import a Domino database `.nsf` file, bringing its design elements into Volt MX Go. This feature helps you import the Domino database `nsf` from Domino REST API and make it available on mobile apps and responsive desktop apps.
 
 The tutorial implements two user experiences: 
 
 - mobile app
 - responsive desktop app
+=======
+This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Go Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX Go Iris** synchronously to the **Domino Designer** server. 
+>>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
 
-## Before you start
+## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
+<<<<<<< HEAD
 - You have your [Foundry admin account](../howto/foundryadminaccount.md) which you use in logging in to Volt MX Go Iris.
 - You have completed the Domino Rest API installation.
+=======
+- You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+- You have created Domino REST API.
+- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
+>>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
 
 ##### For Volt MX Go Foundry admin
 
@@ -49,7 +59,7 @@ The tutorial implements two user experiences:
 1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
 
     !!!note
-        If you have already configured the login settings while performing the other tutorials, enter your email and password for Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
+        If you have already configured the login settings while performing the other tutorials, enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
 
 2. Configure the login settings.
 
@@ -61,7 +71,7 @@ The tutorial implements two user experiences:
 
     2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
 
-    3. On the **Volt MX Go Foundry** tab, enter your Foundry URL in the **Foundry URL** text box, and then click **Validate**.
+    3. On the **Volt MX Go Foundry** tab, enter your Volt MX Go Foundry URL in the **Foundry URL** text box, and then click **Validate**.
         
         <!-- You should see the “Validation Successful” message at the top of the dialog.-->
     
@@ -74,7 +84,7 @@ The tutorial implements two user experiences:
 
 3. Log in to Volt MX Go Iris.
     1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
-    2. Enter your email and password for **Volt MX Foundry** on the **Sign in to your account** page.
+    2. Enter your email and password for **Volt MX Go Foundry** on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon.
 
 ## Create a new project
@@ -98,7 +108,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
 
-## Import a Domino Application using the new Foundry app
+## Import a Domino Application using the new Volt MX Go Foundry app
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 
@@ -110,7 +120,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/difoundryapp.png)
 
-    Once you click **Create New**, the new Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+    Once you click **Create New**, the new Volt MX Go Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
 
     ![](../assets/images/difoundrybackend.png) 
 
@@ -197,7 +207,11 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/diresult.png) 
 
+<<<<<<< HEAD
 Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of `forms`. **The App Events [desktop]** appears.
+=======
+Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
+>>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
 
 ![](../assets/images/dioutput.png)
 
@@ -205,7 +219,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     - You can view the final result of the Domino database `.nsf` that you configured in Domino REST API.
     - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms.
 
-## Import a Domino Application from the existing Foundry app
+## Import a Domino Application from the existing Volt MX Go Foundry app
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 2. On **Getting Started**, click **Next**.
@@ -290,7 +304,11 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ## CRUD operation upon importing the Domino database `.nsf`
 
 !!!note "Published the web app and native app in Volt MX Go Iris"
+<<<<<<< HEAD
     - Before you can do the CRUD operation in your imported Domino app, you must first build and publish the web and native app in Volt MX Go Iris.
+=======
+    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MX Go Iris.
+>>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
     
         - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.
 

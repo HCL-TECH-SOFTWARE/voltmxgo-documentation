@@ -1,22 +1,19 @@
 # VoltFormula tutorial
 
-This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta Javascript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank" rel="noopener noreferrer"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank" rel="noopener noreferrer"} and have it translated automatically into JavaScript code.
-## Before you start
-<!--!!!note
-    Make sure you have downloaded the latest version of Volt MX Go Iris before performing the installation.-->
+This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta JavaScript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank" rel="noopener noreferrer"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank" rel="noopener noreferrer"} and have it translated automatically into JavaScript code.
+
+## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
-- You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-
-
-- You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank" rel="noopener noreferrer"} in Volt Iris.
+- You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+- You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank" rel="noopener noreferrer"}<!--in Volt Iris-->.
 
 ## Launch Volt MX Go Iris
 
 1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
 
     !!!note
-        If you have already configured the login settings while performing the other tutorials, enter your email and password for Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
+        If you have already configured the login settings while performing the other tutorials, enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
 
 2. Configure the login settings.
 
@@ -38,7 +35,7 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
 
 3. Log in to Volt MX Go Iris.
     1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
-    2. Enter your email and password for Foundry on the **Sign in to your account** page.
+    2. Enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon.
 
 <!--1. Open the **Volt MX Go Iris**. This opens the Iris log-in screen. Click the close button.
@@ -80,7 +77,7 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
     
     ![](../assets/images/vfactioneditor.png){: style="height:80%;width:80%"}
 
-## Translate OpenFormula and NotesFormula into Javascript
+## Translate OpenFormula and NotesFormula into JavaScript
 
 1. On the **action editor**, click the **Add Formula** on the diagram. On the right side of the **action editor** window, you can see the properties of the voltFormula.
     - **window for the translated OpenFormula and NotesFormula in JavaScript.**
@@ -121,7 +118,7 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
 	    - **=** character  for *OpenFormula*
 	    - You can see the code hinting or the IntelliSense for the formula that you choose.
         - Each formula is accompanied by its category.
-	    - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
+	    - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
       
     ![](../assets/images/vfsyntax.png){: style="height:90%;width:90%"}
   
@@ -149,7 +146,7 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
         - **=** character  for *OpenFormula*
         - You can see the code hinting or the IntelliSense for the formula that you choose.
         - Each formula is accompanied by its category.
-        - If you don't know how to convert the Javascript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
+        - If you don't know how to convert the JavaScript in Volt MX Go `rosettajs` from **OpenFormula** and **NotesFormula**, you may use the Formula Language window to do so.
         - You can add or edit code in the formula language window as long as you follow the syntax.
         - You can add more than one line of code. 
     
@@ -163,25 +160,25 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
     ![](../assets/images/vfresedit.png){: style="height:90%;width:90%"}
       
 
-### Edit Rosetta Javascript
+### Edit Rosetta JavaScript
 
 1. Open a controller on **Project Explorer**.
 2. Select and open your controller. This opens the code window.
 
     !!!note
-        You can see the conversion formula that comes from the OpenFormula and NotesFormula inbetween the comment  of rosetta autogenerated code.
+        You can see the conversion formula that comes from the OpenFormula and Notes Formula inbetween the comment of rosetta autogenerated code.
         
     ![autogenerated code](../assets/images/vfeditform.png)
 
 3. Add your formula in `rosettajs` in the code window, or edit the existing formula in the code window without opening the **Formula Language** window.
 
     !!!note
-        - When you add `rosetta` javascript,  you'll be able see the code hinting or the IntelliSense for the formula that you choose in code window.
-        - Make sure you know the syntax for coding the `rosetta` javascript.
+        - When you add `rosetta` JavaScript,  you'll be able see the code hinting or the IntelliSense for the formula that you choose in code window.
+        - Make sure you know the syntax for coding the `rosetta` JavaScript.
         
     ![Edit Rosetta JS](../assets/images/vfjavaedit.png)
      
 !!!Info
     - The default Rosetta VoltFormula setting can be modified according to your need for your app. To change the configuration, see [Configure VoltFormula's Rosetta API Options](../howto/configrosetta.md).
-    - To know more about the proper way of handling codes, see [Recommended Volt Formula Coding Practices in MX Go Iris](../topicguides/vfcodingguides.md).
+    - To know more about the proper way of handling codes, see [VoltFormula coding exercise examples in Volt MX Go Iris](../topicguides/vfcodingguides.md).
 

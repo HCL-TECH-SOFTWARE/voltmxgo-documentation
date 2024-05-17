@@ -7,12 +7,12 @@ K3s is a fully compliant Kubernetes distribution. For more information, see [K3s
 !!!warning "Caution"
     In all the following instructions, it's assumed you are running commands as a **non-root user**. However, there are certain commands that must with sudo permissions. For these commands, you need to configure your non-root user with sudo. To do this, see [Using sudo to allow non-root users to perform root level functions](https://www.suse.com/support/kb/doc/?id=000016906){: target="_blank" rel="noopener noreferrer"}.
 
-## Before you start
+## Before you begin
 
 !!!note
     If you will use Rancher Desktop in deploying Volt MX Go, you don't need to install K3s.
 
-Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX GO using K3s on an Ubuntu, RHEL, SLES machine, or VM](sysreq.md#for-deploying-volt-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met.
+Before starting with the procedure, make sure that you have checked and verified that all system requirements [for deploying MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM](sysreq.md#for-deploying-volt-mx-go-using-k3s-on-an-ubuntu-rhel-sles-machine-or-vm) are met.
 
 ## 1. Install K3s
 

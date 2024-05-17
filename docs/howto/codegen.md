@@ -2,24 +2,24 @@
 
 ## About this task
 
-The procedure guides you in generating CRUD forms and associated form-navigation links for an Object Service after linking your Volt Iris project to your Volt MX Foundry app with a defined Object Service data model. 
+The procedure guides you in generating CRUD forms and associated form-navigation links for an Object Service after linking your Volt MX Go Iris project to your Volt MX Go Foundry app with a defined Object Service data model. 
 
-## Before you start
+## Before you begin
 
-- You have [created an app in Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#create-an-app-in-volt-mx-foundry).
-- You have [configured an Identity Service for your app in Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-identity-service).
+- You have [created an app in Volt MX Go Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#create-an-app-in-volt-mx-foundry).
+- You have [configured an Identity Service for your app in Volt MX Go Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-identity-service).
 - You have [added an environment for your app](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#add-an-environment).
-- You have [configured an Object Service for your app in Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-object-service).
+- You have [configured an Object Service for your app in Volt MX Go Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-object-service).
 - You have [configured the data model for the Object Service](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-a-data-model).
-- You have [created a project in Iris](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/designimport.html#create-a-new-project).
+- You have [created a project in Volt MX Go Iris](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/designimport.html#create-a-new-project).
 
 ## Procedure
 
-1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt Iris home icon.
+1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt MX Go Iris home icon.
 
     ![Volt MX Go Iris icon](../assets/images/irisicon.png)
 
-2. Check Foundry settings.
+2. Check Volt MX Go Foundry settings.
     1. Go to **Preferences**.
         
         For Windows, select **Edit** &rarr; **Preferences**. 
@@ -35,25 +35,26 @@ The procedure guides you in generating CRUD forms and associated form-navigation
 
 3. Log in to Volt MX Go Iris.
     1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
-    2. Enter your email and password for Foundry on the **Sign in to your account** page.
+    2. Enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon.
 
-4. Connect to Foundry.
+4. Connect to Volt MX Go Foundry.
     1. Click the **Data & Services** tab menu and select **Link to Existing App**. 
 
         ![Link to Existing App](../assets/images/linktoapp.png){: style="height:60%;width:60%"}
         
         The **Volt MX Go Applications** dialog opens.
 
-    2. Click **Associate** corresponding to a Foundry app that you want to link.
+    2. Click **Associate** corresponding to a Volt MX Go Foundry app that you want to link.
 
         ![Associate App](../assets/images/associateapp.png)
 
-        In this example, the associated Foundry app is the *First Touch Recipes* app.
+        In this example, the associated Volt MX Go Foundry app is the *First Touch Recipes* app.
 
-    3. Click **Project Services** on the **Data & Services** tab and see the connections to the Foundry data.
+    3. Click **Project Services** on the **Data & Services** tab and see the connections to the Volt MX Go Foundry data.
 
 6. Generate forms.
+
     1. Go to the **Data & Services** tab, and expand **Project Services**.  
     2. Right-click the Object Service, and then select **Generate Forms** &rarr; **Responsive Web**.
 
@@ -62,7 +63,7 @@ The procedure guides you in generating CRUD forms and associated form-navigation
     ![Generate Form](../assets/images/genform.png){: style="height:80%;width:80%"}
 
 !!!note
-    **Summernote Editor** is automatically applied on Rich Text fields when generating entry forms (CREATE/UPDATE) from the data panel. **Summernote Editor** is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a Rich Text field in a form in Iris. For more information, see [Summernote Editor](../references/summernotewidget.md).
+    **Summernote Editor** is automatically applied on Rich Text fields when generating entry forms (CREATE/UPDATE) from the data panel. **Summernote Editor** is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a Rich Text field in a form in Volt MX Go Iris. For more information, see [Summernote Editor](../references/summernotewidget.md).
 
 ## Expected result
 
@@ -72,7 +73,7 @@ Five types of forms (*Dashboard*, *Grid*, *Details*, *Create*, and *Update*) are
 
 The Dashboard form displays all the objects of the selected Object service. Users can navigate to the respective Grid, Details, Create, and Update forms from the Dashboard screen. If you haven't defined the startup form of the app, the Dashboard form is made the startup form by default.
 
-If your Object Service has views, they're also generated. In the example, the Object Service *DemoGAObjectService* of the Foundry app *DemoGA* has the view *Main*.
+If your Object Service has views, they're also generated. In the example, the Object Service *DemoGAObjectService* of the Volt MX Go Foundry app *DemoGA* has the view *Main*.
 
 ![Generate Form](../assets/images/genform2.png){: style="height:60%;width:60%"}
 

@@ -1,6 +1,6 @@
 # Configure mobile app browser
 
-## About this procedure
+## About this task
 
 This procedure describes how to configure the mobile app browser before building and publishing the Native App.
 

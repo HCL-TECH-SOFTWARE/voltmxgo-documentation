@@ -1,12 +1,12 @@
 # Uninstall First Touch
 
-## About this procedure
+## About this task
 
-The procedure guides you in uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
+Guides you in uninstalling First Touch in case you want to start over with the First Touch installation or you want to completely remove First Touch.
 
 ## Procedure
 
-1. On the **Apps** page of the **Volt MX Foundry Console**, click **GET STARTED**.  
+1. On the **Apps** page of the **Volt MX Go Foundry Console**, click **GET STARTED**.  
 
     OR
 
@@ -29,7 +29,7 @@ The procedure guides you in uninstalling First Touch in case you want to start o
 
 ## Expected result
 
-- The First Touch app and the environment created when installing First Touch are deleted in Volt MX Foundry.
+- The First Touch app and the environment created when installing First Touch are deleted in Volt MX Go Foundry.
 
     !!!note
         The environment isn't deleted during the uninstallation **if another app is published to the environment**.
