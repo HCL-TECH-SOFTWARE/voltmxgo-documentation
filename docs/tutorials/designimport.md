@@ -2,36 +2,27 @@
 
 --8<-- "mxgoversion.md"
 
-<<<<<<< HEAD
-This tutorial will walk you through the Design Import process in Volt MX Go. With the Volt MX Go Iris client, you can import a Domino database `.nsf` file, bringing its design elements into Volt MX Go. This feature helps you import the Domino database `nsf` from Domino REST API and make it available on mobile apps and responsive desktop apps.
+This tutorial will walk you through the Design Import process in Volt MX Go. With the Volt MX Go Iris client, you can import a Domino database `.nsf` file, bringing its design elements into Volt MX Go. This feature helps you import the Domino database `.nsf` from Domino REST API and make it available on mobile apps and responsive desktop apps.
 
 The tutorial implements two user experiences: 
 
 - mobile app
 - responsive desktop app
-=======
-This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt MX Go Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX Go Iris** synchronously to the **Domino Designer** server. 
->>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
 
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
-<<<<<<< HEAD
 - You have your [Foundry admin account](../howto/foundryadminaccount.md) which you use in logging in to Volt MX Go Iris.
-- You have completed the Domino Rest API installation.
-=======
-- You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
-- You have created Domino REST API.
-- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
->>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
+- You have completed the [Domino Rest API installation]().
 
-##### For Volt MX Go Foundry admin
+##### Volt MX Go Foundry admin
 
-- You must create a Volt MX Go Foundry administration account to the Volt MX Go Iris Developer.
+- You must create a Volt MX Go Foundry admin account to the Volt MX Go Iris Developer.
 
-##### For Domino REST API admin
 
-- Your user account in Domino REST API must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
+##### Domino REST API admin
+
+- Your user credential in Domino REST API must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
 
 - You have set up Domino REST API with a specified Domino database `.nsf`, schema, scopes, and app.
 
@@ -43,7 +34,7 @@ This tutorial guides you in accessing Design Import in Volt MX Go through the us
 
 - When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view){: target="_blank" rel="noopener noreferrer"}.
 
-- When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager ACL role. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
 
 - When you configure `scope`, the scope name must be limited to 30 characters.
 
@@ -52,7 +43,7 @@ This tutorial guides you in accessing Design Import in Volt MX Go through the us
 ##### For Volt MX Go Iris Developer
 
 - You must have a Volt MX Go Foundry admin account.
-- You must have at least a Designer access to a specific Domino `.nsf` database file into Domino Keep Configuration (`keepconfig.nsf`) Access Control List to import Domino app.
+- You must have at least a Designer role to a specific Domino database `.nsf` file into Domino Keep Configuration (`keepconfig.nsf`) Access Control List to import Domino app.
 
 ## Launch Volt MX Go Iris
 
@@ -207,11 +198,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/diresult.png) 
 
-<<<<<<< HEAD
 Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of `forms`. **The App Events [desktop]** appears.
-=======
-Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
->>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
 
 ![](../assets/images/dioutput.png)
 
@@ -304,11 +291,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ## CRUD operation upon importing the Domino database `.nsf`
 
 !!!note "Published the web app and native app in Volt MX Go Iris"
-<<<<<<< HEAD
     - Before you can do the CRUD operation in your imported Domino app, you must first build and publish the web and native app in Volt MX Go Iris.
-=======
-    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MX Go Iris.
->>>>>>> 4e2c7a9512b5d9f43a0c01154f5a41715ecafcd2
     
         - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.
 
