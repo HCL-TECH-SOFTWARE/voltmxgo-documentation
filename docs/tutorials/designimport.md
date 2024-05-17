@@ -2,7 +2,7 @@
 
 --8<-- "mxgoversion.md"
 
-This tutorial guides you through the Design Import process in Volt MX Go. Using the Volt MX Go Iris client, a Domino database `.nsf` file is imported, and the design elements from your Domino database are brought into Volt MX Go. This feature guides you on importing Domino database from Domino REST API and make it available on mobile app and responsive desktop app. 
+This tutorial will walk you through the Design Import process in Volt MX Go. With the Volt MX Go Iris client, you can import a Domino database `.nsf` file, bringing its design elements into Volt MX Go. This feature helps you import the Domino database `nsf` from Domino REST API and make it available on mobile apps and responsive desktop apps.
 
 The tutorial implements two user experiences: 
 
@@ -23,7 +23,7 @@ The tutorial implements two user experiences:
 
 - Your user account in Domino REST API must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
 
-- You have set up Domino REST API with a specified Domino database  file, schema, scopes, and app.
+- You have set up Domino REST API with a specified Domino database `.nsf`, schema, scopes, and app.
 
 - When you configure the schema, set the **Mode Formula Settings&rarr;Formula for Delete Access** to `@True` in `default` and `dql` mode in all the schema forms . For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
  
@@ -163,7 +163,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     
         !!!note
             - The following lists show the forms, views and action you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` file and can only be modified in the **Domino Designer**. 
+            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -202,7 +202,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 ![](../assets/images/dioutput.png)
 
 !!!note
-    - You can view the final result of the Domino database `.nsf` file that you configured in Domino REST API.
+    - You can view the final result of the Domino database `.nsf` that you configured in Domino REST API.
     - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms.
 
 ## Import a Domino Application from the existing Foundry app
@@ -240,8 +240,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     !!!Important
         In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
 
-    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the Domino database `.nsf` file file from **Domino** and **Notes**.
-    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the  Domino database `.nsf` file from **Domino** and **Notes**.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the Domino database `.nsf` from **Domino** and **Notes**.
 
         !!!note
             The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
@@ -254,7 +253,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         
         !!!note
             - The following lists show the forms, views and action  you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` file and can only be modified in the **Domino Designer**. 
+            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -288,7 +287,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ![](../assets/images/dioutput.png)
 
-## CRUD operation upon importing the Domino database `.nsf` file
+## CRUD operation upon importing the Domino database `.nsf`
 
 !!!note "Published the web app and native app in Volt MX Go Iris"
     - Before you can do the CRUD operation in your imported Domino app, you must first build and publish the web and native app in Volt MX Go Iris.
@@ -301,7 +300,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.
       Your configuration in Domino REST API decides what operations you can include in the **design import** form.
-      All the `views`, `agents`,`forms` of your Domino database `.nsf` file have been imported, so you can design your Domino database **`.nsf`** file with CRUD operation.
+      All the `views`, `agents`,`forms` of your Domino database `.nsf` have been imported, so you can design your Domino database **`.nsf`** file with CRUD operation.
 
     - The **Native App (mobile and tablet)** and the **Web App (responsive desktop)** have the same capability of doing the CRUD operation.
 
@@ -329,7 +328,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Viewing data
 
-1. In the Dashboard, go to the **Views** section and click your preferred document.(example: AllCustomers_Lead).
+1. In the Dashboard, go to the **Views** section and click your preferred document -for example: AllCustomers_Lead.
 
     ![Screenshot](../assets/images/diviews.png)
 
@@ -346,7 +345,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 ### Update data
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllCustomers_Lead).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document - for example: AllCustomers_Lead.
 
     ![Screenshot](../assets/images/diviews.png)
 
@@ -380,7 +379,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 !!!note
     - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
 
-1. On the **Dashboard**, go to the **Views** section, click your preferred document (example: AllCustomers_Leads).
+1. On the **Dashboard**, go to the **Views** section, click your preferred document -for example: AllCustomers_Leads.
 
     ![Screenshot](../assets/images/diviews.png)
 
