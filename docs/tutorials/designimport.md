@@ -2,31 +2,48 @@
 
 --8<-- "mxgoversion.md"
 
-This tutorial guides you in accessing Design Import in Volt MX Go through the use of Volt Iris to view the `.nsf` file. This feature in Volt MX Go Iris is a way to extract the domino`.nsf` file where you can design the `.nsf` structure in **Volt MX GO Iris** synchronously to the **Domino Designer** server. 
+This tutorial guides you through the Design Import process in Volt MX Go. Using the Volt MX Go Iris client, a Domino database `.nsf` file is imported, and the design elements from your Domino database are brought into Volt MX Go. This feature guides you on importing Domino database from Domino REST API and make it available on mobile app and responsive desktop app. 
+
+The tutorial implements two user experiences: 
+
+- mobile app
+- responsive desktop app
 
 ## Before you start
 
 - You have completed the [Volt MX Go installation](installation.md).
-- You have created your [Foundry admin account](../howto/foundryadminaccount.md).
-- You have created Domino REST API.
-- Your user account must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
+- You have your [Foundry admin account](../howto/foundryadminaccount.md) which you use in logging in to Volt MX Go Iris.
+- You have completed the Domino Rest API installation.
 
-- You have a configured `.nsf` file, schema, scopes, and application in [Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html){: target="_blank" rel="noopener noreferrer"}.
+##### For Volt MX Go Foundry admin
 
-    - When you configure the schema, set the **Formula for Delete Access** to `@True` in `default` mode in all the forms in the schema. For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
+- You must create a Volt MX Go Foundry administration account to the Volt MX Go Iris Developer.
 
-    - When you configure the `schema`, add a `dql` mode to each configured form. The `dql` mode must include all the fields of the form. Both the `default` and `dql` modes must have matching fields.
+##### For Domino REST API admin
 
-    - When you configure the `schema`, include the `$Files` field in the configured form to capture the uploading and downloading of files in the Design Import.
+- Your user account in Domino REST API must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
 
-    - When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view){: target="_blank" rel="noopener noreferrer"}.
+- You have set up Domino REST API with a specified Domino database  file, schema, scopes, and app.
 
-    - When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the schema, set the **Mode Formula Settings&rarr;Formula for Delete Access** to `@True` in `default` and `dql` mode in all the schema forms . For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
+ 
+- When you configure the `schema`, include the `$Files` field in the configured form to capture the uploading and downloading of files in the Design Import. For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
 
-    - When you configure `scope`, the scope name must be limited to 30 characters.
+- When you configure the `schema`, add the `default` and `dql` modes and must have a matching fields.For more information, see [Cloning modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode){: target="_blank" rel="noopener noreferrer"}.
 
-    - When you configure your Domino REST API application, it's mandatory to add `$SETUP` to return proper values.
-    
+- When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view){: target="_blank" rel="noopener noreferrer"}.
+
+- When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
+
+- When you configure `scope`, the scope name must be limited to 30 characters.
+
+- When you configure your Domino REST API app, it's mandatory to add `$SETUP` to Scope field. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application)
+
+##### For Volt MX Go Iris Developer
+
+- You must have a Volt MX Go Foundry admin account.
+- You must have at least a Designer access to a specific Domino `.nsf` database file into Domino Keep Configuration (`keepconfig.nsf`) Access Control List to import Domino app.
+
 ## Launch Volt MX Go Iris
 
 1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
@@ -40,7 +57,7 @@ This tutorial guides you in accessing Design Import in Volt MX Go through the us
         
         For Windows, select **Edit** &rarr; **Preferences**. 
         
-        For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**.
+        For Mac, depending on your macOS, select **Volt MX Go Iris** &rarr; **Preferences** or **Settings**.
 
     2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
 
@@ -119,7 +136,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     3. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
         !!!note
-            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you are not, enter the credentials for the IdP you've configured for Domino REST API. 
+            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
 
 
         ![](../assets/images/didrapilogin.png)
@@ -133,7 +150,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     !!!Important
         In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
 
-    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the Domino database `.nsf` file from **Domino** and **Notes**.
 
         !!!note
             The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
@@ -146,7 +163,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     
         !!!note
             - The following lists show the forms, views and action you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino `.nsf` file and can only be modified in the **Domino Designer**. 
+            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` file and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -180,12 +197,12 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/diresult.png) 
 
-Once you click **Done**, each of the selected forms, views, and agents are imported into Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
+Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of `forms`. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
 
 !!!note
-    - You can view the final result of the `.nsf` file that you configured in Domino REST API.
+    - You can view the final result of the Domino database `.nsf` file that you configured in Domino REST API.
     - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms.
 
 ## Import a Domino Application from the existing Foundry app
@@ -223,7 +240,8 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     !!!Important
         In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
 
-    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the `.nsf` file from **Domino** and **Notes**.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the Domino database `.nsf` file file from **Domino** and **Notes**.
+    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the  Domino database `.nsf` file from **Domino** and **Notes**.
 
         !!!note
             The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
@@ -236,7 +254,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         
         !!!note
             - The following lists show the forms, views and action  you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino `.nsf` file and can only be modified in the **Domino Designer**. 
+            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` file and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -266,14 +284,14 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
  
     ![](../assets/images/diresult.png) 
 
-Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MX Go Iris through the use of Forms in Volt MX Go Iris. **The App Events [desktop]** appears.
+Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
 
-## CRUD operation upon importing the `.nsf` file
+## CRUD operation upon importing the Domino database `.nsf` file
 
-!!!note "Published the web app and native app in Iris"
-    - Before you can do the CRUD operation in your imported Domino application, you must first build and publish the web and native app in Volt MX Go Iris.
+!!!note "Published the web app and native app in Volt MX Go Iris"
+    - Before you can do the CRUD operation in your imported Domino app, you must first build and publish the web and native app in Volt MX Go Iris.
     
         - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.
 
@@ -283,9 +301,9 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.
       Your configuration in Domino REST API decides what operations you can include in the **design import** form.
-      All the `views`, `agents`,`forms` of your `.nsf` file have been imported, so you can design your **`.nsf`** file with CRUD operation.
+      All the `views`, `agents`,`forms` of your Domino database `.nsf` file have been imported, so you can design your Domino database **`.nsf`** file with CRUD operation.
 
-    - The **Native App (mobile and tablet)** and the **Web App (Responsive Desktop)** have the same capability of doing the CRUD operation.
+    - The **Native App (mobile and tablet)** and the **Web App (responsive desktop)** have the same capability of doing the CRUD operation.
 
 
 ### Create entry
@@ -304,7 +322,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     2. Click **Open**. If the file is pre-existing, a dialog prompt appears with the option to overwrite it.
     
-4. Click **Add**. This adds the data to the `.nsf` file.
+4. Click **Add**. This adds the data to the Domino database `.nsf` file.
 
     ![Screenshot](../assets/images/dinewview1.png)
 
@@ -322,7 +340,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 3. This will open the AllCustomers_Lead's detail. Select the **Download All Attachments** link. Files will be downloaded. 
 
     !!!note
-        - You can download the attachments in your document (e.g AllCustomers_Lead's detail). You can download the attachment if the `$File` is configured in your DRAPI Database Views.
+        - You can download the attachments in your document-for example AllCustomers_Lead's detail. You can download the attachment if the `$File` is configured in your Domino REST API Database Views.
         - You can also see here the **Delete** and **Edit** button.
 
 
