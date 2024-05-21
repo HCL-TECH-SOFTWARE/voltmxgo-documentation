@@ -11,39 +11,42 @@ The tutorial implements two user experiences:
 
 ## Before you begin
 
-- You have completed the [Volt MX Go installation](installation.md).
-- You have your [Foundry admin account](../howto/foundryadminaccount.md) which you use in logging in to Volt MX Go Iris.
-- You have completed the [Domino Rest API installation]().
+!!!info
+    If you have granted access to any of the following roles: **Volt MX Go Foundry admin, Domino REST API admin,** or the **Volt MX Go Iris developer**, please follow the specific instructions for **each user**.
 
-##### Volt MX Go Foundry admin
+### Volt MX Go Foundry admin
 
-- You must create a Volt MX Go Foundry admin account to the Volt MX Go Iris Developer.
+- You must the [Volt MX Go installation](installfoundry.md).
+- You must create a Volt MX Go Foundry admin account to the Volt MX Go Iris developer.
 
+### Domino REST API admin
 
-##### Domino REST API admin
+- You have completed the [Domino REST API installation](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html).
 
-- Your user credential in Domino REST API must be [added to the LocalKeepAdmins](https://help.hcltechsw.com/notes/12.0.2/client/sec_acl_useradd_t.html){: target="_blank" rel="noopener noreferrer"} group in the **Domino Keep Configuration (`KeepConfig.nsf`) Access Control List** to access administrative APIs used by Design Import. 
+- You have at least an *Editor* access to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and and  Domino application. 
 
-- You have set up Domino REST API with a specified Domino database `.nsf`, schema, scopes, and app.
-
-- When you configure the schema, set the **Mode Formula Settings&rarr;Formula for Delete Access** to `@True` in `default` and `dql` mode in all the schema forms . For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
- 
-- When you configure the `schema`, include the `$Files` field in the configured form to capture the uploading and downloading of files in the Design Import. For more information, see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
-
-- When you configure the `schema`, add the `default` and `dql` modes and must have a matching fields.For more information, see [Cloning modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode){: target="_blank" rel="noopener noreferrer"}.
+- You have set up Domino REST API with a specified Domino database `.nsf`, schema, scopes, and application.
 
 - When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view){: target="_blank" rel="noopener noreferrer"}.
 
-- When you configure the `scopes`, set the *Maximum Access Level* set to Designer or Manager ACL role. For more information, see [Scope Management in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `schema`, include the `$Files` field in the configured form. This is to capture the uploading and downloading of files in the Design Import. For more information, see [step numer 3 in Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
+
+- When you configure the `schema`, set the **Mode Formula Settings &rarr; Formula for Delete Access** to `@True` in `default` and `dql` mode in all the schema forms. For more information, see [step number 5 in Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
+ 
+- When you configure the `schema`, add the `default` and `dql` modes and must have a matching fields. For more information, see [Cloning modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode){: target="_blank" rel="noopener noreferrer"}.
 
 - When you configure `scope`, the scope name must be limited to 30 characters.
 
+- When you configure the `scopes`, set the *Maximum Access Level* to **Designer** or **Manager** ACL role. For more information, see [Add a scope in Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
+
 - When you configure your Domino REST API app, it's mandatory to add `$SETUP` to Scope field. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application)
 
-##### For Volt MX Go Iris Developer
+#### For Volt MX Go Iris Developer
 
+- You must install [Volt MX Go Iris](installiris.md) 
 - You must have a Volt MX Go Foundry admin account.
-- You must have at least a Designer role to a specific Domino database `.nsf` file into Domino Keep Configuration (`keepconfig.nsf`) Access Control List to import Domino app.
+- You must have at least a **Designer role** to the Domino database `.nsf` that you are importing and to the **Domino Keep Configuration Database (`keepconfig.nsf`)**.
+
 
 ## Launch Volt MX Go Iris
 
@@ -94,12 +97,12 @@ The tutorial implements two user experiences:
   
     ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
-You can now see your project name in the upper-left corner of the **Volt MX Go Iris** canvass.
+You can now see your project name in the upper-left corner of the **Volt MX Go Iris** UI.
 
 ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
 
-## Import a Domino Application using the new Volt MX Go Foundry app
+## Import a Domino Application using the Volt MX Go Iris app
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 
@@ -107,16 +110,17 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/diwizard.png)
     
-3. On **Associate Foundry App**, click **Create New**.
+3. On **Associate Foundry App** step, click **Create New**.
 
     ![](../assets/images/difoundryapp.png)
 
-    Once you click **Create New**, the new Volt MX Go Foundry app is associated with Volt MX Go Iris. The default name is the same as your **Project Name**.
+    The default name is the same as your **Project Name**.
 
     ![](../assets/images/difoundrybackend.png) 
+         
+4. On **Identity Service**
 
-            
-4. On **Identity Service**:
+    **For New Idenity Service**
     
     1. Enter the required details in the **Create New Identity Service** and click **Next**. 
 
@@ -124,47 +128,51 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         | -----------     | -----------     |
         | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL.    |
         | Scope       | This is the name of your configured scope described in your App of Domino REST API app management. $DATA scope show all the scopes in your App in Domino REST API.  |
-        |Client ID    | This is the App ID of your Application in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
-        |Client Secret| This is the App Secret in Domino Rest API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
+        |Client ID    | This is the App ID of your Application in Domino REST API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
+        |Client Secret| This is the App Secret in Domino REST API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
         |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
 
         ![](../assets/images/dikeep.png)
 
-    2. Select the **service name**, that you added from the previous page and click **Next**. Once your **Foundry Application** has been published, your service name should be named as MXGO(service name). Example: MXGOISMyApp
+    2. Select the **identity service** - for example, MXGOISMyApp.
 
         ![](../assets/images/didrapi.png)
+        
+        !!!warning "Important"
+            - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard. Otherwise, the wizard will close.
 
-    3. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
+    3. Click **Next**.
 
-        !!!note
-            This document assumes you are using the Domino IdP which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API. 
-
+    4. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
         ![](../assets/images/didrapilogin.png)
 
-    4. Select your **Foundry Identity Service** name associated to Domino REST API and click **Next**.
+    5. Select your **Foundry App Identity Service** name associated to Domino REST API and click **Next**.
 
         ![](../assets/images/difoundry.png)
+        
+        !!!warning "Important"
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#domino-database-acl-and-domino-rest-api-maximum-access-level)  
 
 5. On **Scope and Forms**
 
     !!!Important
-        In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
+        In this Volt MX Go 2.0.3 version, **actions** imported as inactive buttons.
 
-    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the Domino database `.nsf` file from **Domino** and **Notes**.
+    1. Select the **scope** that you’ve configured in Domino REST API. 
 
-        !!!note
-            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+        !!!warning "Important"
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
-        When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
+        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
     2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views`, `agents`, `actions` and click **Next**. 
     
         !!!note
-            - The following lists show the forms, views and action you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
+            - The following lists show the forms, views and action you have **configured** and **unconfigured** in the **Domino REST API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
+            - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -206,20 +214,20 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     - You can view the final result of the Domino database `.nsf` that you configured in Domino REST API.
     - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms.
 
-## Import a Domino Application from the existing Volt MX Go Foundry app
+## Import a Domino Application using existing identity service from existing Volt MX Go Foundry app
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 2. On **Getting Started**, click **Next**.
 
     ![](../assets/images/diwizard.png)
 
-3. On **Associate Foundry App**:
+3. On **Associate Foundry App** step:
     
     1. Click **Use Existing**.
 
         ![](../assets/images/dicreatenew.png)
 
-    2. Select the **Foundry App** generated from the wizard, click **Associate** and close the form. 
+    2. Select **Foundry Apps**, click **Associate** and close the form. 
 
         ![](../assets/images/diassociate.png)
 
@@ -228,33 +236,52 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         ![](../assets/images/diexfoundry.png)
 
         !!!info
-            - If you have an existing Domino Application Project on your canvass and you want to import and associate it with another Foundry app, click the **Unlink App**.
-            - There is a prompt to delete the Foundry App, click **delete**.
-            - This unlinks the Foundry App and returns to selecting *Create New* or *Use Existing* 
+            - If you have an existing Domino Application Project on your UI and you want to import and associate it with another Volt MX Go Foundry app, click the **Unlink App**.
+            - There is a prompt to delete the Foundry App, click **delete**. This unlinks the Volt MX Go Foundry App and returns to selecting *Create New* or *Use Existing* 
 
-4. On **Identity Service**, click **Select Existing** on the Identity Service step. This connects the **Domino Rest API service**.
+4. On **Identity Service**, select existing identity service.
 
     ![](../assets/images/diexistingid.png)
-    
+
+    1. Select the **identity service** - for example, MXGOISMyApp.
+
+        ![](../assets/images/didrapi.png)
+        
+        !!!warning "Important"
+            - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard. Otherwise, the wizard will close.
+
+    2. Click **Next**.
+
+    3. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
+
+        ![](../assets/images/didrapilogin.png)
+
+    4. Select your **App Identity Service** name associated to Domino REST API and click **Next**.
+
+        ![](../assets/images/difoundry.png)
+        
+        !!!warning "Important"
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#domino-database-acl-and-domino-rest-api-maximum-access-level)  
+
 5. On **Scope and Forms**
     
     !!!Important
         In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
 
-    1. Select the **scope** that you’ve configured in Domino Rest API. These scopes are associated with the Domino database `.nsf` from **Domino** and **Notes**.
+    1. Select the **scope** that you’ve configured in Domino REST API.
 
-        !!!note
-            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino Rest API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+        !!!warning "Important"
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
 
         ![](../assets/images/discope.png)
 
-        When a **Domino Rest API Issues Report** prompt appears, check [Domino Rest API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
+        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
     2. **Select** or **deselect** the configured `forms`, `views`, `agents` and `actions` and click **Next**. 
         
         !!!note
-            - The following lists show the forms, views and action  you have **configured** and **unconfigured** in the **Domino Rest API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons* that can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
+            - The following lists show the forms, views and action  you have **configured** and **unconfigured** in the **Domino REST API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
+            - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -287,6 +314,22 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MX Go Iris. **The App Events [desktop]** appears.
 
 ![](../assets/images/dioutput.png)
+
+## Copy callback URL in Volt MX Go Foundry
+
+1. Login to the Volt MX Go Foundry.
+2. On the Home page, select and click your **Volt MX Go Foundry App**.
+3. On the **Configure Services tab** &rarr; **Identity tab**, select and click your *Identity Service* name.
+4. Find and click *copy* of **Callback URL** field.
+
+    ![alt text](../assets/images/dicallbackurl.png)
+
+5. Send the **callback URL** to Domino REST API admin.
+
+    The Domino REST API admin update the **Domino Application callback URL** in Domino Application.
+
+    !!!warning "Important"
+        You may continue the procedure in **step 4.b** in the [Import a Domino Application using the new Volt MX Go Foundry app](#import-a-domino-application-using-the-volt-mx-go-iris-app). If the wizard was terminated, you may proceed with [Import a Domino Application using existing identity service from existing Volt MX Go Foundry app](#import-a-domino-application-using-existing-identity-service-from-existing-volt-mx-go-foundry-app). 
 
 ## CRUD operation upon importing the Domino database `.nsf`
 
@@ -353,7 +396,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 2. In the **Dashboard/AllCustomers_Leads** page, search the customer, click the name and select **Edit**. 
 
     !!!note
-        If the detail view **DOESN'T show**, check the [Database Views in DRAPI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the **Database View** is **active** and the columns in the view are added during the import.
+        If the detail view **DOESN'T show**, check the [Database Views in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema, to confirm that the **Database View** is **active** and the columns in the view are added during the import.
 
     ![Screenshot](../assets/images/dieditdata.png)
 
@@ -398,4 +441,3 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
  
 !!!note
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
-
