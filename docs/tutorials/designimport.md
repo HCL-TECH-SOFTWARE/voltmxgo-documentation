@@ -326,7 +326,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
 5. Send the **callback URL** to Domino REST API admin.
 
-    The Domino REST API admin update the **Domino Application callback URL** in Domino Application.
+    The Domino REST API admin updates the **Domino Application callback URL** in Domino Application.
 
     !!!warning "Important"
         You may continue the procedure in **step 4.b** in the [Import a Domino Application using the new Volt MX Go Foundry app](#import-a-domino-application-using-the-volt-mx-go-iris-app). If the wizard was terminated, you may proceed with [Import a Domino Application using existing identity service from existing Volt MX Go Foundry app](#import-a-domino-application-using-existing-identity-service-from-existing-volt-mx-go-foundry-app). 
