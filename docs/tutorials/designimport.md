@@ -23,7 +23,7 @@ The tutorial implements two user experiences:
 
 - You have completed the [Domino REST API installation](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html).
 
-- You have at least an *Editor* access to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and and  Domino application. 
+- You have at least an *Editor* access to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and Domino REST API application. 
 
 - You have set up Domino REST API with a specified Domino database `.nsf`, schema, scopes, and application.
 
@@ -39,13 +39,16 @@ The tutorial implements two user experiences:
 
 - When you configure the `scopes`, set the *Maximum Access Level* to **Designer** or **Manager** ACL role. For more information, see [Add a scope in Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
 
-- When you configure your Domino REST API app, it's mandatory to add `$SETUP` to Scope field. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application)
+- When you configure your Domino REST API app, it's mandatory to add `$SETUP` to Scope field. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application).
+
+- Provide the Domino REST API URL, Client ID, Client Secret and scope to the Volt MX Go Iris developer from your Domino REST API app.
 
 #### For Volt MX Go Iris Developer
 
 - You must install [Volt MX Go Iris](installiris.md) 
 - You must have a Volt MX Go Foundry admin account.
 - You must have at least a **Designer role** to the Domino database `.nsf` that you are importing and to the **Domino Keep Configuration Database (`keepconfig.nsf`)**.
+- You must have your Domino REST API URL, Client ID, Client Secret and scope which comes from the Domino REST API admin.
 
 
 ## Launch Volt MX Go Iris
@@ -102,7 +105,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 ![](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
 
-## Import a Domino Application using the Volt MX Go Iris app
+## Import a Domino Application using a new Volt MX Go Foundry app
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 
@@ -118,9 +121,9 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![](../assets/images/difoundrybackend.png) 
          
-4. On **Identity Service**
+4. On **Identity Service**.
 
-    **For New Idenity Service**
+    **For New Idenity Service**, be sure to have your Domino REST API URL, Scope, Client ID, and Client Secret from the Domino REST API admin.
     
     1. Enter the required details in the **Create New Identity Service** and click **Next**. 
 
@@ -139,9 +142,13 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         ![](../assets/images/didrapi.png)
         
         !!!warning "Important"
-            - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard. Otherwise, the wizard will close.
+            - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard.
 
     3. Click **Next**.
+        
+        !!!warning "Important"
+            If the wizard is terminated, you may proceed with [Import a Domino Application using existing identity service from existing Volt MX Go Foundry app](#import-a-domino-application-using-existing-identity-service-from-existing-volt-mx-go-foundry-app). 
+            
 
     4. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
@@ -152,7 +159,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         ![](../assets/images/difoundry.png)
         
         !!!warning "Important"
-            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#domino-database-acl-and-domino-rest-api-maximum-access-level)  
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#domino-database-acl-and-domino-rest-api-maximum-access-level).  
 
 5. On **Scope and Forms**
 
@@ -329,7 +336,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     The Domino REST API admin updates the **Domino Application callback URL** in Domino Application.
 
     !!!warning "Important"
-        You may continue the procedure in **step 4.b** in the [Import a Domino Application using the new Volt MX Go Foundry app](#import-a-domino-application-using-the-volt-mx-go-iris-app). If the wizard was terminated, you may proceed with [Import a Domino Application using existing identity service from existing Volt MX Go Foundry app](#import-a-domino-application-using-existing-identity-service-from-existing-volt-mx-go-foundry-app). 
+        You may continue the procedure in **step 4.b** in the [Import a Domino Application using the new Volt MX Go Foundry app](#import-a-domino-application-using-a-new-volt-mx-go-foundry-app). If the wizard was terminated, you may proceed with [Import a Domino Application using existing identity service from existing Volt MX Go Foundry app](#import-a-domino-application-using-existing-identity-service-from-existing-volt-mx-go-foundry-app). 
 
 ## CRUD operation upon importing the Domino database `.nsf`
 
