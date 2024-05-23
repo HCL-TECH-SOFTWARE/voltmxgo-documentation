@@ -13,6 +13,18 @@ List of issues and corresponding resolutions.
 
     When your kubectl commands fail after restarting Windows or Rancher Desktop, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context.
 
+- **403 Insufficient access error in Volt MX Go Iris while using Design Import**
+
+    - You should contact your Domino REST API admin to update your scope's Maximum Level Access to *Designer*.
+
+        ![alt text](../assets/images/didrapierr.png)
+
+    - You should contact your Domino admin to update your Domino database `.nsf` ACL to *Designer*.
+
+        ![alt text](../assets/images/diaclerr.png) 
+
+    The **Maximum Access Level** specifically concerns access through Domino REST API and doesn't update the database's ACL. The user's access level defined in the Domino database ACL won't be exceeded. For example, if the user is specified as a Reader in the Domino database ACL and maximum access level for the scope is set to Editor, the user won't have the ability to create documents through Maximum Access Level.
+
 ## Domino Rest API schema issues
 
 --8<-- "mxgoversion.md"
@@ -46,19 +58,3 @@ List of issues and corresponding resolutions related to Domino REST API when imp
 
 Consult your Domino Rest API administrator to assist you with configuring the Domino Rest API based on the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-begin).
 
-## Domino database ACL and Domino REST API maximum access level
-
-The **Maximum Access Level** specifically concerns access through Domino REST API and doesn't update the database's ACL. The user's access level defined in the Domino database ACL won't be exceeded. For example, if the user is specified as a Reader in the Domino database ACL and maximum access level for the scope is set to Editor, the user won't have the ability to create documents through Maximum Access Level.
-
-- **Maximum Level Access in Domino REST API**
-
-    You should contact your Domino REST API admin to update your scope's Maximum Level Access to *Designer*.
-
-    ![alt text](../assets/images/didrapierr.png)
-
-
-- **Domino database ACL**
-
-    You should contact your Domino admin to update your Domino database `.nsf` ACL to *Designer*.
-
-    ![alt text](../assets/images/diaclerr.png) 
