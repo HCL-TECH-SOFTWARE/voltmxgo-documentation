@@ -74,7 +74,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
                 4. Provide the application startup page URL under **Startup Page**. 
                 4. Select and add a scope in the **Scope** field.
             5. Click **Add**. 
-            6. Hover over the application tile and click **Generate Application Secret**.
+            6. On the **Application Management** page, choose the application that you have just added and click **Click to Generate Secret**.
             7. Take note of the App Secret and App ID. You need these details in configuring the Identity Service in Volt MX Go Foundry.
 
     6. Enter the name of the scope that you have configured in your app in Domino REST API in the **Scope** text box. 

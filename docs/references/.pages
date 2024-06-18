@@ -1,10 +1,9 @@
 nav:
     - index.md
     - What's new: whatsnew
-#    - whatisnew.md
     - System requirements: tutorials/sysreq.html
     - compatibilitymatrix.md
-    - VoltFormula coding practices: topicguides/vfcodingguides.html
+    - VoltFormula coding exercise examples: topicguides/vfcodingguides.html
     - kubecheatsheet.md
     - Rosetta API reference documentation: javadoc/index.html
     - Rosetta API implementation status: javadoc/api_status.html
