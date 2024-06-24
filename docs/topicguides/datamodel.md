@@ -144,7 +144,7 @@ The `metadata` attribute of a Volt MX Go Foundry data model field retains extend
 
 There are cases where a user may request Domino information not included in Domino data documents but still necessary for creating a Domino application in Volt MX Go. This information is accessible from the Domino Adapter in the `Other Metadata` section.
 
-To use this information, a Volt MX Go Foundry administrator must select which Other Metadata entities to create in the data model generation flow. This creates a Volt MX entity. A user can then perform a GET method on this Volt MX entity to obtain and use the information.
+To use this information, a Volt MX Go Foundry administrator must select which `Other Metadata` entities to create in the data model generation flow. This creates a Volt MX entity. A user can then perform a GET method on this Volt MX entity to obtain and use the information.
 
 **Implemented `Other Metadata` entities**:
 
