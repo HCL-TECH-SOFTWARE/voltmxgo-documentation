@@ -19,7 +19,7 @@ The aim of VoltFormula is to expose the capability to run certain functions of O
 
 ### Rosetta flow overview
 
-![Rosetta flow overview](../assets/images/vfrosetta1.png)
+![Rosetta flow overview](../assets/images/vfrosetta2.png)
 
 ### OpenFormula or Notes API implementation paths
 

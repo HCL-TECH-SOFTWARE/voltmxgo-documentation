@@ -9,8 +9,8 @@ nav:
         - rosettaapi.md
         - declvariables.md
         - extendrosettapi.md
-        - vfcodingguides.md
-        - vfcodingpractices.md    
+        - Coding exercise examples: vfcodingguides.md
+        - Useful tips and information: vfcodingpractices.md    
     - Domino Adapter: 
         - dominoadapter.md
         - datamodel.md

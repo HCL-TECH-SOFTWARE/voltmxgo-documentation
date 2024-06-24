@@ -4,7 +4,7 @@
 
 Methods for interacting with the data models are generated when generating the data models. 
 
-For view-based data model, only the GET method is generated.
+For view-based data model and Other Metadata based data model, only the GET method is generated.
 
 For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported: 
 
