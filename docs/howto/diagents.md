@@ -1,4 +1,4 @@
-# Import Domino Agents
+# Show Domino Agents as part of the Design Import app
 
 --8<-- "mxgoversion.md"
 
@@ -19,7 +19,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-the-new-volt-mx-go-foundry-app).
 
 !!!important
-    - For the Volt MX Go release v2.0.3, only limited Agents are supported.
+    - For the Volt MX Go release v2.0.4, only limited Agents are supported.
     - The Design Import App shows the following conditions for using Domino Agents:
         - If the Domino Agents' trigger type configuration is **action menu**.
         - If the Domino Agents' document setting is configured to  **All**.

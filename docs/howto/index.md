@@ -16,9 +16,9 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)
 - [Update FirstTouchRecipes.nsf](FTnsfupdate.md)
 - [Create a new native app project](dicreatenativeapp.md)
-- [Import actions from Domino view and forms](importvoltformula.md)
-- [Import Domino Agents](diagents.md)
+- [Integrate VoltFormula function with Design Import's actions](importvoltformula.md)
+- [Show Domino Agents as part of the Design Import app](diagents.md)
 - [Uninstall](uninstall.md)
 
 
-
+    

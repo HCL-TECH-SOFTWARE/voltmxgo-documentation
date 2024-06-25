@@ -193,7 +193,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
         ![alt text](../assets/images/diagents.png)
         
-    Follow this link to learn more on [importing Domino Agents.](../howto/diagents.md)
+    Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
 
 6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
 
@@ -302,7 +302,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
         ![alt text](../assets/images/diagents.png)
 
-        Follow this link to learn more on [importing Domino Agents.](../howto/diagents.md)
+        Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
 
 6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application**. 
 
