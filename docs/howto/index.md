@@ -2,23 +2,13 @@
 
 How-to guides instruct users in completing key goals and tasks related to Volt MX Go.
 
-- [Create a Volt MX Go Foundry administrator account](foundryadminaccount.md)
-- [Generate CRUD forms for Object Service](codegen.md)
-- [Insert attachments via Summernote Editor](insertattachments.md)
-- [Access Domino REST API](accessdrapi.md)
-- [Connect to Domino server from Notes client](connectdominofromnotes.md)
-- [Import First Touch into Volt MX Go Iris](importft.md)
-- [Set logging level](logginglevel.md)
-- [Delete existing forms while using the Design Import wizard](deleteform.md)
-- [Configure Rosetta API](configrosetta.md)
-- [Register and unregister custom Rosetta API](regunregconfig.md)
-- [Configure mobile app browser](configmobile.md) 
-- [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)
-- [Update FirstTouchRecipes.nsf](FTnsfupdate.md)
-- [Create a new native app project](dicreatenativeapp.md)
-- [Integrate VoltFormula function with Design Import's actions](importvoltformula.md)
-- [Show Domino Agents as part of the Design Import app](diagents.md)
-- [Clear formulas in Controller and Action Editor](clearfunction.md)
+- [Install](howtoinstall.md)
+- [Design Import](diindex.md)
+- [VoltFormula](vfindex.md)
+- [First Touch](ftindex.md)
+- [Operation](genindex.md)
+
+
 - [Uninstall](uninstall.md)
 
 
