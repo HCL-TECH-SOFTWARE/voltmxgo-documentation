@@ -164,7 +164,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 5. On **Scope and Forms**
 
     !!!Important
-        In this Volt MX Go 2.0.3 version, **actions** imported as inactive buttons.
+        In this Volt MX Go 2.0.4 version, **actions** imported as inactive buttons.
 
     1. Select the **scope** that you’ve configured in Domino REST API. 
 
@@ -175,11 +175,11 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
         When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
-    2. **Select** or **deselect** the configured `forms`, `fields` in each form, `views`, `agents`, `actions` and click **Next**. 
+    2. **Select** or **deselect** the active `forms`, `fields` in each form, `views`, `agents`, `actions` and click **Next**. 
     
         !!!note
-            - The following lists show the forms, views and action you have **configured** and **unconfigured** in the **Domino REST API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
-            - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
+            - The following lists show the forms, views and action you have **active** and **inactive** in the **Domino REST API**. When selecting items, you can only choose those that are active, such as forms, views, agents, and actions. Inactive items on the other hand, only display their disabled form, action, and agent names.
+            - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often active within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
@@ -193,7 +193,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
         ![alt text](../assets/images/diagents.png)
         
-    Follow this link to learn more on [importing Domino Agents.](../howto/diagents.md)
+    Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
 
 6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
 
@@ -284,10 +284,10 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
         When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
 
-    2. **Select** or **deselect** the configured `forms`, `views`, `agents` and `actions` and click **Next**. 
+    2. **Select** or **deselect** the active `forms`, `views`, `agents` and `actions` and click **Next**. 
         
         !!!note
-            - The following lists show the forms, views and action  you have **configured** and **unconfigured** in the **Domino REST API**. When selecting items, you can only choose those that are configured, such as forms, views, agents, and actions. Unconfigured items, on the other hand, only display their disabled form, action and agent names.
+            - The following lists show the forms, views and action  you have **active** and **inactive** in the **Domino REST API**. When selecting items, you can only choose those that are active, such as forms, views, agents, and actions. Inactive items, on the other hand, only display their disabled form, action, and agent names.
             - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
         a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
@@ -302,7 +302,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
         ![alt text](../assets/images/diagents.png)
 
-        Follow this link to learn more on [importing Domino Agents.](../howto/diagents.md)
+        Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
 
 6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application**. 
 

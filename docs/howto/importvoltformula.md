@@ -1,4 +1,4 @@
-# Import actions from Domino views and forms
+# Integrate VoltFormula function with Design Import's actions
 
 --8<-- "mxgoversion.md"
 
