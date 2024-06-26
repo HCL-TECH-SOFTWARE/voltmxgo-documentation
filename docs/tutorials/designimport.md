@@ -273,7 +273,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 5. On **Scope and Forms**
     
     !!!Important
-        In this Volt MX Go 2.0.3 version, **actions** will be imported as inactive buttons.
+        In this Volt MX Go 2.0.4 version, **actions** will be imported as inactive buttons.
 
     1. Select the **scope** that you’ve configured in Domino REST API.
 
