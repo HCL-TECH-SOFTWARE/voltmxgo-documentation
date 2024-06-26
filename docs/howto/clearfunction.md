@@ -13,25 +13,25 @@ Shows you how to clear JavaScript code and formulas in **Controller** and **Acti
 
 ## Procedure in Controller
 
-**For removing formula using **Clear** button** 
+**For removing formula using Clear button** 
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Controller**.
 
 2. Click the **Controller** you want change.
 
-3. Click **Clear** button to delete the formula and the JavaScript code in the editor. 
+3. Click **Clear** to delete the formula and the JavaScript code in the editor. 
 
     ![alt text](../assets/images/vfclearformula.png)
 
-4. A confirmation dialog shows to confirm delete the formula. Click **Delete**.
+4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
 
     ![alt text](../assets/images/vfdeldialog.png)
 
-    The **clear** button deleted the formula and the JavaScript code.
+    The **Clear** button deleted the formula and the JavaScript code.
 
     ![alt text](../assets/images/vfremoveform.png)
 
-**For removing formula using **Delete Formula** button**
+**For removing formula using Delete Formula button**
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Controller**.
 
@@ -41,18 +41,18 @@ Shows you how to clear JavaScript code and formulas in **Controller** and **Acti
 
     ![alt text](../assets/images/vfclearformula2.png)
 
-4. A confirmation dialog shows to confirm removing the formula. Click **Delete**.
+4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
 
     ![alt text](../assets/images/vfdeldialog2.png)
 
-    The **clear** button removed the formula and the JavaScript code.
+    The **Clear** button deleted the formula and the JavaScript code.
 
     ![alt text](../assets/images/vfremoveform2.png)
 
 
 ## Procedure in Action Editor
 
-**For removing formula using **Clear** button**
+**For deleting formula and JavaScript code using Clear button**
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Forms**. For example, you have created a **button** on your form.
 
@@ -60,19 +60,19 @@ Shows you how to clear JavaScript code and formulas in **Controller** and **Acti
 
     ![alt text](../assets/images/vfbutton.png)   
 
-3. The **Action Editor** window open. Click **Clear** button to delete the formula and the JavaScript code in the editor. 
+3. The **Action Editor** window opens. Click **Clear** button to delete the formula and the JavaScript code in the editor. 
 
     ![alt text](../assets/images/vfclearformula3.png)
 
-4. A confirmation dialog shows to confirm delete the formula. Click **Delete**.
+4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
 
     ![alt text](../assets/images/vfdeldialog3.png)
 
-    The **clear** button deleted the formula and the JavaScript code.
+    The **Clear** button deleted the formula and the JavaScript code.
 
     ![alt text](../assets/images/vfremoveform3.png)
 
-**For removing formula using **Delete Formula** button**
+**For removing formula using Delete Formula button**
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Forms**.
 
@@ -80,14 +80,14 @@ Shows you how to clear JavaScript code and formulas in **Controller** and **Acti
 
     ![alt text](../assets/images/vfbutton.png)   
 
-3. The **Action Editor** window open. Right-click on the JavaScript code and click the **Delete button**. 
+3. The **Action Editor** window opens. Right-click on the JavaScript code and click the **Delete button**. 
 
     ![alt text](../assets/images/vfclearformula4.png)
 
-4. A confirmation dialog shows to confirm delete the formula. Click **Delete**.
+4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
 
     ![alt text](../assets/images/vfdeldialog4.png)
 
-    The **clear** button deleted the formula and the JavaScript code.
+    The **Clear** button deleted the formula and the JavaScript code.
 
     ![alt text](../assets/images/vfremoveform4.png)
