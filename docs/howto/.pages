@@ -6,17 +6,21 @@ nav:
     - accessdrapi.md
     - connectdominofromnotes.md
     - Import First Touch: importft.md
-    - logginglevel.md
-    - deleteform.md
-    - configrosetta.md
-    - clearfuntion.md
-    - regunregconfig.md
-    - configmobile.md
     - drapiingress.md
     - FTnsfupdate.md
-    - dicreatenativeapp.md
-    - importvoltformula.md
-    - diagents.md
+
+    - VoltFormula:
+        - configrosetta.md
+        - regunregconfig.md
+        - clearfunction.md  
+        
+    - Design Import:
+        - dicreatenativeapp.md
+        - configmobile.md
+        - deleteform.md
+        - importvoltformula.md
+        - diagents.md
+        - logginglevel.md
 
     - Uninstall:
         - uninstall.md

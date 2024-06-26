@@ -48,3 +48,42 @@ Shows you how to clear JavaScript code and formulas in **Controller** and **Acti
     The **clear** button removed the formula and the JavaScript code.
 
     ![alt text](../assets/images/vfremoveform.png)
+
+
+## Procedure in Action Editor
+
+**For removing formula using **Clear** button. 
+
+1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Controller**.
+
+2. Click the **Controller** you want change.
+
+3. Click **Clear** button to delete the formula and the JavaScript code in the editor. 
+
+    ![alt text](../assets/images/vfclearformula.png)
+
+4. A confirmation dialog shows to confirm delete the formula. Click **Delete**.
+
+    ![alt text](../assets/images/vfdeldialog.png)
+
+    The **clear** button deleted the formula and the JavaScript code.
+
+    ![alt text](../assets/images/vfremoveform.png)
+
+***For removing formula using **Delete Formula** button
+
+1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Controller**.
+
+2. Click the **Controller** you want change.
+
+3. Right-click on the JavaScript code and click the **Delete button** 
+
+    !![alt text](../assets/images/vfclearformula2.png)
+
+4. A confirmation dialog shows to confirm removing the formula. Click **Delete**.
+
+    ![alt text](../assets/images/vfdeldialog2.png)
+
+    The **clear** button removed the formula and the JavaScript code.
+
+    ![alt text](../assets/images/vfremoveform.png)
