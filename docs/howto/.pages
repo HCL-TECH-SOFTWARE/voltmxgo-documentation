@@ -1,27 +1,32 @@
 nav:
     - index.md
-    - foundryadminaccount.md
-    - codegen.md
-    - insertattachments.md
-    - accessdrapi.md
-    - connectdominofromnotes.md
-    - Import First Touch: importft.md
-    - drapiingress.md
-    - FTnsfupdate.md
-
-    - VoltFormula:
-        - configrosetta.md
-        - regunregconfig.md
-        - clearfunction.md  
-        
+    - Install:
+        - howtoinstall.md
+        - foundryadminaccount.md
+        - accessdrapi.md
+        - connectdominofromnotes.md
+        - drapiingress.md
     - Design Import:
+        - diindex.md
         - dicreatenativeapp.md
         - configmobile.md
         - deleteform.md
         - importvoltformula.md
         - diagents.md
+    - VoltFormula:
+        - vfindex.md
+        - configrosetta.md
+        - regunregconfig.md
+        - clearfunction.md  
+    - First Touch:
+        - ftindex.md
+        - Import First Touch: importft.md
+        - FTnsfupdate.md
+    - Operation:
+        - genindex.md
+        - codegen.md
+        - insertattachments.md
         - logginglevel.md
-
     - Uninstall:
         - uninstall.md
         - k3suninstall.md
