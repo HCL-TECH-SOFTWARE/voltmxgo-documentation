@@ -9,7 +9,11 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
-- You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md). 
+- You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+
+!!!tip
+    The following actions might require certain Domino access rights. Contact your Domino Administrator/Domino REST API Administrator for assistance.
+
 - You have at least a *Designer* access to the Domino database you are creating or updating a Schema.
 - You have at least an *Editor* access to the Domino Keep Configuration database `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
 - You have the correct access level to the Domino database to test the CRUD operations. 
@@ -17,7 +21,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
     For more information, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html){: target="_blank" rel="noopener noreferrer"} or contact your Domino/Domino REST API administrator.  
 
 - You have added a schema, activated the forms of the schema, and added a `dql` mode similar to the `default` mode to each activated form in Domino REST API. For more information, see [Schema Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html){: target="_blank" rel="noopener noreferrer"}.
-- You have added a scope in Domino REST API. For more information, see [Scope Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank" rel="noopener noreferrer"}.
+- You have added a scope for your schema in Domino REST API. For more information, see [Scope Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html){: target="_blank" rel="noopener noreferrer"}.
 
 ## Log in to Volt MX Go Foundry
 
