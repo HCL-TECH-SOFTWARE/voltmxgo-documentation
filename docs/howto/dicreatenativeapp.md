@@ -16,19 +16,19 @@ Walks you through the process of creating a new project for a mobile or tablet p
 1. In the top menu of Volt MX Go Iris, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Native App** and click **Next**.
 
-    ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
+    ![What do you want to start with now dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
 3. In the **Which device size do you want to start building for first?** dialog, select **Mobile** or **Tablet** and click **Next**.
 
-    ![](../assets/images/distart.png){: style="height:80%;width:80%"}
+    ![Project Name](../assets/images/distart.png){: style="height:80%;width:80%"}
 
 4. Enter your **Project Name** and click **Create**.  
   
-    ![](../assets/images/diprojectnamemob.png){: style="height:80%;width:80%"}
+    ![Project Name](../assets/images/diprojectnamemob.png){: style="height:80%;width:80%"}
  
 You have now created a new native app project. You can see your project name in the upper-left corner of the **Volt MX Go Iris** canvass.
 
-![](../assets/images/diappnamemob.png){: style="height:80%;width:80%"}
+![New native app project](../assets/images/diappnamemob.png){: style="height:80%;width:80%"}
 
 
 !!!tip

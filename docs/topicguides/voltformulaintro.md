@@ -7,7 +7,11 @@ What ideas do you think of whenever you hear the word *formula*? It refers to a 
 ## Two formula languages exposed as one implementation by VoltFormula
 
  - [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank" rel="noopener noreferrer"}
+ - [Notes Formula Language](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank" rel="noopener noreferrer" title="Notes Formula Language"}
+ <!--
  - [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank" rel="noopener noreferrer"}
+link is already deprecated
+-->
 
 These two are wrapped into one parent formula language that encapsulates both implementations. We call this **VoltFormula**, aka RosettaJS. By nature of being a JavaScript exposed API library, the formula language can be extended via helper registration methods.
 

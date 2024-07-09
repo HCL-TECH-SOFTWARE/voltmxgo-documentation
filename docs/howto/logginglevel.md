@@ -29,12 +29,12 @@ Guides you on how to check and set the logging level, and access the log files. 
 
     - For Windows:
 
-    ![](../assets/images/diloggingwin.png){: style="height:80%;width:80%"}
+    ![Windows directory](../assets/images/diloggingwin.png){: style="height:80%;width:80%"}
 
 
     - For Mac:
 
-    ![](../assets/images/dilogging.png){: style="height:80%;width:80%"}
+    ![Mac directory](../assets/images/dilogging.png){: style="height:80%;width:80%"}
 
 2. Open the `iris_development.log` file to view the logs.
 

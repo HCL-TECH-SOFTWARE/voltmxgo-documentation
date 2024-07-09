@@ -14,12 +14,12 @@ The tutorial implements two user experiences:
 !!!info
     If you have granted access to any of the following roles: **Volt MX Go Foundry admin, Domino REST API admin,** or the **Volt MX Go Iris developer**, please follow the specific instructions for **each user**.
 
-### Volt MX Go Foundry admin
+### For Volt MX Go Foundry admin
 
 - You must the [Volt MX Go installation](installfoundry.md).
 - You must create a Volt MX Go Foundry admin account to the Volt MX Go Iris developer.
 
-### Domino REST API admin
+### For Domino REST API admin
 
 - You have completed the [Domino REST API installation](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html).
 
@@ -43,7 +43,7 @@ The tutorial implements two user experiences:
 
 - Provide the Domino REST API URL, Client ID, Client Secret and scope to the Volt MX Go Iris developer from your Domino REST API app.
 
-#### For Volt MX Go Iris Developer
+### For Volt MX Go Iris Developer
 
 - You must install [Volt MX Go Iris](installiris.md) 
 - You must have a Volt MX Go Foundry admin account.
@@ -90,19 +90,19 @@ The tutorial implements two user experiences:
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
     For other platforms, please see [Native App]( ../howto/dicreatenativeapp.md).
 
-    ![](../assets/images/didevice.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
 
 3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App and click **Next**.
 
-    ![](../assets/images/distart.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/distart.png){: style="height:80%;width:80%"}
 
 4. Enter your **Project Name** and click **Create**.  
   
-    ![](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
 You can now see your project name in the upper-left corner of the **Volt MX Go Iris** UI.
 
-![](../assets/images/diappname.png){: style="height:80%;width:80%"}
+![Volt MX Go Iris user interface](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
 
 ## Import a Domino Application using a new Volt MX Go Foundry app
@@ -111,15 +111,15 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
 2. On **Getting Started**, click **Next**.
 
-    ![](../assets/images/diwizard.png)
+    ![Design Import Wizard dialog](../assets/images/diwizard.png)
     
 3. On **Associate Foundry App** step, click **Create New**.
 
-    ![](../assets/images/difoundryapp.png)
+    ![Design Import Wizard dialog](../assets/images/difoundryapp.png)
 
     The default name is the same as your **Project Name**.
 
-    ![](../assets/images/difoundrybackend.png) 
+    ![Design Import Wizard dialog](../assets/images/difoundrybackend.png) 
          
 4. On **Identity Service**.
 
@@ -135,11 +135,11 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         |Client Secret| This is the App Secret in Domino REST API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
         |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
 
-        ![](../assets/images/dikeep.png)
+        ![Design Import Wizard dialog](../assets/images/dikeep.png)
 
-    2. Select the **identity service** - for example, MXGOISMyApp.
+    2. Select the **Identity Service** - for example, MXGOISMyApp.
 
-        ![](../assets/images/didrapi.png)
+        ![Design Import Wizard dialog](../assets/images/didrapi.png)
         
         !!!warning "Important"
             - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard.
@@ -152,14 +152,14 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     4. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
-        ![](../assets/images/didrapilogin.png)
+        ![Domino REST API permission request dialog](../assets/images/didrapilogin.png)
 
     5. Select your **Foundry App Identity Service** name associated to Domino REST API and click **Next**.
 
-        ![](../assets/images/difoundry.png)
+        ![Design Import Wizard dialog](../assets/images/difoundry.png)
         
         !!!warning "Important"
-            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#domino-database-acl-and-domino-rest-api-maximum-access-level).  
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#design-import).  
 
 5. On **Scope and Forms**
 
@@ -169,11 +169,11 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     1. Select the **scope** that you’ve configured in Domino REST API. 
 
         !!!warning "Important"
-            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-begin).
 
-        ![](../assets/images/discope.png)
+        ![Design Import Wizard dialog](../assets/images/discope.png)
 
-        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
+        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#design-import).
 
     2. **Select** or **deselect** the active `forms`, `fields` in each form, `views`, `agents`, `actions` and click **Next**. 
     
@@ -181,17 +181,17 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
             - The following lists show the forms, views and action you have **active** and **inactive** in the **Domino REST API**. When selecting items, you can only choose those that are active, such as forms, views, agents, and actions. Inactive items on the other hand, only display their disabled form, action, and agent names.
             - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often active within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
-        a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
+        1. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
-        ![](../assets/images/discopeform.png)
+            ![Design Import Wizard dialog](../assets/images/discopeform.png)
 
-        b. On the **Views** tab, you may select or deselect **views** and **actions**.
+        2. On the **Views** tab, you may select or deselect **views** and **actions**.
 
-        ![](../assets/images/didbviews.png)
+            ![Design Import Wizard dialog](../assets/images/didbviews.png)
 
-        c. On the **Agents** tab, you may select or deselect **agents**. 
+        3. On the **Agents** tab, you may select or deselect **agents**. 
 
-        ![alt text](../assets/images/diagents.png)
+            ![Design Import Wizard dialog](../assets/images/diagents.png)
         
     Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
 
@@ -200,7 +200,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     !!!note
         - It may take a while to complete the publishing of the imported Domino app.
 
-    ![](../assets/images/disummary.png)
+    ![Design Import Wizard dialog](../assets/images/disummary.png)
 
 7. On **Result**, see the final `forms`, `views`, `actions`,`agent` and then click **Done**.
  
@@ -211,11 +211,11 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         - Turn on the **Show only error** toggle to see all the fields with the error icon.
         - When selecting a scope with ***active Agents***, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
 
-    ![](../assets/images/diresult.png) 
+    ![Design Import Wizard dialog](../assets/images/diresult.png) 
 
 Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of `forms`. **The App Events [desktop]** appears.
 
-![](../assets/images/dioutput.png)
+![Volt MX Go Iris UI](../assets/images/dioutput.png)
 
 !!!note
     - You can view the final result of the Domino database `.nsf` that you configured in Domino REST API.
@@ -226,21 +226,21 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
 2. On **Getting Started**, click **Next**.
 
-    ![](../assets/images/diwizard.png)
+    ![Design Import Wizard dialog](../assets/images/diwizard.png)
 
 3. On **Associate Foundry App** step:
     
     1. Click **Use Existing**.
 
-        ![](../assets/images/dicreatenew.png)
+        ![Design Import Wizard dialog](../assets/images/dicreatenew.png)
 
     2. Select **Foundry Apps**, click **Associate** and close the form. 
 
-        ![](../assets/images/diassociate.png)
+        ![Design Import Wizard dialog](../assets/images/diassociate.png)
 
     3. Click **Next**.
 
-        ![](../assets/images/diexfoundry.png)
+        ![Design Import Wizard dialog](../assets/images/diexfoundry.png)
 
         !!!info
             - If you have an existing Domino Application Project on your UI and you want to import and associate it with another Volt MX Go Foundry app, click the **Unlink App**.
@@ -248,11 +248,11 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
 4. On **Identity Service**, select existing identity service.
 
-    ![](../assets/images/diexistingid.png)
+    ![Design Import Wizard dialog](../assets/images/diexistingid.png)
 
     1. Select the **identity service** - for example, MXGOISMyApp.
 
-        ![](../assets/images/didrapi.png)
+        ![Design Import Wizard dialog](../assets/images/didrapi.png)
         
         !!!warning "Important"
             - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard. Otherwise, the wizard will close.
@@ -261,14 +261,14 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
     3. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
 
-        ![](../assets/images/didrapilogin.png)
+        ![Domino REST API permission request dialog](../assets/images/didrapilogin.png)
 
     4. Select your **App Identity Service** name associated to Domino REST API and click **Next**.
 
-        ![](../assets/images/difoundry.png)
+        ![Design Import Wizard dialog](../assets/images/difoundry.png)
         
         !!!warning "Important"
-            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#domino-database-acl-and-domino-rest-api-maximum-access-level)  
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#design-import)  
 
 5. On **Scope and Forms**
     
@@ -278,11 +278,11 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     1. Select the **scope** that you’ve configured in Domino REST API.
 
         !!!warning "Important"
-            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-start).
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-begin).
 
-        ![](../assets/images/discope.png)
+        ![Design Import Wizard dialog](../assets/images/discope.png)
 
-        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#domino-rest-api-schema-issues).
+        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#design-import).
 
     2. **Select** or **deselect** the active `forms`, `views`, `agents` and `actions` and click **Next**. 
         
@@ -290,17 +290,17 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
             - The following lists show the forms, views and action  you have **active** and **inactive** in the **Domino REST API**. When selecting items, you can only choose those that are active, such as forms, views, agents, and actions. Inactive items, on the other hand, only display their disabled form, action, and agent names.
             - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often configured within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
       
-        a. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
+        1. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
         
-        ![](../assets/images/discopeform.png)
+            ![Forms tab](../assets/images/discopeform.png)
 
-        b. On the **Views** tab, you may select or deselect **views** and **actions**. 
+        2. On the **Views** tab, you may select or deselect **views** and **actions**. 
 
-        ![](../assets/images/didbviews.png)
+            ![Views tab](../assets/images/didbviews.png)
 
-        c. On the **Agents** tab, you may select or deselect **agents**. 
+        3. On the **Agents** tab, you may select or deselect **agents**. 
 
-        ![alt text](../assets/images/diagents.png)
+            ![Agents tab](../assets/images/diagents.png)
 
         Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
 
@@ -309,18 +309,18 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
     !!!note
         - It may take a while to complete the publishing of the imported Domino app.
 
-    ![](../assets/images/disummary.png)
+    ![Design Import Wizard dialog](../assets/images/disummary.png)
 
 7. On **Result**, see the final `forms`, `views`, `actions` and `agents`, and then click **Done**.
 
     !!!note
         When selecting a scope with active Agents, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
  
-    ![](../assets/images/diresult.png) 
+    ![Design Import Wizard dialog](../assets/images/diresult.png) 
 
 Once you click **Done**, each of the selected forms, views, and agents have imported into the Volt MX Go Iris. **The App Events [desktop]** appears.
 
-![](../assets/images/dioutput.png)
+![Volt MX Go Iris user interface](../assets/images/dioutput.png)
 
 ## Copy callback URL in Volt MX Go Foundry
 
@@ -421,7 +421,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
     2. Click **Open**. If the file is pre-existing, a dialog prompt will appear with the option to overwrite it.
 
-    ![](../assets/images/dieditsave.png)
+    ![Update form](../assets/images/dieditsave.png)
 
 6. Click **Save**.
 

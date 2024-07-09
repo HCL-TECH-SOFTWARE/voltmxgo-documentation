@@ -40,11 +40,11 @@ Field data types in the generated Volt MX Go Foundry data model are effectively 
 
 For common data types, the field type in the generated Volt MX Go Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`. 
 
-![](../assets/images/recipe-servings-keepschema.png)
+![Domino REST API schema](../assets/images/recipe-servings-keepschema.png)
 
 In the Volt MX Go Foundry object model, the field type of *Servings* is `number`:
 
-![](../assets/images/recipe-servings-foundrymodel.png)
+![Volt MX Go Foundry object model](../assets/images/recipe-servings-foundrymodel.png)
 
 For Domino object types not found in Volt MX Go Foundry, the Volt MX Go Foundry object field type is set to `string` and Domino type information is retained as properties in the field metadata attribute. 
 
@@ -53,7 +53,7 @@ Two properties are used for Domino data type information:
 - `dominoSpecialType` property indicates if the data is `Rich Text`, `Array` (multi-value), or `Date Only`. 
 - `dominoArrayComponentType` property indicates the array type for multi-value fields, for example, a multi-value array of strings as shown in the following example:
 
-![](../assets/images/recipe-richtext.png)
+![Metadata dialog](../assets/images/recipe-richtext.png)
 
 The table shows a simplified list of data-type mappings between Domino REST API and Volt MX Go Foundry:
 
