@@ -329,7 +329,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 3. On the **Configure Services tab** &rarr; **Identity tab**, select and click your *Identity Service* name.
 4. Find and click *copy* of **Callback URL** field.
 
-    ![alt text](../assets/images/dicallbackurl.png)
+    ![Callback URL field](../assets/images/dicallbackurl.png)
 
 5. Send the **callback URL** to Domino REST API admin.
 

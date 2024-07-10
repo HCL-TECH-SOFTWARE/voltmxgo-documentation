@@ -8,13 +8,13 @@ List of issues and corresponding resolutions.
 
     - 403 Insufficient access error due to incorrect Maximum Access Level[^1] of scope:
         
-        ![alt text](../assets/images/didrapierr.png)
+        ![Error dialog](../assets/images/didrapierr.png)
 
         You should contact your Domino REST API administrator to update your scope's Maximum Access Level to *Designer*.
 
     - 403 Insufficient access error due to incorrect database access level:
 
-        ![alt text](../assets/images/diaclerr.png)
+        ![Error dialog](../assets/images/diaclerr.png)
     
         You should contact your Domino administrator to update your assigned access level to the Domino database to *Designer*.
 

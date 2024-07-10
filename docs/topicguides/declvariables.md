@@ -16,7 +16,7 @@ There are two mechanisms by which the Rosetta Converter accepts and converts var
 ```
 =LET(x, 5, SUM(x, 1))
 ```
-![alt text](../assets/images/vflet.png)
+![LET function example](../assets/images/vflet.png)
 
 ## Using JSP style syntax
 
@@ -26,7 +26,7 @@ Example:
 
 - **OpenFormula:**
 
-    ![alt text](../assets/images/vfjsp.png)
+    ![OpenFormula example](../assets/images/vfjsp.png)
 
 Although Notes formula language already provides means to declare variables, the converter can also use the **JSP expression** syntax in a ***Notes*** formula.
 
@@ -34,13 +34,13 @@ Examples:
 
 - **Notes formula** with native notes variable declaration expression:
     
-    ![alt text](../assets/images/vfnotesnative.png)
+    ![Notes formula example](../assets/images/vfnotesnative.png)
 
 
 - **Notes formula** with JSP-based variable declaration expression:
 
-    ![alt text](../assets/images/vfnotesjsp.png)
+    ![Notes formula example](../assets/images/vfnotesjsp.png)
 
     
 !!!note
-    To use JSP expression in formulas, select **Passthrough unrecognized formula language into JavasSript conversion results** checkbox. For more information, see [Configure VoltFormula's Rosetta API Options](../howto/configrosetta.md).
+    To use JSP expression in formulas, select **Passthrough unrecognized formula language into JavasSript conversion results** checkbox. For more information, see [**Configure VoltFormula's Rosetta API Options**](../howto/configrosetta.md).
