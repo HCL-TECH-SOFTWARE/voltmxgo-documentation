@@ -29,7 +29,7 @@ The Volt MX Go documentation has a top menu bar that includes the main document 
 
 Each topic page has a main body, containing the content, and sidebars. The left sidebar shows all the topics under the selected main document section. The right sidebar shows all the sections in the topic page.
 
-A topic page may include links to other topics within the documentation and links to external references. The links are distinguishable by a different font color. The links to topics within the documentation open in the same browser tab, while links to external references open in new browser tabs and are distinguishable by the :fontawesome-solid-up-right-from-square:{.newpageicon} icon.  
+A topic page may include links to other topics within the documentation and links to external references. The links are distinguishable by a different font color. The links to topics within the documentation open in the same browser tab, while links to external references open in new browser tabs and are distinguishable by the :octicons-link-external-16:{.newpageicon} icon.  
   
 ## Searching for information
 
@@ -39,6 +39,6 @@ The search result shows the number of documents with content matching all or any
 
 ## Support and community
 
-- To open support tickets, go to the [**Customer Support**](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon} portal.  
-- To share information, ask questions, and learn about Volt MX Go, go to the [**Community**](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon} portal.
+- To open support tickets, go to the [**Customer Support**](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;:octicons-link-external-16:{.newpageicon} portal.  
+- To share information, ask questions, and learn about Volt MX Go, go to the [**Community**](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;:octicons-link-external-16:{.newpageicon} portal.
 
