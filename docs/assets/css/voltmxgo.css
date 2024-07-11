@@ -83,3 +83,7 @@ pre {
   tr.lostLinkItem:nth-child(even) {
     background-color: #eeeeee;
   }
+
+  .newpageicon {
+    font-size: x-small;
+  }

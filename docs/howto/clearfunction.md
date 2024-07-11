@@ -13,81 +13,81 @@ Shows you how to clear JavaScript code and formulas in **Controller** and **Acti
 
 ## Procedure in Controller
 
-**For removing formula using Clear button** 
+### For removing formula using Clear button
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Controller**.
 
-2. Click the **Controller** you want change.
+2. Click the **Controller** you want to change.
 
 3. Click **Clear** to delete the formula and the JavaScript code in the editor. 
 
-    ![alt text](../assets/images/vfclearformula.png)
+    ![Clear button in Formula Editor](../assets/images/vfclearformula.png)
 
-4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
+4. A confirmation dialog shows to confirm deletion. Click **Yes** to delete the formula and JavaScript code.
 
-    ![alt text](../assets/images/vfdeldialog.png)
+    ![Delete confirmation dialog](../assets/images/vfdeldialog.png)
 
-    The **Clear** button deleted the formula and the JavaScript code.
+    The Formula Editor after deleting the formula and the JavaScript code.
 
-    ![alt text](../assets/images/vfremoveform.png)
+    ![Formula editor after deletion](../assets/images/vfremoveform.png)
 
-**For removing formula using Delete Formula button**
+### For removing formula using Delete Formula button
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Controller**.
 
-2. Click the **Controller** you want change.
+2. Click the **Controller** you want to change.
 
-3. Right-click on the JavaScript code and click the **Delete button** 
+3. Right-click on the JavaScript code and select **Delete Formula**. 
 
-    ![alt text](../assets/images/vfclearformula2.png)
+    ![Selecting Delete Formula from the context menu](../assets/images/vfclearformula2.png)
 
-4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
+4. A confirmation dialog shows to confirm deletion. Click **Yes** to delete the formula and JavaScript code.
 
-    ![alt text](../assets/images/vfdeldialog2.png)
+    ![Delete confirmation dialog](../assets/images/vfdeldialog2.png)
 
-    The **Clear** button deleted the formula and the JavaScript code.
+    The Formula Editor after deleting the formula and the JavaScript code.
 
-    ![alt text](../assets/images/vfremoveform2.png)
+    ![Formula editor after deletion](../assets/images/vfremoveform2.png)
 
 
 ## Procedure in Action Editor
 
-**For deleting formula and JavaScript code using Clear button**
+### For deleting formula and JavaScript code using Clear button
 
-1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Forms**. For example, you have created a **button** on your form.
+1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Forms**. For example, you have created a **Button** on your form.
 
 2. Click **Edit** on **Action** tab. For example, **onClick**.
 
-    ![alt text](../assets/images/vfbutton.png)   
+    ![Edit button on Action tab](../assets/images/vfbutton.png)   
 
-3. The **Action Editor** window opens. Click **Clear** button to delete the formula and the JavaScript code in the editor. 
+3. The **Action Editor** window opens. Click **Clear** to delete the formula and the JavaScript code in the editor. 
 
-    ![alt text](../assets/images/vfclearformula3.png)
+    ![Action Editor](../assets/images/vfclearformula3.png)
 
 4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
 
-    ![alt text](../assets/images/vfdeldialog3.png)
+    ![Delete confirmation dialog](../assets/images/vfdeldialog3.png)
 
-    The **Clear** button deleted the formula and the JavaScript code.
+    The **Action Editor** after deleting the formula and the JavaScript code.
 
-    ![alt text](../assets/images/vfremoveform3.png)
+    ![Action Editor after completing delete](../assets/images/vfremoveform3.png)
 
-**For removing formula using Delete Formula button**
+### For removing formula using Delete Formula button
 
 1. Go to your **Project** &rarr; **Responsive Web/ Desktop/ Mobile** &rarr; **Forms**.
 
 2. Click **Edit** on **Action** tab. For example, **onClick**.
 
-    ![alt text](../assets/images/vfbutton.png)   
+    ![Action tab](../assets/images/vfbutton.png)   
 
-3. The **Action Editor** window opens. Right-click on the JavaScript code and click the **Delete button**. 
+3. The **Action Editor** window opens. Right-click on the JavaScript code and click **Delete Formula**. 
 
-    ![alt text](../assets/images/vfclearformula4.png)
+    ![Selecting Delete Formula](../assets/images/vfclearformula4.png)
 
 4. A confirmation dialog shows to confirm delete. Click **Yes** to delete the formula and JavaScript code.
 
-    ![alt text](../assets/images/vfdeldialog4.png)
+    ![Delete confirmation dialog](../assets/images/vfdeldialog4.png)
 
-    The **Clear** button deleted the formula and the JavaScript code.
+    The **Action Editor** after deleting the formula and the JavaScript code.
 
-    ![alt text](../assets/images/vfremoveform4.png)
+    ![Action Editor](../assets/images/vfremoveform4.png)

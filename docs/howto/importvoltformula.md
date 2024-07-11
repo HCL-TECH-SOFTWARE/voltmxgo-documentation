@@ -18,14 +18,14 @@ Guides you through the process of importing the **Domino app** and integrating t
 2. Finished all the steps in the **VoltMX Design Import Wizard**.
 3. On the Volt MX Go Iris project, open the form that has the **actions** (i.e., Create Customer) button imported from Domino view.
 
-    ![](../assets/images/dibutton.png)
+    ![Form with actions button imported](../assets/images/dibutton.png)
 
 4. On **Action** properties tab, select **onClick**.
 5. Click **Edit**. The **Action Editor** page will appear.
 6. Double-click **Add Formula** in the flowchart.
 7. The formula language window will appear containing the *Formula Language* and `voltmmx.rosettajs` syntax.
 
-    ![](../assets/images/divoltformula.png) 
+    ![Formula Language editor](../assets/images/divoltformula.png) 
 
 8. Click **Save**.
 

@@ -15,7 +15,7 @@ You have lauched Volt MX Go Iris.
 1. Go to **Project Settings**, and select **VoltFormula**.
 2. On the **Register Custom API** text box, click the **Browse** icon.
 
-     ![](../assets/images/vfreg.png)
+     ![Register Custom API text box](../assets/images/vfreg.png)
 
 3. Select your custom API `.json` file.
 4. Click **Done**.
@@ -25,7 +25,7 @@ You have lauched Volt MX Go Iris.
 1. Go to the **Project Settings**, and select **VoltFormula**.
 2. On the  **Register Custom API** text box, click **X** to remove the custom API.
 
-    ![](../assets/images/vfunreg.png)
+    ![Register Custom API text box](../assets/images/vfunreg.png)
 
 3. Click **Done**.
 

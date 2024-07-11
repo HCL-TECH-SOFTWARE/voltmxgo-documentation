@@ -86,7 +86,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
         !!!warning "Important"
             Make sure that the name of the scope you enter in the **Scope** text box matches the name of the scope that you have configured in your app in Domino REST API. 
 
-    ![](../assets/images/identityproviderdetails.png)
+    ![Identity service configuration page](../assets/images/identityproviderdetails.png)
 
 5.	Under **Client Details**:
 
@@ -126,7 +126,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 5.  Click **Test Connection** to verify that the entered URL is correct. If the test is successful, a check mark appears beside the **Server** tab.
 6.  Click **Save**.
 
-    ![](../assets/images/addenvironment.png)
+    ![Add a New Environment dialog](../assets/images/addenvironment.png)
 
 ## Configure an Object service
 
@@ -137,7 +137,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 5. Select **HCL Domino** under **Business Adapters** for the **Endpoint Type**.
 4. Set the **Metadata Security Level** to **Authenticated App Users** to restrict the download of object service metadata to users that have successfully authenticated using the Identity Service.
 
-    ![](../assets/images/objectendpointtype.png)
+    ![New object service configuration page](../assets/images/objectendpointtype.png)
 
 5.	Under **Connection Parameters**:
 
@@ -152,8 +152,6 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
         !!!note
             Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/method.md).   
 
-    <!--![](../assets/images/objectconparam1.png)-->
-
     !!!tip
         To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a *Connection Successful* message if the configured connection parameters are correct.
 
@@ -165,7 +163,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
     !!!tip
         Click **Test Login** to test the authentication. If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and then click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything. A *Test Login Successful* message is then displayed.
 
-    ![](../assets/images/objectauthentication.png)
+    ![Authentication section](../assets/images/objectauthentication.png)
 
 7.	Click **Save and Configure**.
 
@@ -304,28 +302,4 @@ For more information on supported parameters, see [Supported OData query paramet
     ![Update result](../assets/images/bulkupdate3.png){: style="height:60%;width:60%"}
 
 6. Click **Save** after viewing.
-
-<!--## Additional procedure
-
-### Create and configure an application in Domino REST API
-
-1. Log in to Domino REST API.
-
-    !!!tip
-        For more details, see [Access Domino REST API](../howto/accessdrapi.md).
-
-2. Select **Application Management - OAuth** from the home page.
-3. On the **Application Management** page, click **Add Application**.
-4. Under **Add New Application**, fill in the form:
-    1. Enter an **Application Name**.
-    2. Provide a **Description**.
-    3. Paste the callback URL that you have copied when configuring the Identity Service in Volt MX Go Foundry in the **Callback URLs** text box.
-    4. Provide the application startup page URL under **Startup Page**. 
-    4. Select and add a scope in the **Scope** field.
-5. Click **Add**. 
-6. Hover over the application tile and click **Generate Application Secret**. Take note of the App secret and the App ID.
-
-!!!note
-    Make sure to take note of the App ID and App secret as you need these details in configuring the Identity Service in Volt MX Go Foundry. 
--->
 

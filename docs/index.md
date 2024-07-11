@@ -13,7 +13,7 @@ Volt MX Go modernizes and extends the value of your Domino applications with the
 - expanding who can code applications built in Domino, allowing for app modernization or migration without requiring a complete rewrite of the code
 - importing existing Domino views, forms, and fields into Volt MX Go Foundry to	get a head start on your Volt MX Go applications 
 
-To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
+To learn more, see [**Introducing Volt MX Go**](topicguides/introvoltmxgo.md).
 
 ---
 ## Get started
@@ -27,13 +27,13 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ---
 ## What's new
 
-For the latest release information about Volt MX Go, see [What's new](references/whatsnew/whatisnew.md).
+For the latest release information about Volt MX Go, see [**What's new**](references/whatsnew/whatisnew.md).
 
 ---
 
 ## Quick links
 
-- [Rosetta API reference documentation](javadoc/index.html){: target="_blank" rel="noopener noreferrer"}
+- [Rosetta API reference documentation](javadoc/index.html)
 - [Known limitations](references/knownlimitation.md)
 - [Support](references/index.md#support)
 - [Documentation references](references/index.md#documentation-references)
@@ -41,7 +41,7 @@ For the latest release information about Volt MX Go, see [What's new](references
 ---
 ## How the documentation is organized
 
-The Volt MX Go documentation is based on the [Diátaxis framework](https://diataxis.fr/){: target="_blank" rel="noopener noreferrer"}, which organizes documentation into the following modes to address users' documentation needs at different times and in different circumstances. Below shows an overview that guides you on where to look for needed information:
+The Volt MX Go documentation is based on the [**Diátaxis framework**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://diataxis.fr/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}, which organizes documentation into the following modes to address users' documentation needs at different times and in different circumstances. Below shows an overview that guides you on where to look for needed information:
 
 **[Tutorials](tutorials/index.md)** - Hands-on introduction to Volt MX Go
 
@@ -52,5 +52,5 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 **[References](references/index.md)** - Technical references and descriptions on using Volt MX Go
 
 !!!tip
-    For more information on effectively using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md). 
+    For more information on using the Volt MX Go documentation, see [**Guide to documentation**](references/docguide.md). 
 

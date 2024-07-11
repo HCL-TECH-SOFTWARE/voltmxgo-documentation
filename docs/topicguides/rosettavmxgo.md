@@ -2,4 +2,4 @@
 
 ## Flow overview
 
-![](../assets/images/vfrosetta.png)
+![Rosetta flow overview](../assets/images/vfrosetta.png)

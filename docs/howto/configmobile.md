@@ -7,15 +7,15 @@ This procedure describes how to configure the mobile app browser before building
 ## Procedure
 
 1. Go to the **Design** tab.
-2. In your **Project**, go to **Forms**, click the **Start-Up form** (e.g, frmLogin).
+2. In your **Project**, go to **Forms** and click the **Start-Up form**, for example the `frmLogin`.
 
-    ![](../assets/images/didesignproj.png)
+    ![Project tab](../assets/images/didesignproj.png)
 
 3. Click the login button and click the **Properties** tab.
 4. Under **Properties**, click the **Action** tab.
 5. Click **Edit** next to the **onClick** item. The **Action Editor** opens.
 
-    ![](../assets/images/didesignaction.png)
+    ![Action tab](../assets/images/didesignaction.png)
 
 6. Click the **Invoke service**.
 
@@ -25,6 +25,6 @@ This procedure describes how to configure the mobile app browser before building
 
 7. Select **Use Device Browser** under **Select Browser Widget**.
 
-    ![](../assets/images/didesigninvoke.png )
+    ![Action Editor](../assets/images/didesigninvoke.png)
 
 8. Click **Save**.

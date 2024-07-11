@@ -16,7 +16,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
 ## Procedure
 
-1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-the-new-volt-mx-go-foundry-app).
+1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-a-new-volt-mx-go-foundry-app).
 
 !!!important
     - For the Volt MX Go release v2.0.4, only limited Agents are supported.
@@ -36,32 +36,32 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
   1. On the **Views**, click the **Customers B ByRegion**. 
 
-      ![alt text](../assets/images/diviewagent.png)
+      ![Dashboard](../assets/images/diviewagent.png)
 
 
       
        The **Customers B ByRegion** will open. 
        
-      ![alt text](../assets/images/diagentview.png)
+      ![Customers B ByRegion window](../assets/images/diagentview.png)
   
   
   2. **Agents** action will be available on the navigation bar. Click the **Agents**.
 
-      ![alt text](../assets/images/diactions.png)
+      ![Agents context menu](../assets/images/diactions.png)
 
       The four configured Agent will appear as **actions**. These **actions** are imported from the Domino Agent, which is already set up inside the `nsf` file.
 
   3. Click the **actions** *West to East*. 
 
-     ![alt text](../assets/images/diactionclick.png)
+     ![Select West to East action](../assets/images/diactionclick.png)
 
   4. It will give a prompt that the Agent has been done processing. Click **OK**.
 
-     ![alt text](../assets/images/diagtmsg.png)
+     ![Notification prompt](../assets/images/diagtmsg.png)
 
   5. All customers in the *West* Region will move to the *East* Region.
 
-     ![alt text](../assets/images/diactionsresult.png)
+     ![Customers B ByRegion window](../assets/images/diactionsresult.png)
 
 
 
