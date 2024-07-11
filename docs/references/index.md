@@ -35,23 +35,23 @@ Describes different [**logging levels**](reflogginglevels.md) for better monitor
 
 ## Documentation references
 
-[**HCL Volt MX Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"}
+[**HCL Volt MX Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 - Provides documentation and more information about Volt MX Iris and Volt MX Foundry.
 
-[**HCL Domino REST API Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"}
+[**HCL Domino REST API Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 - Provides documentation and more information about Domino REST API. 
 
-[**HCL Domino Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://help.hcltechsw.com/domino/welcome/index.html "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"}
+[**HCL Domino Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://help.hcltechsw.com/domino/welcome/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 - Provides documentation and more information on how to install, configure, and manage Domino servers and related components.
 
-[**HCL Software Product Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://help.hcltechsw.com/ "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"}
+[**HCL Software Product Documentation**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://help.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 - Provides a complete list of links to the documentation of different HCL Software products. 
 
-[**VoltScript**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"}
+[**VoltScript**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 - Provides documentation and more information about the **early access version** of VoltScript and related components.
 
@@ -65,9 +65,9 @@ To learn about identified issues and their corresponding workarounds and resolut
 
 ## Support 
 
-- To open support tickets, go to the [**Customer Support**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://support.hcltechsw.com/csm "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"} portal.  
+- To open support tickets, go to the [**Customer Support**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"} portal.  
 
-- To share information, ask questions, and learn about Volt MX Go, go to the [**Community**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens in a new window"){: target="_blank" rel="noopener noreferrer"} portal.
+- To share information, ask questions, and learn about Volt MX Go, go to the [**Community**&nbsp;:fontawesome-solid-up-right-from-square:{.newpageicon}](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"} portal.
 
 ## Summernote Editor
 
