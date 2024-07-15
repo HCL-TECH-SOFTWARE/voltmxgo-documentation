@@ -4,10 +4,10 @@
 
 There are two mechanisms by which the Rosetta Converter accepts and converts variables into JavasScript:
 
-- [LET function](https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999){: target="_blank" rel="noopener noreferrer"} in Excel[^1]
+- [**LET function**](https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999) in Excel[^1]
 - JSP style syntax (code passthrough)
 
-[^1]: Excel is a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.
+[^1]: **Excel is a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.**
 
 ## Using LET function with OpenFormula
 

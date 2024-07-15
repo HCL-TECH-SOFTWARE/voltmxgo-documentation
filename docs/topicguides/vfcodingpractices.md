@@ -61,7 +61,7 @@ For VoltFormula, the API implementations of `@GetField` and `@SetField` Notes Fo
 
 ### Mixing formula languages with other languages
 
-The Rosetta Converter can process formula language mixed with other language artifacts by making use of the **allowPassthrough** option. This way, a formula snippet of code can be augmented with other code, such as JavaScript, to have the resulting converted code combine the different languages for a desired result. For more information, see [Using JSP style syntax](declvariables.md#using-jsp-style-syntax) and **allowPassthrough** option in [Rosetta Converter configuration options](rosettaconverterconfig.md#configuration-options).
+The Rosetta Converter can process formula language mixed with other language artifacts by making use of the **allowPassthrough** option. This way, a formula snippet of code can be augmented with other code, such as JavaScript, to have the resulting converted code combine the different languages for a desired result. For more information, see [**Using JSP style syntax**](declvariables.md#using-jsp-style-syntax) and **allowPassthrough** option in [**Rosetta Converter configuration options**](rosettaconverterconfig.md#configuration-options).
 
 ### How does VoltFormula maintain project formulas?
 
