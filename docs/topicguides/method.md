@@ -57,17 +57,18 @@ With `$filter`, the following canonical functions are supported:
 - `endswith`
 - `startswith`
 
-!!!example
-    |Example query|Expected result|
-    |----|----|
-    |`$filter=Type eq 'Dessert'`|Returns all documents whose `Type` field is equal to `Dessert`.|
-    |`$filter=Name eq CNx_003dadmin`|Returns all documents whose `Name` field is equal to `CN=admin`.|
-    |`$top=2`|Returns the first two documents.|
-    |`$skip=3`|Returns documents starting from the fourth document onwards.|
-    |`$select=Name&$filter=substringof(Name,'Hot') eq true`|Returns documents with `Hot` included in the `Name` field, only returning the `Name` field.|
-    |`$select=Name,Ingredients`|Returns documents that include only the `Name` and `Ingredients` fields.|
-    |`$filter=x_0040unid eq xxxx and Form eq unknown`|Returns only the form name and form alias names for the document specified by UNID xxxx.|
-    |`$select=Name,mydate,x_0040created&$filter=mydate ge '2022-03-10T05:00:00Z'`|Returns documents that include only the `Name` field, `mydate` field, and `x_0040created` columns, with `mydate` values on or after 2022-03-10T05:00:00Z.|
+**Examples**
+    
+|Example query|Expected result|
+|----|----|
+|`$filter=Type eq 'Dessert'`|Returns all documents whose `Type` field is equal to `Dessert`.|
+|`$filter=Name eq CNx_003dadmin`|Returns all documents whose `Name` field is equal to `CN=admin`.|
+|`$top=2`|Returns the first two documents.|
+|`$skip=3`|Returns documents starting from the fourth document onwards.|
+|`$select=Name&$filter=substringof(Name,'Hot') eq true`|Returns documents with `Hot` included in the `Name` field, only returning the `Name` field.|
+|`$select=Name,Ingredients`|Returns documents that include only the `Name` and `Ingredients` fields.|
+|`$filter=x_0040unid eq xxxx and Form eq unknown`|Returns only the form name and form alias names for the document specified by UNID xxxx.|
+|`$select=Name,mydate,x_0040created&$filter=mydate ge '2022-03-10T05:00:00Z'`|Returns documents that include only the `Name` field, `mydate` field, and `x_0040created` columns, with `mydate` values on or after 2022-03-10T05:00:00Z.|
 
 ## Supported OData query parameters for view-based GET method 
 
@@ -86,21 +87,18 @@ The Domino Adapter supports these OData query parameters for the GET method on v
 
 With `$filter`, the canonical function `startswith` is supported.
 
-<!--- `documentsonly` - this function isn't part of the OData standards, but for Domino use only-->
+**Examples**
 
-!!!example
-    |Example query|Expected result|
-    |----|----|
-    |`$top=10`|Returns 10 rows of data unless the total number of data rows in the view database is less than 10.|
-    |`$skip=0`|Returns rows starting from the first view entry in the view (skip zero rows), equivalent to omitting `$skip`.|
-    |`$skip=5`|Returns data starting from the sixth view entry in the view.|
-    |`$filter=Year eq 2021`|Returns all view entries in the view whose `Year` field is equal to `2021`.|
-    |`$filter=Name eq CNx_003dadmin`|Returns all view entries in the view whose `Name` field is equal to `CN=admin`|
-    |`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
-    |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
-    |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
-
-<!--|`$filter=documentsonly eq true`|The result-set contains documents instead of view entries.|-->
+|Example query|Expected result|
+|----|----|
+|`$top=10`|Returns 10 rows of data unless the total number of data rows in the view database is less than 10.|
+|`$skip=0`|Returns rows starting from the first view entry in the view (skip zero rows), equivalent to omitting `$skip`.|
+|`$skip=5`|Returns data starting from the sixth view entry in the view.|
+|`$filter=Year eq 2021`|Returns all view entries in the view whose `Year` field is equal to `2021`.|
+|`$filter=Name eq CNx_003dadmin`|Returns all view entries in the view whose `Name` field is equal to `CN=admin`|
+|`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
+|`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
+|`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
 
 ## Attachments
 
@@ -133,14 +131,12 @@ You may perform the following binary operations:
     - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to remove the attachment.
 
 !!!warning "Important"
-    - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Volt MX Go Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat){: target="_blank" rel="noopener noreferrer"} or updating `integration.resourceMemoryLimit` in `values.yaml` for Volt MX Go Foundry on supported Kubernetes platform.
-    <!-- Large attachment files may cause some performance issues. As of now, it's recommended to limit attachment sizes to a maximum of 100 MB.-->
-    - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html){: target="blank"} in the Domino REST API documentation.
-    <!-- The `$FILES` item is a meta-type field that represents the names of the attachments in a document. It's built from the `$FILE` items in a note, and it represents a list of file names attached to the document. The `$FILES` field can't be used for `$filters` to find notes with a specified attachment, such as `$filter=x_0024FILES eq attName.txt`. However, you can use `$FILES` in a select command, such as `$select=x_0024FILES`.-->   
+    - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Volt MX Go Foundry configured memory resource by [**configuring heap size**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat) or updating `integration.resourceMemoryLimit` in `values.yaml` for Volt MX Go Foundry on supported Kubernetes platform.
+    - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [**Change file size limit**](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html) in the Domino REST API documentation.   
  
 ## Using PATCH verb from Volt MX SDK
 
-The Volt MX SDK has CRUD functions allowing an end-user application to use the REST API to interact with the Domino data in the back end. If you want to use the PATCH verb, you need to use the `customVerb` function from the Volt MX SDK. For more information, see [customVerb method](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#customverb-method){: target="_blank" rel="noopener noreferrer"} in the HCL Volt MX Documentation.
+The Volt MX SDK has CRUD functions allowing an end-user application to use the REST API to interact with the Domino data in the back end. If you want to use the PATCH verb, you need to use the `customVerb` function from the Volt MX SDK. For more information, see [**customVerb method**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#customverb-method) in the HCL Volt MX Documentation.
 
 ???example "Refer to the code example for using the SDK's `customVerb` function."   
 
@@ -170,7 +166,7 @@ The Volt MX SDK has CRUD functions allowing an end-user application to use the R
  Using the binary APIs with Domino Adapter requires more properties in the functional call. You need to add an object with a `queryParams` key to the options argument of the `createBinaryContent`. The object should contain query parameters required for using the binary APIs with Domino Adapter, including `unid` and `name` parameters. 
 
 !!!note
-    - For more information, see the general use of the [binary APIs from the Volt MX SDK](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method){: target="_blank" rel="noopener noreferrer"}.
+    - For more information, see the general use of the [**binary APIs from the Volt MX SDK**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method) in the Volt MX documentation.
     - There is no function in the Volt MX SDK for calling `deleteBinary`.
 
 ???example "Refer to the code examples for using the SDK's binary functions."
