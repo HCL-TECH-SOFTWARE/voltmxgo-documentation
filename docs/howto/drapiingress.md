@@ -1,7 +1,5 @@
 # Configure Kubernetes Ingress for Domino REST API
 
-<!--# DRAPI Ingress-->
-
 --8<-- "devtestenvironment.md"
 
 ## About this task
@@ -29,15 +27,15 @@ Familiarize yourself with the various properties and parameters related to Kuber
 
      - **ingress.tls.drapiCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, the Cluster SSL certificate will be used for TLS.
 
-     - **ingress.tls.drapiCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-custom-cert.cert` where my-drapi-custom-cert.cert is the name of your certificate file.  This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1){: target="_blank" rel="noopener noreferrer"}.
+     - **ingress.tls.drapiCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-custom-cert.cert` where my-drapi-custom-cert.cert is the name of your certificate file.  This certificate must be in DER format as per [**Section 5.1 of RFC 7468**](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
 
-     - **ingress.tls.drapiCustomCert.key**: The file name for the custom key. Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located). The value of this property should be of the form `my-drapi-custom-cert.key` where my-drapi-custom-cert.key is the name of your private key file. The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11){: target="_blank" rel="noopener noreferrer"}.
+     - **ingress.tls.drapiCustomCert.key**: The file name for the custom key. Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located). The value of this property should be of the form `my-drapi-custom-cert.key` where my-drapi-custom-cert.key is the name of your private key file. The key file must be PKCS #8 in DER format [**Section 11 of RFC 7468**](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
 
      - **ingress.tls.drapiManagementCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, then the Cluster SSL certificate will be used for TLS.
 
-     - **ingress.tls.drapiManagementCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-mgmt-custom-cert.cert` where my-drapi-mgmtcustom-cert.cert is the name of your certificate file. This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1){: target="_blank" rel="noopener noreferrer"}.
+     - **ingress.tls.drapiManagementCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-mgmt-custom-cert.cert` where my-drapi-mgmtcustom-cert.cert is the name of your certificate file. This certificate must be in DER format as per [**Section 5.1 of RFC 7468**](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
 
-     - **ingress.tls.drapiManagementCustomCert.key**: The file name for the custom key.  Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located).   The value of this property should be of the form `my-drapi-mgmt-custom-cert.key` where my-drapi-mgmt-custom-cert.key is the name of your private key file.  The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11){: target="_blank" rel="noopener noreferrer"}.
+     - **ingress.tls.drapiManagementCustomCert.key**: The file name for the custom key.  Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located).   The value of this property should be of the form `my-drapi-mgmt-custom-cert.key` where my-drapi-mgmt-custom-cert.key is the name of your private key file.  The key file must be PKCS #8 in DER format [**Section 11 of RFC 7468**](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
 
      - **ingress.annotations**: Allows you to specify additional annotations that will be added to every ingress object. Add one annotation per line. Each annotation should be indented 2 spaces and of the format  `annotationName: value`. When rendered, your annotation value will automatically be quoted.
 
@@ -47,11 +45,11 @@ Familiarize yourself with the various properties and parameters related to Kuber
 You can configure Kubernetes Ingress to accept connections over HTTP or HTTPS. HTTP isn't secure but works without any extra configuration. It's recommended to use HTTPS for most deployments.
 
 !!!note
-    You can't easily change the deployment domain name once installed, this includes changing from HTTP to HTTPS. For more information, see [How to change Hostname/IP address and port details of Volt MX Go Foundry Server?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0089025){: target="_blank" rel="noopener noreferrer"}.
+    You can't easily change the deployment domain name once installed, this includes changing from HTTP to HTTPS. For more information, see [**How to change Hostname/IP address and port details of Volt MX Go Foundry Server?**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0089025).
 
 One approach to enable HTTPS is to use a self-signed SSL certificate, which avoids purchasing your own certificate from a Certificate Authority (CA). However, since Volt MX Go Foundry makes back-end server to server requests between applications, there are more steps to enable Volt MX Go Foundry to trust the secured communication channel when utilizing a self-signed certificate.
 
-If you configure your Kubernetes Ingress to use a self-signed SSL certificate or an SSL certificate from your enterprise's own Certificate Authority that's not within a trusted root certification path, or if you use the cluster default cert created from a self-signed CA, you need to add the SSL certificate or CA certificate to the trust store used by Tomcat. Failure to do so results in runtime errors when Volt MX Go Foundry components need to communicate with each other. For more information, see [Certification Authority Trust Model](http://technet.microsoft.com/en-us/library/cc962065.aspx){: target="_blank" rel="noopener noreferrer"}.
+If you configure your Kubernetes Ingress to use a self-signed SSL certificate or an SSL certificate from your enterprise's own Certificate Authority that's not within a trusted root certification path, or if you use the cluster default cert created from a self-signed CA, you need to add the SSL certificate or CA certificate to the trust store used by Tomcat. Failure to do so results in runtime errors when Volt MX Go Foundry components need to communicate with each other. For more information, see [**Certification Authority Trust Model**](http://technet.microsoft.com/en-us/library/cc962065.aspx).
 
 ## Procedure
 
@@ -63,9 +61,9 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
 You can use any of the following options:
 
 - Purchase a certificate from a trusted Certificate Authority
-- Obtain a free certificate from [Let's Encrypt](https://letsencrypt.org/){: target="_blank" rel="noopener noreferrer"} or [ZeroSSL](https://zerossl.com){: target="_blank" rel="noopener noreferrer"}.
-- For test purposes, [create a self-signed certificate](#create-a-self-signed-certificate).
-- Use the [Kubernetes default cluster certificate](#obtain-default-cluster-certificate) by pulling it from your cluster.
+- Obtain a free certificate from [**Let's Encrypt**](https://letsencrypt.org/) or [**ZeroSSL**](https://zerossl.com).
+- For test purposes, [**create a self-signed certificate**](#create-a-self-signed-certificate).
+- Use the [**Kubernetes default cluster certificate**](#obtain-default-cluster-certificate) by pulling it from your cluster.
 
 #### Create a self-signed certificate 
 
@@ -102,7 +100,7 @@ The following procedure could be used to generate a self-signed certificate:
     cat drapi-server.crt | sed -ne '/-BEGIN CERTIFICATE/,/END CERTIFICATE/p' > ./drapi-server.pem
     ```
 
-5.  Proceed to [import drapi-server.pem into the trust store](#3-import-certificate-into-the-truststore-with-keytool).
+5.  Proceed to [**import drapi-server.pem into the trust store**](#3-import-certificate-into-the-truststore-with-keytool).
 
 #### Obtain default Cluster Certificate
 
@@ -116,7 +114,7 @@ The following procedure could be used to generate a self-signed certificate:
         The parameter following `-connect` must be a DNS name or IP address that resolves to your OpenShift ingress. The `-servername` parameter specifies the DNS name you use to access your Volt MX Go Foundry deployment. This should match the value you specified for `serverDomainName` in `values.yaml`. The DNS names could be the same as long as they resolve to the IP address of your Kubernetes load balancer in front of Ingress or Ingress itself.
 
 
-2. Proceed to [Import the Certificate into the truststore with keytool](#3-import-certificate-into-the-truststore-with-keytool).
+2. Proceed to [**Import the Certificate into the truststore with keytool**](#3-import-certificate-into-the-truststore-with-keytool).
 
 
 ### 2. Copy your SSL certificates and keys into the Domino REST API top level directory
@@ -133,7 +131,7 @@ The following procedure could be used to generate a self-signed certificate:
     cp ~/drapi-management-server.key   .
     ```
 
-2. [Update parameters in `values.yaml`](#4-update-the-helm-valuesyaml) with these file names.
+2. [**Update parameters in `values.yaml`**](#4-update-the-helm-valuesyaml) with these file names.
 
 
 ### 3. Import certificate into the truststore with keytool
@@ -155,13 +153,13 @@ keytool -import -alias drapi2 -file ./drapi-server.pem -keypass changeit -storep
     - `-keystore ../foundry/voltmx-foundry/certs/cacerts` is the location of the truststore your certificate will be imported to and later use by Tomcat. This file path shouldn't be changed.
     - `changeit` is the default password and shouldn't be changed.
 
-For more information about `keytool`, see [Java Keytool documentation](https://docs.oracle.com/en/java/javase/11/tools/keytool.html){: target="_blank" rel="noopener noreferrer"}.
+For more information about `keytool`, see [Java Keytool documentation](https://docs.oracle.com/en/java/javase/11/tools/keytool.html.
 
 ### 4. Update the Helm `values.yaml`
 
 - Update your `values.yaml` with the following configuration details to properly configure SSL.  
 
-    Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
+    Check the notes for specific use cases and refer to Kubernetes Ingress details in [**Before you begin**](#before-you-begin) for more details on each parameter.
 
 
 ``` bash

@@ -8,7 +8,7 @@ The procedures guide you in installing the following server components of Volt M
 
 !!!warning "Important"
     - Using this installation option would require you to use your own Domino server.
-    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
+    - Before starting the installation, make sure to verify that you meet the [**System requirements**](sysreq.md).
 
 --8<-- "browsertab.md"
 
@@ -16,15 +16,15 @@ The procedures guide you in installing the following server components of Volt M
 
 --8<-- "drapiversion.md"
 
-1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api){: target="_blank" rel="noopener noreferrer"}.
+1. Downloaded the Domino REST API installer. For more information, see [**Download the Domino REST API**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
-    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html){: target="_blank" rel="noopener noreferrer"}
-    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html){: target="_blank" rel="noopener noreferrer"}
+    - [**For Windows**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html)
+    - [**For Linux**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html)
 
-3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html){: target="_blank" rel="noopener noreferrer"}.
+3. Complete all the [**post-installation tasks**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html).
 
-For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html){: target="_blank" rel="noopener noreferrer"} page in the Domino REST API documentation.
+For more information, see the [**Installation and configuration**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html) page in the HCL Domino REST API documentation.
 
 
 ## Install Volt MX Go Foundry
@@ -39,7 +39,7 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
 1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option.
 
-    For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+    For more information, see [**Download HCL Volt MX Go Release package**](portaldownload.md).
 
 2. Extract the installer from the downloaded ZIP file.
 3. Follow the links to the installation guides based on your preferred installation platform/option:
@@ -48,9 +48,9 @@ Volt MX Go Foundry supports the following installation mechanisms:
         - The installation guides will indicate installation files and installation file download locations. **You must use the installer you downloaded in Step 1.**
         - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
 
-    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html){: target="_blank" rel="noopener noreferrer"}
-    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html){: target="_blank" rel="noopener noreferrer"}
-    - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html){: target="_blank" rel="noopener noreferrer"}
+    - [**For Windows**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html)
+    - [**For Linux**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html)
+    - [**For command line installer**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html)
 
 ### For using helm charts on a supported Kubernetes platform
 
@@ -64,7 +64,7 @@ Volt MX Go Foundry supports the following installation mechanisms:
     ```
 
 !!!note "Prerequisite"
-    [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
+    [**Obtain authentication token from HCL Container Repository**](obtainauthenticationtoken.md) before proceeding.
 
 #### 1. Create a namespace and a temp directory for the charts
 
@@ -81,7 +81,7 @@ cd ~/mxgo
 
 #### 2. Configure Helm to pull from HCL Container Repository
 
-The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [**email and authentication token**](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
 - Run the following command to set up Helm:
 
@@ -94,7 +94,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 
 
     !!!note
-        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+        Use the **CLI secret** value you saved from [**obtaining authentication token from HCL Container Repository**](obtainauthenticationtoken.md) as your authentication token or password.
 
     If you get an error message similar to the following:
 
@@ -136,7 +136,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     ./init-guids.sh --new
     ```
 
-4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and `your-authentication-token` with your [**email and authentication token**](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     ```{ .yaml .no-copy }
     imageCredentials:
@@ -145,14 +145,14 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     ```
 
     !!!note
-        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+        Use the **CLI secret** value you saved from [**obtaining authentication token from HCL Container Repository**](obtainauthenticationtoken.md) as your authentication token or password.
 
 5. Locate the following line in the file and add your Volt MX Go Foundry server domain name setting:
 
     ```{ .yaml .no-copy }
     serverDomainName:
     ```
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file [**Ensure Foundry Hostnames are resolvable**](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [**For K3s only**](prereq.md#for-k3s-only) again substituting your server domain name.
 
 6. Locate the following lines in the file and add your Volt MX Go Foundry database details:
 
@@ -183,13 +183,13 @@ The procedure sets up Helm with the details necessary to authenticate with the H
     dbPass:
     ```
 
-7. For more advanced configuration options, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration){: target="_blank" rel="noopener noreferrer"} in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
+7. For more advanced configuration options, see [**Configuration**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration) in the *Installation Guide for Volt MX Foundry Containers Helm Installation*.
 
 8. Save the file and exit.
 
 #### 4. (Optional) Perform advanced scenario procedures
 
-- Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html){: target="_blank" rel="noopener noreferrer"}
+- Perform the procedures under [**Advanced Scenarios**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html).
 
 
 #### 5. Deploy Foundry's dbupdate to create the databases
@@ -247,23 +247,23 @@ The procedure sets up Helm with the details necessary to authenticate with the H
 !!!note
     - If you defined a different Volt MX Go Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
-    - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
-    - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
+    - To create an account, see [**Create a Volt MX Go Foundry administrator account**](../howto/foundryadminaccount.md).
+    - To connect to Domino server from your Notes client, see [**Connect to Domino server from your Notes client**](../howto/connectdominofromnotes.md).
 
 
 #### 7. (Optional) Perform monitoring procedures
 
-- Perform the procedures under [Monitoring](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html){: target="_blank" rel="noopener noreferrer"}.
+- Perform the procedures under [**Monitoring**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Monitoring.html) in the HCL Volt MX documentation.
 
 !!!note
     The procedures are for enabling important monitoring features such as Metrics Server, Elastic Stack, Kuberhealthy.
 
 #### 8. (Optional) Perform post installation tasks
 
-- Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html){: target="_blank" rel="noopener noreferrer"}
+- Perform the procedures under the [**Post Installation Tasks**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html) in the HCL Volt MX documentation.
 
 
 ## Additional information
 
-After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [**Install Volt MX Go Iris**](installiris.md).
 

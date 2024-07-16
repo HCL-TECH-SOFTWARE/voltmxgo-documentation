@@ -32,7 +32,7 @@ Methods are used by the form to interact with the Summernote Editor component.
 3. In the **Properties** pane, click the **Action** tab.
 4. Click **Manage Methods** to open the **Manage Methods** dialog.
 
-You can now configure the component methods. For more information, see [**Manage Methods**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_CreatingComponent.html#manage-methods-of-a-component-with-a-contract) in the Volt MX Documentation.
+You can now configure the component methods. For more information, see [**Manage Methods**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_CreatingComponent.html#manage-methods-of-a-component-with-a-contract) in the HCL Volt MX Documentation.
 
 **Methods**
 
@@ -69,7 +69,7 @@ You need a default property to build the Summernote Editor component. The table 
 3. In the **Properties** pane, click the **Component** tab.
 4. Click **Manage Properties** to open the **Manage Properties** dialog.
 
-You can now configure the component properties. For more information, see [**Manage Properties**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_CreatingComponent.html#manage-properties-of-a-component-with-a-contract) in the Volt MX Documentation.
+You can now configure the component properties. For more information, see [**Manage Properties**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_CreatingComponent.html#manage-properties-of-a-component-with-a-contract) in the HCL Volt MX Documentation.
 
 **Properties**
 

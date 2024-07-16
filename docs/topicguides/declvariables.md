@@ -20,7 +20,7 @@ There are two mechanisms by which the Rosetta Converter accepts and converts var
 
 ## Using JSP style syntax
 
-The converter uses **JSP expression** syntax in **OpenFormula** formulas to provide capabilities for formula conversion not currently possible with strict OpenFormula syntax. For more information, see [**JSP expression syntax**](https://docs.oracle.com/javaee/5/tutorial/doc/bnaov.html){: target="_blank" rel="noopener noreferrer"}.
+The converter uses **JSP expression** syntax in **OpenFormula** formulas to provide capabilities for formula conversion not currently possible with strict OpenFormula syntax. For more information, see [**JSP expression syntax**](https://docs.oracle.com/javaee/5/tutorial/doc/bnaov.html).
 
 Example:
 

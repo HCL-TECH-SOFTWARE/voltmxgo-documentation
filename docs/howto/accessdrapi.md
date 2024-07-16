@@ -6,13 +6,13 @@ Access Domino REST API Admin UI so you can add and configure a schema, add a sco
 
 ## Before you begin
 
-You must complete the [Volt MX Go installation](../tutorials/installation.md).
+You must complete the [**Volt MX Go installation**](../tutorials/installation.md).
 
 ## Procedure
 
 ### For Domino REST API installed via an installer
 
-- Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login){: target="_blank" rel="noopener noreferrer"}.
+- Check how to login to [**Domino REST API Admin UI**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login) in the HCL Domino REST API documentation.
 - Use your Domino server administrator username and password to log in.
 
 ### For Domino REST API installed as part of the installation on a development or test only environment
@@ -24,10 +24,10 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
     - password: `password` 
 
     !!!note
-        If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) procedure, use the updated values for the username and password.
+        If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [**Download the Domino REST API Helm chart**](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) procedure, use the updated values for the username and password.
 
 3. Click **Log in**.
 
-## Expected result  
+## Expected result
 
-A successful login leads you to the Domino REST API landing page. For details on adding and configuring a schema, adding a scope and an application, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html){: target="_blank" rel="noopener noreferrer"} in the Domino REST API documentation. 
+A successful login leads you to the Domino REST API landing page. For details on adding and configuring a schema, adding a scope and an application, see [**Using Admin UI**](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html) in the HCL Domino REST API documentation. 

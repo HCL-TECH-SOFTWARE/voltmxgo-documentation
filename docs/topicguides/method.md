@@ -166,7 +166,7 @@ The Volt MX SDK has CRUD functions allowing an end-user application to use the R
  Using the binary APIs with Domino Adapter requires more properties in the functional call. You need to add an object with a `queryParams` key to the options argument of the `createBinaryContent`. The object should contain query parameters required for using the binary APIs with Domino Adapter, including `unid` and `name` parameters. 
 
 !!!note
-    - For more information, see the general use of the [**binary APIs from the Volt MX SDK**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method) in the Volt MX documentation.
+    - For more information, see the general use of the [**binary APIs from the Volt MX SDK**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method) in the HCL Volt MX documentation.
     - There is no function in the Volt MX SDK for calling `deleteBinary`.
 
 ???example "Refer to the code examples for using the SDK's binary functions."
