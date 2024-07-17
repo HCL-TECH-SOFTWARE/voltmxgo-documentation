@@ -8,11 +8,11 @@ Data models can be generated in an Object Service by Volt MX Go Foundry administ
     `Forms` and `views` are created in a Domino REST API `schema` and named by a Domino REST API `scope`.
      
 
-In addition to some [**Meta fields**](#meta-fields), generated data models include: 
+In addition to some [Meta fields](#meta-fields), generated data models include: 
 
 - **Form** data models include all fields defined by the associated Domino REST API `schema`.
 - **View** data models include all view columns defined in the NSF design.
-- [**Other Metadata**](#other-metadata) data models include fields that pertain to the requested information. 
+- [Other Metadata](#other-metadata) data models include fields that pertain to the requested information. 
 
 Volt MX Go Foundry data models are in sync with the Domino REST API `schema` at the time of data model generation. The data models may be out of sync with the `schema`, which may lead to undesired or unexpected results, because of the following:
 
@@ -20,7 +20,7 @@ Volt MX Go Foundry data models are in sync with the Domino REST API `schema` at 
 - schema is modified in Domino REST API
 - changes in the NSF design
 
-For more information on schemas, scopes, forms, and views, see [**Using Admin UI**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation.  
+For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation.  
 
 ## Data model artifact names
 
@@ -67,8 +67,8 @@ The table shows a simplified list of data-type mappings between Domino REST API 
 |BOOLEAN|boolean|Example: `true`|
 |BINARY|string||
 |AUTHORS, NAMES, PASSWORD, READERS|string||
-|RICH TEXT|string|Field values are in Base64-encoded HTML format.<br/><br/>For more information, see [**Data model metadata attribute**](#data-model-metadata-attribute).|
-|ARRAY|string|Field values are "stringified JSON Array"<br/> Example: `"[\"flour\",\"eggs\"]"`<br/><br/>Other data types may also be marked as multi-value, in which case the JSON array contains values of the corresponding type. Examples:<br/>String array: `"[\"flour\",\"eggs\"]"`<br/>Number array: `"[1,2]"`<br/>Author array: `"[\"CN=mxgo admin/O=ocp\",\"[Admin]\"]"]"`<br/><br/>For more information, see [**Data model metadata attribute**](#data-model-metadata-attribute).|
+|RICH TEXT|string|Field values are in Base64-encoded HTML format.<br/><br/>For more information, see [Data model metadata attribute](#data-model-metadata-attribute).|
+|ARRAY|string|Field values are "stringified JSON Array"<br/> Example: `"[\"flour\",\"eggs\"]"`<br/><br/>Other data types may also be marked as multi-value, in which case the JSON array contains values of the corresponding type. Examples:<br/>String array: `"[\"flour\",\"eggs\"]"`<br/>Number array: `"[1,2]"`<br/>Author array: `"[\"CN=mxgo admin/O=ocp\",\"[Admin]\"]"]"`<br/><br/>For more information, see [Data model metadata attribute](#data-model-metadata-attribute).|
 |all others|string|
 
 ## Meta fields
@@ -108,7 +108,7 @@ x_0040unid
     - **All `meta-fields` aren't sortable**. 
     - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
     - Meta-fields are included in generated data models by default. The Volt MX Go Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
-    - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata with form name aliases. For more information, see [**Data model metadata attribute**](#data-model-metadata-attribute).
+    - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
     - Offline objects require a data model to specify a primary key field. `x_0040unid` needs to be set as the primary key for Domino data models. However, with views, the returning list of data may contain items with no UNID or items with the same UNID.<br/><br/>Items with no UNID occur when querying categorized views. These items with no UNID are top-level category items. To avoid receiving these items, a user must scope the view request to return only the document items using the OData filter parameter `<GET view URL>?$filter=x_0040scope eq documents`.<br/><br/>For items with the same UNID, errors may occur when syncing data to the front end.
 
 ## Data model metadata attribute

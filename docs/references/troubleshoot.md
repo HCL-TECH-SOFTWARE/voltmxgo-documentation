@@ -18,7 +18,7 @@ List of issues and corresponding resolutions.
     
         You should contact your Domino administrator to update your assigned access level to the Domino database to *Designer*.
 
-    [^1]: **The Maximum Access Level refers to access through the Domino REST API and doesn't override the database's ACL. The access level granted to the user in the Domino database ACL won't be exceeded. For example, if a user has Reader access in the Domino database ACL and the maximum access level for the scope in the Domino REST API is Editor, the user still won't be able to create or edit documents.** 
+    [^1]: The Maximum Access Level refers to access through the Domino REST API and doesn't override the database's ACL. The access level granted to the user in the Domino database ACL won't be exceeded. For example, if a user has Reader access in the Domino database ACL and the maximum access level for the scope in the Domino REST API is Editor, the user still won't be able to create or edit documents. 
 
 - **Domino REST API schema misconfigured settings**
 
@@ -42,14 +42,14 @@ List of issues and corresponding resolutions.
 
         The issue occurs when only the **default** mode is declared. Make sure to add the **dql** mode before importing the schema.
 
-Contact your Domino Rest API administrator for assistance in complying with the Domino Rest API related [**prerequisites for importing Domino Application**](../tutorials/designimport.md#before-you-begin).
+Contact your Domino Rest API administrator for assistance in complying with the Domino Rest API related [prerequisites for importing Domino Application](../tutorials/designimport.md#before-you-begin).
 
 ## First Touch
 
-- [**First Touch or Custom Application Fails to Install on Volt MX Go Foundry**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0106427)
+- [First Touch or Custom Application Fails to Install on Volt MX Go Foundry](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0106427)
 
     !!!note
-        This issue and its corresponding resolution aren't applicable when setting up First Touch in Volt MX Go [**installed in a development or test-only environment**](../tutorials/containerdeployment.md). 
+        This issue and its corresponding resolution aren't applicable when setting up First Touch in Volt MX Go [installed in a development or test-only environment](../tutorials/containerdeployment.md). 
 
 ## General issues
 

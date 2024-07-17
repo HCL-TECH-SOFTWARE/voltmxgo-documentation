@@ -8,8 +8,8 @@ The following procedures guide you in upgrading the server components of Volt MX
 
 --8<-- "drapiversion.md"
 
-1. Downloaded the required version of the Domino REST API installer. For more information, see [**Download the Domino REST API**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
-2. Follow the relevant steps in the [**upgrade procedure**](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html) in the HCL Domino REST API documentation based on your installation platform.
+1. Downloaded the required version of the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
+2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html) in the HCL Domino REST API documentation based on your installation platform.
 
 ## Upgrade Volt MX Go Foundry
 
@@ -26,7 +26,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 #### Before you begin
 
 - Back up your databases and server artifacts.
-- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [**Download HCL Volt MX Go Release package**](portaldownload.md).
+- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
 - Ensure that the installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
 - Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
@@ -66,7 +66,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 2. Configure Helm to pull from HCL Container Repository.
 
-    You will need your [**email and authentication token**](obtainauthenticationtoken.md) used with the HCL Container Repository.
+    You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     1. Run the following command to check if `hclcr` is already defined:
 
@@ -90,7 +90,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 
         !!!note
-            Use the **CLI secret** value you saved from [**obtaining authentication token from HCL Container Repository**](obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
 
         If you get an error message similar to the following:
 
@@ -141,5 +141,5 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 ## Additional information
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [**Install and upgrade Volt MX Go Iris**](installiris.md).
+After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installiris.md).
 

@@ -8,9 +8,9 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
     **For Volt MX Go install to a production environment**
 
-    - You have completed the [**Volt MX Go installation in a production environment**](prerequisite.md).
-    - You have created your [**Volt MX Go Foundry admin account**](../howto/foundryadminaccount.md).
-    - If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt MX Go Foundry** issue in [**Troubleshooting**](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
+    - You have completed the [Volt MX Go installation in a production environment](prerequisite.md).
+    - You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+    - If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt MX Go Foundry** issue in [Troubleshooting](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
 
     <!--!!!note 
         You can skip the setup of `oauth.nsf`, Domino REST API, and download of the First Touch recipe ZIP file if you are performing the Volt MX Go install to a development or test only environment.--> 
@@ -18,16 +18,16 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
     !!!tip
         The following actions might require certain Domino access rights. Contact your Domino Administrator/Domino REST API Administrator for assistance.  
 
-    - You have [**set up an oauth.nsf**](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html).
-    - You have [**set up Domino REST API**](https://opensource.hcltechsw.com/Domino-rest-api/howto/IdP/configuredrapiIdP.html).
-    - You have [**downloaded the FirstTouchRecipes.nsf.zip**](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
+    - You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html).
+    - You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/IdP/configuredrapiIdP.html).
+    - You have [downloaded the FirstTouchRecipes.nsf.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
 
 === "For development or test-only environment"
 
     **For Volt MX Go install to a development or test-only environment**
 
-    - You have completed the [**Volt MX Go installation in a development or test-only environment**](containerdeployment.md).
-    - You have created your [**Volt MX Go Foundry admin account**](../howto/foundryadminaccount.md).
+    - You have completed the [Volt MX Go installation in a development or test-only environment](containerdeployment.md).
+    - You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
    
 
 ## Log in to Volt MX Go Foundry
@@ -98,6 +98,6 @@ You can now view and explore the First Touch Recipe Catalog app.
 
 ## Additional information
 
-- To learn more about the app, see [**First Touch Recipe Catalog app**](../topicguides/firsttouchapp.md).
-- To know how to import the First Touch Recipe app project to Volt MX Go Iris, see [**Import First Touch into Volt MX Go Iris**](../howto/importft.md).
-- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [**Update FirstTouchRecipes.nsf**](../howto/FTnsfupdate.md).
+- To learn more about the app, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
+- To know how to import the First Touch Recipe app project to Volt MX Go Iris, see [Import First Touch into Volt MX Go Iris](../howto/importft.md).
+- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/FTnsfupdate.md).

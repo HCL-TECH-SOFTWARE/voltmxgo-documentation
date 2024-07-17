@@ -33,7 +33,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials, and the DNS name settings.
 
-    1. Locate the following lines in the file and replace `your-email` and `your-authentication-token` with your [**email and authentication token**](obtainauthenticationtoken.md) used with the HCL Container Repository:
+    1. Locate the following lines in the file and replace `your-email` and `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository:
 
         ```{ .yaml .no-copy }
         imageCredentials:
@@ -42,7 +42,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         ```
 
         !!!note
-            Use the **CLI secret** value you saved from [**obtaining authentication token from HCL Container Repository**](obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
 
     2. Locate the following lines in the file and add your DNS hostname settings:
 
@@ -51,12 +51,12 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
             drapiDnsName:
             drapiManagementDnsName:
         ```
-        Whatever hostnames you specify here and later in the Volt MX Go Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [**Ensure Foundry Hostnames are resolvable**](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [**For K3s only**](prereq.md#for-k3s-only) again substituting your hostnames.
+        Whatever hostnames you specify here and later in the Volt MX Go Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your hostnames.
 
         !!!note
             The example names used are `drapi.mymxgo.com` and `drapi-management.mymxgo.com` respectively.
 
-    3. Locate the following lines in the file for the Administrator's first name, last name, and password. Set values for each of these settings. In our example we're using "mxgo", "admin" and "password". However, if you use your own values, remember the values and use them when required such as when you [**Run First Touch**](firsttouch.md#run-first-touch), and [**Access Domino REST API**](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
+    3. Locate the following lines in the file for the Administrator's first name, last name, and password. Set values for each of these settings. In our example we're using "mxgo", "admin" and "password". However, if you use your own values, remember the values and use them when required such as when you [Run First Touch](firsttouch.md#run-first-touch), and [Access Domino REST API](../howto/accessdrapi.md#access-domino-rest-api). Remember that the values of `dominoAdminFirstName` and `dominoAdminLastName` are combined, but separated by a space, to form the **username**.
 
         ```{ .yaml .no-copy }
         dominoAdminFirstName: "mxgo"
@@ -73,7 +73,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         dominoNetworkHostname: ""
         ```
 
-        Consult the [**Table of variables**](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html#table-of-variables) in *Run Domino REST API with a Docker image* in the  [**Domino REST API documentation**](https://opensource.hcltechsw.com/Domino-rest-api/index.html) to determine if you need to update these fields as well. The mapping of `values.yaml` settings to variables is as follows:
+        Consult the [Table of variables](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html#table-of-variables) in *Run Domino REST API with a Docker image* in the  [Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html) to determine if you need to update these fields as well. The mapping of `values.yaml` settings to variables is as follows:
 
         - `dominoServerDomainName = SERVERSETUP_SERVER_DOMAINNAME`
         - `dominoOrgName = SERVERSETUP_ORG_ORGNAME`
@@ -84,13 +84,13 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
         - `HostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol. **This is only recommended when using Rancher Desktop for Kubernetes**.
-        - `NodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod. **This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster**. See [**Create a new server connection under Procedure**](../howto/connectdominofromnotes.md#procedure) for instructions on how to obtain the random port number.
+        - `NodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod. **This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster**. See [Create a new server connection under Procedure](../howto/connectdominofromnotes.md#procedure) for instructions on how to obtain the random port number.
         - `LoadBalancer`: Set this value if you want an external load balancer to be provisioned by a cloud provider which supports external load balancers. Traffic from the external load balancer is directed at the Domino pod, and the cloud provider decides how it is load balanced. Kubernetes typically starts off by making the changes that are equivalent to you requesting NodePort. The cloud-controller-manager component then configures the external load balancer to forward traffic to that assigned node port.
 
-        You can read more about these options in the [**Service**](https://kubernetes.io/docs/concepts/services-networking/service/) topic in the Kubernetes documentation.
+        You can read more about these options in the [Service](https://kubernetes.io/docs/concepts/services-networking/service/) topic in the Kubernetes documentation.
 
 
-5. **(Optional)** If you would like to configure Ingress for Domino REST API, proceed to [**Configure Kubernetes Ingress for Domino REST API**](../howto/drapiingress.md).
+5. **(Optional)** If you would like to configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).
 
 6. Save the file and exit.
 
@@ -126,9 +126,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
 ## Additional information
 
-- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [**Update FirstTouchRecipes.nsf**](../howto/FTnsfupdate.md).
-- To know more about Domino server processes within a Domino container, see [**Interacting with Domino server process within Domino container**](../topicguides/dominoserver.md).
+- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/FTnsfupdate.md).
+- To know more about Domino server processes within a Domino container, see [Interacting with Domino server process within Domino container](../topicguides/dominoserver.md).
 
 ## Next step
 
-Proceed to [**Install MySql for Volt MX Go Foundry**](installmysqlfoundry.md).
+Proceed to [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md).

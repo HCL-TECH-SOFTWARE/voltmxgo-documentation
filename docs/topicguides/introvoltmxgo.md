@@ -9,12 +9,12 @@ Volt MX Go modernizes and extends the value of your Domino applications with the
 
 Volt MX Go includes the following components:
 
-- [**First Touch**](#first-touch)
-- [**Design Import**](#design-import)
-- [**VoltFormula**](#voltformula)
-- [**Domino Adapter**](#domino-adapter)
-- [**Domino REST API**](#domino-rest-api)
-- [**VoltScript**](#voltscript)
+- [First Touch](#first-touch)
+- [Design Import](#design-import)
+- [VoltFormula](#voltformula)
+- [Domino Adapter](#domino-adapter)
+- [Domino REST API](#domino-rest-api)
+- [VoltScript](#voltscript)
 
 ![Volt MX Go](../assets/images/VoltMXGoDiagram.png)
 
@@ -27,7 +27,7 @@ First Touch walks the administrator through establishing a connection to the Dom
 - preparing a zip file for import into Volt MX Go Foundry and importing the app
 - displaying a message informing the user that everything is ready
 
-The [**sample recipe catalog app**](firsttouchapp.md) has features such as:
+The [sample recipe catalog app](firsttouchapp.md) has features such as:
 
 - displaying recipe cards that are clickable to show list of ingredients and instructions
 - performing CRUD operations on Domino back end to create, edit, delete a recipe 
@@ -68,11 +68,11 @@ Domino Adapter makes Domino a core part of the Volt MX Go Foundry Object Service
 
 HCL Domino REST API provides secure REST API-based access to HCL Domino servers and databases. Designed to highlight Domino as a world class, modern, standards-compliant, cloud native and enterprise-level collaboration platform, it adds contemporary REST APIs to Notes and Domino, enabling a modern programming experience with the tools of your choice. 
 
-For more information, see [**HCL Domino REST API Documentation**](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
+For more information, see [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
 
 ## VoltScript
 
-VoltScript is a [**BASIC**](https://en.wikipedia.org/wiki/BASIC) scripting language evolved from LotusScript&#174;, which was developed for the Lotus Software family of products. The language has been extended for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. VoltScript includes:
+VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC) scripting language evolved from LotusScript&#174;, which was developed for the Lotus Software family of products. The language has been extended for use with HCL Volt MX Go as a server-side scripting language running within the Foundry middleware layer. VoltScript includes:
 
 - Visual Studio Code extension for allowing developers to write code in VS Code
 - Linux Docker image for allowing Mac developers to use the VS Code extension
@@ -81,5 +81,5 @@ VoltScript is a [**BASIC**](https://en.wikipedia.org/wiki/BASIC) scripting langu
 - A toolkit for scaffolding the various VoltScript extensions and script code and autogenerating starter code and related documentation
 - Various VoltScript Extensions for supporting various processes, such as data access over HTTP to specific or generic REST services, handling JSON data, interacting with the operating system and files, managing input parameters
 
-To learn more about the **early access version** of VoltScript, see [**VoltScript Documentation**](https://help.hcltechsw.com/docs/voltscript/early-access/index.html).
+To learn more about the **early access version** of VoltScript, see [VoltScript Documentation](https://help.hcltechsw.com/docs/voltscript/early-access/index.html).
 

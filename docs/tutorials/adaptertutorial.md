@@ -2,14 +2,14 @@
 
 The tutorial guides you through the Domino Adapter process in Volt MX Go. You will create an app in Volt MX Go Foundry and connect the app to your Domino database as an endpoint via the Domino REST API. You will then configure a data model and test the methods, including standard CRUD operations, for interacting with the data model.
 
-For more information, see [**Data models**](../topicguides/datamodel.md) and **[Methods**](../topicguides/method.md).  
+For more information, see [Data models](../topicguides/datamodel.md) and **[Methods](../topicguides/method.md).  
 
 At the end of this tutorial, you can manually create an app in Volt MX Go Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API.
 
 ## Before you begin
 
-- You have completed the [**Volt MX Go installation**](installation.md).
-- You have a [**Volt MX Go Foundry admin account**](../howto/foundryadminaccount.md).
+- You have completed the [Volt MX Go installation](installation.md).
+- You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
 
 !!!tip
     The following actions might require certain Domino access rights. Contact your Domino Administrator/Domino REST API Administrator for assistance.
@@ -18,10 +18,10 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 - You have at least an *Editor* access to the Domino Keep Configuration database `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
 - You have the correct access level to the Domino database to test the CRUD operations. 
 
-    For more information, see [**Access Levels in the ACL**](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation or contact your Domino/Domino REST API administrator.  
+    For more information, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation or contact your Domino/Domino REST API administrator.  
 
-- You have added a schema, activated the forms of the schema, and added a `dql` mode similar to the `default` mode to each activated form in Domino REST API. For more information, see [**Schema Management**](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html).
-- You have added a scope for your schema in Domino REST API. For more information, see [**Scope Management**](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html).
+- You have added a schema, activated the forms of the schema, and added a `dql` mode similar to the `default` mode to each activated form in Domino REST API. For more information, see [Schema Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html).
+- You have added a scope for your schema in Domino REST API. For more information, see [Scope Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html).
 
 ## Log in to Volt MX Go Foundry
 
@@ -43,7 +43,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 3.	Click the **Edit App Name** icon to give a unique name to your app.
 
 !!!tip
-    For more information, see [**How to Add Applications**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html) in the HCL Volt MX documentation. 
+    For more information, see [How to Add Applications](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html) in the HCL Volt MX documentation. 
 
 ## Configure an Identity service
 
@@ -95,7 +95,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
     3. Enter the App Secret of your app in Domino REST API in the **Client Secret** text box.
 
     !!!tip
-        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [**Application Management**](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html) in the Domino REST API documentation.  
+        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html) in the Domino REST API documentation.  
 
 6.	Under **Advanced**:
     
@@ -150,7 +150,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
     3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*. 
 
         !!!note
-            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [**Methods**](../topicguides/method.md).   
+            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/method.md).   
 
     !!!tip
         To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a *Connection Successful* message if the configured connection parameters are correct.
@@ -182,7 +182,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 
     !!!tip
         - You can change the data model object names of the selected forms and view entities.
-        - For more information on naming limitations, see [**Known limitations**](../references/knownlimitation.md#naming).
+        - For more information on naming limitations, see [Known limitations](../references/knownlimitation.md#naming).
 
 5. Click **Generate**. The forms and view entities are now added to the **Data Model**. 
 
@@ -210,7 +210,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 
 4. Click **Save** after viewing.
 
-For more information on supported parameters, see [**Supported OData query parameters for form-based GET method**](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [**Supported OData query parameters for view-based GET method**](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
+For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
 ## Test the POST method by creating a record
 

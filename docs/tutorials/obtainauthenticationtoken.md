@@ -6,7 +6,7 @@ The binary images and Helm charts for Volt MX Go server components are pulled fr
 
 ## To obtain your authentication token
 
-1. Go to the [**HCL Container Repository**](https://hclcr.io "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
+1. Go to the [HCL Container Repository](https://hclcr.io "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
 2. On the login page, click **LOGIN VIA OIDC Provider**, and then login using your corporate email address.
 3. On the **Projects** page, click your username and select **User Profile**.
 
@@ -25,6 +25,6 @@ The binary images and Helm charts for Volt MX Go server components are pulled fr
 
 ## Next step
 
-For installing Volt MX Go using helm charts on a supported Kubernetes platform for a production environment, proceed to [**Configure Helm to pull from HCL Container Repository**](nativeinstallers.md#1-create-a-namespace-and-a-temp-directory-for-the-charts).
+For installing Volt MX Go using helm charts on a supported Kubernetes platform for a production environment, proceed to [Configure Helm to pull from HCL Container Repository](nativeinstallers.md#1-create-a-namespace-and-a-temp-directory-for-the-charts).
 
-For installing Volt MX Go to **development or test only environment**, proceed to [**Deploy Kubernetes**](deploykubernetes.md).
+For installing Volt MX Go to **development or test only environment**, proceed to [Deploy Kubernetes](deploykubernetes.md).

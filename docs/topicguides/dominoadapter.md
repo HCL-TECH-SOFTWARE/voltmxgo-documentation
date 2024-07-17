@@ -14,7 +14,7 @@ When creating an Object service in Volt MX Go Foundry for Domino, the Volt MX Go
 
 The `object` of the Object service essentially has two components:
 
-- [**Data Model**](datamodel.md) - refers to the definition of the fields that comprise the object definition
-- [**Methods**](method.md) - verbs for interacting with the data, for example GET, POST
+- [Data Model](datamodel.md) - refers to the definition of the fields that comprise the object definition
+- [Methods](method.md) - verbs for interacting with the data, for example GET, POST
 
-For more information, see [**Object Services**](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html) in the HCL Volt MX documentation.
+For more information, see [Object Services](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html) in the HCL Volt MX documentation.

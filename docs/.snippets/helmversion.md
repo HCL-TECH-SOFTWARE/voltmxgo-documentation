@@ -1,1 +1,1 @@
-See [**Volt MX Go and Helm chart version compatibility**](../references/compatibilitymatrix.md#volt-mx-go-and-helm-chart-version-compatibility) to know the latest Helm chart version.
+See [Volt MX Go and Helm chart version compatibility](../references/compatibilitymatrix.md#volt-mx-go-and-helm-chart-version-compatibility) to know the latest Helm chart version.
