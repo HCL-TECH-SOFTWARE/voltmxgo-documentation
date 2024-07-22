@@ -12,7 +12,8 @@ In addition to some [Meta fields](#meta-fields), generated data models include:
 
 - **Form** data models include all fields defined by the associated Domino REST API `schema`.
 - **View** data models include all view columns defined in the NSF design.
-- [Other Metadata](#other-metadata) data models include fields that pertain to the requested information. 
+
+- [Other Metadata](#other-metadata) data models include fields that pertain to the requested information.
 
 Volt MX Go Foundry data models are in sync with the Domino REST API `schema` at the time of data model generation. The data models may be out of sync with the `schema`, which may lead to undesired or unexpected results, because of the following:
 

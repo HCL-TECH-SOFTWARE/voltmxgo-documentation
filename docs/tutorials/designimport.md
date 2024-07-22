@@ -17,6 +17,7 @@ The tutorial implements two user experiences:
 ### For Volt MX Go Foundry admin
 
 - You must complete the [Volt MX Go installation](installfoundry.md).
+
 - You must create a Volt MX Go Foundry admin account to the Volt MX Go Iris developer.
 
 ### For Domino REST API admin
@@ -45,7 +46,8 @@ The tutorial implements two user experiences:
 
 ### For Volt MX Go Iris Developer
 
-- You must install [Volt MX Go Iris](installiris.md) 
+- You must install [Volt MX Go Iris](installiris.md).
+
 - You must have a Volt MX Go Foundry admin account.
 - You must have at least a **Designer role** to the Domino database `.nsf` that you are importing and to the **Domino Keep Configuration Database (`keepconfig.nsf`)**.
 - You must have your Domino REST API URL, Client ID, Client Secret and scope which comes from the Domino REST API admin.
@@ -417,7 +419,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     1. Select the file you want to upload. You can select more than one file to upload. 
     
         !!!notes
-            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html).
 
     2. Click **Open**. If the file is pre-existing, a dialog prompt will appear with the option to overwrite it.
 
@@ -428,7 +430,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ### Delete entry
 
 !!!note
-    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
+    Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
 
 1. On the **Dashboard**, go to the **Views** section, click your preferred document -for example: AllCustomers_Leads.
 

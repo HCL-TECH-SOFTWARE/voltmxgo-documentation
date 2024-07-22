@@ -12,6 +12,7 @@ Guides you on how to search and download the HCL Volt MX Go Release package from
 **To search and download the HCL Volt MX Go Release package**
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
+
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
 4. On the **Downloads** page, search for and click **HCL Volt MX**.

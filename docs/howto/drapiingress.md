@@ -60,9 +60,12 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
 
 You can use any of the following options:
 
-- Purchase a certificate from a trusted Certificate Authority
+- Purchase a certificate from a trusted Certificate Authority.
+
 - Obtain a free certificate from [Let's Encrypt](https://letsencrypt.org/) or [ZeroSSL](https://zerossl.com).
+
 - For test purposes, [create a self-signed certificate](#create-a-self-signed-certificate).
+
 - Use the [Kubernetes default cluster certificate](#obtain-default-cluster-certificate) by pulling it from your cluster.
 
 #### Create a self-signed certificate 
@@ -157,9 +160,7 @@ For more information about `keytool`, see [Java Keytool documentation](https://d
 
 ### 4. Update the Helm `values.yaml`
 
-- Update your `values.yaml` with the following configuration details to properly configure SSL.  
-
-    Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
+Update your `values.yaml` with the following configuration details to properly configure SSL. Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
 
 
 ``` bash

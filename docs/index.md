@@ -43,13 +43,13 @@ For the latest release information about Volt MX Go, see [What's new](references
 
 The Volt MX Go documentation is based on the [Diátaxis framework](https://diataxis.fr/), which organizes documentation into the following modes to address users' documentation needs at different times and in different circumstances. Below shows an overview that guides you on where to look for needed information:
 
-**[Tutorials](tutorials/index.md)** - Hands-on introduction to Volt MX Go
+[Tutorials](tutorials/index.md) - Hands-on introduction to Volt MX Go
 
-**[How-to guides](howto/index.md)** - Practical step-by-step guides for performing tasks and operation
+[How-to guides](howto/index.md) - Practical step-by-step guides for performing tasks and operation
 
-**[Topic guides](topicguides/index.md)** - High-level discussion and explanation of key topics and concepts to give background information
+[Topic guides](topicguides/index.md) - High-level discussion and explanation of key topics and concepts to give background information
 
-**[References](references/index.md)** - Technical references and descriptions on using Volt MX Go
+[References](references/index.md) - Technical references and descriptions on using Volt MX Go
 
 !!!tip
     For more information on using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md). 

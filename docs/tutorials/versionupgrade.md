@@ -9,6 +9,7 @@ The following procedures guide you in upgrading the server components of Volt MX
 --8<-- "drapiversion.md"
 
 1. Downloaded the required version of the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
+
 2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html) in the HCL Domino REST API documentation based on your installation platform.
 
 ## Upgrade Volt MX Go Foundry
@@ -27,9 +28,11 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 - Back up your databases and server artifacts.
 - You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+
 - Ensure that the installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
 - Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
+
 #### Procedure
 
 - Follow the link to the upgrade procedure based on your used installation platform/option:

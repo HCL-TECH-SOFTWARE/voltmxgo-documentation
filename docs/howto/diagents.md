@@ -16,7 +16,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
 ## Procedure
 
-1. You must finish the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-a-new-volt-mx-go-foundry-app).
+You must finish the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-a-new-volt-mx-go-foundry-app).
 
 !!!important
     - For the Volt MX Go release v2.0.4, only limited Agents are supported.
@@ -26,7 +26,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
 **Importing Agents in Volt MX Go Iris using the Design Import capability**
 
-- The **Domino Agent** will be imported as **actions**. These will available on **Views** for all the configured `views` on the imported Domino app.
+- The **Domino Agent** will be imported as **actions**. These will be available on **Views** for all the configured `views` on the imported Domino app.
 
 ## Expected result
 
@@ -37,8 +37,6 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
   1. On the **Views**, click the **Customers B ByRegion**. 
 
       ![Dashboard](../assets/images/diviewagent.png)
-
-
       
        The **Customers B ByRegion** will open. 
        

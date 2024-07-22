@@ -51,6 +51,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
             drapiDnsName:
             drapiManagementDnsName:
         ```
+
         Whatever hostnames you specify here and later in the Volt MX Go Foundry install, you need to ensure that the hostnames are resolvable. There is no additional work if you have already registered the hostnames in DNS. However, if you haven't registered them, you must add the hostnames to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your hostnames. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your hostnames.
 
         !!!note
@@ -84,7 +85,9 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
         - `do-not-expose`: Set this value to prevent exposure of TCP port 1352 to the network.
         - `HostPort`: Set this value to use TCP port 1352 on your machine for the Notes client to communicate with Domino using the Notes Remote Procedure Call (NRPC) protocol. **This is only recommended when using Rancher Desktop for Kubernetes**.
+
         - `NodePort`: Set this value if you want Kubernetes to allocate a random port in a specified range, by default 30000 to 32767, that's available on every worker node in the cluster. Kubernetes automatically routes traffic on this port from the Kubernetes node to the back-end Domino pod. **This is the recommended option if you want to expose NRPC to your Notes Clients when deploying into a non Rancher Desktop cluster**. See [Create a new server connection under Procedure](../howto/connectdominofromnotes.md#procedure) for instructions on how to obtain the random port number.
+
         - `LoadBalancer`: Set this value if you want an external load balancer to be provisioned by a cloud provider which supports external load balancers. Traffic from the external load balancer is directed at the Domino pod, and the cloud provider decides how it is load balanced. Kubernetes typically starts off by making the changes that are equivalent to you requesting NodePort. The cloud-controller-manager component then configures the external load balancer to forward traffic to that assigned node port.
 
         You can read more about these options in the [Service](https://kubernetes.io/docs/concepts/services-networking/service/) topic in the Kubernetes documentation.
@@ -127,6 +130,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 ## Additional information
 
 - To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/FTnsfupdate.md).
+
 - To know more about Domino server processes within a Domino container, see [Interacting with Domino server process within Domino container](../topicguides/dominoserver.md).
 
 ## Next step

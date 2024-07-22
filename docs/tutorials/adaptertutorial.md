@@ -2,13 +2,14 @@
 
 The tutorial guides you through the Domino Adapter process in Volt MX Go. You will create an app in Volt MX Go Foundry and connect the app to your Domino database as an endpoint via the Domino REST API. You will then configure a data model and test the methods, including standard CRUD operations, for interacting with the data model.
 
-For more information, see [Data models](../topicguides/datamodel.md) and **[Methods](../topicguides/method.md).  
+For more information, see [Data models](../topicguides/datamodel.md) and [Methods](../topicguides/method.md).  
 
 At the end of this tutorial, you can manually create an app in Volt MX Go Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API.
 
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
+
 - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
 
 !!!tip
@@ -21,6 +22,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
     For more information, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation or contact your Domino/Domino REST API administrator.  
 
 - You have added a schema, activated the forms of the schema, and added a `dql` mode similar to the `default` mode to each activated form in Domino REST API. For more information, see [Schema Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html).
+
 - You have added a scope for your schema in Domino REST API. For more information, see [Scope Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html).
 
 ## Log in to Volt MX Go Foundry
@@ -68,7 +70,9 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
             You need to **pause** the execution of the **Configure an Identity Service** procedure without saving your initial changes and complete the creation and configuration of an app in Domino REST API before proceeding.
 
         ??? "To create and configure an application in Domino REST API" 
+            
             1. Log in to Domino REST API. For more details, see [Access Domino REST API](../howto/accessdrapi.md).
+
             2. Select **Application Management - OAuth** from the home page.
             3. On the **Application Management** page, click **Add Application**.
             4. Under **Add New Application**, fill in the form:

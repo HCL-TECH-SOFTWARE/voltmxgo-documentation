@@ -5,6 +5,7 @@
 Volt MX Go is deployable with Kubernetes via the following options:
 
 - using [K3s](https://docs.k3s.io) on an Ubuntu, RHEL, SLES machine or VM
+
 - using [Rancher Desktop](https://docs.rancherdesktop.io) running on Windows  
 
 To deploy Kubernetes, **perform only one procedure** from the list:

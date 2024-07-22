@@ -5,7 +5,9 @@ This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert for
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
+
 - You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+
 - You know how to use [Actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor).
 
 ## Launch Volt MX Go Iris

@@ -13,6 +13,7 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 ### For Domino REST API installed via an installer
 
 - Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login) in the HCL Domino REST API documentation.
+
 - Use your Domino server administrator username and password to log in.
 
 ### For Domino REST API installed as part of the installation on a development or test only environment
