@@ -8,37 +8,35 @@ Configures Kubernetes Ingress for Domino REST API. Ingress provides and manages 
 
 ## Before you begin
 
-Familiarize yourself with the various properties and parameters related to Kubernetes Ingress. Expand the following to learn more:
+Familiarize yourself with the following properties and parameters related to Kubernetes Ingress. 
 
-???info "Kubernetes Ingress details"
-     - **ingress.enabled**: Set to `true` to enable Ingress. Ingress must be enabled for Domino REST API to function properly. Kindly note that there are certain conditions where you may want to temporarily disable Ingress.
+- **ingress.enabled**: Set to `true` to enable Ingress. Ingress must be enabled for Domino REST API to function properly. Kindly note that there are certain conditions where you may want to temporarily disable Ingress.
 
-     - **ingress.className**: This property sets the class name on the Ingress object. The default is empty string, which enables the processing of Ingress objects by your cluster default Ingress controller. If your cluster does not have a default Ingress controller or if you want to override that, set the class name. Common values you might use include "nginx", "traefik", and "openshift-default". When utilizing Azure Application Gateway in AKS, specify "azure/application-gateway".
+- **ingress.className**: This property sets the class name on the Ingress object. The default is empty string, which enables the processing of Ingress objects by your cluster default Ingress controller. If your cluster does not have a default Ingress controller or if you want to override that, set the class name. Common values you might use include "nginx", "traefik", and "openshift-default". When utilizing Azure Application Gateway in AKS, specify "azure/application-gateway".
 
-     - **ingress.drapiDnsName**: The DNS host name that users will use to access the Domino REST API. The default setting is `drapi.mymxgo.com`.
+- **ingress.drapiDnsName**: The DNS host name that users will use to access the Domino REST API. The default setting is `drapi.mymxgo.com`.
 
-     - **ingress.drapiManagementDnsName**: The DNS host name that administrators will use to access the Domino REST API. The default setting is `drapi-management.mymxgo.com`.
+- **ingress.drapiManagementDnsName**: The DNS host name that administrators will use to access the Domino REST API. The default setting is `drapi-management.mymxgo.com`.
 
-     - **ingress.protocol**: The communication protocol for accessing Volt MX Go Foundry. Its value can be either http or https. This should reflect the type of traffic you want the Ingress or Load Balancer to accept. *If `ingress.tls` is enabled, this setting must be https*.
+- **ingress.protocol**: The communication protocol for accessing Volt MX Go Foundry. Its value can be either http or https. This should reflect the type of traffic you want the Ingress or Load Balancer to accept. *If `ingress.tls` is enabled, this setting must be https*.
 
-     - **ingress.tls**: Use this property to configure Ingress with either a Cluster or a Custom SSL certificate.
+- **ingress.tls**: Use this property to configure Ingress with either a Cluster or a Custom SSL certificate.
 
-     - **ingress.tls.enabled**: Set to `true` to configure Ingress to use the Cluster SSL Certificate or the specified Custom SSL certificate.
+- **ingress.tls.enabled**: Set to `true` to configure Ingress to use the Cluster SSL Certificate or the specified Custom SSL certificate.
 
-     - **ingress.tls.drapiCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, the Cluster SSL certificate will be used for TLS.
+- **ingress.tls.drapiCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, the Cluster SSL certificate will be used for TLS.
 
-     - **ingress.tls.drapiCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-custom-cert.cert` where my-drapi-custom-cert.cert is the name of your certificate file.  This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
+- **ingress.tls.drapiCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-custom-cert.cert` where my-drapi-custom-cert.cert is the name of your certificate file.  This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
 
-     - **ingress.tls.drapiCustomCert.key**: The file name for the custom key. Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located). The value of this property should be of the form `my-drapi-custom-cert.key` where my-drapi-custom-cert.key is the name of your private key file. The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
+- **ingress.tls.drapiCustomCert.key**: The file name for the custom key. Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located). The value of this property should be of the form `my-drapi-custom-cert.key` where my-drapi-custom-cert.key is the name of your private key file. The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
 
-     - **ingress.tls.drapiManagementCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, then the Cluster SSL certificate will be used for TLS.
+- **ingress.tls.drapiManagementCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, then the Cluster SSL certificate will be used for TLS.
 
-     - **ingress.tls.drapiManagementCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-mgmt-custom-cert.cert` where my-drapi-mgmtcustom-cert.cert is the name of your certificate file. This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
+- **ingress.tls.drapiManagementCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-mgmt-custom-cert.cert` where my-drapi-mgmtcustom-cert.cert is the name of your certificate file. This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
 
-     - **ingress.tls.drapiManagementCustomCert.key**: The file name for the custom key.  Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located).   The value of this property should be of the form `my-drapi-mgmt-custom-cert.key` where my-drapi-mgmt-custom-cert.key is the name of your private key file.  The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
+- **ingress.tls.drapiManagementCustomCert.key**: The file name for the custom key.  Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located).   The value of this property should be of the form `my-drapi-mgmt-custom-cert.key` where my-drapi-mgmt-custom-cert.key is the name of your private key file.  The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
 
-     - **ingress.annotations**: Allows you to specify additional annotations that will be added to every ingress object. Add one annotation per line. Each annotation should be indented 2 spaces and of the format  `annotationName: value`. When rendered, your annotation value will automatically be quoted.
-
+- **ingress.annotations**: Allows you to specify additional annotations that will be added to every ingress object. Add one annotation per line. Each annotation should be indented 2 spaces and of the format  `annotationName: value`. When rendered, your annotation value will automatically be quoted.
 
 ## Additional information
 

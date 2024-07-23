@@ -200,7 +200,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
 
     !!!note
-        - It may take a while to complete the publishing of the imported Domino app.
+        It may take a while to complete the publishing of the imported Domino app.
 
     ![Design Import Wizard dialog](../assets/images/disummary.png)
 

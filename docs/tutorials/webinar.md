@@ -30,7 +30,7 @@ The webinar series includes the following webinars:
 
 ## Volt MX Go on HCL SoFy
 
-Explore everything Volt MX Go can do in a free, hosted trial environment on [HCL SoFy](https://hclsofy.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}. Your sandbox will be up and running in 10 minutes and provides access to a hosted Domino server (where you can copy or replicate your own Domino applications), the Domino REST API, Volt MX Go Foundry, and Volt MX Go Iris, a step-by-step wizard to connect Volt MX to Domino, Design Import, and VoltFormula. Check the following links for more information:
+Explore everything Volt MX Go can do in a free, hosted trial environment on [HCL SoFy](https://hclsofy.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}. Your sandbox will be up and running in 10 minutes and provides access to a hosted Domino server (where you can copy or replicate your own Domino applications), the Domino REST API, Volt MX Go Foundry, and Volt MX Go Iris, a step-by-step wizard to connect Volt MX to Domino, Design Import, and VoltFormula. Check the following links for more information:
 
 - [Overview of Volt MX Go](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=documentation.md "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 - [Using Volt MX Go on Sofy](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=using-voltmxgo.md "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
