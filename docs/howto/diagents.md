@@ -4,7 +4,7 @@
 
 **Domino Agents** which are part the HCL Domino are part of the `nsf` that only Domino Designer can be able to modify. These `nsf` will be able to use by the Domino REST API to be able to use it for other services. Only those configured Agents in a `nsf` will be available to amend by the Domino REST API. These **Agents** will be imported to Volt MX Go Iris as part of the Design Import. 
 
-For more information, see [Agents](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_ABOUT_DESIGNING_AGENTS.html){: target="_blank" rel="noopener noreferrer"}.
+For more information, see [Agents](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ABOUT_DESIGNING_AGENTS.html) in the HCL Domino Designer documentation.
 
 ## About this task
 
@@ -16,7 +16,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
 ## Procedure
 
-1. You must finished the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-a-new-volt-mx-go-foundry-app).
+You must finish the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-a-new-volt-mx-go-foundry-app).
 
 !!!important
     - For the Volt MX Go release v2.0.4, only limited Agents are supported.
@@ -26,7 +26,7 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
 
 **Importing Agents in Volt MX Go Iris using the Design Import capability**
 
-- The **Domino Agent** will be imported as **actions**. These will available on **Views** for all the configured `views` on the imported Domino app.
+- The **Domino Agent** will be imported as **actions**. These will be available on **Views** for all the configured `views` on the imported Domino app.
 
 ## Expected result
 
@@ -37,8 +37,6 @@ Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
   1. On the **Views**, click the **Customers B ByRegion**. 
 
       ![Dashboard](../assets/images/diviewagent.png)
-
-
       
        The **Customers B ByRegion** will open. 
        

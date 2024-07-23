@@ -7,10 +7,15 @@ The procedure guides you in generating CRUD forms and associated form-navigation
 ## Before you begin
 
 - You have [created an app in Volt MX Go Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#create-an-app-in-volt-mx-foundry).
+
 - You have [configured an Identity Service for your app in Volt MX Go Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-identity-service).
+
 - You have [added an environment for your app](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#add-an-environment).
+
 - You have [configured an Object Service for your app in Volt MX Go Foundry](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-an-object-service).
+
 - You have [configured the data model for the Object Service](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/adaptertutorial.html#configure-a-data-model).
+
 - You have [created a project in Volt MX Go Iris](https://opensource.hcltechsw.com/voltmxgo-documentation/tutorials/designimport.html#create-a-new-project).
 
 ## Procedure

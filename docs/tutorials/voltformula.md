@@ -1,12 +1,14 @@
 # VoltFormula tutorial
 
-This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta JavaScript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html){: target="_blank" rel="noopener noreferrer"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html){: target="_blank" rel="noopener noreferrer"} and have it translated automatically into JavaScript code.
+This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta JavaScript. This feature in Volt MX Go Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html) and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html) and have it translated automatically into JavaScript code.
 
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installation.md).
+
 - You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
-- You know how to use [actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor){: target="_blank" rel="noopener noreferrer"}<!--in Volt Iris-->.
+
+- You know how to use [Actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor).
 
 ## Launch Volt MX Go Iris
 

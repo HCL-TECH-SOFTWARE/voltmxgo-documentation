@@ -16,27 +16,37 @@ Follow the order for completing the procedures according to your preferred deplo
 
 **When using K3s on an Ubuntu, RHEL, SLES machine or VM:**
 
-1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md)
-1. [Install and configure K3s](k3sinstall.md)
-2. [Complete preparatory procedure for installation of Volt MX Go](prereq.md)
-3. [Install Domino REST API](downloadhelmchart.md)
-4. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md)
-5. [Install Volt MX Go Foundry](installfoundry.md)
+1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md).
 
+2. [Install and configure K3s](k3sinstall.md).
+
+3. [Complete preparatory procedure for installation of Volt MX Go](prereq.md).
+
+4. [Install Domino REST API](downloadhelmchart.md).
+
+5. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md).
+
+6. [Install Volt MX Go Foundry](installfoundry.md).
 
 **When using Rancher Desktop running on Windows:**
 
-1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md)
-1. [Install Rancher Desktop](installrancher.md)
-2. [Complete preparatory procedure for installation of Volt MX Go](prereq.md)
-3. [Install Domino REST API](downloadhelmchart.md)
-4. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md)
-5. [Install Volt MX Go Foundry](installfoundry.md)
+1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md).
+
+2. [Install Rancher Desktop](installrancher.md).
+
+3. [Complete preparatory procedure for installation of Volt MX Go](prereq.md).
+
+4. [Install Domino REST API](downloadhelmchart.md).
+
+5. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md).
+
+6. [Install Volt MX Go Foundry](installfoundry.md).
 
 ## For upgrading an existing installation of Volt MX Go
 
-1. [Complete preparatory procedure for upgrading an existing installation of Volt MX Go](prereqnew.md)
-2. [Upgrade Volt MX Go server components](versionupgrade1.md)
+1. [Complete preparatory procedure for upgrading an existing installation of Volt MX Go](prereqnew.md).
+
+2. [Upgrade Volt MX Go server components](versionupgrade1.md).
 
 ## For moving from early access version to GA version of Volt MX Go
 
@@ -45,10 +55,13 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 !!!note
     The Early Access release doesn't support actual upgrades. You must remove the prior release deployment and install a new deployment to upgrade. This removes all the data from the prior release deployment.
 
-1. [Complete preparatory procedure for moving from early access version to GA version of Volt MX Go](eatogamove.md)
-2. [Install Domino REST API](downloadhelmchart.md)
-3. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md)
-4. [Install Volt MX Go Foundry](installfoundry.md)
+1. [Complete preparatory procedure for moving from early access version to GA version of Volt MX Go](eatogamove.md).
+
+2. [Install Domino REST API](downloadhelmchart.md).
+
+3. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md).
+
+4. [Install Volt MX Go Foundry](installfoundry.md).
 
 ## Additional information
 

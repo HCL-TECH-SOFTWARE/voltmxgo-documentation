@@ -7,7 +7,8 @@ Guides you on how to insert attachments via the [Summernote Editor](../reference
 ## Before you begin
 
 - You have [generated CRUD forms for Object Service](codegen.md).
-- You have [built and published your app in Volt MX Go Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build){: target="_blank" rel="noopener noreferrer"}.
+
+- You have [built and published your app in Volt MX Go Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build).
 
 !!!note "Important"
     Make sure that you included the virtual field `$FILES` in the form configured in Domino REST API. 

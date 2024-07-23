@@ -39,6 +39,7 @@ The search result shows the number of documents with content matching all or any
 
 ## Support and community
 
-- To open support tickets, go to the [**Customer Support**](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} portal.  
-- To share information, ask questions, and learn about Volt MX Go, go to the [**Community**](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} portal.
+To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} portal.  
+
+To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} portal.
 

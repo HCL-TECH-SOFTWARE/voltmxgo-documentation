@@ -23,7 +23,7 @@
 ## Getters, setters, and checkers
 
 !!!tip
-    For more information about a specific API object, see the [**Rosetta API reference documentation**](../javadoc/index.html). 
+    For more information about a specific API object, see the [Rosetta API reference documentation](../javadoc/index.html). 
 
 ### Implementation
 
@@ -52,4 +52,4 @@
 
 ## Additional information
 
-For more information, see [**Configure VoltFormula's Rosetta API Options**](../howto/configrosetta.md).
+For more information, see [Configure VoltFormula's Rosetta API Options](../howto/configrosetta.md).

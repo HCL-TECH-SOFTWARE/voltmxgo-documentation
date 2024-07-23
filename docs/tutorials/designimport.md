@@ -12,11 +12,12 @@ The tutorial implements two user experiences:
 ## Before you begin
 
 !!!info
-    If you have granted access to any of the following roles: **Volt MX Go Foundry admin, Domino REST API admin,** or the **Volt MX Go Iris developer**, please follow the specific instructions for **each user**.
+    If you are granted access to any of the following roles: **Volt MX Go Foundry admin, Domino REST API admin,** or the **Volt MX Go Iris developer**, please follow the specific instructions for **each user**.
 
 ### For Volt MX Go Foundry admin
 
-- You must the [Volt MX Go installation](installfoundry.md).
+- You must complete the [Volt MX Go installation](installfoundry.md).
+
 - You must create a Volt MX Go Foundry admin account to the Volt MX Go Iris developer.
 
 ### For Domino REST API admin
@@ -27,17 +28,17 @@ The tutorial implements two user experiences:
 
 - You have set up Domino REST API with a specified Domino database `.nsf`, schema, scopes, and application.
 
-- When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `schema`, [set the views to Active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view).
 
-- When you configure the `schema`, include the `$Files` field in the configured form. This is to capture the uploading and downloading of files in the Design Import. For more information, see [step numer 3 in Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `schema`, include the `$Files` field in the configured form. This is to capture the uploading and downloading of files in the Design Import. For more information, see [step numer 3 in Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration).
 
-- When you configure the `schema`, set the **Mode Formula Settings &rarr; Formula for Delete Access** to `@True` in `default` and `dql` mode in all the schema forms. For more information, see [step number 5 in Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `schema`, set the **Mode Formula Settings &rarr; Formula for Delete Access** to `@True` in `default` and `dql` mode in all the schema forms. For more information, see [step number 5 in Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration).
  
-- When you configure the `schema`, add the `default` and `dql` modes and must have a matching fields. For more information, see [Cloning modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `schema`, add the `default` and `dql` modes and must have a matching fields. For more information, see [Cloning modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode).
 
 - When you configure `scope`, the scope name must be limited to 30 characters.
 
-- When you configure the `scopes`, set the *Maximum Access Level* to **Designer** or **Manager** ACL role. For more information, see [Add a scope in Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope){: target="_blank" rel="noopener noreferrer"}.
+- When you configure the `scopes`, set the *Maximum Access Level* to **Designer** or **Manager** ACL role. For more information, see [Add a scope in Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope).
 
 - When you configure your Domino REST API app, it's mandatory to add `$SETUP` to Scope field. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application).
 
@@ -45,7 +46,8 @@ The tutorial implements two user experiences:
 
 ### For Volt MX Go Iris Developer
 
-- You must install [Volt MX Go Iris](installiris.md) 
+- You must install [Volt MX Go Iris](installiris.md).
+
 - You must have a Volt MX Go Foundry admin account.
 - You must have at least a **Designer role** to the Domino database `.nsf` that you are importing and to the **Domino Keep Configuration Database (`keepconfig.nsf`)**.
 - You must have your Domino REST API URL, Client ID, Client Secret and scope which comes from the Domino REST API admin.
@@ -159,7 +161,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         ![Design Import Wizard dialog](../assets/images/difoundry.png)
         
         !!!warning "Important"
-            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#design-import).  
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [Troubleshooting](../references/troubleshoot.md#design-import).  
 
 5. On **Scope and Forms**
 
@@ -198,7 +200,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
 
     !!!note
-        - It may take a while to complete the publishing of the imported Domino app.
+        It may take a while to complete the publishing of the imported Domino app.
 
     ![Design Import Wizard dialog](../assets/images/disummary.png)
 
@@ -268,7 +270,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         ![Design Import Wizard dialog](../assets/images/difoundry.png)
         
         !!!warning "Important"
-            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [troubleshooting](../references/troubleshoot.md#design-import)  
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [Troubleshooting](../references/troubleshoot.md#design-import)  
 
 5. On **Scope and Forms**
     
@@ -302,7 +304,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
 
             ![Agents tab](../assets/images/diagents.png)
 
-        Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
+        Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md).
 
 6. On **Summary**, review the final `forms`, `views` and `agents` you want to import, and then click **Build Iris Application**. 
 
@@ -343,11 +345,11 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 !!!note "Published the web app and native app in Volt MX Go Iris"
     - Before you can do the CRUD operation in your imported Domino app, you must first build and publish the web and native app in Volt MX Go Iris.
     
-        - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app){: target="_blank" rel="noopener noreferrer"}.
+        - If your app is a **Web App**, see [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app) in the HCL Volt MX documentation.
 
         - If your app is a **Native App:**
             1. [Configure your mobile app browser](../howto/configmobile.md).
-            2. After configuring your mobile app browser, see [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html){: target="_blank" rel="noopener noreferrer"} to view the mobile app.
+            2. After configuring your mobile app browser, see [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html) in the HCL Volt MX documentation to view the mobile app.
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.
       Your configuration in Domino REST API decides what operations you can include in the **design import** form.
@@ -368,7 +370,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     1. Select the file you want to upload. You can select more than one file to upload. 
     
         !!!notes
-            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html) in the HCL Domino documentation. 
 
     2. Click **Open**. If the file is pre-existing, a dialog prompt appears with the option to overwrite it.
     
@@ -417,7 +419,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
     1. Select the file you want to upload. You can select more than one file to upload. 
     
         !!!notes
-            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/11.0.1/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html)
+            To see the details of uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html).
 
     2. Click **Open**. If the file is pre-existing, a dialog prompt will appear with the option to overwrite it.
 
@@ -428,7 +430,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 ### Delete entry
 
 !!!note
-    - Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
+    Before you delete any of the data, you must set **Formula for Delete Access** to `@True` in **default** and **dql** `mode` during your schema configuration.
 
 1. On the **Dashboard**, go to the **Views** section, click your preferred document -for example: AllCustomers_Leads.
 

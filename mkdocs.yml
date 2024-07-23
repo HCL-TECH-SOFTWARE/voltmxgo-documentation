@@ -89,7 +89,8 @@ edit_uri: edit/main/docs
 
 # Customization
 extra_css:
-  - ../assets/css/voltmxgo.css
+  - assets/css/voltmxgo.css
+#  - ../assets/css/voltmxgo.css
 
 plugins:
   - search

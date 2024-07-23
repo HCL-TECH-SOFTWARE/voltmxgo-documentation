@@ -5,16 +5,17 @@
 Guides you on how to search and download the HCL Volt MX Go Release package from the **HCL License & Download Portal**.
 
 !!!tip
-    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344){: target="_blank" rel="noopener noreferrer"}.
+    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344).
 
 ## Procedure
 
 **To search and download the HCL Volt MX Go Release package**
 
-1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/){: target="_blank" rel="noopener noreferrer"}.
+1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
+
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
-4. On the **Downloads** page, search for and click `HCL Volt MX `.
+4. On the **Downloads** page, search for and click **HCL Volt MX**.
 5. On the **Download Packages** page, click the **HCL Volt MX Go Version x.x** package.
 
     !!!note
@@ -34,4 +35,4 @@ Guides you on how to search and download the HCL Volt MX Go Release package from
 
 For a new installation, proceed to [Install Volt MX Go server components](nativeinstallers.md).
 
-For an upgrade installation, proceed to [Upgrade Volt MX Go server components](versionupgrade.md)
+For an upgrade installation, proceed to [Upgrade Volt MX Go server components](versionupgrade.md).

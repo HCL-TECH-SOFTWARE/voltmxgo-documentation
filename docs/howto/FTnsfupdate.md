@@ -8,7 +8,8 @@ Guides you in manually updating your Domino container if you obtain a new versio
 
 ## Procedure
 
-1. [Uninstall the First Touch app](uninstallfirsttouch.md) from Volt MX Go Foundry. 
+1. [Uninstall the First Touch app](uninstallfirsttouch.md) from Volt MX Go Foundry.
+
 2. Identify the name of the Domino container by running the following command:
 
     ```

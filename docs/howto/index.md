@@ -7,8 +7,6 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 - [VoltFormula](vfindex.md)
 - [First Touch](ftindex.md)
 - [Operation](genindex.md)
-
-
 - [Uninstall](uninstall.md)
 
 

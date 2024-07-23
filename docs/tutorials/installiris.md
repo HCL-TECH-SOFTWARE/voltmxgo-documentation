@@ -8,14 +8,14 @@
    
 ### Prerequisite
 
-- You have [downloaded the HCL Volt MX Go Release package](portaldownload.md). 
+You have [downloaded the HCL Volt MX Go Release package](portaldownload.md). 
 
 ### Procedure
 
 Install Volt MX Go Iris.
 
-- [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing){: target="_blank" rel="noopener noreferrer"}
-- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing){: target="_blank" rel="noopener noreferrer"}
+- [For Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
+- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing)
 
 ## Upgrade Volt MX Go Iris
 

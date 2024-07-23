@@ -6,8 +6,9 @@ Guides you through the procedures for installing and upgrading Volt MX Go.
 
 In case you would like to deploy Volt MX Go in a **development or test only environment**, you can do so with Kubernetes using the following options:
 
-- using [K3s](https://docs.k3s.io){: target="_blank" rel="noopener noreferrer"} on an Ubuntu, RHEL, SLES machine or VM
-- using [Rancher Desktop](https://docs.rancherdesktop.io){: target="_blank" rel="noopener noreferrer"} running on Windows
+- using [K3s](https://docs.k3s.io) on an Ubuntu, RHEL, SLES machine or VM
+
+- using [Rancher Desktop](https://docs.rancherdesktop.io) running on Windows
 
 ## System requirements
 
