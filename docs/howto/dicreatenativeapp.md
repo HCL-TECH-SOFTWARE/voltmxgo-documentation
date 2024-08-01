@@ -35,4 +35,5 @@ You have now created a new native app project. You can see your project name in 
     For tutorials on how to import Domino applications, see:
 
     - [Import a Domino Application using the new Volt MX Go Foundry app](../tutorials/designimport.md#import-a-domino-application-using-the-new-foundry-app)
+    
     - [Import a Domino Application from the existing Volt MX Go Foundry app](../tutorials/designimport.md#import-a-domino-application-from-the-existing-foundry-app)

@@ -8,6 +8,7 @@ The procedures guide you in installing the following server components of Volt M
 
 !!!warning "Important"
     - Using this installation option would require you to use your own Domino server.
+    
     - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
 --8<-- "browsertab.md"
@@ -21,6 +22,7 @@ The procedures guide you in installing the following server components of Volt M
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
     - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html)
+    
     - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html)
 
 3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html).
@@ -48,7 +50,9 @@ Volt MX Go Foundry supports the following installation mechanisms:
         - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html)
+    
     - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html)
+    
     - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html)
 
 ### For using helm charts on a supported Kubernetes platform
@@ -247,7 +251,9 @@ Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.c
 !!!note
     - If you defined a different Volt MX Go Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
+    
     - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
+    
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
 

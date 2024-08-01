@@ -69,7 +69,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
         !!!warning "Important"
             You need to **pause** the execution of the **Configure an Identity Service** procedure without saving your initial changes and complete the creation and configuration of an app in Domino REST API before proceeding.
 
-        ??? "To create and configure an application in Domino REST API" 
+        ???note "To create and configure an application in Domino REST API" 
             
             1. Log in to Domino REST API. For more details, see [Access Domino REST API](../howto/accessdrapi.md).
 
