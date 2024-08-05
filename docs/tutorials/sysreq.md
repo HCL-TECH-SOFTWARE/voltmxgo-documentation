@@ -10,11 +10,13 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 ### Hardware requirements
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#hardware-requirements)
+
 - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#hardware-requirements)
 
 ### Network settings
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#network-settings)
+
 - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#network-settings)
 
 ### Supported browsers
@@ -84,6 +86,7 @@ Mac OS X 10.9 and above
 
 !!!note
     - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/).
+    
     - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements).
 
 ## For deploying Volt MX Go using Rancher Desktop running on Windows
@@ -112,6 +115,7 @@ Rancher Desktop requires the following on Windows:
 
 !!!note
     - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/) in the Rancher Desktop documentation. 
+    
     - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows) in the Rancher Desktop documentation.
 
 ## Next step

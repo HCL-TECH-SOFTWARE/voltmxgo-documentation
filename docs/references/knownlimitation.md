@@ -41,7 +41,8 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
  
 ## VoltFormula
 
+- Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt MX Go Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml) are allowed in *voltmx.io.FileSystem*. For more information about *voltmx.io.FileSystem*, see the [Volt MX documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html).
+
 - Date APIs for Notes implementations return JavaScript Date Objects, which differ from Notes Date Objects.
 
-- Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt MX Go Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml) are allowed in [voltmx.io.FileSystem](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html).
 

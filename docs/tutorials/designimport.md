@@ -144,7 +144,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         ![Design Import Wizard dialog](../assets/images/didrapi.png)
         
         !!!warning "Important"
-            - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard.
+            It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard.
 
     3. Click **Next**.
         
@@ -257,7 +257,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         ![Design Import Wizard dialog](../assets/images/didrapi.png)
         
         !!!warning "Important"
-            - It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard. Otherwise, the wizard will close.
+            It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard. Otherwise, the wizard will close.
 
     2. Click **Next**.
 
@@ -270,7 +270,7 @@ Once you click **Done**, each of the selected forms, views, and agents are impor
         ![Design Import Wizard dialog](../assets/images/difoundry.png)
         
         !!!warning "Important"
-            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [Troubleshooting](../references/troubleshoot.md#design-import)  
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [Troubleshooting](../references/troubleshoot.md#design-import).  
 
 5. On **Scope and Forms**
     
@@ -349,6 +349,7 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
 
         - If your app is a **Native App:**
             1. [Configure your mobile app browser](../howto/configmobile.md).
+            
             2. After configuring your mobile app browser, see [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html) in the HCL Volt MX documentation to view the mobile app.
 
     - Log in to your account in Domino REST API using the newly published imported Domino application.

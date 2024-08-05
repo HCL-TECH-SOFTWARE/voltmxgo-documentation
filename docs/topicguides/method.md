@@ -132,6 +132,7 @@ You may perform the following binary operations:
 
 !!!warning "Important"
     - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Volt MX Go Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat) or updating `integration.resourceMemoryLimit` in `values.yaml` for Volt MX Go Foundry on supported Kubernetes platform.
+    
     - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html) in the Domino REST API documentation.   
  
 ## Using PATCH verb from Volt MX SDK
@@ -167,6 +168,7 @@ The Volt MX SDK has CRUD functions allowing an end-user application to use the R
 
 !!!note
     - For more information, see the general use of the [binary APIs from the Volt MX SDK](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method) in the HCL Volt MX documentation.
+    
     - There is no function in the Volt MX SDK for calling `deleteBinary`.
 
 ???example "Refer to the code examples for using the SDK's binary functions."

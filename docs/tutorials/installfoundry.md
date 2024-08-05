@@ -147,7 +147,9 @@ The procedures will guide you in the installation of Volt MX Go Foundry.
 !!!note
     - If you defined a different Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
     - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
+    
     - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
+    
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
 ## Next step
