@@ -26,7 +26,7 @@ Familiarize yourself with the following properties and parameters related to Kub
 
 - **ingress.tls.drapiCustomCert**: Use to specify a Custom SSL certificate for Domino REST API. If `ingress.tls.drapiCustomCert.cert` and `ingress.tls.drapiCustomCert.key` are not set, the Cluster SSL certificate will be used for TLS.
 
-- **ingress.tls.drapiCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-custom-cert.cert` where my-drapi-custom-cert.cert is the name of your certificate file.  This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
+- **ingress.tls.drapiCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-custom-cert.cert` where my-drapi-custom-cert.cert is the name of your certificate file. This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
 
 - **ingress.tls.drapiCustomCert.key**: The file name for the custom key. Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located). The value of this property should be of the form `my-drapi-custom-cert.key` where my-drapi-custom-cert.key is the name of your private key file. The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
 
@@ -34,7 +34,7 @@ Familiarize yourself with the following properties and parameters related to Kub
 
 - **ingress.tls.drapiManagementCustomCert.cert**: The file name for the custom certificate. Place your SSL certificate file in the top level direct `drapi` directory (where `values.yaml` is located). The value of this property should be a file path of the form `my-drapi-mgmt-custom-cert.cert` where my-drapi-mgmtcustom-cert.cert is the name of your certificate file. This certificate must be in DER format as per [Section 5.1 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-5.1).
 
-- **ingress.tls.drapiManagementCustomCert.key**: The file name for the custom key.  Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located).   The value of this property should be of the form `my-drapi-mgmt-custom-cert.key` where my-drapi-mgmt-custom-cert.key is the name of your private key file.  The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
+- **ingress.tls.drapiManagementCustomCert.key**: The file name for the custom key. Place your SSL certificate key file in the top level direct 'drapi' directory (where values.yaml is located).   The value of this property should be of the form `my-drapi-mgmt-custom-cert.key` where my-drapi-mgmt-custom-cert.key is the name of your private key file. The key file must be PKCS #8 in DER format [Section 11 of RFC 7468](https://datatracker.ietf.org/doc/html/rfc7468#section-11).
 
 - **ingress.annotations**: Allows you to specify additional annotations that will be added to every ingress object. Add one annotation per line. Each annotation should be indented 2 spaces and of the format  `annotationName: value`. When rendered, your annotation value will automatically be quoted.
 
@@ -154,11 +154,11 @@ keytool -import -alias drapi2 -file ./drapi-server.pem -keypass changeit -storep
     - `-keystore ../foundry/voltmx-foundry/certs/cacerts` is the location of the truststore your certificate will be imported to and later use by Tomcat. This file path shouldn't be changed.
     - `changeit` is the default password and shouldn't be changed.
 
-For more information about `keytool`, see [Java Keytool documentation](https://docs.oracle.com/en/java/javase/11/tools/keytool.html.
+For more information about `keytool`, see [Java Keytool documentation](https://docs.oracle.com/en/java/javase/11/tools/keytool.html).
 
 ### 4. Update the Helm `values.yaml`
 
-Update your `values.yaml` with the following configuration details to properly configure SSL. Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
+Update your `values.yaml` with the following configuration details to configure SSL. Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
 
 
 ``` bash

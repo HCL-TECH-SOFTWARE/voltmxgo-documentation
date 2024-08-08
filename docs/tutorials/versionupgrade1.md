@@ -48,6 +48,55 @@
 
 ## Upgrade Volt MX Go Foundry
 
+### For Volt MX Go v2.1
+
+!!!note
+    The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+
+1. Download Foundry chart.
+
+    1. Run the following command to make sure that the chart information for the repositories is up-to-date.
+
+        ```
+        helm repo update
+        ```
+
+        --8<-- "helmversion.md"
+
+    2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
+
+        ```
+        mkdir foundry
+        cd foundry
+        helm pull hclcr/voltmx-foundry
+        tar -xzf voltmx-foundry-1.n.n.tgz
+        mv voltmx-foundry/values.yaml  ./
+        mv voltmx-foundry/init-guids.sh  ./
+        chmod +x init-guids.sh
+        ```
+
+        !!!note
+            The chart name has a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching filename, such as `voltmx-foundry-1.2.7.tgz`.
+
+
+2. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
+3. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command:
+
+    ```
+    ./init-guids.sh --upgrade ./
+    ```
+
+--8<-- "verupgrade1.md"
+
+
+### For Volt MX Go v2.0.4 or earlier
+
+!!!note
+    The procedure applies when upgrading up to Volt MX Go v2.0.4 from an earlier release version. Up until Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
+
+    - `voltmx-dbupdate`
+    - `voltmx-foundry`
+
 1. Download Foundry charts.
 
     1. Run the following command to make sure that the chart information for the repositories is up-to-date.
@@ -74,7 +123,6 @@
 
         !!!note
             The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
-
 
 2. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
 3. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command:
