@@ -126,6 +126,8 @@ The procedures are applicable for Volt MX Go v2.1 as only the `voltmx-foundry` h
     
     - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
 
+Process to [Next step](#next-step).
+
 ## For Volt MX Go v2.0.4 or earlier
 
 The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the following helm charts are used for Volt MX Go Foundry installation:

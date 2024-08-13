@@ -148,7 +148,8 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
             ```
 
             !!!note
-                The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.    
+                -  Up until Volt MX Go v2.0.4, the helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt MX Go Foundry installation.
+                - The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.    
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
 5. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command:
