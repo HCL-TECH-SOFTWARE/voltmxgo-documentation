@@ -34,6 +34,13 @@ Offline-enabled apps use soft delete to remove deleted documents from a device's
 
 Disabling document deletion on the Domino DB if using it with an offline-enabled app combined with an agent script on the Domino REST API, which periodically clears soft-deleted documents, enforces soft delete on the Domino DB. These keep the soft-deleted documents long enough for the user devices to sync before pruning the deleted documents and ensure that the Domino DB doesn't have too many soft-deleted documents. 
 
+## Domino database view with duplicate column names
+
+The Domino Adapter handles the Domino database view with columns having the same name in the following ways:
+
+- The Domino Adapter allows Foundry mapping and disregards one of the columns if the data of both columns with the same name are derived from the same field.
+- The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names.
+
 ## Domino Adapter
 
 - Supports only Volt MX Go Foundry Object services.
