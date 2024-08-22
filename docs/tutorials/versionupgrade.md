@@ -54,13 +54,13 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
     Run the following to create a temp directory for downloading the charts, and make it the current directory:
 
-    **Command:**
+    Command:
     ```
     mkdir ~/<new directory name>
     cd ~/<new directory name>
     ```
 
-    **Example:**
+    Example:
     ```
     mkdir ~/mxgo201
     cd ~/mxgo201
@@ -129,7 +129,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
             ```
 
             !!!note
-                - Starting Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+                - Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
                 - The chart name has a version string in the filename. The `helm pull` command will pull down the latest version of the chart. Ensure your tar command uses the correct matching file name.
 
 
@@ -148,7 +148,7 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
             ```
 
             !!!note
-                -  Up until Volt MX Go v2.0.4, the helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt MX Go Foundry installation.
+                -  Up to Volt MX Go v2.0.4, the helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt MX Go Foundry installation.
                 - The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.    
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
@@ -163,14 +163,14 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 === "For Volt MX Go v2.1"
 
     !!!note
-        The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+        The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
 
     --8<-- "verupgrade1.md"
 
 === "For Volt MX Go v2.0.4 or earlier"
 
     !!!note
-        The procedure applies when upgrading up to Volt MX Go v2.0.4 from an earlier release version. Up until Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
+        The procedure applies when upgrading up to Volt MX Go v2.0.4 from an earlier release version. Up to Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
 
         - `voltmx-dbupdate`
         - `voltmx-foundry`

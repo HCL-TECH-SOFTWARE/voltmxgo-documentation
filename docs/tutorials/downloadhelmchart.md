@@ -95,26 +95,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
 5. **(Optional)** To configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).
 
-6. **(Optional)** To use your existing custom certificate when configuring Ingress for Domino REST API, locate the following parameters in the `value.yaml` file and set their corresponding values:
- 
-    - Set the value of `ingress.enabled` to `true`.
-    - Set the value of `ingress.protocol` to `https`.
-    - Set the value of `ingress.tls.enabled` to `true`.
-    - Replace `your-secret-file` with your certificate's filename as the value of `secretName` of both `drapiCustomCert` and `drapiManagementCustomCert`.
-
-    ```{ .yaml .no-copy }
-    ingress:
-      enabled: true
-      protocol: "https"
-      tls:
-        enabled: true
-        drapiCustomCert:
-          secretName: your-secret-file
-        drapiManagementCustomCert:
-          secretName: your-secret-file
-    ```
-
-7. Save the file and exit.
+6. Save the file and exit.
 
 ## 2. Deploy Domino REST API
 

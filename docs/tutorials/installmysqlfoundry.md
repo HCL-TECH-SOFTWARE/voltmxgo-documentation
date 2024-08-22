@@ -2,6 +2,8 @@
 
 --8<-- "devtestenvironment.md"
 
+## Procedure
+
 The procedure guides you in installing MySQL for Volt MX Go Foundry.
 
 1. Run the following commands to create a Volt MX Go Foundry directory in the proper location, and make the Volt MX Go Foundry directory the current directory:
