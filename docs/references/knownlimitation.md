@@ -39,13 +39,12 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 The Domino Adapter handles the Domino database view with columns having the same name in the following ways:
 
 - The Domino Adapter allows Foundry mapping and disregards one of the columns if the data of both columns with the same name are derived from the same field.
-- The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names. 
+- The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names.
 
 ## Domino Adapter
 
 - Supports only Volt MX Go Foundry Object services.
 - Domino object services in Volt MX Go Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
-
  
 ## VoltFormula
 
