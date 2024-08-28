@@ -93,7 +93,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         You can read more about these options in the [Service](https://kubernetes.io/docs/concepts/services-networking/service/) topic in the Kubernetes documentation.
 
 
-5. **(Optional)** If you would like to configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).
+5. **(Optional)** To configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).
 
 6. Save the file and exit.
 

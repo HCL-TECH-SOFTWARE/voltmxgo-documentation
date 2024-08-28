@@ -2,7 +2,7 @@
 
 The following procedures guide you in upgrading the server components of Volt MX Go.
 
---8<-- "browsertab.md"
+<!----8<-- "browsertab.md"-->
 
 ## Upgrade Domino REST API
 
@@ -54,13 +54,13 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
     Run the following to create a temp directory for downloading the charts, and make it the current directory:
 
-    **Command:**
+    Command:
     ```
     mkdir ~/<new directory name>
     cd ~/<new directory name>
     ```
 
-    **Example:**
+    Example:
     ```
     mkdir ~/mxgo201
     cd ~/mxgo201
@@ -116,21 +116,40 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
     2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
-        ```
-        mkdir foundry
-        cd foundry
-        helm pull hclcr/voltmx-dbupdate
-        helm pull hclcr/voltmx-foundry
-        tar -xzf voltmx-foundry-1.n.n.tgz
-        tar -xzf voltmx-dbupdate-1.n.n.tgz
-        mv voltmx-foundry/values.yaml  ./
-        mv voltmx-foundry/init-guids.sh  ./
-        chmod +x init-guids.sh
-        ```
+        === "For Volt MX Go v2.1"
+        
+            ```
+            mkdir foundry
+            cd foundry
+            helm pull hclcr/voltmx-foundry
+            tar -xzf voltmx-foundry-1.n.n.tgz
+            mv voltmx-foundry/values.yaml  ./
+            mv voltmx-foundry/init-guids.sh  ./
+            chmod +x init-guids.sh
+            ```
 
-        !!!note
-            The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
+            !!!note
+                - Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+                - The chart name has a version string in the filename. The `helm pull` command will pull down the latest version of the chart. Ensure your tar command uses the correct matching file name.
 
+
+        === "For Volt MX Go v2.0.4 or earlier"
+
+            ```
+            mkdir foundry
+            cd foundry
+            helm pull hclcr/voltmx-dbupdate
+            helm pull hclcr/voltmx-foundry
+            tar -xzf voltmx-foundry-1.n.n.tgz
+            tar -xzf voltmx-dbupdate-1.n.n.tgz
+            mv voltmx-foundry/values.yaml  ./
+            mv voltmx-foundry/init-guids.sh  ./
+            chmod +x init-guids.sh
+            ```
+
+            !!!note
+                -  Up to Volt MX Go v2.0.4, the helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt MX Go Foundry installation.
+                - The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.    
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
 5. Invoke the init-guids script specifying the file path of the prior deployment's `upgrade.properties` by running the following command:
@@ -141,7 +160,22 @@ As Volt MX Go Foundry supports various installation mechanisms, refer to the rel
 
 #### Procedure
 
---8<-- "verupgrade.md"
+=== "For Volt MX Go v2.1"
+
+    !!!note
+        The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+
+    --8<-- "verupgrade1.md"
+
+=== "For Volt MX Go v2.0.4 or earlier"
+
+    !!!note
+        The procedure applies when upgrading up to Volt MX Go v2.0.4 from an earlier release version. Up to Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
+
+        - `voltmx-dbupdate`
+        - `voltmx-foundry`
+
+    --8<-- "verupgrade.md"
 
 ## Additional information
 
