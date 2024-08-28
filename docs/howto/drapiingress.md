@@ -94,7 +94,7 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
 
     - Obtain a free certificate from [Let's Encrypt](https://letsencrypt.org/) or [ZeroSSL](https://zerossl.com).
 
-    - For test purposes, create a self-signed certificate.
+    - Create a self-signed certificate.
 
         ??? info "To create a self-signed certificate" 
 
@@ -137,7 +137,9 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
                     The parameter following `-connect` must be a DNS name or IP address that resolves to your OpenShift ingress. The `-servername` parameter specifies the DNS name you use to access your Volt MX Go Foundry deployment. This should match the value you specified for `serverDomainName` in `values.yaml`. The DNS names could be the same as long as they resolve to the IP address of your Kubernetes load balancer in front of Ingress or Ingress itself.
 
 
-2. Create a secret file with your SSL certificate and keys on the same namespace where you will install Domino REST API by running the following command:
+2. Create a Kubernetes secret with your SSL certificate details.
+    
+    Create a secret file with your SSL certificate and keys on the same namespace where you will install Domino REST API by running the following command:
 
     ```
     kubectl create secret tls drapi-secret --cert=path/to/tls.crt --key=path/to/tls.key -n namespace
@@ -151,7 +153,7 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
 
 3. Update the Helm `values.yaml`.
 
-    Update your `values.yaml` with the following configuration details to configure SSL. Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
+    Update your `values.yaml` with the configuration details you used to create the secret file to configure SSL. Check the notes for specific use cases and refer to Kubernetes Ingress details in [Before you begin](#before-you-begin) for more details on each parameter.
 
 
     ``` bash
@@ -177,7 +179,7 @@ Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#2-deploy-do
 
     - Obtain a free certificate from [Let's Encrypt](https://letsencrypt.org/) or [ZeroSSL](https://zerossl.com).
 
-    - For test purposes, create a self-signed certificate.
+    - Create a self-signed certificate.
 
         ??? info "To create a self-signed certificate" 
 
