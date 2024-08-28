@@ -153,7 +153,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 - UserInfo 
 
-    This endpoint is used to get information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The returned fields may include:
+    This endpoint gets information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The returned fields may include:
     
     ```{ .yaml .no-copy }
     email
@@ -169,7 +169,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 - ServerInfo
 
-    This endpoint is used to get information about the Domino and Domino REST API version. The returned fields may include:
+    This endpoint gets information about the Domino and Domino REST API versions. The returned fields may include:
 
     ```{ .yaml .no-copy }
     dominoPlatformBits
@@ -192,7 +192,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 - AttachmentsInfo
 
-    This endpoint is used to get information about all the attachments on a document. The return fields may include:
+    This endpoint gets information about all the attachments on a document. The return fields may include:
 
     ```{ .yaml .no-copy }
     size
@@ -202,5 +202,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     ```
 
     !!! note
-         - You need to provide and use the UNID of the document as a filter when performing the GET method. For more information on performing the GET method, see [Test the GET method by viewing a record](../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
-         - The **AttachmentsInfo** endpoint isn't an available option during data model generation when the Domino document doesn't have attachments.   
+         When performing the GET method for **AttachmentsInfo**, an error is thrown if you don't provide the UNID of the document. 
+            
+         For more information on performing the GET method, see [Test the GET method by viewing a record](../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
+           
