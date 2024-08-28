@@ -153,7 +153,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 - UserInfo 
 
-    This endpoint is used to get information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The fields that are returned may include:
+    This endpoint is used to get information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The returned fields may include:
     
     ```{ .yaml .no-copy }
     email
@@ -166,3 +166,41 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     scope
     sub
     ```
+
+- ServerInfo
+
+    This endpoint is used to get information about the Domino and Domino REST API version. The returned fields may include:
+
+    ```{ .yaml .no-copy }
+    dominoPlatformBits
+    dominoFixpackNumber
+    keepDescription
+    keepName
+    keepVendor
+    dominoPlatform
+    dominoMinorVersion
+    keepVersion
+    dominoHotfixNumber
+    dominoProductionBuild
+    dominoQmrNumber
+    dominoBuildNumber
+    dominoQmuNumber
+    keepImageBuild
+    dominoVersion
+    dominoMajorVersion    
+    ``` 
+
+- AttachmentsInfo
+
+    This endpoint is used to get information about all the attachments on a document. The return fields may include:
+
+    ```{ .yaml .no-copy }
+    size
+    created
+    name
+    modified
+    ```
+
+    !!! note
+         - You need to provide and use the UNID of the document as a filter when performing the GET method. For more information on performing the GET method, see [Test the GET method by viewing a record](../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
+         - The **AttachmentsInfo** endpoint isn't an available option during data model generation when the Domino document doesn't have attachments.   
