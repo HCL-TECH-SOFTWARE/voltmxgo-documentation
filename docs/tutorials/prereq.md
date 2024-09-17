@@ -75,19 +75,20 @@ foundry.mymxgo.com - used to access HCL Volt MX Go Foundry
 
 You can either provide your own hostnames, or use these example names. Either the name to IP address mapping must be made in your DNS configuration, or you must modify your system hosts file. Further documentation here assumes you aren't using a DNS system and configuration and are therefore modifying local hosts file entries.
 
+
+### For K3s only
+
 !!!tip
     Obtain your machine's IP ADDRESS as you will need it in the following step.
 
-Add the hostnames that you have chosen to use in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name**. As an example:
+1. Add the hostnames that you have chosen to use in your `/etc/hosts` file together with your **IP ADDRESS** and **dns domain name**. As an example:
 
-```
-10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
-```
+    ```
+    10.190.252.181 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
+    ```
 
-!!!note
-    If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
-
-### For K3s only
+    !!!note
+        If you will be accessing this deployment from other remote machines, you need to apply this same `/etc/hosts` file change on those machines as well.
 
 1. Run the following command to make these name/IP address matches available within the Kubernetes:
 
@@ -123,12 +124,28 @@ Add the hostnames that you have chosen to use in your `/etc/hosts` file together
 
 ### For Rancher Desktop only
 
-You must restart Rancher Desktop:
+1. From a Command Prompt on either Windows 10 or Windows 11, obtain the IPv4 Address for the Ethernet adapter vEthernet (WSL) via the ipconfig command.
 
-1. Select **File** &rarr; **Exit** to close the current session.
-2. Open a new session by opening Rancher Desktop via the desktop icon.
+    ![ipconfig](../assets/images/ipconfigcmd1.png)
 
---8<-- "restartwindows.md"
+    !!! warning "Important"
+        - Select the correct **IPv4 Address** under **Ethernet adapter vEthernet (WSL (Hyper-V firewall))**, which by default starts with **172**. Placing the correct IPv4 address in the Windows host file ensures deployment is reachable from within WSL2 and Windows.
+        - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well. Specify the **IPv4 address** for the Windows system where Foundry is installed. If using a wired connection, use the **IPv4 Address** under **Ethernet adapter Ethernet 3**. If using a wireless connection, use the **IPv4 Address** under **Wireless LAN adapter Wi-Fi**. 
+
+2. Add the hostnames that you have chosen to use in your `C:\Windows\System32\drivers\etc\hosts` file together with your IPv4 ADDRESS and dns domain name.
+
+    For example:
+
+    ```
+    172.23.208.1 drapi.mymxgo.com drapi-management.mymxgo.com foundry.mymxgo.com
+    ```
+
+3. Restart Rancher Desktop.
+
+    1. Select **File** &rarr; **Exit** to close the current session.
+    2. Open a new session by opening Rancher Desktop via the desktop icon.
+
+    --8<-- "restartwindows.md"
 
 ## 4. Create a temp directory for the charts
 

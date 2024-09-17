@@ -31,19 +31,37 @@ wsl --update
 
 Follow any instructions given by the WSL update process. Afterward, from a Windows command prompt or PowerShell window, run the following command to make sure Ubuntu is the default distribution:
 
-```
-wsl --set-default Ubuntu-22.04
-```
+=== "For Ubuntu-22.04"
+
+    ```
+    wsl --set-default Ubuntu-22.04
+    ```
+
+=== "For Ubuntu-24.04"
+
+    ```
+    wsl --set-default Ubuntu-24.04
+    ```
+
 
 Proceed to [install Rancher Desktop](#install-rancher-desktop).
 
 ### Install WSL2
 
-Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting **Run as administrator**. Run the following command to install WSL2 using Ubuntu-22.04 as the Linux distribution:
+Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting **Run as administrator**. Run the following command to install WSL2 using either Ubuntu-22.04 or Ubuntu-24.04 as the Linux distribution:
 
-```
-wsl --install -d Ubuntu-22.04
-```
+=== "For Ubuntu-22.04"
+
+    ```
+    wsl --install -d Ubuntu-22.04
+    ```
+
+=== "For Ubuntu-24.04"
+
+    ```
+    wsl --install -d Ubuntu-24.04
+    ```
+
 
 !!!warning "Important"
     Restart your machine after this initial installation to complete the setup. Once the restart has completed, return to this documentation and complete the steps that follow.
@@ -62,10 +80,19 @@ sudo adduser
 It's not required to enter more information, simply hit the **Enter** key and respond `Y` when prompted **Is the information correct?**.
 
 !!!warning "Important"
-    Make certain that **Ubuntu-22.04** is your default WSL distribution. From a Windows command prompt or PowerShell window, run the following command:
-    ```
-    wsl --set-default Ubuntu-22.04
-    ```
+    Make certain that **Ubuntu-22.04** or **Ubuntu-24.04** is your default WSL distribution. From a Windows command prompt or PowerShell window, run the following command:
+    
+    === "For Ubuntu-22.04"
+
+        ```
+        wsl --set-default Ubuntu-22.04
+        ```
+
+    === "For Ubuntu-24.04"
+
+        ```
+        wsl --set-default Ubuntu-24.04
+        ```
 
 You are now ready to install Rancher Desktop.
 
@@ -75,7 +102,10 @@ You are now ready to install Rancher Desktop.
 1. Download the latest version of the Windows installer from the [Rancher Desktop Releases](https://github.com/rancher-sandbox/rancher-desktop/releases) page.
 
     !!!note
-        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Volt MX Go Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).
+        It is recommended to use Rancher Desktop version 1.15.1.
+
+    <!--!!!note
+        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Volt MX Go Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).-->
 
 2. If you are upgrading from a prior version of MX Go (v2.0.2 or earlier), it's recommended to reset port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
 
