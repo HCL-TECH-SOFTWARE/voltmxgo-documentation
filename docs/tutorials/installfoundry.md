@@ -102,6 +102,8 @@ The procedures are applicable for Volt MX Go v2.1 as only the `voltmx-foundry` h
     ```
     helm install foundry voltmx-foundry -f values.yaml
     ```
+    !!! warning "Important"
+        The deployment process takes several minutes (more than 5 minutes based on tests). Kindly wait for the process to complete. Once done, you receive a notification that the application has been deployed successfully, including release, build, database, and application information. Otherwise, you will receive an error notification that the deployment is unsuccessful.
 
 2. Run the following command to verify when the Volt MX Go Foundry install is ready:
 
@@ -120,7 +122,8 @@ The procedures are applicable for Volt MX Go v2.1 as only the `voltmx-foundry` h
 
 !!!note
     - If you defined a different Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
-    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
+    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well. Specify the **IPv4 address** for the Windows system where Foundry is installed. If using a wired connection, use the **IPv4 Address** under **Ethernet adapter Ethernet 3**. If using a wireless connection, use the **IPv4 Address** under **Wireless LAN adapter Wi-Fi**.
+    
     
     - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
     
@@ -277,7 +280,7 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
 
 !!!note
     - If you defined a different Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
-    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
+    - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well. Specify the **IPv4 address** for the Windows system where Foundry is installed. If using a wired connection, use the **IPv4 Address** under **Ethernet adapter Ethernet 3**. If using a wireless connection, use the **IPv4 Address** under **Wireless LAN adapter Wi-Fi**.
     
     - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
     
