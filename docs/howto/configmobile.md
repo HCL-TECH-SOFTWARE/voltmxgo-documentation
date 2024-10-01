@@ -4,6 +4,10 @@
 
 This procedure describes how to configure the mobile app browser before building and publishing the Native App.
 
+# Before you begin
+
+You have launched Volt MX Go Iris and have a native app project opened.
+
 ## Procedure
 
 1. Go to the **Design** tab.

@@ -2,7 +2,7 @@
 
 How-to guides for instructing users in completing key goals and tasks related to Design Import.
 
-- [Create a new native app project](dicreatenativeapp.md)
+- [Create a native app project](dicreatenativeapp.md)
 
 - [Configure mobile app browser](configmobile.md)
 

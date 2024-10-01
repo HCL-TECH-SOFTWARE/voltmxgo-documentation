@@ -7,21 +7,24 @@ Guides you on how to check and set the logging level, and access the log files. 
 !!!note
     The logging level in Volt MX Go Iris only affects the logs for importing a Domino application at the moment.
 
+## Before you begin
+
+You have launched Volt MX Go Iris.
+
 ## Procedure
 
 ### To check the logging level
 
-- Go to **Help** &rarr; **Logging Level**. The current logging level is indicated.
+- In the top menu of Volt MX Go Iris, go to **Help** &rarr; **Logging Level**. The current logging level is indicated.
 
     !!!note
         The default level is **Trace**. 
 
 ### To set the logging level
 
-- Go to **Help** &rarr; **Logging Level**, and then choose a logging level based on the level of details you want to find in the logs. To learn the description of each logging level, see [Logging levels](../references/reflogginglevels.md).
+1. In the top menu of Volt MX Go Iris, go to **Help** &rarr; **Logging Level**, and then choose a logging level based on the level of details you want to find in the logs. To learn the description of each logging level, see [Logging levels](../references/reflogginglevels.md).
 
-    !!!note
-        You must restart Volt MX Go Iris after setting a new logging level.
+2. Restart Volt MX Go Iris after setting a new logging level.
 
 ### To view the logs
 
