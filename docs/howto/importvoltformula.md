@@ -1,33 +1,38 @@
-# Integrate VoltFormula function with Design Import's actions
+# Modify or update imported actions using VoltFormula
 
---8<-- "mxgoversion.md"
+!!!note
+    The information in this topic applies starting with the Volt MX Go version 2.0.3 release. 
+
+When importing a Domino application using Design Import, you have the option of selecting and including the actions from the Domino view in the import process. The imported actions from the Domino view are automatically converted with `voltmx.rosettajs` syntax, incorporating formula languages like Notes and OpenFormula.  
 
 ## About this task
 
-Guides you through the process of importing the **Domino app** and integrating the VoltFormula function. The imported actions from the Domino view will automatically convert with `voltmx.rosettajs` syntax, incorporating formula languages like **Notes** and **OpenFormula**.
+Guides you on how to modify or update the formula language of actions included in an imported Domino application using VoltFormula. 
+
 
 ## Before you begin
 
-- You must complete the [Design Import tutorial](../tutorials/designimport.md).
-
-- You need to have **actions** on your Domino view configuration.
- 
-- You need to configure your Domino view as **Active**.
+- You have imported a Domino application, including actions from the Domino view, using Design Import.
+- You have launched Volt MX Go Iris and opened the project with the imported Domino application that included actions. 
 
 ## Procedure
 
-1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
-2. Finished all the steps in the **VoltMX Design Import Wizard**.
-3. On the Volt MX Go Iris project, open the form that has the **actions** (i.e., Create Customer) button imported from Domino view.
+1. Click the **Design** tab.
+2. Under **Project**, expand the **Forms** folder and then the view that contains the action that you want to modify.
+3. Click the action, and then go to the right side of the work area to click **Properties** and select the **Action** tab. 
+
+    !!!note
+        An imported action is always under `flexActionBar`.
 
     ![Form with actions button imported](../assets/images/dibutton.png)
 
-4. On **Action** properties tab, select **onClick**.
-5. Click **Edit**. The **Action Editor** page will appear.
-6. Double-click **Add Formula** in the flowchart.
-7. The formula language window will appear containing the *Formula Language* and `voltmmx.rosettajs` syntax.
+4. Click **Edit** next to the **onClick** event. The **Action Editor** opens.
+5. In the **Action Editor**, click the **Add Formula** in the diagram to open the **Formula Editor**.
 
-    ![Formula Language editor](../assets/images/divoltformula.png) 
+    ![Formula Language editor](../assets/images/divoltformula.png)
 
-8. Click **Save**.
+6. Modify or update the formula in the **Formula Language** section of the **Formula Editor** based on your requirements.
+7. Click **Save**. 
+
+
 
