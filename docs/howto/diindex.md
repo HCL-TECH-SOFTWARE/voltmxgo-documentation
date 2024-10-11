@@ -6,7 +6,7 @@ How-to guides for instructing users in completing key goals and tasks related to
 
 - [Configure mobile app browser](configmobile.md)
 
-- [Show Domino Agents as part of the Design Import app](diagents.md) 
+- [Access imported agents in a published Domino app](diagents.md) 
 
 <!--
 

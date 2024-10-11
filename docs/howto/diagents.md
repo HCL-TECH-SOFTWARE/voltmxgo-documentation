@@ -1,68 +1,47 @@
-# Show Domino Agents as part of the Design Import app
+# Access imported agents in a published Domino app
 
---8<-- "mxgoversion.md"
+!!!note
+    The information in this topic applies starting with the Volt MX Go version 2.0.3 release. 
 
-**Domino Agents** which are part the HCL Domino are part of the `nsf` that only Domino Designer can be able to modify. These `nsf` will be able to use by the Domino REST API to be able to use it for other services. Only those configured Agents in a `nsf` will be available to amend by the Domino REST API. These **Agents** will be imported to Volt MX Go Iris as part of the Design Import. 
+Agents are stand-alone programs that perform a specific task in one or more Domino databases. Agents are the most flexible type of automation you can add to most design elements in a Domino application. To learn more, see [Agents](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ABOUT_DESIGNING_AGENTS.html) in the *HCL Domino Designer* documentation.
 
-For more information, see [Agents](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ABOUT_DESIGNING_AGENTS.html) in the HCL Domino Designer documentation.
+!!!note
+    As of Volt MX Go release v2.0.4, only agents meeting the following conditions can be imported using **Design Import**:
+    
+    - The agent's trigger type configuration is **action menu selection**.
+    - The agent's document setting is configured to **All**.
+
+You can include agents in the import when importing a Domino application using **Design Import**. These **agents are imported as actions** and are available in all the views on the imported Domino application.
 
 ## About this task
 
-Shows you how the **Agents** are imported to the Volt MX Iris Go Design Import.
+Guides you on accessing and using imported agents in a published Domino app.
 
 ## Before you begin
 
-- You must read and familiarize yourself with the Design Import tutorial.
+- You have imported a Domino application, including agents, using Design Import.
+- You have published the imported Domino application using Volt MX Go Iris and opened the published application.
 
 ## Procedure
 
-You must finish the procedure [importing Domino Application](../tutorials/designimport.md#import-a-domino-application-using-a-new-volt-mx-go-foundry-app).
+For this procedure, the steps will be based on an example Domino application with agents capable of modifying the region assignment of customers. Although the example Domino application and its agents will differ from your imported Domino application and its agents, the process of accessing and executing the agents will be the same. 
 
-!!!important
-    - For the Volt MX Go release v2.0.4, only limited Agents are supported.
-    - The Design Import App shows the following conditions for using Domino Agents:
-        - If the Domino Agents' trigger type configuration is **action menu**.
-        - If the Domino Agents' document setting is configured to  **All**.
+1. Upon opening the published application in a browser, you will see the **Dashboard**. From the Dashboard, click a view. In the example image, we will click the **Customer B ByRegion** view.
 
-**Importing Agents in Volt MX Go Iris using the Design Import capability**
+    ![Dashboard](../assets/images/diviewagent.png)
 
-- The **Domino Agent** will be imported as **actions**. These will be available on **Views** for all the configured `views` on the imported Domino app.
+2. On the **Customer B ByRegion** page, click **Agents** from the top header to open a context menu showing available agents. In the example image, you can see the available agents.
 
-## Expected result
+    ![Agents context menu](../assets/images/diactions.png)
 
-**Sample output on Agents from the imported Domino App using Web App**
+3. Select an agent. In the example image, the **West to East** agent is selected to move all customers from the West region to the East region.
 
-  In this example, the Domino Agent has the capability to modify the Region. 
+    ![Select West to East action](../assets/images/diactionclick.png)
 
-  1. On the **Views**, click the **Customers B ByRegion**. 
+4. On the dialog indicating that the task of the selected agent has been completed, click **OK**.
 
-      ![Dashboard](../assets/images/diviewagent.png)
-      
-       The **Customers B ByRegion** will open. 
-       
-      ![Customers B ByRegion window](../assets/images/diagentview.png)
-  
-  
-  2. **Agents** action will be available on the navigation bar. Click the **Agents**.
+    ![Notification prompt](../assets/images/diagtmsg.png)
 
-      ![Agents context menu](../assets/images/diactions.png)
+In the example image, you can see that the task of the selected agent, which is to move all customers from the West region to the East region, has been completed.
 
-      The four configured Agent will appear as **actions**. These **actions** are imported from the Domino Agent, which is already set up inside the `nsf` file.
-
-  3. Click the **actions** *West to East*. 
-
-     ![Select West to East action](../assets/images/diactionclick.png)
-
-  4. It will give a prompt that the Agent has been done processing. Click **OK**.
-
-     ![Notification prompt](../assets/images/diagtmsg.png)
-
-  5. All customers in the *West* Region will move to the *East* Region.
-
-     ![Customers B ByRegion window](../assets/images/diactionsresult.png)
-
-
-
-
-   
-
+![Customers B ByRegion window](../assets/images/diactionsresult.png)

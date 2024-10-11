@@ -2,11 +2,11 @@
 
 ## About this task
 
-The procedure describes how to configure the mobile app browser before building and publishing the Native App.
+Shows you how to configure the mobile app browser before building and publishing the Native App.
 
 ## Before you begin
 
-- You have imported a Domino application into a native app project.
+- You have imported a Domino application into a native app project using Design Import.
 - You have launched Volt MX Go Iris and opened your native app project. 
 
 ## Procedure
