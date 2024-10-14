@@ -19,14 +19,18 @@ Guides you on accessing and using imported agents in a published Domino app.
 
 ## Before you begin
 
-- You have imported a Domino application, including agents, using Design Import.
+- You have imported a Domino application, including agents, using Design Import to a **Web App project** in Volt MX Go Iris.
+
+    !!!note
+        Agents are currently **not supported** for **Native App projects**.
+
 - You have published the imported Domino application using Volt MX Go Iris and opened the published application.
 
 ## Procedure
 
 For this procedure, the steps will be based on an example Domino application with agents capable of modifying the region assignment of customers. Although the example Domino application and its agents will differ from your imported Domino application and its agents, the process of accessing and executing the agents will be the same. 
 
-1. Upon opening the published application in a browser, you will see the **Dashboard**. From the Dashboard, click a view. In the example image, we will click the **Customer B ByRegion** view.
+1. Upon opening the published application in a browser, you will see the **Dashboard**. From the **Dashboard**, click a view. In the example image, we will click the **Customer B ByRegion** view.
 
     ![Dashboard](../assets/images/diviewagent.png)
 
