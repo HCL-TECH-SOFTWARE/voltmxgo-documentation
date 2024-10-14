@@ -10,14 +10,14 @@ nav:
         - diindex.md
         - dicreatenativeapp.md
         - configmobile.md
-        - deleteform.md
-        - importvoltformula.md
+    #    - deleteform.md
         - diagents.md
     - VoltFormula:
         - vfindex.md
         - configrosetta.md
         - regunregconfig.md
         - clearfunction.md  
+        - importvoltformula.md
     - First Touch:
         - ftindex.md
         - Import First Touch: importft.md
@@ -25,7 +25,7 @@ nav:
     - Operation:
         - genindex.md
         - codegen.md
-        - insertattachments.md
+        - insertattachments.md   
         - logginglevel.md
     - Uninstall:
         - uninstall.md

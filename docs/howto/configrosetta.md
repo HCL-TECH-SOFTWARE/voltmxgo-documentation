@@ -1,4 +1,4 @@
-# Configure VoltFormula's Rosetta API Options
+# Configure VoltFormula's Rosetta API options
 
 ## About this task
 
