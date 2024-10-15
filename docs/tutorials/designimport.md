@@ -2,6 +2,246 @@
 
 --8<-- "mxgoversion.md"
 
+The tutorial guides you through the Design Import process in Volt MX Go. You will create a project in Volt MX Go Iris and then run the Design Import Wizard to enable you to import Domino application forms, views, and agents, then build those forms and views within Volt MX Go Iris. You will also perform CRUD operations on the imported Domino application published via Volt MX Go Iris.  
+
+At the end of this tutorial, you will gain enough competence to use the Design Import Wizard to successfully import a Domino application. 
+
+## Before you begin
+
+Before starting this tutorial, you must meet prerequisites separated into two situational scenarios: 
+
+- The **All access scenario** is for a user with all the necessary access rights to install and configure Volt MX Go and with the correct access to all required Domino databases and the Domino REST API. 
+- The **Limited access scenario** is for a user who is most likely a Volt MX Go Iris developer and doesn't have all the necessary access. In this case, you must coordinate with a Volt MX Go Foundry administrator and a Domino/Domino REST API administrator to obtain the required access and fulfill other requirements. 
+
+Kindly follow and complete the prerequisites that apply to your situation.
+
+=== "**All access**"
+
+    **Volt MX Go prerequisites**
+
+    - You have completed the Volt MX Go installation.
+    - You have a Volt MX Go Foundry admin account. 
+    - You have created an Environment in Volt MX Go Foundry.
+    - You have taken note of the Volt MX Go Foundry URL. 
+
+
+    **Domino/Domino REST API prerequisites**
+
+    - You have set up Domino REST API in the Domino server containing the Domino database you are importing
+    - You have at least Designer access to the Domino database where you are creating or updating a schema and to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
+    - You have accessed Domino REST API and configured a schema with:
+        - All necessary forms:
+            - having active status 
+            - including the `$FILES` field
+            - having the **Formula for Delete Access** set to `@True`
+            - having a default mode and a dql mode, and both modes having matching fields 
+        - All necessary views having active status
+        - All necessary agents having active status
+    - You have configured a scope for your schema:
+        - having a scope name not exceeding 30 characters
+        - having a **Maximum Access Level** set to *Designer* or *Manager*
+    - You have created an OAuth application:
+        - having your configured scope and `$SETUP` added to the *Scope* field.
+        - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
+    - You have taken note of the Domino REST API URL, and the Client ID and Client Secret of the OAuth application
+
+
+=== "**Limited access**"
+
+    **Volt MX Go prerequisites**
+    
+    - You have completed the installation of Volt MX Go Iris.
+    - You have contacted the Volt MX Go Foundry administrator to:
+        - have access to Volt MX Go Foundry 
+        - have a Volt MX Go Foundry admin account
+        - have an Environment created in Volt MX Go Foundry in case there is none
+        - have the Volt MX Go Foundry URL
+
+    **Domino/Domino REST API prerequisites**
+
+    - You have contacted the Domino/Domino REST API administrator to:
+        - ensure you have at least Designer access to the Domino database you will be importing
+        - configure a schema for the Domino database that you will be importing with:
+            - All necessary forms:
+                - having active status 
+                - including the `$FILES` field
+                - having the *Formula for Delete Access* set to `@True`
+                - having a `default` mode and a `dql` mode, and both modes having matching fields 
+            - All necessary views having active status
+            - All necessary agents having active status
+        - configure a scope for your schema:
+            - having a scope name not exceeding 30 characters
+            - having a **Maximum Access Level** set to *Designer* or *Manager*. 
+        - create an OAuth application:
+            - having your configured scope and $SETUP added to the Scope field.
+            - having a placeholder callback URL that will be replaced with the callback URL from the Identity Service you will create using the Design Import Wizard 
+        - provide you with Domino REST API URL, and the Client ID and Client Secret of the OAuth application.
+        
+## Launch Volt MX Go Iris
+
+1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt MX Go Iris home icon.
+
+    ![Volt MX Go Iris icon](../assets/images/irisicon.png) 
+
+2. Configure the login settings.
+
+    1. Go to **Preferences**.
+        
+        For Windows, select **Edit** &rarr; **Preferences**. 
+        
+        For Mac, depending on your macOS, select **Volt MX Go Iris** &rarr; **Preferences** or **Settings**.
+
+    2. In the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
+
+    3. On the **Volt MX Go Foundry** tab, enter your Volt MX Go Foundry URL in the **Foundry URL** text box, and then click **Validate**.
+
+        ![Preferences](../assets/images/dipreference.png)
+        
+        You should see the **Validation Successful** message at the top of the dialog. If you entered an incorrect Volt MX Go Foundry URL, you will see an error message at the top of the dialog advising you to try the validation again.
+    
+    4. Click **Done**.
+    
+## Create a new project
+    
+1. In the top menu, select **Project** &rarr; **New Project**.
+2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
+    
+    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
+
+    For other platforms, see [Native App]( ../howto/dicreatenativeapp.md).
+
+3. In the **Which device size do you want to start building for first?** dialog, select **Desktop** and click **Next**.
+
+    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:80%;width:80%"}
+
+4. Enter your **Project Name** and click **Create**.  
+  
+    ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
+
+You can now see your project name in the upper-left corner of the **Volt MX Go Iris** UI.
+
+![Volt MX Go Iris user interface](../assets/images/diappname.png){: style="height:80%;width:80%"}
+
+## Import a Domino application
+
+1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens.
+
+2. On **Getting Started**, click **Next**.
+
+    ![Design Import Wizard dialog](../assets/images/diwizard.png)
+    
+3. On **Associate Foundry App** step, click **Create New**.
+
+    ![Design Import Wizard dialog](../assets/images/difoundryapp.png)
+
+    The default name is the same as your **Project Name**.
+
+    ![Design Import Wizard dialog](../assets/images/difoundrybackend.png) 
+         
+4. On **Identity Service**.
+
+    **For New Idenity Service**, be sure to have your Domino REST API URL, Scope, Client ID, and Client Secret from the Domino REST API admin.
+    
+    1. Enter the required details in the **Create New Identity Service** and click **Next**. 
+
+        |  **Fields**     | **Description** |
+        | -----------     | -----------     |
+        | Domino REST API URL   | This refers to the Domino REST API URL you are working with. You must enter your respective Domino REST API URL.    |
+        | Scope       | This is the name of your configured scope described in your App of Domino REST API app management. $DATA scope show all the scopes in your App in Domino REST API.  |
+        |Client ID    | This is the App ID of your Application in Domino REST API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
+        |Client Secret| This is the App Secret in Domino REST API app management. Once you configured and added your App, you may see your `App ID` and your `App Secret`. |
+        |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
+
+        ![Design Import Wizard dialog](../assets/images/dikeep.png)
+
+    2. Select the **Identity Service** - for example, MXGOISMyApp.
+
+        ![Design Import Wizard dialog](../assets/images/didrapi.png)
+        
+        !!!warning "Important"
+            It's important to get your **callback URL** in Volt MX Go Foundry and send it to Domino REST API admin. Form more information. see [copy callback URL in Volt MX Go Foundry](#copy-callback-url-in-volt-mx-go-foundry). Be sure that your Domino REST API admin updated the callback URL in your Domino REST API application immediately without closing the wizard.
+
+    3. Click **Next**.
+        
+        !!!warning "Important"
+            If the wizard is terminated, you may proceed with [Import a Domino Application using existing identity service from existing Volt MX Go Foundry app](#import-a-domino-application-using-existing-identity-service-from-existing-volt-mx-go-foundry-app). 
+            
+
+    4. Login with your **Domino credentials** within this wizard dialog and click **Allow**.
+
+        ![Domino REST API permission request dialog](../assets/images/didrapilogin.png)
+
+    5. Select your **Foundry App Identity Service** name associated to Domino REST API and click **Next**.
+
+        ![Design Import Wizard dialog](../assets/images/difoundry.png)
+        
+        !!!warning "Important"
+            The wizard expects to stop if your login credentials don't have *Designer* access in Domino REST API on your scope, or if your Domino database ACL doesn't give you a *Designer* role. For more information, see [Troubleshooting](../references/troubleshoot.md#design-import).  
+
+5. On **Scope and Forms**
+
+    !!!Important
+        In this Volt MX Go 2.0.4 version, **actions** imported as inactive buttons.
+
+    1. Select the **scope** that you’ve configured in Domino REST API. 
+
+        !!!warning "Important"
+            The scope name should be no more than 30 characters. If it exceeds this limit, a prompt will appear. In this case, contact your Domino REST API admin to configure your scope. Please take note of the prerequisites required for [importing Domino Application](../tutorials/designimport.md#before-you-begin).
+
+        ![Design Import Wizard dialog](../assets/images/discope.png)
+
+        When a **Domino REST API Issues Report** prompt appears, check [Domino REST API schema issues](../references/troubleshoot.md#design-import).
+
+    2. **Select** or **deselect** the active `forms`, `fields` in each form, `views`, `agents`, `actions` and click **Next**. 
+    
+        !!!note
+            - The following lists show the forms, views and action you have **active** and **inactive** in the **Domino REST API**. When selecting items, you can only choose those that are active, such as forms, views, agents, and actions. Inactive items on the other hand, only display their disabled form, action, and agent names.
+            - These **actions**, which are basically *buttons*, can be added to your imported app. These **actions** are often active within the Domino database `.nsf` and can only be modified in the **Domino Designer**. 
+      
+        1. On the **Forms** tab, you may select or deselect **form**, **field within forms** and **actions**. 
+        
+            ![Design Import Wizard dialog](../assets/images/discopeform.png)
+
+        2. On the **Views** tab, you may select or deselect **views** and **actions**.
+
+            ![Design Import Wizard dialog](../assets/images/didbviews.png)
+
+        3. On the **Agents** tab, you may select or deselect **agents**. 
+
+            ![Design Import Wizard dialog](../assets/images/diagents.png)
+        
+    Follow this link to learn more on [showing Domino Agents as part of the Design Import app](../howto/diagents.md)
+
+6. On **Summary**, review the final `forms`, `fields` in each form, `views` and `agent`, and then click **Build Iris Application**.
+
+    !!!note
+        It may take a while to complete the publishing of the imported Domino app.
+
+    ![Design Import Wizard dialog](../assets/images/disummary.png)
+
+7. On **Result**, see the final `forms`, `views`, `actions`,`agent` and then click **Done**.
+ 
+    !!!tip
+        - The **check mark icon** beside each of the `forms`, `fields` from the forms, `views` and `agents` means that it was successfully created.
+        - The **warning icon** beside each of the `forms`, `fields from the forms`, `views` and `agents` means that the supported property values doesn't match with the Volt MX Go Iris app property values.
+        
+        - Turn on the **Show only error** toggle to see all the fields with the error icon.
+        - When selecting a scope with ***active Agents***, the **Agents** tab appears. Otherwise, the **AppForms** tab is displayed.
+
+    ![Design Import Wizard dialog](../assets/images/diresult.png) 
+
+Once you click **Done**, each of the selected forms, views, and agents are imported into Volt MX Go Iris through the use of `forms`. **The App Events [desktop]** appears.
+
+![Volt MX Go Iris UI](../assets/images/dioutput.png)
+
+!!!note
+    - You can view the final result of the Domino database `.nsf` that you configured in Domino REST API.
+    - You can click the link **click here to view logs on a separate window** to see the summarized `forms`, `views`, `agents` and app forms.
+
+<!--
+
+--8<-- "mxgoversion.md"
+
 This tutorial will walk you through the Design Import process in Volt MX Go. With the Volt MX Go Iris client, you can import a Domino database `.nsf` file, bringing its design elements into Volt MX Go. This feature helps you import the Domino database `.nsf` from Domino REST API and make it available on mobile apps and responsive desktop apps.
 
 The tutorial implements two user experiences: 
@@ -72,7 +312,7 @@ The tutorial implements two user experiences:
 
     3. On the **Volt MX Go Foundry** tab, enter your Volt MX Go Foundry URL in the **Foundry URL** text box, and then click **Validate**.
         
-        <!-- You should see the “Validation Successful” message at the top of the dialog.-->
+        <!-- You should see the “Validation Successful” message at the top of the dialog.
     
     4. Click **Done**.
     
@@ -92,7 +332,7 @@ The tutorial implements two user experiences:
 2. On the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
     For other platforms, please see [Native App]( ../howto/dicreatenativeapp.md).
 
-    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/didevice.png)
 
 3. On the **Which device size do you want to start building for first?** dialog, select **Desktop** for Web App and click **Next**.
 
@@ -451,3 +691,5 @@ Once you click **Done**, each of the selected forms, views, and agents have impo
  
 !!!note
     Since changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+
+    -->
