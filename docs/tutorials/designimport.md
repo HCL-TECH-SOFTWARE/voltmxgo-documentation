@@ -15,33 +15,39 @@ Before starting this tutorial, you must meet prerequisites based on the situatio
 
 Kindly follow and complete the prerequisites that apply to your situation.
 
-=== "**All access**"
+=== "All access"
 
     **Volt MX Go prerequisites**
 
-    - You have completed the Volt MX Go installation.
-    - You have a Volt MX Go Foundry admin account. 
-    - You have created an Environment in Volt MX Go Foundry. 
+    - You have completed the [Volt MX Go installation](../tutorials/).
+    - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md). 
+    - You have [created an Environment in Volt MX Go Foundry](../tutorials/adaptertutorial.md#add-an-environment). 
 
     **Domino/Domino REST API prerequisites**
 
-    - You have set up Domino REST API in the Domino server containing the Domino database you are importing
+    !!!tip
+        Contact your Domino administrator/Domino REST API administrator for any needed assistance.
+
+    - You have set up Domino REST API in the Domino server containing the Domino database you are importing.
     - You have at least Designer access to the Domino database where you are creating or updating a schema and to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
-    - You have accessed Domino REST API and configured a schema with:
+
+        For more information on access levels, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation 
+
+    - You have accessed Domino REST API
+    - You have [configured a schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#add-a-schema) with:
         - All necessary forms:
-            - having active status 
-            - including the `$FILES` field
-            - having the **Formula for Delete Access** set to `@True`
-            - having a default mode and a dql mode, and both modes having matching fields 
-        - All necessary views having active status
-        - All necessary agents having active status
-    - You have configured a scope for your schema:
+            - having [active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-form) 
+            - including the `$FILES` field and having the **Formula for Delete Access** set to `@True`(see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration) for more information)
+            - having a default mode and a dql mode, and both modes having matching fields (see [Clone a mode](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode) and [Compare modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#compare-modes) for more information) 
+        - All necessary [views having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view)
+        - All necessary [agents having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-an-agent)
+    - You have [configured a scope for your schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope):
         - having a scope name not exceeding 30 characters
         - having a **Maximum Access Level** set to *Designer* or *Manager*
-    - You have created an OAuth application:
+    - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application):
         - having your configured scope and `$SETUP` added to the *Scope* field.
         - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
-    - You have taken note of the Domino REST API URL, and the Client ID and Client Secret of the OAuth application
+    - You have taken note of the Domino REST API URL, and the Client ID and [Client Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application
 
 
 === "**Limited access**"
@@ -57,6 +63,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
     **Domino/Domino REST API prerequisites**
 
     - You have contacted the Domino/Domino REST API administrator to:
+
         - ensure you have at least Designer access to the Domino database you will be importing
         - configure a schema for the Domino database that you will be importing with:
             - All necessary forms:
@@ -68,14 +75,17 @@ Kindly follow and complete the prerequisites that apply to your situation.
             - All necessary agents having active status
         - configure a scope or scopes for your schema:
             - having a scope name not exceeding 30 characters
-            - having a **Maximum Access Level** set to *Designer* or *Manager*. 
+            - having a **Maximum Access Level** set to *Designer* or *Manager*.
+
         - create an OAuth application:
+
             - having your configured scope or scopes and `$SETUP` added to the **Scope** field.
             
-            !!!tip
-                If you want all the scopes in Domino REST API to be available to Design Import, just add `$DATA` and `$SETUP` to the **Scope** field. 
+                !!!tip
+                    If you want all the scopes in Domino REST API to be available to Design Import, just add `$DATA` and `$SETUP` to the **Scope** field. 
             
-            - having a placeholder callback URL that will be replaced with the callback URL from the Identity Service you will create using the Design Import Wizard 
+            - having a placeholder callback URL that will be replaced with the callback URL from the Identity Service you will create using the Design Import Wizard
+
         - provide you with Domino REST API URL, and the Client ID and Client Secret of the OAuth application.
         
 ## Launch Volt MX Go Iris
@@ -109,13 +119,13 @@ Kindly follow and complete the prerequisites that apply to your situation.
     3. Click **Sign In**. Your username appears next to the profile icon.
 
 ## Create a new project
+
+In this tutorial, we will use a web app project. The following steps will enable you to create one. If you want to create a native app, see [create a native app project](../howto/dicreatenativeapp.md) for more information.  
     
 1. In the top menu, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
     
     ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
-
-    For other platforms, see [Native App]( ../howto/dicreatenativeapp.md).
 
 3. In the **Which device size do you want to start building for first?** dialog, select **Desktop** and click **Next**.
 
@@ -168,10 +178,10 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         ![Design Import Wizard dialog](../assets/images/didrapi.png)
         
         !!!warning "Important"
-            You need to **pause** here and **do not** click **Next** until you **update the callback URL in the OAuth app** in Domino REST API with the callback URL from the Identity Service in your Volt MX Go Foundry app. If you click **Next** without updating the callback URL in the OAuth app, a validation error appears. 
+            You need to **pause** here and **do not** click **Next** until you **update the callback URL in the OAuth app** in Domino REST API with the callback URL from the Identity Service in your Volt MX Go Foundry app. If you click **Next** without updating the callback URL in the OAuth app, a validation error occurs and prevents you from proceeding. 
         
         ???note "To update the callback URL of the OAuth app in Domino REST API"
-            1. Get the callback URL of your Identity Service.
+            1. **Get the callback URL of your Identity Service**.
 
                 1. Log in to Volt MX Go Foundry.
                 1. On the **Apps** page, click your Volt MX Go Foundry app.
@@ -182,7 +192,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
                 1. Close Volt MX Go Foundry.
 
-            1. Update the callback URL of the OAuth app in Domino REST API.
+            1. **Update the callback URL of the OAuth app in Domino REST API**.
 
                 === "All access"
 
@@ -211,6 +221,8 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     3. Click **Next**. The **HCL Domino Login** dialog opens.
 
+        ![Domino REST API log in dialog](../assets/images/dicredential.png)
+
     4. Login with your *Domino credentials* in the **HCL Domino Login** dialog.
     
     5. In the Permission Requested dialog, click **Allow**. 
@@ -229,7 +241,9 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         - If a dialog opens indicating that your Domino REST API schema has misconfigured settings, kindly see [Troubleshooting](../references/troubleshoot.md#design-import) for more information on addressing the issue.
         - If you see a **warning** icon appear beside any form, form field, view, or agent, click the **Reports** folder icon and click a report to open a detailed report explaining the cause of the warning.
 
-    1. Select the **scope** you want to use from the drop-down list. When you only add one scope when creating the identity service, that scope is shown by default. 
+    1. Select the **scope** you want to use from the drop-down list. 
+    
+        The available scopes are based on the scopes defined when creating the identity service.  
 
         ![Design Import Wizard dialog](../assets/images/discope.png)
 
@@ -254,7 +268,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     !!!note
         - It may take a while to complete the publishing of the imported Domino app.
-        - If a dialog indicating that existing Iris forms are detected, click **Yes** to overwrite the detected forms and proceed with the building of the application. The existing Iris forms were automatically generated when you created the project in Volt MX Go Iris.
+        - If a dialog indicating that existing Iris forms are detected appears, click **Yes** to overwrite the detected forms and proceed with the building of the application. The existing Iris forms were automatically generated when you created the project in Volt MX Go Iris.
 
             ![Screenshot](../assets/images/dideleteform.png)
 
@@ -271,11 +285,11 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     ![Design Import Wizard dialog](../assets/images/diresult.png) 
 
 
-Once you click **Done**, you can now see the imported forms and views in a storyboard view in Volt MX Go Iris. 
+Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt MX Go Iris. 
 
 ![Import output in storyboard view](../assets/images/dioutput.png)
 
-To see the imported forms in a directory, you can click the **DESIGN** tab to show the **Project** tab. You then expand **Responsive Web / Desktop** and then the **Form** directory to show the imported forms, views, and actions.
+To see the imported forms in a directory, click the **DESIGN** tab to show the **Project** tab. You then expand the **Responsive Web / Desktop** and the **Form** directory to show the imported forms, views, and actions.
 
 ![Import output in the Forms directory](../assets/images/dioutput1.png)
 
