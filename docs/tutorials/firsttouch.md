@@ -87,7 +87,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
     !!!note
         This document assumes you are using the Domino IdP, which uses your Domino directory credentials. If you aren't, enter the credentials for the IdP you've configured for Domino REST API.
 
-    ![HCL Domino Login page](../assets/images/fthcllogin.png){: style="height:60%;width:60%"}
+    ![HCL Domino Login page](../assets/images/dicredential.png){: style="height:60%;width:60%"}
 
 8. On the **Permission Requested** page, click **Allow**.
 

@@ -8,6 +8,7 @@ nav:
         - drapiingress.md
     - Design Import:
         - diindex.md
+        - diimport.md
         - dicreatenativeapp.md
         - configmobile.md
     #    - deleteform.md
