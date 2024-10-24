@@ -15,13 +15,13 @@ Before starting this tutorial, you must meet prerequisites based on the situatio
 
 Kindly follow and complete the prerequisites that apply to your situation.
 
-=== "All access"
+=== "All access scenario"
 
     **Volt MX Go prerequisites**
 
-    - You have completed the [Volt MX Go installation](../tutorials/).
+    - You have completed the [Volt MX Go installation](installation.md).
     - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md). 
-    - You have [created an Environment in Volt MX Go Foundry](../tutorials/adaptertutorial.md#add-an-environment). 
+    - You have [created an Environment in Volt MX Go Foundry](adaptertutorial.md#add-an-environment). 
 
     **Domino/Domino REST API prerequisites**
 
@@ -33,7 +33,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
         For more information on access levels, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation 
 
-    - You have accessed Domino REST API
+    - You have accessed Domino REST API.
     - You have [configured a schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#add-a-schema) with:
         - All necessary forms:
             - having [active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-form) 
@@ -47,14 +47,14 @@ Kindly follow and complete the prerequisites that apply to your situation.
     - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application):
         - having your configured scope and `$SETUP` added to the *Scope* field.
         - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
-    - You have taken note of the Domino REST API URL, and the Client ID and [Client Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application
+    - You have taken note of the Domino REST API URL, and the App ID and [App Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application.
 
 
-=== "**Limited access**"
+=== "Limited access scenario"
 
     **Volt MX Go prerequisites**
     
-    - You have completed the installation of Volt MX Go Iris.
+    - You have completed the [installation of Volt MX Go Iris](../tutorials/installiris.md).
     - You have contacted the Volt MX Go Foundry administrator to:
         - have access to Volt MX Go Foundry 
         - have a Volt MX Go Foundry admin account
@@ -86,7 +86,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
             
             - having a placeholder callback URL that will be replaced with the callback URL from the Identity Service you will create using the Design Import Wizard
 
-        - provide you with Domino REST API URL, and the Client ID and Client Secret of the OAuth application.
+        - provide you with Domino REST API URL, and the App ID and App Secret of the OAuth application.
         
 ## Launch Volt MX Go Iris
 
@@ -194,7 +194,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
             1. **Update the callback URL of the OAuth app in Domino REST API**.
 
-                === "All access"
+                === "All access scenario"
 
                     1. Log in to Domino REST API.
                     1. Select **Application Management – OAUTH** from the home page or **Applications** from the side navigation pane to access the **Application Management** page.
@@ -203,7 +203,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
                     1. Click **Update**.
                     1. Close Domino REST API.
 
-                === "Limited access"
+                === "Limited access scenario"
 
                     1. Send the copied callback URL to the Domino REST API administrator and request to update the callback URL of the OAuth app.
                     2. Get confirmation that the callback URL of the OAuth app is already updated before proceeding.
