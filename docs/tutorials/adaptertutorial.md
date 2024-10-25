@@ -4,26 +4,76 @@ The tutorial guides you through the Domino Adapter process in Volt MX Go. You wi
 
 For more information, see [Data models](../topicguides/datamodel.md) and [Methods](../topicguides/method.md).  
 
-At the end of this tutorial, you can manually create an app in Volt MX Go Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API.
+At the end of this tutorial, you can manually create an app in Volt MX Go Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API. You will also be able to test the methods for interacting with the data model.
 
 ## Before you begin
 
-- You have completed the [Volt MX Go installation](installation.md).
+Before starting this tutorial, you must meet prerequisites based on the situational scenario that applies to you: 
 
-- You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+- The **All access scenario** is for a user with all the necessary access rights to install and configure Volt MX Go and with the correct access to all required Domino databases and the Domino REST API. 
+- The **Limited access scenario** is for a user who is most likely a Volt MX Go Foundry Administrator that doesn't have all the necessary access to all the required Domino databases and the Domino REST API. In this case, you must coordinate with a Domino/Domino REST API administrator to obtain the required access and fulfill other requirements.
 
-!!!tip
-    The following actions might require certain Domino access rights. Contact your Domino Administrator/Domino REST API Administrator for assistance.
+Kindly follow and complete the prerequisites that apply to your situation.
 
-- You have at least a *Designer* access to the Domino database you are creating or updating a Schema.
-- You have at least an *Editor* access to the Domino Keep Configuration database `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
-- You have the correct access level to the Domino database to test the CRUD operations. 
+=== "All access scenario"
 
-    For more information, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation or contact your Domino/Domino REST API administrator.  
+    **Volt MX Go prerequisites**
 
-- You have added a schema, activated the forms of the schema, and added a `dql` mode similar to the `default` mode to each activated form in Domino REST API. For more information, see [Schema Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html).
+    - You have completed the [Volt MX Go installation](installation.md).
 
-- You have added a scope for your schema in Domino REST API. For more information, see [Scope Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html).
+    - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+
+    **Domino/Domino REST API prerequisites**
+
+    !!!tip
+        Contact your Domino administrator/Domino REST API administrator for any needed assistance.
+
+    - You have set up Domino REST API in the Domino server containing the Domino database you are importing.
+    - You have at least *Designer* access to the Domino database where you are creating or updating a schema.
+    - You have at least an *Editor* access to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
+    - You have the correct access level to the Domino database to test the CRUD operations.
+
+        For more information on access levels, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation 
+
+    - You have accessed Domino REST API
+    - You have configured a schema, activated the forms of the schema, and added a `dql` mode having similar fields to the `default` mode to each activated form. For more information, see [Schema Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html).
+
+    - You have configured a scope for your schema. For more information, see [Scope Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html).
+
+    - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application):
+        - having your configured scope added to the *Scope* field.
+        - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create.
+
+    - You have taken note of the Domino REST API URL, and the App ID and [App Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application
+
+=== "**Limited access scenario**"
+
+    **Volt MX Go prerequisites**
+    
+    - You have completed the [Volt MX Go installation](installation.md).
+
+    - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+
+    **Domino/Domino REST API prerequisites**
+
+    - You have contacted the Domino/Domino REST API administrator to:
+
+        - ensure you have at least Designer access to the Domino database you will be accessing
+        - ensure you have the correct access level to the Domino database to test the CRUD operations.
+        - configure a schema for the Domino database that you will be using with:
+            - All necessary forms:
+                - having active status 
+                - having a `default` mode and a `dql` mode, and both modes having matching fields 
+            - All necessary views having active status
+            - All necessary agents having active status
+        - configure a scope or scopes for your schema
+        - create an OAuth application:
+
+            - having your configured scope or scopes and `$SETUP` added to the **Scope** field.
+            - having a placeholder callback URL that will be replaced with the callback URL from the Identity Service you will configure later in this tutorial
+
+        - provide you with Domino REST API URL, and the Client ID and Client Secret of the OAuth application.
+
 
 ## Log in to Volt MX Go Foundry
 
@@ -63,43 +113,25 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 
         Example:  `[Domino REST API server URL]/oauth/token`
 
-    4. In the **Callback URL** text box, click **Copy**. <br/> You need the callback URL when configuring your app in Domino REST API.
-    5. Create and configure an application in Domino REST API. 
+    4. In the **Callback URL** text box, click **Copy**. 
+    
+        You need to save the copied callback URL and use it to [update the placeholder callback URL in the OAuth app](#update-callback-url-of-oauth-app-in-domino-rest-api) in Domino REST API.
+
+    6. Enter the name of the scope, configured in the OAuth application in the Domino REST API, in the **Scope** text box. 
 
         !!!warning "Important"
-            You need to **pause** the execution of the **Configure an Identity Service** procedure without saving your initial changes and complete the creation and configuration of an app in Domino REST API before proceeding.
-
-        ???note "To create and configure an application in Domino REST API" 
-            
-            1. Log in to Domino REST API. For more details, see [Access Domino REST API](../howto/accessdrapi.md).
-
-            2. Select **Application Management - OAuth** from the home page.
-            3. On the **Application Management** page, click **Add Application**.
-            4. Under **Add New Application**, fill in the form:
-                1. Enter an **Application Name**.
-                2. Provide a **Description**.
-                3. Paste the callback URL copied when configuring the Identity Service in Volt MX Go Foundry in the **Callback URLs** text box.
-                4. Provide the application startup page URL under **Startup Page**. 
-                4. Select and add a scope in the **Scope** field.
-            5. Click **Add**. 
-            6. On the **Application Management** page, choose the application that you have just added and click **Click to Generate Secret**.
-            7. Take note of the App Secret and App ID. You need these details in configuring the Identity Service in Volt MX Go Foundry.
-
-    6. Enter the name of the scope that you have configured in your app in Domino REST API in the **Scope** text box. 
-
-        !!!warning "Important"
-            Make sure that the name of the scope you enter in the **Scope** text box matches the name of the scope that you have configured in your app in Domino REST API. 
+            Make sure that the name of the scope you enter in the **Scope** text box matches the name of the scope that's configured in the OAuth app in Domino REST API. 
 
     ![Identity service configuration page](../assets/images/identityproviderdetails.png)
 
 5.	Under **Client Details**:
 
     1. Select **Basic authentication** as the **Client Assertion Type**. 
-    2. Enter the App ID of your app in Domino REST API in the **Client ID** text box.
-    3. Enter the App Secret of your app in Domino REST API in the **Client Secret** text box.
+    2. Enter the App ID of the OAuth app in Domino REST API in the **Client ID** text box.
+    3. Enter the App Secret of the OAuth app in Domino REST API in the **Client Secret** text box.
 
     !!!tip
-        The App ID and App Secret are generated when you add an app in Domino REST API. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html) in the Domino REST API documentation.  
+        The App ID and App Secret are generated when an OAuth app is added on Domino REST API. For more information, see [Application Management](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html) in the Domino REST API documentation.  
 
 6.	Under **Advanced**:
     
@@ -108,9 +140,32 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 
 7.	Click **Save**.
 
-!!!tip
-    - Click **Test Login** to verify if the configured Identity service works. 
-    - If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything.  
+### Update callback URL of OAuth app in Domino REST API
+
+=== "All access scenario"
+
+    1. Log in to Domino REST API.
+    1. Select **Application Management – OAUTH** from the home page or **Applications** from the side navigation pane to access the **Application Management** page.
+    1. Click the **Edit Application** icon corresponding to your OAuth app.
+    1. Update the **Callback URLs** field with the callback URL you copied from your Identity Service.
+    1. Click **Update**.
+    1. Close Domino REST API.
+
+=== "Limited access scenario"
+
+    1. Send the copied callback URL to the Domino REST API administrator and request to update the callback URL of the OAuth app.
+    2. Get confirmation that the callback URL of the OAuth app is already updated before proceeding with verifying your Identity Service.  
+
+### Verify if configured Identity service works
+
+!!!note
+    Ensure the callback URL in the OAuth app you are using has been updated before performing this procedure. 
+
+1. Log in to Volt MX Go Foundry.
+1. On the **Apps** page, click your Volt MX Go Foundry app.
+1. On the **Identity** tab under **Configure Services**, click your Identity Service.
+1. Click **Test Login** to verify if the configured Identity service works. 
+    - If the configuration works, you might need to enter your Domino credentials in the **HCL Domino Login** dialog and click **Login**. In the **Permission Requested** dialog, click **Allow**. You might also only see the **Permission Requested** dialog without needing to enter anything.  
     - If the configuration doesn't work, an error message is shown. 
 
 ## Add an environment 
@@ -190,7 +245,11 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 
 5. Click **Generate**. The forms and view entities are now added to the **Data Model**. 
 
-## Test the GET method by viewing a record
+## Test methods for interacting with the data model
+
+The following produres enable you to test the different methods for interacting with the configured data model.
+
+### Test the GET method by viewing a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **GET**. 
@@ -216,7 +275,7 @@ At the end of this tutorial, you can manually create an app in Volt MX Go Foundr
 
 For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
-## Test the POST method by creating a record
+### Test the POST method by creating a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **POST**.
@@ -231,7 +290,7 @@ For more information on supported parameters, see [Supported OData query paramet
 
 6. Click **Save** after viewing.
 
-## Test the PUT method by updating a record
+### Test the PUT method by updating a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PUT**.
@@ -250,7 +309,7 @@ For more information on supported parameters, see [Supported OData query paramet
 
 6. Click **Save** after viewing.
 
-## Test the DELETE method by deleting a record
+### Test the DELETE method by deleting a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **DELETE**.
@@ -266,7 +325,7 @@ For more information on supported parameters, see [Supported OData query paramet
 
 6. Click **Save** after viewing.
 
-## Test the PATCH method by updating a record
+### Test the PATCH method by updating a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **PATCH**.
@@ -282,7 +341,7 @@ For more information on supported parameters, see [Supported OData query paramet
 
 6. Click **Save** after viewing.
 
-## Test the BULK UPDATE method for updating a collection of records
+### Test the BULK UPDATE method for updating a collection of records
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **BULK UPDATE**.
