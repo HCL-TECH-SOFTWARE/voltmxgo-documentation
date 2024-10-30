@@ -63,7 +63,8 @@ The table shows a simplified list of data-type mappings between Domino REST API 
 
 |Domino REST API format|Volt MX Go Foundry type|Additional details|
 |---|---|---|
-|DATA, DATE-TIME|date|Example: `2023-05-09T19:39:47Z`|
+|DATE-TIME|date|Example: `2023-05-09T19:39:47Z`|
+|DATE|date|Example: `2023-05-09`<br/><br/>For more information, see [Data model metadata attribute](#data-model-metadata-attribute).|
 |BYTE, DOUBLE, FLOAT, INT32, INT64|number|Example: `7`|
 |BOOLEAN|boolean|Example: `true`|
 |BINARY|string||
