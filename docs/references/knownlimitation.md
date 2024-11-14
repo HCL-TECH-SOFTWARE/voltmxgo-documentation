@@ -36,10 +36,24 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 
 ## Domino database view with duplicate column names
 
+**Design Import**
+
+Design Import doesn't support Domino database views with columns having the same name if those columns have different fields. During the import process, you can see these views listed under **Unsupported Views** on the **View** tab on the **Scope and Forms** page of the **Design Import Wizard**.
+
+**Domino Adapter**
+
 The Domino Adapter handles the Domino database view with columns having the same name in the following ways:
 
 - The Domino Adapter allows Foundry mapping and disregards one of the columns if the data of both columns with the same name are derived from the same field.
 - The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names.
+
+## Design Import
+
+- Import of forms and views with DBCS character names aren't supported. These forms and views will be listed under **Unsupported Forms** in the **Forms** tab and **Unsupported Views** on the **Views** tab on the **Scope and Forms** page of the **Design Import Wizard** during the import process.
+
+- If forms with the same name are detected during the import process, one of the forms will be renamed by adding a string of random alphanumeric characters to the end of the original form name. The same procedure applies to views with identical names. One view will be renamed by adding random alphanumeric characters to the end of the view name. You are informed of the changes via a notification dialog such as shown in the following image.  
+
+    ![Duplicate name dialog](../assets/images/diduplicatename.png)
 
 ## Domino Adapter
 
