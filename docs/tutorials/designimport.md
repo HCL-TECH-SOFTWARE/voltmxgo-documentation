@@ -247,7 +247,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         - If you see a **warning** icon appear beside any form, form field, view, or agent, click the **Reports** folder icon and click a report to open a detailed report explaining the cause of the warning.
         - You can use the **All**, **Active**, **Inactive**, and **Unsupported** buttons in each tab to filter what's displayed. 
 
-    1. Select the **scope** you want to use from the drop-down list. 
+    1. Select the **Scope** you want to use from the drop-down list. 
     
         The available scopes are based on the scopes defined when creating the identity service.  
 
