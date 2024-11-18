@@ -20,17 +20,17 @@ Watch the [Volt MX Go Webinar series](https://www.youtube.com/playlist?list=PLEj
 
 The webinar series includes the following webinars:
 
-- [Modernizing Domino Apps with Volt MX Go](https://www.youtube.com/watch?v=90GAEFmKvng&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=1&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Modernizing Domino Apps with Volt MX Go](https://www.youtube.com/watch?v=90GAEFmKvng&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=1&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
-- [Volt MX Go: VoltFormula](https://www.youtube.com/watch?v=a_d0y0OJzfc&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=2&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Volt MX Go: VoltFormula](https://www.youtube.com/watch?v=a_d0y0OJzfc&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=2&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
-- [Volt MX Go: First Touch, Domino REST API, and Design Import](https://www.youtube.com/watch?v=ipelDFuYjHw&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=3&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Volt MX Go: First Touch, Domino REST API, and Design Import](https://www.youtube.com/watch?v=ipelDFuYjHw&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=3&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
-- [Get started with Volt MX Go Iris and Foundry](https://www.youtube.com/watch?v=rWQKhgb_Ang&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=4&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Get started with Volt MX Go Iris and Foundry](https://www.youtube.com/watch?v=rWQKhgb_Ang&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=4&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
-- [Try VoltScript with Early Access](https://www.youtube.com/watch?v=Nfl6LCFySPA&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=5&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Try VoltScript with Early Access](https://www.youtube.com/watch?v=Nfl6LCFySPA&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=5&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
-- [Build beautiful apps with Volt MX Go and Domino](https://www.youtube.com/watch?v=IqQcBGMcjl4&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=6&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Build beautiful apps with Volt MX Go and Domino](https://www.youtube.com/watch?v=IqQcBGMcjl4&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=6&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 
 ## Volt MX Go on HCL SoFy
