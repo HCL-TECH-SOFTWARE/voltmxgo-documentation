@@ -54,6 +54,9 @@ Kindly follow and complete the prerequisites that apply to your situation.
         - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
     - You have taken note of the Domino REST API URL, and the App ID and [App Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application.
 
+    !!!tip 
+        Refer to the **Domino REST API prerequisites for Design Import** video in the [Video tutorial](#video-tutorial) section to learn more.
+
 
 === "Limited access scenario"
 
@@ -92,6 +95,9 @@ Kindly follow and complete the prerequisites that apply to your situation.
             - having a placeholder callback URL that will be replaced with the callback URL from the Identity Service you will create using the Design Import Wizard
 
         - provide you with Domino REST API URL, and the App ID and App Secret of the OAuth application.
+
+    !!!tip 
+        Refer to the **Domino REST API prerequisites for Design Import** video in the [Video tutorial](#video-tutorial) section to learn more.
         
 ## Launch Volt MX Go Iris
 
@@ -415,3 +421,9 @@ If your app is a **Native App:**
  
 !!!note
     Since the changes to the form are reflected in the Domino Server, they're also visible in the Notes Client.
+
+## Video tutorial
+
+![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Domino REST API prerequisites for Design Import](https://www.youtube.com/watch?v=Bv9yZXbqfL8 "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"} 
+: Guides you on how to meet the Domino REST API requirements regarding configuring the schema, adding a scope, and adding an OAuth application so you can import a Domino application using Design Import.
+
