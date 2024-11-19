@@ -27,7 +27,7 @@ Guides you on how to insert attachments via the [Summernote Editor](../reference
 
 3. Click **Insert File**.
 
-The selected file is inserted as a link in the content field of Summernote Editor. The source link is shown as # and not the base64 data since the base64 data takes too much space. The link will have a class name of domino-attachment used as the flagging of attachments inserted on Summernote Editor. 
+The selected file is inserted as a link in the content field of Summernote Editor. The source link is shown as # and not the Base64 data since the Base64 data takes too much space. The link will have a class name of domino-attachment used as the flagging of attachments inserted on Summernote Editor. 
 
 ![Summernote Editor content field](../assets/images/summernoteinsertfile1.png){: style="height:80%;width:80%"}
 
