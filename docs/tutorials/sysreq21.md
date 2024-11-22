@@ -1,8 +1,19 @@
-# System requirements for Volt MX Go v2.0.4 or earlier
+# System requirements for Volt MX Go v2.1
 
 This section describes the minimum system requirements for deploying Volt MX Go. 
 
-## For installing Volt MX Go Foundry
+## For installing Volt MX Go Plugin Installer
+
+
+
+## For installing Domino REST API
+
+--8<-- "drapiversion.md"
+
+Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789) for installing Domino REST API using the installer. 
+
+
+## For installing Volt Foundry
 
 ### Software requirements
 Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html) to know the software requirements for installing Volt MX Go Foundry using installers.
@@ -23,21 +34,17 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 
 Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html) for the Volt MX Go Foundry Console.
 
-### Prerequisites for Volt MX Go Foundry command line installer
+### Prerequisites for Volt Foundry command line installer
 
 Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. 
 
-### Prerequisites for Volt MX Foundry Containers Helm Installation
+### Prerequisites for Volt Foundry Containers Helm Installation
 
 Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites) when using the Volt MX Go Foundry Containers Helm Installation. 
 
-## For installing Domino REST API
 
---8<-- "drapiversion.md"
 
-Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789) for installing Domino REST API using the installer. 
-
-## For installing Volt MX Go Iris on Windows
+## For installing Volt Iris on Windows
 
 ### Operating System
 
@@ -53,7 +60,7 @@ Windows 11, Windows 10, Windows 8.1 Update. Supports 64-bit Operating Systems
 |Network	|Ethernet Port|
 
 
-## For installing Volt MX Go Iris on Mac
+## For installing Volt Iris on Mac
 
 ### Operating System
 

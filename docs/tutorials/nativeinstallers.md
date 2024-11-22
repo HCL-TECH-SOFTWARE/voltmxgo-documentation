@@ -11,8 +11,6 @@ The procedures guide you in installing the following server components of Volt M
     
     - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
 
-<!----8<-- "browsertab.md"-->
-
 ## Install Domino REST API
 
 --8<-- "drapiversion.md"

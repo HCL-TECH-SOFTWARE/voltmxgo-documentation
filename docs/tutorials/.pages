@@ -2,7 +2,10 @@ nav:
     - index.md
     - Install and upgrade:
         - installation.md
-        - sysreq.md
+        - System requirements:
+            - sysreqindex.md
+            - Volt MX GO v2.1: sysreq21.md
+            - Volt MX Go v2.0.4 or earlier: sysreq.md
         - Install and upgrade Volt MX Go in a production environment:
             - prerequisite.md
             - portaldownload.md
@@ -19,7 +22,7 @@ nav:
                 - prereqindex.md
                 - For first time installation of Volt MX Go: prereq.md
                 - For upgrading existing installation of Volt MX Go: prereqnew.md
-                - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
+#                - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
             - Install Domino REST API: downloadhelmchart.md
             - Install MySQL for Volt MX Go Foundry: installmysqlfoundry.md
             - Install Volt MX Go Foundry: installfoundry.md

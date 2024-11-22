@@ -6,4 +6,6 @@ You must complete the preparatory procedure before downloading the Domino REST A
 
 - [For upgrading an existing installation of Volt MX Go](prereqnew.md)
 
+<!--
 - [For moving from early access version to GA version of Volt MX Go](eatogamove.md)
+-->

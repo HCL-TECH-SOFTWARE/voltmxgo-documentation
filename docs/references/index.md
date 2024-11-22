@@ -6,7 +6,9 @@ Provides technical references and descriptions for using Volt MX Go.
 
 Check the [latest information](whatsnew/whatisnew.md) about Volt MX Go.
 
+<!--
 To know the details in the early access version, see [Early Access Version changes](earlyaccesschanges.md){: target="blank"}.
+-->
 
 ## System requirements
 

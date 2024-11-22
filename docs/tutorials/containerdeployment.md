@@ -48,7 +48,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 2. [Upgrade Volt MX Go server components](versionupgrade1.md).
 
-## For moving from early access version to GA version of Volt MX Go
+<!--## For moving from early access version to GA version of Volt MX Go
 
 If you participated in the Early Access (EA) program, you need to perform the procedures to move to the GA version of Volt MX Go. 
 
@@ -62,6 +62,7 @@ If you participated in the Early Access (EA) program, you need to perform the pr
 3. [Install MySql for Volt MX Go Foundry](installmysqlfoundry.md).
 
 4. [Install Volt MX Go Foundry](installfoundry.md).
+-->
 
 ## Additional information
 
