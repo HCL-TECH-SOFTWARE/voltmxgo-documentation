@@ -9,6 +9,7 @@ nav:
         - rosettaapi.md
         - declvariables.md
         - extendrosettapi.md
+        - selectfl.md
         - Coding exercise examples: vfcodingguides.md
         - Useful tips and information: vfcodingpractices.md    
     - Domino Adapter: 
