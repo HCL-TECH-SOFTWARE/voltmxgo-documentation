@@ -2,26 +2,69 @@
 
 ## About this task
 
-Guides you on how to search and download the HCL Volt MX Go Release package from the **HCL License & Download Portal**.
+Guides you on how to search and download the HCL Volt MX Go Release package and related installers from the **HCL License & Download Portal**.
 
 !!!tip
     To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344).
 
 ## Procedure
 
-**To search and download the HCL Volt MX Go Release package**
+### For Volt MX Go v2.1
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
 
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
 4. On the **Downloads** page, search for and click **HCL Volt MX**.
-5. On the **Download Packages** page, click the **HCL Volt MX Go Version x.x** package.
+5. On the **Download Packages** page: 
+
+    === "For Volt Foundry"
+
+        1. Click **HCL Volt Foundry v9.5 Latest** on the **New Versions** tab.
+        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on the installation platform and click **Download Selected Files**.
+
+            **OR** 
+
+            Click the download icon beside the filename of the selected installer.
+
+            !!!note
+                The required minimum version of Volt Foundry is v9.5.17.4 for for Volt MX Go.
+
+    === "For Volt Iris"
+
+        1. Click **HCL Volt Iris v9.5 Latest** on the **New Versions** tab.
+        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on the installation platform and click **Download Selected Files**.
+
+            **OR** 
+
+            Click the download icon beside the filename of the selected installer.
+
+            !!!note
+                The required minimum version of Volt Iris is v9.5.46 for Volt MX Go.
+
+    === "For Volt MX Go Plugin Installer"
+    
+        1. Click the **HCL Volt MX Go Version x.x** package.
+        2. On the **Files** tab on the **Downloads** page, select the installer and click **Download Selected Files**.
+
+            **OR** 
+
+            Click the download icon beside the filename of the installer.
+
+
+### For Volt MX Go v2.0.4 or earlier
+
+1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
+
+2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
+3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
+4. On the **Downloads** page, search for and click **HCL Volt MX**.
+5. On the **Download Packages** page, click the **HCL Volt MX Go Version x.x** package under the **New Versions** tab.
 
     !!!note
         Select the appropriate package version based on whether you want to perform a new installation or an upgrade. 
 
-6. On the **Files** tab in the **Downloads** page, select all the files and click **Download Selected Files**.
+6. On the **Files** tab on the **Downloads** page, select all the files and click **Download Selected Files**.
 
     **OR** 
 

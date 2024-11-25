@@ -9,6 +9,7 @@ This section provides compatibility information between different versions of Vo
 
 |Volt MX Go version|Domino REST API version|
 |----|----|
+|version 2.1|version 1.1.1|
 |version 2.0.4|version 1.0.14|
 |version 2.0.3|version 1.0.12|
 |version 2.0.2|version 1.0.8|
@@ -19,6 +20,8 @@ This section provides compatibility information between different versions of Vo
 
 |Helm chart component|Volt MX Go version|Helm chart version|
 |----|----|----|
+|Foundry DB Update|2.1|1.2.12|
+|Foundry apps|2.1|1.2.12|
 |Foundry DB Update|2.0.4|1.2.12|
 |Foundry apps|2.0.4|1.2.12|
 |Foundry DB Update|2.0.3|1.2.12|
