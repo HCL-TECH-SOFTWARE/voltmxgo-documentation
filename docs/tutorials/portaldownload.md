@@ -52,6 +52,9 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
             Click the download icon beside the filename of the installer.
 
 
+!!!note
+    Make sure you have downloaded each installer for Volt Foundry, Volt Iris, and Volt MX Go Plugin Installer. 
+
 ### For Volt MX Go v2.0.4 or earlier
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.

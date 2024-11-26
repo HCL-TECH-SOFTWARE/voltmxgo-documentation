@@ -1,6 +1,6 @@
 # Install and upgrade Volt MX Go in a production environment
 
-Perform a new or an upgrade installation of Volt MX Go in a production environment.
+Perform a new or an upgrade installation of Volt MX Go server components in a production environment.
 
 For a new install, complete the following procedures:
 
