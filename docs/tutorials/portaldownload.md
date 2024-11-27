@@ -16,24 +16,24 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
 2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
 3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
 4. On the **Downloads** page, search for and click **HCL Volt MX**.
-5. On the **Download Packages** page: 
+5. On the **Download Packages** page, download the Volt Foundry installer, Volt Iris installer, and Volt MX Go Plugin Installer.
 
     === "For Volt Foundry"
 
         1. Click **HCL Volt Foundry v9.5 Latest** on the **New Versions** tab.
-        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on the installation platform and click **Download Selected Files**.
+        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on your installation platform and click **Download Selected Files**.
 
             **OR** 
 
             Click the download icon beside the filename of the selected installer.
 
             !!!note
-                The required minimum version of Volt Foundry is v9.5.17.4 for for Volt MX Go.
+                The required minimum version of Volt Foundry is v9.5.17.4 for Volt MX Go.
 
     === "For Volt Iris"
 
         1. Click **HCL Volt Iris v9.5 Latest** on the **New Versions** tab.
-        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on the installation platform and click **Download Selected Files**.
+        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on your installation platform and click **Download Selected Files**.
 
             **OR** 
 
@@ -51,9 +51,6 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
 
             Click the download icon beside the filename of the installer.
 
-
-!!!note
-    Make sure you have downloaded each installer for Volt Foundry, Volt Iris, and Volt MX Go Plugin Installer. 
 
 ### For Volt MX Go v2.0.4 or earlier
 

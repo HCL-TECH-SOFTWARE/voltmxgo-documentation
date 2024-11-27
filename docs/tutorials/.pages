@@ -27,7 +27,10 @@ nav:
             - Install MySQL for Volt MX Go Foundry: installmysqlfoundry.md
             - Install Volt MX Go Foundry: installfoundry.md
             - Upgrade Volt MX Go server components: versionupgrade1.md
-        - Install and upgrade Volt MX Go Iris: installiris.md
+        - Install and upgrade Volt MX Go Iris: 
+            - installirisindex.md
+            - installiris.md
+            - upgradeiris.md
     - firsttouch.md
     - adaptertutorial.md
     - designimport.md
