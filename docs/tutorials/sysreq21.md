@@ -14,30 +14,30 @@ The Volt MX Go Plugin Installer runs on any supported Volt Foundry server instal
 
 ## For installing Volt Foundry
 
-### Software requirements
+**Software requirements**
 Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html) to know the software requirements for installing Volt MX Go Foundry using installers.
 
-### Hardware requirements
+**Hardware requirements**
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#hardware-requirements)
 
 - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#hardware-requirements)
 
-### Network settings
+**Network settings**
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Prerequisites.html#network-settings)
 
 - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Prerequisites.html#network-settings)
 
-### Supported browsers
+**Supported browsers**
 
 Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html) for the Volt MX Go Foundry Console.
 
-### Prerequisites for Volt Foundry command line installer
+**Prerequisites for Volt Foundry command line installer**
 
 Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. 
 
-### Prerequisites for Volt Foundry Containers Helm Installation
+**Prerequisites for Volt Foundry Containers Helm Installation**
 
 Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites) when using the Volt MX Go Foundry Containers Helm Installation. 
 

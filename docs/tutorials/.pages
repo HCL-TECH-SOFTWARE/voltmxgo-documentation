@@ -9,8 +9,14 @@ nav:
         - Install and upgrade Volt MX Go in a production environment:
             - prerequisite.md
             - portaldownload.md
-            - Install Volt MX Go server components: nativeinstallers.md
-            - Upgrade Volt MX Go server components: versionupgrade.md
+            - Install Volt MX Go server components: 
+                - installfoundryindex.md
+                - installdrapi.md
+                - Install Volt MX Go Foundry: nativeinstallers.md
+            - Upgrade Volt MX Go server components: 
+                - versupgradeindx.md
+                - versupgradedrapi.md
+                - versionupgrade.md
         - Install and upgrade Volt MX Go in a development or test-only environment:
             - containerdeployment.md
             - obtainauthenticationtoken.md

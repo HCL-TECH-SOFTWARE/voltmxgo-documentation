@@ -1,34 +1,4 @@
-<!--# Install Volt MX Go via installers-->
-# Install Volt MX Go server components
-
-The procedures guide you in installing the following server components of Volt MX Go:
-
-- Volt MX Go Foundry
-- Domino REST API
-
-!!!warning "Important"
-    - Using this installation option would require you to use your own Domino server.
-    
-    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq.md).
-
-## Install Domino REST API
-
---8<-- "drapiversion.md"
-
-1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
-
-2. Follow the links to the installation procedure based on your preferred installation platform:
-
-    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html)
-    
-    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html)
-
-3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html).
-
-For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html) page in the HCL Domino REST API documentation.
-
-
-## Install Volt MX Go Foundry
+# Install Volt MX Go Foundry
 
 Volt MX Go Foundry supports the following installation mechanisms:
 
@@ -36,29 +6,131 @@ Volt MX Go Foundry supports the following installation mechanisms:
 - Use the Command Line installer for advanced deployments.
 - Use helm charts on one of the supported Kubernetes platforms, including OpenShift, AKS (Azure), EKS (AWS), and GKE (Google).
 
-### For using an installer
+## For using an installer
 
-1. Download the Volt MX Go Foundry installer based on your preferred installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md).
+### For Volt MX Go v2.1
 
-2. Extract the installer from the downloaded ZIP file.
-3. Follow the links to the installation guides based on your preferred installation platform/option:
+#### Before you begin
 
-    !!!warning "Important"
-        - The installation guides will indicate installation files and installation file download locations. **You must use the installer you downloaded in Step 1.**
-        - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
+- You have downloaded the Volt Foundry installer. The minimum required version is v9.5.17.xx.   
+- You have downloaded the Volt MX Go Plugin Installer. 
 
-    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html)
+For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
+
+#### 1. Install Volt Foundry
+
+For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps. 
+
+!!!warning "Important"
+    - For Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
+    - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
+    - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
+
+- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html)
     
-    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html)
-    
-    - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html)
+- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html)
 
-### For using helm charts on a supported Kubernetes platform
+#### 2. Install Volt MX Go Plugin Installer
+
+The procedure enables the installation of the Volt MX Go Plugin Installer, which is used for installing the Volt MX Go plugins to Volt Foundry.
+
+=== "on Linux"
+
+    1. Open terminal.
+    1. Navigate to the directory containing the `VoltMXGoInstallationTool.bin` to ensure that you are in the right location to execute the installation commands for the bin file. 
+    1. Enter the following command to grant executable permissions to the `VoltMXGoInstallationTool.bin` file: 
+
+	    `sudo chmod +x VoltMXGoInstallationTool.bin`
+
+	    Using the `chmod` command with `sudo` ensures administrative privileges.
+
+    1. Run the `VoltMXGoInstallationTool.bin` file to start the installation using the following command:
+
+	    `./VoltMXGoInstallationTool.bin`
+
+    1. Follow the installation instructions. The binary file will initiate the installation process and may prompt you with on-screen instructions. Follow these instructions carefully to complete the installation.
+    1. Enter `ls -ltrh` to see the installation directory and the shortcuts for running and uninstalling the installer.
+    1. Take note of the shortcut for running the installer.
+
+=== "on Windows"
+
+    1. Navigate to the folder containing the downloaded installer file. 
+    1. Double-click the *VoltMXGoInstallationTool.exe* installer file. The **Volt MX Go Installation Tool** window opens. 
+    1. On the **Introduction**, read the details and instructions, and then click **Next**.
+    1. On the **License Agreement**, read the agreement details, select the **I accept the terms of the License agreement** checkbox, and then click **Next**.
+    1. On the **Choose Install Folder**, click **Next** if you agree with the indicated default location. 
+
+        !!!tip
+            - If you want a different installation location, click **Choose** to select your preferred installation location or directly enter your preferred installation location in the text box, and then click **Next**.
+            - If you selected a different installation location and decided to revert to the default location, click **Restore Default Folder** and then click **Next**.
+
+    1. On the Pre-Installation Summary, review the details and then click Install.
+    1. On the Installing tab, you can see the installation status.
+    1. On the Install Complete, click Done.
+
+#### 3. Install Volt MX Go Plugin
+
+The procedure enables the installation of Volt MX Go plugins to Volt Foundry to enable Volt MX Go features. 
+
+=== "on Linux"
+
+    1. Open Terminal.
+    2. Run the Volt MX Go Plugin Installer by entering the following command:
+
+        `./samplecommand`
+
+        The installation tool opens on the Terminal.
+
+    3. Enter **1** and press **Enter**.
+    4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press Enter.
+
+        You get a confirmation statement that the plugins have been installed.
+
+    6. Press Enter to exit the installation tool. 
+
+=== "on Windows"
+
+    1. Select **Start**, scroll through the alphabetical list, and select **Volt MX Go Plugin Installer**. Depending on your OS, you might need to select **All apps**, scroll through the alphabetical list, and click **Volt MX Go Plugin Installer**.
+
+        OR
+
+        Double-click the **Volt MX Go Plugin Installer** shortcut on your desktop if available. 
+
+        A Command Prompt window opens.
+
+    2. Enter **1** and press **Enter**.
+    3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press Enter. 
+
+        You get a confirmation statement that the plugins have been installed. 
+
+    5. Press **Enter** to close the Command Prompt window.
+
+### For Volt MX Go v2.0.4 or earlier
+
+#### Before you begin
+
+You have downloaded the latest version of Volt MX Go Foundry installer based on your preferred installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v204-or-earlier).
+
+#### Install Volt MX Go Foundry
+
+For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps. 
+
+!!!warning "Important"
+    - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
+    - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
+
+- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html)
+    
+- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html)
+    
+- [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html)
+
+## For using helm charts on a supported Kubernetes platform
   
 !!!note "Prerequisite"
     [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
 
-#### For Volt MX Go v2.1
+### For Volt MX Go v2.1
 
 !!!note
     Starting with Volt MX Go v2.1, only one helm chart `voltmx-foundry` is used for Volt MX Go Foundry installation.
@@ -230,7 +302,7 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
     Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html) in the HCL Volt MX documentation.
 
-#### For Volt MX Go v2.0.4 or earlier
+### For Volt MX Go v2.0.4 or earlier
 
 !!!note
     Up to Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
@@ -436,7 +508,7 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
     Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html) in the HCL Volt MX documentation.
 
-## Additional information
+## Next step
 
 After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
 
