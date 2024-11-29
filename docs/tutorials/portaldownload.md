@@ -7,9 +7,7 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
 !!!tip
     To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344).
 
-## Procedure
-
-### For Volt MX Go v2.1
+## For Volt MX Go v2.1
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
 
@@ -28,7 +26,7 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
             Click the download icon beside the filename of the selected installer.
 
             !!!note
-                The required minimum version of Volt Foundry is v9.5.17.4 for Volt MX Go.
+                The required minimum version of Volt Foundry is v9.5.17.5 for Volt MX Go.
 
     === "For Volt Iris"
 
@@ -40,7 +38,7 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
             Click the download icon beside the filename of the selected installer.
 
             !!!note
-                The required minimum version of Volt Iris is v9.5.46 for Volt MX Go.
+                The required minimum version of Volt Iris is v9.5.47 for Volt MX Go.
 
     === "For Volt MX Go Plugin Installer"
     
@@ -52,7 +50,7 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
             Click the download icon beside the filename of the installer.
 
 
-### For Volt MX Go v2.0.4 or earlier
+## For Volt MX Go v2.0.4 or earlier
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
 
@@ -76,6 +74,6 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
 
 ## Next step
 
-For a new installation, proceed to [Install Volt MX Go server components](nativeinstallers.md).
+For a new installation, proceed to [Install Volt MX Go server components](installfoundryindex.md).
 
-For an upgrade installation, proceed to [Upgrade Volt MX Go server components](versionupgrade.md).
+For an upgrade installation, proceed to [Upgrade Volt MX Go server components](versupgradeindx.md).

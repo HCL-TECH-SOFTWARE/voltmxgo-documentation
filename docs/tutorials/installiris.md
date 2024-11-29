@@ -6,7 +6,7 @@ Perform a new installation of Volt MX Go Iris.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer. The minimum required version is v9.5.xx.   
+- You have downloaded the Volt Iris installer. The minimum required version is v9.5.47.   
 - You have downloaded the Volt MX Go Plugin Installer. 
 
 For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
@@ -70,7 +70,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
         A new terminal for installing the plugin opens. 
 
-    2. Enter **4** to install Volt MX Go plugins in Volt Iris and press **return**.
+    2. Enter **4** to install Volt MX Go plugins and press **return**.
     3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
 
@@ -88,7 +88,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
         A Command Prompt window opens.
 
-    2. Enter **4** and press **Enter**.
+    2. Enter **4** to install Volt MX Go plugins and press **Enter**.
     3. Specify an Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **Enter**. 
 

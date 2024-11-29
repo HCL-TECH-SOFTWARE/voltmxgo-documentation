@@ -25,6 +25,7 @@ nav:
         - FTnsfupdate.md
     - Operation:
         - genindex.md
+        - checkstat.md
         - codegen.md
         - insertattachments.md   
         - logginglevel.md
@@ -33,6 +34,7 @@ nav:
         - k3suninstall.md
         - rancheruninstall.md
         - uninstallfirsttouch.md
+        - uninstallplugin.md
         - Uninstall Volt MX Go Foundry for Linux: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Uninstalling_VoltMX_Foundry.html
         - Uninstall Volt MX Go Foundry for Windows: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Uninstalling_VoltMX_Foundry.html
         - Uninstall Volt MX Go Foundry installed on supported Kubernetes platform: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#uninstalling-foundry

@@ -1,14 +1,14 @@
 # Upgrade Volt MX Go Iris
 
-Upgrade Volt MX Go Iris to the latest version. 
+Upgrades Volt MX Go Iris to the latest version. 
 
 ## For Volt MX Go v2.1 
 
 Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
-### Prerequisite
+### Before you begin
 
-- You have downloaded the Volt Iris installer - v9.5.xx or later. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
+- You have downloaded the Volt Iris installer - v9.5.47 or later. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](installiris.md#2-install-volt-mx-go-plugin-installer).
 
@@ -37,7 +37,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
         A new terminal for installing the plugin opens. 
 
-    2. Enter **4** to install Volt MX Go plugins in Volt Iris and press **return**.
+    2. Enter **4** to install Volt MX Go plugins and press **return**.
     3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
 
@@ -55,7 +55,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
         A Command Prompt window opens.
 
-    2. Enter **4** and press **Enter**.
+    2. Enter **4** to install Volt MX Go plugins and press **Enter**.
     3. Specify an Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **Enter**. 
 
@@ -81,7 +81,7 @@ For more information on updating Volt Iris, click the link corresponding to your
 
 Upgrades Volt MX Go Iris from an earlier version up to Volt MX Go v2.0.4. 
 
-### Prerequisite
+### Before you begin
 
 - You have downloaded the latest version of the Volt MX Go Iris installer. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v204-or-earlier).
 

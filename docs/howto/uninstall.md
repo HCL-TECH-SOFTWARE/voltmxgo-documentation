@@ -8,6 +8,8 @@ List of uninstall procedures for completing uninstall tasks related to Volt MX G
 
 - [Uninstall First Touch](uninstallfirsttouch.md)
 
+- [Uninstall Volt MX Go plugins](uninstallplugin.md)
+
 - [Uninstall Volt MX Go Foundry for Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Uninstalling_VoltMX_Foundry.html)
 
 - [Uninstall Volt MX Go Foundry for Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Uninstalling_VoltMX_Foundry.html)

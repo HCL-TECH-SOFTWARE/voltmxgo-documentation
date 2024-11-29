@@ -6,10 +6,10 @@ For a new install, complete the following procedures:
 
 1. [Download HCL Volt MX Go Release package](portaldownload.md)
 
-2. [Install Volt MX Go server components](installiris.md)
+2. [Install Volt MX Go Iris](installiris.md)
 
 For an upgrade install, complete the following procedures:
 
 1. [Download HCL Volt MX Go Release package](portaldownload.md)
 
-2. [Upgrade Volt MX Go server components](upgradeiris.md)
+2. [Upgrade Volt MX Go Iris](upgradeiris.md)
