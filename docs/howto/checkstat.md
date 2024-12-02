@@ -27,7 +27,8 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
     3. Enter **3** to check installation status of Volt MX Go plugins and press **Enter**.
     4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press **Enter**.
 
-        You get a confirmation statement related to the installation status of the Volt MX Go plugins.
+        
+        You get a confirmation statement on whether Volt MX Go is installed in the specified Tomcat WebApps directory.
 
     6. Press Enter to exit the installation tool. 
 
@@ -44,7 +45,7 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
     2. Enter **3** to check the installation status of Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 
 
-        You get a confirmation statement related to the installation status of the Volt MX Go plugins. 
+        You get a confirmation statement on whether Volt MX Go is installed in the specified Tomcat WebApps directory. 
 
     5. Press **Enter** to close the Command Prompt window.
 
@@ -61,10 +62,13 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
         A new terminal for installing the plugin opens. 
 
     2. Enter **6** to check the installation status of Volt MX Go plugins and press **return**.
-    3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
+    3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**.
+
+        You get a confirmation statement on whether Volt MX Go is installed in the specified workspace.
+
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
 
-        You get a confirmation statement related to the installation status of the Volt MX Go plugins. 
+        You get a confirmation statement on whether Volt MX Go is installed in the specified installation directory. 
     
     5. Close the terminal.   
 
@@ -80,9 +84,12 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
 
     2. Enter **6** to check the installation status of Volt MX Go plugins and press **Enter**.
     3. Specify an Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
+
+        You get a confirmation statement on whether Volt MX Go is installed in the specified workspace.
+
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **Enter**. 
 
-        You get a confirmation statement related to the installation status of the Volt MX Go plugins. 
+        You get a confirmation statement on whether Volt MX Go is installed in the specified installation directory. 
 
     5. Press **Enter** to close the Command Prompt window.
 

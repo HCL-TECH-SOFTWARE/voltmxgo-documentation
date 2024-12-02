@@ -44,7 +44,7 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
     2. Enter **2** to uninstall Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 
 
-        You get a confirmation statement that the plugins have been installed. 
+        You get a confirmation statement that the plugins have been uninstalled. 
 
     5. Press **Enter** to close the Command Prompt window.
 
