@@ -18,9 +18,10 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
 === "on Linux"
 
     1. Open Terminal.
+    1. Go to the directory where you installed the Volt MX Go Plugin Installer.
     2. Run the Volt MX Go Plugin Installer by entering the following command and press **Enter**
 
-        `./samplecommand`
+        `./VoltMXGoPluginInstaller`
 
         The installation tool opens on the Terminal.
 
@@ -29,7 +30,7 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
 
         You get a confirmation statement that the plugins have been uninstalled.
 
-    6. Press Enter to exit the installation tool. 
+    6. Enter **7** and press **Enter** to exit the installation tool. 
 
 === "on Windows"
 
