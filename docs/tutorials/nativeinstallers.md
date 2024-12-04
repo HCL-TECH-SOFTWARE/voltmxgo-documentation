@@ -49,6 +49,10 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 	    `./VoltMXGoInstallationTool.bin`
 
     1. Follow the installation instructions. The binary file will initiate the installation process and may prompt you with on-screen instructions. Follow these instructions carefully to complete the installation.
+
+        !!!note
+            If you have a graphical terminal associated with your Linux deployment, the **Volt MX Go Installation Tool** window opens. Otherwise, installation is via the command line.  
+
     1. Enter `ls -latrh` to list the installation directory contents to identidy the shortcuts for running and uninstalling the installer.
     1. Take note of the shortcut for running the installer.
 
@@ -78,18 +82,19 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 === "on Linux"
 
     1. Open Terminal.
+    1. Go to the directory where you installed the Volt MX Go Plugin Installer.
     2. Run the Volt MX Go Plugin Installer by entering the following command and press **Enter**
 
-        `./samplecommand`
+        `./VoltMXGoPluginInstaller`
 
         The installation tool opens on the Terminal.
 
-    3. Enter **1** to install Volt MX Go plugins and press **Enter**.
+    3. Enter **1** to install Volt MX Go plugins in Volt Foundry and press **Enter**.
     4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press **Enter**.
 
         You get a confirmation statement that the plugins have been installed.
 
-    6. Press Enter to exit the installation tool. 
+    6. Enter **7** and press **Enter** to exit the installation tool. 
 
 === "on Windows"
 
@@ -510,6 +515,39 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 8. (Optional) Perform post installation tasks.
 
     Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html) in the HCL Volt MX documentation.
+
+## For single container solution
+
+For more information, see [Volt Foundry Single Container Solution](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html) in the Volt MX Documentation. 
+
+### For Volt MX Go v2.1
+
+#### Before you begin
+
+- You have completed all the [installation prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites).
+- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration).
+- You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go Release package](http://localhost:8000/voltmxgo-documentation/tutorials/portaldownload.html#for-volt-mx-go-v21). 
+
+#### Install Volt Foundry
+
+1. Click the link to the installation guide and follow the installation steps. 
+
+    [Volt Foundry Single Container Solution installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#installation)
+
+    !!!warning "Important"
+        - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
+        - Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
+
+2. Update the `docker-compose.yml` file.
+
+    1. Locate the `docker-compose.yml` file in the Volt Foundry directory.
+    2. Open the `docker-compose.yml` file with your preferred editor and locate the line containing the `image:` key.
+    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.17.3_GA"`.
+    4. Save your changes and close the file. 
+
+3. Stop the existing images by running the command `docker compose down`.
+4. Restart the images by running the command `docker compose up -d`.
+
 
 ## Next step
 

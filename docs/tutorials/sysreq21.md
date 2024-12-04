@@ -41,6 +41,11 @@ Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-do
 
 Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites) when using the Volt MX Go Foundry Containers Helm Installation. 
 
+**Requirements for Volt Foundry Single Container Solution**
+
+- [Prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites)
+- [Software requirements](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#software-requirements)
+- [Hardware requirements](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#hardware-requirements)
 
 ## For installing Volt Iris
 

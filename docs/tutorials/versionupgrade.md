@@ -51,9 +51,10 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 === "on Linux"
 
     1. Open Terminal.
+    1. Go to the directory where you installed the Volt MX Go Plugin Installer.
     2. Run the Volt MX Go Plugin Installer by entering the following command and press **Enter**
 
-        `./samplecommand`
+        `./VoltMXGoPluginInstaller`
 
         The installation tool opens on the Terminal.
 
@@ -62,7 +63,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         You get a confirmation statement that the plugins have been installed.
 
-    6. Press Enter to exit the installation tool. 
+    6. Enter **7** and press **Enter** to exit the installation tool. 
 
 === "on Windows"
 

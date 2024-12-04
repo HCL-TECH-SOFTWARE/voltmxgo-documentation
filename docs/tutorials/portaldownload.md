@@ -26,7 +26,18 @@ Guides you on how to search and download the HCL Volt MX Go Release package and 
             Click the download icon beside the filename of the selected installer.
 
             !!!note
-                The required minimum version of Volt Foundry is v9.5.17.5 for Volt MX Go.
+                - The required minimum version of Volt Foundry is v9.5.17.5 for Volt MX Go.
+                - For Windows, the installer is `VoltFoundrySetup-<version\>_GA.zip`. 
+                    
+                    For example: `VoltFoundrySetup-9.5.17.2_GA.zip`
+                
+                - For Linux, the installer is `VoltFoundrySetup-<version\>_GA.tar.gz`. 
+                    
+                    For example: `VoltFoundrySetup-9.5.17.2_GA.tar.gz`
+                
+                - For Single Container Solution, the installer is `VoltFoundrySingleContainer-<version\>_GA`.zip.  
+                
+                    For example: `VoltFoundrySingleContainer-9.5.17.3_GA.zip`
 
     === "For Volt Iris"
 
