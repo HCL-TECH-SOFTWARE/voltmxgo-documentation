@@ -1,0 +1,790 @@
+<!DOCTYPE html><html lang="en" style="font-size:16px"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="resources/favicon.ico"><title>Source: rosettajs/dist/lib/rosetta/document.js</title><!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="";baseURL=(baseURL=(baseURL="/docs/voltmxgo/javadoc/").replace(/https?:\/\//i,"")).substr(baseURL.indexOf("/"))</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body data-theme="dark"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 2.1.11</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-modules"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi.html">rosetta-api-drapi</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-api.html">rosetta-converter-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-config.html">rosetta-converter-config</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-classes"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-math-trig.iso.html">iso</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaDRAPIObject.html">rosettaDRAPIObject</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div><div class="sidebar-section-children"><a href="module-statistical.beta.html">beta</a></div><div class="sidebar-section-children"><a href="module-statistical.binom.html">binom</a></div><div class="sidebar-section-children"><a href="module-statistical.chiSq.html">chiSq</a></div><div class="sidebar-section-children"><a href="module-statistical.confidence.html">confidence</a></div><div class="sidebar-section-children"><a href="module-statistical.coVariance.html">coVariance</a></div><div class="sidebar-section-children"><a href="module-statistical.expon.html">expon</a></div><div class="sidebar-section-children"><a href="module-statistical.f.html">f</a></div><div class="sidebar-section-children"><a href="module-statistical.logNorm.html">logNorm</a></div><div class="sidebar-section-children"><a href="module-statistical.mode.html">mode</a></div><div class="sidebar-section-children"><a href="module-statistical.norm.html">norm</a></div><div class="sidebar-section-children"><a href="module-statistical.percentile.html">percentile</a></div><div class="sidebar-section-children"><a href="module-statistical.percentRank.html">percentRank</a></div><div class="sidebar-section-children"><a href="module-statistical.poisson.html">poisson</a></div><div class="sidebar-section-children"><a href="module-statistical.quartile.html">quartile</a></div><div class="sidebar-section-children"><a href="module-statistical.rank.html">rank</a></div><div class="sidebar-section-children"><a href="module-statistical.stDev.html">stDev</a></div><div class="sidebar-section-children"><a href="module-statistical.t.html">t</a></div><div class="sidebar-section-children"><a href="module-statistical.Var.html">Var</a></div><div class="sidebar-section-children"><a href="module-statistical.weiBull.html">weiBull</a></div><div class="sidebar-section-children"><a href="module-statistical.z.html">z</a></div><div class="sidebar-section-children"><a href="module-statistical-gamma.html">gamma</a></div><div class="sidebar-section-children"><a href="module-statistical-gammaLn.html">gammaLn</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-global"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#getDefault">getDefault</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentDb">isCurrentDb</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentLocal">isCurrentLocal</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsDb">setDefaultAsDb</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsLocal">setDefaultAsLocal</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"><div class="navbar-item"><a id="menu-api-status" href="api_status.html" target="_blank">API Implementation Status Table</a></div></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">rosettajs_dist_lib_rosetta_document.js</h1></header><article><pre class="prettyprint source lang-js"><code>"use strict";
+/***************************************************
+* Licensed Materials - Property of HCL.
+* (c)Copyright HCL America, Inc. 2023-2024
+****************************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getFieldType = exports.getField = exports.all = exports._notes = void 0;
+exports.attachmentLengths = attachmentLengths;
+exports.attachmentModifiedTimes = attachmentModifiedTimes;
+exports.attachmentNames = attachmentNames;
+exports.attachments = attachments;
+exports.author = author;
+exports.deleteDocument = deleteDocument;
+exports.deleteField = deleteField;
+exports.docFields = docFields;
+exports.docOmmittedLength = docOmmittedLength;
+exports.documentUniqueID = documentUniqueID;
+exports.formLanguage = formLanguage;
+exports.context = context;
+exports.setField = setField;
+exports.isAvailable = isAvailable;
+exports.isDocTruncated = isDocTruncated;
+exports.isNewDoc = isNewDoc;
+exports.isUnavailable = isUnavailable;
+exports.isResponseDoc = isResponseDoc;
+exports.docLevel = docLevel;
+exports.docNumber = docNumber;
+exports.docChildren = docChildren;
+exports.docDescendants = docDescendants;
+exports.docParentNumber = docParentNumber;
+exports.docSiblings = docSiblings;
+exports.pickList = pickList;
+exports.prompt = prompt;
+exports.responses = responses;
+exports.isCategory = isCategory;
+exports.addToFolder = addToFolder;
+exports.dialogBox = dialogBox;
+exports.docLock = docLock;
+exports.hardDeleteDocument = hardDeleteDocument;
+exports.openInNewWindow = openInNewWindow;
+exports.setTargetFrame = setTargetFrame;
+exports.showParentPreview = showParentPreview;
+exports.undeleteDocument = undeleteDocument;
+exports.chooseFolders = chooseFolders;
+exports.discoverFolders = discoverFolders;
+exports.moveToTrash = moveToTrash;
+exports.emptyTrash = emptyTrash;
+exports.removeFromFolder = removeFromFolder;
+exports.showProperties = showProperties;
+exports.switchForm = switchForm;
+exports.v3EditNextField = v3EditNextField;
+exports.v3EditPrevField = v3EditPrevField;
+exports.docLength = docLength;
+exports.docMark = docMark;
+exports.getFocusTable = getFocusTable;
+exports.inheritedDocumentUniqueID = inheritedDocumentUniqueID;
+exports.isDocBeingEdited = isDocBeingEdited;
+exports.isDocBeingLoaded = isDocBeingLoaded;
+exports.isDocBeingMailed = isDocBeingMailed;
+exports.isDocBeingRecalculated = isDocBeingRecalculated;
+exports.isDocBeingSaved = isDocBeingSaved;
+exports.noteID = noteID;
+exports.policyIsFieldLocked = policyIsFieldLocked;
+exports.unavailable = unavailable;
+exports.formTestDocument = formTestDocument;
+exports.whichFolders = whichFolders;
+const tslib_1 = require("tslib");
+/**
+ * @file Document
+ * @module document
+ * @category Document
+ */
+const notesf = tslib_1.__importStar(require("../notes/document"));
+const common_1 = require("../utils/common");
+exports._notes = notesf;
+const notesc = notesf; // notes commands are exposed in the notes functions source file; this notesc is just for visual cue
+/**
+ * NOTE: allChildren and allDescendants are not implemented in the Rosetta API since they are only allowed
+ * on the SELECT statement and can't be invoked outside of SELECT.
+ */
+/**
+ * Returns the value True.
+ * @returns {Promise&lt;any>}
+ */
+const all = () => {
+    return notesf.All();
+};
+exports.all = all;
+/**
+ * Returns a number or a number list containing the length of each attachment to
+ * the current document. The number(s) returned are only approximations; the actual
+ * size(s) of the attachment(s) may be slightly different.
+ * @param {boolean} excludeMIMEBody
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function attachmentLengths(excludeMIMEBody = true) {
+    return notesf.AttachmentLengths();
+}
+/**
+ * Returns a datetime that displays the date on which the file attachment
+ * associated with the current document was last modified. If the document contains
+ * more than one file attachment, returns the modification dates in a datetime list.
+ * @param {boolean} excludeMIMEBody
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function attachmentModifiedTimes(excludeMIMEBody = true) {
+    return notesf.AttachmentModifiedTimes();
+}
+/**
+ * Returns the operating system file names of any files attached to a document. If
+ * there are multiple files attached, the names are returned as a multiple-value
+ * text list.
+ * @param {boolean} excludeMIMEBody
+ * @returns {string | Error}
+ */
+function attachmentNames(excludeMIMEBody = true) {
+    return notesf.AttachmentNames(excludeMIMEBody);
+}
+/**
+ * Returns the number of files attached to a document.
+ * @param {boolean} excludeMIMEBody
+ * @returns {number}
+ */
+function attachments(excludeMIMEBody = true) {
+    return notesf.Attachments(excludeMIMEBody);
+}
+/**
+ * Returns a text list containing the names of the author(s) of the current document.
+ * @returns {string[]} All the authors of the current document. For authors with hierarchical names, Notes/Domino returns the abbreviated form of the name (as in Denise Lee/Research/Acme),
+ * rather than the canonical form (CN=Denise Lee/OU=Research/O=Acme).
+ * @example
+ * // If a document has one Authors field that contains: Mary Tsen, David Smith, Denise Lee/Research/Acme. This example returns: ["Mary Tsen", "David Smith", "Denise Lee/Research/Acme"]
+ * rosettajs.Document.author();
+ */
+function author() {
+    return notesf.Author();
+}
+/**
+ * Deletes the current document.
+ * @returns {Promise&lt;boolean>}
+ */
+function deleteDocument() {
+    return notesf.DeleteDocument();
+}
+/**
+ * Deletes the value of an editable field.
+ * @returns {void}
+ */
+function deleteField(fieldName) {
+    return notesf.DeleteField(fieldName);
+}
+/**
+ * Returns a list of all the fields in a document.
+
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function docFields() {
+    return notesf.DocFields();
+}
+/**
+ * Returns the approximate number of bytes a truncated document lost during
+ * replication. The bytes are the total number of bytes per attachment, OLE object,
+ * large rich text field, or non-summary items that were too large, according to
+ * the replication settings for the database, to be replicated.
+ * @throws {Error} no plans to implement
+ */
+function docOmmittedLength() {
+    return notesf.DocOmmittedLength();
+}
+/**
+ * The universal ID, which uniquely identifies a document across all replicas of a
+ * database. In text format, the universal ID is a 32-character combination of
+ * hexadecimal digits (0-9, A-F).
+ *
+ * The universal ID is also known as the unique ID or UNID.
+ * @returns {string}
+ */
+function documentUniqueID() {
+    return notesf.DocumentUniqueID();
+}
+/**
+ * Returns the language of the current form.
+ * @throws {Error} no plans to implement
+ */
+function formLanguage() {
+    return notesf.FormLanguage();
+}
+/**
+ * Gets the current API context (if ctx param is null or not supplied) or
+ * Sets the API context to either database for local DOM, for those APIs
+ * that require working with differents contexts such as GetField/SetField
+ * Note: this API is not derived from an existing Lotus Notes Formula function.
+ * Instead, it is needed to set the acting context for the GetField and SetField functions.
+ * @param {string} [ctx] the context to set: 'db', 'local', or 'all' (default for any other string supplied)
+ * @returns {string} the context
+ */
+function context(ctx) {
+    return notesf.Context(ctx);
+}
+/**
+ * Lotus Notes derived API
+ * Returns the value of a specified field on the page or database, depending on the API config data context and framework.
+ * @param {*} fieldName
+ * @returns {*} the value of the requested field
+ */
+const getField = (fieldName) => {
+    return notesf.GetField(fieldName);
+};
+exports.getField = getField;
+/**
+ * Lotus Notes derived API
+ * Returns the field type for a specified field.
+ * @param {*} fieldName  - uses current document
+ * @returns {*} field type possible return values: 'string', 'number', 'date', 'richtext', 'string[]', 'number[]', 'date[], 'richtext[]', and []'
+ */
+const getFieldType = (fieldName) => {
+    return notesf.GetFieldType(fieldName);
+};
+exports.getFieldType = getFieldType;
+/**
+ * Lotus Notes derived API
+ * Assigns a value to a specified field, on the page or database, depending on the API config data context and framework.
+ * Assigns a value to a field stored within a document (use &amp;#64;set for temporary variables).
+ * This is similar to using the FIELD keyword, except that &amp;#64;setField can be used within another &amp;#64;function.
+ * If the field does not exist, this command creates it and applies the specified value to it.
+ * @param {string} fieldName The name of a field
+ * @param {*} value The value to assign to the field
+ * @returns {*} the value of the assigned field
+ */
+function setField(fieldName, value) {
+    return notesf.SetField(fieldName, value);
+}
+/**
+ * Checks a document for the existence of a field.
+ * @param {*} field The field to check
+ * @returns True indicates that the field is contained in the document. False indicates that the field is not contained in the document.
+ * @example
+ * // This formula returns the value of the Dept field if it exists in the document, otherwise it returns Consultant
+ * if (voltmx.rosettajs.Document.isAvailable("Dept")) {
+ *  return voltmx.rosettajs.Document.getField("Dept");
+ * } else {
+ *   return "Consultant";
+ * }
+ * @example
+ * // This formula returns the value of the field named Topic if it exists in the document, otherwise it returns the value contained in the field named Subject.
+ * if (voltmx.rosettajs.Document.isAvailable("Topic")) {
+ *   return voltmx.rosettajs.Document.getField("Topic");
+ * } else {
+ *   return voltmx.rosettajs.Document.getField("Subject");
+ * }
+ * @example
+ * // This formula, when added to a hotspot button, checks for the existence of the Priority field in a form, then sets its value if found or creates a new Priority field and sets its value, if not found
+ * if (voltmx.rosettajs.Document.isAvailable("Priority")) {
+ *   return voltmx.rosettajs.Document.setField("Priority", "High");
+ * } else {
+ *   return voltmx.rosettajs.Document.setField("Priority", "Medium");
+ * }
+ */
+function isAvailable(field) {
+    return notesf.IsAvailable(field);
+}
+/**
+ * Indicates whether the current document has been truncated.
+ * @throws {Error} no plans to implement
+ */
+function isDocTruncated() {
+    return notesf.IsDocTruncated();
+}
+/**
+ * For a document being edited, indicates if the document has been saved to disk.
+ * @returns 1 (True) if the document being edited has not yet been saved to disk. Returns 0 (False) if the document has been saved.
+ */
+function isNewDoc() {
+    return notesf.IsNewDoc();
+}
+/**
+ * Indicates whether a field name exists in a document.
+ *
+ * CAUTION: Do not confuse &amp;#64;IsUnavailable with &amp;#64;Unavailable. &amp;#64;Unavailable deletes fields and can cause serious damage if used unintentionally in place of &amp;#64;IsUnavailable.
+ *
+ * @param {*} field The field to check.
+ * @returns True indicates that the field is not contained in the document. False indicates that the field is contained in the document.
+ * @example
+ * // Returns Consultant if the field Dept does not exist; if Dept does exist, the value contained in Dept is returned.
+ * if (voltmx.rosettajs.Document.isUnavailable("Dept")) {
+ *   return "Consultant";
+ * } else {
+ *   return voltmx.rosettajs.Document.getField("Dept");
+ * }
+ */
+function isUnavailable(field) {
+    return notesf.IsUnavailable(field);
+}
+/**
+ * Indicates whether a document is a response to another document.
+ * @returns Returns 1 (True) if the document is a response document. Returns 0 (False) if the document is not a response document.
+ * Returns false for new documents, since &amp;#64;IsResponseDoc doesn't recognize a document type until after the document is saved
+ * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ISRESPONSEDOC.html | hcltechsw.com}
+ * @example
+ * // Returns Response if the document is a response; Topic if the document is not a response.
+ * if (voltmx.rosettajs.Document.isResponseDoc()) {
+ *  return "Response";
+ * } else {
+ * return "Topic";
+ * }
+ */
+function isResponseDoc() {
+    return notesf.IsResponseDoc();
+}
+/**
+ * Returns a text string that represents the level of the document or category.
+ * @returns The level of the document or category.
+ * @example
+ * rosettajs.Document.docLevel(); // This example of a main document in a category returns 2
+ * @example
+ * rosettajs.Document.docLevel; // This example of a response document in a category returns 3
+ */
+function docLevel() {
+    return notesf.DocLevel();
+}
+/**
+ * Returns a string representing the entry number of the current document or category. For example, 2.3 indicates
+ * that the document is the third entry following the second entry.
+ * @param {string} [separator] Optional. Indicates a separator to be used in the document number instead of "." (period); must be one character.
+ * An empty string (""), Tells the function to return the least significant item of the document number (in other words, its rightmost component).
+ * @returns The value that represents the document number of the document or category in the view.
+ * @example
+ * rosettajs.Document.docNumber(); // This example returns 37.1.3 for entry 37.1.3
+ * @example
+ * rosettajs.Document.docNumber("-"); // This example returns 37-1-3 for entry 37.1.3
+ * @example
+ * rosettajs.Document.docNumber(""); // This example returns 3 for entry 37.1.3
+ */
+function docNumber(separator) {
+    return notesf.DocNumber(separator);
+}
+/**
+ * Returns the number of child documents or categories belonging to the current document or category.
+ * Only immediate responses count as children. For example, the responses to a main document are its children,
+ * but the responses to a response document are not.
+ *
+ * The parameter descriptions are:
+ * - defaultString The text to return. If a "%" is used in the string, it will be replaced with the number of
+ * children documents or categories. Example: "% Responses."
+ * - zero-string The text to return if the document or category has no children, such as "No Responses."
+ * - one-string The text to return if the document or category has just one child, such as "One Response."
+ *
+ * @param {string} string1 If this is the only argument, it is the defaultString. If there are
+ * more than two arguments, this is the zero-string.
+ * @param {string} string2 If there are two arguments, it is the defaultString. If there are
+ * three arguments, this is the one-string.
+ * @param {string} string3 This is the defaultString.
+ * @returns {string} The return value depends on how you call docChildren:
+ * - numChildren If docChildren is called with no parameters, then the number of child documents belonging to
+ * the current document or category is returned. You cannot convert special text to a number.
+ * - childString If docChildren is called with one or more parameters, it returns the appropriate string, based
+ * on the number of child documents belonging to the current document or category. You cannot convert special text
+ * to a number.
+ * @example
+ * rosettajs.document.docChildren(); // This example returns 3 if there are 3 responses
+ * @example
+ * // This example returns 3 Responses. The appropriate number is substituted for %. If the document doesn't have any responses, this formula returns 0 Responses.
+ * rosettajs.document.docChildren("% Responses");
+ * @example
+ * // This example returns 3 Responses. This time, if the document doesn't have any responses, the formula returns the message No Responses.
+ * rosettajs.document.docChildren("No Responses";"% Responses");
+ * @example
+ * // This example returns There are 3 Responses. If the document has one response, the message is 1 Response; if the document has no responses, the message is No Responses.
+ * rosettajs.document.docChildren("No Responses";"1 Response";"There are % Responses.");
+ */
+function docChildren(string1, string2, string3) {
+    return notesf.DocChildren(string1, string2, string3);
+}
+/**
+ * Returns the number of descendant documents or subcategories belonging to the current document or category.
+ * Only immediate responses count as children. Where docChildren only counts direct descendants, docDescendants counts all descendants,
+ * regardless of level.
+ *
+ * The parameter descriptions are:
+ * - defaultString The text to return. If a "%" is used in the string, it will be replaced with the number of
+ * descendant documents or categories. Example: "% Responses."
+ * - zero-string The text to return if the document or category has no descendants, such as "No Responses."
+ * - one-string The text to return if the document or category has just one descendant, such as "One Response."
+ *
+ * @param {string} string1 If this is the only argument, it is the defaultString. If there are
+ * more than two arguments, this is the zero-string.
+ * @param {string} string2 If there are two arguments, it is the defaultString. If there are
+ * three arguments, this is the one-string.
+ * @param {string} string3 This is the defaultString.
+ * @returns {string} The return value depends on how you call docDescendants:
+ * - numDescendants If docDescendants is called with no parameters, then the number of descendant documents belonging to
+ * the current document or category is returned.
+ * - descendantString If docDescendants is called with one or more parameters, it returns the appropriate string, based
+ * on the number of descendant documents belonging to the current document or category.
+ * @example
+ * rosettajs.document.docDescendants(); // This example returns 3 if there are 3 responses
+ * @example
+ * // This example returns 3 Responses. The appropriate number is substituted for %. If the document doesn't have any responses, this formula returns 0 Responses.
+ * rosettajs.document.docDescendants("% Responses");
+ * @example
+ * // This example returns 3 Responses. This time, if the document doesn't have any responses, the formula returns the message No Responses.
+ * rosettajs.document.docDescendants("No Responses";"% Responses");
+ * @example
+ * // This example returns There are 3 Responses. If the document has one response, the message is 1 Response; if the document has no responses, the message is No Responses.
+ * rosettajs.document.docDescendants("No Responses";"1 Response";"There are % Responses.");
+ */
+function docDescendants(string1, string2, string3) {
+    return notesf.DocDescendants(string1, string2, string3);
+}
+/**
+ * Returns a string that represents the entry number of the parent view entry. Both the current view entry and the parent can be either documents or categories.
+ * @param {string} [separator] Optional. Indicates a separator to be used in the parent document number instead of "." (period); must be one character.
+ * An empty string (""), Tells the function to return the least significant item of the parent document number (in other words, its rightmost component).
+ * @returns {string} The value that represents the parent document number of the document or category in the view.
+ * @example
+ * rosettajs.Document.docParentNumber(); // This example returns 37.1 for entry 37.1.3
+ * @example
+ * rosettajs.Document.docParentNumber("-"); // This example returns 37-1 for entry 37.1.3
+ * @example
+ * rosettajs.Document.docParentNumber(""); // This example returns 1 for entry 37.1.3
+ */
+function docParentNumber(separator) {
+    return notesf.DocParentNumber(separator);
+}
+/**
+ * Returns a string that represents the total number of entries at the same level as a view entry (document or category).
+ * The returned total includes the document itself. For example, if the document is entry 8.2, and entries 8.1, 8.3, and 8.4 also exist, then there are four
+ * document siblings.
+ * @returns {string} The number of entries at the same level as the document or category.
+ * @example
+ * // Returns Response 1 of 4 to Current Vacation Policy if the document is one of four responses to a document with the string Current® Vacation Policy in the Topic field
+ * if (voltmx.rosettajs.Document.isNewDoc()) {
+ *  return "New Document";
+ * } else {
+ * return "Response " + voltmx.rosettajs.Document.docNumber(" ") + " of " + voltmx.rosettajs.Document.docSiblings() + " to " + voltmx.rosettajs.Document.getField("Topic");
+ * }
+ */
+function docSiblings() {
+    return notesf.DocSiblings();
+}
+/**
+ * Displays a modal window that contains either:
+ * - A view you specify from which the user can select one or more documents.
+ * &amp;#64;pickList returns a column value from the selected document(s).
+ * - A dialog box, displaying information from all available Domino® Directories.
+ * The user can select one or more person, group, server, room, or resource names,
+ * and &amp;#64;pickList returns those names.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function pickList() {
+    return notesf.PickList();
+}
+/**
+ * Get html to generate a prompt.
+ * @param style - The type of prompt to generate
+ * @param title - The title for the prompt
+ * @param [promptString] - Optional. Text to display with the prompt
+ * @param [defaultChoice] - Optional. Default choice to select when the prompt is displayed.
+ * @param [choiceList] - Optional. The list of avaliable choices
+ * @returns A promise that will inject the code for the prompt into the document.
+ */
+function prompt(style, title, promptString, defaultChoice, choiceList) {
+    if (!style) {
+        return Promise.reject(new Error('Insufficient arguments'));
+    }
+    if (choiceList &amp;&amp; !Array.isArray(choiceList)) {
+        return Promise.reject(new Error('Invalid list type'));
+    }
+    let boxStyle = '';
+    if (Array.isArray(style)) {
+        // get prompt type
+        style = style.filter(function (item) {
+            return item.toUpperCase() !== 'NOSORT';
+        });
+        // style param is valid only [type] or [type, 'NOSORT']
+        if (style.length > 1) {
+            return Promise.reject(new Error('Invalid Prompt type'));
+        }
+        boxStyle = style[0];
+    }
+    else {
+        boxStyle = style;
+        choiceList === null || choiceList === void 0 ? void 0 : choiceList.sort(Intl.Collator().compare); // sort choiceList by default
+    }
+    style = common_1.PromptStyle[boxStyle.toUpperCase()] || '';
+    if (!style) {
+        return Promise.reject(new Error('Invalid Prompt type'));
+    }
+    return notesf.Prompt(style, title, promptString, defaultChoice, choiceList);
+}
+/**
+ * Returns the number of responses (in the current view) to the document.
+ * @returns {number} value. The number of responses to the document.
+ * @example
+ * // Returns 5 if there are five responses to the document.
+ * voltmx.rosettajs.responses();
+ * @example
+ * // Returns the string "No one has responded to this document" if there are no responses to the current document; otherwise a blank is returned.
+ * if (voltmx.rosettajs.responses() === 0) {
+ *  return "No one has responded to this document";
+ * } else {
+ * return " ";
+ * }
+ */
+function responses() {
+    return notesf.Responses();
+}
+/**
+ * Returns a specified string if the current document of a view is defined as a category.
+ * @param [trueString] {string} A string to return if an item in the view row is a category.
+ * @param [falseString] {string} A string to return if no item in the row is a category.
+ * @returns If no parameters are specified, the function returns an asterisk (&amp;#42;) if the current document is a category.
+ * Otherwise returns an empty string. If trueString is specified, returns trueString instead
+ * of asterisk (&amp;#42;). If falseString is specified, returns falseString instead of an empty string.
+ * @see For further information, see {@link https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ISCATEGORY.html | hcltechsw.com}
+ * @example
+ * // This example returns * if the row is a category, or nothing if the row is not a category.
+ * voltmx.rosettajs.isCategory();
+ * @example
+ * // This example returns C if the row is a category, or nothing if the row is not a category.
+ * voltmx.rosettajs.isCategory("C");
+ * @example
+ * // This example returns Y if the row is a category, or N if the row is not a category.
+ * voltmx.rosettajs.isCategory("Y", "N");
+ */
+function isCategory(trueString, falseString) {
+    return notesf.IsCategory(trueString, falseString);
+}
+/* --------------------------------------------------------------- */
+/* Moved from Miscellaneous category                               */
+/**
+ * Adds current document to one folder while removing it from another. NULL string
+ * can be substituted for either argument to skip the action.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function addToFolder() {
+    return notesf.AddToFolder();
+}
+/**
+ * Brings up a dialog box that displays the current document.
+ * To customize the dialog box style, sknDialogWindowContainer, sknDialogWindowTitleContainer, and sknDialogWindowTitle skins need to be defined in the project.
+ *
+ * @param {string} formFriendlyName. The name of the form to display in the dialog box.
+ * @param {string | string[]} type. [READONLY] or [DEFAULT] The type of the form to display in the dialog box.
+ * @param {string} title. The title of the dialog box.
+ * @returns {void}
+ */
+function dialogBox(formFriendlyName, dialogType, title) {
+    return notesf.DialogBox(formFriendlyName, dialogType, title);
+}
+/**
+ * Locks, unlocks, returns the locked status of the current document, or indicates
+ * if a database has document locking enabled.
+ * @throws {Error} no plans to implement
+ */
+function docLock() {
+    return notesf.DocLock();
+}
+/**
+ * In an agent that runs a formula, &amp;#64;HardDeleteDocument permanently removes the
+ * document currently being processed from the database if the database has soft
+ * deletions enabled. If the database does not have soft deletions enabled,
+ * &amp;#64;HardDeleteDocument performs the same action as @DeleteDocument.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function hardDeleteDocument() {
+    return notesf.HardDeleteDocument();
+}
+/**
+ * Opens the specified document within a new window.
+ * To customize the window style, sknDialogWindowContainer, sknDialogWindowTitleContainer, and sknDialogWindowTitle skins need to be defined in the project.
+ 
+ * @param {string} formFriendlyName. The name of the form to display in the dialog box.
+ * @return {void}
+ */
+function openInNewWindow(formFriendlyName) {
+    return notesf.OpenInNewWindow(formFriendlyName);
+}
+/**
+ * Allows you to specify a target frame when opening a view, page, or frameset, or
+ * when composing or editing a document.
+ * @throws {Error} no plans to implement
+ */
+function setTargetFrame() {
+    return notesf.SetTargetFrame();
+}
+/**
+ * Displays the parent document preview pane.
+ * @throws {Error} no plans to implement
+ */
+function showParentPreview() {
+    return notesf.ShowParentPreview();
+}
+/**
+ * In a database with "Allow soft deletions" selected, this command restores a
+ * deleted document.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function undeleteDocument() {
+    return notesf.UndeleteDocument();
+}
+/**
+ * Displays the Folders dialog box, which allows you to select a folder in which to
+ * file the current document.
+ * @throws {Error} no plans to implement
+ */
+function chooseFolders() {
+    return notesc.ChooseFolders();
+}
+/**
+ * Displays the "Folders containing current document" dialog box.
+ * @throws {Error} no plans to implement
+ */
+function discoverFolders() {
+    return notesc.DiscoverFolders();
+}
+/**
+ * Marks the currently selected document for deletion.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function moveToTrash() {
+    return notesc.MoveToTrash();
+}
+/**
+ * Deletes documents marked for deletion in a database.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function emptyTrash() {
+    return notesc.EmptyTrash();
+}
+/**
+ * Removes the selected document from the current folder.
+ * @throws {Error} method not implemented
+ * @TODO this needs to be implemented
+ */
+function removeFromFolder() {
+    return notesc.RemoveFromFolder();
+}
+/**
+ * Displays the Properties box for the currently selected Notes® object. For
+ * example, if a document is selected in a view, displays the document Properties
+ * box; if a field is selected on a form, displays the field Properties box.
+ * @throws {Error} no plans to implement
+ */
+function showProperties() {
+    return notesc.ShowProperties();
+}
+/**
+ * Changes the form used to display the current document.
+ * @throws {Error} no plans to implement
+ */
+function switchForm() {
+    return notesc.SwitchForm();
+}
+/**
+ * In a document in Edit mode, moves the insertion point to the next editable field.
+ * @throws {Error} no plans to implement
+ */
+function v3EditNextField() {
+    return notesc.V3EditNextField();
+}
+/**
+ * In a document in Edit mode, moves the insertion point to the first editable field.
+ * @throws {Error} no plans to implement
+ */
+function v3EditPrevField() {
+    return notesc.V3EditPrevField();
+}
+/**
+ * Returns the approximate size of a document in bytes.
+ * @throws {Error} No plans to implement
+ */
+function docLength() {
+    return notesf.DocLength();
+}
+/**
+ * In an agent that runs a formula, indicates whether or not you want to save the
+ * changes to a document.
+ * @throws {Error} No plans to implement
+ */
+function docMark() {
+    return notesf.DocMark();
+}
+/**
+ * Returns the name, current row, or current column of the table that is in focus.
+
+ * @throws {Error} No plans to implement
+ */
+function getFocusTable() {
+    return notesf.GetFocusTable();
+}
+/**
+ * The unique ID of the current document's inheritance parent. See
+ * &amp;#64;documentUniqueID for a description of unique IDs.
+ * @throws {Error} No plans to implement
+ */
+function inheritedDocumentUniqueID() {
+    return notesf.InheritedDocumentUniqueID();
+}
+/**
+ * Checks the current status of the document and returns 1 (True) if the document
+ * is being edited; otherwise returns 0 (False).
+ * @throws {Error} No plans to implement
+ */
+function isDocBeingEdited() {
+    return notesf.IsDocBeingEdited();
+}
+/**
+ * Checks the current status of the document and returns 1 (True) if the document
+ * is being loaded into memory for display; otherwise returns 0 (False).
+ * @throws {Error} No plans to implement
+ */
+function isDocBeingLoaded() {
+    return notesf.IsDocBeingLoaded();
+}
+/**
+ * Checks the current status of the document and returns 1 (True) if the document
+ * is being mailed; otherwise, returns 0 (False).
+ * @throws {Error} No plans to implement
+ */
+function isDocBeingMailed() {
+    return notesf.IsDocBeingMailed();
+}
+/**
+ * Checks the current status of the document and returns 1 (True) if the document
+ * is being recalculated; otherwise, returns 0 (False).
+ * @throws {Error} No plans to implement
+ */
+function isDocBeingRecalculated() {
+    return notesf.IsDocBeingRecalculated();
+}
+/**
+ * Checks the current status of the document and returns 1 (True) if the document
+ * is being saved; otherwise, returns 0 (False).
+ * @throws {Error} No plans to implement
+ */
+function isDocBeingSaved() {
+    return notesf.IsDocBeingSaved();
+}
+/**
+ * The ID number of the current document.
+ * @throws {Error} No plans to implement
+ */
+function noteID() {
+    return notesf.NoteID();
+}
+/**
+ * Indicates whether a field is locked by an administration policy and cannot be
+ * modified.
+ * @throws {Error} No plans to implement
+ */
+function policyIsFieldLocked() {
+    return notesf.PolicyIsFieldLocked();
+}
+/**
+ * Deletes the value of an editable field.
+ * @throws {Error} No plans to implement
+ */
+function unavailable() {
+    return notesf.Unavailable();
+}
+/**
+ * Creates a document using the current form or Page, so you can test its fields,
+ * formulas, and scripts.
+ * @throws {Error} no plans to implement
+ */
+function formTestDocument() {
+    return notesc.FormTestDocument();
+}
+/**
+ * Returns the names of the folders containing the current document.
+ * @throws {Error} no plans to implement
+ */
+function whichFolders() {
+    return notesf.WhichFolders();
+}
+//# sourceMappingURL=document.js.map</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper">Licensed Materials - Property of HCL. (c) Copyright HCL America, Inc. 2023</div></footer></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 2.1.11</a><div class="mobile-nav-links"><div class="navbar-item"><a id="menu-api-status-mobile" href="api_status.html" target="_blank">API Implementation Status Table</a></div></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-modules"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi.html">rosetta-api-drapi</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-api.html">rosetta-converter-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-config.html">rosetta-converter-config</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-classes"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-math-trig.iso.html">iso</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaDRAPIObject.html">rosettaDRAPIObject</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div><div class="sidebar-section-children"><a href="module-statistical.beta.html">beta</a></div><div class="sidebar-section-children"><a href="module-statistical.binom.html">binom</a></div><div class="sidebar-section-children"><a href="module-statistical.chiSq.html">chiSq</a></div><div class="sidebar-section-children"><a href="module-statistical.confidence.html">confidence</a></div><div class="sidebar-section-children"><a href="module-statistical.coVariance.html">coVariance</a></div><div class="sidebar-section-children"><a href="module-statistical.expon.html">expon</a></div><div class="sidebar-section-children"><a href="module-statistical.f.html">f</a></div><div class="sidebar-section-children"><a href="module-statistical.logNorm.html">logNorm</a></div><div class="sidebar-section-children"><a href="module-statistical.mode.html">mode</a></div><div class="sidebar-section-children"><a href="module-statistical.norm.html">norm</a></div><div class="sidebar-section-children"><a href="module-statistical.percentile.html">percentile</a></div><div class="sidebar-section-children"><a href="module-statistical.percentRank.html">percentRank</a></div><div class="sidebar-section-children"><a href="module-statistical.poisson.html">poisson</a></div><div class="sidebar-section-children"><a href="module-statistical.quartile.html">quartile</a></div><div class="sidebar-section-children"><a href="module-statistical.rank.html">rank</a></div><div class="sidebar-section-children"><a href="module-statistical.stDev.html">stDev</a></div><div class="sidebar-section-children"><a href="module-statistical.t.html">t</a></div><div class="sidebar-section-children"><a href="module-statistical.Var.html">Var</a></div><div class="sidebar-section-children"><a href="module-statistical.weiBull.html">weiBull</a></div><div class="sidebar-section-children"><a href="module-statistical.z.html">z</a></div><div class="sidebar-section-children"><a href="module-statistical-gamma.html">gamma</a></div><div class="sidebar-section-children"><a href="module-statistical-gammaLn.html">gammaLn</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-global"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#getDefault">getDefault</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentDb">isCurrentDb</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentLocal">isCurrentLocal</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsDb">setDefaultAsDb</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsLocal">setDefaultAsLocal</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
