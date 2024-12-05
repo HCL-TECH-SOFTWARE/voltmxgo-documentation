@@ -102,7 +102,7 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
         - A **warning** icon indicates a successful import, but the imported component might not work as expected due to, for example, its data type not being currently supported. 
         - An **error** icon indicates a failed import. 
         - Click the **Show only with errors** toggle in a specific tab to the on position to see all elements with the **error** icon in that specific tab.  
-        - When the scope you selected has active agents, the **Agents** tab is shown. Otherwise, the **AppForms** tab is shown.
+        <!--- When the scope you selected has active agents, the **Agents** tab is shown. Otherwise, the **AppForms** tab is shown.-->
         - You can click **view report** to see a results report of imported forms, views, and agents in a new window. 
 
     ![Design Import Wizard dialog](../assets/images/diresult.png) 
