@@ -36,9 +36,9 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
             - If you want a different installation location, click **Choose** to select your preferred installation location, and then click **Next**.
             - If you selected a different installation location and decided to revert to the default location, click **Restore Default Folder** and then click **Next**.
 
-    1. On the Pre-Installation Summary, review the details and then click Install.
-    1. On the Installing tab, you can see the installation status.
-    1. On the Install Complete, click Done.
+    1. On the **Pre-Installation Summary**, review the details and then click **Install**.
+    1. On the **Installing** tab, you can see the installation status.
+    1. On the **Install Complete**, click **Done**.
 
 === "on Windows"
 
@@ -52,13 +52,16 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
             - If you want a different installation location, click **Choose** to select your preferred installation location or directly enter your preferred installation location in the text box, and then click **Next**.
             - If you selected a different installation location and decided to revert to the default location, click **Restore Default Folder** and then click **Next**.
 
-    1. On the Pre-Installation Summary, review the details and then click Install.
-    1. On the Installing tab, you can see the installation status.
-    1. On the Install Complete, click Done.
+    1. On the **Pre-Installation Summary**, review the details and then click **Install**.
+    1. On the **Installing** tab, you can see the installation status.
+    1. On the **Install Complete**, click **Done**.
 
 ### 3. Install Volt MX Go Plugin
 
-The procedure enables the installation of Volt MX Go plugins to Volt Iris to enable Volt MX Go features. 
+The procedure enables the installation of Volt MX Go plugins to Volt Iris to enable Volt MX Go features.
+
+!!!warning "Important"
+    Installing the MX Go plugins into your workspace requires that your workspace contains a `pluginsInfo.json` file in the `.plugins` directory. Otherwise, an installation error occurs. To create the `pluginsInfo.json` file in the `.plugins` directory, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project) with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris). Running the Live Preview creates the `pluginsInfo.json` file. 
 
 === "on Mac"
 

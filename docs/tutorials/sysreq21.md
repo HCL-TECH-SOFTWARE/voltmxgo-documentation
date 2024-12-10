@@ -80,7 +80,7 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
     |Internal Storage|	24 GB|
     |Network Ethernet |Port|
 
-## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
+<!--## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
 
 --8<-- "devtestenvironment.md"
 
@@ -130,6 +130,8 @@ Rancher Desktop requires the following on Windows:
     - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/) in the Rancher Desktop documentation. 
     
     - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows) in the Rancher Desktop documentation.
+
+-->
 
 ## Next step
 
