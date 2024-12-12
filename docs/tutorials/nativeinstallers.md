@@ -1,6 +1,10 @@
 # Install Volt MX Go Foundry
 
-Volt MX Go Foundry supports the following installation mechanisms:
+## Overview
+
+**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the minimum required version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. An important thing to note for Volt MX Go v2.1 is that **only Volt Foundry using a Tomcat non-clustered application server is supported**. 
+
+**For earlier releases up to Volt MX Go v2.0.4 release**, Volt MX Go Foundry supports the following installation mechanisms:
 
 - Use the Windows or Linux installers that use Install Anywhere to do the installation. It allows you to install a bundled Tomcat or JBoss app server or install it onto an existing app server (JBOSS single or multi-node, or WebLogic).
 - Use the Command Line installer for advanced deployments.

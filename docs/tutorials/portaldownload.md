@@ -17,10 +17,16 @@ Starting from the Volt MX Go v2.1 release, you must download the specific minimu
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
 
-2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
-3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
-4. On the **Downloads** page, search for and click **HCL Volt MX**.
+2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens.
+    <!--3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.--> 
+
+3. On the **License & Download Portal** home page, go to **Your Downloads** and search for and click **HCL Volt MX**.
+    <!--4. On the **Downloads** page, search for and click **HCL Volt MX**.-->
+
 5. On the **Download Packages** page, download the Volt Foundry installer, Volt Iris installer, and Volt MX Go Plugin Installer.
+
+    !!!note
+        When downloading files for the first time by clicking **Download Selected Files**, you need to install the *Download Manager Interface* once. Follow the download and installation instructions. After installing the *Download Manager Interface*, you can resume your download. 
 
     === "For Volt Foundry"
 
@@ -77,15 +83,19 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
 
-2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens. 
-3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.
-4. On the **Downloads** page, search for and click **HCL Volt MX**.
+2. On the sign in page, enter your username and click **Next**. The **License & Download Portal** home page opens.
+3. On the **License & Download Portal** home page, go to **Your Downloads** and search for and click **HCL Volt MX**. 
+    <!--3. On the **License & Download Portal** home page, go to **Downloads** &rarr; **List Downloads**.-->
+    <!--4. On the **Downloads** page, search for and click **HCL Volt MX**.-->
 5. On the **Download Packages** page, click the **HCL Volt MX Go Version x.x** package under the **New Versions** tab.
 
     !!!note
         Select the appropriate package version based on whether you want to perform a new installation or an upgrade. 
 
 6. On the **Files** tab on the **Downloads** page, select all the files and click **Download Selected Files**.
+
+    !!!note
+        When downloading files for the first time by clicking **Download Selected Files**, you need to install the *Download Manager Interface* once. Follow the download and installation instructions. After installing the *Download Manager Interface*, you can resume your download.   
 
     **OR** 
 
