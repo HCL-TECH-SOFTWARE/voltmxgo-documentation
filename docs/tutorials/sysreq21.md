@@ -2,17 +2,17 @@
 
 This section describes the minimum system requirements for deploying Volt MX Go. 
 
-## For installing Domino REST API
+## For Domino REST API
 
 --8<-- "drapiversion.md"
 
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789) for installing Domino REST API using the installer. 
 
-## For installing Volt MX Go Plugin Installer
+## For Volt MX Go Plugin Installer
 
 The Volt MX Go Plugin Installer runs on any supported Volt Foundry server installation or any supported Volt Iris client installation. The installer requires less than 150 MB of internal storage.
 
-## For installing Volt Foundry
+## For Volt Foundry
 
 **Software requirements**
 Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html) to know the software requirements for installing Volt MX Go Foundry using installers.
@@ -33,9 +33,9 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 
 Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html) for the Volt MX Go Foundry Console.
 
-**Prerequisites for Volt Foundry command line installer**
+<!--**Prerequisites for Volt Foundry command line installer**
 
-Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. 
+Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. -->
 
 **Prerequisites for Volt Foundry Containers Helm Installation**
 
@@ -47,7 +47,7 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 - [Software requirements](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#software-requirements)
 - [Hardware requirements](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#hardware-requirements)
 
-## For installing Volt Iris
+## For Volt Iris
 
 === "On Windows"
 

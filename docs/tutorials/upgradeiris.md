@@ -8,7 +8,7 @@ Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer - v9.5.47 or later. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
+- You have downloaded the Volt Iris installer - v9.5.48 or later. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](installiris.md#2-install-volt-mx-go-plugin-installer).
 

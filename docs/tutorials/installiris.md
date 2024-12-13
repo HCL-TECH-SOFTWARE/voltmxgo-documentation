@@ -6,7 +6,7 @@ Perform a new installation of Volt MX Go Iris.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer. The minimum required version is v9.5.47.   
+- You have downloaded the Volt Iris installer. The minimum required version is v9.5.48.   
 - You have downloaded the Volt MX Go Plugin Installer. 
 
 For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).

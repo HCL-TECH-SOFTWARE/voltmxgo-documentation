@@ -18,7 +18,7 @@ Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 - Back up your databases and server artifacts.
 
-- You have downloaded the Volt Foundry installer based on your installation platform. The minimum required version is v9.5.17.5. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
+- You have downloaded the Volt Foundry installer based on your installation platform. The minimum required version is v9.5.17.6. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](nativeinstallers.md#2-install-volt-mx-go-plugin-installer).
 
@@ -118,6 +118,31 @@ There are regular updates for Volt Foundry. These updates are major release vers
 
 #### Before you begin
 
+- You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go Release package](./portaldownload.md#for-volt-mx-go-v21). 
+
+#### Upgrade Volt Foundry
+
+1. Click the link to the upgrade guide based on your requirement and follow the steps. 
+
+    - [Upgrade Individual Foundry Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components)
+
+    - [Upgrade All Foundry Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components)
+
+    !!!warning "Important"
+        Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
+
+2. After completing all applicable steps in the installation guide, update the `values.yaml` file.
+
+    1. Locate the `values.yaml` file in the Volt Foundry directory.
+    2. Open the `values.yaml` file with your preferred editor and locate the line containing the `imageRegistry:` key.
+    3. Change the value of the `imageRegistry:` key to `hclcr.io/voltmxgo`.
+    4. Save your changes and close the file. 
+
+3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go. 
+
+<!--
+#### Before you begin
+
 1. Create a temp directory for the charts.
 
     Run the following to create a temp directory for downloading the charts, and make it the current directory:
@@ -211,6 +236,8 @@ There are regular updates for Volt Foundry. These updates are major release vers
     Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
 
 --8<-- "verupgrade1.md"
+
+-->
 
 ### For Volt MX Go v2.0.4 or earlier
 

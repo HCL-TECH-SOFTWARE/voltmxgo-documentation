@@ -16,7 +16,7 @@
 
 #### Before you begin
 
-- You have downloaded the Volt Foundry installer. The minimum required version is v9.5.17.5.   
+- You have downloaded the Volt Foundry installer. The minimum required version is v9.5.17.6.   
 - You have downloaded the Volt MX Go Plugin Installer. 
 
 For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
@@ -27,7 +27,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
 !!!warning "Important"
     - For Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
-    - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
+    <!-- The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**-->
     - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html)
@@ -144,6 +144,31 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
 ### For Volt MX Go v2.1
 
+#### Before you begin
+
+- You have completed all the installation [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites).
+- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration).
+- You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go Release package](./portaldownload.md#for-volt-mx-go-v21). 
+
+#### Install Volt Foundry
+
+1. Click the link to the installation guide and follow the installation steps. 
+
+    [Volt Foundry Container Helm installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#installation)
+
+    !!!warning "Important"
+        Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
+
+2. After completing all applicable steps in the installation guide, update the `values.yaml` file.
+
+    1. Locate the `values.yaml` file in the Volt Foundry directory.
+    2. Open the `values.yaml` file with your preferred editor and locate the line containing the `imageRegistry:` key.
+    3. Change the value of the `imageRegistry:` key to `"hclcr.io/voltmxgo`.
+    4. Save your changes and close the file. 
+
+3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go. 
+
+<!--
 !!!note
     Starting with Volt MX Go v2.1, only one helm chart `voltmx-foundry` is used for Volt MX Go Foundry installation.
 
@@ -313,6 +338,8 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 7. (Optional) Perform post installation tasks.
 
     Perform the procedures under the [Post Installation Tasks](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html) in the HCL Volt MX documentation.
+
+-->
 
 ### For Volt MX Go v2.0.4 or earlier
 
