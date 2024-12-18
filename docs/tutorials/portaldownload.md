@@ -31,7 +31,7 @@ Starting from the Volt MX Go v2.1 release, you must download the specific minimu
     === "For Volt Foundry"
 
         1. Click **HCL Volt Foundry v9.5 Latest** on the **New Versions** tab.
-        1. On the **Files** tab on the **Downloads** page, select the installer with the correct version based on your installation platform and click **Download Selected Files**.
+        1. On the **Files** tab on the **Downloads** page, select the installation file with the correct version based on your installation platform and click **Download Selected Files**.
 
             **OR** 
 
@@ -39,17 +39,21 @@ Starting from the Volt MX Go v2.1 release, you must download the specific minimu
 
             !!!note
                 - The required minimum version of Volt Foundry is v9.5.17.6 for Volt MX Go.
-                - For Windows, the installer is `VoltFoundrySetup-<version\>_GA.zip`. 
+                - For Windows, the file name of the installation file is `VoltFoundrySetup-<version\>_GA.zip`. 
                     
                     For example: `VoltFoundrySetup-9.5.17.6_GA.zip`
                 
-                - For Linux, the installer is `VoltFoundrySetup-<version\>_GA.tar.gz`. 
+                - For Linux, the file name of the installation file is `VoltFoundrySetup-<version\>_GA.tar.gz`. 
                     
                     For example: `VoltFoundrySetup-9.5.17.6_GA.tar.gz`
                 
-                - For Single Container Solution, the installer is `VoltFoundrySingleContainer-<version\>_GA`.zip.  
+                - For Single Container Solution, the file name of the installation file is `VoltFoundrySingleContainer-<version\>_GA.zip`.  
                 
                     For example: `VoltFoundrySingleContainer-9.5.17.6_GA.zip`
+
+                - For Container Helm Installation, the file name of the installation file is `HelmChart-<version\>_GA.zip`.
+
+                    For example: `HelmChart-9.5.17.6_GA.zip`
 
     === "For Volt Iris"
 

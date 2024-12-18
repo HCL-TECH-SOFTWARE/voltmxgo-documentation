@@ -14,5 +14,5 @@ For an upgrade install, complete the following procedures:
 
 2. [Upgrade Volt MX Go server components](versupgradeindx.md)
 
-After completing the relevant procedures, proceed to [Install and upgrade Volt MX Go Iris](installiris.md).
+After completing the relevant procedures, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).
 

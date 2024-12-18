@@ -2,7 +2,10 @@
 
 --8<-- "devtestenvironment.md"
 
-The procedures will guide you in the installation of Volt MX Go Foundry. The procedures vary depending on the Volt MX Go release version that you are using. 
+The procedure guides you in the installation of Volt MX Go Foundry. 
+
+<!--
+The procedures vary depending on the Volt MX Go release version that you are using. 
 
 ## For Volt MX Go v2.1
 
@@ -53,7 +56,7 @@ The procedures are applicable for Volt MX Go v2.1 as only the `voltmx-foundry` h
     serverDomainName:
     ```
 
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereqindex.md#for-first-time-installation-of-volt-mx-go), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereqindex.md#for-first-time-installation-of-volt-mx-go) again substituting your server domain name.
 
 6. Locate the following lines in the file and add your Volt MX Go Foundry database details. Use the example values as they match the values used for the MySQL install in the previous section, **Install MySQL for Volt MX Go Foundry**.
 
@@ -138,7 +141,9 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
 - `voltmx-dbupdate`
 - `voltmx-foundry`
 
-### 1. Download Foundry charts
+-->
+
+## Download Foundry charts
 
 1. Run the following command to make sure that the chart information for the repositories is up-to-date.
 
@@ -185,7 +190,7 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
     serverDomainName:
     ```
 
-    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereq.md#3-ensure-foundry-hostnames-are-resolvable), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereq.md#for-k3s-only) again substituting your server domain name.
+    Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file as described in [Ensure Foundry Hostnames are resolvable](prereqindex.md#for-first-time-installation-of-volt-mx-go), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereqindex.md#for-first-time-installation-of-volt-mx-go) again substituting your server domain name.
 
 6. Locate the following lines in the file and add your Volt MX Go Foundry database details. Use the example values as they match the values used for the MySQL install in the previous section, **Install MySQL for Volt MX Go Foundry**.
 
@@ -227,7 +232,7 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
 
 8. Save the file and exit.
 
-### 2. Deploy Foundry's dbupdate to create the databases in MySql
+## Deploy Foundry's dbupdate to create the databases in MySql
 
 1. Run the following Helm install command to deploy Foundry's dbupdate:
 
@@ -255,7 +260,7 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
 
 3. Once the foundry-db-update pod shows Completed in the STATUS column, the databases have been created in MySql. Press `Ctrl-c` to stop the kubectl command.
 
-### 3. Install Volt MX Go Foundry
+## Install Volt MX Go Foundry
 
 1. Run the following Helm install command to deploy Volt MX Go Foundry:
 
@@ -288,4 +293,4 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
 
 ## Next step
 
-Proceed to [Install Volt MX Go Iris](installiris.md).
+Proceed to [Install Volt MX Go Iris](installirisindex.md).

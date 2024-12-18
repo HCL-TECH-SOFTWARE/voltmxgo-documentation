@@ -2,6 +2,10 @@
 
 Perform a new or an upgrade installation of Volt MX Go Iris.
 
+- [For Volt MX Go v2.1](installiris.md)
+- [For Volt MX Go v2.0.4 or earlier](upgradeiris.md)
+
+<!--
 For a new install, complete the following procedures:
 
 1. [Download HCL Volt MX Go Release package](portaldownload.md)
@@ -13,3 +17,4 @@ For an upgrade install, complete the following procedures:
 1. [Download HCL Volt MX Go Release package](portaldownload.md)
 
 2. [Upgrade Volt MX Go Iris](upgradeiris.md)
+-->
