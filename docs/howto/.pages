@@ -19,6 +19,7 @@ nav:
         - regunregconfig.md
         - clearfunction.md  
         - importvoltformula.md
+        - VFHikes.md
     - First Touch:
         - ftindex.md
         - Import First Touch: importft.md

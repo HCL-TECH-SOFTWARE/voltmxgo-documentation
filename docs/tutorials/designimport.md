@@ -300,7 +300,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         - A **warning** icon indicates a successful import, but the imported component might not work as expected due to, for example, its data type not being currently supported. 
         - An **error** icon indicates a failed import. 
         - Click the **Show failed imports** toggle in a specific tab to the on position to see all elements with the **error** icon in that specific tab. The **Show failed imports** toggle won't be visible in a specific tab when there are no failed imports in that particular tab. 
-        - When the scope you selected has active agents, the **Agents** tab is shown. Otherwise, the **AppForms** tab is shown.
+        <!-- When the scope you selected has active agents, the **Agents** tab is shown. Otherwise, the **AppForms** tab is shown.-->
         - You can click **view report** to see a results report of imported forms, views, and agents in a new window. 
 
     ![Design Import Wizard dialog](../assets/images/diresultv210.png) 

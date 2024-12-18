@@ -183,6 +183,10 @@ pre {
     font-size: medium;
   }
 
-  
-  
+  /*
+  The css is for changing opacity of image on hover to indicate that the image can be opened in a new tab
+  */
+  p a img:hover{
+    opacity: .6;
+  }
 
