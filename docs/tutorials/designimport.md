@@ -42,7 +42,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
         - All necessary [views having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view)
         - All necessary [agents having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-an-agent)
     - You have [configured a scope for your schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope):
-        - having a scope name not exceeding 30 characters
+        - having a scope name **not exceeding 15 characters**, which can include alphanumeric characters and *underscore* "&#95;" and *hyphen* "&#45;" special characters
         - having a **Maximum Access Level** set to *Designer*, **Editor**, or *Manager*
     - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application):
         
@@ -82,7 +82,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
             - All necessary views having active status
             - All necessary agents having active status
         - configure a scope or scopes for your schema:
-            - having a scope name not exceeding 30 characters
+            - having a scope name **not exceeding 15 characters**, which can include alphanumeric characters and *underscore* "&#95;" and *hyphen* "&#45;" special characters
             - having a **Maximum Access Level** set to *Designer*, **Editor**, or *Manager*.
 
         - create an OAuth application:
@@ -178,7 +178,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         |Scope|This refers to the name of the scope that's set up in the OAuth app you are using in the Domino REST API.<br/><br/>If multiple scopes are configured in the OAuth app, and you wish to use specific scopes, ensure that you separate these scopes with commas when you enter them. For example: `scope1,scope2`<br/><br/>If you intend to use or access all the scopes available in Domino REST API, enter `$DATA`. Just make sure that you only configured `$DATA` and `$SETUP` in the OAuth app in Domino REST API.|
         |Client ID | This is the App ID of the OAuth app you are using in Domino REST API.|
         |Client Secret| This is the App Secret of the OAuth app you are using in Domino REST API.|
-        |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
+        |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
 
         ![Design Import Wizard dialog](../assets/images/dikeep.png)
 
