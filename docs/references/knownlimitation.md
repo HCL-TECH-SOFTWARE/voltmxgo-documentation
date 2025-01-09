@@ -55,6 +55,8 @@ The Domino Adapter handles the Domino database view with columns having the same
 
     ![Duplicate name dialog](../assets/images/diduplicatename.png)
 
+- Custom forms created in Domino REST API aren't supported. 
+
 ## Domino Adapter
 
 - Supports only Volt MX Go Foundry Object services.
