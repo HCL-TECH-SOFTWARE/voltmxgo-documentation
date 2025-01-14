@@ -70,7 +70,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         `./VoltMXGoPluginInstaller`
 
-        The installation tool opens on the Terminal.
+        The installation tool opens on the Terminal showing the available options.
+
+        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     3. Enter **1** to install Volt MX Go plugins and press **Enter**.
     4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press **Enter**.
@@ -87,7 +89,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         Double-click the **Volt MX Go Plugin Installer** shortcut on your desktop if available. 
 
-        A Command Prompt window opens.
+        A Command Prompt window opens showing the available options.
+
+        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     2. Enter **1** to install Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 

@@ -78,16 +78,32 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
     1. Navigate to the folder containing the downloaded installer file. 
     1. Double-click the *VoltMXGoInstallationTool.exe* installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
+
+        ![Introduction](../assets/images/wininstall1.png){: style="height:80%;width:80%"}
+
     1. On the **License Agreement**, read the agreement details, select the **I accept the terms of the License agreement** checkbox, and then click **Next**.
-    1. On the **Choose Install Folder**, click **Next** if you agree with the indicated default location. 
+
+        ![License Agreement](../assets/images/wininstall2.png){: style="height:80%;width:80%"}
+
+    1. On the **Choose Install Folder**, click **Next** if you agree with the indicated default location.
+
+        ![Choose Install Folder](../assets/images/wininstall3.png){: style="height:80%;width:80%"} 
 
         !!!tip
             - If you want a different installation location, click **Choose** to select your preferred installation location or directly enter your preferred installation location in the text box, and then click **Next**.
             - If you selected a different installation location and decided to revert to the default location, click **Restore Default Folder** and then click **Next**.
 
     1. On the **Pre-Installation Summary**, review the details and then click **Install**.
+
+        ![Pre-Installation Summary](../assets/images/wininstall4.png){: style="height:80%;width:80%"}
+
     1. On the **Installing**, see the installation status.
+
+        ![Installing](../assets/images/wininstall5.png){: style="height:80%;width:80%"}
+
     1. On the **Install Complete**, click **Done**.
+
+        ![Install Complete](../assets/images/wininstall6.png){: style="height:80%;width:80%"}
 
 #### Install Volt MX Go plugins
 
@@ -104,7 +120,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         `./VoltMXGoPluginInstaller`
 
-        The installation tool opens on the Terminal.
+        The installation tool opens on the Terminal showing the available options.
+
+        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     3. Enter **1** to install Volt MX Go plugins in Volt Foundry and press **Enter**.
     4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press **Enter**.
@@ -121,7 +139,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         Double-click the **Volt MX Go Plugin Installer** shortcut on your desktop if available. 
 
-        A Command Prompt window opens.
+        A Command Prompt window opens showing the available options.
+
+        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     2. Enter **1** to install Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 
