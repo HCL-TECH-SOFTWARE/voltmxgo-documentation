@@ -48,7 +48,7 @@
 
 ## Upgrade Volt MX Go Foundry
 
-### For Volt MX Go v2.1
+<!--### For Volt MX Go v2.1
 
 !!!note
     The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
@@ -96,6 +96,7 @@
 
     - `voltmx-dbupdate`
     - `voltmx-foundry`
+-->
 
 1. Download Foundry charts.
 
@@ -133,6 +134,6 @@
 
 --8<-- "verupgrade.md"
 
-## Additional information
+## Next step
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installiris.md).
+After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).

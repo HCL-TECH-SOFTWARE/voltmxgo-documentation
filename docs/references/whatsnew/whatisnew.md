@@ -14,5 +14,7 @@ The section provides information on the latest features, improvements, and resol
 
 - [Volt MX Go v2.0](v200.md)
 
+<!--
 !!!note "Early access version changes"
     For the updates and changes in the early access version, see [Early Access Version changes](../earlyaccesschanges.md).
+-->

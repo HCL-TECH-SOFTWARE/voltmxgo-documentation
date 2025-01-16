@@ -1,5 +1,12 @@
 # Known limitations
 
+## Installing Volt MX Go plugins to Volt Iris
+
+!!!note
+    The information in this topic applies starting with the Volt MX Go version 2.1 release.
+
+Installing the MX Go plugins to Volt Iris requires the Volt Iris workspace to contain a `pluginsInfo.json` file in the `.plugins` directory. An installation error occurs if the `pluginsInfo.json` file isn't in the `.plugins` directory. To create the `pluginsInfo.json` file in the `.plugins directory`, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project) with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris). Running the Live Preview creates the `pluginsInfo.json` file.
+
 ## Using Open API Adapter
 
 Volt MX Go doesn't support the use of the Open API Adapter in the Volt MX Go Foundry Integration Services to connect to Domino via Domino REST API. 

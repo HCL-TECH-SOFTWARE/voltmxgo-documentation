@@ -1,17 +1,20 @@
-# System requirements for Volt MX Go v2.0.4 or earlier
+# System requirements for Volt MX Go v2.1
 
 This section describes the minimum system requirements for deploying Volt MX Go. 
 
-## For installing Domino REST API
+## For Domino REST API
 
 --8<-- "drapiversion.md"
 
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789) for installing Domino REST API using the installer. 
 
-## For installing Volt MX Go Foundry
+## For Volt MX Go Plugin Installer
+
+The Volt MX Go Plugin Installer runs on any supported Volt Foundry server installation or any supported Volt Iris client installation. The installer requires less than 150 MB of internal storage.
+
+## For Volt Foundry
 
 **Software requirements**
-
 Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html) to know the software requirements for installing Volt MX Go Foundry using installers.
 
 **Hardware requirements**
@@ -30,15 +33,21 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 
 Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html) for the Volt MX Go Foundry Console.
 
-**Prerequisites for Volt MX Go Foundry command line installer**
+<!--**Prerequisites for Volt Foundry command line installer**
 
-Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. 
+Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. -->
 
-**Prerequisites for Volt MX Foundry Containers Helm Installation**
+**Prerequisites for Volt Foundry Containers Helm Installation**
 
 Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites) when using the Volt MX Go Foundry Containers Helm Installation. 
 
-## For installing Volt MX Go Iris
+**Requirements for Volt Foundry Single Container Solution**
+
+- [Prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites)
+- [Software requirements](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#software-requirements)
+- [Hardware requirements](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#hardware-requirements)
+
+## For Volt Iris
 
 === "On Windows"
 
@@ -55,11 +64,12 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
     |Internal Storage	|2 GB|
     |Network	|Ethernet Port|
 
+
 === "On Mac"
 
     **Operating System**
 
-    [Supported macOS versions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Supported_VoltMX_Iris_MacOS_versions.html) 
+    [Supported macOS versions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Supported_VoltMX_Iris_MacOS_versions.html)
 
     **Hardware**
 
@@ -70,7 +80,7 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
     |Internal Storage|	24 GB|
     |Network Ethernet |Port|
 
-## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
+<!--## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
 
 --8<-- "devtestenvironment.md"
 
@@ -102,6 +112,7 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 - Windows 11
 
 **Hardware**
+
 | Spec | Minimum |
 | ---- | ------- |
 | CPU | 4 cores |
@@ -119,6 +130,8 @@ Rancher Desktop requires the following on Windows:
     - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/) in the Rancher Desktop documentation. 
     
     - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows) in the Rancher Desktop documentation.
+
+-->
 
 ## Next step
 

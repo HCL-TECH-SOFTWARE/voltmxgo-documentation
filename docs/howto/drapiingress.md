@@ -169,7 +169,7 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
     !!!note
         The `drapiCustomCert.secretName` and `drapiManagementCustomCert.secretName` details can be omitted when using the default cluster certificate. If you go with this approach, make sure that the DNS hostname which you will access the deployment with matches the host name details in the certificate. Otherwise, the backend communication will fail because the host name doesn't match.
 
-Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#2-deploy-domino-rest-api).
+Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#deploy-domino-rest-api).
 
 ### For Volt MX Go v2.0.4 or earlier
 
@@ -289,5 +289,5 @@ Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#2-deploy-do
         - The path for the customCert properties is relative to the `apps` directory. It should always be `certs/` followed by your certificate or key file name.
         - The `drapiCustomCert.cert`, `drapiCustomCert.key`, `drapiManagementCustomCert.cert`, and `drapiManagementCustomCert.key` details can be omitted when using the default cluster certificate. If you go with this approach, make sure that the DNS hostname which you will access the deployment with matches the host name details in the certificate. Otherwise, the backend communication will fail because the host name doesn't match.
 
-Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#2-deploy-domino-rest-api).
+Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#deploy-domino-rest-api).
 

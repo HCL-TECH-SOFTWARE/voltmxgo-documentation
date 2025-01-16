@@ -71,4 +71,4 @@ Example: `@formula_1714617343910.3508708517553434`
 
 When the formula code is changed on the JavaScript side for a given formula result, Volt MX Go Iris tracks it as a discrepancy between the formula code and the JavaScript code. If the developer attempts to edit the formula language after making changes to the corresponding formula JavaScript code, Volt MX Go Iris warns about the formula discrepancy. The developer has the option to either restore the JavaScript code to the original formula or view the formula without altering the JavaScript counterpart.
 
-In a Volt MX Go Iris project, the formulas defined are stored under `resources/rosetta` in the project directory in the Volt MX Go Iris workspace. These files arent exposed in the Volt MX Go Iris UI project files.
+In a Volt MX Go Iris project, the formulas defined are stored under `resources/rosetta` in the project directory in the Volt MX Go Iris workspace. These files aren't exposed in the Volt MX Go Iris UI project files.
