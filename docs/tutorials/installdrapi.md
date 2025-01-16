@@ -24,7 +24,7 @@ For more information, see the [Installation and configuration](https://opensourc
 
 ## Install Volt MX Go Foundry
 
-**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the minimum required version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. An important thing to note for Volt MX Go v2.1 is that **only Volt Foundry using a Tomcat non-clustered application server is supported**. 
+**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the minimum required version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**. 
 
 ### For using an installer
 
@@ -111,6 +111,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 !!!warning "Important"
     - For Volt MX Go v2.1, **you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server**.
+    - Volt Foundry must be properly licensed with a Volt MX Go entitlement for the plugins to be enabled.
 
 === "on Linux"
 
@@ -202,7 +203,7 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
     1. Locate the `docker-compose.yml` file in the Volt Foundry directory.
     2. Open the `docker-compose.yml` file with your preferred editor and locate the line containing the `image:` key.
-    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.17.3_GA"`.
+    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.17.6_GA"`.
     4. Save your changes and close the file. 
 
 3. Stop the existing images by running the command `docker compose down`.
@@ -213,28 +214,3 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
 After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
 
-<!--
-# Install Domino REST API
-
-Guides you in installing Domino REST API.
-
---8<-- "drapiversion.md"
-
-## Procedure
-
-1. Downloaded the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
-
-2. Follow the links to the installation procedure based on your preferred installation platform:
-
-    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html)
-    
-    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html)
-
-3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html).
-
-For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html) page in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html).
-
-## Next step
-
-Proceed to [Install Volt MX Go Foundry](nativeinstallers.md).
--->
