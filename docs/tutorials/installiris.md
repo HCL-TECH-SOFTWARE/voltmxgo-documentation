@@ -26,8 +26,8 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 === "on Mac"
 
     1. Navigate to the directory of the downloaded installer zip file. 
-    1. Extract the zip file. You will get the *VoltMXGoInstallationTool* installer file. 
-    1. Double-click the *VoltMXGoInstallationTool* installer file. The **Volt MX Go Installation Tool** window opens. 
+    1. Extract the zip file to get the installer file. 
+    1. Double-click the installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
         ![Introduction](../assets/images/installtool1.png){: style="height:80%;width:80%"}
@@ -59,7 +59,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 === "on Windows"
 
     1. Navigate to the folder containing the downloaded installer file. 
-    1. Double-click the *VoltMXGoInstallationTool.exe* installer file. The **Volt MX Go Installation Tool** window opens. 
+    1. Double-click the installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
         ![Introduction](../assets/images/wininstall1.png){: style="height:80%;width:80%"}

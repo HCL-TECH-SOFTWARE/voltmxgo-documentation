@@ -24,7 +24,7 @@ For more information, see the [Installation and configuration](https://opensourc
 
 ## Install Volt MX Go Foundry
 
-**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the minimum required version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**. 
+**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the minimum required version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that for Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**. 
 
 ### For using an installer
 
@@ -53,7 +53,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 
 === "on Linux"
 
-    1. Open terminal.
+    1. Open terminal and extract the installer from the tar file. 
     1. Navigate to the directory containing the `VoltMXGoInstallationTool.bin` to ensure that you are in the right location to execute the installation commands for the bin file. 
     1. Enter the following command to grant executable permissions to the `VoltMXGoInstallationTool.bin` file and press **Enter**. 
 
@@ -76,7 +76,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 === "on Windows"
 
     1. Navigate to the folder containing the downloaded installer file. 
-    1. Double-click the *VoltMXGoInstallationTool.exe* installer file. The **Volt MX Go Installation Tool** window opens. 
+    1. Double-click the installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
         ![Introduction](../assets/images/wininstall1.png){: style="height:80%;width:80%"}
