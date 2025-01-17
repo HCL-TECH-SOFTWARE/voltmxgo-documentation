@@ -2,19 +2,10 @@
 
 Perform a new or an upgrade installation of Volt MX Go Iris.
 
+!!!warning "Important"    
+    The installation and upgrade processes for Volt MX Go Iris in the Volt MX Go v2.1 release differ from those in the Volt MX Go v2.0.4 or earlier release. In the v2.1 release, Volt Iris is first installed, followed by installing the necessary plugins using the Volt MX Go Plugin Installer. The plugins enable the capabilities unique to Volt MX Go. Additionally, the plugins must be reinstalled each time Volt Iris is upgraded.
+
+
 - [For Volt MX Go v2.1](installiris.md)
 - [For Volt MX Go v2.0.4 or earlier](upgradeiris.md)
 
-<!--
-For a new install, complete the following procedures:
-
-1. [Download HCL Volt MX Go Release package](portaldownload.md)
-
-2. [Install Volt MX Go Iris](installiris.md)
-
-For an upgrade install, complete the following procedures:
-
-1. [Download HCL Volt MX Go Release package](portaldownload.md)
-
-2. [Upgrade Volt MX Go Iris](upgradeiris.md)
--->
