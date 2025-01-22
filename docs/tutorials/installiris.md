@@ -1,5 +1,5 @@
 # For Volt MX Go v2.1
-<!--# Install Volt MX Go Iris-->
+
 Perform a new or an upgrade installation of Volt MX Go Iris.
 
 ## Install Volt MX Go Iris 
@@ -26,8 +26,8 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 === "on Mac"
 
     1. Navigate to the directory of the downloaded installer zip file. 
-    1. Extract the zip file. You will get the *VoltMXGoInstallationTool* installer file. 
-    1. Double-click the *VoltMXGoInstallationTool* installer file. The **Volt MX Go Installation Tool** window opens. 
+    1. Extract the zip file to get the installer file. 
+    1. Double-click the installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
         ![Introduction](../assets/images/installtool1.png){: style="height:80%;width:80%"}
@@ -59,7 +59,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 === "on Windows"
 
     1. Navigate to the folder containing the downloaded installer file. 
-    1. Double-click the *VoltMXGoInstallationTool.exe* installer file. The **Volt MX Go Installation Tool** window opens. 
+    1. Double-click the installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
         ![Introduction](../assets/images/wininstall1.png){: style="height:80%;width:80%"}
@@ -145,9 +145,9 @@ Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](#install-volt-mx-go-plugin-installer).
 
-### Install Volt Iris
+### Upgrade Volt Iris
 
-For installing Volt Iris, click the link corresponding to your installation platform and follow the installation steps. 
+To upgrade, install the latest version of Volt Iris. Click the link corresponding to your installation platform and follow the installation steps. 
 
 - [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing)
 

@@ -835,7 +835,7 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
     1. Locate the `docker-compose.yml` file in the Volt Foundry directory.
     2. Open the `docker-compose.yml` file with your preferred editor and locate the line containing the `image:` key.
-    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.17.3_GA"`.
+    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.17.6_GA"`.
     4. Save your changes and close the file. 
 
 3. Stop the existing images by running the command `docker compose down`.

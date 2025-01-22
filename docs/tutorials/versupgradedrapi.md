@@ -61,6 +61,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 !!!warning "Important"
     - For Volt MX Go v2.1, **you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server**.
+    - Volt Foundry must be properly licensed with a Volt MX Go entitlement for the plugins to be enabled.
 
 === "on Linux"
 
