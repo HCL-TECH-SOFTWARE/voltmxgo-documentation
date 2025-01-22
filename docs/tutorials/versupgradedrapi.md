@@ -32,7 +32,7 @@ Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 - Back up your databases and server artifacts.
 
-- You have downloaded the Volt Foundry installer based on your installation platform. The minimum required version is v9.5.17.6. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
+- You have downloaded the Volt Foundry installer based on your installation platform. The minimum required version is v9.5.18.0. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](installdrapi.md#install-volt-mx-go-plugin-installer).
 

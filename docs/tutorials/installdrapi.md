@@ -30,7 +30,7 @@ For more information, see the [Installation and configuration](https://opensourc
 
 #### Before you begin
 
-- You have downloaded the Volt Foundry installer. The minimum required version is v9.5.17.6.   
+- You have downloaded the Volt Foundry installer. The minimum required version is v9.5.18.0.   
 - You have downloaded the Volt MX Go Plugin Installer. 
 
 For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v21).
@@ -203,7 +203,7 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
     1. Locate the `docker-compose.yml` file in the Volt Foundry directory.
     2. Open the `docker-compose.yml` file with your preferred editor and locate the line containing the `image:` key.
-    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.17.6_GA"`.
+    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.18.0_GA"`.
     4. Save your changes and close the file. 
 
 3. Stop the existing images by running the command `docker compose down`.
