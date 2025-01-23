@@ -57,11 +57,11 @@ markdown_extensions:
 
 # Copyright
 copyright: 
-  Copyright &copy; 2023-2024, HCL America, Inc. | <a href="https://www.hcl-software.com/legal/privacy">Privacy Statement</a> | <a href="https://www.hcl-software.com/legal/terms-use">Terms of Use</a> <br/>
+  Copyright &copy; 2023-2025, HCL America, Inc. | <a href="https://www.hcl-software.com/legal/privacy">Privacy Statement</a> | <a href="https://www.hcl-software.com/legal/terms-use">Terms of Use</a> <br/>
   <a href="#__consent">Change cookie settings</a>
 
 extra:
-  productversion: 2.0.4
+  productversion: 2.1.0
 #  flexnet_url: "https://hclsoftware.flexnetoperations.com/flexnet/operationsportal/entitledDownloadFile.action?downloadPkgId=HCL%20Domino%20REST%20API%20Early%20Access%20Release"
   social:
     - icon: fontawesome/brands/github
