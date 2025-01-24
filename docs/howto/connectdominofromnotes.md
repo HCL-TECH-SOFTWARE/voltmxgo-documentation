@@ -4,11 +4,11 @@
 
 ## About this task
 
-Guides you in connecting to the Domino server from your Notes client. If you installed Domino using the [MX Go Domino Helm chart](../tutorials/downloadhelmchart.md#1-download-the-domino-rest-api-helm-chart) you should configure a Server Connection document to enable connecting to Domino from your Notes client. Follow the steps below.
+Guides you in connecting to the Domino server from your Notes client. If you installed Domino using the [MX Go Domino Helm chart](../tutorials/downloadhelmchart.md#download-the-domino-rest-api-helm-chart) you should configure a Server Connection document to enable connecting to Domino from your Notes client. Follow the steps below.
 
 ## Before you begin
 
-Make sure that your `/etc/hosts` file has the preview hostnames. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [hostnames](../tutorials/prereq.md#3-ensure-foundry-hostnames-are-resolvable).
+Make sure that your `/etc/hosts` file has the preview hostnames. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [ensuring hostnames are resolvable](../tutorials/prereqindex.md#for-first-time-installation-of-volt-mx-go).
 
 ## Procedure
 

@@ -63,7 +63,8 @@ The table shows a simplified list of data-type mappings between Domino REST API 
 
 |Domino REST API format|Volt MX Go Foundry type|Additional details|
 |---|---|---|
-|DATA, DATE-TIME|date|Example: `2023-05-09T19:39:47Z`|
+|DATE-TIME|date|Example: `2023-05-09T19:39:47Z`|
+|DATE|date|Example: `2023-05-09`<br/><br/>For more information, see [Data model metadata attribute](#data-model-metadata-attribute).|
 |BYTE, DOUBLE, FLOAT, INT32, INT64|number|Example: `7`|
 |BOOLEAN|boolean|Example: `true`|
 |BINARY|string||
@@ -153,7 +154,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 - UserInfo 
 
-    This endpoint is used to get information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The fields that are returned may include:
+    This endpoint gets information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The returned fields may include:
     
     ```{ .yaml .no-copy }
     email
@@ -166,3 +167,43 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     scope
     sub
     ```
+
+- ServerInfo
+
+    This endpoint gets information about the Domino and Domino REST API versions. The returned fields may include:
+
+    ```{ .yaml .no-copy }
+    dominoPlatformBits
+    dominoFixpackNumber
+    keepDescription
+    keepName
+    keepVendor
+    dominoPlatform
+    dominoMinorVersion
+    keepVersion
+    dominoHotfixNumber
+    dominoProductionBuild
+    dominoQmrNumber
+    dominoBuildNumber
+    dominoQmuNumber
+    keepImageBuild
+    dominoVersion
+    dominoMajorVersion    
+    ``` 
+
+- AttachmentsInfo
+
+    This endpoint gets information about all the attachments on a document. The return fields may include:
+
+    ```{ .yaml .no-copy }
+    size
+    created
+    name
+    modified
+    ```
+
+    !!! note
+         When performing the GET method for **AttachmentsInfo**, an error is thrown if you don't provide the UNID of the document. 
+            
+         For more information on performing the GET method, see [Test the GET method by viewing a record](../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
+           

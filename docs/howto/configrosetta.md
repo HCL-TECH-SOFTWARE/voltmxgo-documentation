@@ -23,7 +23,11 @@ You have launched Volt MX Go Iris.
     !!!tip
         Hover over the **info** tooltip icon beside the labels or text boxes for more information.
     
+    ![settings](../assets/images/vfsettingv210.png)
+
+    <!-- v2.0.4
     ![settings](../assets/images/vfsetting.png)
+    -->
 
 3. Enter values and select options as required. Refer to the following table for more information. 
 

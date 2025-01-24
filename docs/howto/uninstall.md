@@ -2,18 +2,23 @@
 
 List of uninstall procedures for completing uninstall tasks related to Volt MX Go. 
 
-- [Uninstall K3s](k3suninstall.md)
+- [Uninstall K3s](k3suninstall.md)[^1]
 
-- [Uninstall Rancher Desktop on Windows](rancheruninstall.md)
+- [Uninstall Rancher Desktop on Windows](rancheruninstall.md)[^1]
 
 - [Uninstall First Touch](uninstallfirsttouch.md)
 
-- [Uninstall Volt MX Go Foundry for Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Uninstalling_VoltMX_Foundry.html)
+- [Uninstall Volt MX Go plugins](uninstallplugin.md)
 
-- [Uninstall Volt MX Go Foundry for Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Uninstalling_VoltMX_Foundry.html)
+- [Uninstall Volt Foundry for Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Uninstalling_VoltMX_Foundry.html)
 
-- [Uninstall Volt MX Go Foundry installed on supported Kubernetes platform](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#uninstalling-foundry)
+- [Uninstall Volt Foundry for Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Uninstalling_VoltMX_Foundry.html)
 
-- [Uninstall Volt MX Go Iris for Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Uninstalling%20VoltMX%20Iris.html)
+- [Uninstall Volt Foundry installed on supported Kubernetes platform](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#uninstalling-foundry)
 
-- [Uninstall Volt MX Go Iris for Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Uninstalling%20VoltMX%20Iris.html)
+- [Uninstall Volt Iris for Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Uninstalling%20VoltMX%20Iris.html)
+
+- [Uninstall Volt Iris for Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Uninstalling%20VoltMX%20Iris.html)
+
+
+[^1]: Only applies to Volt MX Go v2.0.4 or earlier. 

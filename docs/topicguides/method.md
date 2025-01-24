@@ -85,7 +85,11 @@ The Domino Adapter supports these OData query parameters for the GET method on v
     - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.
     - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`.
 
-With `$filter`, the canonical function `startswith` is supported.
+With `$filter`, the following canonical functions are supported:
+
+- `startswith`
+- `documentsOnly`
+- `distinctDocuments`
 
 **Examples**
 
@@ -97,6 +101,8 @@ With `$filter`, the canonical function `startswith` is supported.
 |`$filter=Year eq 2021`|Returns all view entries in the view whose `Year` field is equal to `2021`.|
 |`$filter=Name eq CNx_003dadmin`|Returns all view entries in the view whose `Name` field is equal to `CN=admin`|
 |`$filter=startswith(Model,'HR') eq true`|The result-set only has data that starts with "HR" in column `Model`.|
+|`$filter=documentsOnly eq true`|Returns view documents instead of view entries in a view.|
+|`$filter=distinctDocuments eq true`|Returns only distinct view documents in a view.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
 
@@ -107,20 +113,20 @@ Domino documents can have associated attachments, which are accessible to Volt M
 You may perform the following binary operations:
 
  - getBinary: `GET <objSvc>/operations/<data model>/getBinary?unid=<document unid>&name=<file name>&type=<input type>`
-     - Downloads file content in base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
+     - Downloads file content in Base64 format by default. The `type` parameter is optional. You can provide `type` as an input with value `bytes` or `file`. If you specify `bytes`, the response is in a stream format. If you specify `file`, the response is in a downloadable format.
      
         !!!tip
-            To download files larger than 50 MB, use a type argument, such as `bytes`, to avoid memory issues with the default base64 format. This enables downloading of files up to 1 GB.
+            To download files larger than 50 MB, use a type argument, such as `bytes`, to avoid memory issues with the default Base64 format. This enables downloading of files up to 1 GB.
          
  - createBinary: `POST <objSvc>/operations/<data model>/createBinary?unid=<document unid>&name=<file name>&field=<field name>`
-     - Takes the file’s binary content encoded as a base64 string or in the multipart/form-data format
+     - Takes the file’s binary content encoded as a Base64 string or in the multipart/form-data format
      - The `field` parameter is optional. If this parameter is provided, it attaches the file to a valid rich text field within the Domino document. If this parameter isn't provided, the file is attached to the Domino document as a whole.
 
         !!!tip
             To upload large files, upload them to the createBinary API with a Content-Type of multipart/form-data. Pass the UNID and document name as arguments to the API together with a form, having the key `data`, which contains the file content to be uploaded. This enables uploading of files up to 1 GB.
 
 - updateBinary: `PUT <objSvc>/operations/<data model>/updateBinary?unid=<document unid>&name=<file name>&field=<field name>`
-    - Takes the file’s binary content encoded as a base64 string. The old file is deleted and replaced with the new base64 encoded file content.
+    - Takes the file’s binary content encoded as a Base64 string. The old file is deleted and replaced with the new Base64 encoded file content.
     - The `field` parameter is optional. If the attachment you wish to update is associated with a field in the Domino database, include the field in the update request to remove the attachment.
 
         !!!tip

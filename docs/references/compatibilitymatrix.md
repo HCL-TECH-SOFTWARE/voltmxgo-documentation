@@ -9,6 +9,7 @@ This section provides compatibility information between different versions of Vo
 
 |Volt MX Go version|Domino REST API version|
 |----|----|
+|version 2.1|version 1.1.1|
 |version 2.0.4|version 1.0.14|
 |version 2.0.3|version 1.0.12|
 |version 2.0.2|version 1.0.8|
@@ -16,6 +17,9 @@ This section provides compatibility information between different versions of Vo
 |version 2.0|version 1.0.6|
 
 ## Volt MX Go and Helm chart version compatibility
+
+!!!warning "Important"
+    Starting with the Volt MX GO version 2.1 release, there are no Volt MX Go helm charts. Users must use the Volt Foundry install mechanisms, including their helm charts. 
 
 |Helm chart component|Volt MX Go version|Helm chart version|
 |----|----|----|

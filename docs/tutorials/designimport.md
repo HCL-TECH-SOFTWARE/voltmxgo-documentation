@@ -42,10 +42,15 @@ Kindly follow and complete the prerequisites that apply to your situation.
         - All necessary [views having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view)
         - All necessary [agents having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-an-agent)
     - You have [configured a scope for your schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope):
-        - having a scope name not exceeding 30 characters
-        - having a **Maximum Access Level** set to *Designer* or *Manager*
+        - having a scope name **not exceeding 15 characters**, which can include alphanumeric characters and *underscore* "&#95;" and *hyphen* "&#45;" special characters
+        - having a **Maximum Access Level** set to *Designer*, **Editor**, or *Manager*
     - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application):
+        
         - having your configured scope and `$SETUP` added to the *Scope* field.
+
+            !!!tip
+                If you want all the scopes in Domino REST API to be available to Design Import, just add `$DATA` and `$SETUP` to the **Scope** field.
+
         - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
     - You have taken note of the Domino REST API URL, and the App ID and [App Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application.
 
@@ -77,8 +82,8 @@ Kindly follow and complete the prerequisites that apply to your situation.
             - All necessary views having active status
             - All necessary agents having active status
         - configure a scope or scopes for your schema:
-            - having a scope name not exceeding 30 characters
-            - having a **Maximum Access Level** set to *Designer* or *Manager*.
+            - having a scope name **not exceeding 15 characters**, which can include alphanumeric characters and *underscore* "&#95;" and *hyphen* "&#45;" special characters
+            - having a **Maximum Access Level** set to *Designer*, **Editor**, or *Manager*.
 
         - create an OAuth application:
 
@@ -173,7 +178,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         |Scope|This refers to the name of the scope that's set up in the OAuth app you are using in the Domino REST API.<br/><br/>If multiple scopes are configured in the OAuth app, and you wish to use specific scopes, ensure that you separate these scopes with commas when you enter them. For example: `scope1,scope2`<br/><br/>If you intend to use or access all the scopes available in Domino REST API, enter `$DATA`. Just make sure that you only configured `$DATA` and `$SETUP` in the OAuth app in Domino REST API.|
         |Client ID | This is the App ID of the OAuth app you are using in Domino REST API.|
         |Client Secret| This is the App Secret of the OAuth app you are using in Domino REST API.|
-        |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services. |
+        |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
 
         ![Design Import Wizard dialog](../assets/images/dikeep.png)
 
@@ -246,8 +251,9 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         - Actions are often active within the Domino database and can only be modified using Domino Designer. Imported actions might not function as expected. If this happens, you modify or update the actions to function as expected. For more information, see [Modify or update imported actions using VoltFormula](../howto/importvoltformula.md).
         - If a dialog opens indicating that your Domino REST API schema has misconfigured settings, kindly see [Troubleshooting](../references/troubleshoot.md#design-import) for more information on addressing the issue.
         - If you see a **warning** icon appear beside any form, form field, view, or agent, click the **Reports** folder icon and click a report to open a detailed report explaining the cause of the warning.
+        - You can use the **All**, **Active**, **Inactive**, and **Unsupported** buttons in each tab to filter what's displayed. 
 
-    1. Select the **scope** you want to use from the drop-down list. 
+    1. Select the **Scope** you want to use from the drop-down list. 
     
         The available scopes are based on the scopes defined when creating the identity service.  
 
@@ -255,15 +261,24 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     1. Click the **Forms** tab and select the forms, fields and actions you want to include in the import. 
         
+        ![Design Import Wizard dialog](../assets/images/discopeformv210.png)
+        <!-- image for v204
         ![Design Import Wizard dialog](../assets/images/discopeform.png)
+        -->
 
     1. Click the **Views** tab and select the views and actions you want to include in the import.
 
+        ![Design Import Wizard dialog](../assets/images/didbviewsv210.png)
+        <!-- image for v204
         ![Design Import Wizard dialog](../assets/images/didbviews.png)
+        -->
 
     1. Click the **Agents** tab and select the agents you want to include in the import. 
 
+        ![Design Import Wizard dialog](../assets/images/diagentsv210.png)
+        <!-- image for v204
         ![Design Import Wizard dialog](../assets/images/diagents.png)
+        -->
 
     1. Click **Next**.
     
@@ -284,12 +299,15 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         - A **checkmark** icon indicates a successful import.  
         - A **warning** icon indicates a successful import, but the imported component might not work as expected due to, for example, its data type not being currently supported. 
         - An **error** icon indicates a failed import. 
-        - Click the **Show only with errors** toggle in a specific tab to the on position to see all elements with the **error** icon in that specific tab.  
+        - Click the **Show failed imports** toggle in a specific tab to the on position to see all elements with the **error** icon in that specific tab. The **Show failed imports** toggle won't be visible in a specific tab when there are no failed imports in that particular tab. 
         <!-- When the scope you selected has active agents, the **Agents** tab is shown. Otherwise, the **AppForms** tab is shown.-->
         - You can click **view report** to see a results report of imported forms, views, and agents in a new window. 
 
+    ![Design Import Wizard dialog](../assets/images/diresultv210.png) 
+    
+    <!-- image for v204
     ![Design Import Wizard dialog](../assets/images/diresult.png) 
-
+    -->
 
 Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt MX Go Iris. 
 

@@ -1,5 +1,12 @@
 # Known limitations
 
+## Installing Volt MX Go plugins to Volt Iris
+
+!!!note
+    The information in this topic applies starting with the Volt MX Go version 2.1 release.
+
+Installing the MX Go plugins to Volt Iris requires the Volt Iris workspace to contain a `pluginsInfo.json` file in the `.plugins` directory. An installation error occurs if the `pluginsInfo.json` file isn't in the `.plugins` directory. To create the `pluginsInfo.json` file in the `.plugins directory`, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project) with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris). Running the Live Preview creates the `pluginsInfo.json` file.
+
 ## Using Open API Adapter
 
 Volt MX Go doesn't support the use of the Open API Adapter in the Volt MX Go Foundry Integration Services to connect to Domino via Domino REST API. 
@@ -33,6 +40,29 @@ To resolve stranded documents in an offline app, use the [`clearOfflineData`](ht
 Offline-enabled apps use soft delete to remove deleted documents from a device's sync DB. Add the `IsDeleted` property to the Domino REST API schema to enable soft delete. The property will contain the value *deleted* when the document has been soft deleted and removed entirely from the device’s sync DB upon a sync with the DB.
 
 Disabling document deletion on the Domino DB if using it with an offline-enabled app combined with an agent script on the Domino REST API, which periodically clears soft-deleted documents, enforces soft delete on the Domino DB. These keep the soft-deleted documents long enough for the user devices to sync before pruning the deleted documents and ensure that the Domino DB doesn't have too many soft-deleted documents. 
+
+## Domino database view with duplicate column names
+
+**Design Import**
+
+Design Import doesn't support Domino database views with columns having the same name if those columns have different fields. During the import process, you can see these views listed under **Unsupported Views** on the **View** tab on the **Scope and Forms** page of the **Design Import Wizard**.
+
+**Domino Adapter**
+
+The Domino Adapter handles the Domino database view with columns having the same name in the following ways:
+
+- The Domino Adapter allows Foundry mapping and disregards one of the columns if the data of both columns with the same name are derived from the same field.
+- The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names.
+
+## Design Import
+
+- Import of forms and views with DBCS character names aren't supported. These forms and views will be listed under **Unsupported Forms** in the **Forms** tab and **Unsupported Views** on the **Views** tab on the **Scope and Forms** page of the **Design Import Wizard** during the import process.
+
+- If forms with the same name are detected during the import process, one of the forms will be renamed by adding a string of random alphanumeric characters to the end of the original form name. The same procedure applies to views with identical names. One view will be renamed by adding random alphanumeric characters to the end of the view name. You are informed of the changes via a notification dialog such as shown in the following image.  
+
+    ![Duplicate name dialog](../assets/images/diduplicatename.png)
+
+- Custom forms created in Domino REST API aren't supported. 
 
 ## Domino Adapter
 
