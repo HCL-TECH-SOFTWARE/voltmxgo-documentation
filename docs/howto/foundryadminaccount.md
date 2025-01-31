@@ -10,30 +10,30 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 ## Procedure
 
-### For Volt MX Go Foundry installed via installers
-
 Check the procedure on [how to get started with Volt MX Foundry Console](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/How_to_access_VoltMX_Foundry_Portal_on-Prem.html). You can also contact the Volt MX Go Foundry administrator to request for an administrator account. 
 
-### For Volt MX Go Foundry installed as part of the installation on a development or test only environment
 
-1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Volt MX Go Foundry hostname concatenated with `/mfconsole/` in your browser. The **Welcome to Volt MX Foundry setup** page opens.
+???note "For Volt MX Go Foundry installed as part of the installation on a *development or test-only environment*, which was only available until Volt MX Go v2.0.4."
 
-    !!!note
-        The **Identity Service URL** text box is already populated with the Identity Service URL. In case it's empty, enter `http://foundry.mymxgo.com/authService` or your provided Volt MX Go Foundry hostname concatenated with `/authService`.
-
-2. Under **Admin Details**: 
-
-    1. Enter your first name in the **First Name** text box. 
-    2. Enter your last name in the **Last Name** text box.
-    3. Enter your email address in the **Email** text box. 
-    4. Enter your password in the **Enter password** and **Re-enter password** text boxes.
+    1. Open `http://foundry.mymxgo.com/mfconsole/` or your provided Volt MX Go Foundry hostname concatenated with `/mfconsole/` in your browser. The **Welcome to Volt MX Foundry setup** page opens.
 
         !!!note
-            Your password must be a combination of alphanumeric and special characters, and at least 8-characters long. 
+            The **Identity Service URL** text box is already populated with the Identity Service URL. In case it's empty, enter `http://foundry.mymxgo.com/authService` or your provided Volt MX Go Foundry hostname concatenated with `/authService`.
 
-3. Click **Setup**.
+    2. Under **Admin Details**: 
 
-![Welcome to Volt MX Foundry setup](../assets/images/Foundryaccountsetup.png)
+        1. Enter your first name in the **First Name** text box. 
+        2. Enter your last name in the **Last Name** text box.
+        3. Enter your email address in the **Email** text box. 
+        4. Enter your password in the **Enter password** and **Re-enter password** text boxes.
+
+            !!!note
+                Your password must be a combination of alphanumeric and special characters, and at least 8-characters long. 
+
+    3. Click **Setup**.
+
+    ![Welcome to Volt MX Foundry setup](../assets/images/Foundryaccountsetup.png)
+
 
 ## Expected result
 

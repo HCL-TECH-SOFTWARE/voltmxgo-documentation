@@ -1,7 +1,11 @@
 # Helm and Kubectl commands
 
+--8<-- "devtestenvironment.md"
+
+<!--
 !!!note
     You can copy and update the pod names from the code examples. We plan to improve this experience in future updates by adding label support.
+-->
 
 - Show the notes that were displayed initially after deploying Domino
 

@@ -10,7 +10,7 @@ Configures Kubernetes Ingress for Domino REST API. Ingress provides and manages 
 
 Take note of the following information regarding properties and parameters associated with Kubernetes Ingress. The recent improvements have led to variations in the properties and parameters for different versions of Volt MX Go. Refer to the Volt MX Go version for the relevant properties and parameters.
  
-### For Volt MX Go v2.1
+<!--### For Volt MX Go v2.1
 
 Familiarize yourself with the following properties and parameters related to Kubernetes Ingress applicable for Volt MX Go v2.1. 
 
@@ -38,7 +38,7 @@ Familiarize yourself with the following properties and parameters related to Kub
 
 - **ingress.annotations**: Allows you to specify additional annotations that will be added to every ingress object. Add one annotation per line. Each annotation should be indented 2 spaces and of the format  `annotationName: value`. When rendered, your annotation value will automatically be quoted.
 
-### For Volt MX Go v2.0.4 or earlier
+### For Volt MX Go v2.0.4 or earlier-->
 
 Familiarize yourself with the following properties and parameters related to Kubernetes Ingress applicable for Volt MX Go v2.0.4 or earlier.
 
@@ -86,6 +86,7 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
 !!! note
     In general, perform the following procedure before installing Volt MX Go Foundry to enable secure HTTPS communication.
 
+<!--
 ### For Volt MX Go v2.1
 
 1. Obtain SSL Certificates. You can use any of the following options:
@@ -172,6 +173,7 @@ If you configure your Kubernetes Ingress to use a self-signed SSL certificate or
 Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#deploy-domino-rest-api).
 
 ### For Volt MX Go v2.0.4 or earlier
+-->
 
 1. Obtain SSL Certificates. You can use any of the following options:
 
@@ -289,5 +291,6 @@ Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#deploy-domi
         - The path for the customCert properties is relative to the `apps` directory. It should always be `certs/` followed by your certificate or key file name.
         - The `drapiCustomCert.cert`, `drapiCustomCert.key`, `drapiManagementCustomCert.cert`, and `drapiManagementCustomCert.key` details can be omitted when using the default cluster certificate. If you go with this approach, make sure that the DNS hostname which you will access the deployment with matches the host name details in the certificate. Otherwise, the backend communication will fail because the host name doesn't match.
 
+<!--
 Return to [Deploy Domino REST API](../tutorials/downloadhelmchart.md#deploy-domino-rest-api).
-
+-->

@@ -55,7 +55,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 #### Before you begin
   
 !!!note "Prerequisite"
-    [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md) before proceeding.
+    [Obtain authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) before proceeding.
 
 #### Procedure
 
@@ -74,7 +74,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
 2. Configure Helm to pull from HCL Container Repository.
 
-    The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+    The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](../howto/obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     - Run the following command to set up Helm:
 
@@ -87,7 +87,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
 
         !!!note
-            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
         If you get an error message similar to the following:
 
@@ -129,7 +129,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         ./init-guids.sh --new
         ```
 
-    4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+    4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and `your-authentication-token` with your [email and authentication token](../howto/obtainauthenticationtoken.md) used with the HCL Container Repository.
 
         ```{ .yaml .no-copy }
         imageCredentials:
@@ -138,7 +138,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         ```
 
         !!!note
-            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
     5. Locate the following line in the file and add your Volt MX Go Foundry server domain name setting:
 

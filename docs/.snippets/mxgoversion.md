@@ -1,2 +1,2 @@
 !!!warning "Important"
-    The information in this document is based on HCL Volt MX Go version 2.0.4, HCL Domino REST API version 1.0.14, and HCL Domino version 14.0.
+    The information in this document is based on HCL Volt MX Go version 2.1, HCL Domino REST API version 1.1.1, and HCL Domino version 14.0.

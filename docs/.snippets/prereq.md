@@ -27,7 +27,7 @@ export HCLCR_TOKEN=<your hclcr authentication token>
 
 ### Configure Helm to pull from HCL Container Repository
 
-The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](../tutorials/obtainauthenticationtoken.md) used with the HCL Container Repository.
+The procedure sets up Helm with the details necessary to authenticate with the HCL Container Repository. You will need your [email and authentication token](../howto/obtainauthenticationtoken.md) used with the HCL Container Repository.
 
 - Run the following command to set up Helm:
 
@@ -39,7 +39,7 @@ The procedure sets up Helm with the details necessary to authenticate with the H
          `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
     !!!note
-        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../tutorials/obtainauthenticationtoken.md) as your authentication token or password.
+        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
 If you get an error message similar to the following:
 

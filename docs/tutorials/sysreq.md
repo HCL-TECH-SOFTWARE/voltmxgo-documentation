@@ -102,6 +102,7 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 - Windows 11
 
 **Hardware**
+
 | Spec | Minimum |
 | ---- | ------- |
 | CPU | 4 cores |

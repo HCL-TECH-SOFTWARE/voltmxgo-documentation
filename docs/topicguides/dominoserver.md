@@ -2,7 +2,7 @@
 
 --8<-- "devtestenvironment.md"
 
-The [Volt MX Go installation in a development or test only environment](../tutorials/containerdeployment.md) offers a Helm chart to run a Domino server enabled with the Domino REST API (DRAPI) in a Kubernetes environment. This topic offers guidance and tips on working with the Domino container.
+The <!--[Volt MX Go installation in a development or test only environment](../tutorials/containerdeployment.md)-->*Volt MX Go installation in a development or test only environment*, which was only available until Volt MX Go v2.0.4 release, offered a Helm chart to run a Domino server enabled with the Domino REST API (DRAPI) in a Kubernetes environment. This topic offers guidance and tips on working with the Domino container.
 
 ## Container basics
 

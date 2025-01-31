@@ -173,7 +173,7 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
     ./init-guids.sh --new
     ```
 
-4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository.
+4. Edit the `values.yaml` file to update the `imageCredentials` by replacing `your-email` and   `your-authentication-token` with your [email and authentication token](../howto/obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     ```{ .yaml .no-copy }
     imageCredentials:
@@ -182,7 +182,7 @@ The procedures are applicable for Volt MX Go v2.0.4 or earlier versions as the f
     ```
 
     !!!note
-        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+        Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
 5. Locate the following line in the file and add your Volt MX Go Foundry server domain name setting:
 
