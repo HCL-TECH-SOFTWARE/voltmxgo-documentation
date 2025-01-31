@@ -26,6 +26,7 @@ nav:
         - FTnsfupdate.md
     - Operation:
         - genindex.md
+        - obtainauthenticationtoken.md
         - checkstat.md
         - codegen.md
         - insertattachments.md   

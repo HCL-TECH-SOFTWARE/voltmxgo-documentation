@@ -39,7 +39,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 **When using K3s on an Ubuntu, RHEL, SLES machine or VM:**
 
-1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md).
+1. [Obtain authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md).
 
 2. [Install and configure K3s](deploykubernetes.md#install-and-configure-k3s).
 
@@ -53,7 +53,7 @@ Follow the order for completing the procedures according to your preferred deplo
 
 **When using Rancher Desktop running on Windows:**
 
-1. [Obtain authentication token from HCL Container Repository](obtainauthenticationtoken.md).
+1. [Obtain authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md).
 
 2. [Install Rancher Desktop](deploykubernetes.md#install-rancher-desktop).
 

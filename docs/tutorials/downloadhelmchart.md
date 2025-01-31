@@ -33,7 +33,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
 4. Edit the `values.yaml` file using your preferred editor to update the file with your HCL Container Repository credentials, and the DNS name settings.
 
-    1. Locate the following lines in the file and replace `your-email` and `your-authentication-token` with your [email and authentication token](obtainauthenticationtoken.md) used with the HCL Container Repository:
+    1. Locate the following lines in the file and replace `your-email` and `your-authentication-token` with your [email and authentication token](../howto/obtainauthenticationtoken.md) used with the HCL Container Repository:
 
         ```{ .yaml .no-copy }
         imageCredentials:
@@ -42,7 +42,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         ```
 
         !!!note
-            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
     2. Locate the following lines in the file and add your DNS hostname settings:
 
