@@ -48,7 +48,7 @@ For the latest release information about Volt MX Go, see [What's new](references
 ---
 ## How the documentation is organized
 
-The Volt MX Go documentation is based on the [Diátaxis framework](https://diataxis.fr/), which organizes documentation into the following modes to address users' documentation needs at different times and in different circumstances. Below shows an overview that guides you on where to look for needed information:
+The Volt MX Go documentation is based on the [Diátaxis framework](https://diataxis.fr/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](assets/images/external-link.svg){: style="height:15px;width:15px"}, which organizes documentation into the following modes to address users' documentation needs at different times and in different circumstances. Below shows an overview that guides you on where to look for needed information:
 
 [Tutorials](tutorials/index.md) - Hands-on introduction to Volt MX Go
 

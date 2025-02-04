@@ -4,7 +4,7 @@
 
 The Rosetta Converter converts formula code (Notes or Excel[^1]/OpenFormula) into a JavaScript equivalent. It takes advantage of the available Rosetta API library implementations as needed. It creates a JavaScript code snippet comprised of the native JavaScript elements as well as calls to the corresponding APIs. 
 
-The Rosetta Converter is an integral part of the VoltFormula process. It allows the developer to write code using formula languages and takes care of providing the JavaScript equivalents. It is written in JavaScript using regex rules and [ANTLR (ANother Tool for Language Recognition)(antlr4)](https://www.antlr.org/) rules.
+The Rosetta Converter is an integral part of the VoltFormula process. It allows the developer to write code using formula languages and takes care of providing the JavaScript equivalents. It is written in JavaScript using regex rules and [ANTLR (ANother Tool for Language Recognition)(antlr4)](https://www.antlr.org/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} rules.
 
 [^1]: Excel is a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.
 

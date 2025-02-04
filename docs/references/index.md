@@ -37,23 +37,23 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 ## Documentation references
 
-[HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html)
+[HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 
 - Provides documentation and more information about Volt MX Iris and Volt MX Foundry.
 
-[HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html)
+[HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 
 - Provides documentation and more information about Domino REST API. 
 
-[HCL Domino Documentation](https://help.hcltechsw.com/domino/welcome/index.html)
+[HCL Domino Documentation](https://help.hcltechsw.com/domino/welcome/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 
 - Provides documentation and more information on how to install, configure, and manage Domino servers and related components.
 
-[HCL Software Product Documentation](https://help.hcltechsw.com/)
+[HCL Software Product Documentation](https://help.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 
 - Provides a complete list of links to the documentation of different HCL Software products. 
 
-[VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html)
+[VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 
 - Provides documentation and more information about the **early access version** of VoltScript and related components.
 

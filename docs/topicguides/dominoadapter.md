@@ -18,4 +18,4 @@ The `object` of the Object service essentially has two components:
 
 - [Methods](method.md) refers verbs for interacting with the data, for example GET, POST.
 
-For more information, see [Object Services](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html) in the HCL Volt MX documentation.
+For more information, see [Object Services](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Objectservices.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Volt MX documentation.

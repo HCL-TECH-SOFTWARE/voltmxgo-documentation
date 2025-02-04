@@ -14,7 +14,7 @@ Follow the order for completing the procedures.
 **When using Docker**
 
 1. [Obtain authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md).
-2. [Run Domino REST API with a Docker image](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html)
+2. [Run Domino REST API with a Docker image](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
 3. [Install Volt MX Go Foundry using Volt Foundry Single Container Solution](installdrapi.md#for-single-container-solution)
 
 <!--

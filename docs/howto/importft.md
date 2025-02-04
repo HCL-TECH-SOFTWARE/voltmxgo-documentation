@@ -8,7 +8,7 @@ Imports the First Touch Recipes app into Volt MX Go Iris so that you can try out
 
 - You have installed the First Touch app in Volt MX Go Foundry. For more information, see [First Touch tutorial](../tutorials/firsttouch.md).
 
-- You have downloaded the First Touch Recipes project, *FirstTouchRecipe.zip*, from the HCL License & Download Portal. For more information, see [Download HCL Volt MX Go Release package](../tutorials/portaldownload.md).
+- You have downloaded the First Touch Recipes project, *FirstTouchRecipe.zip*, from the HCL License & Download Portal. For more information, see [Download HCL Volt MX Go installers](../tutorials/portaldownload.md).
 
 ## Procedure
 

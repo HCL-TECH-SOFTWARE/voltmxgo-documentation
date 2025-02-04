@@ -31,20 +31,20 @@ Kindly follow and complete the prerequisites that apply to your situation.
     - You have set up Domino REST API in the Domino server containing the Domino database you are importing.
     - You have at least Designer access to the Domino database where you are creating or updating a schema and to the *Domino Keep Configuration database* `keepconfig.nsf` to create a scope and OAuth application for the Domino application.
 
-        For more information on access levels, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html) in the HCL Domino documentation 
+        For more information on access levels, see [Access Levels in the ACL](https://help.hcltechsw.com/domino/14.0.0/admin/conf_accesslevelsintheacl_c.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Domino documentation 
 
     - You have accessed Domino REST API.
-    - You have [configured a schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#add-a-schema) with:
+    - You have [configured a schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#add-a-schema "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} with:
         - All necessary forms:
-            - having [active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-form) 
-            - including the `$FILES` field and having the **Formula for Delete Access** set to `@True`(see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration) for more information)
-            - having a default mode and a dql mode, and both modes having matching fields (see [Clone a mode](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode) and [Compare modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#compare-modes) for more information) 
-        - All necessary [views having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view)
-        - All necessary [agents having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-an-agent)
-    - You have [configured a scope for your schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope):
+            - having [active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-form "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} 
+            - including the `$FILES` field and having the **Formula for Delete Access** set to `@True`(see [Change form configuration](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#change-form-configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} for more information)
+            - having a default mode and a dql mode, and both modes having matching fields (see [Clone a mode](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#clone-a-mode "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} and [Compare modes](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#compare-modes "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} for more information) 
+        - All necessary [views having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-a-view "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+        - All necessary [agents having active status](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#activate-an-agent "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}
+    - You have [configured a scope for your schema](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/scopeui.html#add-a-scope "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}:
         - having a scope name **not exceeding 15 characters**, which can include alphanumeric characters and *underscore* "&#95;" and *hyphen* "&#45;" special characters
         - having a **Maximum Access Level** set to *Designer*, **Editor**, or *Manager*
-    - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application):
+    - You have [created an OAuth application](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#add-an-application "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}:
         
         - having your configured scope and `$SETUP` added to the *Scope* field.
 
@@ -52,7 +52,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
                 If you want all the scopes in Domino REST API to be available to Design Import, just add `$DATA` and `$SETUP` to the **Scope** field.
 
         - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
-    - You have taken note of the Domino REST API URL, and the App ID and [App Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret) of the OAuth application.
+    - You have taken note of the Domino REST API URL, and the App ID and [App Secret](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/appui.html#generate-an-app-secret "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} of the OAuth application.
 
     !!!tip 
         Refer to the **Domino REST API prerequisites for Design Import** video in the [Video tutorials](video.md) section to learn more.
@@ -321,13 +321,13 @@ To see the imported forms in a directory, click the **DESIGN** tab to show the *
 
 Before you can do the CRUD operation in your imported Domino app, you must first build and publish the imported app in Volt MX Go Iris.
     
-If your app is a **Web App**, follow the instructions in [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app) in the HCL Volt MX documentation.
+If your app is a **Web App**, follow the instructions in [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Volt MX documentation.
 
 If your app is a **Native App:**
 
 1. [Configure your mobile app browser](../howto/configmobile.md).
             
-2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html) in the HCL Volt MX documentation to view the mobile app.
+2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Volt MX documentation to view the mobile app.
 
 !!!note
     For the following topics, the steps are based on an example Domino application. The example images will be different from what you will see when you try the steps using your imported application. 
@@ -347,7 +347,7 @@ If your app is a **Native App:**
 1. Select the file you want to upload. You can select more than one file to upload. 
     
     !!!notes
-        To see the details of the uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html) in the HCL Domino documentation. 
+        To see the details of the uploading size limit, see [HCL Notes and DOMINO file limits](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_NOTES_AND_DOMINO_KNOWN_LIMITS.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Domino documentation. 
 
 2. Click **Open**. If the file is pre-existing, a dialog prompt appears with the option to overwrite it.
     
@@ -382,7 +382,7 @@ If your app is a **Native App:**
 2. On the **AllCustomers_Leads** page, select a customer, and then select **Edit** from the context menu. 
 
     !!!note
-        If the detail view **DOESN'T show**, check the [Database Views in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views) under schema to confirm that the selected database view is **active**. Also, confirm whether the columns in the view were added during the import.
+        If the detail view **DOESN'T show**, check the [Database Views in Domino Rest API](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/schemaui.html#list-available-database-views "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} under schema to confirm that the selected database view is **active**. Also, confirm whether the columns in the view were added during the import.
 
     ![Screenshot](../assets/images/dieditdata.png)
 
