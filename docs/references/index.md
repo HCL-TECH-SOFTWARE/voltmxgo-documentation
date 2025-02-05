@@ -20,7 +20,7 @@ Check [version compatibility](compatibilitymatrix.md) between Volt MX Go and Dom
 
 ## Rosetta API reference documentation
 
-The full specification of the API is available in a structured format in the [Rosetta API reference documentation](../javadoc/index.html).
+The full specification of the API is available in a structured format in the [Rosetta API reference documentation](../javadoc/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 For the implementation status, see [Rosetta API implementation status](../javadoc/api_status.html). 
 
@@ -37,23 +37,23 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 ## Documentation references
 
-[HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html)
+[HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - Provides documentation and more information about Volt MX Iris and Volt MX Foundry.
 
-[HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html)
+[HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - Provides documentation and more information about Domino REST API. 
 
-[HCL Domino Documentation](https://help.hcltechsw.com/domino/welcome/index.html)
+[HCL Domino Documentation](https://help.hcltechsw.com/domino/welcome/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - Provides documentation and more information on how to install, configure, and manage Domino servers and related components.
 
-[HCL Software Product Documentation](https://help.hcltechsw.com/)
+[HCL Software Product Documentation](https://help.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - Provides a complete list of links to the documentation of different HCL Software products. 
 
-[VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html)
+[VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - Provides documentation and more information about the **early access version** of VoltScript and related components.
 
@@ -67,9 +67,9 @@ To learn about identified issues and their corresponding workarounds and resolut
 
 ## Support 
 
-- To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} portal.  
+- To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} portal.  
 
-- To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} portal.
+- To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} portal.
 
 ## Summernote Editor
 

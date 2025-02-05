@@ -9,7 +9,7 @@ Guides you in checking the installation status of Volt MX Go plugins to Volt Fou
 
 ## Before your begin
 
-You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../tutorials/installiris.md#2-install-volt-mx-go-plugin-installer).
+You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../tutorials/installiris.md#install-volt-mx-go-plugin-installer).
 
 ## Procedure
 

@@ -21,7 +21,7 @@ Volt MX Go Foundry data models are in sync with the Domino REST API `schema` at 
 - schema is modified in Domino REST API
 - changes in the NSF design
 
-For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html) in the Domino REST API documentation.  
+For more information on schemas, scopes, forms, and views, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Domino REST API documentation.  
 
 ## Data model artifact names
 

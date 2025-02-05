@@ -3,7 +3,7 @@
 !!!note
     The information in this topic applies starting with the Volt MX Go version 2.0.3 release. 
 
-Agents are stand-alone programs that perform a specific task in one or more Domino databases. Agents are the most flexible type of automation you can add to most design elements in a Domino application. To learn more, see [Agents](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ABOUT_DESIGNING_AGENTS.html) in the *HCL Domino Designer* documentation.
+Agents are stand-alone programs that perform a specific task in one or more Domino databases. Agents are the most flexible type of automation you can add to most design elements in a Domino application. To learn more, see [Agents](https://help.hcltechsw.com/dom_designer/14.0.0/basic/H_ABOUT_DESIGNING_AGENTS.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the *HCL Domino Designer* documentation.
 
 !!!note
     As of Volt MX Go release v2.0.4, only agents meeting the following conditions can be imported using **Design Import**:

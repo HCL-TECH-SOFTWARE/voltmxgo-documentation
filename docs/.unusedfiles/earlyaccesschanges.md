@@ -35,7 +35,7 @@ The section provides information on the features, improvements, and resolved iss
 
 #### VoltFormula
 - IntelliSense improvements on category beside each formula.
-- Update the Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](../javadoc/index.html).
+- Update the Rosetta API and Rosetta converter which can be seen in [Rosetta API reference documentation](../javadoc/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 ##### Design Import
 - Improvements on the error toggle button on the **VoltMX Design Import Wizard**.
 - Improve the sort configuration in importing the forms generated.
@@ -75,7 +75,7 @@ The section provides information on the features, improvements, and resolved iss
 - Implemented UI improvements on the **VoltMX Design Import Wizard** for better user experience.
 
 #### VoltFormula
-- Updated the list of Notes and Open formulas in [Rosetta API reference documentation](../javadoc/index.html).
+- Updated the list of Notes and Open formulas in [Rosetta API reference documentation](../javadoc/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 
 ### Others

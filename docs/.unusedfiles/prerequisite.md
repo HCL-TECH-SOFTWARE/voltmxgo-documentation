@@ -4,13 +4,13 @@ Perform a new or an upgrade installation of Volt MX Go server components in a pr
 
 For a new install, complete the following procedures:
 
-1. [Download HCL Volt MX Go Release package](portaldownload.md)
+1. [Download HCL Volt MX Go installers](portaldownload.md)
 
 2. [Install Volt MX Go server components](installfoundryindex.md)
 
 For an upgrade install, complete the following procedures:
 
-1. [Download HCL Volt MX Go Release package](portaldownload.md)
+1. [Download HCL Volt MX Go installers](portaldownload.md)
 
 2. [Upgrade Volt MX Go server components](versupgradeindx.md)
 
