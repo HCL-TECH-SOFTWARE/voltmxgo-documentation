@@ -6,15 +6,15 @@ The <!--[Volt MX Go installation in a development or test only environment](../t
 
 ## Container basics
 
-When you deploy the Volt MX Go Domino REST API Helm chart, you instruct Kubernetes to create a [pod](https://kubernetes.io/docs/concepts/workloads/pods/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}. The Helm chart provides the specifics for what program (Image) will run when the pod starts, the details around what ports to expose, such as port 80 for Domino HTTP server, port 8880 for Domino REST API, and the memory and CPU allocations among other things.
+When you deploy the Volt MX Go Domino REST API Helm chart, you instruct Kubernetes to create a [pod](https://kubernetes.io/docs/concepts/workloads/pods/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. The Helm chart provides the specifics for what program (Image) will run when the pod starts, the details around what ports to expose, such as port 80 for Domino HTTP server, port 8880 for Domino REST API, and the memory and CPU allocations among other things.
 
-The chart also tells Kubernetes about [liveness and readiness probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}. Kubernetes runs these probes periodically to determine container health. If a readiness probe fails more than a specified threshold, the container is marked as unready and won't receive any HTTP traffic. If a liveness probe fails many times, Kubernetes assumes the container has unrecoverable errors and then kills and restarts the container. 
+The chart also tells Kubernetes about [liveness and readiness probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. Kubernetes runs these probes periodically to determine container health. If a readiness probe fails more than a specified threshold, the container is marked as unready and won't receive any HTTP traffic. If a liveness probe fails many times, Kubernetes assumes the container has unrecoverable errors and then kills and restarts the container. 
 
 These probes are important to understand as some operations require you to stop and restart Domino. If Domino fails to answer liveness probes more than the specified threshold, such as when Domino is stopped, Kubernetes may remove the container and start a new one. By default, this period is 10 minutes for the Domino container.
 
 The Domino data directory resides in `/local/notesdata` within the Domino container. This directory is actually a mount point for a persistent, initially empty file system created by Kubernetes.
 
-For more information, see [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the Kubernetes documentation.
+For more information, see [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Kubernetes documentation.
 
 The directory is used to store the Domino server configuration, Notes databases, templates, and other details specific to the Domino server instance. During initial startup, Domino sees the empty directory and triggers the Domino One Touch setup process to populate the directory with databases, templates, and configuration files. Logs are in `/local/notesdata/IBM_TECHNICAL_SUPPORT/`.
 
@@ -50,7 +50,7 @@ Kubernetes uses pods as its fundamental scheduling unit because they provide a w
 
 ## Pod names
 
-Pods have names that usually consist of developer defined prefix and runtime defined unique suffix. Together, they make each pod name unique. Because of this, you often have to get a list of the running pods to determine the exact name before taking action on the pod. Use the kubectl command [`get pods`](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} as shown here:
+Pods have names that usually consist of developer defined prefix and runtime defined unique suffix. Together, they make each pod name unique. Because of this, you often have to get a list of the running pods to determine the exact name before taking action on the pod. Use the kubectl command [`get pods`](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} as shown here:
 
 ```{ .yaml .no-copy }
 kubectl get pods -n mxgo
@@ -75,7 +75,7 @@ Locate the entry that starts with "drapi" and you can see the full pod name is *
 
 ## Copy files into and out of Domino container
 
-Using the [kubectl cp](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} command, you can copy files into and out of the container. For example, if you want to copy the domino administrative ID out of the Domino data directory, you use a command like this:
+Using the [kubectl cp](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} command, you can copy files into and out of the container. For example, if you want to copy the domino administrative ID out of the Domino data directory, you use a command like this:
 
 ```{ .yaml .no-copy }
 kubectl cp domino-drapi-6fc766ccd4-55d9n:/local/notesdata/admin.id domino-id.id -n mxgo -c drapi
@@ -89,7 +89,7 @@ Similarly, you could copy the local file `foo.bar` into the container's `/tmp` d
 kubectl cp foo.bar  domino-drapi-6fc766ccd4-55d9n:/tmp/foo.bar -n mxgo -c drapi
 ```
 
-Refer to [Kubernetes documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} for more details on `cp`.
+Refer to [Kubernetes documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} for more details on `cp`.
 
 
 ## Interactive command line access with Domino
@@ -106,7 +106,7 @@ The response should look like the following, which indicates you are now in a ba
 [notes@domino-drapi-6fc766ccd4-55d9n /]$
 ```
 
-You can use the nashcom [Domino Start Script](https://nashcom.github.io/domino-startscript/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} to interact with the Domino server. This script is already installed and available for use.
+You can use the nashcom [Domino Start Script](https://nashcom.github.io/domino-startscript/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} to interact with the Domino server. This script is already installed and available for use.
 
 You can show the status of the Domino server by using this command:
 
@@ -183,7 +183,7 @@ Load fixup <databasepath> <options>
 
 You may disconnect from the console, and leave the Domino Server running, using the command `close`.
 
-For the full set of server commands and syntax, see the [HCL Domino Documentation](https://help.hcltechsw.com/domino/14.0.0/admin/admn_servercommandsyntax_c.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"}.
+For the full set of server commands and syntax, see the [HCL Domino Documentation](https://help.hcltechsw.com/domino/14.0.0/admin/admn_servercommandsyntax_c.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 ## Stop and start Domino server process
 

@@ -74,7 +74,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
         dominoNetworkHostname: ""
         ```
 
-        Consult the [Table of variables](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html#table-of-variables "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in *Run Domino REST API with a Docker image* in the  [Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} to determine if you need to update these fields as well. The mapping of `values.yaml` settings to variables is as follows:
+        Consult the [Table of variables](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/docker.html#table-of-variables "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in *Run Domino REST API with a Docker image* in the  [Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} to determine if you need to update these fields as well. The mapping of `values.yaml` settings to variables is as follows:
 
         - `dominoServerDomainName = SERVERSETUP_SERVER_DOMAINNAME`
         - `dominoOrgName = SERVERSETUP_ORG_ORGNAME`
@@ -90,7 +90,7 @@ The procedure guides you in downloading the Domino REST API Helm chart and deplo
 
         - `LoadBalancer`: Set this value if you want an external load balancer to be provisioned by a cloud provider which supports external load balancers. Traffic from the external load balancer is directed at the Domino pod, and cloud provider decides how it's load balanced. Kubernetes typically starts off by making the changes that are equivalent to you requesting NodePort. The cloud-controller-manager component then configures the external load balancer to forward traffic to that assigned node port.
 
-        You can read more about these options in the [Service](https://kubernetes.io/docs/concepts/services-networking/service/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} topic in the Kubernetes documentation.
+        You can read more about these options in the [Service](https://kubernetes.io/docs/concepts/services-networking/service/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} topic in the Kubernetes documentation.
 
 
 5. **(Optional)** To configure Ingress for Domino REST API, proceed to [Configure Kubernetes Ingress for Domino REST API](../howto/drapiingress.md).

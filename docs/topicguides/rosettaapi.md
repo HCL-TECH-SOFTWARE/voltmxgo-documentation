@@ -23,7 +23,7 @@
 ## Getters, setters, and checkers
 
 !!!tip
-    For more information about a specific API object, see the [Rosetta API reference documentation](../javadoc/index.html). 
+    For more information about a specific API object, see the [Rosetta API reference documentation](../javadoc/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. 
 
 ### Implementation
 

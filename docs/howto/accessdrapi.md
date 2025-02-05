@@ -12,7 +12,7 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 <!--### For Domino REST API installed via an installer-->
 
-- Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login" Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Domino REST API documentation.
+- Check how to login to [Domino REST API Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/adminui.html#login" Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Domino REST API documentation.
 
 - Use your Domino server administrator username and password to log in.
 
@@ -31,4 +31,4 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
 
 ## Expected result
 
-A successful login leads you to the Domino REST API landing page. For details on adding and configuring a schema, adding a scope and an application, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:15px;width:15px"} in the HCL Domino REST API documentation. 
+A successful login leads you to the Domino REST API landing page. For details on adding and configuring a schema, adding a scope and an application, see [Using Admin UI](https://opensource.hcltechsw.com/Domino-rest-api/references/usingwebui/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Domino REST API documentation. 
