@@ -146,7 +146,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         serverDomainName:
         ```
         
-        Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's /etc/hosts file [Ensure Foundry Hostnames are resolvable](prereqindex.md#for-first-time-installation-of-volt-mx-go), substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map as described in [For K3s only](prereqindex.md#for-first-time-installation-of-volt-mx-go) again substituting your server domain name.
+        Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's `/etc/hosts` file<!--[Ensure Foundry Hostnames are resolvable](prereqindex.md#for-first-time-installation-of-volt-mx-go)-->, substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map <!--as described in [For K3s only](prereqindex.md#for-first-time-installation-of-volt-mx-go)-->and substituting your server domain name.
 
     6. Locate the following lines in the file and add your Volt MX Go Foundry database details:
 
