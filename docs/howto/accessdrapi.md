@@ -25,7 +25,7 @@ You must complete the [Volt MX Go installation](../tutorials/installation.md).
         - password: `password` 
 
         !!!note
-            If you updated the administrator's first name, last name, and password in the `values.yaml` file in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#download-the-domino-rest-api-helm-chart) procedure, use the updated values for the username and password.
+            If you updated the administrator's first name, last name, and password in the `values.yaml` file<!--in the [Download the Domino REST API Helm chart](../tutorials/downloadhelmchart.md#download-the-domino-rest-api-helm-chart) procedure-->, use the updated values for the username and password.
 
     3. Click **Log in**.
 

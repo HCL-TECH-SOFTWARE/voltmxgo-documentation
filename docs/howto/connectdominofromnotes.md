@@ -4,11 +4,11 @@
 
 ## About this task
 
-Guides you in connecting to the Domino server from your Notes client. If you installed Domino using the [MX Go Domino Helm chart](../tutorials/downloadhelmchart.md#download-the-domino-rest-api-helm-chart) you should configure a Server Connection document to enable connecting to Domino from your Notes client. Follow the steps below.
+Guides you in connecting to the Domino server from your Notes client. If you installed Domino using the *MX Go Domino Helm chart*<!--(../tutorials/downloadhelmchart.md#download-the-domino-rest-api-helm-chart)-->, you should configure a Server Connection document to enable connecting to Domino from your Notes client. Follow the steps below.
 
 ## Before you begin
 
-Make sure that your `/etc/hosts` file has the preview hostnames. You will need these same entries on any machine you want to connect from, such as your dev laptop. For more information, check the details on [ensuring hostnames are resolvable](../tutorials/prereqindex.md#for-first-time-installation-of-volt-mx-go).
+Make sure that your `/etc/hosts` file has the preview hostnames. You will need these same entries on any machine you want to connect from, such as your dev laptop. <!--For more information, check the details on [ensuring hostnames are resolvable](../tutorials/prereqindex.md#for-first-time-installation-of-volt-mx-go).-->
 
 ## Procedure
 
@@ -54,7 +54,7 @@ Make sure that your `/etc/hosts` file has the preview hostnames. You will need t
     2. On the **Basics** tab, enter `drapi` in the **Server name** text box and then select the **TCPIP** checkbox for **Use LAN port**.
     3. Click the **Advanced** tab, and then enter `drapi.mymxgo.com` for your server in the **Destination server address** text box.
 
-    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `HostPort` during the [DRAPI Helm installation](../tutorials/downloadhelmchart.md), no further configuration is required and you can proceed to **Save & Close**. If instead you specified `NodePort`:
+    4. **(Optional)** If you configured the value of the `exposeNRPC` parameter to be `HostPort` during the *DRAPI Helm installation*<!--(../tutorials/downloadhelmchart.md)-->, no further configuration is required and you can proceed to **Save & Close**. If instead you specified `NodePort`:
 
         1. Run the following `kubectl` command to get the port number of the port picked by Kubernetes for the `NodePort`:
 
