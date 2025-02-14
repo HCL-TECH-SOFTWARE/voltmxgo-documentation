@@ -51,7 +51,8 @@ Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
         - The upgrade procedure indicates installation files and installation file download locations. **You must use the installer you downloaded in *Before you begin*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
         - Make sure to point to the same database you used for your Volt MX Go Foundry v2.0.4 installation to access all the projects you worked on.
-        - After completing the upgrade installation, activate the Volt MX Go license on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. 
+        
+        - After completing the upgrade installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see [license activation](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} on the *Volt MX documentation*.
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
     
