@@ -42,14 +42,16 @@ Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 #### Install Volt Foundry
 
-- Follow the link to the upgrade procedure based on your used installation platform. In this step, upgrade your Volt MX Go Foundry v2.0.4 with the minimum supported version of Volt Foundry. 
+- Follow the link to the upgrade procedure based on your used installation platform. In this step, upgrade your Volt MX Go Foundry v2.0.4 with the minimum supported version of Volt Foundry.
 
-    !!!warning "Important"
+    !!! warning "Important"
+
         - For Volt MX Go v2.1, only Volt Foundry using a Tomcat non-clustered application server is supported.
         - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
         - The upgrade procedure indicates installation files and installation file download locations. **You must use the installer you downloaded in *Before you begin*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
-        - Make sure to point to the same database you used for your Volt MX Go Foundry v2.0.4 installation to access all the projects you worked on. 
+        - Make sure to point to the same database you used for your Volt MX Go Foundry v2.0.4 installation to access all the projects you worked on.
+        - After completing the upgrade installation, activate the Volt MX Go license on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. 
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
     
@@ -101,6 +103,10 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
         You get a confirmation statement that the plugins have been installed. 
 
     5. Press **Enter** to close the Command Prompt window.
+
+!!! note
+
+    After installing the Volt MX Go plugins, open Volt Foundry to verify you see the Volt MX GO/First Touch banner.
 
 #### Important consideration
 

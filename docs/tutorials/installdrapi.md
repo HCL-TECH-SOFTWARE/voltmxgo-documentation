@@ -41,9 +41,11 @@ For more information, see [Download HCL Volt MX Go installers](portaldownload.md
 
 For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps. 
 
-!!!warning "Important"
+!!! warning "Important"
+
     - For Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
     - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
+    - After completing the installation, activate the Volt MX Go license on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. 
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
     
@@ -59,7 +61,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
     1. Navigate to the directory containing the `VoltMXGoInstallationTool.bin` to ensure that you are in the right location to execute the installation commands for the bin file. 
     1. Enter the following command to grant executable permissions to the `VoltMXGoInstallationTool.bin` file and press **Enter**. 
 
-	    `sudo chmod +x VoltMXGoInstallationTool.bin`
+        `sudo chmod +x VoltMXGoInstallationTool.bin`
 
 	    Using the `chmod` command with `sudo` ensures administrative privileges.
 
@@ -70,6 +72,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
     1. Follow the installation instructions. The binary file will initiate the installation process and may prompt you with on-screen instructions. Follow these instructions carefully to complete the installation.
 
         !!!note
+
             If you have a graphical terminal associated with your Linux deployment, the **Volt MX Go Installation Tool** window opens. Otherwise, installation is via the command line.  
 
     <!--1. Enter `ls -latrh` to list the installation directory contents to identify the shortcuts for running and uninstalling the installer.
@@ -152,6 +155,10 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
         You get a confirmation statement that the plugins have been installed. 
 
     5. Press **Enter** to close the Command Prompt window.
+
+!!! note
+
+    After installing the Volt MX Go plugins, open Volt Foundry to verify you see the Volt MX GO/First Touch banner.
 
 ### For using Helm charts on a supported Kubernetes platform
 
