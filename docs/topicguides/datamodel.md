@@ -81,18 +81,18 @@ For form-based data models, the document's `@unid` is an obvious example. Below 
 
 ```{ .yaml .no-copy }
 x_0040addedtofile
-x_0040aliases	
+x_0040aliases
 x_0040created
-x_0040editable		
-x_0040lastaccessed	
-x_0040lastmodified	
-x_0040lastmodifiedinfile	
-x_0040noteclass	
-x_0040noteid	
-x_0040parentunid	
-x_0040revision		
-x_0040size		
-x_0040unid	
+x_0040editable
+x_0040lastaccessed
+x_0040lastmodified
+x_0040lastmodifiedinfile
+x_0040noteclass
+x_0040noteid
+x_0040parentunid
+x_0040revision
+x_0040size
+x_0040unid
 x_0040unread
 ```
 
@@ -120,7 +120,7 @@ x_0040totalCount
     
     - Offline objects require a data model to specify a primary key field. `x_0040unid` needs to be set as the primary key for Domino data models. However, with views, the returning list of data may contain items with no UNID or items with the same UNID.<br/><br/>Items with no UNID occur when querying categorized views. These items with no UNID are top-level category items. To avoid receiving these items, a user must scope the view request to return only the document items using the OData filter parameter `<GET view URL>?$filter=x_0040scope eq documents`.<br/><br/>For items with the same UNID, errors may occur when syncing data to the front end.
 
-    - `x_0040totalCount` provides the maximum number of documents in a view, including those documents that might have certain access restrictions. This means that the number of returned documents on GET for a view-based data model might be less than the value provided by the `x_0040totalCount` since you might not have access to some documents. 
+    - `x_0040totalCount` provides the maximum number of documents in a view, including those documents that might have certain access restrictions. This means that the number of returned documents on `GET` for a view-based data model might be less than the value provided by the `x_0040totalCount` since you might not have access to some of those documents. 
 
 ## Data model metadata attribute
 
