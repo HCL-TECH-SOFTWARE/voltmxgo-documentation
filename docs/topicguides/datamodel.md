@@ -4,11 +4,11 @@
 
 Data models can be generated in an Object Service by Volt MX Go Foundry administrators. For Domino object services, a data model can be generated for any `Form` or `View` associated with a `scope` defined by a Domino REST API administrator. Additionally, Volt MX Go Foundry data models can be generated for `Other Metadata` to provide specific information outside the data contained in the form and view Domino documents.
 
-!!!note 
-    `Forms` and `views` are created in a Domino REST API `schema` and named by a Domino REST API `scope`.
-     
+!!! note
 
-In addition to some [Meta fields](#meta-fields), generated data models include: 
+    `Forms` and `views` are created in a Domino REST API `schema` and named by a Domino REST API `scope`.
+
+In addition to some [Meta fields](#meta-fields), generated data models include:
 
 - **Form** data models include all fields defined by the associated Domino REST API `schema`.
 - **View** data models include all view columns defined in the NSF design.
@@ -37,9 +37,9 @@ Volt MX Go Foundry data models are generated based on related artifacts in Domin
 
 ## Effective data types
 
-Field data types in the generated Volt MX Go Foundry data model are effectively the same as the data type defined in the Domino REST API schema. Some field (column) data types are common between Domino and Volt MX Go Foundry, for example string, numbers, and dates. Others, such as Domino `multivalue` (technically, these are `arrays`) and `rich text` aren't found in Volt MX Go Foundry.
+Field data types in the generated Volt MX Go Foundry data model are the same as the data type defined in the Domino REST API schema. Some field (column) data types are common between Domino and Volt MX Go Foundry, for example string, numbers, and dates. Others, such as Domino `multivalue` (technically, these are `arrays`) and `rich text` aren't found in Volt MX Go Foundry.
 
-For common data types, the field type in the generated Volt MX Go Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`. 
+For common data types, the field type in the generated Volt MX Go Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`.
 
 ![Domino REST API schema](../assets/images/recipe-servings-keepschema.png)
 
@@ -81,39 +81,48 @@ For form-based data models, the document's `@unid` is an obvious example. Below 
 
 ```{ .yaml .no-copy }
 x_0040addedtofile
-x_0040aliases	
+x_0040aliases
 x_0040created
-x_0040editable		
-x_0040lastaccessed	
-x_0040lastmodified	
-x_0040lastmodifiedinfile	
-x_0040noteclass	
-x_0040noteid	
-x_0040parentunid	
-x_0040revision		
-x_0040size		
-x_0040unid	
+x_0040editable
+x_0040lastaccessed
+x_0040lastmodified
+x_0040lastmodifiedinfile
+x_0040noteclass
+x_0040noteid
+x_0040parentunid
+x_0040revision
+x_0040size
+x_0040unid
 x_0040unread
 ```
 
 For view-based data models, the following `meta-fields` are returned:
 
 ```{ .yaml .no-copy }
-x_0040etag	
-x_0040form	
-x_0040index	
-x_0040noteid	
+x_0040etag
+x_0040form
+x_0040index
+x_0040noteid
 x_0040unid
+x_0040scope
+x_0040totalCount
 ```
 
-!!!note
+!!! note
+
     - **All `meta-fields` aren't sortable**. 
-    - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
-    - Meta-fields are included in generated data models by default. The Volt MX Go Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
     
+    - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
+
+    - Meta-fields are included in generated data models by default. The Volt MX Go Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
+
     - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
     
     - Offline objects require a data model to specify a primary key field. `x_0040unid` needs to be set as the primary key for Domino data models. However, with views, the returning list of data may contain items with no UNID or items with the same UNID.<br/><br/>Items with no UNID occur when querying categorized views. These items with no UNID are top-level category items. To avoid receiving these items, a user must scope the view request to return only the document items using the OData filter parameter `<GET view URL>?$filter=x_0040scope eq documents`.<br/><br/>For items with the same UNID, errors may occur when syncing data to the front end.
+
+    - `x_0040totalCount` provides the maximum number of documents in a view, including those documents that might have certain access restrictions. This means that the number of returned documents on `GET` for a view-based data model might be less than the value provided by the `x_0040totalCount` since you might not have access to some of those documents.
+
+        The value of `x_0040totalCount` might not also match the number of returned documents on `GET` for a view-based data model when the view is designed to have a column that shows each value of a multivalue field as a separate document.  
 
 ## Data model metadata attribute
 

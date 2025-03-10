@@ -158,32 +158,33 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
 ### Verify if configured Identity service works
 
-!!!note
-    Ensure the callback URL in the OAuth app you are using has been updated before performing this procedure. 
+!!! note
+    
+    Ensure the callback URL in the OAuth app you are using has been updated before performing this procedure.
 
 1. Log in to Volt MX Go Foundry.
 1. On the **Apps** page, click your Volt MX Go Foundry app.
 1. On the **Identity** tab under **Configure Services**, click your Identity Service.
 1. Click **Test Login** to verify if the configured Identity service works. 
     - If the configuration works, you might need to enter your Domino credentials in the **HCL Domino Login** dialog and click **Login**. In the **Permission Requested** dialog, click **Allow**. You might also only see the **Permission Requested** dialog without needing to enter anything.  
-    - If the configuration doesn't work, an error message is shown. 
+    - If the configuration doesn't work, an error message is shown.
 
-## Add an environment 
+## Add an environment
 
-1.	On the left pane on the **Volt MX Foundry Console**, click **Environments**.
-2.	On the **Environments** page, click **Add New**. The **Add a New Environment** dialog opens. 
-3.	In the **Environment Name** text box, enter an environment name.
+1. On the left pane on the **Volt MX Foundry Console**, click **Environments**.
+2. On the **Environments** page, click **Add New**. The **Add a New Environment** dialog opens.
+3. In the **Environment Name** text box, enter an environment name.
 
     !!!note
         Your environment name can only contain letters, numbers, and hyphens (-). A hyphen can't appear at the beginning or at the end of a name. A number can't appear at the beginning of a name. A name should be a minimum of three characters and a maximum of 20 characters long.
 
-4.	On the **Server** tab, enter the URL of your Volt MX Go Foundry in the **URL** text box.
+4. On the **Server** tab, enter the URL of your Volt MX Go Foundry in the **URL** text box.
     The URL format is: `<http or https>://<server_host>:<server_port>`
-    
+
     For example: `http://mbaastest30.hcl.net:53504`
 
-5.  Click **Test Connection** to verify that the entered URL is correct. If the test is successful, a check mark appears beside the **Server** tab.
-6.  Click **Save**.
+5. Click **Test Connection** to verify that the entered URL is correct. If the test is successful, a check mark appears beside the **Server** tab.
+6. Click **Save**.
 
     ![Add a New Environment dialog](../assets/images/addenvironment.png)
 
@@ -194,39 +195,42 @@ Kindly follow and complete the prerequisites that apply to your situation.
 3. Go to **Configure Services** &rarr; **Objects**, and then click **Configure New**.
 4. Enter the object service name in the **Name** text field. For example, `EmployeeModelSchema`.
 5. Select **HCL Domino** under **Business Adapters** for the **Endpoint Type**.
-4. Set the **Metadata Security Level** to **Authenticated App Users** to restrict the download of object service metadata to users that have successfully authenticated using the Identity Service.
+6. Set the **Metadata Security Level** to **Authenticated App Users** to restrict the download of object service metadata to users that have successfully authenticated using the Identity Service.
 
     ![New object service configuration page](../assets/images/objectendpointtype.png)
 
-5.	Under **Connection Parameters**:
+7. Under **Connection Parameters**:
 
     1. Enter the Domino REST API server URL in the **Domino REST API Base URL** text field.
     2. Enter a value in the **Connection Timeout** text field. By default, the value is set to 30 ms.
-        
-        !!!note
+
+        !!! note
+
             The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
 
     3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*. 
 
-        !!!note
+        !!! note
+
             Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/method.md).   
 
     !!!tip
         To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a *Connection Successful* message if the configured connection parameters are correct.
 
-6.	Under **Authentication**: 
+8. Under **Authentication**:
 
     1. Select the **Use Existing Identity Provider** radio button.
     2. Select the identity service you configured in the drop-down list.
-    
-    !!!tip
+
+    !!! tip
+
         Click **Test Login** to test the authentication. If the configuration works, you might need to enter your Domino REST API administrator username and password in the  Domino REST API login dialog and then click **Allow** in the Domino REST API **Access consent required** dialog. You might also only see the **Permission Requested** dialog without needing to enter anything. A *Test Login Successful* message is then displayed.
 
     ![Authentication section](../assets/images/objectauthentication.png)
 
-7.	Click **Save and Configure**.
+9. Click **Save and Configure**.
 
-## Configure a data model
+## Generate a data model
 
 1. On the **Data Model** tab, click **Generate**.
 2. In the Domino REST API **Access consent required** dialog, click **Allow**. The **Import Objects from Backend** dialog appears. 
@@ -253,12 +257,12 @@ The following produres enable you to test the different methods for interacting 
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
 2. From the list, click **GET**. 
-4. Expand the **base mapper1**, and then select the **Test** tab.
-5. Click **Send**.
-    
-    All records are displayed on the **Response** console. 
-    
-6. Click **Save** after viewing. 
+3. Expand the **base mapper1**, and then select the **Test** tab.
+4. Click **Send**.
+
+    All records are displayed on the **Response** console.
+
+5. Click **Save** after viewing.
 
 **To view a filtered record**
 
@@ -268,7 +272,7 @@ The following produres enable you to test the different methods for interacting 
     ![Filtered record](../assets/images/getoneunid.png)
 
 3. Click **Send**.
-    
+
     The record is displayed on the **Response** console. 
 
 4. Click **Save** after viewing.
