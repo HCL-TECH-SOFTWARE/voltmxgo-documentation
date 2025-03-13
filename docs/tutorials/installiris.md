@@ -135,9 +135,11 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
     5. Press **Enter** to close the Command Prompt window.
 
-!!!warning "Important"
-    After installing the plugins, connect Volt Iris to Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.  
+!!! warning "Important"
 
+    - After installing the plugins, connect Volt Iris to Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.
+    
+    - For further reference, see the ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Installing Volt MX Go v2.1 for Volt Iris](https://www.youtube.com/watch?v=fN4xW1xnd0s "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"} video demonstration.   
 
 ## Upgrade Volt MX Go Iris 
 
@@ -173,15 +175,8 @@ Updates for Volt Iris are released regularly, and you will receive an update not
 
 **You must reinstall the Volt MX Go plugins every time you update Volt Iris**.
 
-For more information on updating Volt Iris, click the link corresponding to your installation platform: 
+For more information on updating Volt Iris, click the link corresponding to your installation platform:
 
 - [For updating Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Upgrade.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - [For updating Volt Iris on Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Upgrade.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
-
-
-
-
-
-
-   
