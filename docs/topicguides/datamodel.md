@@ -94,6 +94,7 @@ x_0040revision
 x_0040size
 x_0040unid
 x_0040unread
+x_0040warnings
 ```
 
 For view-based data models, the following `meta-fields` are returned:
@@ -134,13 +135,14 @@ The `metadata` attribute of a Volt MX Go Foundry data model field retains extend
     - direction: refers to sort direction, either ascending or descending
     - resort-asc: indicates that clicking the column header sorts the view in ascending order
     - resort-desc: indicates that clicking the column header sorts the view in descending order.
-        
-        !!!note
+
+        !!! note
+            
             If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.
 
     - title: displays the title of the column
     - multiValueSeparator: NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.
-    
+
 - Form aliases: For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, the `Main Document` form in the Domino Teamroom database has three aliases, so the **Metadata** properties look like the following:
 
 ![Metadata properties](../assets/images/formaliasproperties.png)
