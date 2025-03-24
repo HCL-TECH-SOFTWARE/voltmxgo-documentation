@@ -159,7 +159,8 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 !!! note
 
-    After installing the Volt MX Go plugins, open Volt Foundry to verify you see the Volt MX GO/First Touch banner.
+    - After installing the Volt MX Go plugins, open Volt Foundry to verify you see the Volt MX GO/First Touch banner. 
+    - For further reference, see the ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Installing Volt MX Go v2.1 for Volt Foundry](https://www.youtube.com/watch?v=pVexsNw5st0 "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"} video demonstration.
 
 ### For using Helm charts on a supported Kubernetes platform
 
