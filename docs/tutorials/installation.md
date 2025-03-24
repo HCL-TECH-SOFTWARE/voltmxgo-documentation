@@ -2,8 +2,9 @@
 
 Guides you through the procedures for installing and upgrading Volt MX Go.
 
-!!!warning "Important"
-    The installation and upgrade processes for Volt MX Go Foundry and Volt MX Go Iris in the Volt MX Go v2.1 release differ from those of the Volt MX Go v2.0.4 or earlier release. In the Volt MX Go v2.1 release: 
+!!! warning "Important"
+
+    The installation and upgrade processes for Volt MX Go Foundry and Volt MX Go Iris **beginning** with the Volt MX Go v2.1 release differ from those of the Volt MX Go v2.0.4 or earlier release. Beginning with Volt MX Go v2.1 release: 
     
     - Volt Foundry and Volt Iris are first installed, followed by installing the necessary plugins using the Volt MX Go Plugin Installer. The plugins enable the capabilities unique to Volt MX Go. 
     - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.

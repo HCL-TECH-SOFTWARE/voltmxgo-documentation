@@ -1,4 +1,4 @@
-# For Volt MX Go v2.1
+# For Volt MX Go v2.1 and later
 
 Perform a new or an upgrade installation of Volt MX Go Iris.
 
@@ -6,14 +6,14 @@ Perform a new or an upgrade installation of Volt MX Go Iris.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.50.   
-- You have downloaded the Volt MX Go Plugin Installer. 
+- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.50.
+- You have downloaded the Volt MX Go Plugin Installer.
 
-For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21).
+For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21-and-later).
 
 ### Install Volt Iris
 
-For installing Volt Iris, click the link corresponding to your installation platform and follow the installation steps. 
+For installing Volt Iris, click the link corresponding to your installation platform and follow the installation steps.
 
 - [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
@@ -111,7 +111,11 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
     3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
 
-        You get a confirmation statement about the completion of the installation of the plugins. 
+        You get a confirmation statement about the completion of the installation of the plugins.
+
+        !!! note
+
+            Starting with Volt MX Go version 2.1.1, the installed Volt Iris version is checked for compatibility. If incompatible, the plugin installation stops, and users are informed of their current and required minimum Volt Iris versions. 
     
     5. Close the terminal.   
 
@@ -133,6 +137,10 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
         You get a confirmation statement that the plugins have been installed. 
 
+        !!! note
+
+            Starting with Volt MX Go version 2.1.1, the installed Volt Iris version is checked for compatibility. If incompatible, the plugin installation stops, and users are informed of their current and required minimum Volt Iris versions.
+
     5. Press **Enter** to close the Command Prompt window.
 
 !!! warning "Important"
@@ -143,24 +151,25 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
 ## Upgrade Volt MX Go Iris 
 
-Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.
+<!--Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.-->
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer - v9.5.50 or later. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21).
+- You have downloaded the latest Volt Iris installer - v9.5.50 or later. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21-and-later).
 
-- You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](#install-volt-mx-go-plugin-installer).
+- You have installed the latest Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](#install-volt-mx-go-plugin-installer).
 
 ### Upgrade Volt Iris
 
-To upgrade, install the latest version of Volt Iris. Click the link corresponding to your installation platform and follow the installation steps. 
+To upgrade, install the latest version of Volt Iris. Click the link corresponding to your installation platform and follow the installation steps.
 
 - [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - [For installing Volt Iris on Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-!!!note "Important"
-    Make sure to use the same Workspace Folder you used for your Volt MX Go Iris v2.0.4 installation to access all the projects you worked on using Volt MX Go Iris v2.0.4.  
+!!! note "Important"
+    
+    Make sure to use the same Workspace Folder you used for your previous Volt MX Go Iris<!--v2.0.4--> installation to access all the projects you worked on<!--using Volt MX Go Iris v2.0.4-->.  
 
 ### Install Volt MX Go Plugins
 

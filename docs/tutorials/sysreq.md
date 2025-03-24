@@ -1,4 +1,4 @@
-# System requirements for Volt MX Go v2.0.4 or earlier
+# System requirements for Volt MX Go v2.0.4 and earlier
 
 This section describes the minimum system requirements for deploying Volt MX Go. 
 
@@ -6,7 +6,7 @@ This section describes the minimum system requirements for deploying Volt MX Go.
 
 --8<-- "drapiversion.md"
 
-Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} for installing Domino REST API using the installer. 
+Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} for installing Domino REST API using the installer.
 
 ## For installing Volt MX Go Foundry
 
@@ -48,12 +48,12 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 
     **Hardware**
 
-    |Component	|Requirement|
+    |Component|Requirement|
     |-----------|-----------|
-    |Processor and Architecture	|Dual Core processor, 64-bit|
-    |RAM	    |8 GB |
-    |Internal Storage	|2 GB|
-    |Network	|Ethernet Port|
+    |Processor and Architecture|Dual Core processor, 64-bit|
+    |RAM|8 GB |
+    |Internal Storage|2 GB|
+    |Network|Ethernet Port|
 
 === "On Mac"
 
@@ -63,11 +63,11 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 
     **Hardware**
 
-    |Component	|Requirement |
+    |Component|Requirement |
     | --------  | -----------|       
-    |Processor	|x86-64 CPU, M1/M2 CPU<br/>(64-bit Mac with an Intel Core i3, i5, i7, Intel Xeon processor or M1, M2 ARM processor)|
-    |RAM	    |8 GB |
-    |Internal Storage|	24 GB|
+    |Processor|x86-64 CPU, M1/M2 CPU<br/>(64-bit Mac with an Intel Core i3, i5, i7, Intel Xeon processor or M1, M2 ARM processor)|
+    |RAM|8 GB |
+    |Internal Storage|24 GB|
     |Network Ethernet |Port|
 
 ## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
@@ -87,7 +87,8 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 | CPU | 4 cores |
 | RAM | 16 GB |
 
-!!!note
+!!! note
+
     - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
     
     - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
@@ -116,7 +117,8 @@ Rancher Desktop requires the following on Windows:
 - Persistent internet connection.
 - Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
 
-!!!note
+!!! note
+
     - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Rancher Desktop documentation. 
     
     - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Rancher Desktop documentation.

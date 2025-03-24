@@ -2,14 +2,6 @@
 
 Provides technical references and descriptions for using Volt MX Go.
 
-## What's new
-
-Check the [latest information](whatsnew/whatisnew.md) about Volt MX Go.
-
-<!--
-To know the details in the early access version, see [Early Access Version changes](earlyaccesschanges.md){: target="blank"}.
--->
-
 ## System requirements
 
 Check the minimum [System requirements](../tutorials/sysreq.md) for deploying Volt MX Go.
@@ -26,7 +18,7 @@ For the implementation status, see [Rosetta API implementation status](../javado
 
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in Volt MX Go Iris.   
+Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in Volt MX Go Iris.
 
 ## Helm and Kubectl commands
 

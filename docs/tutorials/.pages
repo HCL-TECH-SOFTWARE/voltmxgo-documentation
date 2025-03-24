@@ -4,8 +4,8 @@ nav:
         - installation.md
         - System requirements:
             - sysreqindex.md
-            - Volt MX GO v2.1: sysreq21.md
-            - Volt MX Go v2.0.4 or earlier: sysreq.md
+            - Volt MX GO v2.1 and later: sysreq21.md
+            - Volt MX Go v2.0.4 and earlier: sysreq.md
 #        - Install and upgrade Volt MX Go in a production environment:
         - portaldownload.md
 #        - Install and upgrade Volt MX Go:

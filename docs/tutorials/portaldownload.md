@@ -4,10 +4,11 @@
 
 Guides you on how to search and download the HCL Volt MX Go installers from the **HCL License & Download Portal**.
 
-!!!tip
+!!! tip
+
     To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
-## For Volt MX Go v2.1
+## For Volt MX Go v2.1 and later
 
 **Overview**
 
@@ -82,7 +83,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
                     - `FirstTouchRecipes.nsf.zip`
                     - `FirstTouchRecipe.zip`
 
-## For Volt MX Go v2.0.4 or earlier
+## For Volt MX Go v2.0.4 and earlier
 
 **Overview**
 

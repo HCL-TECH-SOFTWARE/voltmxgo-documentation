@@ -1,4 +1,4 @@
-# System requirements for Volt MX Go v2.1
+# System requirements for Volt MX Go v2.1 and later
 
 This section describes the minimum system requirements for deploying Volt MX Go. 
 
@@ -81,7 +81,6 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
     |Internal Storage|	24 GB|
     |Network Ethernet |Port|
 
-
 ## Next step
 
 - To install the server components of Volt MX Go, proceed to [Install Volt MX Go server components](installfoundryindex.md).
@@ -89,4 +88,3 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 - To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](versupgradeindx.md).
 
 - To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).
-
