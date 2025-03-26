@@ -189,7 +189,6 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
     Perform the procedures under [Advanced Scenarios](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_Advanced_Scenarios.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
-
 5. Deploy Foundry's dbupdate to create the databases.
 
     1. Run the following Helm install command to deploy Foundry's dbupdate:
@@ -236,19 +235,19 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
         ![output](../assets/images/output1.png)
 
-
     3. Monitor all the foundry pods except for the foundry-db-update pod as it has already been completed. Once the other foundry pods have a 1/1 state in the READY column, press `Ctrl-c` to stop the kubectl command.
 
     **Volt MX Go Foundry is now available at [http://foundry.mymxgo.com/mfconsole/](http://foundry.mymxgo.com/mfconsole/)**.
 
-    !!!note
+    !!! note
+
         - If you defined a different Volt MX Go Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
+
         - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
         
         - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
         
         - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
-
 
 7. (Optional) Perform monitoring procedures.
 

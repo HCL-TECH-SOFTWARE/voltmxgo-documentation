@@ -189,22 +189,22 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     This endpoint gets information about the Domino and Domino REST API versions. The returned fields may include:
 
     ```{ .yaml .no-copy }
-    dominoPlatformBits
+    dominoBuildNumber
     dominoFixpackNumber
-    keepDescription
-    keepName
-    keepVendor
-    dominoPlatform
-    dominoMinorVersion
-    keepVersion
     dominoHotfixNumber
+    dominoMajorVersion 
+    dominoMinorVersion
+    dominoPlatform
+    dominoPlatformBits
     dominoProductionBuild
     dominoQmrNumber
-    dominoBuildNumber
     dominoQmuNumber
-    keepImageBuild
     dominoVersion
-    dominoMajorVersion    
+    keepDescription
+    keepImageBuild
+    keepName
+    keepVendor
+    keepVersion
     ``` 
 
 - AttachmentsInfo
@@ -212,10 +212,10 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     This endpoint gets information about all the attachments on a document. The return fields may include:
 
     ```{ .yaml .no-copy }
-    size
     created
-    name
     modified
+    name
+    size
     ```
 
     !!! note

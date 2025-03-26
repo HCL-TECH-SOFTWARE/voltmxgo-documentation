@@ -24,7 +24,7 @@ For more information, see the [Installation and configuration](https://opensourc
 
 ## Install Volt MX Go Foundry
 
-**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the supported version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that for Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
+**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the supported version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that starting from Volt MX Go v2.1 up to the current release version, **only Volt Foundry using a Tomcat non-clustered application server is supported**.<!--It's important to note that for Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.-->
 
 **Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.**
 
@@ -43,7 +43,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
 !!! warning "Important"
 
-    - For Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
+    - Starting from Volt MX Go v2.1 up to the current release version, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
     - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
     
     - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see [license activation](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} on the *Volt MX documentation*. 
@@ -116,7 +116,7 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 The procedure enables the installation of Volt MX Go plugins to Volt Foundry to enable Volt MX Go features.
 
 !!!warning "Important"
-    - For Volt MX Go v2.1, you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server.
+    - Starting from Volt MX Go v2.1 up to the current release version, you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server.
     - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
 
 === "on Linux"

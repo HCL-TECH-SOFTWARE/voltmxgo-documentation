@@ -44,7 +44,7 @@ The installer doesn't support automatic backups of database and other artifacts.
 
     !!! warning "Important"
 
-        - For Volt MX Go v2.1, only Volt Foundry using a Tomcat non-clustered application server is supported.
+        - Starting from Volt MX Go v2.1 up to the current release version, only Volt Foundry using a Tomcat non-clustered application server is supported.
         - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
         - The upgrade procedure indicates installation files and installation file download locations. **You must use the installer you downloaded in *Before you begin*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
@@ -63,7 +63,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 !!! warning "Important"
 
-    - For Volt MX Go v2.1, you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server.
+    - Starting from Volt MX Go v2.1 up to the current release version, you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server.
     - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
 
 === "on Linux"
