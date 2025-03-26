@@ -82,6 +82,7 @@ For form-based data models, the document's `@unid` is an obvious example. Below 
 ```{ .yaml .no-copy }
 x_0040addedtofile
 x_0040aliases
+x_0040attachments
 x_0040created
 x_0040editable
 x_0040lastaccessed
@@ -104,9 +105,9 @@ x_0040etag
 x_0040form
 x_0040index
 x_0040noteid
-x_0040unid
 x_0040scope
 x_0040totalCount
+x_0040unid
 ```
 
 !!! note
@@ -127,33 +128,37 @@ x_0040totalCount
 
 ## Data model metadata attribute
 
-The `metadata` attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt MX Go Iris.
+The **Metadata** attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt MX Go Iris.
 
-- Column characteristics: For View columns (only non-meta columns), the data model field Metadata attribute includes additional column properties:
-    - position: refers to column number
-    - sorted: refers to whether the column is sortable
-    - direction: refers to sort direction, either ascending or descending
-    - resort-asc: indicates that clicking the column header sorts the view in ascending order
-    - resort-desc: indicates that clicking the column header sorts the view in descending order.
+### Column characteristics
 
-        !!! note
-            
-            If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.
+For View columns (only non-meta columns), the data model field **Metadata** attribute includes additional column properties:
 
-    - title: displays the title of the column
-    - multiValueSeparator: NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.
+|Column property|Description|
+|:----|:----|
+|position|Refers to column number.|
+|sorted|Refers to whether the column is sortable|
+|direction|Refers to sort direction, either ascending or descending.|
+|resort-asc|Indicates that clicking the column header sorts the view in ascending order.|
+|resort-desc|Indicates that clicking the column header sorts the view in descending order.<br/><br/>If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.|
+|title|Displays the title of the column.|
+|multiValueSeparator|NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.|
 
-- Form aliases: For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, the `Main Document` form in the Domino Teamroom database has three aliases, so the **Metadata** properties look like the following:
+### Form aliases
+
+For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, if a form in a database has three aliases, the **Metadata** properties look like the following:
 
 ![Metadata properties](../assets/images/formaliasproperties.png)
 
-- Extended data types: Rich text and multi-value (array) form fields are seen as string fields in the data model. For these fields, `dominoSpecialType` and `dominoArrayComponentType` properties are added to metadata.
+### Extended data types
 
-    |For...|dominoSpecialType|dominoArrayComponentType|
-    |----|----|----|
-    |RICH TEXT|richtext|not used|
-    |MULTI-VALUE|array|the array type, such as string, number|
-    |DATE ONLY|date|not used|
+Rich text and multi-value (array) form fields are seen as string fields in the data model. For these fields, `dominoSpecialType` and `dominoArrayComponentType` properties are added to metadata.
+
+|For...|dominoSpecialType|dominoArrayComponentType|
+|:----|:----|:----|
+|RICH TEXT|richtext|not used|
+|MULTI-VALUE|array|the array type, such as string, number|
+|DATE ONLY|date|not used|
 
 ## Other Metadata
 
@@ -163,10 +168,10 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 **Implemented `Other Metadata` entities**:
 
-- UserInfo 
+- UserInfo
 
     This endpoint gets information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The returned fields may include:
-    
+
     ```{ .yaml .no-copy }
     email
     family_name
@@ -214,7 +219,7 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     ```
 
     !!! note
-         When performing the GET method for **AttachmentsInfo**, an error is thrown if you don't provide the UNID of the document. 
-            
+         When performing the GET method for **AttachmentsInfo**, an error is thrown if you don't provide the UNID of the document.
+
          For more information on performing the GET method, see [Test the GET method by viewing a record](../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
            
