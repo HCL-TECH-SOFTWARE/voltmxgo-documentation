@@ -2,18 +2,111 @@
 
 ## About this task
 
-Guides you on how to search and download the HCL Volt MX Go installers from the **HCL License & Download Portal**.
-
-!!!tip
-    To learn more about **HCL License & Download Portal**, see [What is the HCL Software License & Download Portal?](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073344 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+Guides you on how to download the HCL Volt MX Go installers.
 
 ## For Volt MX Go v2.1
 
-**Overview**
+Starting from the Volt MX Go v2.1 release, you must download the supported versions of installers of Volt Foundry and Volt Iris<!-- from the HCl License & Download Portal-->. You must also download the Volt MX Go Plugin Installer, which installs the Volt MX Go plugins to Volt Foundry and Volt Iris to enable the Volt MX Go features. The following procedure guides you in downloading the installers.
 
-Starting from the Volt MX Go v2.1 release, you must download the supported versions of installers of Volt Foundry and Volt Iris from the HCl License & Download Portal. You must also download the Volt MX Go Plugin Installer, which installs the Volt MX Go plugins to Volt Foundry and Volt Iris to enable the Volt MX Go features. The following procedure guides you in downloading the installers. 
+### From My HCLSoftware portal
 
-**Procedure**
+#### For Volt Foundry
+
+=== "Latest release"
+
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    2. On the landing page, click **Sign in**.
+    3. On the sign-in page, log in using your credentials.
+    4. On the **Software Downloads** page, click **HCL Volt MX**.
+    5. On the **HCL Volt MX** page, go to the **HCL Volt MX - Current** section and click **Volt Foundry**.
+    6. Under **Releases**, click the release version you want to download.
+    7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
+
+=== "Earlier releases"
+
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    2. On the landing page, click **Sign in**.
+    3. On the sign-in page, log in using your credentials.
+    4. On the **Software Downloads** page, click **HCL Volt MX**.
+    5. On the **HCL Volt MX** page, go to the **HCL Volt MX and Volt MX Go - Archive** section and click **Volt Foundry - Archive**.
+    6. Under **Releases**, click the release version you want to download.
+    7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
+
+!!! note
+
+    - The **minimum supported version of Volt Foundry is v9.5.18.0** for Volt MX Go.
+    - For Windows, the file name of the installation file is `VoltFoundrySetup-<version>_GA.zip`. 
+                    
+        For example: `VoltFoundrySetup-9.5.18.0_GA.zip`
+                
+    - For Linux, the file name of the installation file is `VoltFoundrySetup-<version>_GA.tar.gz`. 
+                    
+        For example: `VoltFoundrySetup-9.5.18.0_GA.tar.gz`
+                
+    - For Single Container Solution, the file name of the installation file is `VoltFoundrySingleContainer-<version>_GA.zip`.  
+                
+        For example: `VoltFoundrySingleContainer-9.5.18.0_GA.zip`
+
+    - For Container Helm Installation, the file name of the installation file is `HelmChart-<version>_GA.zip`.
+
+        For example: `HelmChart-9.5.18.0_GA.zip`
+
+#### For Volt Iris
+
+=== "Latest release"
+
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    2. On the landing page, click **Sign in**.
+    3. On the sign-in page, log in using your credentials.
+    4. On the **Software Downloads** page, click **HCL Volt MX**.
+    5. On the **HCL Volt MX** page, go to the **HCL Volt MX - Current** section and click **Volt Iris**.
+    6. Under **Releases**, click the release version you want to download.
+    7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
+
+=== "Earlier releases"
+
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    2. On the landing page, click **Sign in**.
+    3. On the sign-in page, log in using your credentials.
+    4. On the **Software Downloads** page, click **HCL Volt MX**.
+    5. On the **HCL Volt MX** page, go to the **HCL Volt MX and Volt MX Go - Archive** section and click **Volt Iris - Archive**.
+    6. Under **Releases**, click the release version you want to download.
+    7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
+
+!!! note
+
+    The **minimum supported version of Volt Iris is v9.5.50** for Volt MX Go.
+
+#### For Volt MX Go Plugin Installer
+
+1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+2. On the landing page, click **Sign in**.
+3. On the sign-in page, log in using your credentials.
+4. On the **Software Downloads** page, click **HCL Volt MX**.
+5. On the **HCL Volt MX** page, go to the **HCL Volt MX - Current** section and click **Volt MX Go**.
+6. Under **Releases**, click the release version you want to download.
+7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
+
+!!! note
+
+    - For Windows, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_Windows_<version>.exe`
+    
+        For example: `HCLVoltMXGO_Plugin_Installer_Tool_Windows_V2.1.exe`.
+    
+    - For Linux, the file name of the installation file is 
+    `HCLVoltMXGO_Plugin_Installer_Tool_Linux_<version>.tar.gz`.
+
+        For example: `HCLVoltMXGO_Plugin_Installer_Tool_Linux_V2.1.tar.gz`.
+
+    - For MacOS, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_MacOS_<version>.zip`.
+
+        For example: `HCLVoltMXGO_Plugin_Installer_Tool_MacOS_V2.1.zip`.
+
+    - The First Touch files are also included in the package and have the following file names:
+        - `FirstTouchRecipes.nsf.zip`
+        - `FirstTouchRecipe.zip`
+
+### From HCL Software License & Download Portal
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
@@ -35,21 +128,22 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
             Click the download icon beside the filename of the selected installer.
 
-            !!!note
+            !!! note
+
                 - The minimum supported version of Volt Foundry is v9.5.18.0 for Volt MX Go.
-                - For Windows, the file name of the installation file is `VoltFoundrySetup-<version\>_GA.zip`. 
+                - For Windows, the file name of the installation file is `VoltFoundrySetup-<version>_GA.zip`. 
                     
                     For example: `VoltFoundrySetup-9.5.18.0_GA.zip`
                 
-                - For Linux, the file name of the installation file is `VoltFoundrySetup-<version\>_GA.tar.gz`. 
+                - For Linux, the file name of the installation file is `VoltFoundrySetup-<version>_GA.tar.gz`. 
                     
                     For example: `VoltFoundrySetup-9.5.18.0_GA.tar.gz`
                 
-                - For Single Container Solution, the file name of the installation file is `VoltFoundrySingleContainer-<version\>_GA.zip`.  
+                - For Single Container Solution, the file name of the installation file is `VoltFoundrySingleContainer-<version>_GA.zip`.  
                 
                     For example: `VoltFoundrySingleContainer-9.5.18.0_GA.zip`
 
-                - For Container Helm Installation, the file name of the installation file is `HelmChart-<version\>_GA.zip`.
+                - For Container Helm Installation, the file name of the installation file is `HelmChart-<version>_GA.zip`.
 
                     For example: `HelmChart-9.5.18.0_GA.zip`
 
@@ -74,29 +168,52 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
             Click the download icon beside the filename of the installer.
 
-            !!!note
-                - For Windows, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_Windows_V2.1.exe`.
-                - For Linux, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_Linux_V2.1.tar.gz`.
-                - For MacOS, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_MacOS_V2.1.zip`.
+            !!! note
+
+                - For Windows, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_Windows_<version>.exe`
+    
+                    For example: `HCLVoltMXGO_Plugin_Installer_Tool_Windows_V2.1.exe`.
+    
+                - For Linux, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_Linux_<version>.tar.gz`.
+
+                    For example: `HCLVoltMXGO_Plugin_Installer_Tool_Linux_V2.1.tar.gz`.
+
+                - For MacOS, the file name of the installation file is `HCLVoltMXGO_Plugin_Installer_Tool_MacOS_<version>.zip`.
+
+                    For example: `HCLVoltMXGO_Plugin_Installer_Tool_MacOS_V2.1.zip`.
+
                 - The First Touch files are also included in the package and have the following file names:
                     - `FirstTouchRecipes.nsf.zip`
                     - `FirstTouchRecipe.zip`
 
-## For Volt MX Go v2.0.4 or earlier
+## For Volt MX Go v2.0.4 and earlier
 
-**Overview**
+Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry and Volt MX Go Iris installers<!-- from the HCL License & Download Portal-->. The following procedure guides you in doing that.
 
-Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry and Volt MX Go Iris installers from the HCL License & Download Portal. The following procedure guides you in doing that.
+### From My HCLSoftware portal
 
-**Procedure**
+1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+2. On the landing page, click **Sign in**.
+3. On the sign-in page, log in using your credentials.
+4. On the **Software Downloads** page, click **HCL Volt MX**.
+5. On the **HCL Volt MX** page, go to the **HCL Volt MX and Volt MX Go - Archive** section and click **Volt MX Go - Archive**.
+6. Under **Releases**, click the release version you want to download.
+7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
 
-1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+!!! tip
+
+    For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine.
+
+### From HCL Software License & Download Portal
+
+1. Go to [HCL Software License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 2. On the sign-in page, enter your username and click **Next**. The **License & Download Portal** home page opens.
 3. On the **License & Download Portal** home page, go to **Your Downloads** and search for and click **HCL Volt MX**.
 4. On the **Download Packages** page, click the **HCL Volt MX Go Version x.x.x** package under the **New Versions** tab.
 
-    !!!note
+    !!! note
+
         Select the appropriate package version based on whether you want to perform a new installation or an upgrade.
 
 5. On the **Files** tab on the **Downloads** page, select all the files and click **Download Selected Files**.
@@ -108,7 +225,8 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
     Click the download icon beside the filename of each file.
 
-!!!tip
+!!! tip
+
     For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine.
 
 ## Next step

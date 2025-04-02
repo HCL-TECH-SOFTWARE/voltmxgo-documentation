@@ -2,16 +2,17 @@
 
 ## Install Volt MX Go Iris
 
-!!!warning "Important!"
-    - Volt MX Iris and Volt MX Go Iris have different capabilities. Make sure you are using the Volt MX Go Iris software.
-   
+!!! warning "Important!"
+
+    Volt Iris and Volt MX Go Iris have different capabilities. Make sure you are using the Volt MX Go Iris software.
+
 ### Before you begin
 
-You have downloaded the latest version of Volt MX Go Iris installer based on your preferred installation platform/option. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-or-earlier). 
+You have downloaded the latest version of Volt MX Go Iris installer based on your preferred installation platform/option. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-and-earlier).
 
 ### Install Volt MX Go Iris
 
-For installing Volt MX Go Iris, click the link corresponding to your installation platform and follow the installation steps. 
+For installing Volt MX Go Iris, click the link corresponding to your installation platform and follow the installation steps.
 
 - [For installing Volt MX Go Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
@@ -19,11 +20,11 @@ For installing Volt MX Go Iris, click the link corresponding to your installatio
 
 ## Upgrade Volt MX Go Iris
 
-Upgrades Volt MX Go Iris from an earlier version up to Volt MX Go v2.0.4. 
+Upgrades Volt MX Go Iris from an earlier version up to Volt MX Go v2.0.4.
 
 ### Before you begin
 
-You have downloaded the latest version of the Volt MX Go Iris installer. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-or-earlier).
+You have downloaded the latest version of the Volt MX Go Iris installer. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-and-earlier).
 
 ### Procedure
 

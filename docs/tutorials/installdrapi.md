@@ -15,7 +15,7 @@ Guides you in installing Domino REST API.
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
     - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
-    
+
     - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
@@ -24,7 +24,7 @@ For more information, see the [Installation and configuration](https://opensourc
 
 ## Install Volt MX Go Foundry
 
-**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the supported version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that for Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**. 
+**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the supported version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that for Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
 
 **Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.**
 
@@ -32,24 +32,28 @@ For more information, see the [Installation and configuration](https://opensourc
 
 #### Before you begin
 
-- You have downloaded the Volt Foundry installer. The minimum supported version is v9.5.18.0.   
-- You have downloaded the Volt MX Go Plugin Installer. 
+- You have downloaded the Volt Foundry installer. The minimum supported version is v9.5.18.0.
+- You have downloaded the Volt MX Go Plugin Installer.
 
 For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21).
 
 #### Install Volt Foundry
 
-For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps. 
+For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps.
 
 !!! warning "Important"
 
     - For Volt MX Go v2.1, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
     - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
     
-    - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see [license activation](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} on the *Volt MX documentation*. 
+    - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see the following license activation guides on the Volt MX documentation:
+
+        [For Volt Foundry version 9.5.20.0 and onwards](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+
+        [For Volt Foundry versions earlier than 9.5.20.0](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} 
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
-    
+
 - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 #### Install Volt MX Go Plugin Installer
@@ -64,11 +68,11 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 
         `sudo chmod +x VoltMXGoInstallationTool.bin`
 
-	    Using the `chmod` command with `sudo` ensures administrative privileges.
+        Using the `chmod` command with `sudo` ensures administrative privileges.
 
     1. Run the `VoltMXGoInstallationTool.bin` file to start the installation using the following command and press **Enter**.
 
-	    `./VoltMXGoInstallationTool.bin`
+        `./VoltMXGoInstallationTool.bin`
 
     1. Follow the installation instructions. The binary file will initiate the installation process and may prompt you with on-screen instructions. Follow these instructions carefully to complete the installation.
 
@@ -115,7 +119,8 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 
 The procedure enables the installation of Volt MX Go plugins to Volt Foundry to enable Volt MX Go features.
 
-!!!warning "Important"
+!!! warning "Important"
+
     - For Volt MX Go v2.1, you can only install Volt MX Go plugins to Volt Foundry that uses a Tomcat non-clustered application server.
     - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
 
@@ -153,7 +158,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
     2. Enter **1** to install Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 
 
-        You get a confirmation statement that the plugins have been installed. 
+        You get a confirmation statement that the plugins have been installed.
+
+        --8<--"foundryversioncheck.md"
 
     5. Press **Enter** to close the Command Prompt window.
 
@@ -169,11 +176,11 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 - You have [obtained the authentication token from the HCL Container Repository](../howto/obtainauthenticationtoken.md).
 - You have completed all the installation [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](./portaldownload.md#for-volt-mx-go-v21). 
+- You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](./portaldownload.md#for-volt-mx-go-v21).
 
 #### Procedure
 
-1. Click the link to the installation guide and follow the installation steps. 
+1. Click the link to the installation guide and follow the installation steps.
 
     [Volt Foundry Container Helm installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
@@ -191,14 +198,14 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 ### For single container solution
 
-For more information, see [Volt Foundry Single Container Solution](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Volt MX Documentation. 
+For more information, see [Volt Foundry Single Container Solution](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Volt MX Documentation.
 
 #### Before you begin
 
 - You have [obtained the authentication token from the HCL Container Repository](../howto/obtainauthenticationtoken.md).
 - You have completed all the [installation prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../tutorials/portaldownload.md#for-volt-mx-go-v21). 
+- You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../tutorials/portaldownload.md#for-volt-mx-go-v21).
 
 #### Procedure
 

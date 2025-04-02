@@ -29,7 +29,7 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 #### Before you begin
 
 - Back up your databases and server artifacts.
-- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-or-earlier).
+- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-and-earlier).
 
 - Ensure that the Volt MX Go Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
