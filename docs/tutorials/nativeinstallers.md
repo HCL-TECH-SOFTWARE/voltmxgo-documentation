@@ -15,7 +15,7 @@ Guides you in installing Domino REST API.
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
     - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
-    
+
     - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
@@ -34,20 +34,20 @@ Volt MX Go Foundry supports the following installation mechanisms:
 
 #### Before you begin
 
-You have downloaded the latest version of Volt MX Go Foundry installer based on your preferred installation platform/option. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-or-earlier).
+You have downloaded the latest version of Volt MX Go Foundry installer based on your preferred installation platform/option. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v204-and-earlier).
 
 #### Procedure <!--Install Volt MX Go Foundry-->
 
-For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps. 
+For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps.
 
 !!!warning "Important"
     - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
     - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
 
 - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
-    
+
 - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
-    
+
 - [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 ### For using helm charts on a supported Kubernetes platform
@@ -82,11 +82,12 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username <your hclcr username> --password <your hclcr password>
         ```
 
-        !!!example
+        !!! example
+
             `helm repo add hclcr https://hclcr.io/chartrepo/voltmxgo --username user.name@example.com --password xx3ds2w`
 
+        !!! note
 
-        !!!note
             Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
         If you get an error message similar to the following:
@@ -120,11 +121,13 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         mv voltmx-foundry/init-guids.sh  ./
         chmod +x init-guids.sh
         ```
-        !!!note
+        !!! note
+        
             The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
 
 
     3. Volt MX Go Foundry uses several Global Unique IDs to distinguish different installations of Volt MX Go Foundry. Invoke the init-guids script to generate the IDs using the following command:
+
         ```
         ./init-guids.sh --new
         ```
@@ -137,7 +140,8 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         password: your-authentication-token
         ```
 
-        !!!note
+        !!! note
+
             Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
 
     5. Locate the following line in the file and add your Volt MX Go Foundry server domain name setting:

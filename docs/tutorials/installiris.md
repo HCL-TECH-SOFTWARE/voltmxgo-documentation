@@ -6,14 +6,14 @@ Perform a new or an upgrade installation of Volt MX Go Iris.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.50.   
-- You have downloaded the Volt MX Go Plugin Installer. 
+- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.50.
+- You have downloaded the Volt MX Go Plugin Installer.
 
 For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21).
 
 ### Install Volt Iris
 
-For installing Volt Iris, click the link corresponding to your installation platform and follow the installation steps. 
+For installing Volt Iris, click the link corresponding to your installation platform and follow the installation steps.
 
 - [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
