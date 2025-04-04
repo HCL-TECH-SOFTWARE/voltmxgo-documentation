@@ -88,7 +88,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
         !!! note
 
-            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/operation/obtainauthenticationtoken.md) as your authentication token or password.
 
         If you get an error message similar to the following:
 
@@ -245,9 +245,9 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         - If you defined a different Volt MX Go Foundry hostname, the Foundry URL would be the defined Foundry hostname concatenated with `/mfconsole/`.
         - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well.
         
-        - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/foundryadminaccount.md).
+        - To create an account, see [Create a Volt MX Go Foundry administrator account](../howto/install/foundryadminaccount.md).
         
-        - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/connectdominofromnotes.md).
+        - To connect to Domino server from your Notes client, see [Connect to Domino server from your Notes client](../howto/install/connectdominofromnotes.md).
 
 
 7. (Optional) Perform monitoring procedures.

@@ -72,7 +72,7 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 
 2. Configure Helm to pull from HCL Container Repository.
 
-    You need your [email and authentication token](../howto/obtainauthenticationtoken.md) used with the HCL Container Repository.
+    You need your [email and authentication token](../howto/operation/obtainauthenticationtoken.md) used with the HCL Container Repository.
 
     1. Run the following command to check if `hclcr` is already defined:
 

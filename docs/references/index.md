@@ -26,7 +26,7 @@ For the implementation status, see [Rosetta API implementation status](../javado
 
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in Volt MX Go Iris.   
+Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodingguides.md) in Volt MX Go Iris.   
 
 ## Helm and Kubectl commands
 

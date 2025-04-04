@@ -1,4 +1,4 @@
-# Install and upgrade
+# Overview
 
 Guides you through the procedures for installing and upgrading Volt MX Go.
 

@@ -20,7 +20,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
     **Volt MX Go prerequisites**
 
     - You have completed the [Volt MX Go installation](installation.md).
-    - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md). 
+    - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md). 
     - You have [created an Environment in Volt MX Go Foundry](adaptertutorial.md#add-an-environment). 
 
     **Domino/Domino REST API prerequisites**
