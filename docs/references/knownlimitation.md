@@ -20,7 +20,7 @@ When using helm charts on a supported Kubernetes platform, you must run the `kub
 - Volt MX Go Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
 - Volt MX Go Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
 
-## Data conversion   
+## Data conversion 
 
 As Domino REST API and Volt MX Go Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Volt MX Go Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
 
@@ -74,5 +74,3 @@ The Domino Adapter handles the Domino database view with columns having the same
 - Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt MX Go Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} are allowed in *voltmx.io.FileSystem*. For more information about *voltmx.io.FileSystem*, see the [Volt MX documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - Date APIs for Notes implementations return JavaScript Date Objects, which differ from Notes Date Objects.
-
-

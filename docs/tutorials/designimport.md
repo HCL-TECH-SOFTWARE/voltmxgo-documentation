@@ -131,7 +131,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
 ## Create a new project
 
-In this tutorial, we will use a web app project. The following steps will enable you to create one. If you want to create a native app, see [create a native app project](../howto/dicreatenativeapp.md) for more information.  
+In this tutorial, we will use a web app project. The following steps will enable you to create one. If you want to create a native app, see [create a native app project](../howto/designimport/dicreatenativeapp.md) for more information.  
     
 1. In the top menu, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
@@ -248,7 +248,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     !!!note
         - Selectable forms, views, and agents are only those set to the active status when configuring the schema in the Domino REST API. Those in inactive status can still be seen but won't be selectable. Unsupported agents are also shown but won't be selectable. 
-        - Actions are often active within the Domino database and can only be modified using Domino Designer. Imported actions might not function as expected. If this happens, you modify or update the actions to function as expected. For more information, see [Modify or update imported actions using VoltFormula](../howto/importvoltformula.md).
+        - Actions are often active within the Domino database and can only be modified using Domino Designer. Imported actions might not function as expected. If this happens, you modify or update the actions to function as expected. For more information, see [Modify or update imported actions using VoltFormula](../howto/voltformula/importvoltformula.md).
         - If a dialog opens indicating that your Domino REST API schema has misconfigured settings, kindly see [Troubleshooting](../references/troubleshoot.md#design-import) for more information on addressing the issue.
         - If you see a **warning** icon appear beside any form, form field, view, or agent, click the **Reports** folder icon and click a report to open a detailed report explaining the cause of the warning.
         - You can use the **All**, **Active**, **Inactive**, and **Unsupported** buttons in each tab to filter what's displayed. 
@@ -325,7 +325,7 @@ If your app is a **Web App**, follow the instructions in [Building a Web App](ht
 
 If your app is a **Native App:**
 
-1. [Configure your mobile app browser](../howto/configmobile.md).
+1. [Configure your mobile app browser](../howto/designimport/configmobile.md).
             
 2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation to view the mobile app.
 

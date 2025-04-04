@@ -173,7 +173,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 #### Before you begin
 
-- You have [obtained the authentication token from the HCL Container Repository](../howto/obtainauthenticationtoken.md).
+- You have [obtained the authentication token from the HCL Container Repository](../howto/operation/obtainauthenticationtoken.md).
 - You have completed all the installation [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](./portaldownload.md#for-volt-mx-go-v21).
@@ -202,7 +202,7 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
 #### Before you begin
 
-- You have [obtained the authentication token from the HCL Container Repository](../howto/obtainauthenticationtoken.md).
+- You have [obtained the authentication token from the HCL Container Repository](../howto/operation/obtainauthenticationtoken.md).
 - You have completed all the [installation prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../tutorials/portaldownload.md#for-volt-mx-go-v21).
@@ -227,8 +227,6 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 3. Stop the existing images by running the command `docker compose down`.
 4. Restart the images by running the command `docker compose up -d`.
 
-
 ## Next step
 
 After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
-

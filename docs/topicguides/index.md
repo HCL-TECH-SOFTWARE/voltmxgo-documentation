@@ -4,9 +4,9 @@ This section discusses and explains topics and concepts about Volt MX Go to help
 
 - [Introducing Volt MX Go](introvoltmxgo.md)
 
-- [VoltFormula](voltformulaintro.md)
+- [VoltFormula](voltformula/index.md)
 
-- [Domino Adapter](dominoadapter.md)
+- [Domino Adapter](adapter/index.md)
 
 - [Design Import](designimportintro.md)
 

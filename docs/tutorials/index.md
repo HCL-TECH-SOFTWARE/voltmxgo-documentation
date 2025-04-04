@@ -15,6 +15,3 @@ The tutorials introduce you to Volt MX Go and the complete cycle of using its co
 - [Trainings and webinars](webinar.md)
 
 - [Video tutorials and demonstrations](video.md)
-
-
-

@@ -96,7 +96,7 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 
 
         !!!note
-            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../howto/operation/obtainauthenticationtoken.md) as your authentication token or password.
 
         If you get an error message similar to the following:
 

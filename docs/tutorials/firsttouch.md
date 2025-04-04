@@ -6,7 +6,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 - You have completed the [Volt MX Go installation](installation.md).
 
-- You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+- You have created your [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 
 - If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt MX Go Foundry** issue in [Troubleshooting](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
 
@@ -116,12 +116,12 @@ You can now view and explore the First Touch Recipe Catalog app.
 
 !!!tip
     - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Volt MX Go Foundry to view the app’s Foundry configuration.
-    - To launch the app again from Volt MX Go Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.    
+    - To launch the app again from Volt MX Go Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.
 
 ## Additional information
 
 - To learn more about the app, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
 
-- To know how to import the First Touch Recipe app project to Volt MX Go Iris, see [Import First Touch into Volt MX Go Iris](../howto/importft.md).
+- To know how to import the First Touch Recipe app project to Volt MX Go Iris, see [Import First Touch into Volt MX Go Iris](../howto/firsttouch/importft.md).
 
-- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/FTnsfupdate.md).
+- To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/firsttouch/FTnsfupdate.md).

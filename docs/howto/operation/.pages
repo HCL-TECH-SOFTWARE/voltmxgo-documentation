@@ -1,0 +1,7 @@
+nav:
+    - index.md
+    - obtainauthenticationtoken.md
+    - checkstat.md
+    - codegen.md
+    - insertattachments.md   
+    - logginglevel.md
