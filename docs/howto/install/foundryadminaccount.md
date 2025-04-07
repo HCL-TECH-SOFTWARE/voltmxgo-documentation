@@ -6,7 +6,7 @@ Guides you in creating an administrator account to log in to Volt MX Go Foundry.
 
 ## Before you begin
 
-You must complete the [Volt MX Go installation](../../tutorials/installation.md).
+You must complete the [Volt MX Go installation](../../tutorials/installupgrade/index.md).
 
 ## Procedure
 

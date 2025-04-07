@@ -6,7 +6,7 @@ Access Domino REST API Admin UI so you can add and configure a schema, add a sco
 
 ## Before you begin
 
-You must complete the [Volt MX Go installation](../../tutorials/installation.md).
+You must complete the [Volt MX Go installation](../../tutorials/installupgrade/index.md).
 
 ## Procedure
 

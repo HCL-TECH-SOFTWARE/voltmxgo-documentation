@@ -5,11 +5,11 @@
 
 ## About this task
 
-Guides you in uninstalling Volt MX Go plugins from Volt Foundry or Volt Iris to deactivate Volt MX Go features. 
+Guides you in uninstalling Volt MX Go plugins from Volt Foundry or Volt Iris to deactivate Volt MX Go features.
 
 ## Before your begin
 
-You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../../tutorials/installiris.md#install-volt-mx-go-plugin-installer).
+You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../../tutorials/installupgrade/installiris/installiris.md#install-volt-mx-go-plugin-installer).
 
 ## Procedure
 

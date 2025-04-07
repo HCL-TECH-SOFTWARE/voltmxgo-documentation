@@ -19,13 +19,14 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
 
-    - You have completed the [Volt MX Go installation](installation.md).
+    - You have completed the [Volt MX Go installation](installupgrade/index.md).
     - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md). 
     - You have [created an Environment in Volt MX Go Foundry](adaptertutorial.md#add-an-environment). 
 
     **Domino/Domino REST API prerequisites**
 
-    !!!tip
+    !!! tip
+
         Contact your Domino administrator/Domino REST API administrator for any needed assistance.
 
     - You have set up Domino REST API in the Domino server containing the Domino database you are importing.
@@ -48,7 +49,8 @@ Kindly follow and complete the prerequisites that apply to your situation.
         
         - having your configured scope and `$SETUP` added to the *Scope* field.
 
-            !!!tip
+            !!! tip
+                
                 If you want all the scopes in Domino REST API to be available to Design Import, just add `$DATA` and `$SETUP` to the **Scope** field.
 
         - having a placeholder callback URL that you will replace with the callback URL from the Identity Service you will create using the Design Import Wizard 
@@ -62,7 +64,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
     
-    - You have completed the [installation of Volt MX Go Iris](../tutorials/installiris.md).
+    - You have completed the [installation of Volt MX Go Iris](../tutorials/installupgrade/installiris/installiris.md).
     - You have contacted the Volt MX Go Foundry administrator to:
         - have access to Volt MX Go Foundry 
         - have a Volt MX Go Foundry admin account
@@ -96,14 +98,15 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
         - provide you with Domino REST API URL, and the App ID and App Secret of the OAuth application.
 
-    !!!tip 
+    !!! tip
+
         Refer to the **Domino REST API prerequisites for Design Import** video in the [Video tutorial](video.md) section to learn more.
         
 ## Launch Volt MX Go Iris
 
 1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt MX Go Iris home icon.
 
-    ![Volt MX Go Iris icon](../assets/images/irisicon.png) 
+    ![Volt MX Go Iris icon](../assets/images/irisicon.png)
 
 2. Configure the login settings.
 

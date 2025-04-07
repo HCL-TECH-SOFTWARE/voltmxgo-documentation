@@ -10,17 +10,17 @@ Guides you in installing Domino REST API.
 
 ### Procedure
 
-1. Download the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Domino REST API documentation.
+1. Download the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Domino REST API documentation.
 
 2. Follow the links to the installation procedure based on your preferred installation platform:
 
-    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    - [For Windows](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/win.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    - [For Linux](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/linux.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+3. Complete all the [post-installation tasks](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/postinstallation.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
-For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} page in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} page in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 ## Install Volt MX Go Foundry
 
@@ -35,7 +35,7 @@ For more information, see the [Installation and configuration](https://opensourc
 - You have downloaded the Volt Foundry installer. The minimum supported version is v9.5.18.0.
 - You have downloaded the Volt MX Go Plugin Installer.
 
-For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21).
+For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21).
 
 #### Install Volt Foundry
 
@@ -48,13 +48,13 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
     
     - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see the following license activation guides on the Volt MX documentation:
 
-        [For Volt Foundry version 9.5.20.0 and onwards](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+        [For Volt Foundry version 9.5.20.0 and onwards](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-        [For Volt Foundry versions earlier than 9.5.20.0](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} 
+        [For Volt Foundry versions earlier than 9.5.20.0](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} 
 
-- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 #### Install Volt MX Go Plugin Installer
 
@@ -89,31 +89,32 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
     1. Double-click the installer file. The **Volt MX Go Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
-        ![Introduction](../assets/images/wininstall1.png){: style="height:80%;width:80%"}
+        ![Introduction](../../../assets/images/wininstall1.png){: style="height:80%;width:80%"}
 
     1. On the **License Agreement**, read the agreement details, select the **I accept the terms of the License agreement** checkbox, and then click **Next**.
 
-        ![License Agreement](../assets/images/wininstall2.png){: style="height:80%;width:80%"}
+        ![License Agreement](../../../assets/images/wininstall2.png){: style="height:80%;width:80%"}
 
     1. On the **Choose Install Folder**, click **Next** if you agree with the indicated default location.
 
-        ![Choose Install Folder](../assets/images/wininstall3.png){: style="height:80%;width:80%"} 
+        ![Choose Install Folder](../../../assets/images/wininstall3.png){: style="height:80%;width:80%"} 
 
-        !!!tip
+        !!! tip
+
             - If you want a different installation location, click **Choose** to select your preferred installation location or directly enter your preferred installation location in the text box, and then click **Next**.
             - If you selected a different installation location and decided to revert to the default location, click **Restore Default Folder** and then click **Next**.
 
     1. On the **Pre-Installation Summary**, review the details and then click **Install**.
 
-        ![Pre-Installation Summary](../assets/images/wininstall4.png){: style="height:80%;width:80%"}
+        ![Pre-Installation Summary](../../../assets/images/wininstall4.png){: style="height:80%;width:80%"}
 
     1. On the **Installing**, see the installation status.
 
-        ![Installing](../assets/images/wininstall5.png){: style="height:80%;width:80%"}
+        ![Installing](../../../assets/images/wininstall5.png){: style="height:80%;width:80%"}
 
     1. On the **Install Complete**, click **Done**.
 
-        ![Install Complete](../assets/images/wininstall6.png){: style="height:80%;width:80%"}
+        ![Install Complete](../../../assets/images/wininstall6.png){: style="height:80%;width:80%"}
 
 #### Install Volt MX Go plugins
 
@@ -134,7 +135,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         The installation tool opens on the Terminal showing the available options.
 
-        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
+        ![Installation options](../../../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     3. Enter **1** to install Volt MX Go plugins in Volt Foundry and press **Enter**.
     4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press **Enter**.
@@ -153,7 +154,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         A Command Prompt window opens showing the available options.
 
-        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
+        ![Installation options](../../../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     2. Enter **1** to install Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 
@@ -173,16 +174,16 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 #### Before you begin
 
-- You have [obtained the authentication token from the HCL Container Repository](../howto/operation/obtainauthenticationtoken.md).
-- You have completed all the installation [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](./portaldownload.md#for-volt-mx-go-v21).
+- You have [obtained the authentication token from the HCL Container Repository](../../../howto/operation/obtainauthenticationtoken.md).
+- You have completed all the installation [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21).
 
 #### Procedure
 
 1. Click the link to the installation guide and follow the installation steps.
 
-    [Volt Foundry Container Helm installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    [Volt Foundry Container Helm installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
     !!!warning "Important"
         Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
@@ -198,22 +199,23 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
 ### For single container solution
 
-For more information, see [Volt Foundry Single Container Solution](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Volt MX Documentation.
+For more information, see [Volt Foundry Single Container Solution](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Volt MX Documentation.
 
 #### Before you begin
 
 - You have [obtained the authentication token from the HCL Container Repository](../howto/operation/obtainauthenticationtoken.md).
-- You have completed all the [installation prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../tutorials/portaldownload.md#for-volt-mx-go-v21).
+- You have completed all the [installation prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21).
 
 #### Procedure
 
-1. Click the link to the installation guide and follow the installation steps. 
+1. Click the link to the installation guide and follow the installation steps.
 
-    [Volt Foundry Single Container Solution installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    [Volt Foundry Single Container Solution installation guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-    !!!warning "Important"
+    !!! warning "Important"
+
         - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
         - Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
 
@@ -229,4 +231,4 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
 ## Next step
 
-After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](installiris.md).
+After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](../installiris/installiris.md).

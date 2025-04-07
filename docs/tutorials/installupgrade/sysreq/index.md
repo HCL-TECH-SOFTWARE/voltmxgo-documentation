@@ -1,4 +1,4 @@
-# Overview
+# System requirements
 
 This section describes the minimum system requirements for deploying Volt MX Go.
 

@@ -1,0 +1,4 @@
+nav:
+   - index.md
+   - Volt MX GO v2.1: sysreq21.md
+   - Volt MX Go v2.0.4 or earlier: sysreq.md

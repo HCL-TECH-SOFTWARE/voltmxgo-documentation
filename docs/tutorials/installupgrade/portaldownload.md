@@ -14,7 +14,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 === "Latest release"
 
-    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
     2. On the landing page, click **Sign in**.
     3. On the sign-in page, log in using your credentials.
     4. On the **Software Downloads** page, click **HCL Volt MX**.
@@ -24,7 +24,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 === "Earlier releases"
 
-    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
     2. On the landing page, click **Sign in**.
     3. On the sign-in page, log in using your credentials.
     4. On the **Software Downloads** page, click **HCL Volt MX**.
@@ -55,7 +55,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 === "Latest release"
 
-    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
     2. On the landing page, click **Sign in**.
     3. On the sign-in page, log in using your credentials.
     4. On the **Software Downloads** page, click **HCL Volt MX**.
@@ -65,7 +65,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 === "Earlier releases"
 
-    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+    1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
     2. On the landing page, click **Sign in**.
     3. On the sign-in page, log in using your credentials.
     4. On the **Software Downloads** page, click **HCL Volt MX**.
@@ -79,7 +79,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 #### For Volt MX Go Plugin Installer
 
-1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 2. On the landing page, click **Sign in**.
 3. On the sign-in page, log in using your credentials.
 4. On the **Software Downloads** page, click **HCL Volt MX**.
@@ -108,7 +108,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 ### From HCL Software License & Download Portal
 
-1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 2. On the sign-in page, enter your username and click **Next**. The **License & Download Portal** home page opens.
 
@@ -192,7 +192,7 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 ### From My HCLSoftware portal
 
-1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 2. On the landing page, click **Sign in**.
 3. On the sign-in page, log in using your credentials.
 4. On the **Software Downloads** page, click **HCL Volt MX**.
@@ -206,7 +206,7 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 ### From HCL Software License & Download Portal
 
-1. Go to [HCL Software License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+1. Go to [HCL Software License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 2. On the sign-in page, enter your username and click **Next**. The **License & Download Portal** home page opens.
 3. On the **License & Download Portal** home page, go to **Your Downloads** and search for and click **HCL Volt MX**.
@@ -231,8 +231,8 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 ## Next step
 
-- To install the server components of Volt MX Go, proceed to [Install Volt MX Go server components](installfoundryindex.md).
+- To install the server components of Volt MX Go, proceed to [Install Volt MX Go server components](installserver/index.md).
 
-- To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](versupgradeindx.md).
+- To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](upgradeserver/index.md).
 
-- To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).
+- To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](installiris/index.md).

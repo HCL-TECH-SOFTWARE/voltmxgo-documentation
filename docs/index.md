@@ -18,11 +18,11 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ---
 ## Get started
 
-- [System requirements](tutorials/sysreq.md)
+- [System requirements](tutorials/installupgrade/sysreq/index.md)
 
 - [Compatibility matrix](references/compatibilitymatrix.md)
 
-- [Installation and upgrade](tutorials/installation.md)
+- [Installation and upgrade](tutorials/installupgrade/index.md)
 
 - [Tutorials](tutorials/index.md)
 

@@ -4,7 +4,7 @@ This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert for
 
 ## Before you begin
 
-- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Go installation](installupgrade/index.md).
 
 - You have created your [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 
@@ -14,8 +14,9 @@ This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert for
 
 1. Open Volt MX Go Iris. When the **Sign-in** dialog opens, close it.
 
-    !!!note
-        If you have already configured the login settings while performing the other tutorials, enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in. 
+    !!! note
+
+        If you have already configured the login settings while performing the other tutorials, enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page and click **Sign In**. You don't need to execute the steps below for configuring the login settings and logging in.
 
 2. Configure the login settings.
 
@@ -42,7 +43,8 @@ This tutorial shows you how to use VoltFormula in Volt MX Go Iris to convert for
 
 ## Open VoltFormula using the Action Editor
 
-!!!Tip
+!!! tip
+
     To see your Project, click in **Design** tab beside the **Storyboard** tab.
 
 1. Open your **Project**.

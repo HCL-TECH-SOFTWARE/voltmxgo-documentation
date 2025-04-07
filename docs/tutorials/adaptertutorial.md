@@ -19,13 +19,14 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
 
-    - You have completed the [Volt MX Go installation](installation.md).
+    - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
     - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 
     **Domino/Domino REST API prerequisites**
 
-    !!!tip
+    !!! tip
+
         Contact your Domino administrator/Domino REST API administrator for any needed assistance.
 
     - You have set up Domino REST API in the Domino server containing the Domino database you are importing.
@@ -50,7 +51,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
     
-    - You have completed the [Volt MX Go installation](installation.md).
+    - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
     - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 

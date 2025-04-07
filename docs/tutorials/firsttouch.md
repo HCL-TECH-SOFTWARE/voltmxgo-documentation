@@ -4,7 +4,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
 ## Before you begin
 
-- You have completed the [Volt MX Go installation](installation.md).
+- You have completed the [Volt MX Go installation](installupgrade/index.md).
 
 - You have created your [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 
@@ -16,8 +16,8 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 - You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/IdP/configuredrapiIdP.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-    
-- You have [downloaded the FirstTouchRecipes.nsf.zip](portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
+
+- You have [downloaded the FirstTouchRecipes.nsf.zip](installupgrade/portaldownload.md) file, extracted the NSF file from the zip file, and copied the NSF file to the root of the data directory of your Domino server.
 
 <!--
 
@@ -95,9 +95,8 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 4. Wait for the completion of the installation. Once completed, a **Congratulations!** dialog appears confirming the successful installation of the First Touch app and the verification of the connection to the Domino database via Domino REST API.
 
     ![Congratulations dialog](../assets/images/firsttouchcongrats.png){: style="height:60%;width:60%"}
- 
 
-5. On the **Congratulations!** dialog, click **Launch** to launch the First Touch Recipe Catalog app. The First Touch Recipe Catalog app opens in another tab. 
+5. On the **Congratulations!** dialog, click **Launch** to launch the First Touch Recipe Catalog app. The First Touch Recipe Catalog app opens in another tab.
 6. Click **Sign In**.
 7. On the **HCL Domino Login** page, enter your Domino REST API username and password, and click **Login**.
 
@@ -110,11 +109,12 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
     ![Permission requested](../assets/images/ftpermissionreq.png){: style="height:60%;width:60%"}
  
-You can now view and explore the First Touch Recipe Catalog app. 
+You can now view and explore the First Touch Recipe Catalog app.
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
 
-!!!tip
+!!! tip
+
     - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Volt MX Go Foundry to view the app’s Foundry configuration.
     - To launch the app again from Volt MX Go Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.
 

@@ -1,4 +1,4 @@
-# Installation overview
+# Install Volt MX Go server components
 
 The topic guides you in installing the following server components of Volt MX Go:
 
@@ -15,7 +15,7 @@ The topic guides you in installing the following server components of Volt MX Go
     
     - Using this installation option would require you to use your own Domino server.
     
-    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreqindex.md).  
+    - Before starting the installation, make sure to verify that you meet the [System requirements](sysreq/index.md).  
 
 - [For Volt MX Go v2.1](installdrapi.md)
 - [For Volt MX Go v2.0.4 or earlier](nativeinstallers.md)

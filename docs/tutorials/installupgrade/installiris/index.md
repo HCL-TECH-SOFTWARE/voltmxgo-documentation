@@ -1,4 +1,4 @@
-# Installation overview
+# Install and upgrade Volt MX Go Iris
 
 Perform a new or an upgrade installation of Volt MX Go Iris.
 

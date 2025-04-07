@@ -10,9 +10,9 @@ Guides you in upgrading Volt MX Go server components.
 
 ### Procedure
 
-1. Download the required version of the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Domino REST API documentation.
+1. Download the required version of the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Domino REST API documentation.
 
-2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} based on your installation platform.
+2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} based on your installation platform.
 
 ## Upgrade Volt MX Go Foundry
 
@@ -30,9 +30,9 @@ The installer doesn't support automatic backups of database and other artifacts.
 
 - Back up your databases and server artifacts.
 
-- Download the latest Volt Foundry installer based on your installation platform. The minimum supported version is v9.5.18.0. For more information, see [Download HCL Volt MX Go installers](portaldownload.md#for-volt-mx-go-v21).
+- Download the latest Volt Foundry installer based on your installation platform. The minimum supported version is v9.5.18.0. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21).
 
-- Download and install the latest Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](installdrapi.md#install-volt-mx-go-plugin-installer).
+- Download and install the latest Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../installserver/installdrapi.md#install-volt-mx-go-plugin-installer).
 
 - Ensure that the Volt Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
@@ -52,13 +52,13 @@ The installer doesn't support automatic backups of database and other artifacts.
         
         - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see the following license activation guides on the Volt MX documentation:
 
-            [For Volt Foundry version 9.5.20.0 and onwards](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+            [For Volt Foundry version 9.5.20.0 and onwards](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-            [For Volt Foundry versions earlier than 9.5.20.0](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} 
+            [For Volt Foundry versions earlier than 9.5.20.0](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} 
 
-    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
     <!-- [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html)-->
 
 #### Install Volt MX Go plugins
@@ -80,7 +80,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         The installation tool opens on the Terminal showing the available options.
 
-        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
+        ![Installation options](../../../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     3. Enter **1** to install Volt MX Go plugins and press **Enter**.
     4. Specify the Tomcat WebApps directory by entering the number corresponding to your installation or enter the full path to your Tomcat WebApps directory, and then press **Enter**.
@@ -99,7 +99,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         A Command Prompt window opens showing the available options.
 
-        ![Installation options](../assets/images/plugintool.png){: style="height:80%;width:80%"}
+        ![Installation options](../../../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     2. Enter **1** to install Volt MX Go plugins and press **Enter**.
     3. Specify the Tomcat WebApps directory by entering the number corresponding to your installation, or enter the full path to your Tomcat WebApps directory, then press **Enter**. 
@@ -122,15 +122,15 @@ There are regular updates for Volt Foundry. These updates are major release vers
 
 #### Before you begin
 
-You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](./portaldownload.md#for-volt-mx-go-v21).
+You have downloaded the Volt Foundry Helm charts. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21).
 
 #### Procedure
 
 1. Click the link to the upgrade guide based on your requirement and follow the steps. 
 
-    - [Upgrade Individual Foundry Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    - [Upgrade Individual Foundry Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-individual-foundry-components "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-    - [Upgrade All Foundry Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+    - [Upgrade All Foundry Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm_PostInstallation.html#how-to-upgrade-all-foundry-components "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
     !!!warning "Important"
         Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
@@ -146,21 +146,4 @@ You have downloaded the Volt Foundry Helm charts. For more information, see [Dow
 
 ## Next step
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).
-
-<!--# Upgrade Domino REST API
-
-Guides you in upgrading Domino REST API to the latest version. 
-
---8<-- "drapiversion.md"
-
-## Procedure
-
-1. Downloaded the required version of the Domino REST API installer. For more information, see [Download the Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html#download-the-domino-rest-api) in the HCL Domino REST API documentation.
-
-2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html) in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html) based on your installation platform.
-
-## Next step
-
-Check version compatibility between Domino REST API and Volt MX Go. If there is a need to upgrade Volt MX Go Foundry, proceed to [Upgrade Volt MX Go Foundry](versionupgrade.md). 
--->
+After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](../installiris/index.md).
