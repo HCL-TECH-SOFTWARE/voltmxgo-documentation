@@ -107,7 +107,7 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
         helm repo update
         ```
 
-        --8<-- "helmversion.md"
+        See [Volt MX Go and Helm chart version compatibility](../../../references/compatibilitymatrix.md#volt-mx-go-and-helm-chart-version-compatibility) to know the latest Helm chart version.
 
     2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
@@ -143,14 +143,14 @@ For installing Volt MX Go Foundry, click the link to the installation guide corr
 
         !!! note
 
-            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../../../howto/obtainauthenticationtoken.md) as your authentication token or password.
+            Use the **CLI secret** value you saved from [obtaining authentication token from HCL Container Repository](../../../howto/operation/obtainauthenticationtoken.md) as your authentication token or password.
 
     5. Locate the following line in the file and add your Volt MX Go Foundry server domain name setting:
 
         ```{ .yaml .no-copy }
         serverDomainName:
         ```
-        
+
         Whatever server domain name you specify here, you need to ensure that it's resolvable. There is no additional work if you have already registered your server domain name in DNS. However, if you haven't registered it, you must add it to the server's `/etc/hosts` file<!--[Ensure Foundry Hostnames are resolvable](prereqindex.md#for-first-time-installation-of-volt-mx-go)-->, substituting your server domain name. Additionally, you must make the same updates in k3s's coredns config map <!--as described in [For K3s only](prereqindex.md#for-first-time-installation-of-volt-mx-go)-->and substituting your server domain name.
 
     6. Locate the following lines in the file and add your Volt MX Go Foundry database details:

@@ -6,9 +6,7 @@ Guides you in upgrading Volt MX Go server components.
 
 ### Before you begin
 
-!!! warning "Important"
-
-    Make sure to check [version compatibility](../../../references/compatibilitymatrix.md) between Volt MX Go and Domino REST API.
+--8<-- "drapiversion.md"
 
 ### Procedure
 
@@ -116,7 +114,8 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
         helm repo update
         ```
 
-        --8<-- "helmversion.md"
+        See [Volt MX Go and Helm chart version compatibility](../../../references/compatibilitymatrix.md#volt-mx-go-and-helm-chart-version-compatibility) to know the latest Helm chart version.
+        
 
     2. Run the following commands to download the Foundry charts, unpack the files, and move the `values.yaml` file to the current directory:
 
