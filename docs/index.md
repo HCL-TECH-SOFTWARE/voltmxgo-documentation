@@ -18,11 +18,11 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ---
 ## Get started
 
-- [System requirements](tutorials/sysreq.md)
+- [System requirements](tutorials/installupgrade/sysreq/index.md)
 
 - [Compatibility matrix](references/compatibilitymatrix.md)
 
-- [Installation and upgrade](tutorials/installation.md)
+- [Installation and upgrade](tutorials/installupgrade/index.md)
 
 - [Tutorials](tutorials/index.md)
 
@@ -31,7 +31,7 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 ---
 ## What's new
 
-For the latest release information about Volt MX Go, see [What's new](references/whatsnew/whatisnew.md).
+For the latest release information about Volt MX Go, see [What's new](references/whatsnew/index.md).
 
 ---
 
@@ -59,5 +59,4 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 [References](references/index.md) - Technical references and descriptions on using Volt MX Go
 
 !!!tip
-    For more information on using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md). 
-
+    For more information on using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md).

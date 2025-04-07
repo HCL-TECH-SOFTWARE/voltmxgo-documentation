@@ -1,45 +1,9 @@
 nav:
     - index.md
-    - Install:
-        - howtoinstall.md
-        - foundryadminaccount.md
-        - accessdrapi.md
-        - connectdominofromnotes.md
-        - drapiingress.md
-    - Design Import:
-        - diindex.md
-        - diimport.md
-        - dicreatenativeapp.md
-        - configmobile.md
-    #    - deleteform.md
-        - diagents.md
-    - VoltFormula:
-        - vfindex.md
-        - configrosetta.md
-        - regunregconfig.md
-        - clearfunction.md  
-        - importvoltformula.md
-        - VFHikes.md
-    - First Touch:
-        - ftindex.md
-        - Import First Touch: importft.md
-        - FTnsfupdate.md
-    - Operation:
-        - genindex.md
-        - obtainauthenticationtoken.md
-        - checkstat.md
-        - codegen.md
-        - insertattachments.md   
-        - logginglevel.md
-    - Uninstall:
-        - uninstall.md
-        - k3suninstall.md
-        - rancheruninstall.md
-        - uninstallfirsttouch.md
-        - uninstallplugin.md
-        - Uninstall Volt Foundry for Linux: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Uninstalling_VoltMX_Foundry.html
-        - Uninstall Volt Foundry for Windows: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Uninstalling_VoltMX_Foundry.html
-        - Uninstall Volt Foundry installed on supported Kubernetes platform: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#uninstalling-foundry
-        - Uninstall Volt Iris for Windows: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Uninstalling%20VoltMX%20Iris.html
-        - Uninstall Volt Iris for Mac: https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Uninstalling%20VoltMX%20Iris.html
-    
+    - Install: install
+    - Design Import: designimport
+    - VoltFormula: voltformula     
+    - First Touch: firsttouch
+    - Operation: operation
+    - Uninstall: uninstall
+       

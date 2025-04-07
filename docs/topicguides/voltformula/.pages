@@ -1,0 +1,11 @@
+nav:
+    - index.md
+#   - rosettavmxgo.md
+    - rosettaapischema.md
+    - rosettaconverterconfig.md
+    - rosettaapi.md
+    - declvariables.md
+    - extendrosettapi.md
+    - selectfl.md
+    - Coding exercise examples: vfcodingguides.md
+    - Useful tips and information: vfcodingpractices.md 
