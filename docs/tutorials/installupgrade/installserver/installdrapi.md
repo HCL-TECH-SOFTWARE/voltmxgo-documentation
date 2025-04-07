@@ -168,7 +168,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 !!! note
 
     - After installing the Volt MX Go plugins, open Volt Foundry to verify you see the Volt MX GO/First Touch banner. 
-    - For further reference, see the ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Installing Volt MX Go v2.1 for Volt Foundry](https://www.youtube.com/watch?v=pVexsNw5st0 "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"} video demonstration.
+    - For further reference, see the ![Play button icon](../../../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Installing Volt MX Go v2.1 for Volt Foundry](https://www.youtube.com/watch?v=pVexsNw5st0 "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"} video demonstration.
 
 ### For using Helm charts on a supported Kubernetes platform
 
@@ -203,7 +203,7 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
 #### Before you begin
 
-- You have [obtained the authentication token from the HCL Container Repository](../howto/operation/obtainauthenticationtoken.md).
+- You have [obtained the authentication token from the HCL Container Repository](../../../howto/operation/obtainauthenticationtoken.md).
 - You have completed all the [installation prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21).
