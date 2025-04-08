@@ -67,6 +67,7 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
         - If you see a **warning** icon appear beside any form, form field, view, or agent, click the **Reports** folder icon and click a report to open a detailed report explaining the cause of the warning.
         - You can click the **Refresh** icon to update the scope in case there are changes in the Domino REST API schema without exiting the wizard.
         - You can use the **All**, **Active**, **Inactive**, and **Unsupported** buttons in each tab to filter what's displayed.
+        - You can use the **Search** box to find forms, fields, actions, views, and agents. The search results will automatically update as you type the letters of your keyword in the **Search** box. If you want to clear the search, simply click the clear icon.
 
     1. Select the **scope** you want to use from the drop-down list.
 
@@ -76,24 +77,15 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
     1. Click the **Forms** tab and select the forms, fields, and actions you want to include in the import.
 
-        ![Design Import Wizard dialog](../../assets/images/discopeformv210.png)
-        <!-- image for v204
-        ![Design Import Wizard dialog](../assets/images/discopeform.png)
-        -->
+        ![Design Import Wizard dialog](../../assets/images/discopeform.png)
 
     1. Click the **Views** tab and select the views and actions you want to include in the import.
 
-        ![Design Import Wizard dialog](../../assets/images/didbviewsv210.png)
-        <!-- image for v204
-        ![Design Import Wizard dialog](../assets/images/didbviews.png)
-        -->
+        ![Design Import Wizard dialog](../../assets/images/didbviews.png)
 
     1. Click the **Agents** tab and select the agents you want to include in the import.
 
-        ![Design Import Wizard dialog](../../assets/images/diagentsv210.png)
-        <!-- image for v204
-        ![Design Import Wizard dialog](../assets/images/diagents.png)
-        -->
+        ![Design Import Wizard dialog](../../assets/images/diagents.png)
 
     1. Click **Next**.
 
@@ -118,11 +110,7 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
         - Click the **Show only with errors** toggle in a specific tab to the on position to see all elements with the **error** icon in that specific tab. The **Show failed imports** toggle won't be visible in a specific tab when there are no failed imports in that particular tab.
         - You can click **view report** to see a results report of imported forms, views, and agents in a new window.
 
-    ![Design Import Wizard dialog](../../assets/images/diresultv210.png) 
-
-    <!-- image for v204
-    ![Design Import Wizard dialog](../assets/images/diresult.png) 
-    --> 
+    ![Design Import Wizard dialog](../../assets/images/diresult.png)
 
 Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt MX Go Iris.
 
