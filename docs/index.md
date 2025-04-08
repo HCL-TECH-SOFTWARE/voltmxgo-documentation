@@ -29,11 +29,6 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 - [Trainings and webinars](tutorials/webinar.md)
 
 ---
-## What's new
-
-For the latest release information about Volt MX Go, see [What's new](references/whatsnew/index.md).
-
----
 
 ## Quick links
 

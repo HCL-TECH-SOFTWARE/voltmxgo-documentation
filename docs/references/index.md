@@ -2,10 +2,6 @@
 
 Provides technical references and descriptions for using Volt MX Go.
 
-## What's new
-
-Check the [latest information](whatsnew/index.md) about Volt MX Go.
-
 ## System requirements
 
 Check the minimum [System requirements](../tutorials/installupgrade/sysreq/index.md) for deploying Volt MX Go.
