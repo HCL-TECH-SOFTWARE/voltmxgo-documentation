@@ -2,7 +2,7 @@
 
 The tutorial guides you through the Domino Adapter process in Volt MX Go. You will create an app in Volt MX Go Foundry and connect the app to your Domino database as an endpoint via the Domino REST API. You will then configure a data model and test the methods, including standard CRUD operations, for interacting with the data model.
 
-For more information, see [Data models](../topicguides/datamodel.md) and [Methods](../topicguides/method.md).  
+For more information, see [Data models](../topicguides/adapter/datamodel.md) and [Methods](../topicguides/adapter/method.md).  
 
 At the end of this tutorial, you can manually create an app in Volt MX Go Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API. You will also be able to test the methods for interacting with the data model.
 
@@ -19,13 +19,14 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
 
-    - You have completed the [Volt MX Go installation](installation.md).
+    - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
-    - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+    - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 
     **Domino/Domino REST API prerequisites**
 
-    !!!tip
+    !!! tip
+
         Contact your Domino administrator/Domino REST API administrator for any needed assistance.
 
     - You have set up Domino REST API in the Domino server containing the Domino database you are importing.
@@ -50,9 +51,9 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
     
-    - You have completed the [Volt MX Go installation](installation.md).
+    - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
-    - You have a [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+    - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
 
     **Domino/Domino REST API prerequisites**
 
@@ -210,9 +211,8 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*. 
 
-        !!! note
-
-            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/method.md).   
+        !!!note
+            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/adapter/method.md).   
 
     !!!tip
         To test the connection parameters, select the environment you added from the **Select an Environment** drop-down list and then click **Test Connection**. You will see a *Connection Successful* message if the configured connection parameters are correct.
@@ -277,7 +277,7 @@ The following produres enable you to test the different methods for interacting 
 
 4. Click **Save** after viewing.
 
-For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/method.md#supported-odata-query-parameters-for-view-based-get-method).
+For more information on supported parameters, see [Supported OData query parameters for form-based GET method](../topicguides/adapter/method.md#supported-odata-query-parameters-for-form-based-get-method) and [Supported OData query parameters for view-based GET method](../topicguides/adapter/method.md#supported-odata-query-parameters-for-view-based-get-method).
 
 ### Test the POST method by creating a record
 
