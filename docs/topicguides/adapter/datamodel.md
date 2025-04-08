@@ -222,5 +222,5 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
         When performing the GET method for **AttachmentsInfo**, an error is thrown if you don't provide the UNID of the document.
 
-        For more information on performing the GET method, see [Test the GET method by viewing a record](../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
+        For more information on performing the GET method, see [Test the GET method by viewing a record](../../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
            
