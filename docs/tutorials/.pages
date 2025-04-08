@@ -1,46 +1,46 @@
 nav:
     - index.md
-    - Install and upgrade:
-        - installation.md
-        - System requirements:
-            - sysreqindex.md
-            - Volt MX GO v2.1 and later: sysreq21.md
-            - Volt MX Go v2.0.4 and earlier: sysreq.md
-#        - Install and upgrade Volt MX Go in a production environment:
-        - portaldownload.md
-#        - Install and upgrade Volt MX Go:
-#            - prerequisite.md
-#            - portaldownload.md
-        - Install Volt MX Go server components: 
-            - installfoundryindex.md
-            - installdrapi.md
-            - nativeinstallers.md
-#                - Install Volt MX Go Foundry: nativeinstallers.md
-        - Upgrade Volt MX Go server components: 
-            - versupgradeindx.md
-            - versupgradedrapi.md
-            - versionupgrade.md       
-#        - Install and upgrade Volt MX Go in a development environment:
-#            - testdeploy.md
-#            - obtainauthenticationtoken.md
-#            - For Volt MX Go v2.1: testenvindex.md
-#            - For Volt MX Go v2.0.4 or earlier: 
-#                - containerdeployment.md
-#                - Deploy Kubernetes: deploykubernetes.md
-#                - Install and configure K3s: k3sinstall.md
-#                - Install Rancher Desktop: installrancher.md
-#                - Complete preparatory procedure: prereqindex.md
-#                - For first time installation of Volt MX Go: prereq.md
-#                - For upgrading existing installation of Volt MX Go: prereqnew.md
-#               - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
-#                - Install Domino REST API: downloadhelmchart.md
-#                - Install MySQL for Volt MX Go Foundry: installmysqlfoundry.md
-#                - Install Volt MX Go Foundry: installfoundry.md
-#                - Upgrade Volt MX Go server components: versionupgrade1.md
-        - Install and upgrade Volt MX Go Iris: 
-            - installirisindex.md
-            - installiris.md
-            - upgradeiris.md
+    - Install and upgrade: installupgrade
+#        - installation.md
+#        - System requirements:
+#            - sysreqindex.md
+#            - Volt MX GO v2.1: sysreq21.md
+#            - Volt MX Go v2.0.4 or earlier: sysreq.md
+##        - Install and upgrade Volt MX Go in a production environment:
+#        - portaldownload.md
+##        - Install and upgrade Volt MX Go:
+##            - prerequisite.md
+##            - portaldownload.md
+#        - Install Volt MX Go server components: 
+#            - installfoundryindex.md
+#            - installdrapi.md
+#            - nativeinstallers.md
+##                - Install Volt MX Go Foundry: nativeinstallers.md
+#        - Upgrade Volt MX Go server components: 
+#            - versupgradeindx.md
+#            - versupgradedrapi.md
+#            - versionupgrade.md       
+##        - Install and upgrade Volt MX Go in a development environment:
+##            - testdeploy.md
+##            - obtainauthenticationtoken.md
+##            - For Volt MX Go v2.1: testenvindex.md
+##            - For Volt MX Go v2.0.4 or earlier: 
+##                - containerdeployment.md
+##                - Deploy Kubernetes: deploykubernetes.md
+##                - Install and configure K3s: k3sinstall.md
+##                - Install Rancher Desktop: installrancher.md
+##                - Complete preparatory procedure: prereqindex.md
+##                - For first time installation of Volt MX Go: prereq.md
+##                - For upgrading existing installation of Volt MX Go: prereqnew.md
+##               - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
+##                - Install Domino REST API: downloadhelmchart.md
+##                - Install MySQL for Volt MX Go Foundry: installmysqlfoundry.md
+##                - Install Volt MX Go Foundry: installfoundry.md
+##                - Upgrade Volt MX Go server components: versionupgrade1.md
+#        - Install and upgrade Volt MX Go Iris: 
+#            - installirisindex.md
+#            - installiris.md
+#            - upgradeiris.md
     - firsttouch.md
     - adaptertutorial.md
     - designimport.md

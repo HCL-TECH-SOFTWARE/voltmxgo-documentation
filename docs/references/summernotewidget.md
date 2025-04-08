@@ -19,7 +19,7 @@ Following are some use cases of the Summernote Editor component:
 For more information on components, see [Use Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_UsingComponents.html) and [Creating Applications with Components](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/C_DesigningWorkingWithComponents.html) in the Volt MX documentation.
 
 !!!note
-    When performing code generation of forms, the Summernote Editor component is included only if a rich text field is found on the form in the Domino REST API. For more information on code generation of forms, see [Generate CRUD forms for Object Service](../howto/codegen.md).
+    When performing code generation of forms, the Summernote Editor component is included only if a rich text field is found on the form in the Domino REST API. For more information on code generation of forms, see [Generate CRUD forms for Object Service](../howto/operation/codegen.md).
 
 ## Methods
 

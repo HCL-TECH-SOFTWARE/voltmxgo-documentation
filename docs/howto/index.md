@@ -2,17 +2,14 @@
 
 How-to guides instruct users in completing key goals and tasks related to Volt MX Go.
 
-- [Install](howtoinstall.md)
+- [Install](install/index.md)
 
-- [Design Import](diindex.md)
+- [Design Import](designimport/index.md)
 
-- [VoltFormula](vfindex.md)
+- [VoltFormula](voltformula/index.md)
 
-- [First Touch](ftindex.md)
+- [First Touch](firsttouch/index.md)
 
-- [Operation](genindex.md)
+- [Operation](operation/index.md)
 
-- [Uninstall](uninstall.md)
-
-
-    
+- [Uninstall](uninstall/index.md)
