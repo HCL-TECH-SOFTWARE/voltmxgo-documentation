@@ -142,6 +142,10 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         You get a confirmation statement that the plugins have been installed.
 
+        !!! note
+
+            Starting with Volt MX Go version 2.1.1, the installed Volt Foundry version is checked for compatibility. If incompatible, the plugin installation stops, and users are informed of their current and required minimum Volt Foundry versions. 
+
     6. Enter **7** and press **Enter** to exit the installation tool. 
 
 === "on Windows"
@@ -161,7 +165,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
 
         You get a confirmation statement that the plugins have been installed.
 
-        --8<--"foundryversioncheck.md"
+        !!! note
+
+            Starting with Volt MX Go version 2.1.1, the installed Volt Foundry version is checked for compatibility. If incompatible, the plugin installation stops, and users are informed of their current and required minimum Volt Foundry versions. 
 
     5. Press **Enter** to close the Command Prompt window.
 

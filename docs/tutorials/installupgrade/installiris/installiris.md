@@ -111,7 +111,11 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
     3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
 
-        You get a confirmation statement about the completion of the installation of the plugins. 
+        You get a confirmation statement about the completion of the installation of the plugins.
+
+        !!! note
+
+            Starting with Volt MX Go version 2.1.1, the installed Volt Iris version is checked for compatibility. If incompatible, the plugin installation stops, and users are informed of their current and required minimum Volt Iris versions. 
     
     5. Close the terminal.   
 
@@ -131,7 +135,11 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
     3. Specify an Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
     4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **Enter**. 
 
-        You get a confirmation statement that the plugins have been installed. 
+        You get a confirmation statement that the plugins have been installed.
+
+        !!! note
+
+            Starting with Volt MX Go version 2.1.1, the installed Volt Iris version is checked for compatibility. If incompatible, the plugin installation stops, and users are informed of their current and required minimum Volt Iris versions. 
 
     5. Press **Enter** to close the Command Prompt window.
 

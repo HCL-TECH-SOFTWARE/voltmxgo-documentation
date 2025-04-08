@@ -243,7 +243,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     !!! tip
 
-        Use the **Other Metadata** in cases where you want to request Domino information not included in Domino data documents but still necessary for creating a Domino application in Volt MX Go. For more information, see [Other Metadata](../topicguides/datamodel.md#other-metadata).
+        Use the **Other Metadata** in cases where you want to request Domino information not included in Domino data documents but still necessary for creating a Domino application in Volt MX Go. For more information, see [Other Metadata](../topicguides/adapter/datamodel.md#other-metadata).
 
 4. Select the checkboxes corresponding to the forms and view entities you want to import.
 
