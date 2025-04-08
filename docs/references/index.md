@@ -2,17 +2,9 @@
 
 Provides technical references and descriptions for using Volt MX Go.
 
-## What's new
-
-Check the [latest information](whatsnew/whatisnew.md) about Volt MX Go.
-
-<!--
-To know the details in the early access version, see [Early Access Version changes](earlyaccesschanges.md){: target="blank"}.
--->
-
 ## System requirements
 
-Check the minimum [System requirements](../tutorials/sysreq.md) for deploying Volt MX Go.
+Check the minimum [System requirements](../tutorials/installupgrade/sysreq/index.md) for deploying Volt MX Go.
 
 ## Compatibility matrix
 
@@ -22,15 +14,16 @@ Check [version compatibility](compatibilitymatrix.md) between Volt MX Go and Dom
 
 The full specification of the API is available in a structured format in the [Rosetta API reference documentation](../javadoc/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
-For the implementation status, see [Rosetta API implementation status](../javadoc/api_status.html). 
+For the implementation status, see [Rosetta API implementation status](../javadoc/api_status.html).
 
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](../topicguides/vfcodingguides.md) in Volt MX Go Iris.   
+Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodingguides.md) in Volt MX Go Iris.
 
 ## Helm and Kubectl commands
 
-Useful [Helm and Kubectl commands](kubecheatsheet.md) related to [Volt MX Go installation](../tutorials/installation.md).
+Useful [Helm and Kubectl commands](kubecheatsheet.md) related to [Volt MX Go installation](../tutorials/installupgrade/index.md).
+
 ## Logging levels
 
 Describes different [logging levels](reflogginglevels.md) for better monitoring and evaluation of activities and events.
@@ -43,7 +36,7 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- Provides documentation and more information about Domino REST API. 
+- Provides documentation and more information about Domino REST API.
 
 [HCL Domino Documentation](https://help.hcltechsw.com/domino/welcome/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
@@ -51,7 +44,7 @@ Describes different [logging levels](reflogginglevels.md) for better monitoring 
 
 [HCL Software Product Documentation](https://help.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- Provides a complete list of links to the documentation of different HCL Software products. 
+- Provides a complete list of links to the documentation of different HCL Software products.
 
 [VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
@@ -65,7 +58,7 @@ List of [known limitations](knownlimitation.md) of Volt MX Go.
 
 To learn about identified issues and their corresponding workarounds and resolutions, see [Troubleshooting](troubleshoot.md).
 
-## Support 
+## Support
 
 - To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} portal.  
 

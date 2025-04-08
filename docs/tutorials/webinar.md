@@ -32,6 +32,7 @@ The webinar series includes the following webinars:
 
 - ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Build beautiful apps with Volt MX Go and Domino](https://www.youtube.com/watch?v=IqQcBGMcjl4&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=6&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Harnessing the Power of HCL Domino through Foundry APIs](https://www.youtube.com/watch?v=-AwY8Yh3RTU&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=7 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 ## Volt MX Go on HCL Software Marketplace
 
