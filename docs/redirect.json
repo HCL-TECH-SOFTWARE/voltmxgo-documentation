@@ -1,0 +1,10 @@
+{
+  "template": "<tr class=\"lostLinkItem\"><td class=\"title\"></td><td class=\"old\"></td><td class=\"lostLinkItem\"><a href=\"#\">new</a></td></tr>",
+  "sites": [
+    {
+      "title": "Install Volt MX Go Plugin Installer",
+      "old": "tutorials/installiris.html#install-volt-mx-go-plugin-installer",
+      "new": "tutorials/installupgrade/installiris/installiris.html#install-volt-mx-go-plugin-installer"
+    }
+  ]
+}
