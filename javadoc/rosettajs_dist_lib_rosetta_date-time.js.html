@@ -1,0 +1,967 @@
+<!DOCTYPE html><html lang="en" style="font-size:16px"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="resources/favicon.ico"><title>Source: rosettajs/dist/lib/rosetta/date-time.js</title><!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="";baseURL=(baseURL=(baseURL="/docs/voltmxgo/javadoc/").replace(/https?:\/\//i,"")).substr(baseURL.indexOf("/"))</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body data-theme="dark"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 2.1.11</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-modules"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi.html">rosetta-api-drapi</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-api.html">rosetta-converter-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-config.html">rosetta-converter-config</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-classes"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-math-trig.iso.html">iso</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaDRAPIObject.html">rosettaDRAPIObject</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div><div class="sidebar-section-children"><a href="module-statistical.beta.html">beta</a></div><div class="sidebar-section-children"><a href="module-statistical.binom.html">binom</a></div><div class="sidebar-section-children"><a href="module-statistical.chiSq.html">chiSq</a></div><div class="sidebar-section-children"><a href="module-statistical.confidence.html">confidence</a></div><div class="sidebar-section-children"><a href="module-statistical.coVariance.html">coVariance</a></div><div class="sidebar-section-children"><a href="module-statistical.expon.html">expon</a></div><div class="sidebar-section-children"><a href="module-statistical.f.html">f</a></div><div class="sidebar-section-children"><a href="module-statistical.logNorm.html">logNorm</a></div><div class="sidebar-section-children"><a href="module-statistical.mode.html">mode</a></div><div class="sidebar-section-children"><a href="module-statistical.norm.html">norm</a></div><div class="sidebar-section-children"><a href="module-statistical.percentile.html">percentile</a></div><div class="sidebar-section-children"><a href="module-statistical.percentRank.html">percentRank</a></div><div class="sidebar-section-children"><a href="module-statistical.poisson.html">poisson</a></div><div class="sidebar-section-children"><a href="module-statistical.quartile.html">quartile</a></div><div class="sidebar-section-children"><a href="module-statistical.rank.html">rank</a></div><div class="sidebar-section-children"><a href="module-statistical.stDev.html">stDev</a></div><div class="sidebar-section-children"><a href="module-statistical.t.html">t</a></div><div class="sidebar-section-children"><a href="module-statistical.Var.html">Var</a></div><div class="sidebar-section-children"><a href="module-statistical.weiBull.html">weiBull</a></div><div class="sidebar-section-children"><a href="module-statistical.z.html">z</a></div><div class="sidebar-section-children"><a href="module-statistical-gamma.html">gamma</a></div><div class="sidebar-section-children"><a href="module-statistical-gammaLn.html">gammaLn</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-global"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#getDefault">getDefault</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentDb">isCurrentDb</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentLocal">isCurrentLocal</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsDb">setDefaultAsDb</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsLocal">setDefaultAsLocal</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"><div class="navbar-item"><a id="menu-api-status" href="api_status.html" target="_blank">API Implementation Status Table</a></div></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">rosettajs_dist_lib_rosetta_date-time.js</h1></header><article><pre class="prettyprint source lang-js"><code>"use strict";
+/***************************************************
+* Licensed Materials - Property of HCL.
+* (c)Copyright HCL America, Inc. 2023-2024
+****************************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.created = exports._notes = exports._openFormula = void 0;
+exports.date = date;
+exports.day = day;
+exports.hour = hour;
+exports.minute = minute;
+exports.month = month;
+exports.now = now;
+exports.second = second;
+exports.time = time;
+exports.today = today;
+exports.weekday = weekday;
+exports.year = year;
+exports.dateDif = dateDif;
+exports.dateValue = dateValue;
+exports.days = days;
+exports.days360 = days360;
+exports.eDate = eDate;
+exports.eoMonth = eoMonth;
+exports.interval = interval;
+exports.isoWeekNum = isoWeekNum;
+exports.netWorkDays = netWorkDays;
+exports.netWorkDaysIntl = netWorkDaysIntl;
+exports.timeValue = timeValue;
+exports.weekNum = weekNum;
+exports.workDay = workDay;
+exports.workDayIntl = workDayIntl;
+exports.yearFrac = yearFrac;
+exports.adjust = adjust;
+exports.businessDays = businessDays;
+exports.getCurrentTimeZone = getCurrentTimeZone;
+exports.locale = locale;
+exports.modified = modified;
+exports.textToTime = textToTime;
+exports.timeMerge = timeMerge;
+exports.timeToTextInZone = timeToTextInZone;
+exports.timeZoneToText = timeZoneToText;
+exports.tomorrow = tomorrow;
+exports.yesterday = yesterday;
+exports.zone = zone;
+exports.accessed = accessed;
+const tslib_1 = require("tslib");
+/**
+ * @file Date &amp; Time
+ * @module date-time
+ * @category Date &amp; Time
+ */
+const openf = tslib_1.__importStar(require("../openformula/date-time"));
+exports._openFormula = openf;
+const openf_compat = tslib_1.__importStar(require("../openformula/compatibility"));
+const notesf = tslib_1.__importStar(require("../notes/date-time"));
+exports._notes = notesf;
+const TIME_SEPARATOR = ':';
+const API = tslib_1.__importStar(require("../rosetta/API"));
+const common_1 = require("../utils/common");
+const error = tslib_1.__importStar(require("../utils/error"));
+//-----------------------------
+// Rosetta date-time - common functions (exist in both OpenFormula and Notes Formula)
+/**
+ * Constructs the date from year, month, and day of month or translates numbers for the various components of time and date,
+ * then returns the Date value.
+ *
+ * @param {DateOrDateList} yearOrDateTime The year that you want to appear in the resulting date.
+ *     You must specify an entire four-digit year. (For example, use 1996, not 96).
+ *     Or Time-date or Date list. For a Date value such as @Now or [10/31/93 12:00:00], @Date removes the time portion of the value, leaving only the date.
+ * @param {number} [month] Optional (when DateTime provided). The month that you want to appear in the resulting date. (For example, use 1 to specify January).
+ * @param {number} [day] Optional (when DateTime provided). The day that you want to appear in the resulting date.
+ * @param {number} [hour] Optional. The number of hours. This value will be truncated from the resulting date.
+ * @param {number} [minute] Optional. The number of minutes. This value will be truncated from the resulting date.
+ * @param {number} [second] Optional. The number of seconds. This value will be truncated from the resulting date.
+ * @returns {string} A string representation of the date and time of the given year, month and day
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#DATE | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.date(12, 12, 12); // returns Thu Dec 12 1912 00:00:00 GMT-0500 (Eastern Standard Time)
+ */
+function date(yearOrDateTime, month, day, //NOSONAR
+hour, minute, second) {
+    var _a;
+    // Check for no year value - returns current date and time
+    if (!yearOrDateTime) {
+        return new Date().toLocaleDateString();
+    }
+    // Check for error values
+    if (yearOrDateTime instanceof Error || month instanceof Error || day instanceof Error) {
+        return (_a = (0, common_1.anyError)(yearOrDateTime, month, day)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    // Open formula does not accept array of Dates as input, so handle it here 
+    if (API.isCurrentAPIOpenFormula()) {
+        if (Array.isArray(yearOrDateTime) || typeof yearOrDateTime === 'string' || yearOrDateTime instanceof Date) {
+            let dates = Array.isArray(yearOrDateTime) ? yearOrDateTime : [yearOrDateTime];
+            const rtnDates = [];
+            for (const element of dates) {
+                let result = null;
+                let d = element;
+                if (d instanceof Date) {
+                    result = d;
+                }
+                else if (typeof d === 'string') {
+                    result = new Date(d);
+                }
+                else if (typeof d === 'number') {
+                    result = new Date(d);
+                }
+                if (!result || d instanceof Error || result instanceof Error || result.toString() === "Invalid Date") {
+                    result = error.value;
+                }
+                rtnDates.push(result);
+            }
+            return rtnDates.length === 1 ? rtnDates[0] : rtnDates;
+        }
+        // If yearOrDateTime is a number then it is treated as a year rather then an epoch time value
+        else if (typeof yearOrDateTime === 'number' &amp;&amp; typeof month === 'number' &amp;&amp; typeof day === 'number') {
+            return openf.DATE(yearOrDateTime, month, day);
+        }
+        else {
+            return error.value;
+        }
+    }
+    else {
+        return notesf.date(yearOrDateTime, month, day, hour, minute, second);
+    }
+}
+/**
+ * Extracts the day of the month from the specified date.
+ *
+ * @param {DateOrDateList} dateOrDateList The date, as a string, number, Date object, or Array of Date objects, containing the day value that you want to extract.
+ * @returns {NumberOrNumberList} Number or Number list. The number corresponding to the day of the month indicated by dateOrDateList.
+ *     Returns -1 if the Date provided contains only a time value and not a date.
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#DAY | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.day(2958465); // returns 31 (open formula only)
+ * @example
+ * rosettajs.DateTime.day(new Date(1900, 0, 1)); // returns 1
+ */
+function day(dateOrDateList) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnDays = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date") {
+                rtnDays.push(-1);
+            }
+            else {
+                let result = openf.DAY(dt);
+                rtnDays.push(result);
+            }
+        });
+        return rtnDays.length === 1 ? rtnDays[0] : rtnDays;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Day(dateOrDateList);
+    }
+}
+/**
+ * Extracts the number of the hour (0 through 23) from a specified Date.
+ *
+ * @param {DateOrDateList} dateOrDateList The date, as a string, Date object, or Array of Date objects, with the hour that you want to extract.
+ * @returns {NumberOrNumberList} Number or Number list. Hour portion (or list of hours) of the given date.
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#HOUR | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.hour("1/1/1900 1:00"); // returns 1
+ * @example
+ * rosettajs.DateTime.hour(rosettajs.DateTime.date(95, 11, 20, 8, 58, 12)); // returns 8
+ */
+function hour(dateOrDateList) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnHours = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date" || !date.toString().includes(TIME_SEPARATOR)) {
+                rtnHours.push(-1);
+            }
+            else {
+                let result = openf.HOUR(dt);
+                rtnHours.push(result);
+            }
+        });
+        return rtnHours.length === 1 ? rtnHours[0] : rtnHours;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Hour(dateOrDateList);
+    }
+}
+/**
+ * Extracts the number of the minutes from a specified Date.
+ *
+ * @param {DateOrDateList} dateOrDateList The date, as a string, Date object, or Array of Date objects, of the minuntes you are trying to find.
+ * @returns {NumberOrNumberList} Number or Number list. Minutes portion (or list of minutes) of the given date.
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#MINUTE | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.minute("1/1/1900 1:30"); // returns 30
+ * @example
+ * rosettajs.DateTime.minute(rosettajs.DateTime.date(95, 11, 20, 8, 58, 12)); // returns 58
+ */
+function minute(dateOrDateList) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnMinutes = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date" || !date.toString().includes(':')) {
+                rtnMinutes.push(-1);
+            }
+            else {
+                let result = openf.MINUTE(dt);
+                rtnMinutes.push(result);
+            }
+        });
+        return rtnMinutes.length === 1 ? rtnMinutes[0] : rtnMinutes;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Minute(dateOrDateList);
+    }
+}
+/**
+ * Extracts the number of the month (1-12) from the specified date.
+ *
+ * @param {DateOrDateList} dateOrDateList The date, as a string, Date object, or Array of Date objects of the month you are trying to find.
+ * @returns {NumberOrNumberList} Number or Number list. Month portion (or list of days) of the date (or list of dates).
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#MONTH | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.month(2958465); // returns 12 (open formula only)
+ * @example
+ * rosettajs.DateTime.month(new Date(1900, 0, 31)); // returns 1
+ */
+function month(dateOrDateList) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnMonths = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date") {
+                rtnMonths.push(-1);
+            }
+            else {
+                let result = openf.MONTH(dt);
+                rtnMonths.push(result);
+            }
+        });
+        return rtnMonths.length === 1 ? rtnMonths[0] : rtnMonths;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Month(dateOrDateList);
+    }
+}
+/**
+ * Returns the string representation of the current date and time.
+ * The Notes parameters, flags and serverNames, are not implemented in VoltFormula at this time.
+ *
+ * @returns {Date} A date representation of the current date and time
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#NOW | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.now(); // returns Wed Jun 07 2023 12:26:36 GMT-0400 (Eastern Daylight Time)
+ */
+function now() {
+    if (arguments.length > 0) {
+        return error.na;
+    }
+    return API.isCurrentAPIOpenFormula() ? openf.NOW() : notesf.Now();
+}
+/**
+ * Extracts the number of the seconds from a specified Date.
+ * This function presumes that leap seconds never exist.
+ *
+ * @param {DateOrDateList} dateOrDateList The date, as a string, Date object, or Array of Date objects, of the seconds you are trying to find.
+ * @returns {NumberOrNumberList} Number or Number list. Seconds portion (or list of seconds) of the given date.
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#SECOND | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.second("1/1/1900"); // returns 0
+ * @example
+ * rosettajs.DateTime.second("11/20/95 8:58:59"); // returns 59
+ * @example
+ * rosettajs.DateTime.second(rosettajs.DateTime.date(95, 11, 20, 8, 58, 12)); // returns 12
+ */
+function second(dateOrDateList) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnSeconds = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date" || !date.toString().includes(':')) {
+                rtnSeconds.push(-1);
+            }
+            else {
+                let result = openf.SECOND(dt);
+                rtnSeconds.push(result);
+            }
+        });
+        return rtnSeconds.length === 1 ? rtnSeconds[0] : rtnSeconds;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Second(dateOrDateList);
+    }
+}
+/**
+ * Constructs and returns a Date object from one of the following combination of Date parameters:
+ *    ( hour, minute, second ), ( year, month, day, hour, minute, second ),
+ *    or Date object or array of Date objects, as per the notes formula Time function parameters.
+ *
+ * @param {*} args Date-time object or list of Dates, 6 Numbers representing the date-time, or 3 Numbers from 0 (zero) to 32767 representing the hour, minute, day.
+ *     Any value greater than 23 will be divided by 24 and the remainder will be treated as the time value.
+ * @returns {number} A number representing time (as a fraction of a day) or Date-time object of the current time; display usually formatted in current locale.
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#TIME | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.time(1, 1, 1); // returns 0.04237268518518519 (open formula only)
+ * @example
+ * rosettajs.DateTime.time(93, 12, 24, 12, 30, 40); // returns 1993-12-24 12:30:40.000 -0000
+ * @example
+ * rosettajs.DateTime.time(rosettajs.DateTime.date(93, 12, 24, 12, 30, 40)); // returns 1993-12-24 12:30:40.000 -0000
+ */
+function time(...args) {
+    if (API.isCurrentAPIOpenFormula()) {
+        if (args.length === 3) {
+            return openf.TIME(args[0], args[1], args[2]);
+        }
+        return error.value;
+    }
+    else {
+        return notesf.Time(...args);
+    }
+}
+/**
+ * Returns today's date.
+ *
+ * @returns {string} The date string for the current date and time.
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#TODAY | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.today(); // returns Wed Jun 07 2023 12:26:36 GMT-0400 (Eastern Daylight Time)
+ */
+function today() {
+    return API.isCurrentAPIOpenFormula() ? openf.TODAY().toLocaleDateString() : notesf.Today();
+}
+/**
+ * Extracts the day of the week from a date; if text, uses current locale to convert to a date.
+ * Returns a number that identifies the day.
+ *
+ * @param {DateOrDateList} dateOrDateList The date
+ * @param {number} [returnType=1] A number that determines the type of return value. The default is 1.
+ * -   **1**  Numbers 1 (Sunday)    through 7 (Saturday)
+ * -   **2**  Numbers 1 (Monday)    through 7 (Sunday)
+ * -   **3**  Numbers 0 (Monday)    through 6 (Sunday)
+ * -   **11** Numbers 1 (Monday)    through 7 (Sunday)
+ * -   **12** Numbers 1 (Tuesday)   through 7 (Monday)
+ * -   **13** Numbers 1 (Wednesday) through 7 (Tuesday)
+ * -   **14** Numbers 1 (Thursday)  through 7 (Wednesday)
+ * -   **15** Numbers 1 (Friday)    through 7 (Thursday)
+ * -   **16** Numbers 1 (Saturday)  through 7 (Friday)
+ * -   **17** Numbers 1 (Sunday)    through 7 (Saturday)
+ * @returns {number} The day of the week of a given date as a number from 1 through 7. (default)
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#WEEKDAY | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.weekday(2958465); // returns 6 (open formula only)
+ * @example
+ * rosettajs.DateTime.weekday(rosettajs.DateTime.date(1900, 0, 31)); // returns 4
+ * @example
+ * rosettajs.DateTime.weekday([rosettajs.DateTime.date(95, 11, 20, 8, 58, 12), rosettajs.DateTime.date(95, 11, 21, 8, 58, 12)]); // returns [2, 3]
+ */
+function weekday(dateOrDateList, returnType = 1) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnDays = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date") {
+                rtnDays.push(-1);
+            }
+            else {
+                let result = openf.WEEKDAY(dt, returnType);
+                rtnDays.push(result);
+            }
+        });
+        return rtnDays.length === 1 ? rtnDays[0] : rtnDays;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Weekday(dateOrDateList);
+    }
+}
+/**
+ * Extracts the number of the month from the specified date.
+ *
+ * @param {DateOrDateList} dateOrDateList The date, as a string, Date object, or Array of Date objects of the year you are trying to find.
+ * @returns {NumberOrNumberList} Number or Number list. Year portion (or list of days) of the date (or list of dates).
+ *     &amp;nbsp;and &amp;nbsp;{@link https://www.oasis-open.org/committees/download.php/16826/openformula-spec-20060221.html#YEAR | www.oasis-open.org}
+ * @example
+ * rosettajs.DateTime.year(2958465); // returns 1995 (open formula only)
+ * @example
+ * rosettajs.DateTime.year(new Date(1900, 0, 1)); // returns 1900
+ */
+function year(dateOrDateList) {
+    var _a;
+    if (dateOrDateList instanceof Error) {
+        return (_a = (0, common_1.anyError)(dateOrDateList)) !== null &amp;&amp; _a !== void 0 ? _a : error.value;
+    }
+    else if (API.isCurrentAPIOpenFormula()) {
+        // Open Formula does not accept array of Dates as input, so handle it here 
+        let dates = Array.isArray(dateOrDateList) ? dateOrDateList : [dateOrDateList];
+        const rtnYears = [];
+        dates.forEach((date) => {
+            let dt = new Date(date);
+            if (dt.toString() === "Invalid Date") {
+                rtnYears.push(-1);
+            }
+            else {
+                let result = openf.YEAR(dt);
+                rtnYears.push(result);
+            }
+        });
+        return rtnYears.length === 1 ? rtnYears[0] : rtnYears;
+    }
+    // Notes Formula accepts date or date list only
+    else {
+        return notesf.Year(dateOrDateList);
+    }
+}
+//-----------------------------
+// Open Formula date-time
+/**
+ * Calculates the number of days, months, or years between two dates.
+ *
+ * @param {CustomDateType} start_date A date that represents the first, or starting date of a given period.
+ * @param {CustomDateType} end_date A date that represents the last, or ending, date of the period.
+ * @param {string} unit The type of information that you want returned, where:
+ - "Y": The number of complete years in the period.
+ - "M": The number of complete months in the period.
+ - "D": The number of days in the period.
+ - "MD": The difference between the days in start_date and end_date. The months and years of the dates are ignored.
+ - "YM": The difference between the months in start_date and end_date. The days and years of the dates are ignored
+ - "YD": The difference between the days of start_date and end_date. The years of the dates are ignored.
+ * @returns {Number} Days, months, or years between given dates.
+ * @example
+ * rosettajs.DateTime.dateDif("1/1/2001", "1/1/2003", "Y"); // returns 2
+ * @example
+ * rosettajs.DateTime.dateDif("6/1/2001", "8/15/2002", "D"); // returns 440
+ */
+function dateDif(start_date, end_date, unit) {
+    return openf.DATEDIF(start_date, end_date, unit);
+}
+/**
+ * Returns the string representation of the date and time from given text.
+ *
+ * @param {string} date_text Text that represents a date in an OpenFormula date format, or a reference to a value that contains text that represents a date in an OpenFormula date format.
+ * @returns {Date} A string representation of the date and time of the given date.
+ * @example
+ * rosettajs.DateTime.dateValue("1/1/1900"); // returns Mon Jan 01 1900 00:00:00 GMT-0500 (Eastern Standard Time)
+ */
+function dateValue(date_text) {
+    return openf.DATEVALUE(date_text);
+}
+/**
+ * Returns the number of days between two dates.
+ *
+ * @param {CustomDateType} endDate A date that represents the last, or ending, date of the period
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period
+ * @returns {number} Number of days between two given dates.
+ * @example
+ * rosettajs.DateTime.days("1/2/1900", "1/1/1900"); // returns 1
+ */
+function days(endDate, startDate) {
+    return openf.DAYS(endDate, startDate);
+}
+/**
+ * Calculates the number of days between two dates based on a 360-day year.
+ *
+ * @param {CustomDateType} endDate A date that represents the last, or ending, date of the period.
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {string} [method] Optional. A logical value that specifies whether to use the U.S. or European
+ *     method in the calculation. The default is FALSE.
+ * -   **FALSE** U.S. (NASD) method. If the starting date is the last day of a month, it
+ *               becomes equal to the 30th day of the same month. If the ending date is
+ *               the last day of a month and the starting date is earlier than the 30th
+ *               day of a month, the ending date becomes equal to the 1st day of the next
+ *               month; otherwise the ending date becomes equal to the 30th day of the
+ *               same month.
+ * -   **TRUE** European method. Starting dates and ending dates that occur on the 31st
+ *              day of a month become equal to the 30th day of the same month.
+ * @returns {number} Number of days between two given dates based on a 360-day year.
+ * @example
+ * rosettajs.DateTime.days360("1/1/1901", "12/31/1901", true); // returns 359
+ */
+function days360(startDate, endDate, method = false) {
+    return openf.DAYS360(startDate, endDate, method);
+}
+/**
+ * Returns the date and time that is the indicated number of months before or after the start date.
+ *
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {number} months The number of months before or after start_date. A positive value for
+ *     months yields a future date; a negative value yields a past date.
+ * @returns {Date} The date of the given date and number of months.
+ * @example
+ * rosettajs.DateTime.eDate(rosettajs.DateTime.date(2011, 1, 23), 1); // returns Sun Feb 23 2011 00:00:00 GMT-0500 (Eastern Standard Time)
+ */
+function eDate(startDate, months) {
+    return openf.EDATE(startDate, months);
+}
+/**
+ * Returns the string representation of the date and time of the last day of the
+ * month before or after a specified number of months.
+ *
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {number} months Number of months before or after start_date. A positive value for months
+ *     yields a future date; a negative value yields a past date.
+ * @returns {Date} The date of the given date number of months.
+ * @example
+ * rosettajs.DateTime.eoMonth("1/1/2005", 2); // returns Thu Mar 31 2005 00:00:00 GMT-0500 (Eastern Standard Time)
+ */
+function eoMonth(startDate, months) {
+    return openf.EOMONTH(startDate, months);
+}
+/**
+ * Calculates the number of years, months, days, hours, minutes and seconds from a specified number of seconds.
+ *
+ * @param {number} second Number of seconds.
+ * @returns {string} A string representing the years, months, days, hours, minutes and seconds based on the given number of seconds.
+ * @example
+ * rosettajs.DateTime.interval(10000000); // returns "P3M25DT17H46M40S"
+ */
+function interval(second) {
+    return openf.INTERVAL(second);
+}
+/**
+ * Returns the number of the ISO week number of the year for a given date.
+ *
+ * @param {CustomDateType} date The date.
+ * @returns {number} Number of the week in the year of given date.
+ * @example
+ * rosettajs.DateTime.isoWeekNum("1/8/1901"); // returns 2
+ */
+function isoWeekNum(date) {
+    return openf.ISOWEEKNUM(date);
+}
+/**
+ * Returns the number of whole workdays between two dates. Working days excludes weekends and any dates identified in holidays.
+ *
+ * @param {DateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {DateType} endDate A date that represents the last, or ending, date of the period.
+ * @param {DateType|DateType[]} [holidays] An optional range of one or more dates to exclude from the working
+ *     calendar, such as state and federal holidays and floating holidays.
+ * @returns {number} The number of whole workdays between two dates.
+ * @example
+ * rosettajs.DateTime.netWorkDays("2013-12-04", "2013-12-07"); // returns 3
+ * @example
+ * rosettajs.DateTime.netWorkDays("12/4/2013", "1/4/2014", "1/1/2014"); // returns 22
+ */
+function netWorkDays(startDate, endDate, holidays) {
+    return openf.NETWORKDAYS(startDate, endDate, holidays);
+}
+/**
+ * Returns the number of whole workdays between two dates using parameters to indicate which and how many days are weekend days.
+ *
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {CustomDateType} endDate A date that represents the last, or ending, date of the period.
+ * @param {string} [weekend] Indicates the days of the week that are weekend days and are
+ *     not included in the number of whole working days between start_date and end_date.
+ *     Weekend is a weekend number or string that specifies when weekends occur.
+ *     &lt;br>&lt;br>
+ *     Weekend *number* values indicate the following weekend days:
+ * -   **1**  Saturday, Sunday (Default value)
+ * -   **2**  Sunday, Monday
+ * -   **3**  Monday, Tuesday
+ * -   **4**  Tuesday, Wednesday
+ * -   **5**  Wednesday, Thursday
+ * -   **6**  Thursday, Friday
+ * -   **7**  Friday, Saturday
+ * -   **11** Sunday only
+ * -   **12** Monday only
+ * -   **13** Tuesday only
+ * -   **14** Wednesday only
+ * -   **15** Thursday only
+ * -   **16** Friday only
+ * -   **17** Saturday only
+ *
+ *     Weekend *string* values are seven characters long and each character in the string
+ *     represents a day of the week, starting with Monday. 1 represents a non-workday
+ *     and 0 represents a workday. Only the characters 1 and 0 are permitted in the
+ *     string. Using 1111111 will always return 0.
+ *
+ *     For example, 0000011 would result in a weekend that is Saturday and Sunday.
+ * @param {DateType|DateType[]} [holidays] An optional range of one or more dates to exclude from the working
+ *     calendar, such as state and federal holidays and floating holidays.
+ * @returns {number} The number of whole workdays between two dates.
+ * @example
+ * rosettajs.DateTime.netWorkDaysIntl("12/4/2013", "12/5/2013"); // returns 2
+ * @example
+ * rosettajs.DateTime.netWorkDaysIntl("12/8/2013", "12/9/2013", 2); // returns 0
+ */
+function netWorkDaysIntl(startDate, endDate, weekend, holidays) {
+    return openf_compat.NETWORKDAYSINTL(startDate, endDate, weekend, holidays);
+}
+/**
+ * Converts a time in the form of text to a serial number.
+ *
+ * @param {string} timeText The time represented by a text string.
+ * @returns {number} The decimal number of the time represented by a text string. The decimal
+ *     number is a value ranging from 0 (zero) to 0.99988426, representing the times
+ *     from 0:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 P.M.).
+ * @example
+ * rosettajs.DateTime.timeValue("1/1/1900 12:00:00"); // returns ~ 0.5
+ */
+function timeValue(timeText) {
+    return openf.TIMEVALUE(timeText);
+}
+/**
+ * Converts a date to a number representing where the week falls numerically with a year.
+ *
+ * There are two systems used for this function:
+ *  - **System 1** The week containing January 1 is the first week of the year, and is numbered week 1.
+ *  - **System 2** The week containing the first Thursday of the year is the first week of the year,
+ *      and is numbered as week 1. This system is the methodology specified in ISO 8601,
+ *      which is commonly known as the European week numbering system.
+ *
+ * @param {CustomDateType} date A date within the week.
+ * @param {number} [return_type] Optional. A number that determines on which day the week begins. The default is 1.
+ * -   **1**  Sunday,    System 1 (Default value)
+ * -   **2**  Monday,    System 1
+ * -   **11** Monday,    System 1
+ * -   **12** Tuesday,   System 1
+ * -   **13** Wednesday, System 1
+ * -   **14** Thursday,  System 1
+ * -   **15** Friday,    System 1
+ * -   **16** Saturday,  System 1
+ * -   **17** Sunday,    System 1
+ * -   **21** Monday,    System 2
+ * @returns {number} The week number of given date.
+ * @example
+ * rosettajs.DateTime.weekNum("2/1/1909", 2); // returns 6
+ */
+function weekNum(date, returnType = 1) {
+    return openf.WEEKNUM(date, returnType);
+}
+/**
+ * Returns the date before or after a specified number of workdays.
+ *
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {number} days The number of nonweekend and nonholiday days before or after start_date.
+ *     A positive value for days yields a future date; a negative value yields a past date.
+ * @param {DateType|DateType[]} [holidays] An optional range of one or more dates to exclude from the working calendar,
+ *     such as state and federal holidays and floating holidays.
+ * @returns {Date} The date before or after the specified number of workdays.
+ * @example
+ * rosettajs.DateTime.workDay("1/1/1900", 1); // returns 1/2/1900
+ * @example
+ * rosettajs.DateTime.workDay("1/1/1900", 2, "1/2/1900"); // returns 1/4/1900
+ */
+function workDay(startDate, days, holidays) {
+    return openf.WORKDAY(startDate, days, holidays);
+}
+/**
+ * Returns the date before or after a specified number of workdays using parameters to indicate which and how many days are weekend days.
+ *
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period
+ * @param {number} days The number of nonweekend and nonholiday days before or after start_date.
+ *     A positive value for days yields a future date; a negative value yields a past date.
+ * @param {string|number} [weekend] Indicates the days of the week that are weekend days and are not
+ *     considered working days. Weekend is a weekend number or string that specifies
+ *     when weekends occur.
+ *
+ *     Weekend number values indicate the following weekend days:
+ * -   **1** Saturday, Sunday (Default value)
+ * -   **2** Sunday, Monday
+ * -   **3** Monday, Tuesday
+ * -   **4** Tuesday, Wednesday
+ * -   **5** Wednesday, Thursday
+ * -   **6** Thursday, Friday
+ * -   **7** Friday, Saturday
+ * -   **11** Sunday only
+ * -   **12** Monday only
+ * -   **13** Tuesday only
+ * -   **14** Wednesday only
+ * -   **15** Thursday only
+ * -   **16** Friday only
+ * -   **17** Saturday only
+ *
+ *     Weekend string values are seven characters long and each character in the string
+ *     represents a day of the week, starting with Monday. 1 represents a non-workday
+ *     and 0 represents a workday. Only the characters 1 and 0 are permitted in the
+ *     string. Using 1111111 will always return 0.
+ *
+ *     For example, 0000011 would result in a weekend that is Saturday and Sunday.
+ * @param {DateType|DateType[]} [holidays] An optional set of one or more dates that are to be excluded
+ *     from the working day calendar. Holidays shall be a range of cells that contain
+ *     the dates, or an array constant of the serial values that represent those dates.
+ *     The ordering of dates or serial values in holidays can be arbitrary.
+ * @returns {Date} The date and time that was calculated before or after the given date.
+ * @example
+ * rosettajs.DateTime.workDay.intl("1/1/1905", 1, 2); // returns 1/3/1905
+ */
+function workDayIntl(startDate, days, weekend, holidays) {
+    return openf_compat.WORKDAYINTL(startDate, days, weekend, holidays);
+}
+/**
+ * Returns the year fraction representing the number of whole days between start_date and end_date.
+ *
+ * @param {CustomDateType} startDate A date that represents the first, or starting date of a given period.
+ * @param {CustomDateType} endDate A date that represents the last, or ending, date of the period.
+ * @param {number} [basis] The type of day count basis to use:
+ * -   **0** US (NASD) 30/360 (Default value)
+ * -   **1** Actual/actual
+ * -   **2** Actual/360
+ * -   **3** Actual/365
+ * -   **4** European 30/360
+ * @returns {number} The year fraction of whole days between given dates.
+ * @example
+ * rosettajs.DateTime.yearFrac("1/31/1900", "3/31/1900", 0); // returns ~ 0.16666666666666666
+ * @example
+ * rosettajs.DateTime.yearFrac("1/1/1904", "1/1/1905", 1); // returns 1
+ */
+function yearFrac(startDate, endDate, basis = 0) {
+    return openf.YEARFRAC(startDate, endDate, basis);
+}
+//-----------------------------
+// Notes @functions date-time
+/**
+ * Adjusts the specified Date value by the number of years, months, days, hours, minutes, and/or seconds you specify.
+ * The amount of adjustment may be positive or negative.
+ *
+ * @param {DateOrDateList} dateOrDateList The Date or list of Dates you want to increment. This should be a single date, not a range.
+ * @param {number} years The number of years to increment by.
+ * @param {number} months The number of months to increment by.
+ * @param {number} days The number of days to increment by.
+ * @param {number} hours The number of hours to increment by.
+ * @param {number} minutes The number of minutes to increment by.
+ * @param {number} seconds The number of seconds to increment by.
+ * @returns {TextOrTextList} The adjusted date string or list of adjusted date strings.
+ * @example
+ * rosettajs.DateTime.adjust(rosettajs.DateTime.date('6/30/95'), 2, 2, 2, 0, 0, 0); // returns '7/30/1995'
+ */
+function adjust(dateOrDateList, years, months, days, hours, minutes, seconds) {
+    return notesf.Adjust(dateOrDateList, years, months, days, hours, minutes, seconds);
+}
+/**
+ * Returns the number of business days in one or more date ranges. Inclusive of the date ranges, and excluding provided optional weekends and holidays.
+ *
+ * @param {DateOrDateList} startDate Date as string or Date type, or list of Dates. The start of each date range.
+ * @param {DateOrDateList} endDate Date as string or Date type, or list of Dates. The end of each date range.
+ * @param {NumberOrNumberList} [daysToExclude] Numer or number list. Optional. Days of the week not counted as business days, where 1 is Sunday and 7 is Saturday.
+ *     Decimal numbers are rounded to integers. Numbers other than 1-7 are ignored. (AKA Weekends)
+ * @param {string|string[]|Date|Date[]} [datesToExclude] Date as string or Date type, or list of Dates. Optional. Dates not counted as business days. (AKA Holidays)
+ * @returns {NumberOrNumberList} The number of days from startDates to endDates, inclusive, less daysToExclude and datesToExclude that fall within the date range.
+ * @example
+ * rosettajs.DateTime.businessDays("01/01/2001", "12/31/2001", [1, 7], HOLIDAYS); // returns 251, where HOLIDAYS include a list of 10 major US holidays in 2001
+ */
+function businessDays(startDate, endDate, daysToExclude, datesToExclude) {
+    return notesf.BusinessDays(startDate, endDate, daysToExclude, datesToExclude);
+}
+/**
+ * Returns the Date when the document was created.
+ *
+ * @returns {Date} Date. The date when the current document was created.
+ * @example
+ * rosettajs.DateTime.created(); // returns Wed Aug 04 2021 12:23:17 GMT-0400 (Eastern Daylight Time) for the "Hot Chocolate" recipe document
+ */
+const created = () => {
+    return notesf.Created();
+};
+exports.created = created;
+/**
+ * Returns the current operating system's time zone settings in canonical time zone format.
+ *
+ * @returns {string} Canonical time zone representing the time zone settings of the operating system.
+ *      If the Notes time zone string is not found, the JavaScript time zone name is returned.
+ * @example
+ * rosettajs.DateTime.getCurrentTimeZone(); // returns "Z=5$DO=1$DL=3 2 1 11 1 1$ZX=40$ZN=Eastern" if in the Eastern Time Zone
+ */
+function getCurrentTimeZone() {
+    return notesf.GetCurrentTimeZone();
+}
+/**
+ * Returns information about language codes.
+ *
+ * @param {TextOrTextList} action Text or text list with action keyword. One of the following:
+ *     [NotesLocale] without locale-tag returns a text list containing all the content language codes.
+ *     [NotesLocale] with locale-tag returns a text list or value containing each specified content language code,
+ *           or a null string if the code is not recognized. A code is recognized if it is exact regardless of case.
+ *           If the language is recognized but not the country or region, the language code alone is returned.
+ *     [AltNameLocale] without locale-tag returns a text list containing all the alternate name language codes.
+ *     [AltNameLocale] with locale-tag returns a text list or value containing each specified alternate user language code,
+ *           or a null string if the code is not recognized. A code is recognized if it is exact regardless of case.
+ *           The country or region is ignored where it is not part of the alternate user language code (most cases).
+ *     [LanguageName] with locale-tag returns a text list or value spelling out the language for each specified language code,
+ *           or a null string if the code is not recognized.
+ *     [CountryName] with locale-tag returns a text list or value spelling out the country or region for each specified language code,
+ *           or a null string if the code has no country or region, or it is not recognized.
+ *     [LocaleName] with locale-tag returns a text list or value spelling out the language and country (or region), if applicable,
+ *           for each specified language code, or a null string if the code is not recognized. The country or region is in parentheses
+ *           and immediately (no space) follows the language.
+ *     [LocaleName] : [NotesLocale] (concatenating these two keywords) returns a text list containing, for each content language code,
+ *           the language name, the country or region name in parentheses, a vertical bar, and the language code. This list can be used in a keyword field
+ *           where the locale name is the name and the language code is the alias.
+ *     [LocaleName] : [AltNameLocale] (concatenating these two keywords) returns a text list containing, for each alternate name language code,
+ *           the language name, the country or region name in parentheses, a vertical bar, and the language tag.
+ *           This list can be used in a keyword field where the locale name is the name and the language code is the alias.
+ * @param {TextOrTextList} [localeTag] A language code or list of language codes.
+ *     af,ar,ar-AE,ar-BH,ar-DZ,ar-EG,ar-JO,ar-KW,ar-LB,ar-MA,ar-OM,ar-QA,ar-SA,ar-TN,ar-YE,be,bg,ca,cs,cy,
+ *     da,de,de-AT,de-CH,de-DE,de-LI,de-LU,el,en,en-AU,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-NZ,en-PH,en-SG,
+ *     en-US,en-ZA,es,es-AR,es-BO,es-CL,es-CO,es-CR,es-DO,es-EC,es-ES,es-GT,es-HN,es-MX,es-NI,es-PA,es-PE,
+ *     es-PR,es-PY,es-SV,es-US,es-UY,es-VE,et,fi,fr,fr-BE,fr-CA,fr-CH,fr-FR,fr-LU,gu,he,hi,hr,hu,id,is,it,it-CH,
+ *     it-IT,ja,kk,ko,lt,lv,mk,mr,ms,ms-MY,mt,nl,nl-BE,nl-NL,no,no-NO,ny-NO,pl,pt,pt-BR,pt-PT,ro,ro-MD,ro-RO,
+ *     ru,sk,sl,sq,sr,sv,ta,te,th,tr,uk,vi,x-KOK,zh-CN,zh-HK,zh-MO,zh-SG,zh-TW
+ * @returns {TextOrTextList} Returns the requested information about the language codes. Empty string if tag is not found.
+ * @example
+ * rosettajs.DateTime.locale([LanguageName]; "fr"); // returns "French"
+ * @example
+ * rosettajs.DateTime.locale([LocaleName]; "fr-CA"); // returns "French(Canada)"
+ */
+function locale(action, localeTag) {
+    return notesf.Locale(action, localeTag);
+}
+/**
+ * Returns the Date when the document was last modified.
+ * @returns {Date} Date. The date when the current document was last modified.
+ * @example
+ * rosettajs.DateTime.modified(); // returns Mon May 22 2023 12:46:49 GMT-0400 (Eastern Daylight Time) for the "Hot Chocolate" recipe document
+ */
+function modified() {
+    return notesf.Modified();
+}
+/**
+ * Converts a text string to a Date value, where possible.
+ *
+ * @param {TextOrTextList} time_text The strings you want to convert to a Date objects. "Today", "Tomorrow", and "Yesterday" are the only
+ * legal strings to use to represent relative dates.
+ * @returns {Date|DateRange|Date[]|DateRange[]} Date, Date range, or list thereof. The _time_text_, converted to a Date.
+ * @example
+ * rosettajs.Text.textToTime("05/12/23"); // Returns Date for 05/12/2023
+ * @example
+ * rosettajs.Text.textToTime("Tomorrow"); // Returns Date for tomorrow
+ */
+function textToTime(time_text) {
+    return notesf.TextToTime(time_text);
+}
+/**
+ * Builds a Date value from separate date, time, and time zone values.
+ *
+ * @param {DateOrDateList} dateStr String, Date, or array of Strings or Dates. The date string or Date object representing
+ *     the date you want to include in the new date-time value.
+ * @param {DateOrDateList} timeStr String, Date, or array of Strings or Dates. The time string or Date object representing
+ *     the time you want to include in the new date-time value.
+ * @param {string} [timeZone] String. Optional. Default is 'Z' for UTC. The canonical time zone value you want to apply to the new date-time value.
+ *     You can use a Time zone field to create this value.
+ * @returns {DateOrDateList} A new Date value or Date list made up of the date, time, and zone supplied as function parameters.
+ * @example
+ * rosettajs.DateTime.timeMerge("02/23/02", "17:45:00"); // returns '02/23/02 17:45:00'
+ */
+function timeMerge(dateStr, timeStr, timeZone) {
+    return notesf.TimeMerge(dateStr, timeStr, timeZone);
+}
+/**
+ * Converts a Date value to a text string, incorporating time zone information.
+ *
+ * @param {DateOrDateList} timeDate Time-date value or time-date list. The time-date value or values to be converted.
+ * @param {string} timeZone Canonical time zone value. You can derive a time zone value using a Notes® Time zone field.
+ * @param {string} format Optional. String consisting of one or more format specifiers.
+ * @returns {TextOrTextList} The time-date value converted to a string.
+ * @example
+ * rosettajs.DateTime.Text.timeToTextInZone("02/26/2002 03:06 PM EST", "Z=9$DO=1$DL=4 1 1 10-1 1$ZX=3$ZN=Alaskan", "D2T1S3"); // Returns "02/26/2002"
+ */
+function timeToTextInZone(timeDate, timeZone, format) {
+    return notesf.TimeToTextInZone(timeDate, timeZone, format);
+}
+/**
+ * Converts a canonical time zone value to a human-readable text string.
+ *
+ * @param {TextOrTextList} timezone Canonical time zone value or list thereof. Use a Notes® Time zone field
+ * to create a time zone value.
+ * @param {string} [format] String consisting of one or more of the following format specifiers:
+ *    - S = Short time zone string,
+ *    - A = Alias for local time zone. For example, if the zone is the same as the zone in which the system is running, returns: "Local time".
+ * @returns {TextOrTextList} The time-date value converted to a string. If you do not include a format specifier, a long time zone label is returned.
+ * @example
+ * rosettajs.Text.timeZoneToText("Z=9$DO=1$DL=4 1 1 10 -1 1$ZX=25$ZN=America/Anchorage", "S"); // returns "GMT-8 AKDT" (when DST is in effect)
+ * @example
+ * rosettajs.Text.timeZoneToText("Z=5$DO=1$DL=4 1 1 10 -1 1$ZX=25$ZN=America/New_York", "SA"); // returns "Local time" (when DST is in effect)
+ */
+function timeZoneToText(timezone, format) {
+    return notesf.TimeZoneToText(timezone, format);
+}
+/**
+ * Returns the time-date value that corresponds to tomorrow's date.
+ *
+ * @returns {Date} Date object. Tomorrow's date.
+ * @example
+ * rosettajs.DateTime.tomorrow(); // returns '6/7/2024' if today is June 6th, 2024
+ */
+function tomorrow() {
+    return notesf.Tomorrow();
+}
+/**
+ * Returns the time-date value that corresponds to yesterday's date.
+ *
+ * @returns {Date} Date object. Yesterday's date.
+ * @example
+ * rosettajs.DateTime.yesterday();  // returns '6/5/2024' if today is June 6th, 2024
+ */
+function yesterday() {
+    return notesf.Yesterday();
+}
+/**
+ * Returns the time zone setting of the current computer or of a time-date value,
+ * and indicates if daylight-saving time is observed.
+ * The time zone is represented as the number of hours that must be added to the
+ * time-date to convert it to Greenwich Mean Time.
+ *
+ * @param {DateOrDateList} dateOrDateList Date or date list. Optional. The date whose zone you want to know.
+ *     You must specify both a date; otherwise, @Zone returns 0.
+ * @returns {NumberOrNumberList} Number or number list. The time zone, followed by a period, followed by a flag indicating daylight-saving time.
+ * @example
+ * rosettajs.DateTime.zone([1/26/94 11:00 AM]); // returns 5 if in EST
+ */
+function zone(dateOrDateList) {
+    return notesf.Zone(dateOrDateList);
+}
+/**
+ * Indicates the time and date when the document was last accessed by a Notes®
+ * client, whether for reading or editing.
+ *
+ * @throws {Error} No plans to implement
+ */
+function accessed() {
+    return notesf.Accessed();
+}
+//# sourceMappingURL=date-time.js.map</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper">Licensed Materials - Property of HCL. (c) Copyright HCL America, Inc. 2023</div></footer></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">RosettaJS API Reference 2.1.11</a><div class="mobile-nav-links"><div class="navbar-item"><a id="menu-api-status-mobile" href="api_status.html" target="_blank">API Implementation Status Table</a></div></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-modules"><div>Modules</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="DDE%2520.html">DDE (Dynamic Data Exchange)</a></div><div class="sidebar-section-children"><a href="ECL%2520.html">ECL (Execution Control List)</a></div><div class="sidebar-section-children"><a href="module-admin.html">admin</a></div><div class="sidebar-section-children"><a href="module-agent.html">agent</a></div><div class="sidebar-section-children"><a href="module-attachment.html">attachment</a></div><div class="sidebar-section-children"><a href="module-compatibility.html">compatibility</a></div><div class="sidebar-section-children"><a href="module-create.html">create</a></div><div class="sidebar-section-children"><a href="module-database.html">database</a></div><div class="sidebar-section-children"><a href="module-date-time.html">date-time</a></div><div class="sidebar-section-children"><a href="module-design.html">design</a></div><div class="sidebar-section-children"><a href="module-directory.html">directory</a></div><div class="sidebar-section-children"><a href="module-document.html">document</a></div><div class="sidebar-section-children"><a href="module-edit.html">edit</a></div><div class="sidebar-section-children"><a href="module-engineering.html">engineering</a></div><div class="sidebar-section-children"><a href="module-file.html">file</a></div><div class="sidebar-section-children"><a href="module-financial.html">financial</a></div><div class="sidebar-section-children"><a href="module-folder.html">folder</a></div><div class="sidebar-section-children"><a href="module-formula.html">formula</a></div><div class="sidebar-section-children"><a href="module-help.html">help</a></div><div class="sidebar-section-children"><a href="module-information.html">information</a></div><div class="sidebar-section-children"><a href="module-layout.html">layout</a></div><div class="sidebar-section-children"><a href="module-lists.html">lists</a></div><div class="sidebar-section-children"><a href="module-logical.html">logical</a></div><div class="sidebar-section-children"><a href="module-lookup-reference.html">lookup-reference</a></div><div class="sidebar-section-children"><a href="module-mail.html">mail</a></div><div class="sidebar-section-children"><a href="module-math-trig.html">math-trig</a></div><div class="sidebar-section-children"><a href="module-messaging.html">messaging</a></div><div class="sidebar-section-children"><a href="module-miscellaneous.html">miscellaneous</a></div><div class="sidebar-section-children"><a href="module-navigate.html">navigate</a></div><div class="sidebar-section-children"><a href="module-network.html">network</a></div><div class="sidebar-section-children"><a href="module-object.html">object</a></div><div class="sidebar-section-children"><a href="module-open.html">open</a></div><div class="sidebar-section-children"><a href="module-refresh.html">refresh</a></div><div class="sidebar-section-children"><a href="module-replicator.html">replicator</a></div><div class="sidebar-section-children"><a href="module-rosetta-api.html">rosetta-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi.html">rosetta-api-drapi</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx.html">rosetta-api-voltmx</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-api.html">rosetta-converter-api</a></div><div class="sidebar-section-children"><a href="module-rosetta-converter-config.html">rosetta-converter-config</a></div><div class="sidebar-section-children"><a href="module-section.html">section</a></div><div class="sidebar-section-children"><a href="module-showhide.html">showhide</a></div><div class="sidebar-section-children"><a href="module-statistical.html">statistical</a></div><div class="sidebar-section-children"><a href="module-text.html">text</a></div><div class="sidebar-section-children"><a href="module-tools.html">tools</a></div><div class="sidebar-section-children"><a href="module-URL.html">URL</a></div><div class="sidebar-section-children"><a href="module-user-environment.html">user-environment</a></div><div class="sidebar-section-children"><a href="module-userid.html">userid</a></div><div class="sidebar-section-children"><a href="module-view.html">view</a></div><div class="sidebar-section-children"><a href="module-window.html">window</a></div><div class="sidebar-section-children"><a href="module-workspace.html">workspace</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-classes"><div>Classes</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="module-math-trig.iso.html">iso</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaDRAPIObject.html">rosettaDRAPIObject</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-drapi-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaServicesEntry.html">rosettaServicesEntry</a></div><div class="sidebar-section-children"><a href="module-rosetta-api-voltmx-rosettaVMXObject.html">rosettaVMXObject</a></div><div class="sidebar-section-children"><a href="module-statistical.beta.html">beta</a></div><div class="sidebar-section-children"><a href="module-statistical.binom.html">binom</a></div><div class="sidebar-section-children"><a href="module-statistical.chiSq.html">chiSq</a></div><div class="sidebar-section-children"><a href="module-statistical.confidence.html">confidence</a></div><div class="sidebar-section-children"><a href="module-statistical.coVariance.html">coVariance</a></div><div class="sidebar-section-children"><a href="module-statistical.expon.html">expon</a></div><div class="sidebar-section-children"><a href="module-statistical.f.html">f</a></div><div class="sidebar-section-children"><a href="module-statistical.logNorm.html">logNorm</a></div><div class="sidebar-section-children"><a href="module-statistical.mode.html">mode</a></div><div class="sidebar-section-children"><a href="module-statistical.norm.html">norm</a></div><div class="sidebar-section-children"><a href="module-statistical.percentile.html">percentile</a></div><div class="sidebar-section-children"><a href="module-statistical.percentRank.html">percentRank</a></div><div class="sidebar-section-children"><a href="module-statistical.poisson.html">poisson</a></div><div class="sidebar-section-children"><a href="module-statistical.quartile.html">quartile</a></div><div class="sidebar-section-children"><a href="module-statistical.rank.html">rank</a></div><div class="sidebar-section-children"><a href="module-statistical.stDev.html">stDev</a></div><div class="sidebar-section-children"><a href="module-statistical.t.html">t</a></div><div class="sidebar-section-children"><a href="module-statistical.Var.html">Var</a></div><div class="sidebar-section-children"><a href="module-statistical.weiBull.html">weiBull</a></div><div class="sidebar-section-children"><a href="module-statistical.z.html">z</a></div><div class="sidebar-section-children"><a href="module-statistical-gamma.html">gamma</a></div><div class="sidebar-section-children"><a href="module-statistical-gammaLn.html">gammaLn</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="sidebar-global"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#getDefault">getDefault</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentDb">isCurrentDb</a></div><div class="sidebar-section-children"><a href="global.html#isCurrentLocal">isCurrentLocal</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsDb">setDefaultAsDb</a></div><div class="sidebar-section-children"><a href="global.html#setDefaultAsLocal">setDefaultAsLocal</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#light-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
