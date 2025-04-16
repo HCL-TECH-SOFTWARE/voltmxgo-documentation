@@ -17,37 +17,41 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
 2. On **Getting Started** step, click **Next**.
 
-    ![Design Import Wizard dialog](../../assets/images/diwizard.png)
+    ![Design Import Wizard dialog](../../assets/images/diwizard.png){: style="height:80%;width:80%"}
 
 3. On **Associate Foundry App** step, click **Use Existing**. The **Volt MX Go Applications** dialog opens.
 
-    ![Design Import Wizard dialog](../../assets/images/difoundryapp.png)
+    ![Design Import Wizard dialog](../../assets/images/difoundryapp.png){: style="height:80%;width:80%"}
 
-4. Click **Associate** corresponding to the Volt MX Go Foundry app you want to use. 
+4. Click **Associate** corresponding to the Volt MX Go Foundry app you want to use.
 
-    In the example image, only one application is available. The number of applications you will see in the **Volt MX Go Applications** dialog will depend on the number of applications in the Volt MX Go Foundry. 
+    In the example image, only one application is available. The number of applications you will see in the **Volt MX Go Applications** dialog will depend on the number of applications in the Volt MX Go Foundry.
 
-    ![Design Import Wizard dialog](../../assets/images/diassociate.png)
+    ![Design Import Wizard dialog](../../assets/images/diassociate.png){: style="height:80%;width:80%"}
 
 5. After the name of the selected Volt MX Go Foundry app is displayed, click **Next**.
 
-    ![Design Import Wizard dialog](../../assets/images/difoundrybackend.png)
+    ![Design Import Wizard dialog](../../assets/images/difoundrybackend.png){: style="height:80%;width:80%"}
 
 6. On **Identity Service**:
 
     1. Select **Use Existing**.
 
-        ![Design Import Wizard dialog](../../assets/images/diexistdrapi.png)
+        ![Design Import Wizard dialog](../../assets/images/diexistdrapi.png){: style="height:80%;width:80%"}
 
     2. Under **Select Existing Identity Service**, select an identity service from the drop-down list and then click **Next**.
 
-        ![Design Import Wizard dialog](../../assets/images/didrapi.png)
+        ![Design Import Wizard dialog](../../assets/images/didrapi.png){: style="height:80%;width:80%"}
 
     3. In the **HCL Domino Login** dialog, log in with your *Domino credentials*.
 
-        ![Domino REST API log in dialog](../../assets/images/dicredential.png)
+        ![Domino REST API log in dialog](../../assets/images/dicredential.png){: style="height:80%;width:80%"}
 
         In case a **Permission Requested** dialog appears, click **Allow**.
+
+        !!! note
+
+            In case of an error due to incorrect **Scope**, **Client ID**, or **Client Secret**, a dialog shows an error message and information on how to address the error. You must then update the existing identity service you selected in Volt MX Go Foundry.
 
     4. Choose the identity service related to your app on Volt MX Go Foundry in **Foundry App Identity Service** and click **Next**.
 
@@ -55,7 +59,7 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
             You should always select the Identity Service name that contains *used for DRAPI*.
 
-        ![Design Import Wizard dialog](../../assets/images/difoundry.png)
+        ![Design Import Wizard dialog](../../assets/images/difoundry.png){: style="height:80%;width:80%"}
 
 7. On **Scope and Forms**:
 
@@ -73,25 +77,25 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
         The available scopes are based on the scopes defined when creating the identity service.  
 
-        ![Design Import Wizard dialog](../../assets/images/discope.png)
+        ![Design Import Wizard dialog](../../assets/images/discope.png){: style="height:80%;width:80%"}
 
     1. Click the **Forms** tab and select the forms, fields, and actions you want to include in the import.
 
-        ![Design Import Wizard dialog](../../assets/images/discopeform.png)
+        ![Design Import Wizard dialog](../../assets/images/discopeform.png){: style="height:80%;width:80%"}
 
     1. Click the **Views** tab and select the views and actions you want to include in the import.
 
-        ![Design Import Wizard dialog](../../assets/images/didbviews.png)
+        ![Design Import Wizard dialog](../../assets/images/didbviews.png){: style="height:80%;width:80%"}
 
     1. Click the **Agents** tab and select the agents you want to include in the import.
 
-        ![Design Import Wizard dialog](../../assets/images/diagents.png)
+        ![Design Import Wizard dialog](../../assets/images/diagents.png){: style="height:80%;width:80%"}
 
     1. Click **Next**.
 
 8. On **Summary**, review the selected `forms`, `fields`, `views`, and `agents` you want to import. Once you confirm your selection, click **Build Iris Application**.
 
-    ![Design Import Wizard dialog](../../assets/images/disummary.png)
+    ![Design Import Wizard dialog](../../assets/images/disummary.png){: style="height:80%;width:80%"}
 
     !!! note
 
@@ -110,12 +114,12 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
         - Click the **Show only with errors** toggle in a specific tab to the on position to see all elements with the **error** icon in that specific tab. The **Show failed imports** toggle won't be visible in a specific tab when there are no failed imports in that particular tab.
         - You can click **view report** to see a results report of imported forms, views, and agents in a new window.
 
-    ![Design Import Wizard dialog](../../assets/images/diresult.png)
+    ![Design Import Wizard dialog](../../assets/images/diresult.png){: style="height:80%;width:80%"}
 
 Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt MX Go Iris.
 
-![Import output in storyboard view](../../assets/images/dioutput.png)
+![Import output in storyboard view](../../assets/images/dioutput.png){: style="height:80%;width:80%"}
 
 To see the imported forms in a directory, click the **DESIGN** tab to show the **Project** tab. You then expand the **Responsive Web / Desktop** and the **Form** directory to show the imported forms, views, and actions.
 
-![Import output in the Forms directory](../../assets/images/dioutput1.png)
+![Import output in the Forms directory](../../assets/images/dioutput1.png){: style="height:80%;width:80%"}

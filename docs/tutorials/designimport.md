@@ -178,8 +178,8 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         |:----|:----|
         |DRAPI URL|This refers to the Domino REST API URL you are working with.|
         |Scope|This refers to the name of the scope that's set up in the OAuth app you are using in the Domino REST API.<br/><br/>If multiple scopes are configured in the OAuth app, and you wish to use specific scopes, ensure that you separate these scopes with commas when you enter them. For example: `scope1,scope2`<br/><br/>If you intend to use or access all the scopes available in Domino REST API, enter `$DATA`. Just make sure that you only configured `$DATA` and `$SETUP` in the OAuth app in Domino REST API.|
-        |Client ID | This is the App ID of the OAuth app you are using in Domino REST API.|
-        |Client Secret| This is the App Secret of the OAuth app you are using in Domino REST API.|
+        |App ID | This is the App ID of the OAuth app you are using in Domino REST API.|
+        |App Secret| This is the App Secret of the OAuth app you are using in Domino REST API.|
         |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
 
         ![Design Import Wizard dialog](../assets/images/dikeep.png){: style="height:80%;width:80%"}
@@ -237,6 +237,10 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     3. Click **Next**. The **HCL Domino Login** dialog opens.
 
         ![Domino REST API log in dialog](../assets/images/dicredential.png){: style="height:80%;width:80%"}
+
+        !!! note
+
+            In case of an error due to incorrect entry in the **Scope**, **App ID**, or **App Secret** fields in the **Create New Identity Service**, a dialog shows an error message and information on how to address the error. Clicking **OK** in the dialog will redirect you to the **Create New Identity Service**, where you can correct the entry in the relevant text field.
 
     4. Login with your *Domino credentials* in the **HCL Domino Login** dialog.
 
