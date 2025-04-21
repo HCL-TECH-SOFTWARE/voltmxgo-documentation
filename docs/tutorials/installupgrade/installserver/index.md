@@ -7,7 +7,7 @@ The topic guides you in installing the following server components of Volt MX Go
 
 !!! warning "Important"
 
-    - The installation and upgrade processes for Volt MX Go Foundry in the Volt MX Go v2.1 release differ from that of the Volt MX Go v2.0.4 or earlier release. In the Volt MX Go v2.1 release: 
+    - The installation and upgrade processes for Volt MX Go Foundry in the Volt MX Go v2.1 or later release differ from that of the Volt MX Go v2.0.4 or earlier release. In the Volt MX Go v2.1 or later release: 
     
         - Volt Foundry is first installed, followed by installing the necessary plugins using the Volt MX Go Plugin Installer. The plugins enable the capabilities unique to Volt MX Go. Additionally, the plugins must be reinstalled each time Volt Foundry is upgraded.
 
@@ -17,5 +17,5 @@ The topic guides you in installing the following server components of Volt MX Go
     
     - Before starting the installation, make sure to verify that you meet the [System requirements](../sysreq/index.md).  
 
-- [For Volt MX Go v2.1](installdrapi.md)
+- [For Volt MX Go v2.1 or later](installdrapi.md)
 - [For Volt MX Go v2.0.4 or earlier](nativeinstallers.md)

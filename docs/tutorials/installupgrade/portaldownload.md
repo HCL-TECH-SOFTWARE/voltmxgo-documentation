@@ -4,9 +4,9 @@
 
 Guides you on how to download the HCL Volt MX Go installers.
 
-## For Volt MX Go v2.1
+## For Volt MX Go v2.1 or later
 
-Starting from the Volt MX Go v2.1 release, you must download the supported versions of installers of Volt Foundry and Volt Iris<!-- from the HCl License & Download Portal-->. You must also download the Volt MX Go Plugin Installer, which installs the Volt MX Go plugins to Volt Foundry and Volt Iris to enable the Volt MX Go features. The following procedure guides you in downloading the installers.
+Starting from the Volt MX Go v2.1 release, you must download the supported versions of installers of Volt Foundry and Volt Iris. You must also download the Volt MX Go Plugin Installer, which installs the Volt MX Go plugins to Volt Foundry and Volt Iris to enable the Volt MX Go features. The following procedure guides you in downloading the installers.
 
 ### From My HCLSoftware portal
 
@@ -188,7 +188,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 ## For Volt MX Go v2.0.4 and earlier
 
-Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry and Volt MX Go Iris installers<!-- from the HCL License & Download Portal-->. The following procedure guides you in doing that.
+Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry and Volt MX Go Iris installers. The following procedure guides you in doing that.
 
 ### From My HCLSoftware portal
 

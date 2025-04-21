@@ -4,11 +4,13 @@ This section provides compatibility information between different versions of Vo
 
 ## Volt MX Go and Domino REST API version compatibility 
 
-!!!warning "Important"
-    Using non-compatible versions of Volt MX Go and Domino REST API may result in operation issues. Always use compatible software versions.
+!!! warning "Important"
+
+    Using non-compatible versions of Volt MX Go and Domino REST API may result in operation issues.
 
 |Volt MX Go version|Domino REST API version|
 |----|----|
+|version 2.1.1|version 1.1.3|
 |version 2.1|version 1.1.1|
 |version 2.0.4|version 1.0.14|
 |version 2.0.3|version 1.0.12|

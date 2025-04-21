@@ -1,4 +1,4 @@
-# System requirements for Volt MX Go v2.1
+# System requirements for Volt MX Go v2.1 or later
 
 This section describes the minimum system requirements for deploying Volt MX Go. 
 
