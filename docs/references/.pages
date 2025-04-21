@@ -1,16 +1,16 @@
 nav:
     - index.md
-    - What's new: whatsnew
-    - System requirements: tutorials/sysreq.html
-    - compatibilitymatrix.md
-    - VoltFormula coding exercise examples: topicguides/vfcodingguides.html
-    - kubecheatsheet.md
+    - System requirements: tutorials/installupgrade/sysreq/index.html
     - Rosetta API reference documentation: javadoc/index.html
     - Rosetta API implementation status: javadoc/api_status.html
-    - reflogginglevels.md 
-    - Documentation references: references/index.html#documentation-references
+    - compatibilitymatrix.md
+    - addconsideration.md
     - knownlimitation.md
     - troubleshoot.md
+    - VoltFormula coding exercise examples: topicguides/vfcodingguides.html
+    - Documentation references: references/index.html#documentation-references
     - Support: references/index.html#support
+    - kubecheatsheet.md
+    - reflogginglevels.md 
     - summernotewidget.md
     - docguide.md

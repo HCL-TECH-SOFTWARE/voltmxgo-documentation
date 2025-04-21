@@ -5,11 +5,10 @@
 Data models can be generated in an Object Service by Volt MX Go Foundry administrators. For Domino object services, a data model can be generated for any `Form` or `View` associated with a `scope` defined by a Domino REST API administrator. Additionally, Volt MX Go Foundry data models can be generated for `Other Metadata` to provide specific information outside the data contained in the form and view Domino documents.
 
 !!! note
- 
-    `Forms` and `views` are created in a Domino REST API `schema` and named by a Domino REST API `scope`.
-     
 
-In addition to some [Meta fields](#meta-fields), generated data models include: 
+    `Forms` and `views` are created in a Domino REST API `schema` and named by a Domino REST API `scope`.
+
+In addition to some [Meta fields](#meta-fields), generated data models include:
 
 - **Form** data models include all fields defined by the associated Domino REST API `schema`.
 - **View** data models include all view columns defined in the NSF design.
@@ -38,9 +37,9 @@ Volt MX Go Foundry data models are generated based on related artifacts in Domin
 
 ## Effective data types
 
-Field data types in the generated Volt MX Go Foundry data model are effectively the same as the data type defined in the Domino REST API schema. Some field (column) data types are common between Domino and Volt MX Go Foundry, for example string, numbers, and dates. Others, such as Domino `multivalue` (technically, these are `arrays`) and `rich text` aren't found in Volt MX Go Foundry.
+Field data types in the generated Volt MX Go Foundry data model are the same as the data type defined in the Domino REST API schema. Some field (column) data types are common between Domino and Volt MX Go Foundry, for example string, numbers, and dates. Others, such as Domino `multivalue` (technically, these are `arrays`) and `rich text` aren't found in Volt MX Go Foundry.
 
-For common data types, the field type in the generated Volt MX Go Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`. 
+For common data types, the field type in the generated Volt MX Go Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`.
 
 ![Domino REST API schema](../../assets/images/recipe-servings-keepschema.png)
 
@@ -83,6 +82,7 @@ For form-based data models, the document's `@unid` is an obvious example. Below 
 ```{ .yaml .no-copy }
 x_0040addedtofile
 x_0040aliases
+x_0040attachments
 x_0040created
 x_0040editable
 x_0040lastaccessed
@@ -93,57 +93,72 @@ x_0040noteid
 x_0040parentunid
 x_0040revision
 x_0040size
-x_0040unid	
+x_0040unid
 x_0040unread
+x_0040warnings
 ```
 
 For view-based data models, the following `meta-fields` are returned:
 
 ```{ .yaml .no-copy }
-x_0040etag	
-x_0040form	
-x_0040index	
-x_0040noteid	
+x_0040etag
+x_0040form
+x_0040index
+x_0040noteid
+x_0040scope
+x_0040totalCount
 x_0040unid
 ```
 
-!!!note
+!!! note
+
     - **All `meta-fields` aren't sortable**. 
-    - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
-    - Meta-fields are included in generated data models by default. The Volt MX Go Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
     
+    - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
+
+    - Meta-fields are included in generated data models by default. The Volt MX Go Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
+
     - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
     
     - Offline objects require a data model to specify a primary key field. `x_0040unid` needs to be set as the primary key for Domino data models. However, with views, the returning list of data may contain items with no UNID or items with the same UNID.<br/><br/>Items with no UNID occur when querying categorized views. These items with no UNID are top-level category items. To avoid receiving these items, a user must scope the view request to return only the document items using the OData filter parameter `<GET view URL>?$filter=x_0040scope eq documents`.<br/><br/>For items with the same UNID, errors may occur when syncing data to the front end.
 
+    - `x_0040totalCount` provides the maximum number of documents in a view, including those documents that might have certain access restrictions. This means that the number of returned documents on `GET` for a view-based data model might be less than the value provided by the `x_0040totalCount` since you might not have access to some of those documents.
+
+        The value of `x_0040totalCount` might not also match the number of returned documents on `GET` for a view-based data model when the view is designed to have a column that shows each value of a multivalue field as a separate document.  
+
 ## Data model metadata attribute
 
-The `metadata` attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt MX Go Iris.
+The **Metadata** attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt MX Go Iris.
 
-- Column characteristics: For View columns (only non-meta columns), the data model field Metadata attribute includes additional column properties:
-    - position: refers to column number
-    - sorted: refers to whether the column is sortable
-    - direction: refers to sort direction, either ascending or descending
-    - resort-asc: indicates that clicking the column header sorts the view in ascending order
-    - resort-desc: indicates that clicking the column header sorts the view in descending order.
-        
-        !!!note
-            If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.
+### Column characteristics
 
-    - title: displays the title of the column
-    - multiValueSeparator: NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.
-    
-- Form aliases: For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, the `Main Document` form in the Domino Teamroom database has three aliases, so the **Metadata** properties look like the following:
+For View columns (only non-meta columns), the data model field **Metadata** attribute includes additional column properties:
+
+|Column property|Description|
+|:----|:----|
+|position|Refers to column number.|
+|sorted|Refers to whether the column is sortable|
+|direction|Refers to sort direction, either ascending or descending.|
+|resort-asc|Indicates that clicking the column header sorts the view in ascending order.|
+|resort-desc|Indicates that clicking the column header sorts the view in descending order.<br/><br/>If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.|
+|title|Displays the title of the column.|
+|multiValueSeparator|NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.|
+
+### Form aliases
+
+For the form fields, the form's alias names are itemized on the `x_0040aliases` meta field. One metadata property is added for each alias. For example, if a form in a database has three aliases, the **Metadata** properties look like the following:
 
 ![Metadata properties](../../assets/images/formaliasproperties.png)
 
-- Extended data types: Rich text and multi-value (array) form fields are seen as string fields in the data model. For these fields, `dominoSpecialType` and `dominoArrayComponentType` properties are added to metadata.
+### Extended data types
 
-    |For...|dominoSpecialType|dominoArrayComponentType|
-    |----|----|----|
-    |RICH TEXT|richtext|not used|
-    |MULTI-VALUE|array|the array type, such as string, number|
-    |DATE ONLY|date|not used|
+Rich text and multi-value (array) form fields are seen as string fields in the data model. For these fields, `dominoSpecialType` and `dominoArrayComponentType` properties are added to metadata.
+
+|For...|dominoSpecialType|dominoArrayComponentType|
+|:----|:----|:----|
+|RICH TEXT|richtext|not used|
+|MULTI-VALUE|array|the array type, such as string, number|
+|DATE ONLY|date|not used|
 
 ## Other Metadata
 
@@ -153,10 +168,10 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
 
 **Implemented `Other Metadata` entities**:
 
-- UserInfo 
+- UserInfo
 
     This endpoint gets information about a logged in Domino user. The user must be logged in and be able to be authenticated against Domino. The returned fields may include:
-    
+
     ```{ .yaml .no-copy }
     email
     family_name
@@ -174,22 +189,22 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     This endpoint gets information about the Domino and Domino REST API versions. The returned fields may include:
 
     ```{ .yaml .no-copy }
-    dominoPlatformBits
+    dominoBuildNumber
     dominoFixpackNumber
-    keepDescription
-    keepName
-    keepVendor
-    dominoPlatform
-    dominoMinorVersion
-    keepVersion
     dominoHotfixNumber
+    dominoMajorVersion 
+    dominoMinorVersion
+    dominoPlatform
+    dominoPlatformBits
     dominoProductionBuild
     dominoQmrNumber
-    dominoBuildNumber
     dominoQmuNumber
-    keepImageBuild
     dominoVersion
-    dominoMajorVersion    
+    keepDescription
+    keepImageBuild
+    keepName
+    keepVendor
+    keepVersion
     ``` 
 
 - AttachmentsInfo
@@ -197,15 +212,15 @@ To use this information, a Volt MX Go Foundry administrator must select which `O
     This endpoint gets information about all the attachments on a document. The return fields may include:
 
     ```{ .yaml .no-copy }
-    size
     created
-    name
     modified
+    name
+    size
     ```
 
     !!! note
 
         When performing the GET method for **AttachmentsInfo**, an error is thrown if you don't provide the UNID of the document.
-            
+
         For more information on performing the GET method, see [Test the GET method by viewing a record](../../tutorials/adaptertutorial.md#test-the-get-method-by-viewing-a-record).
            

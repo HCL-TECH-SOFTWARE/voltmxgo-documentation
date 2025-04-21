@@ -11,7 +11,7 @@ Volt MX Go modernizes and extends the value of your Domino applications with the
 - connecting Volt MX Go Foundry to your Domino applications
 - modernizing or creating new multi-experience applications in Volt MX Go Iris on your Domino back-end data and applications
 - expanding who can code applications built in Domino, allowing for app modernization or migration without requiring a complete rewrite of the code
-- importing existing Domino views, forms, and fields into Volt MX Go Foundry to	get a head start on your Volt MX Go applications 
+- importing existing Domino views, forms, and fields into Volt MX Go Foundry to get a head start on your Volt MX Go applications
 
 To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 
@@ -28,13 +28,9 @@ To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 
 - [Trainings and webinars](tutorials/webinar.md)
 
----
-## What's new
-
-For the latest release information about Volt MX Go, see [What's new](references/whatsnew/index.md).
+- [Video tutorials and demonstrations](tutorials/video.md)
 
 ---
-
 ## Quick links
 
 - [Rosetta API reference documentation](javadoc/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](assets/images/external-link.svg){: style="height:13px;width:13px"}
@@ -44,6 +40,8 @@ For the latest release information about Volt MX Go, see [What's new](references
 - [Support](references/index.md#support)
 
 - [Documentation references](references/index.md#documentation-references)
+
+- [Additional considerations](references/addconsideration.md)
 
 ---
 ## How the documentation is organized
@@ -58,5 +56,6 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
 [References](references/index.md) - Technical references and descriptions on using Volt MX Go
 
-!!!tip
+!!! tip
+
     For more information on using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md).
