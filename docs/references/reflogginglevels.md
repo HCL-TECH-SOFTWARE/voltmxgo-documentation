@@ -1,5 +1,6 @@
 # Logging levels
-Logging levels are essential for monitoring and evaluating activities that take place throughout the execution of Volt MX Go Iris. Log files contain information about the events happening in Volt MX Go Iris, especially during Design Import use. Users can select the appropriate logging level based on the level of log details they wish to capture. 
+
+Logging levels are essential for monitoring and evaluating activities that take place throughout the execution of Volt Iris. Log files contain information about the events happening in Volt Iris, especially during Design Import use. Users can select the appropriate logging level based on the level of log details they wish to capture.
 
 |Logging Level|Description|
 |----|----|
@@ -9,7 +10,3 @@ Logging levels are essential for monitoring and evaluating activities that take 
 |Debug|Logs detailed information about events useful to debug the application.
 |Warn|Logs harmful situations, such as process interruption, that don't affect the whole application.|
 |Fatal|Logs severe error events that might lead the application to abort.|
-
-
-
-

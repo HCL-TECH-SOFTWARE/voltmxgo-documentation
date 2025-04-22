@@ -46,12 +46,12 @@
     !!!note
         The `-w` flag tells the kubectl command to wait, and updates the output over time with any changes.
 
-## Upgrade Volt MX Go Foundry
+## Upgrade Volt Foundry
 
 <!--### For Volt MX Go v2.1
 
 !!!note
-    The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+    The procedure applies when upgrading to Volt MX Go v2.1 from an earlier release version. Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt Foundry installation.
 
 1. Download Foundry chart.
 
@@ -92,7 +92,7 @@
 ### For Volt MX Go v2.0.4 or earlier
 
 !!!note
-    The procedure applies when upgrading up to Volt MX Go v2.0.4 from an earlier release version. Up to Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
+    The procedure applies when upgrading up to Volt MX Go v2.0.4 from an earlier release version. Up to Volt MX Go v2.0.4, the following helm charts are used for Volt Foundry installation:
 
     - `voltmx-dbupdate`
     - `voltmx-foundry`
@@ -136,4 +136,4 @@
 
 ## Next step
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).
+After completing the upgrade installation of **Domino REST API** and **Volt Foundry**, proceed to [Install and upgrade Volt Iris](installirisindex.md).

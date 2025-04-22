@@ -1,6 +1,7 @@
 # Uninstall Volt MX Go plugins
 
-!!!note
+!!! note
+
     The information in this topic applies starting with the Volt MX Go version 2.1 release.
 
 ## About this task
@@ -90,4 +91,3 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
 ## Expected result
 
 You have uninstalled Volt MX Go plugins from Volt Foundry and Volt Iris. You can still use Volt Foundry and Volt Iris, but you can't access and use the Volt MX Go features.
-

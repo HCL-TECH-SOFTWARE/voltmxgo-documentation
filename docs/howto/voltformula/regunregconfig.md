@@ -6,7 +6,7 @@ Describes how to register and unregister custom Rosetta API in the **API Configu
 
 ## Before you begin
 
-You have lauched Volt MX Go Iris.  
+You have launched Volt Iris.  
 
 ## Procedure
 

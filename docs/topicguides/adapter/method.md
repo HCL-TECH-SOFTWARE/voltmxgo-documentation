@@ -2,11 +2,11 @@
 
 ## Overview
 
-Methods for interacting with the data models are generated when generating the data models. 
+Methods for interacting with the data models are generated when generating the data models.
 
 For view-based data model and Other Metadata based data model, only the GET method is generated.
 
-For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported: 
+For form-based data models, a number of methods including standard CRUD operations and binary CRUD are generated and supported:
 
 - POST : *Create* a new Domino document containing the specified fields.
 - GET : *Read* existing Domino documents, returning zero or more documents.
@@ -15,7 +15,8 @@ For form-based data models, a number of methods including standard CRUD operatio
 - PATCH : *Update* an existing document, replacing only the specified fields. If a field is omitted from the payload, the field value in the Domino document isn't modified.
 - BULK UPDATE: *Update* an existing collection of documents, replacing only the specified fields in those documents. If a field is omitted from the payload, the field value in the collection of Domino documents isn’t modified.
 
-    !!!warning "Important"
+    !!! warning "Important"
+
         You must use the `$filter` ODATA query parameter to tell Domino REST API which documents to update. Otherwise, an error occurs.
 
 - createBinary - `Create` a new attachment file to attach to a specified Domino document.
@@ -25,10 +26,11 @@ For form-based data models, a number of methods including standard CRUD operatio
 <!--- Batch - `Update` of 1 or more documents matching a specified criteria, for example, all documents of type `employee`.
 -->
 
-!!!tip 
-    The binary verbs, `createBinary`, `getBinary`, `updateBinary`, `deleteBinary`, are generated only when the Domino REST API administrator includes the **$FILES** virtual field in the form mode. 
+!!! tip
 
-Data models in Volt MX Go Foundry are associated with specific Domino forms, so each operation (GET, Update, etc.) only applies to the form associated with the data model. 
+    The binary verbs, `createBinary`, `getBinary`, `updateBinary`, `deleteBinary`, are generated only when the Domino REST API administrator includes the **$FILES** virtual field in the form mode.
+
+Data models in Volt Foundry are associated with specific Domino forms, so each operation (GET, Update, etc.) only applies to the form associated with the data model.
 
 ## Supported OData query parameters for form-based GET method
 
@@ -137,15 +139,15 @@ You may perform the following binary operations:
     - The field parameter is optional. If the attachment you wish to delete is associated with a field in the Domino database, include the field in the delete request to remove the attachment.
 
 !!!warning "Important"
-    - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Volt MX Go Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"} or updating `integration.resourceMemoryLimit` in `values.yaml` for Volt MX Go Foundry on supported Kubernetes platform.
-    
+    - Large attachment files may cause some performance issues, so limit the attachment size to the minimum possible size. If you have large-sized attachments, increase your Volt Foundry configured memory resource by [configuring heap size](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_manual_install_guide/Content/Configuring_Connectors_and_Batch_Files_-_Tomcat.html#configuring-heap-and-permgen-size-for-tomcat "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"} or updating `integration.resourceMemoryLimit` in `values.yaml` for Volt Foundry on supported Kubernetes platform.
+
     - By default, there is also a limit in the Domino Rest API on how big an attachment it can support. To learn how to change the size limit, see [Change file size limit](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/changefilesize.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Domino REST API documentation.   
- 
+
 ## Using PATCH verb from Volt MX SDK
 
 The Volt MX SDK has CRUD functions allowing an end-user application to use the REST API to interact with the Domino data in the back end. If you want to use the PATCH verb, you need to use the `customVerb` function from the Volt MX SDK. For more information, see [customVerb method](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#customverb-method "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX Documentation.
 
-???example "Refer to the code example for using the SDK's `customVerb` function."   
+???example "Refer to the code example for using the SDK's `customVerb` function."
 
     ```
     onPatchDocument: function() {
@@ -174,7 +176,7 @@ The Volt MX SDK has CRUD functions allowing an end-user application to use the R
 
 !!!note
     - For more information, see the general use of the [binary APIs from the Volt MX SDK](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/ObjectsAPIReference/OnlineObjectService_Class.html#getbinarycontent-method "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
-    
+
     - There is no function in the Volt MX SDK for calling `deleteBinary`.
 
 ???example "Refer to the code examples for using the SDK's binary functions."

@@ -22,9 +22,9 @@ Guides you in installing Domino REST API.
 
 For more information, see the [Installation and configuration](https://opensource.hcltechsw.com/Domino-rest-api/tutorial/installconfig/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} page in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
-## Install Volt MX Go Foundry
+## Install Volt Foundry
 
-**Starting from Volt MX Go v2.1 release**, Volt MX Go Foundry is enabled by installing the supported version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that from Volt MX Go v2.1 up to the latest release, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
+**Starting from Volt MX Go v2.1 release**, Volt Foundry is enabled by installing the supported version of Volt Foundry using available installation mechanisms and then installing Volt MX Go plugins to Volt Foundry using a Volt MX Go Plugin Installer. The use of Helm charts and a single container solution are also supported for installing Volt Foundry. It's important to note that from Volt MX Go v2.1 up to the latest release, **only Volt Foundry using a Tomcat non-clustered application server is supported**.
 
 **Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.**
 
@@ -39,7 +39,7 @@ For more information, see [Download HCL Volt MX Go installers](../portaldownload
 
 #### Install Volt Foundry
 
-For installing Volt MX Go Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps.
+For installing Volt Foundry, click the link to the installation guide corresponding to your installation platform and follow the installation steps.
 
 !!! warning "Important"
 
@@ -199,9 +199,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Foundry to 
     1. Locate the `values.yaml` file in the Volt Foundry directory.
     2. Open the `values.yaml` file with your preferred editor and locate the line containing the `imageRegistry:` key.
     3. Change the value of the `imageRegistry:` key to `"hclcr.io/voltmxgo`.
-    4. Save your changes and close the file. 
+    4. Save your changes and close the file.
 
-3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go. 
+3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go.
 
 ### For single container solution
 
@@ -237,4 +237,4 @@ For more information, see [Volt Foundry Single Container Solution](https://opens
 
 ## Next step
 
-After completing the installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install Volt MX Go Iris](../installiris/installiris.md).
+After completing the installation of **Domino REST API** and **Volt Foundry**, proceed to [Install Volt Iris](../installiris/installiris.md).

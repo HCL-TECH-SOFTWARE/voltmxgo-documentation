@@ -1,6 +1,6 @@
 # System requirements for Volt MX Go v2.0.4 or earlier
 
-This section describes the minimum system requirements for deploying Volt MX Go. 
+This section describes the minimum system requirements for deploying Volt MX Go.
 
 ## For installing Domino REST API
 
@@ -8,11 +8,11 @@ This section describes the minimum system requirements for deploying Volt MX Go.
 
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for installing Domino REST API using the installer.
 
-## For installing Volt MX Go Foundry
+## For installing Volt Foundry
 
 **Software requirements**
 
-Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} to know the software requirements for installing Volt MX Go Foundry using installers.
+Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} to know the software requirements for installing Volt Foundry using installers.
 
 **Hardware requirements**
 
@@ -28,17 +28,17 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 
 **Supported browsers**
 
-Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for the Volt MX Go Foundry Console.
+Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for the Volt Foundry Console.
 
-**Prerequisites for Volt MX Go Foundry command line installer**
+**Prerequisites for Volt Foundry command line installer**
 
 Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Foundry command line installer.
 
 **Prerequisites for Volt MX Foundry Containers Helm Installation**
 
-Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Volt MX Go Foundry Containers Helm Installation.
+Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Volt Foundry Containers Helm Installation.
 
-## For installing Volt MX Go Iris
+## For installing Volt Iris
 
 === "On Windows"
 
@@ -128,4 +128,4 @@ Rancher Desktop requires the following on Windows:
 
 - To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](../upgradeserver/index.md).
 
-- To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](../installiris/index.md).
+- To install and upgrade Volt Iris, proceed to [Install and upgrade Volt Iris](../installiris/index.md).

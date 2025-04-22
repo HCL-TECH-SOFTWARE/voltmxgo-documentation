@@ -30,7 +30,7 @@ To learn about identified issues and their corresponding workarounds and resolut
 
 ## VoltFormula coding practices
 
-Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodingguides.md) in Volt MX Go Iris.
+Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodingguides.md) in Volt Iris.
 
 ## Documentation references
 

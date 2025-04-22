@@ -14,9 +14,9 @@ Guides you in upgrading Volt MX Go server components.
 
 2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} based on your installation platform.
 
-## Upgrade Volt MX Go Foundry
+## Upgrade Volt Foundry
 
-The following procedures guide you in upgrading Volt MX Go Foundry to the latest version. As Volt MX Go Foundry supports various installation mechanisms, refer to the relevant upgrade procedure.
+The following procedures guide you in upgrading Volt Foundry to the latest version. As Volt Foundry supports various installation mechanisms, refer to the relevant upgrade procedure.
 
 ### For using an installer
 
@@ -29,11 +29,11 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 #### Before you begin
 
 - Back up your databases and server artifacts.
-- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v204-and-earlier).
+- You have downloaded the latest Volt Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v204-and-earlier).
 
-- Ensure that the Volt MX Go Foundry installer has execute permission.
+- Ensure that the Volt Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
-- Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
+- Ensure that you stop the application server of your existing Volt Foundry instance, which you want to upgrade.
 
 #### Procedure
 
@@ -44,7 +44,7 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
-    
+
     - [For Linux](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_linux_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
     <!-- [For command line installer](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html)-->
 
@@ -135,7 +135,7 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 
             The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.
 
-            <!--Up to Volt MX Go v2.0.4, the Helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt MX Go Foundry installation.-->
+            <!--Up to Volt MX Go v2.0.4, the Helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt Foundry installation.-->
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
 5. Invoke the init-guids script specifying the path of the prior deployment's `upgrade.properties` by running the following command:
@@ -150,11 +150,11 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 
 ## Next step
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](../installiris/index.md).
+After completing the upgrade installation of **Domino REST API** and **Volt Foundry**, proceed to [Install and upgrade Volt Iris](../installiris/index.md).
 
-<!--# Upgrade Volt MX Go Foundry
+<!--# Upgrade Volt Foundry
 
-The following procedures guide you in upgrading Volt MX Go Foundry to the latest version. As Volt MX Go Foundry supports various installation mechanisms, refer to the relevant upgrade procedure.
+The following procedures guide you in upgrading Volt Foundry to the latest version. As Volt Foundry supports various installation mechanisms, refer to the relevant upgrade procedure.
 
 ## For using an installer
 
@@ -166,7 +166,7 @@ The following procedures guide you in upgrading Volt MX Go Foundry to the latest
 
 ### For Volt MX Go v2.1
 
-Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
+Upgrades Volt Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 #### Before you begin
 
@@ -178,17 +178,17 @@ Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 - Ensure that the Volt Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
-- Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
+- Ensure that you stop the application server of your existing Volt Foundry instance, which you want to upgrade.
 
 #### 1. Install Volt Foundry
 
-- Follow the link to the upgrade procedure based on your used installation platform. In this step, upgrade your Volt MX Go Foundry v2.0.4 with the required minimum version of Volt Foundry. 
+- Follow the link to the upgrade procedure based on your used installation platform. In this step, upgrade your Volt Foundry v2.0.4 with the required minimum version of Volt Foundry. 
 
     !!!warning "Important"
         - For Volt MX Go v2.1, only Volt Foundry using a Tomcat non-clustered application server is supported.
         - The upgrade procedure indicates installation files and installation file download locations. **You must use the installer you downloaded in *Before you begin*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
-        - Make sure to point to the same database you used for your Volt MX Go Foundry v2.0.4 installation to access all the projects you worked on. 
+        - Make sure to point to the same database you used for your Volt Foundry v2.0.4 installation to access all the projects you worked on. 
 
     - [For Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html)
     
@@ -247,11 +247,11 @@ There are regular updates for Volt Foundry. These updates are major release vers
 #### Before you begin
 
 - Back up your databases and server artifacts.
-- You have downloaded the latest Volt MX Go Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v204-or-earlier).
+- You have downloaded the latest Volt Foundry installer based on your used installation platform/option. For more information, see [Download HCL Volt MX Go Release package](portaldownload.md#for-volt-mx-go-v204-or-earlier).
 
-- Ensure that the Volt MX Go Foundry installer has execute permission.
+- Ensure that the Volt Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
-- Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
+- Ensure that you stop the application server of your existing Volt Foundry instance, which you want to upgrade.
 
 #### Procedure
 
@@ -374,7 +374,7 @@ There are regular updates for Volt Foundry. These updates are major release vers
         ```
 
         !!!note
-            - Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+            - Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt Foundry installation.
             - The chart name has a version string in the filename. The `helm pull` command will pull down the latest version of the chart. Ensure your tar command uses the correct matching file name.
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
@@ -387,7 +387,7 @@ There are regular updates for Volt Foundry. These updates are major release vers
 #### Procedure
 
 !!!note
-    Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt MX Go Foundry installation.
+    Starting with Volt MX Go v2.1, only the `voltmx-foundry` helm chart is used for Volt Foundry installation.
 
 --8<-- "verupgrade1.md"
 
@@ -476,7 +476,7 @@ There are regular updates for Volt Foundry. These updates are major release vers
         ```
 
         !!!note
-            -  Up to Volt MX Go v2.0.4, the helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt MX Go Foundry installation.
+            -  Up to Volt MX Go v2.0.4, the helm charts `voltmx-dbupdate` and `voltmx-foundry` are used for Volt Foundry installation.
             - The foundry and dbupdate chart names have a version string in the filename. The `helm pull` command will pull down the latest version of the charts. Ensure your tar command uses the correct matching file names.    
 
 4. Obtain the `upgrade.properties` file from your prior deployment and copy it into the same directory as your `values.yaml`.
@@ -489,7 +489,7 @@ There are regular updates for Volt Foundry. These updates are major release vers
 #### Procedure
 
 !!!note
-    Up to Volt MX Go v2.0.4, the following helm charts are used for Volt MX Go Foundry installation:
+    Up to Volt MX Go v2.0.4, the following helm charts are used for Volt Foundry installation:
 
     - `voltmx-dbupdate`
     - `voltmx-foundry`
@@ -498,5 +498,5 @@ There are regular updates for Volt Foundry. These updates are major release vers
 
 ## Next step
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](installirisindex.md).
+After completing the upgrade installation of **Domino REST API** and **Volt Foundry**, proceed to [Install and upgrade Volt Iris](installirisindex.md).
 -->

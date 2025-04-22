@@ -37,5 +37,3 @@ Check the following video tutorials and demonstrations to learn more about how t
 
 ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[HCL Volt MX Go v2.1 on HCLSoftware Marketplace Walkthrough](https://www.youtube.com/watch?v=ctRla_jaUwI "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"}
 : Demonstrates how to try out HCL Volt MX Go v2.1 on the HCLSoftware Marketplace (formerly SoFy), HCL's hosted environment. Be up and running in minutes to see how you can modernize, extend, and enhance your existing Domino apps with Volt MX Go. Explore the Design Import, Domino REST API, VoltFormula, and First Touch.
-
-

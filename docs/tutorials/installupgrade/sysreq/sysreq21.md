@@ -16,7 +16,7 @@ The Volt MX Go Plugin Installer runs on any supported Volt Foundry server instal
 
 **Software requirements**
 
-Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} to know the software requirements for installing Volt MX Go Foundry using installers.
+Check the [Supported OS, Application Servers, and Database Guide](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} to know the software requirements for installing Volt Foundry using installers.
 
 **Hardware requirements**
 
@@ -32,7 +32,7 @@ Check the [Supported OS, Application Servers, and Database Guide](https://openso
 
 **Supported browsers**
 
-Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for the Volt MX Go Foundry Console.
+Check the [supported browsers](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for the Volt Foundry Console.
 
 <!--**Prerequisites for Volt Foundry command line installer**
 
@@ -40,7 +40,7 @@ Check the additional [prerequisites](https://opensource.hcltechsw.com/volt-mx-do
 
 **Prerequisites for Volt Foundry Containers Helm Installation**
 
-Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Volt MX Go Foundry Containers Helm Installation. 
+Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Volt Foundry Containers Helm Installation.
 
 **Requirements for Volt Foundry Single Container Solution**
 
@@ -88,4 +88,4 @@ Check the [prerequisites](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/
 
 - To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](../upgradeserver/index.md).
 
-- To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](../installiris/index.md).
+- To install and upgrade Volt Iris, proceed to [Install and upgrade Volt Iris](../installiris/index.md).

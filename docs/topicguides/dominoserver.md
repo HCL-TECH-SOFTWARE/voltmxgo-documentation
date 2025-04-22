@@ -34,7 +34,7 @@ A pod and a container are related concepts, but serve different purposes and hav
 
 - Smallest deployable unit in Kubernetes, which is a container orchestration platform.
 - Contains one or more containers that are coupled and share the same network namespace, IPC namespace, and storage volumes.
-    
+
     !!!note
         Containers within the same pod share the same resources and can communicate with each other using localhost, making them suitable for co-locating integrated services.
 

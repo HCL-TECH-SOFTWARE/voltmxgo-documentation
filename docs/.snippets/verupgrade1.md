@@ -5,7 +5,7 @@
     helm uninstall dbupdate -n mxgo
     ```
 
-6. Scale down existing Foundry deployments to zero by running the following commands:
+6. Scale down existing Volt Foundry deployments to zero by running the following commands:
 
     ```
     kubectl scale deployment --replicas=0 voltmx-foundry-console
@@ -37,7 +37,7 @@
     kubectl get pods
     ```
 
-    You should get an output similar to the following where the Foundry pods have been removed:
+    You should get an output similar to the following where the Volt Foundry pods have been removed:
 
     ```{ .yaml .no-copy}
     NAME                      READY   STATUS      RESTARTS   AGE
@@ -45,7 +45,7 @@
     mysql-0                   1/1     Running     0          5h36m
     ```
 
-9. Upgrade the Foundry applications by running the following command:
+9. Upgrade the Volt Foundry applications by running the following command:
 
     ```
     helm upgrade foundry voltmx-foundry -f values.yaml

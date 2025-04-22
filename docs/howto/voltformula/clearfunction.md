@@ -1,6 +1,7 @@
 # Clear formulas in controller and Action Editor
 
-!!!note
+!!! note
+
     The information in this topic applies starting with the Volt MX Go version 2.0.4 release. 
 
 ## About this task
@@ -9,7 +10,7 @@ Guides you on how to clear JavaScript code and formulas in **controllers** and *
 
 ## Before you begin
 
-- You have launched Volt MX Go Iris and have opened the project containing the formulas and JavaScript codes you want to delete.
+- You have launched Volt Iris and have opened the project containing the formulas and JavaScript codes you want to delete.
 - You need to use **controller** and the **Action Editor** in your project to access this feature.
 
 ## Procedure

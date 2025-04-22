@@ -1,22 +1,24 @@
 # Access VoltFormula Hikes 
 
-!!!note
+!!! note
+
     The information in this topic applies starting with Volt MX Go version 2.1 release. 
 
 ## About this task
 
 Guides you on how to access VoltFormula Hikes that provide step-by-step interactive walkthroughs helping you understand the basics of VoltFormula.  
 
-!!!info
+!!! info
+
     Hikes are organized into guided tours in a catalog, and in a sequence to take you through a learning path. You should go through the Hikes in the specified order.
 
 ## Before you begin
 
-You have launched Volt MX Go Iris.
+You have launched Volt Iris.
 
 ## Procedure
 
-1. Click the **Hikes** icon from the left navigation panel in Volt MX Go Iris. A page opens containing the available Hikes.
+1. Click the **Hikes** icon from the left navigation panel in Volt Iris. A page opens containing the available Hikes.
 
     ![Hikes icon](../../assets/images/hikes.png){: style="height:50%;width:50%"}
 
@@ -30,7 +32,7 @@ You have launched Volt MX Go Iris.
 
     ![Start on Hikes page](../../assets/images/hikes2.png)
 
-3. Follow the instructions in the displayed dialog, which is part of the Hike procedure to help you to navigate and perform the required steps. 
+3. Follow the instructions in the displayed dialog, which is part of the Hike procedure to help you to navigate and perform the required steps.
 
     The image shows an example of an Introduction and an instruction for starting the Hike. 
 
@@ -50,4 +52,3 @@ You have launched Volt MX Go Iris.
     The image shows the completion of a Hike and what you have achieved after completing the Hike.  
 
     [![Hike complete](../../assets/images/hikes6.png)](../../assets/images/hikes6.png "Click or tap to open in a new tab"){: target="_blank" rel="noopener noreferrer"}
-    

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The First Touch Recipe Catalog app is built with Volt MX Go to demonstrate how a Volt MX application can connect back to a Domino application through the Domino Adapter and Domino REST APIs. The app stores and displays recipe cards of various dishes. Its front-end user interface is created using Volt MX Go Iris, while the Domino database `FirstTouchRecipes.nsf` stores the recipe data used by the app. The app is an excellent working example of how data in your Domino database files might be accessed, displayed, and used in different ways and on various devices using Volt MX Go. 
+The First Touch Recipe Catalog app is built with Volt MX Go to demonstrate how a Volt MX application can connect back to a Domino application through the Domino Adapter and Domino REST APIs. The app stores and displays recipe cards of various dishes. Its front-end user interface is created using Volt Iris, while the Domino database `FirstTouchRecipes.nsf` stores the recipe data used by the app. The app is an excellent working example of how data in your Domino database files might be accessed, displayed, and used in different ways and on various devices using Volt MX Go.
 
 ![First Touch Recipe Catalog app](../assets/images/ftrecipeapp.png)
 
@@ -12,7 +12,7 @@ The Domino database `FirstTouchRecipes.nsf` stores the recipe data used by the t
 
 ![First Touch NSF](../assets/images/recipensf.png)
 
-Each cell in a row represents a field containing recipe information: 
+Each cell in a row represents a field containing recipe information:
 
 |Field name|Field description|
 |----|----|
@@ -51,7 +51,7 @@ You can click a recipe card to open an expanded view that shows recipe details s
 
 ![Recipe card expanded view](../assets/images/recipecardexpanded.png){: style="height:80%;width:80%"}
 
-You can enter text or keywords in a **Search Recipes** box, which highlights the recipe cards with information matching the text or keywords. 
+You can enter text or keywords in a **Search Recipes** box, which highlights the recipe cards with information matching the text or keywords.
 
 ![Recipe card search](../assets/images/recipesearch.png)
 
@@ -63,7 +63,7 @@ The app also allows you to edit each recipe by clicking the menu icon in the rec
 
 ![Edit recipe](../assets/images/editrecipe.png){: style="height:40%;width:40%"}
 
-In the **Update Recipe** window, you can change the values of the different fields.   
+In the **Update Recipe** window, you can change the values of the different fields.
 
 ![Update Recipe window](../assets/images/updaterecipe.png)
 
@@ -71,9 +71,8 @@ If you want to remove a recipe, click the menu icon in the recipe card and selec
 
 ![Delete recipe](../assets/images/deleterecipe.png){: style="height:40%;width:40%"}
 
-## Mobile phone version 
+## Mobile phone version
 
 Volt MX Go makes it easy to develop apps for many platforms. The First Touch Recipe Catalog app also works on mobile phones, such as iPhones and Android phones, using the same Domino REST APIs. In the mobile phone version of the app, you can also use all its features, such as viewing a recipe, editing a recipe, and adding a recipe.
 
 ![Mobile phone version of First Touch recipe catalog app](../assets/images/mobilerecipe1.png)
-

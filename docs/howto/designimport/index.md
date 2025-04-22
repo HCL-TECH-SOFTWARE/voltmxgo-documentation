@@ -8,7 +8,7 @@ How-to guides for instructing users in completing key goals and tasks related to
 
 - [Configure mobile app browser](configmobile.md)
 
-- [Access imported agents in a published Domino app](diagents.md) 
+- [Access imported agents in a published Domino app](diagents.md)
 
 <!--
 

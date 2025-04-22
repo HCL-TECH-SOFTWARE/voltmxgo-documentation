@@ -2,7 +2,7 @@
 
 ## Overview
 
-Data models can be generated in an Object Service by Volt MX Go Foundry administrators. For Domino object services, a data model can be generated for any `Form` or `View` associated with a `scope` defined by a Domino REST API administrator. Additionally, Volt MX Go Foundry data models can be generated for `Other Metadata` to provide specific information outside the data contained in the form and view Domino documents.
+Data models can be generated in an Object Service by Volt Foundry administrators. For Domino object services, a data model can be generated for any `Form` or `View` associated with a `scope` defined by a Domino REST API administrator. Additionally, Volt Foundry data models can be generated for `Other Metadata` to provide specific information outside the data contained in the form and view Domino documents.
 
 !!! note
 
@@ -15,9 +15,9 @@ In addition to some [Meta fields](#meta-fields), generated data models include:
 
 - [Other Metadata](#other-metadata) data models include fields that pertain to the requested information.
 
-Volt MX Go Foundry data models are in sync with the Domino REST API `schema` at the time of data model generation. The data models may be out of sync with the `schema`, which may lead to undesired or unexpected results, because of the following:
+Volt Foundry data models are in sync with the Domino REST API `schema` at the time of data model generation. The data models may be out of sync with the `schema`, which may lead to undesired or unexpected results, because of the following:
 
-- data models are edited in Volt MX Go Foundry
+- data models are edited in Volt Foundry
 - schema is modified in Domino REST API
 - changes in the NSF design
 
@@ -25,29 +25,29 @@ For more information on schemas, scopes, forms, and views, see [Using Admin UI](
 
 ## Data model artifact names
 
-Volt MX Go Foundry data model names, such as field names, are similar but not identical to the names found in Domino REST API. The data model object names must meet all the following conditions:
+Volt Foundry data model names, such as field names, are similar but not identical to the names found in Domino REST API. The data model object names must meet all the following conditions:
 
-- contain only alpha-numeric characters or `_` 
+- contain only alpha-numeric characters or `_`
 - begin with a letter
-- be between 1 and 50 characters long 
+- be between 1 and 50 characters long
 
-If the Domino data form or view name doesn't meet these conditions, a user must change the data model name in Volt MX Go Foundry when going through the generation flow.
+If the Domino data form or view name doesn't meet these conditions, a user must change the data model name in Volt Foundry when going through the generation flow.
 
-Volt MX Go Foundry data models are generated based on related artifacts in Domino REST API. For example, data model `fields` are based on `fields` found in Domino REST API for a given scope/schema. The generated Volt MX Go Foundry data model artifacts, such as form names, view names, and field names, are derived from and similar to the corresponding Domino REST API artifact. However, "special characters" in any of those names are encoded. For example, the `@unid` (meta) field becomes `x_0040unid`.
+Volt Foundry data models are generated based on related artifacts in Domino REST API. For example, data model `fields` are based on `fields` found in Domino REST API for a given scope/schema. The generated Volt Foundry data model artifacts, such as form names, view names, and field names, are derived from and similar to the corresponding Domino REST API artifact. However, "special characters" in any of those names are encoded. For example, the `@unid` (meta) field becomes `x_0040unid`.
 
 ## Effective data types
 
-Field data types in the generated Volt MX Go Foundry data model are the same as the data type defined in the Domino REST API schema. Some field (column) data types are common between Domino and Volt MX Go Foundry, for example string, numbers, and dates. Others, such as Domino `multivalue` (technically, these are `arrays`) and `rich text` aren't found in Volt MX Go Foundry.
+Field data types in the generated Volt Foundry data model are the same as the data type defined in the Domino REST API schema. Some field (column) data types are common between Domino and Volt Foundry, for example string, numbers, and dates. Others, such as Domino `multivalue` (technically, these are `arrays`) and `rich text` aren't found in Volt Foundry.
 
-For common data types, the field type in the generated Volt MX Go Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`.
+For common data types, the field type in the generated Volt Foundry object models will match the data type in the Domino REST API schema. In the example image, the number of *Servings* is a `float` in the Domino REST API `schema`.
 
 ![Domino REST API schema](../../assets/images/recipe-servings-keepschema.png)
 
-In the Volt MX Go Foundry object model, the field type of *Servings* is `number`:
+In the Volt Foundry object model, the field type of *Servings* is `number`:
 
-![Volt MX Go Foundry object model](../../assets/images/recipe-servings-foundrymodel.png)
+![Volt Foundry object model](../../assets/images/recipe-servings-foundrymodel.png)
 
-For Domino object types not found in Volt MX Go Foundry, the Volt MX Go Foundry object field type is set to `string` and Domino type information is retained as properties in the field metadata attribute. 
+For Domino object types not found in Volt Foundry, the Volt Foundry object field type is set to `string` and Domino type information is retained as properties in the field metadata attribute. 
 
 Two properties are used for Domino data type information:
 
@@ -56,12 +56,13 @@ Two properties are used for Domino data type information:
 
 ![Metadata dialog](../../assets/images/recipe-richtext.png)
 
-The table shows a simplified list of data-type mappings between Domino REST API and Volt MX Go Foundry:
+The table shows a simplified list of data-type mappings between Domino REST API and Volt Foundry:
 
-!!!note
-    Examples in the table are from the Volt MX Go Foundry Object Service perspective.
+!!! note
 
-|Domino REST API format|Volt MX Go Foundry type|Additional details|
+    Examples in the table are from the Volt Foundry Object Service perspective.
+
+|Domino REST API format|Volt Foundry type|Additional details|
 |---|---|---|
 |DATE-TIME|date|Example: `2023-05-09T19:39:47Z`|
 |DATE|date|Example: `2023-05-09`<br/><br/>For more information, see [Data model metadata attribute](#data-model-metadata-attribute).|
@@ -75,7 +76,7 @@ The table shows a simplified list of data-type mappings between Domino REST API 
 
 ## Meta fields
 
-In addition to the document fields specified in the database design such as `form` or `view`, Domino `meta-fields` are in the list of Volt MX Go Foundry data model fields generated for Domino. As a result, when you `GET` Domino documents from the object service, values for these `meta-fields` are also returned for each document.
+In addition to the document fields specified in the database design such as `form` or `view`, Domino `meta-fields` are in the list of Volt Foundry data model fields generated for Domino. As a result, when you `GET` Domino documents from the object service, values for these `meta-fields` are also returned for each document.
 
 For form-based data models, the document's `@unid` is an obvious example. Below are other `meta-fields` you may see for each document:
 
@@ -116,7 +117,7 @@ x_0040unid
     
     - UNID is unique for any set of documents returned on `GET` for a form-based data model. However, UNID isn't necessarily unique for view rows since more than one row in a view may be associated with the same database document.
 
-    - Meta-fields are included in generated data models by default. The Volt MX Go Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
+    - Meta-fields are included in generated data models by default. The Volt Foundry developer can modify the generated data model as needed, such as removing `meta-field` if desired.
 
     - `x_0040aliases` doesn't correspond to any attribute in Domino. Documents won't contain any value for this attribute. However, it's for attaching metadata with form name aliases. For more information, see [Data model metadata attribute](#data-model-metadata-attribute).
     
@@ -128,7 +129,7 @@ x_0040unid
 
 ## Data model metadata attribute
 
-The **Metadata** attribute of a Volt MX Go Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt MX Go Iris.
+The **Metadata** attribute of a Volt Foundry data model field retains extended Domino design information, which may be of interest to client applications using Volt Iris.
 
 ### Column characteristics
 
@@ -164,7 +165,7 @@ Rich text and multi-value (array) form fields are seen as string fields in the d
 
 There are cases where a user may request Domino information not included in Domino data documents but still necessary for creating a Domino application in Volt MX Go. This information is accessible from the Domino Adapter in the `Other Metadata` section.
 
-To use this information, a Volt MX Go Foundry administrator must select which `Other Metadata` entities to create in the data model generation flow. This creates a Volt MX entity. A user can then perform a GET method on this Volt MX entity to obtain and use the information.
+To use this information, a Volt Foundry administrator must select which `Other Metadata` entities to create in the data model generation flow. This creates a Volt MX entity. A user can then perform a GET method on this Volt MX entity to obtain and use the information.
 
 **Implemented `Other Metadata` entities**:
 

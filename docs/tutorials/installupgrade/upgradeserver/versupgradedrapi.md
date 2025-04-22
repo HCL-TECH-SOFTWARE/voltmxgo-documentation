@@ -14,9 +14,9 @@ Guides you in upgrading Volt MX Go server components.
 
 2. Follow the relevant steps in the [upgrade procedure](https://opensource.hcltechsw.com/Domino-rest-api/howto/production/versionupdate.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the [HCL Domino REST API documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} based on your installation platform.
 
-## Upgrade Volt MX Go Foundry
+## Upgrade Volt Foundry
 
-The following procedures guide you in upgrading Volt MX Go Foundry to the latest version. As Volt MX Go Foundry supports various installation mechanisms, refer to the relevant upgrade procedure.
+The following procedures guide you in upgrading Volt Foundry to the latest version. As Volt Foundry supports various installation mechanisms, refer to the relevant upgrade procedure.
 
 ### For using an installer
 
@@ -24,7 +24,7 @@ The upgrade process works by upgrading the existing database to the latest versi
 
 The installer doesn't support automatic backups of database and other artifacts. You must clean up the existing application server artifacts and take a backup of the custom artifacts. The installer also doesn't support rollback in case of a failure during the upgrade. To roll back, restore the database and server artifacts you backed up before upgrading.
 
-<!--Upgrades Volt MX Go Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.-->
+<!--Upgrades Volt Foundry from Volt MX Go v2.0.4 to Volt MX Go v2.1.-->
 
 #### Before you begin
 
@@ -36,11 +36,11 @@ The installer doesn't support automatic backups of database and other artifacts.
 
 - Ensure that the Volt Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
-- Ensure that you stop the application server of your existing Volt MX Go Foundry instance, which you want to upgrade.
+- Ensure that you stop the application server of your existing Volt Foundry instance, which you want to upgrade.
 
 #### Install Volt Foundry
 
-- Follow the link to the upgrade procedure based on your used installation platform. <!--In this step, upgrade your Volt MX Go Foundry v2.0.4 with the minimum supported version of Volt Foundry.-->
+- Follow the link to the upgrade procedure based on your used installation platform. <!--In this step, upgrade your Volt Foundry v2.0.4 with the minimum supported version of Volt Foundry.-->
 
     !!! warning "Important"
 
@@ -48,7 +48,7 @@ The installer doesn't support automatic backups of database and other artifacts.
         - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
         - The upgrade procedure indicates installation files and installation file download locations. **You must use the installer you downloaded in *Before you begin*.**
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
-        - Make sure to point to the same database you used for your previous Volt MX Go Foundry<!--v2.0.4--> installation to access all the projects you worked on.
+        - Make sure to point to the same database you used for your previous Volt Foundry<!--v2.0.4--> installation to access all the projects you worked on.
         
         - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see the following license activation guides on the Volt MX documentation:
 
@@ -140,10 +140,10 @@ You have downloaded the Volt Foundry Helm charts. For more information, see [Dow
     1. Locate the `values.yaml` file in the Volt Foundry directory.
     2. Open the `values.yaml` file with your preferred editor and locate the line containing the `imageRegistry:` key.
     3. Change the value of the `imageRegistry:` key to `hclcr.io/voltmxgo`.
-    4. Save your changes and close the file. 
+    4. Save your changes and close the file.
 
-3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go. 
+3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go.
 
 ## Next step
 
-After completing the upgrade installation of **Domino REST API** and **Volt MX Go Foundry**, proceed to [Install and upgrade Volt MX Go Iris](../installiris/index.md).
+After completing the upgrade installation of **Domino REST API** and **Volt Foundry**, proceed to [Install and upgrade Volt Iris](../installiris/index.md).

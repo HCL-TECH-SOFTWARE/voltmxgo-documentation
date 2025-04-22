@@ -21,4 +21,4 @@ List of uninstall procedures for completing uninstall tasks related to Volt MX G
 - [Uninstall Volt Iris for Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Uninstalling%20VoltMX%20Iris.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 
-[^1]: Only applies to Volt MX Go v2.0.4 or earlier. 
+[^1]: Only applies to Volt MX Go v2.0.4 or earlier.

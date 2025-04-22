@@ -6,11 +6,11 @@ Configures the Rosetta API based on what you need when using the Rosetta formula
 
 - API Configuration
 - Intellisense Configuration
-- Conversion Configuration 
+- Conversion Configuration
 
 ## Before you begin
 
-You have launched Volt MX Go Iris. 
+You have launched Volt Iris.
 
 ## Procedure
 
@@ -20,9 +20,10 @@ You have launched Volt MX Go Iris.
 
 2. In the **Project Setting** window, click the **VoltFormula** tab.
 
-    !!!tip
+    !!! tip
+
         Hover over the **info** tooltip icon beside the labels or text boxes for more information.
-    
+
     ![settings](../../assets/images/vfsettingv210.png)
 
     <!-- v2.0.4

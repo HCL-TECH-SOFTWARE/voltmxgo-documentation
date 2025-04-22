@@ -10,15 +10,16 @@ The Rosetta Converter is an integral part of the VoltFormula process. It allow
 
 ## Configuration options
 
-The Rosetta Converter has several options to manipulate the formula to JavaScript conversion behaviors. All options are accessible directly through the converter's configuration object getters and setters. In Volt MX Go Iris, you can access these options on the VoltFormula tab in the Project Settings dialog.
+The Rosetta Converter has several options to manipulate the formula to JavaScript conversion behaviors. All options are accessible directly through the converter's configuration object getters and setters. In Volt Iris, you can access these options on the VoltFormula tab in the Project Settings dialog.
 
-- **allowPassthrough** 
+- **allowPassthrough**
 
     This option is set to *false* by default.
 
-    Formula language that's not known are transferred to the JavaScript results intact. In this way, the formula can be artificially altered with code that's not necessarily formula language, and the resulting JavaScript will contain such code. 
-    
-    !!!warning "Important"
+    Formula language that's not known are transferred to the JavaScript results intact. In this way, the formula can be artificially altered with code that's not necessarily formula language, and the resulting JavaScript will contain such code.
+  
+    !!! warning "Important"
+
         Use this option with caution as it can be used to inject executable code.
 
     Example:
@@ -47,14 +48,13 @@ The Rosetta Converter has several options to manipulate the formula to JavaScrip
 
 - **_stripNumbers**
 
-This option is set to true by default. 
+This option is set to true by default.
 
-- **_paramAsFieldName** 
+- **_paramAsFieldName**
 
 This option is set to true by default.
 
 - **_nativeness**
-
 
 This option controls whether conversion into native JavaScript vs calling API functions for code elements that exist natively in JavaScript, such as:
 
