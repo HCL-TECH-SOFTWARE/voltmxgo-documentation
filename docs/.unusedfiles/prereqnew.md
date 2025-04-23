@@ -9,7 +9,7 @@
 
 ## Procedure
 
-1.	Run the following command to get a list of pods running Volt MX Go Foundry:
+1.	Run the following command to get a list of pods running Volt Foundry:
 
     ```
     kubectl get pods -n mxgo
@@ -80,7 +80,7 @@ Proceed to [Upgrade Volt MX Go server components](versionupgrade1.md).
     ```
 
     !!!note
-        Deletion processing time may take a few minutes as Domino, Foundry, MySQL, and associated configurations are being removed.
+        Deletion processing time may take a few minutes as Domino, Volt Foundry, MySQL, and associated configurations are being removed.
 
 3.	After completing the namespace deletion, run the following command to make sure the deletion of the namespace:
 

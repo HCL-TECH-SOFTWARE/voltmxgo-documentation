@@ -2,7 +2,7 @@
 
 --8<-- "mxgoversion.md"
 
-The tutorial guides you through the Design Import process in Volt MX Go. You will create a project in Volt MX Go Iris and then run the Design Import Wizard to enable you to import Domino application forms, views, and agents, then build those forms and views within Volt MX Go Iris. You will also perform CRUD operations on the imported Domino application published via Volt MX Go Iris.  
+The tutorial guides you through the Design Import process in Volt MX Go. You will create a project in Volt Iris and then run the Design Import Wizard to enable you to import Domino application forms, views, and agents, then build those forms and views within Volt Iris. You will also perform CRUD operations on the imported Domino application published via Volt Iris.  
 
 At the end of this tutorial, you will gain enough competence to use the Design Import Wizard to successfully import a Domino application.
 
@@ -11,7 +11,7 @@ At the end of this tutorial, you will gain enough competence to use the Design I
 Before starting this tutorial, you must meet prerequisites based on the situational scenario that applies to you:
 
 - **All access scenario** is for a user with all the necessary access rights to install and configure Volt MX Go and with the correct access to all required Domino databases and the Domino REST API.
-- **Limited access scenario** is for a user who is most likely a Volt MX Go Iris developer and doesn't have all the necessary access. In this case, you must coordinate with a Volt MX Go Foundry administrator and a Domino/Domino REST API administrator to obtain the required access and fulfill other requirements.
+- **Limited access scenario** is for a user who is most likely a Volt Iris developer and doesn't have all the necessary access. In this case, you must coordinate with a Volt Foundry administrator and a Domino/Domino REST API administrator to obtain the required access and fulfill other requirements.
 
 Kindly follow and complete the prerequisites that apply to your situation.
 
@@ -20,8 +20,8 @@ Kindly follow and complete the prerequisites that apply to your situation.
     **Volt MX Go prerequisites**
 
     - You have completed the [Volt MX Go installation](installupgrade/index.md).
-    - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md). 
-    - You have [created an Environment in Volt MX Go Foundry](adaptertutorial.md#add-an-environment). 
+    - You have a [Volt Foundry admin account](../howto/install/foundryadminaccount.md). 
+    - You have [created an Environment in Volt Foundry](adaptertutorial.md#add-an-environment). 
 
     **Domino/Domino REST API prerequisites**
 
@@ -64,11 +64,11 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     **Volt MX Go prerequisites**
     
-    - You have completed the [installation of Volt MX Go Iris](../tutorials/installupgrade/installiris/installiris.md).
-    - You have contacted the Volt MX Go Foundry administrator to:
-        - have access to Volt MX Go Foundry 
-        - have a Volt MX Go Foundry admin account
-        - have an Environment created in Volt MX Go Foundry in case there is none
+    - You have completed the [installation of Volt Iris](../tutorials/installupgrade/installiris/installiris.md).
+    - You have contacted the Volt Foundry administrator to:
+        - have access to Volt Foundry 
+        - have a Volt Foundry admin account
+        - have an Environment created in Volt Foundry in case there is none
 
     **Domino/Domino REST API prerequisites**
 
@@ -103,11 +103,11 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
         Refer to the **Domino REST API prerequisites for Design Import** video in the [Video tutorial](video.md) section to learn more.
         
-## Launch Volt MX Go Iris
+## Launch Volt Iris
 
-1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt MX Go Iris home icon.
+1. Open Volt Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt Iris home icon.
 
-    ![Volt MX Go Iris icon](../assets/images/irisicon.png)
+    ![Volt Iris icon](../assets/images/irisicon.png)
 
 2. Configure the login settings.
 
@@ -115,28 +115,28 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
         For Windows, select **Edit** &rarr; **Preferences**.
 
-        For Mac, depending on your macOS, select **Volt MX Go Iris** &rarr; **Preferences** or **Settings**.
+        For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**.
 
-    2. In the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
+    2. In the **Volt Iris Preferences** dialog, click **Volt Foundry**.
 
-    3. On the **Volt MX Go Foundry** tab, enter your Volt MX Go Foundry URL in the **Foundry URL** text box, and then click **Validate**.
+    3. On the **Volt Foundry** tab, enter your Volt Foundry URL in the **Foundry URL** text box, and then click **Validate**.
 
         ![Preferences](../assets/images/dipreference.png){: style="height:80%;width:80%"}
 
-        You should see the **Validation Successful** message at the top of the dialog. If you entered an incorrect Volt MX Go Foundry URL, you will see an error message at the top of the dialog advising you to try the validation again.
+        You should see the **Validation Successful** message at the top of the dialog. If you entered an incorrect Volt Foundry URL, you will see an error message at the top of the dialog advising you to try the validation again.
 
     4. Click **Done**.
 
-3. Log in to Volt MX Go Iris.
+3. Log in to Volt Iris.
 
-    1. Click **Login** on the upper right corner of the Volt MX Go Iris screen.
-    2. Enter your email and password for **Volt MX Go Foundry** on the **Sign in to your account** page.
+    1. Click **Login** on the upper right corner of the Volt Iris screen.
+    2. Enter your email and password for **Volt Foundry** on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon.
 
 ## Create a new project
 
 In this tutorial, we will use a web app project. The following steps will enable you to create one. If you want to create a native app, see [create a native app project](../howto/designimport/dicreatenativeapp.md) for more information.  
-    
+
 1. In the top menu, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
@@ -150,9 +150,9 @@ In this tutorial, we will use a web app project. The following steps will enable
   
     ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
 
-You can now see your project name in the upper-left corner of the **Volt MX Go Iris** UI.
+You can now see your project name in the upper-left corner of the **Volt Iris** UI.
 
-![Volt MX Go Iris user interface](../assets/images/diappname.png){: style="height:80%;width:80%"}
+![Volt Iris user interface](../assets/images/diappname.png){: style="height:80%;width:80%"}
 
 ## Import a Domino application
 
@@ -180,7 +180,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
         |Scope|This refers to the name of the scope that's set up in the OAuth app you are using in the Domino REST API.<br/><br/>If multiple scopes are configured in the OAuth app, and you wish to use specific scopes, ensure that you separate these scopes with commas when you enter them. For example: `scope1,scope2`<br/><br/>If you intend to use or access all the scopes available in Domino REST API, enter `$DATA`. Just make sure that you only configured `$DATA` and `$SETUP` in the OAuth app in Domino REST API.|
         |App ID | This is the App ID of the OAuth app you are using in Domino REST API.|
         |App Secret| This is the App Secret of the OAuth app you are using in Domino REST API.|
-        |Service Name:| Any name that identifies the Volt MX Go Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
+        |Service Name:| Any name that identifies the Volt Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
 
         ![Design Import Wizard dialog](../assets/images/dikeep.png){: style="height:80%;width:80%"}
 
@@ -192,20 +192,20 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
         !!!warning "Important"
 
-            You need to **pause** here and **do not** click **Next** until you **update the callback URL in the OAuth app** in Domino REST API with the callback URL from the Identity Service in your Volt MX Go Foundry app. If you click **Next** without updating the callback URL in the OAuth app, a validation error occurs and prevents you from proceeding. 
+            You need to **pause** here and **do not** click **Next** until you **update the callback URL in the OAuth app** in Domino REST API with the callback URL from the Identity Service in your Volt Foundry app. If you click **Next** without updating the callback URL in the OAuth app, a validation error occurs and prevents you from proceeding. 
 
         ??? note "To update the callback URL of the OAuth app in Domino REST API"
 
             1. **Get the callback URL of your Identity Service**.
 
-                1. Log in to Volt MX Go Foundry.
-                1. On the **Apps** page, click your Volt MX Go Foundry app.
+                1. Log in to Volt Foundry.
+                1. On the **Apps** page, click your Volt Foundry app.
                 1. On the **Identity** tab under **Configure Services**, click your Identity Service.
                 1. Under **Provider Details**, click **Copy** corresponding to the **Callback URL** field to copy the callback URL.
 
                     ![Callback URL](../assets/images/callbackURL.png)
 
-                1. Close Volt MX Go Foundry.
+                1. Close Volt Foundry.
 
             1. **Update the callback URL of the OAuth app in Domino REST API**.
 
@@ -223,9 +223,9 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
                     1. Send the copied callback URL to the Domino REST API administrator and request to update the callback URL of the OAuth app.
                     2. Get confirmation that the callback URL of the OAuth app is already updated before proceeding.
 
-                    **Note**: If you don't receive immediate confirmation that the callback URL in the OAuth app has been updated, you can close the Design Import Wizard and Volt MX Go Iris. Once you receive confirmation, follow these steps:
+                    **Note**: If you don't receive immediate confirmation that the callback URL in the OAuth app has been updated, you can close the Design Import Wizard and Volt Iris. Once you receive confirmation, follow these steps:
 
-                    1. Open Volt MX Go Iris and sign in using your MX Go Volt Foundry account.
+                    1. Open Volt Iris and sign in using your MX Go Volt Foundry account.
                     2. Make sure that the opened project is what you used in this tutorial.
                     3. In the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application** to open the **VoltMX Design Import Wizard**.
                     4. On **Getting Started**, click **Next**.
@@ -248,7 +248,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
         ![Domino REST API permission request dialog](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
 
-    6. Choose the identity service related to your app on Volt MX Go Foundry in **Foundry App Identity Service** and click **Next**.
+    6. Choose the identity service related to your app on Volt Foundry in **Foundry App Identity Service** and click **Next**.
 
         ![Design Import Wizard dialog](../assets/images/difoundry.png){: style="height:80%;width:80%"}
 
@@ -290,7 +290,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
     !!! note
 
         - It may take a while to complete the publishing of the imported Domino app.
-        - If a dialog indicating that existing Iris forms are detected appears, click **Yes** to overwrite the detected forms and proceed with the building of the application. The existing Iris forms were automatically generated when you created the project in Volt MX Go Iris.
+        - If a dialog indicating that existing Iris forms are detected appears, click **Yes** to overwrite the detected forms and proceed with the building of the application. The existing Iris forms were automatically generated when you created the project in Volt Iris.
 
             ![Screenshot](../assets/images/dideleteform.png)
 
@@ -307,7 +307,7 @@ You can now see your project name in the upper-left corner of the **Volt MX Go I
 
     ![Design Import Wizard dialog](../assets/images/diresult.png){: style="height:80%;width:80%"}
 
-Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt MX Go Iris.
+Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt Iris.
 
 ![Import output in storyboard view](../assets/images/dioutput.png){: style="height:80%;width:80%"}
 
@@ -317,7 +317,7 @@ To see the imported forms in a directory, click the **DESIGN** tab to show the *
 
 ## Perform CRUD operation in imported Domino app
 
-Before you can do the CRUD operation in your imported Domino app, you must first build and publish the imported app in Volt MX Go Iris.
+Before you can do the CRUD operation in your imported Domino app, you must first build and publish the imported app in Volt Iris.
     
 If your app is a **Web App**, follow the instructions in [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
 
@@ -366,7 +366,7 @@ If your app is a **Native App:**
 
     ![Screenshot](../assets/images/dilist.png)
 
-3. Select the **Download All Attachments** link to download the attachment files. 
+3. Select the **Download All Attachments** link to download the attachment files.
 
     !!! note
 

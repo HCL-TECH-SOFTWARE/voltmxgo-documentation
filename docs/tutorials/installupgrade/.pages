@@ -5,4 +5,4 @@ nav:
    - portaldownload.md
    - Install Volt MX Go server components: installserver
    - Upgrade Volt MX Go server components: upgradeserver
-   - Install and upgrade Volt MX Go Iris: installiris
+   - Install and upgrade Volt Iris: installiris

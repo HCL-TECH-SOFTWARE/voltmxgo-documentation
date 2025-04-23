@@ -20,12 +20,13 @@ Guides you on accessing and using imported agents in a published Domino app.
 
 ## Before you begin
 
-- You have imported a Domino application, including agents, using Design Import to a **Web App project** in Volt MX Go Iris.
+- You have imported a Domino application, including agents, using Design Import to a **Web App project** in Volt Iris.
 
-    !!!note
+    !!! note
+
         Agents are currently **not supported** for **Native App projects**.
 
-- You have published the imported Domino application using Volt MX Go Iris and opened the published application.
+- You have published the imported Domino application using Volt Iris and opened the published application.
 
 ## Procedure
 

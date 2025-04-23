@@ -1,17 +1,17 @@
 # Domino Adapter tutorial
 
-The tutorial guides you through the Domino Adapter process in Volt MX Go. You will create an app in Volt MX Go Foundry and connect the app to your Domino database as an endpoint via the Domino REST API. You will then configure a data model and test the methods, including standard CRUD operations, for interacting with the data model.
+The tutorial guides you through the Domino Adapter process in Volt MX Go. You will create an app in Volt Foundry and connect the app to your Domino database as an endpoint via the Domino REST API. You will then configure a data model and test the methods, including standard CRUD operations, for interacting with the data model.
 
 For more information, see [Data models](../topicguides/adapter/datamodel.md) and [Methods](../topicguides/adapter/method.md).  
 
-At the end of this tutorial, you can manually create an app in Volt MX Go Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API. You will also be able to test the methods for interacting with the data model.
+At the end of this tutorial, you can manually create an app in Volt Foundry and create an Identity Service and Object Service to connect your app to your Domino database via Domino REST API. You will also be able to test the methods for interacting with the data model.
 
 ## Before you begin
 
 Before starting this tutorial, you must meet prerequisites based on the situational scenario that applies to you:
 
 - The **All access scenario** is for a user with all the necessary access rights to install and configure Volt MX Go and with the correct access to all required Domino databases and the Domino REST API.
-- The **Limited access scenario** is for a user who is most likely a Volt MX Go Foundry Administrator that doesn't have all the necessary access to all the required Domino databases and the Domino REST API. In this case, you must coordinate with a Domino/Domino REST API administrator to obtain the required access and fulfill other requirements.
+- The **Limited access scenario** is for a user who is most likely a Volt Foundry Administrator that doesn't have all the necessary access to all the required Domino databases and the Domino REST API. In this case, you must coordinate with a Domino/Domino REST API administrator to obtain the required access and fulfill other requirements.
 
 Kindly follow and complete the prerequisites that apply to your situation.
 
@@ -21,7 +21,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
-    - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
+    - You have a [Volt Foundry admin account](../howto/install/foundryadminaccount.md).
 
     **Domino/Domino REST API prerequisites**
 
@@ -53,7 +53,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
     
     - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
-    - You have a [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
+    - You have a [Volt Foundry admin account](../howto/install/foundryadminaccount.md).
 
     **Domino/Domino REST API prerequisites**
 
@@ -75,22 +75,22 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
         - provide you with Domino REST API URL, and the Client ID and Client Secret of the OAuth application.
 
-## Log in to Volt MX Go Foundry
+## Log in to Volt Foundry
 
-1. Open the Volt MX Go Foundry hostname concatenated with `/mfconsole/` in your browser.
+1. Open the Volt Foundry hostname concatenated with `/mfconsole/` in your browser.
 
     !!! tip
 
-        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.
+        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt Foundry.
 
 2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
 
    The **Volt MX Foundry Console** opens with the **Apps** page shown by default. 
 
-## Create an app in Volt MX Go Foundry
+## Create an app in Volt Foundry
 
-1. On the **Apps** page, click **Add New**. 
+1. On the **Apps** page, click **Add New**.
 2. A new app is added, and you are directed to the **Configure Services** &rarr; **Identity** page of the new app. 
 3. Click the **Edit App Name** icon to give a unique name to your app.
 
@@ -165,8 +165,8 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     Ensure the callback URL in the OAuth app you are using has been updated before performing this procedure.
 
-1. Log in to Volt MX Go Foundry.
-1. On the **Apps** page, click your Volt MX Go Foundry app.
+1. Log in to Volt Foundry.
+1. On the **Apps** page, click your Volt Foundry app.
 1. On the **Identity** tab under **Configure Services**, click your Identity Service.
 1. Click **Test Login** to verify if the configured Identity service works. 
     - If the configuration works, you might need to enter your Domino credentials in the **HCL Domino Login** dialog and click **Login**. In the **Permission Requested** dialog, click **Allow**. You might also only see the **Permission Requested** dialog without needing to enter anything.  
@@ -181,7 +181,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
     !!!note
         Your environment name can only contain letters, numbers, and hyphens (-). A hyphen can't appear at the beginning or at the end of a name. A number can't appear at the beginning of a name. A name should be a minimum of three characters and a maximum of 20 characters long.
 
-4. On the **Server** tab, enter the URL of your Volt MX Go Foundry in the **URL** text box.
+4. On the **Server** tab, enter the URL of your Volt Foundry in the **URL** text box.
     The URL format is: `<http or https>://<server_host>:<server_port>`
 
     For example: `http://mbaastest30.hcl.net:53504`
@@ -211,10 +211,11 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
             The **Connection Timeout** is the period for waiting for a new connection to happen before aborting the connection attempt, and is in milliseconds.
 
-    3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*. 
+    3. Enter *true* or *false* in the **Return documents from Bulk Update** text field. By default, the value is set to *true*.
 
-        !!!note
-            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/adapter/method.md).   
+        !!! note
+
+            Entering true in the **Return documents from Bulk Update** text field ensures the return of documents updated using the BULK UPDATE method. For more information, see [Methods](../topicguides/adapter/method.md).
 
     !!! tip
 
@@ -267,7 +268,7 @@ The following produres enable you to test the different methods for interacting 
 ### Test the GET method by viewing a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.
-2. From the list, click **GET**. 
+2. From the list, click **GET**.
 3. Expand the **base mapper1**, and then select the **Test** tab.
 4. Click **Send**.
 

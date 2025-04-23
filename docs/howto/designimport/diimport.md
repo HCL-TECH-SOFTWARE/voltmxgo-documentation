@@ -4,12 +4,12 @@
 
 ## About this task
 
-Guides you through importing a Domino application to Volt MX Go Iris via Design Import using an existing Volt MX Go Foundry app and its identity service.
+Guides you through importing a Domino application to Volt Iris via Design Import using an existing Volt Foundry app and its identity service.
 
 ## Before you begin
 
 - You have met all the [Design Import process prerequisites](../../tutorials/designimport.md#before-you-begin).  
-- You have launched Volt MX Go Iris and have created a new project.
+- You have launched Volt Iris and have created a new project.
 
 ## Procedure
 
@@ -23,13 +23,13 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
     ![Design Import Wizard dialog](../../assets/images/difoundryapp.png){: style="height:80%;width:80%"}
 
-4. Click **Associate** corresponding to the Volt MX Go Foundry app you want to use.
+4. Click **Associate** corresponding to the Volt Foundry app you want to use.
 
-    In the example image, only one application is available. The number of applications you will see in the **Volt MX Go Applications** dialog will depend on the number of applications in the Volt MX Go Foundry.
+    In the example image, only one application is available. The number of applications you will see in the **Volt MX Go Applications** dialog will depend on the number of applications in the Volt Foundry.
 
     ![Design Import Wizard dialog](../../assets/images/diassociate.png){: style="height:80%;width:80%"}
 
-5. After the name of the selected Volt MX Go Foundry app is displayed, click **Next**.
+5. After the name of the selected Volt Foundry app is displayed, click **Next**.
 
     ![Design Import Wizard dialog](../../assets/images/difoundrybackend.png){: style="height:80%;width:80%"}
 
@@ -51,9 +51,9 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
         !!! note
 
-            In case of an error due to incorrect **Scope**, **Client ID**, or **Client Secret**, a dialog shows an error message and information on how to address the error. You must then update the existing identity service you selected in Volt MX Go Foundry.
+            In case of an error due to incorrect **Scope**, **Client ID**, or **Client Secret**, a dialog shows an error message and information on how to address the error. You must then update the existing identity service you selected in Volt Foundry.
 
-    4. Choose the identity service related to your app on Volt MX Go Foundry in **Foundry App Identity Service** and click **Next**.
+    4. Choose the identity service related to your app on Volt Foundry in **Foundry App Identity Service** and click **Next**.
 
         !!! tip
 
@@ -100,7 +100,7 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
     !!! note
 
         - It may take a while to complete the publishing of the imported Domino app.
-        - If a dialog indicating that existing Iris forms are detected appears, click **Yes** to overwrite the detected forms and build the application. The existing Iris forms were automatically generated when you created the new project in Volt MX Go Iris. 
+        - If a dialog indicating that existing Volt Iris forms are detected appears, click **Yes** to overwrite the detected forms and build the application. The existing Volt Iris forms were automatically generated when you created the new project in Volt Iris. 
 
             ![Screenshot](../../assets/images/dideleteform.png)
 
@@ -116,7 +116,7 @@ Guides you through importing a Domino application to Volt MX Go Iris via Design 
 
     ![Design Import Wizard dialog](../../assets/images/diresult.png){: style="height:80%;width:80%"}
 
-Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt MX Go Iris.
+Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt Iris.
 
 ![Import output in storyboard view](../../assets/images/dioutput.png){: style="height:80%;width:80%"}
 

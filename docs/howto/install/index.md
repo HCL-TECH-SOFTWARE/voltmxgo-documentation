@@ -2,7 +2,7 @@
 
 How-to guides for instructing users in completing key goals and tasks related to Volt MX Go installation.
 
-- [Create a Volt MX Go Foundry administrator account](foundryadminaccount.md)
+- [Create a Volt Foundry administrator account](foundryadminaccount.md)
 
 - [Access Domino REST API](accessdrapi.md)
 

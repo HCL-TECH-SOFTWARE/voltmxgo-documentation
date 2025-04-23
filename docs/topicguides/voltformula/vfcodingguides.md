@@ -1,6 +1,6 @@
-# VoltFormula coding exercise examples in Volt MX Go Iris
+# VoltFormula coding exercise examples in Volt Iris
 
-This section has a series of coding exercise examples to help you understand how to use VoltFormula in Volt MX Go Iris. Each exercise example has a problem description, followed by a code template where you can write your solution.
+This section has a series of coding exercise examples to help you understand how to use VoltFormula in Volt Iris. Each exercise example has a problem description, followed by a code template where you can write your solution.
 
 ## Exercise 1: Hello, World!
 
@@ -81,4 +81,3 @@ SELECT @All
 ```
 
 ![Show all documents exercise](../../assets/images/vfshowall.png)
-

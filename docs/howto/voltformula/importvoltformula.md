@@ -1,6 +1,7 @@
 # Modify or update imported actions using VoltFormula
 
-!!!note
+!!! note
+
     The information in this topic applies starting with the Volt MX Go version 2.0.3 release. 
 
 When importing a Domino application using Design Import, you have the option of selecting and including the actions from the Domino view in the import process. The imported actions from the Domino view are automatically converted with `voltmx.rosettajs` syntax, incorporating formula languages like Notes and OpenFormula.  
@@ -12,7 +13,7 @@ Guides you on how to modify or update the formula language of actions included i
 ## Before you begin
 
 - You have imported a Domino application, including actions from the Domino view, using Design Import.
-- You have launched Volt MX Go Iris and opened the project with the imported Domino application that included actions. 
+- You have launched Volt Iris and opened the project with the imported Domino application that included actions.
 
 ## Procedure
 

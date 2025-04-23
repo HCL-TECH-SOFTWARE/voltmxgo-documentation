@@ -6,11 +6,11 @@ Guides you through the process of creating a new project for a mobile or tablet 
 
 ## Before you begin
 
-You have launched Volt MX Go Iris.
+You have launched Volt Iris.
 
 ## Procedure
 
-1. In the top menu of Volt MX Go Iris, select **Project** &rarr; **New Project**.
+1. In the top menu of Volt Iris, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Native App** and click **Next**.
 
     ![What do you want to start with now dialog](../../assets/images/didevice1.png)
@@ -21,7 +21,7 @@ You have launched Volt MX Go Iris.
   
     ![Project Name](../../assets/images/diprojectnamemob.png)
 
-You have now created a new native app project. You can see your project name in the upper-left corner of the **Volt MX Go Iris** canvass.
+You have now created a new native app project. You can see your project name in the upper-left corner of the **Volt Iris** canvass.
 
 ![New native app project](../../assets/images/diappnamemob.png)
 

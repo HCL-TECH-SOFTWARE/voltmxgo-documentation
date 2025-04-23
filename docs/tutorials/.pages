@@ -15,7 +15,7 @@ nav:
 #            - installfoundryindex.md
 #            - installdrapi.md
 #            - nativeinstallers.md
-##                - Install Volt MX Go Foundry: nativeinstallers.md
+##                - Install Volt Foundry: nativeinstallers.md
 #        - Upgrade Volt MX Go server components: 
 #            - versupgradeindx.md
 #            - versupgradedrapi.md
@@ -34,10 +34,10 @@ nav:
 ##                - For upgrading existing installation of Volt MX Go: prereqnew.md
 ##               - For moving from early access version to GA version of Volt MX Go: eatogamove.md 
 ##                - Install Domino REST API: downloadhelmchart.md
-##                - Install MySQL for Volt MX Go Foundry: installmysqlfoundry.md
-##                - Install Volt MX Go Foundry: installfoundry.md
+##                - Install MySQL for Volt Foundry: installmysqlfoundry.md
+##                - Install Volt Foundry: installfoundry.md
 ##                - Upgrade Volt MX Go server components: versionupgrade1.md
-#        - Install and upgrade Volt MX Go Iris: 
+#        - Install and upgrade Volt Iris: 
 #            - installirisindex.md
 #            - installiris.md
 #            - upgradeiris.md

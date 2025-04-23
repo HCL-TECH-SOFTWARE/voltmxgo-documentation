@@ -1,6 +1,6 @@
-# Trainings and webinars 
+# Trainings and webinars
 
-Check the following platforms to learn how to modernize your Domino applications using Volt MX Go. 
+Check the following platforms to learn how to modernize your Domino applications using Volt MX Go.
 
 ## HCLSoftware U
 
@@ -26,7 +26,7 @@ The webinar series includes the following webinars:
 
 - ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Volt MX Go: First Touch, Domino REST API, and Design Import](https://www.youtube.com/watch?v=ipelDFuYjHw&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=3&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
-- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Get started with Volt MX Go Iris and Foundry](https://www.youtube.com/watch?v=rWQKhgb_Ang&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=4&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
+- ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Get started with Volt Iris and Volt Foundry](https://www.youtube.com/watch?v=rWQKhgb_Ang&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=4&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
 - ![Play button icon](../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Try VoltScript with Early Access](https://www.youtube.com/watch?v=Nfl6LCFySPA&list=PLEjl4yzB6ckEi3PDf0UKyotYpojLzUIDF&index=5&pp=iAQB "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}
 
@@ -36,7 +36,7 @@ The webinar series includes the following webinars:
 
 ## Volt MX Go on HCL Software Marketplace
 
-Explore everything Volt MX Go can do in a free, hosted trial environment on [HCL Software Marketplace](https://hclsofy.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. Your sandbox will be up and running in 10 minutes and provides access to a hosted Domino server (where you can copy or replicate your own Domino applications), the Domino REST API, Volt MX Go Foundry, and Volt MX Go Iris, a step-by-step wizard to connect Volt MX to Domino, Design Import, and VoltFormula. Check the following links for more information:
+Explore everything Volt MX Go can do in a free, hosted trial environment on [HCL Software Marketplace](https://hclsofy.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. Your sandbox will be up and running in 10 minutes and provides access to a hosted Domino server (where you can copy or replicate your own Domino applications), the Domino REST API, Volt Foundry, and Volt Iris, a step-by-step wizard to connect Volt MX to Domino, Design Import, and VoltFormula. Check the following links for more information:
 
 - [Overview of Volt MX Go](https://hclsofy.com/sofy/catalog/hcl-voltmxgo-small?view=doc&file=documentation.md "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 

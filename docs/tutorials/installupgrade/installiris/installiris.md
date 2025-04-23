@@ -1,8 +1,8 @@
 # For Volt MX Go v2.1 or later
 
-Perform a new or an upgrade installation of Volt MX Go Iris.
+Perform a new or an upgrade installation of Volt Iris.
 
-## Install Volt MX Go Iris 
+## Install Volt Iris 
 
 ### Before you begin
 
@@ -92,7 +92,8 @@ The procedure enables the installation of the Volt MX Go Plugin Installer, which
 
 The procedure enables the installation of Volt MX Go plugins to Volt Iris to enable Volt MX Go features.
 
-!!!warning "Important"
+!!! warning "Important"
+
     Installing the MX Go plugins into your workspace requires that your workspace contains a `pluginsInfo.json` file in the `.plugins` directory. Otherwise, an installation error occurs. To create the `pluginsInfo.json` file in the `.plugins` directory, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}. Running the Live Preview creates the `pluginsInfo.json` file.
 
 === "on Mac"
@@ -109,7 +110,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
     2. Enter **4** to install Volt MX Go plugins and press **return**.
     3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
-    4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
+    4. Specify the Volt Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Volt Iris installation directory, then press **return**. 
 
         You get a confirmation statement about the completion of the installation of the plugins.
 
@@ -132,8 +133,8 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
         ![Installation options](../../../assets/images/plugintool.png){: style="height:80%;width:80%"}
 
     2. Enter **4** to install Volt MX Go plugins and press **Enter**.
-    3. Specify an Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
-    4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **Enter**. 
+    3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
+    4. Specify the Volt Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Volt Iris installation directory, then press **Enter**. 
 
         You get a confirmation statement that the plugins have been installed.
 
@@ -149,9 +150,9 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
     
     - For further reference, see the ![Play button icon](../../../assets/images/play%20button.svg){: style="height:15px;width:15px"}&nbsp;[Installing Volt MX Go v2.1 for Volt Iris](https://www.youtube.com/watch?v=fN4xW1xnd0s "Video opens and plays in a new tab"){: target="_blank" rel="noopener noreferrer"} video demonstration.   
 
-## Upgrade Volt MX Go Iris 
+## Upgrade Volt Iris 
 
-Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.
+Upgrades Volt Iris to the latest version<!--from Volt MX Go v2.0.4 to Volt MX Go v2.1-->.
 
 ### Before you begin
 
@@ -161,14 +162,15 @@ Upgrades Volt MX Go Iris from Volt MX Go v2.0.4 to Volt MX Go v2.1.
 
 ### Upgrade Volt Iris
 
-To upgrade, install the latest version of Volt Iris. Click the link corresponding to your installation platform and follow the installation steps. 
+To upgrade, install the latest version of Volt Iris. Click the link corresponding to your installation platform and follow the installation steps.
 
 - [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - [For installing Volt Iris on Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-!!!note "Important"
-    Make sure to use the same Workspace Folder you used for your Volt MX Go Iris v2.0.4 installation to access all the projects you worked on using Volt MX Go Iris v2.0.4.  
+!!! note "Important"
+
+    Make sure to use the same Workspace Folder you used for your previous <!--Volt Iris v2.0.4-->installation to access all the projects you worked on<!-- using Volt Iris v2.0.4-->.  
 
 ### Install Volt MX Go Plugins
 

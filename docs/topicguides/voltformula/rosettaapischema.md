@@ -19,6 +19,7 @@ Window
 ```
 
 ## API configuration objects
+
 ```
 API
 logger
@@ -76,8 +77,8 @@ Examples:
 
 ## Structure and runtime details
 
-The **Rosetta** implementation will call either the *Notes* implementation or the *OpenFormula* implementation. You can think of the Rosetta implementations as a top layer that encapsulates both the *Notes* implementations and the *OpenFormula* implementations. 
+The **Rosetta** implementation will call either the *Notes* implementation or the *OpenFormula* implementation. You can think of the Rosetta implementations as a top layer that encapsulates both the *Notes* implementations and the *OpenFormula* implementations.
 
-In this way, we expose a single language of API methods that represent APIs in either formula language, or both. Hence, the naming **Rosetta (Stone)**. Also, some APIs only exist in OpenFormula and some APIs only exist in *Lotus Notes* formula language, and some in both. By **defining the top layer as Rosetta** for all existing APIs in both formula languages, a single API library  corresponding to all possible APIs in either formula language is created. 
+In this way, we expose a single language of API methods that represent APIs in either formula language, or both. Hence, the naming **Rosetta (Stone)**. Also, some APIs only exist in OpenFormula and some APIs only exist in *Lotus Notes* formula language, and some in both. By **defining the top layer as Rosetta** for all existing APIs in both formula languages, a single API library  corresponding to all possible APIs in either formula language is created.
 
 When an API contains sub-implementations for each formula language, for example, *OpenFormula* **=ABS** and *Notes Formula* **@Abs** being represented by ***Rosetta abs()*** API, the configuration option to use the *Notes Formula* implementation vs the *OpenFormula* (or vice versa) is observed. Sometimes, the sub-implementations for each formula language for a specific API, for example the absolute value (abs) API, may return the result. However, the arguments accepted may differ. For example, the **@Abs()** of *Notes Formula* accepts lists of numbers, and if a list is passed in, a list of is returned. Lists in this context are converted into JavaScript arrays.

@@ -7,7 +7,7 @@ nav:
     - addconsideration.md
     - knownlimitation.md
     - troubleshoot.md
-    - VoltFormula coding exercise examples: topicguides/vfcodingguides.html
+    - VoltFormula coding exercise examples: topicguides/voltformula/vfcodingguides.html
     - Documentation references: references/index.html#documentation-references
     - Support: references/index.html#support
     - kubecheatsheet.md

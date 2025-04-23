@@ -1,14 +1,14 @@
 # First Touch tutorial
 
-This tutorial guides you in accessing and running the First Touch Recipe Catalog app from Volt MX Go Foundry to view and explore the app.
+This tutorial guides you in accessing and running the First Touch Recipe Catalog app from Volt Foundry to view and explore the app.
 
 ## Before you begin
 
 - You have completed the [Volt MX Go installation](installupgrade/index.md).
 
-- You have created your [Volt MX Go Foundry admin account](../howto/install/foundryadminaccount.md).
+- You have created your [Volt Foundry admin account](../howto/install/foundryadminaccount.md).
 
-- If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt MX Go Foundry** issue in [Troubleshooting](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
+- If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt Foundry** issue in [Troubleshooting](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
 
 !!!tip
     The following actions might require certain Domino access rights. Contact your Domino Administrator/Domino REST API Administrator for assistance.  
@@ -27,9 +27,9 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
     - You have completed the [Volt MX Go installation in a production environment](prerequisite.md).
 
-    - You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
+    - You have created your [Volt Foundry admin account](../howto/foundryadminaccount.md).
 
-    - If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt MX Go Foundry** issue in [Troubleshooting](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
+    - If using MySQL, make sure that the maximum allowed packet size is at least 16 MB. For more information, see **First Touch or Custom Application Fails to Install on Volt Foundry** issue in [Troubleshooting](../references/troubleshoot.md). <!--This isn't applicable when setting up First Touch in Volt MX Go installed in a development or test-only environment.-->
 <!--
     <!--!!!note 
         You can skip the setup of `oauth.nsf`, Domino REST API, and download of the First Touch recipe ZIP file if you are performing the Volt MX Go install to a development or test only environment.--> 
@@ -49,17 +49,18 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 
     - You have completed the [Volt MX Go installation in a development or test-only environment](containerdeployment.md).
 
-    - You have created your [Volt MX Go Foundry admin account](../howto/foundryadminaccount.md).
--->   
+    - You have created your [Volt Foundry admin account](../howto/foundryadminaccount.md).
+-->
 
-## Log in to Volt MX Go Foundry
+## Log in to Volt Foundry
 
-1. Open the Volt MX Go Foundry hostname concatenated with `/mfconsole/`in your browser.
+1. Open the Volt Foundry hostname concatenated with `/mfconsole/`in your browser.
 
-    !!!tip
-        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt MX Go Foundry.  
- 
-2. Enter your username and password on the **Sign in to your account** page. 
+    !!! tip
+
+        Use the **Console URL** in the **Install Complete** window or from the *Installation Complete* details that appear in the command line to log in to Volt Foundry.  
+
+2. Enter your username and password on the **Sign in to your account** page.
 3. Click **Sign In**.  
 
    The **Volt MX Foundry Console** opens with the **Apps** page shown by default. The **VOLT MX GO | First Touch** banner is shown on the **Apps** page.
@@ -90,7 +91,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
     ![Installation progress dialog](../assets/images/firsttouchinstalldialog.png){: style="height:60%;width:60%"}
 
     !!!note
-        If an *Uploading web binary for First Touch Recipes app* error occurs in the installation progress dialog, see **First Touch or Custom Application Fails to Install on Volt MX Go Foundry** issue in [Troubleshooting](../references/troubleshoot.md).
+        If an *Uploading web binary for First Touch Recipes app* error occurs in the installation progress dialog, see **First Touch or Custom Application Fails to Install on Volt Foundry** issue in [Troubleshooting](../references/troubleshoot.md).
 
 4. Wait for the completion of the installation. Once completed, a **Congratulations!** dialog appears confirming the successful installation of the First Touch app and the verification of the connection to the Domino database via Domino REST API.
 
@@ -115,13 +116,13 @@ You can now view and explore the First Touch Recipe Catalog app.
 
 !!! tip
 
-    - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Volt MX Go Foundry to view the app’s Foundry configuration.
-    - To launch the app again from Volt MX Go Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.
+    - You can click **Cancel** in the **Congratulations!** dialog to return to the **Apps** view in Volt Foundry to view the app’s Foundry configuration.
+    - To launch the app again from Volt Foundry, click **GET STARTED**, select **View First Touch Recipes**, and then click **Next**.
 
 ## Additional information
 
 - To learn more about the app, see [First Touch Recipe Catalog app](../topicguides/firsttouchapp.md).
 
-- To know how to import the First Touch Recipe app project to Volt MX Go Iris, see [Import First Touch into Volt MX Go Iris](../howto/firsttouch/importft.md).
+- To know how to import the First Touch Recipe app project to Volt Iris, see [Import First Touch into Volt Iris](../howto/firsttouch/importft.md).
 
 - To know how to manually update your Domino container if you obtain a new version of *FirstTouchRecipes.nsf*, see [Update FirstTouchRecipes.nsf](../howto/firsttouch/FTnsfupdate.md).

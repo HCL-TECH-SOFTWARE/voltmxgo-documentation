@@ -2,7 +2,7 @@
 
 --8<-- "devtestenvironment.md"
 
-The following procedure must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Volt MX Go Foundry installation.
+The following procedure must be performed post installation of K3s or Rancher Desktop, and before the download of the Domino REST API Helm chart and Volt Foundry installation.
 
 !!!warning "Important"
     If you deployed Kubernetes using Rancher Desktop, use an Ubuntu terminal session to run all the commands in this section and the other subsequent sections. To access the Ubuntu terminal, enter "Ubuntu" in the Windows search box and select the Ubuntu for Windows App. An Ubuntu terminal session opens with your home directory set as your current directory.
@@ -61,16 +61,16 @@ kubectl config set-context --current --namespace=mxgo
 
 --8<-- "restartwindows.md"
 
-## 3. Ensure Foundry Hostnames are resolvable
+## 3. Ensure Volt Foundry Hostnames are resolvable
 
-You must ensure the url used to access Volt MX Go Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
+You must ensure the url used to access Volt Foundry and Domino REST API are resolvable by all systems that will be accessing it including Kubernetes and any browsers that you use. This can be done by adding DNS host names and IP addresses to your corporate DNS configuration, or by modifying the hosts file for all systems.
 
 In the examples that follow we're going to use these hostnames as examples:
 
 ```
 drapi.mymxgo.com - used to access Domino REST API.
 drapi-management.mymxgo.com - used to access the Domino REST API Management interface.
-foundry.mymxgo.com - used to access HCL Volt MX Go Foundry
+foundry.mymxgo.com - used to access HCL Volt Foundry
 ```
 
 You can either provide your own hostnames, or use these example names. Either the name to IP address mapping must be made in your DNS configuration, or you must modify your system hosts file. Further documentation here assumes you aren't using a DNS system and configuration and are therefore modifying local hosts file entries.
@@ -130,7 +130,7 @@ You can either provide your own hostnames, or use these example names. Either th
 
     !!! warning "Important"
         - Select the correct **IPv4 Address** under **Ethernet adapter vEthernet (WSL (Hyper-V firewall))**, which by default starts with **172**. Placing the correct IPv4 address in the Windows host file ensures deployment is reachable from within WSL2 and Windows.
-        - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well. Specify the **IPv4 address** for the Windows system where Foundry is installed. If using a wired connection, use the **IPv4 Address** under **Ethernet adapter Ethernet 3**. If using a wireless connection, use the **IPv4 Address** under **Wireless LAN adapter Wi-Fi**. 
+        - If you want to access this deployment from a remote machine, you most likely need to update the `/etc/hosts` file on the remote machine as well. Specify the **IPv4 address** for the Windows system where Volt Foundry is installed. If using a wired connection, use the **IPv4 Address** under **Ethernet adapter Ethernet 3**. If using a wireless connection, use the **IPv4 Address** under **Wireless LAN adapter Wi-Fi**.
 
 2. Add the hostnames that you have chosen to use in your `C:\Windows\System32\drivers\etc\hosts` file together with your IPv4 ADDRESS and dns domain name.
 

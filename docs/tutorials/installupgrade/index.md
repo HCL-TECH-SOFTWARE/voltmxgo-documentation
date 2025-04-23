@@ -4,7 +4,7 @@ Guides you through the procedures for installing and upgrading Volt MX Go.
 
 !!! warning "Important"
 
-    The installation and upgrade processes for Volt MX Go Foundry and Volt MX Go Iris in the Volt MX Go v2.1 or later release differ from those of the Volt MX Go v2.0.4 or earlier release. In the Volt MX Go v2.1 or later release:
+    The installation and upgrade processes for Volt Foundry and Volt Iris in the Volt MX Go v2.1 or later release differ from those of the Volt MX Go v2.0.4 or earlier release. In the Volt MX Go v2.1 or later release:
 
     - Volt Foundry and Volt Iris are first installed, followed by installing the necessary plugins using the Volt MX Go Plugin Installer. The plugins enable the capabilities unique to Volt MX Go. 
     - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
@@ -29,6 +29,4 @@ To install the server components of Volt MX Go, proceed to [Install Volt MX Go s
 
 To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](upgradeserver/index.md).
 
-To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](installiris/index.md).
-
-
+To install and upgrade Volt Iris, proceed to [Install and upgrade Volt Iris](installiris/index.md).

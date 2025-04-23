@@ -4,7 +4,7 @@
 
 The SELECT reserved word defines criteria for the selection of documents in an agent that runs a formula, in a view, or during replication. You use a SELECT statement before an expression to define the set of documents that you want to change, see in a view, or replicate.
 
-## Syntax 
+## Syntax
 
 `SELECT formula ;`
 
@@ -123,6 +123,6 @@ The selection of documents involves:
             }
         }
         ```
-    
+
     !!!note
         Results are returned in a *Promise*.

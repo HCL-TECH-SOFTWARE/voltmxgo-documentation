@@ -26,6 +26,6 @@ The binary images and Helm charts for Volt MX Go server components are pulled fr
 
 <!--## Next step
 
-For installing Volt MX Go using helm charts on a supported Kubernetes platform for a production environment, proceed to [Install Volt MX Go Foundry](nativeinstallers.md#for-using-helm-charts-on-a-supported-kubernetes-platform).
+For installing Volt MX Go using helm charts on a supported Kubernetes platform for a production environment, proceed to [Install Volt Foundry](nativeinstallers.md#for-using-helm-charts-on-a-supported-kubernetes-platform).
 
 For installing Volt MX Go to **development or test only environment**, proceed to [Deploy Kubernetes](deploykubernetes.md).-->

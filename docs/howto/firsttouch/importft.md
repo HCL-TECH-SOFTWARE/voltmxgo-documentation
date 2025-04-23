@@ -1,12 +1,12 @@
-# Import First Touch Recipes app into Volt MX Go Iris
+# Import First Touch Recipes app into Volt Iris
 
 ## About this task
 
-Imports the First Touch Recipes app into Volt MX Go Iris so that you can try out the different development features of Volt MX Go Iris.
+Imports the First Touch Recipes app into Volt Iris so that you can try out the different development features of Volt Iris.
 
 ## Before you begin
 
-- You have installed the First Touch app in Volt MX Go Foundry. For more information, see [First Touch tutorial](../../tutorials/firsttouch.md).
+- You have installed the First Touch app in Volt Foundry. For more information, see [First Touch tutorial](../../tutorials/firsttouch.md).
 
 - You have downloaded the First Touch Recipes project, *FirstTouchRecipe.zip*, from the HCL License & Download Portal. For more information, see [Download HCL Volt MX Go installers](../../tutorials/installupgrade/portaldownload.md).
 
@@ -14,36 +14,36 @@ Imports the First Touch Recipes app into Volt MX Go Iris so that you can try out
 
 ### To import the First Touch Recipes app project
 
-1. Open Volt MX Go Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt MX Go Iris home icon.
+1. Open Volt Iris. When the **Sign-in to your account** page appears, close it by clicking the Volt Iris home icon.
 
-    ![Volt MX Go Iris icon](../../assets/images/irisicon.png)
+    ![Volt Iris icon](../../assets/images/irisicon.png)
 
 2. Import the First Touch Recipes app project.
 
     1. On the top menu, select **Projects** &rarr; **Import** &rarr; **Local Project** &rarr; **Open as New Project** &rarr; **From an Archive**. A file selector dialog opens.
     2. Search and select the *FirstTouchRecipe.zip* file, and click **Open**.
 
-The First Touch Recipes app is now imported into your workspace in Volt MX Go Iris and you can now try and experience the different development features of Volt MX Go Iris to edit and update the First Touch Recipes app. 
+The First Touch Recipes app is now imported into your workspace in Volt Iris and you can now try and experience the different development features of Volt Iris to edit and update the First Touch Recipes app. 
 
 ### To build and publish the First Touch Recipes app
 
 If you want to build and publish the First Touch Recipes app to see how it looks or if you want to see the outcome of the edits and updates you have done:
 
-1. Check Volt MX Go Foundry settings.
+1. Check Volt Foundry settings.
     1. Go to **Preferences**.
         - For Windows, select **Edit** &rarr; **Preferences**.
         - For Mac, depending on your macOS, select **Volt Iris** &rarr; **Preferences** or **Settings**.
-    2. On the **Volt MX Go Iris Preferences** dialog, click **Volt MX Go Foundry**.
-    3. On the **Volt MX Go Foundry** tab, enter your Volt MX Go Foundry URL in the **Foundry URL** text box, and then click **Validate**. You should see the “Validation Successful” message at the top of the dialog.
+    2. On the **Volt Iris Preferences** dialog, click **Volt Foundry**.
+    3. On the **Volt Foundry** tab, enter your Volt Foundry URL in the **Foundry URL** text box, and then click **Validate**. You should see the “Validation Successful” message at the top of the dialog.
     4. Click **Done**.
 
-2. Log in to Volt MX Go Iris.
+2. Log in to Volt Iris.
 
     1. Click **Login** in the upper right corner of the page.
-    2. Enter your email and password for Volt MX Go Foundry on the **Sign in to your account** page.
+    2. Enter your email and password for Volt Foundry on the **Sign in to your account** page.
     3. Click **Sign In**. Your username appears next to the profile icon. 
 
-3. Connect to Volt MX Go Foundry.
+3. Connect to Volt Foundry.
 
     1. Click the **Data & Services** tab menu and select **Link to Existing App**.
 
@@ -53,7 +53,7 @@ If you want to build and publish the First Touch Recipes app to see how it looks
 
         ![Associate App](../../assets/images/associateapp.png)
 
-    3. Click **Project Services** and see the connections to the Volt MX Go Foundry data.
+    3. Click **Project Services** and see the connections to the Volt Foundry data.
 
 4. Build and publish.
 

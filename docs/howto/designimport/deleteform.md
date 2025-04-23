@@ -18,7 +18,7 @@ Guides you on how to delete forms when importing a Domino application into an ex
 
 1. On the top menu, select **Project** &rarr; **Import** &rarr; **Domino Application**. The **VoltMX Design Import Wizard** opens. You may do the steps in importing a Domino application until you reach the  **Summary** page.
 
-2. Click the **Build Iris Application**. If existing Volt MX Go Iris forms are detected, a prompt will occur. This prompt will notify the user whether to overwrite the current forms.
+2. Click the **Build Iris Application**. If existing Volt Iris forms are detected, a prompt will occur. This prompt will notify the user whether to overwrite the current forms.
 
     ![Screenshot](../../assets/images/dideleteform.png)
 

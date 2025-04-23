@@ -7,7 +7,7 @@ Shows you how to configure the mobile app browser before building and publishing
 ## Before you begin
 
 - You have imported a Domino application into a native app project using Design Import.
-- You have launched Volt MX Go Iris and opened your native app project.
+- You have launched Volt Iris and opened your native app project.
 
 ## Procedure
 

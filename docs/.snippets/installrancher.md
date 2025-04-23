@@ -102,9 +102,6 @@ You are now ready to install Rancher Desktop.
     !!!note
         It's recommended to use Rancher Desktop version 1.15.1.
 
-    <!--!!!note
-        Install the latest version of Rancher Desktop. Each new release comes with continuous improvements. Note that version 1.7.0 doesn't work well due to port forwarding issues. Older versions of Rancher Desktop require manual port-forwarding to enable the Windows browser to connect Volt MX Go Foundry applications running in Rancher Desktop. However, this is no longer necessary in the current versions (1.13 and above).-->
-
 2. If you are upgrading from a prior version of MX Go (v2.0.2 or earlier), it's recommended to reset port forwarding **prior** to installing the latest version of Rancher Desktop by performing the following steps:
 
     1. Open a **Windows PowerShell** as the Administrator.

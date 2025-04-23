@@ -4,10 +4,10 @@ List of issues and corresponding resolutions.
 
 ## Design Import
 
-- **403 Insufficient access error in Volt MX Go Iris while using Design Import**
+- **403 Insufficient access error in Volt Iris while using Design Import**
 
     - 403 Insufficient access error due to incorrect Maximum Access Level[^1] of scope:
-        
+
         ![Error dialog](../assets/images/didrapierr.png)
 
         You should contact your Domino REST API administrator to update your scope's Maximum Access Level to *Designer*.
@@ -15,7 +15,7 @@ List of issues and corresponding resolutions.
     - 403 Insufficient access error due to incorrect database access level:
 
         ![Error dialog](../assets/images/diaclerr.png)
-    
+
         You should contact your Domino administrator to update your assigned access level to the Domino database to *Designer*.
 
     [^1]: The Maximum Access Level refers to access through the Domino REST API and doesn't override the database's ACL. The access level granted to the user in the Domino database ACL won't be exceeded. For example, if a user has Reader access in the Domino database ACL and the maximum access level for the scope in the Domino REST API is Editor, the user still won't be able to create or edit documents. 
@@ -46,7 +46,7 @@ Contact your Domino Rest API administrator for assistance in complying with the 
 
 ## First Touch
 
-- [First Touch or Custom Application Fails to Install on Volt MX Go Foundry](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0106427 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [First Touch or Custom Application Fails to Install on Volt Foundry](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0106427 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 ## General issues
 

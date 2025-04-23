@@ -188,7 +188,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
 ## For Volt MX Go v2.0.4 and earlier
 
-Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry and Volt MX Go Iris installers. The following procedure guides you in doing that.
+Up to the Volt MX Go v2.0.4 release, you must download the Volt Foundry and Volt Iris installers. The following procedure guides you in doing that.
 
 ### From My HCLSoftware portal
 
@@ -202,7 +202,7 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 !!! tip
 
-    For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine.
+    For the Volt Foundry and Volt Iris installers, you can just select and download the installer applicable to your machine.
 
 ### From HCL Software License & Download Portal
 
@@ -218,7 +218,8 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 5. On the **Files** tab on the **Downloads** page, select all the files and click **Download Selected Files**.
 
-    !!!note
+    !!! note
+
         When downloading files for the first time by clicking **Download Selected Files**, you need to install the *Download Manager Interface* once. Follow the download and installation instructions. After installing the *Download Manager Interface*, you can resume your download.
 
     **OR**
@@ -227,7 +228,7 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 !!! tip
 
-    For the Volt MX Go Foundry and Iris installers, you can just select and download the installer applicable to your machine.
+    For the Volt Foundry and Volt Iris installers, you can just select and download the installer applicable to your machine.
 
 ## Next step
 
@@ -235,4 +236,4 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt MX Go Foundry an
 
 - To upgrade the server components of Volt MX Go, proceed to [Upgrade Volt MX Go server components](upgradeserver/index.md).
 
-- To install and upgrade Volt MX Go Iris, proceed to [Install and upgrade Volt MX Go Iris](installiris/index.md).
+- To install and upgrade Volt Iris, proceed to [Install and upgrade Volt Iris](installiris/index.md).

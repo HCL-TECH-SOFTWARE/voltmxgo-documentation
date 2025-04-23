@@ -21,7 +21,7 @@ This section provides compatibility information between different versions of Vo
 ## Volt MX Go and Helm chart version compatibility
 
 !!!warning "Important"
-    Starting with the Volt MX GO version 2.1 release, there are no Volt MX Go helm charts. Users must use the Volt Foundry install mechanisms, including their helm charts. 
+    Starting with the Volt MX GO version 2.1 release, there are no Volt MX Go helm charts. Users must use the Volt Foundry install mechanisms, including their helm charts.
 
 |Helm chart component|Volt MX Go version|Helm chart version|
 |----|----|----|
@@ -36,3 +36,10 @@ This section provides compatibility information between different versions of Vo
 |Foundry DB Update|2.0.0|1.2.5|
 |Foundry apps|2.0.0|1.2.5|
 
+<!--
+## Volt MX Go Plugin Installer, Volt Iris, and Volt Foundry version compatibility
+
+|Volt MX Go Plugin Installer|Volt Iris|Volt Foundry|
+|----|----|----|
+||||
+-->
