@@ -100,7 +100,7 @@ Guides you through importing a Domino application to Volt Iris via Design Import
     !!! note
 
         - It may take a while to complete the publishing of the imported Domino app.
-        - If a dialog indicating that existing Iris forms are detected appears, click **Yes** to overwrite the detected forms and build the application. The existing Iris forms were automatically generated when you created the new project in Volt Iris. 
+        - If a dialog indicating that existing Volt Iris forms are detected appears, click **Yes** to overwrite the detected forms and build the application. The existing Volt Iris forms were automatically generated when you created the new project in Volt Iris. 
 
             ![Screenshot](../../assets/images/dideleteform.png)
 

@@ -1,33 +1,8 @@
 # Known limitations
 
-## Installing Volt MX Go plugins to Volt Iris
-
-!!! note
-
-    The information in this topic applies starting with the Volt MX Go version 2.1 release.
-
-Installing the MX Go plugins to Volt Iris requires the Volt Iris workspace to contain a `pluginsInfo.json` file in the `.plugins` directory. An installation error occurs if the `pluginsInfo.json` file isn't in the `.plugins` directory. To create the `pluginsInfo.json` file in the `.plugins directory`, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. Running the Live Preview creates the `pluginsInfo.json` file.
-
-## Using Open API Adapter
-
-Volt MX Go doesn't support the use of the Open API Adapter in the Volt Foundry Integration Services to connect to Domino via Domino REST API. 
-
-## Using helm charts on supported Kubernetes platform
-
-When using helm charts on a supported Kubernetes platform, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context after restarting Windows or Rancher Desktop. If you don't run the command after restarting Windows or Rancher Desktop, your kubectl commands might fail.
-
-## Naming 
-
-- Volt Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
-- Volt Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
-
-## Data conversion 
+## Data conversion
 
 As Domino REST API and Volt Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Volt Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
-
-## Verb mapping
-
-Verb mapping isn't supported for binary verbs in the Volt Foundry Console.
 
 ## Deleting offline documents
 
@@ -43,19 +18,6 @@ Offline-enabled apps use soft delete to remove deleted documents from a device's
 
 Disabling document deletion on the Domino DB if using it with an offline-enabled app combined with an agent script on the Domino REST API, which periodically clears soft-deleted documents, enforces soft delete on the Domino DB. These keep the soft-deleted documents long enough for the user devices to sync before pruning the deleted documents and ensure that the Domino DB doesn't have too many soft-deleted documents.
 
-## Domino database view with duplicate column names
-
-**Design Import**
-
-Design Import doesn't support Domino database views with columns having the same name if those columns have different fields. During the import process, you can see these views listed under **Unsupported Views** on the **View** tab on the **Scope and Forms** page of the **Design Import Wizard**.
-
-**Domino Adapter**
-
-The Domino Adapter handles the Domino database view with columns having the same name in the following ways:
-
-- The Domino Adapter allows Foundry mapping and disregards one of the columns if the data of both columns with the same name are derived from the same field.
-- The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names.
-
 ## Design Import
 
 - Import of forms and views with DBCS character names aren't supported. These forms and views will be listed under **Unsupported Forms** in the **Forms** tab and **Unsupported Views** on the **Views** tab on the **Scope and Forms** page of the **Design Import Wizard** during the import process.
@@ -70,7 +32,45 @@ The Domino Adapter handles the Domino database view with columns having the same
 
 - Supports only Volt Foundry Object services.
 - Domino object services in Volt Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
- 
+
+## Domino database view with duplicate column names
+
+**Design Import**
+
+Design Import doesn't support Domino database views with columns having the same name if those columns have different fields. During the import process, you can see these views listed under **Unsupported Views** on the **View** tab on the **Scope and Forms** page of the **Design Import Wizard**.
+
+**Domino Adapter**
+
+The Domino Adapter handles the Domino database view with columns having the same name in the following ways:
+
+- The Domino Adapter allows Foundry mapping and disregards one of the columns if the data of both columns with the same name are derived from the same field.
+- The Domino Adapter throws an error during data model generation if the data of one column is derived from a field while the data of the other column is derived through a formula. You need to update the view columns to have different names.
+
+## Installing Volt MX Go plugins to Volt Iris
+
+!!! note
+
+    The information in this topic applies starting with the Volt MX Go version 2.1 release.
+
+Installing the MX Go plugins to Volt Iris requires the Volt Iris workspace to contain a `pluginsInfo.json` file in the `.plugins` directory. An installation error occurs if the `pluginsInfo.json` file isn't in the `.plugins` directory. To create the `pluginsInfo.json` file in the `.plugins directory`, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. Running the Live Preview creates the `pluginsInfo.json` file.
+
+## Naming
+
+- Volt Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
+- Volt Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
+
+## Using Open API Adapter
+
+Volt MX Go doesn't support the use of the Open API Adapter in the Volt Foundry Integration Services to connect to Domino via Domino REST API.
+
+## Using helm charts on supported Kubernetes platform
+
+When using helm charts on a supported Kubernetes platform, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context after restarting Windows or Rancher Desktop. If you don't run the command after restarting Windows or Rancher Desktop, your kubectl commands might fail.
+
+## Verb mapping
+
+Verb mapping isn't supported for binary verbs in the Volt Foundry Console.
+
 ## VoltFormula
 
 - Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} are allowed in *voltmx.io.FileSystem*. For more information about *voltmx.io.FileSystem*, see the [Volt MX documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.

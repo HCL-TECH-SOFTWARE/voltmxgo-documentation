@@ -10,13 +10,13 @@ Example 1:
 
 In Domino: `@Command([FileOpenDatabase]; server : database ; view; key )`
 
-In Iris: `@Command([FileOpenDatabase]; object-service-name ; view; key )`
+In Volt Iris: `@Command([FileOpenDatabase]; object-service-name ; view; key )`
 
 Example 2:
 
 In Domino: `@Command([Compose]; server : database ; form )`
 
-In Iris: `@Command([Compose]; object-service-name ; form )`
+In Volt Iris: `@Command([Compose]; object-service-name ; form )`
 
 !!! warning "Important"
 
@@ -28,6 +28,6 @@ In Iris: `@Command([Compose]; object-service-name ; form )`
 
 - In Notes, you can call `@Compose` without explicitly calling `@FileOpenDatabase`. In Volt Iris, you are required to call `@FileOpenDatabase` before calling `@Compose` or before calling any other DB-related function.
 
-- In Iris, many DB `@Functions` depend on the currently selected document. So not only does the database need to be open, but a document needs to be selected. This can be done as part of the call to `@FileOpenDatabase` using the **key** field or by using specific VoltFormula APIs that set the current document.
+- In Volt Iris, many DB `@Functions` depend on the currently selected document. So not only does the database need to be open, but a document needs to be selected. This can be done as part of the call to `@FileOpenDatabase` using the **key** field or by using specific VoltFormula APIs that set the current document.
 
 After Design Import completes the import of the Domino application that includes formulas, update the code to include calls to `@FileOpenDatabase` where needed and set the currently selected document.

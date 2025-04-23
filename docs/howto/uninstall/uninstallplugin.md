@@ -64,7 +64,7 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
 
     2. Enter **5** to uninstall Volt MX Go plugins and press **return**.
     3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **return**. 
-    4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **return**. 
+    4. Specify the Volt Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Volt Iris installation directory, then press **return**. 
 
         You get a confirmation statement that the plugins have been uninstalled. 
     
@@ -81,8 +81,8 @@ You have installed the Volt MX Go Plugin Installer. For more information, see [I
         A Command Prompt window opens.
 
     2. Enter **5** to uninstall Volt MX Go plugins and press **Enter**.
-    3. Specify an Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
-    4. Specify the Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Iris installation directory, then press **Enter**. 
+    3. Specify a Volt Iris workspace by entering the number corresponding to a detected workspace or enter the full path to the workspace, then press **Enter**. 
+    4. Specify the Volt Iris application installation directory by entering the number corresponding to your installation or enter the full path to your Volt Iris installation directory, then press **Enter**. 
 
         You get a confirmation statement that the plugins have been uninstalled. 
 

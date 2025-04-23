@@ -36,7 +36,7 @@ Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodinggu
 
 [HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- Provides documentation and more information about Volt MX Iris and Volt MX Foundry.
+- Provides documentation and more information about Volt Iris and Volt Foundry.
 
 [HCL Domino REST API Documentation](https://opensource.hcltechsw.com/Domino-rest-api/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
