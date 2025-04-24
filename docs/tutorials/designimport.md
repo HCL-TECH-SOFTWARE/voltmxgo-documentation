@@ -238,9 +238,10 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
 
         ![Domino REST API log in dialog](../assets/images/dicredential.png){: style="height:80%;width:80%"}
 
-        !!! note
-
-            In case of an error due to incorrect entry in the **Scope**, **App ID**, or **App Secret** fields in the **Create New Identity Service**, a dialog shows an error message and information on how to address the error. Clicking **OK** in the dialog will redirect you to the **Create New Identity Service**, where you can correct the entry in the relevant text field.
+        <!-- for v2.1.2
+        note
+        In case of an error due to incorrect entry in the **Scope**, **App ID**, or **App Secret** fields in the **Create New Identity Service**, a dialog shows an error message and information on how to address the error. Clicking **OK** in the dialog will redirect you to the **Create New Identity Service**, where you can correct the entry in the relevant text field.
+        -->
 
     4. Login with your *Domino credentials* in the **HCL Domino Login** dialog.
 
