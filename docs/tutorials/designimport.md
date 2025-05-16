@@ -238,10 +238,9 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
 
         ![Domino REST API log in dialog](../assets/images/dicredential.png){: style="height:80%;width:80%"}
 
-        <!-- for v2.1.2
-        note
-        In case of an error due to incorrect entry in the **Scope**, **App ID**, or **App Secret** fields in the **Create New Identity Service**, a dialog shows an error message and information on how to address the error. Clicking **OK** in the dialog will redirect you to the **Create New Identity Service**, where you can correct the entry in the relevant text field.
-        -->
+        !!! note
+
+            In case of an error due to incorrect entry in the **Scope**, **App ID**, or **App Secret** fields in the **Create New Identity Service**, a dialog shows an error message and information on how to address the error. Clicking **OK** in the dialog will redirect you to the **Create New Identity Service**, where you can correct the entry in the relevant text field.
 
     4. Login with your *Domino credentials* in the **HCL Domino Login** dialog.
 
@@ -319,16 +318,17 @@ To see the imported forms in a directory, click the **DESIGN** tab to show the *
 ## Perform CRUD operation in imported Domino app
 
 Before you can do the CRUD operation in your imported Domino app, you must first build and publish the imported app in Volt Iris.
-    
+
 If your app is a **Web App**, follow the instructions in [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
 
 If your app is a **Native App:**
 
 1. [Configure your mobile app browser](../howto/designimport/configmobile.md).
-            
+
 2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation to view the mobile app.
 
-!!!note
+!!! note
+
     For the following topics, the steps are based on an example Domino application. The example images will be different from what you will see when you try the steps using your imported application.
 
 ### Create entry
