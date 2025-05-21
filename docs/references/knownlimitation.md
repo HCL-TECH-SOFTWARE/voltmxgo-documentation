@@ -33,6 +33,29 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 - Supports only Volt Foundry Object services.
 - Domino object services in Volt Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
 
+### Special characters
+
+- The following special characters can't be used as string values of fields in a request payload when executing POST, PUT, PATCH, or BULK UPDATE method in a Domino Adapter Object Service as they cause an error.
+
+    - Slash (**/**)
+    - Double quote (**"**)
+    - Semicolon (**;**)
+    - Less than (**<**)
+
+    For example, the following request payload will cause an error since the string value of the field *Subject* includes a slash.
+
+    ```json
+    {
+    "Body": "test",
+    "Subject": "test/update",
+    "x_004unit": "A65F75ABGDHSGFDTJ"
+    }
+    ```
+
+- The special character apostrophe (**'**) can't be used as part of a string, which is used as part of the search parameter for the `$filter`, even when encoded using `x_00` concatenated with its corresponding hex code. The query will proceed, but there will be no results.
+
+    For example, the query `$filter=Type eq 'Dessert's'` will return no results. The same goes for the query `$filter=Type eq 'Dessertx_0027s'`, where the apostrophe was encoded.
+
 ## Domino database view with duplicate column names
 
 **Design Import**
@@ -58,6 +81,8 @@ Installing the MX Go plugins to Volt Iris requires the Volt Iris workspace to co
 
 - Volt Foundry only allows "letters" (A-Z and a-z) as the first characters in names. For example, `@unid` and `$files`, included in Domino field names, aren't supported. As a workaround, Domino Adapter encodes the problematic characters, for example `@unid` becomes `x_0040unid`.
 - Volt Foundry restricts the length of names, such as field names, to be shorter than the name length supported in Domino.
+
+
 
 ## Using Open API Adapter
 
