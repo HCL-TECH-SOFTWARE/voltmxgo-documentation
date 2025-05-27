@@ -2,7 +2,7 @@
 
 ## About this task
 
-Guides you on how to insert attachments via the [Summernote Editor](../../references/summernotewidget.md). 
+Guides you on how to insert attachments via the [Summernote Editor](../../topicguides/summernotewidget.md).
 
 ## Before you begin
 

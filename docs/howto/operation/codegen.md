@@ -68,7 +68,7 @@ The procedure guides you in generating CRUD forms and associated form-navigation
     ![Generate Form](../../assets/images/genform.png){: style="height:80%;width:80%"}
 
 !!!note
-    **Summernote Editor** is automatically applied on Rich Text fields when generating entry forms (CREATE/UPDATE) from the data panel. **Summernote Editor** is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a Rich Text field in a form in Volt Iris. For more information, see [Summernote Editor](../../references/summernotewidget.md).
+    **Summernote Editor** is automatically applied on Rich Text fields when generating entry forms (CREATE/UPDATE) from the data panel. **Summernote Editor** is a simple WYSIWYG editor that allows a developer to enter or edit rich text content in a Rich Text field in a form in Volt Iris. For more information, see [Summernote Editor](../../topicguides/summernotewidget.md).
 
 ## Expected result
 

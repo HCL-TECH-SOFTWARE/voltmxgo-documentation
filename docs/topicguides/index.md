@@ -13,3 +13,5 @@ This section discusses and explains topics and concepts about Volt MX Go to help
 - [First Touch app](firsttouchapp.md)
 
 - [Interacting with Domino server process within Domino container](dominoserver.md)
+
+- [Summernote Editor](summernotewidget.md)

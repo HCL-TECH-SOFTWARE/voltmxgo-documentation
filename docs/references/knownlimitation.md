@@ -99,5 +99,6 @@ Verb mapping isn't supported for binary verbs in the Volt Foundry Console.
 - Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} are allowed in *voltmx.io.FileSystem*. For more information about *voltmx.io.FileSystem*, see the [Volt MX documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - Date APIs for Notes implementations return JavaScript Date Objects, which differ from Notes Date Objects.
-
+<!--
 - VoltFormula functions reliably with only one Object Service in an application because the name of the Object Service is stored in a JavaScript global variable. To avoid potential issues caused by thread switching, limit your application to a single Object Service. If you need an additional Object Service, ensure it's in a separate part of the application.
+-->

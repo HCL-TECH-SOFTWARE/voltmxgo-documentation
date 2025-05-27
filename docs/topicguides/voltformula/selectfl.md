@@ -55,7 +55,9 @@ The selection of documents involves:
     wherein:
 
     `svcName` - serverName : database (serverName isn't used, database is the Object Service name)
+
     `viewName` - Form or Table name within the Object Service (maps to Notes DB Table name)
+
     `formulaSelection` - Notes selection formula for selecting documents for API to return
 
     !!!note
@@ -124,5 +126,6 @@ The selection of documents involves:
         }
         ```
 
-    !!!note
+    !!! note
+
         Results are returned in a *Promise*.

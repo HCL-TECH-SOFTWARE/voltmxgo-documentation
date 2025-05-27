@@ -4,3 +4,4 @@ Provides a list of Rosetta APIs that require additional considerations in their 
 
 - [Compose()](compose.md)
 - [MailSend()](mailsend.md)
+- [RestfulAPI()](restapi.md)
