@@ -48,11 +48,11 @@ Guides you through importing a Domino application to Volt Iris via Design Import
         ![Domino REST API log in dialog](../../assets/images/dicredential.png){: style="height:80%;width:80%"}
 
         In case a **Permission Requested** dialog appears, click **Allow**.
-
+        <!--
         !!! note
 
             In case of an error due to incorrect **Scope**, **Client ID**, or **Client Secret**, a dialog shows an error message and information on how to address the error. You must then update the existing identity service you selected in Volt Foundry.
-
+        -->
     4. Choose the identity service related to your app on Volt Foundry in **Foundry App Identity Service** and click **Next**.
 
         !!! tip
