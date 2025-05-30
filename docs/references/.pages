@@ -12,5 +12,5 @@ nav:
     - Support: references/index.html#support
     - kubecheatsheet.md
     - reflogginglevels.md 
-    - summernotewidget.md
+#    - summernotewidget.md
     - docguide.md

@@ -2,3 +2,4 @@ nav:
     - index.md
     - compose.md
     - mailsend.md
+    - restapi.md

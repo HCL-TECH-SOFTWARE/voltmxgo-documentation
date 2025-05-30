@@ -53,3 +53,10 @@ Contact your Domino Rest API administrator for assistance in complying with the 
 - **The kubectl commands fail after restarting Windows or Rancher Desktop**
 
     When your kubectl commands fail after restarting Windows or Rancher Desktop, you must run the `kubectl config set-context --current --namespace=mxgo` command in your Ubuntu terminal session to set the current namespace context.
+
+<!-- 
+Field values are not displayed properly on a Volt Iris published web application
+
+    You might encounter the issue where field values are not displayed properly on a Volt Iris published web application. One possible cause of this issue is that the field type of the field in the database form in the Domino REST API is configured differently from the field type of the field in the Domino database.
+
+-->

@@ -67,11 +67,11 @@ Useful [Helm and Kubectl commands](kubecheatsheet.md) related to [Volt MX Go ins
 ## Logging levels
 
 Describes different [logging levels](reflogginglevels.md) for better monitoring and evaluation of activities and events.
-
+<!--
 ## Summernote Editor
 
 [Summernote Editor](summernotewidget.md) enables you to add a WYSIWYG editor to your form for handling rich text.
-
+-->
 ## Guide to documentation
 
 Provides a [guide](docguide.md) on using the Volt MX Go documentation.
