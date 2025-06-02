@@ -26,7 +26,7 @@ List of issues and corresponding resolutions.
 
     ![Design Import error dialog](../assets/images/didrapissues.png)
 
-    - **Field value mismatch between modes** 
+    - **Field value mismatch between modes**
 
         The issue occurs when the **dql** mode and **default** mode have different property values, such as fields, type, and field access. Make sure they have similar property values.
 

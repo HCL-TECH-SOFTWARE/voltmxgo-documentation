@@ -26,4 +26,4 @@ Guides you on how to delete forms when importing a Domino application into an ex
 
     This **won't** guarantee you that your imported application will generate and build successfully.
 
-4. Click **Done** on the **Result** page. The project forms will retrieve a fresh copy from an imported Domino app.
+4. Click **Done** on the **Result** page. 
