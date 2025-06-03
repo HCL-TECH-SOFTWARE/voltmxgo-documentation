@@ -8,9 +8,7 @@ Guides you on how to download the HCL Volt MX Go installers.
 
 Starting from the Volt MX Go v2.1 release, you must download the supported versions of installers of Volt Foundry and Volt Iris. You must also download the Volt MX Go Plugin Installer, which installs the Volt MX Go plugins to Volt Foundry and Volt Iris to enable the Volt MX Go features. The following procedure guides you in downloading the installers.
 
-### From My HCLSoftware portal
-
-#### For Volt Foundry
+### For Volt Foundry
 
 === "Latest release"
 
@@ -51,7 +49,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
         For example: `HelmChart-9.5.18.0_GA.zip`
 
-#### For Volt Iris
+### For Volt Iris
 
 === "Latest release"
 
@@ -77,7 +75,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 
     The **minimum supported version of Volt Iris is v9.5.50** for Volt MX Go.
 
-#### For Volt MX Go Plugin Installer
+### For Volt MX Go Plugin Installer
 
 1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 2. On the landing page, click **Sign in**.
@@ -106,7 +104,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
         - `FirstTouchRecipes.nsf.zip`
         - `FirstTouchRecipe.zip`
 
-### From HCL Software License & Download Portal
+<!--### From HCL Software License & Download Portal
 
 1. Go to [HCL License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
@@ -185,12 +183,10 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
                 - The First Touch files are also included in the package and have the following file names:
                     - `FirstTouchRecipes.nsf.zip`
                     - `FirstTouchRecipe.zip`
-
+-->
 ## For Volt MX Go v2.0.4 and earlier
 
 Up to the Volt MX Go v2.0.4 release, you must download the Volt Foundry and Volt Iris installers. The following procedure guides you in doing that.
-
-### From My HCLSoftware portal
 
 1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 2. On the landing page, click **Sign in**.
@@ -204,7 +200,7 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt Foundry and Volt
 
     For the Volt Foundry and Volt Iris installers, you can just select and download the installer applicable to your machine.
 
-### From HCL Software License & Download Portal
+<!--### From HCL Software License & Download Portal
 
 1. Go to [HCL Software License & Download Portal](https://hclsoftware.flexnetoperations.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
@@ -229,7 +225,7 @@ Up to the Volt MX Go v2.0.4 release, you must download the Volt Foundry and Volt
 !!! tip
 
     For the Volt Foundry and Volt Iris installers, you can just select and download the installer applicable to your machine.
-
+-->
 ## Next step
 
 - To install the server components of Volt MX Go, proceed to [Install Volt MX Go server components](installserver/index.md).

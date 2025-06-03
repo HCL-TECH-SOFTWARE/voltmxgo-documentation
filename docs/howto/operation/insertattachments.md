@@ -2,7 +2,7 @@
 
 ## About this task
 
-Guides you on how to insert attachments via the [Summernote Editor](../../references/summernotewidget.md). 
+Guides you on how to insert attachments via the [Summernote Editor](../../topicguides/summernotewidget.md).
 
 ## Before you begin
 
@@ -10,12 +10,11 @@ Guides you on how to insert attachments via the [Summernote Editor](../../refere
 
 - You have [built and published your app in Volt Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
-!!!note "Important"
+!!! note "Important"
+
     Make sure that you included the virtual field `$FILES` in the form configured in Domino REST API. 
 
 ## Procedure
-
-**To insert an attachment**
 
 1. On the Summernote Editor toolbar, click the paper clip icon to open the **Insert File** dialog.
 
@@ -43,7 +42,7 @@ The selected file also appears in the File List section of the form where you ma
 
 ## Additional information
 
-**To remove an attachment**
+### To remove an attachment
 
 1. Go to the File List section of the form.
 2. Select the attachment that you want to remove and click the corresponding delete icon.
@@ -55,7 +54,7 @@ The selected file also appears in the File List section of the form where you ma
 !!!note
     Removing the attachment link in the content field of the Summernote Editor doesn't remove the attachment. You have to remove it from the File List section.
 
-**To download an attachment**
+## To download an attachment
 
 You can download attachments from the Grid or Details form of a document.
 

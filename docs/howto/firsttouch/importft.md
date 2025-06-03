@@ -23,7 +23,7 @@ Imports the First Touch Recipes app into Volt Iris so that you can try out the d
     1. On the top menu, select **Projects** &rarr; **Import** &rarr; **Local Project** &rarr; **Open as New Project** &rarr; **From an Archive**. A file selector dialog opens.
     2. Search and select the *FirstTouchRecipe.zip* file, and click **Open**.
 
-The First Touch Recipes app is now imported into your workspace in Volt Iris and you can now try and experience the different development features of Volt Iris to edit and update the First Touch Recipes app. 
+The First Touch Recipes app is now imported into your workspace in Volt Iris and you can now try and experience the different development features of Volt Iris to edit and update the First Touch Recipes app.
 
 ### To build and publish the First Touch Recipes app
 
@@ -41,7 +41,7 @@ If you want to build and publish the First Touch Recipes app to see how it looks
 
     1. Click **Login** in the upper right corner of the page.
     2. Enter your email and password for Volt Foundry on the **Sign in to your account** page.
-    3. Click **Sign In**. Your username appears next to the profile icon. 
+    3. Click **Sign In**. Your username appears next to the profile icon.
 
 3. Connect to Volt Foundry.
 

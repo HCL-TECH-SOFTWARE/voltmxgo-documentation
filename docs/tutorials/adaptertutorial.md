@@ -265,6 +265,10 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
 The following produres enable you to test the different methods for interacting with the configured data model.
 
+!!! note
+
+    There are some special characters that you cannot use as string values when performing the methods for interacting with the data models. For more information, see [Special characters](../references/knownlimitation.md#special-characters). 
+
 ### Test the GET method by viewing a record
 
 1. Click the **Mapping** tab, and then click the expand icon corresponding to a data model name to display a list of available methods.

@@ -2,6 +2,8 @@
 
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
+- [Volt MX Go v2.1.2](v212.md)
+
 - [Volt MX Go v2.1.1](v211.md)
 
 - [Volt MX Go v2.1](v210.md)

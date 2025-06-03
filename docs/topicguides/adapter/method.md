@@ -49,9 +49,13 @@ The Domino Adapter supports these OData query parameters for the GET method on f
 - `$top`: Specifies the number of documents to return, starting from the beginning or from the row specified by `$skip`.
 - `$skip`: Specifies the number of documents to skip (zero-based row index of the first returned document).
 
-!!!note
+!!! note
+
     - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how many entries to return from the skip point onward.
-    - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`. 
+    - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`.
+    - The special character apostrophe (**'**) cannot be used as part of a string, which is used as part of the search parameter for the `$filter`, even when encoded using `x_00` concatenated with its corresponding hex code. The query will proceed, but there will be no results.
+
+        For example, the query `$filter=Type eq 'Dessert's'` will return no results. The same goes for the query `$filter=Type eq 'Dessertx_0027s'`, where the apostrophe was encoded. 
 
 With `$filter`, the following canonical functions are supported:
 
@@ -86,6 +90,9 @@ The Domino Adapter supports these OData query parameters for the GET method on v
     - You can use formulas to create new sortable columns in Domino Designer. As an example, you can use the formula `@Text(@Universalid)` to create a new sortable column in Domino Designer so that `$filter` and `$orderby` can be used to find a view row by UNID or to order the view by UNID.
     - `$top` and `$skip` are used together for pagination, for example to define how many entries to skip or how  many entries to return from the skip point onward.
     - **When using a special character as part of the search parameter for the `$filter`**, you must encode the special character using `x_00` concatenated with its corresponding hex code. For example, when filtering a `Name` field whose value is `CN=admin/O=ocp`, you must encode the special characters `=` and `/`. So the filter should be `$filter=Name eq CNx_003dadminx_002fOx_003docp`, where we encoded `=` as `x_003d` and `/` as `x_002f`.
+    - The special character apostrophe (**'**) can't be used as part of a string, which is used as part of the search parameter for the `$filter`, even when encoded using `x_00` concatenated with its corresponding hex code. The query will proceed, but there will be no results.
+
+        For example, the query `$filter=Type eq 'Dessert's'` will return no results. The same goes for the query `$filter=Type eq 'Dessertx_0027s'`, where the apostrophe was encoded.
 
 With `$filter`, the following canonical functions are supported:
 

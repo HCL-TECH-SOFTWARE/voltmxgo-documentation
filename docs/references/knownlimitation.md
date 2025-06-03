@@ -20,7 +20,7 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 
 ## Design Import
 
-- Import of forms and views with DBCS character names aren't supported. These forms and views will be listed under **Unsupported Forms** in the **Forms** tab and **Unsupported Views** on the **Views** tab on the **Scope and Forms** page of the **Design Import Wizard** during the import process.
+- Import of forms and views with DBCS character names aren't supported<!--up until Volt MX Go v2.1.1 release-->. These forms and views will be listed under **Unsupported Forms** in the **Forms** tab and **Unsupported Views** on the **Views** tab on the **Scope and Forms** page of the **Design Import Wizard** during the import process.
 
 - If forms with the same name are detected during the import process, one of the forms will be renamed by adding a string of random alphanumeric characters to the end of the original form name. The same procedure applies to views with identical names. One view will be renamed by adding random alphanumeric characters to the end of the view name. You are informed of the changes via a notification dialog such as shown in the following image.  
 
@@ -32,6 +32,29 @@ Disabling document deletion on the Domino DB if using it with an offline-enabled
 
 - Supports only Volt Foundry Object services.
 - Domino object services in Volt Foundry are only usable by authenticated app users. You must have a valid Domino REST API token for all Domino REST API calls. Customers requiring access to Domino object services as unauthenticated users may be able to implement a Foundry pre-processor to obtain valid Domino REST API tokens and inject Authorization headers in each request.
+
+### Special characters
+
+- The following special characters can't be used as string values of fields in a request payload when executing POST, PUT, PATCH, or BULK UPDATE method in a Domino Adapter Object Service as they cause an error.
+
+    - Slash (**/**)
+    - Double quote (**"**)
+    - Semicolon (**;**)
+    - Less than (**<**)
+
+    For example, the following request payload will cause an error since the string value of the field *Subject* includes a slash.
+
+    ```json
+    {
+    "Body": "test",
+    "Subject": "test/update",
+    "x_004unit": "A65F75ABGDHSGFDTJ"
+    }
+    ```
+
+- The special character apostrophe (**'**) can't be used as part of a string, which is used as part of the search parameter for the `$filter`, even when encoded using `x_00` concatenated with its corresponding hex code. The query will proceed, but there will be no results.
+
+    For example, the query `$filter=Type eq 'Dessert's'` will return no results. The same goes for the query `$filter=Type eq 'Dessertx_0027s'`, where the apostrophe was encoded.
 
 ## Domino database view with duplicate column names
 
@@ -76,5 +99,6 @@ Verb mapping isn't supported for binary verbs in the Volt Foundry Console.
 - Prompt `[LocalBrowse]` and `[ChooseDatabase]` for Volt Iris application don't have a filter setting for file type since only [registered file types](https://www.iana.org/assignments/media-types/media-types.xhtml "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} are allowed in *voltmx.io.FileSystem*. For more information about *voltmx.io.FileSystem*, see the [Volt MX documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_api_dev_guide/content/voltmx.io.filesystem_functions.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - Date APIs for Notes implementations return JavaScript Date Objects, which differ from Notes Date Objects.
-
+<!--
 - VoltFormula functions reliably with only one Object Service in an application because the name of the Object Service is stored in a JavaScript global variable. To avoid potential issues caused by thread switching, limit your application to a single Object Service. If you need an additional Object Service, ensure it's in a separate part of the application.
+-->

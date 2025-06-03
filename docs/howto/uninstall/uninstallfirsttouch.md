@@ -18,7 +18,8 @@ Guides you in uninstalling First Touch in case you want to start over with the F
 
 3. Click **Next**. An uninstall progress dialog shows the status of the uninstallation subprocesses.
 
-    !!!note 
+    !!! note
+
         -  If the Domino REST API configuration can't be pulled from the object service or the object service has been unlinked or deleted, enter your Domino REST API details in the **Uninstall First Touch** dialog and click **Next**.
         -  If another app is published to the environment created when First Touch was installed, the Progress dialog indicates that the environment isn't deleted as it's used by another app. However, the First Touch app is removed from the environment.
 
