@@ -75,6 +75,9 @@ With `$filter`, the following canonical functions are supported:
 |`$select=Name,Ingredients`|Returns documents that include only the `Name` and `Ingredients` fields.|
 |`$filter=x_0040unid eq xxxx and Form eq unknown`|Returns only the form name and form alias names for the document specified by UNID xxxx.|
 |`$select=Name,mydate,x_0040created&$filter=mydate ge '2022-03-10T05:00:00Z'`|Returns documents that include only the `Name` field, `mydate` field, and `x_0040created` columns, with `mydate` values on or after 2022-03-10T05:00:00Z.|
+|`$filter=createDate gt '2025-01-01' and createDate lt '2026-01-01'`|Returns all documents with `createDate` values after 2025-01-01 and before 2026-01-01.|
+|`$filter=createDate ge '2025-01-01' and createDate le '2026-01-01'`|Returns all documents with `createDate` values on or after 2025-01-01 and on or before 2026-01-01.|
+|`$filter=count ge 100 and count le 200`|Returns all documents with `count` values greater than or equal to 100 and less than or equal to 200.|
 
 ## Supported OData query parameters for view-based GET method 
 
@@ -114,6 +117,9 @@ With `$filter`, the following canonical functions are supported:
 |`$filter=distinctDocuments eq true`|Returns only distinct view documents in a view.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
+|`$filter=createDate gt '2025-01-01' and createDate lt '2026-01-01'`|Returns all view entries in the view whose `createDate` field is after 2025-01-01 and before 2026-01-01.|
+|`$filter=createDate ge '2025-01-01' and createDate le '2026-01-01'`|Returns all view entries in the view whose `createDate` field is on or after 2025-01-01 and on or before 2026-01-01.|
+|`$filter=count ge 100 and count le 200`|Returns all view entries in the view whose `count` field is greater than or equal to 100 and less than or equal to 200.|
 
 ## Attachments
 
