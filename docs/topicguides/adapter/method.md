@@ -117,9 +117,6 @@ With `$filter`, the following canonical functions are supported:
 |`$filter=distinctDocuments eq true`|Returns only distinct view documents in a view.|
 |`$orderby=Year` or `$orderby=Year asc`|Returned rows are ordered by ascending values in the `Year` column.`asc` is the default if direction is omitted.|
 |`$orderby=Year desc`|Returned rows are ordered by descending values in the `Year` column.|
-|`$filter=createDate gt '2025-01-01' and createDate lt '2026-01-01'`|Returns all view entries in the view whose `createDate` field is after 2025-01-01 and before 2026-01-01.|
-|`$filter=createDate ge '2025-01-01' and createDate le '2026-01-01'`|Returns all view entries in the view whose `createDate` field is on or after 2025-01-01 and on or before 2026-01-01.|
-|`$filter=count ge 100 and count le 200`|Returns all view entries in the view whose `count` field is greater than or equal to 100 and less than or equal to 200.|
 
 ## Attachments
 
