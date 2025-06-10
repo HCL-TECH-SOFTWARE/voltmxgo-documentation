@@ -183,12 +183,7 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
         |Service Name:| Any name that identifies the Volt Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
 
         ![Design Import Wizard dialog](../assets/images/dikeep.png){: style="height:80%;width:80%"}
-        <!--for v10
-        ![Design Import Wizard dialog](../assets/images/dikeep1.png){: style="height:80%;width:80%"}
-        !!! tip
 
-            You can click and hold on the eye icon beside the App Secret text field to easily verify the entered value. 
-        -->
     2. Select the **Identity Service**.
 
         The name of the Identity Service is the service name you provided prefixed with *MXGO*. As shown in the image, the name of the Identity Service is *MXGODemoApp*

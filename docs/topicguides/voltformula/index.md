@@ -20,12 +20,12 @@ The aim of VoltFormula is to expose the capability to run certain functions of O
 
 ### Rosetta flow overview
 
-![Rosetta flow overview](../../assets/images/vfrosetta2.png)
+![Rosetta flow overview](../../assets/images/vfrosetta2.png){: style="height:80%;width:80%"}
 
 ### OpenFormula or Notes API implementation paths
 
-![API implementation paths](../../assets/images/vfrosetta1.png)
+![API implementation paths](../../assets/images/vfrosetta1.png){: style="height:80%;width:80%"}
 
 ### Serving Rosetta under Volt MX Go via SDK plug-in
 
-![Serving Rosetta under Volt MX Go via SDK plug-in](../../assets/images/vfrosetta.png)
+![Serving Rosetta under Volt MX Go via SDK plug-in](../../assets/images/vfrosetta.png){: style="height:80%;width:80%"}
