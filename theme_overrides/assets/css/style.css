@@ -1,5 +1,5 @@
 .md-tabs__link--active {
-    border-bottom: 2px solid #FFF;
+    /*border-bottom: 2px solid #FFF; This removes the underline of the selected header menu*/
     font-weight: 600;
 }
 
