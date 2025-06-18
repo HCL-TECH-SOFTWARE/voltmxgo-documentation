@@ -101,7 +101,14 @@
 .md-header{
     background-color: #212121;
     box-shadow: none;
-	
+	/*The following are added as part of the june 2025 template update*/
+    color: var(--md-primary-bg-color);
+    display: block;
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 4;
 }
 /*White border line for Search text box
 .md-search {
@@ -169,11 +176,16 @@
 
 .dropdown-content a {
   color: white;
-  padding: 2px 6px;
+  /*padding: 2px 6px - this is before the JUne 2025 update*/
+  padding: 4px 6px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+  /*the following was added as part of the June 2025 update*/
+    color: #ffffff;
+}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -204,3 +216,196 @@ text-align: center;
         margin-left: -2%;
 	}
 }
+
+/*starting from line 221, the following items are added as part of the June 2025 template update */
+
+.version-banner {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ffeeba;
+    z-index: 9999;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .version-banner a {
+    color: #130485;
+    text-decoration: underline;
+  }
+  
+  
+  
+  .header_title { 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /* Left container: logo + subtitle links */
+  .header_left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  /* Logo */
+  .header_left a img {
+    vertical-align: middle;
+    margin-left: -20px;
+  }
+  /* Subtitle links */
+  .subtitle {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .subtitle a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .subtitle a:hover {
+      color: white;
+  }
+  
+  
+  /* .subtitle a:hover span {
+    color: #0ba5a8;
+    text-decoration: underline;
+  } */
+  
+  .md-container {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin-top: -1px;
+  }
+  
+  .md-tabs {
+      background-color: #212121;
+  }
+   
+  .nav-link {
+      margin-right: 20px;
+  }
+   
+   .md-footer-hcl  {
+      text-align: center;
+      bottom: 0;
+      width: 80%;
+      color: #ffffff;
+      font-size: 13px;
+      min-height: 34px;
+      margin-left: 120px;   
+   }
+   
+   .footer-launch::after {
+      content: url("../images/new-tab.svg");
+      width: 20px;
+      height: 20px;
+      margin: auto 2px;
+      padding-top: 3px;
+      display: inline-block;
+      vertical-align: text-bottom;
+  }
+  
+  
+  
+  /* Main footer container */
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 10px 0;
+  }
+  
+  /* Left section - Email & Twitter */
+  .footer-left ul,
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-left {
+      margin-left: 65px;
+  }
+  
+  .footer-left a,
+  .footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-left a:hover,
+  .footer-right a:hover {
+    color: #0ba5a8;
+  }
+  
+  .footer-launch::after {
+      content: url("../images/new-tab.svg");
+      width: 20px;
+      height: 20px;
+      margin: auto 5px;
+      padding-top: 3px;
+      display: inline-block;
+      vertical-align: text-bottom;
+  }
+  
+  .footer-mail::after {
+      content: url("../images/email.svg");
+      width: 20px;
+      height: 20px;
+      margin: auto 5px;
+      padding-top: 3px;
+      display: inline-block;
+      vertical-align: text-bottom;
+  }
+  
+  .footer-twitter::after {
+      content: url("https://help.hcltechsw.com/images/twitter.png");
+      width: 20px;
+      height: 20px;
+      margin: auto 5px;
+      padding-top: 3px;
+      display: inline-block;
+      vertical-align: text-bottom;
+  }
+  
+  /* .footer-container {
+      width: 90%;
+  } */
+  
+  .footer-left {
+      float: left;
+  }
+  
+  .footer-right {
+      float: right;
+  }
+  
+  .share-content {
+      text-align: left;
+  }
+  
+  .legal-content {
+      text-align: right;
+  }
+  /* .md-footer-copyright {
+      font-size: .8rem !important;
+      margin-left: 65px;
+  } */
+  
