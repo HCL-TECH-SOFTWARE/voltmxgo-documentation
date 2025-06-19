@@ -7,7 +7,7 @@
 <!-- Include already-configured Styles custom styles -->
 {{ super() }}
 <!-- Add custom styles -->
-<link rel="stylesheet" href="assets/stylesheets/homepage-styles.css">
+<link rel="stylesheet" href="/assets/css/homepage-styles.css">
 
 {% endblock %}
 
@@ -21,12 +21,17 @@
         <div class="section-flexbox-row flex-start align-center">
             <div class="dx-hero__content">
                 <div class="hero-heading">
-                    <h1>Learn about HCL Digital Experience Compose</h1>
+                    <h1>Welcome to Volt MX Go documentation</h1>
                 </div>
                 <div class="hero-body body-text white">
-                    <p>DX Compose is a new iteration of HCL DX, with a lighter, cloud native run-time. Get to know DX Compose and learn how to leverage its features to build your next-gen digital experience.
-                    </p>
-                    <p>Access our product documentation and stay up-to-date with the product's latest updates.
+                    <p>Volt MX Go modernizes and extends the value of your Domino applications with the market-leading, multi-experience platform Volt MX by:</p>
+                    <ul>
+                        <li>connecting Volt Foundry to your Domino applications</li>
+                        <li>modernizing or creating new multi-experience applications in Volt Iris on your Domino back-end data and applications</li>
+                        <li>expanding who can code applications built in Domino, allowing for app modernization or migration without requiring a complete rewrite of the code</li>
+                        <li>importing existing Domino views, forms, and fields into Volt Foundry to get a head start on your Volt MX Go applications</li>
+                    </ul>
+                    <p>To learn more, see <a href="https://opensource.hcltechsw.com/voltmxgo-documentation/topicguides/introvoltmxgo.html">Introducing Volt MX Go</a>.</p>
                     </p>
                 </div>
             </div>
@@ -41,13 +46,13 @@
 
 {% endblock %}
 
-
+<!--
 {% block footer %}
 
 <footer class="md-footer">
     <div class="md-footer-meta md-typeset">
         <div class="md-footer-meta__inner md-grid">
-            <!-- Copyright and theme information -->
+            Copyright and theme information 
             <div class="md-footer-copyright">
                 <a href=" https://www.hcltechsw.com/ " title="MkDocs">{{ config.copyright }}</a>
                 <br>Made with
@@ -69,3 +74,4 @@
     </div>
 </footer>
 {% endblock %}
+-->

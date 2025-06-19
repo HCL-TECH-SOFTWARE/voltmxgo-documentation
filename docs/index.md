@@ -1,10 +1,12 @@
 ---
 title: Welcome
+template: home-blocks.html
 hide:
   - navigation
+  - toc
 ---
 
-# Welcome to Volt MX Go documentation
+<!--# Welcome to Volt MX Go documentation
 
 Volt MX Go modernizes and extends the value of your Domino applications with the market-leading, multi-experience platform Volt MX by:
 
@@ -15,7 +17,7 @@ Volt MX Go modernizes and extends the value of your Domino applications with the
 
 To learn more, see [Introducing Volt MX Go](topicguides/introvoltmxgo.md).
 
----
+--->
 ## Get started
 
 - [System requirements](tutorials/installupgrade/sysreq/index.md)
@@ -59,3 +61,74 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 !!! tip
 
     For more information on using the Volt MX Go documentation, see [Guide to documentation](references/docguide.md).
+
+<div class="grid cards" markdown>
+
+-    :material-human-greeting:{ .lg .middle } __Get started__
+
+    ---
+
+    Find out how to get started with this documentation.
+
+    ---
+
+-    :material-human-greeting:{ .lg .middle } __Quick links__
+
+    ---
+
+    Find out how to get started with this documentation.
+
+    ---
+
+-   :material-new-box:{ .lg .middle } __What's New?__
+
+    ---
+
+    Find out what's new in the latest {product-name} cumulative fix level.
+
+    ---
+
+    [:octicons-arrow-right-24: Go to What's New](./whatsnew/index.md)
+
+
+-   :material-book-open-variant:{ .lg .middle } __Tutorials__
+
+    ---
+
+    Hands-on introduction to {product-name}.
+    
+    ---
+
+    [:octicons-arrow-right-24: Go to Tutorials](./tutorials/index.md)
+
+-   :material-server-network:{ .lg .middle } __How-to guides__
+
+    ---
+
+    Practical step-by-step guides for performing tasks and operation. 
+
+    ---
+
+    [:octicons-arrow-right-24: Go to How to Guides](./howto/index.md)
+
+-   :material-file-document:{ .lg .middle } __Topic guides__
+
+    ---
+
+    High-level discussion and explanation of key topics and concepts to give background information.
+
+    ---
+
+    [:octicons-arrow-right-24: Go to Topic Guides](./topicguides/index.md)
+
+-   :material-code-tags:{ .lg .middle } __References__
+
+    ---
+
+    Technical references and descriptions on using {product-name}.
+
+    ---
+
+    [:octicons-arrow-right-24: Go to Reference](./references/index.md)
+
+</div>
