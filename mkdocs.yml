@@ -39,6 +39,7 @@ markdown_extensions:
   - pymdownx.tilde
   - abbr
   - attr_list
+  - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -90,6 +91,7 @@ edit_uri: edit/main/docs
 # Customization
 extra_css:
   - assets/css/voltmxgo.css
+  - assets/css/style.css
 #  - ../assets/css/voltmxgo.css
 
 plugins:
