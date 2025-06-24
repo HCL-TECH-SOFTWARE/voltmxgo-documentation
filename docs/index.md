@@ -132,7 +132,7 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
     ---
 
-    [:octicons-arrow-right-24: Go to Reference](./references/index.md)
+    [:octicons-arrow-right-24: Go to References](./references/index.md)
 
 -    :material-link-variant:{ .lg .middle } __Quick links__
 
