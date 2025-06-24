@@ -6,7 +6,7 @@ This guide provides information on using the Volt MX Go documentation.
 
 ## Documentation sections
 
-The Volt MX Go documentation is based on the Diátaxis framework, which organizes documentation into the following main sections:
+The Volt MX Go documentation is based on the [Diátaxis framework](https://diataxis.fr/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}, which organizes documentation into the following main sections:
 
 - Tutorials
 - How-to guides
@@ -41,5 +41,5 @@ The search result shows the number of documents with content matching all or any
 
 To open support tickets, go to the [Customer Support](https://support.hcltechsw.com/csm "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} portal.  
 
-To share information, ask questions, and learn about Volt MX Go, go to the [Community](https://support.hcltechsw.com/community?id=community_forum&sys_id=2a45adef1bc4fd14a67e9759bc4bcb3d "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} portal.
+To share information, ask questions, and learn about Volt MX Go, go to the [HCLSoftware Digital Solutions Community Forum](https://developer.ds.hcl-software.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
