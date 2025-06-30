@@ -18,4 +18,4 @@ The topic guides you in installing the following server components of Volt MX Go
     - Before starting the installation, make sure to verify that you meet the [System requirements](../sysreq/index.md).  
 
 - [For Volt MX Go v2.1 or later](installdrapi.md)
-- [For Volt MX Go v2.0.4 or earlier](nativeinstallers.md)
+- [For Volt MX Go v2.0.4 or earlier - EOS](nativeinstallers.md)
