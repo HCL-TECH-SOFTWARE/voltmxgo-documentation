@@ -1,5 +1,7 @@
 # What's new
 
+--8<-- "endofsupport.md"
+
 The section provides information on the latest features, improvements, and resolved issues related to Volt MX Go.
 
 - [Volt MX Go v2.1.2](v212.md)
@@ -7,10 +9,6 @@ The section provides information on the latest features, improvements, and resol
 - [Volt MX Go v2.1.1](v211.md)
 
 - [Volt MX Go v2.1](v210.md)
-
----
-
---8<-- "endofsupport.md"
 
 - [Volt MX Go v2.0.4 EOS](v204.md)
 
