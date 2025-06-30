@@ -1,4 +1,6 @@
-# For Volt MX Go v2.0.4 or earlier
+# For Volt MX Go v2.0.4 or earlier - EOS
+
+--8<-- "endofsupport.md"
 
 ## Install Domino REST API
 

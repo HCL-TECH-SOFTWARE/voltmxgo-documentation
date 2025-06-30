@@ -18,4 +18,4 @@ The topic guides you in upgrading the following server components of Volt MX Go.
     - Before starting the installation, make sure to verify that you meet the [System requirements](../sysreq/index.md).
 
 - [For Volt MX Go v2.1 or later](versupgradedrapi.md)
-- [For Volt MX Go v2.0.4 or earlier](versionupgrade.md)
+- [For Volt MX Go v2.0.4 or earlier - EOS](versionupgrade.md)

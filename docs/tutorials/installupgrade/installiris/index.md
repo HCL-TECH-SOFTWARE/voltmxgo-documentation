@@ -9,4 +9,4 @@ Perform a new or an upgrade installation of Volt Iris.
     After installing the plugins, connect Volt Iris to Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.
 
 - [For Volt MX Go v2.1 or later](installiris.md)
-- [For Volt MX Go v2.0.4 or earlier](upgradeiris.md)
+- [For Volt MX Go v2.0.4 or earlier - EOS](upgradeiris.md)

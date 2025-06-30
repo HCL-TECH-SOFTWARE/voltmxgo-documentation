@@ -1,4 +1,6 @@
-# System requirements for Volt MX Go v2.0.4 or earlier
+# System requirements for Volt MX Go v2.0.4 or earlier - EOS
+
+--8<-- "endofsupport.md"
 
 This section describes the minimum system requirements for deploying Volt MX Go.
 

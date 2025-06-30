@@ -186,6 +186,8 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 -->
 ## For Volt MX Go v2.0.4 and earlier
 
+--8<-- "endofsupport.md"
+
 Up to the Volt MX Go v2.0.4 release, you must download the Volt Foundry and Volt Iris installers. The following procedure guides you in doing that.
 
 1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
