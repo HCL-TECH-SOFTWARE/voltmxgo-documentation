@@ -144,6 +144,7 @@ For View columns (only non-meta columns), the data model field **Metadata** attr
 |resort-desc|Indicates that clicking the column header sorts the view in descending order.<br/><br/>If both resort-asc and resort-desc are true, clicking the column header changes the sorting between ascending and descending orders.|
 |title|Displays the title of the column.|
 |multiValueSeparator|NONE indicates the column isn't an array of values (multi-valued). COMMA, SPACE, SEMICOLON, and NEWLINE indicate that the column has an array of values, and the type of separator character is indicated.|
+|isHidden|True indicates the column is hidden. False indicates the column isn't hidden.|
 
 ### Form aliases
 
