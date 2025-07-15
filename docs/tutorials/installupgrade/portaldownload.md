@@ -30,9 +30,12 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
     6. Under **Releases**, click the release version you want to download.
     7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
 
-!!! note
+!!! info
 
-    - The **minimum supported version of Volt Foundry is v9.5.18.0** for Volt MX Go.
+    - The minimum supported version of Volt Foundry is v9.5.18.0 for Volt MX Go.
+    - The Volt Foundry v10.0.0.0 is currently **not supported** for Volt MX Go.
+
+<!--
     - For Windows, the file name of the installation file is `VoltFoundrySetup-<version>_GA.zip`. 
                     
         For example: `VoltFoundrySetup-9.5.18.0_GA.zip`
@@ -48,6 +51,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
     - For Container Helm Installation, the file name of the installation file is `HelmChart-<version>_GA.zip`.
 
         For example: `HelmChart-9.5.18.0_GA.zip`
+-->
 
 ### For Volt Iris
 
@@ -71,9 +75,11 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
     6. Under **Releases**, click the release version you want to download.
     7. Under **Downloads**, click the **Direct download** icon corresponding to the file you want to download.
 
-!!! note
+!!! info
 
-    The **minimum supported version of Volt Iris is v9.5.50** for Volt MX Go.
+    - The minimum supported version of Volt Iris is v9.5.50 for Volt MX Go.
+    - The Volt Iris v10.0.0.0 is currently **not supported** for Volt MX Go.
+
 
 ### For Volt MX Go Plugin Installer
 

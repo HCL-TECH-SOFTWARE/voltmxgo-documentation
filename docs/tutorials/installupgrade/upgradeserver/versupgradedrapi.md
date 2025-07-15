@@ -32,6 +32,10 @@ The installer doesn't support automatic backups of database and other artifacts.
 
 - Download the latest Volt Foundry installer based on your installation platform. The minimum supported version is v9.5.18.0. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-or-later).
 
+    !!! note
+
+        The Volt Foundry v10.0.0.0 is currently **not supported** for Volt MX Go.
+
 - Download and install the latest Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../installserver/installdrapi.md#install-volt-mx-go-plugin-installer).
 
 - Ensure that the Volt Foundry installer has execute permission.

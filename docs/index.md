@@ -65,16 +65,6 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
 <div class="grid cards" markdown>
 
--    :material-gesture-tap-button:{ .lg .middle } __HCL Volt MX v10__
-
-    ---
-
-    The release of HCL Volt MX v10 introduces a range of enhancements and new functionalities. HCL Volt MX Go benefits from these improvements when capabilities unique to Volt MX Go are enabled in Volt Iris and Volt Foundry of HCL Volt MX v10. 
-
-    Users of HCL Volt MX Go may encounter several preview features designed to showcase upcoming functionalities. These preview features will offer insights into what is to come and will be fully functional and documented in the upcoming release of HCL Volt MX Go v10.
-
-    ---
-
 -    :material-gesture-tap-button:{ .lg .middle } __Get started__
 
     ---
