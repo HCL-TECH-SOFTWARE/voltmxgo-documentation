@@ -65,6 +65,14 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
 <div class="grid cards" markdown>
 
+-    :material-bullhorn:{ .lg .middle } __Important notice__
+
+    ---
+
+    Volt Foundry v10.0.0.0 and Volt Iris v10.0.0.0 are currently not supported for Volt MX Go. 
+
+    ---
+
 -    :material-gesture-tap-button:{ .lg .middle } __Get started__
 
     ---
