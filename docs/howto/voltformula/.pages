@@ -1,6 +1,7 @@
 nav:
     - index.md
     - configrosetta.md
+    - widgetprop.md
     - regunregconfig.md
     - clearfunction.md  
     - importvoltformula.md

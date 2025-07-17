@@ -2,9 +2,11 @@
 
 How-to guides for instructing users in completing key goals and tasks related to VoltFormula.
 
-- [Configure Rosetta API](configrosetta.md)
+- [Configure VoltFormula](configrosetta.md)
 
-- [Register and unregister custom Rosetta API](regunregconfig.md)
+- [Define widget properties using formula language](widgetprop.md)
+
+- [Register and unregister custom Rosetta APIs](regunregconfig.md)
 
 - [Clear formulas in controller and Action Editor](clearfunction.md)
 

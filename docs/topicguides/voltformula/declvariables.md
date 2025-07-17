@@ -42,4 +42,4 @@ Examples:
     ![Notes formula example](../../assets/images/vfnotesjsp.png){: style="height:70%;width:70%"}
 
 !!!note
-    To use JSP expression in formulas, select **Passthrough unrecognized formula language into JavasSript conversion results** checkbox. For more information, see [Configure VoltFormula's Rosetta API Options](../../howto/voltformula/configrosetta.md).
+    To use JSP expression in formulas, select **Passthrough unrecognized formula language into JavasSript conversion results** checkbox. For more information, see [Configure VoltFormula](../../howto/voltformula/configrosetta.md).

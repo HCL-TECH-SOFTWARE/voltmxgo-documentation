@@ -273,6 +273,6 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
 -->
 ## Additional information
 
-- The default Rosetta VoltFormula setting can be modified according to your need for your app. To change the configuration, see [Configure VoltFormula's Rosetta API Options](../howto/voltformula/configrosetta.md).
+- The default Rosetta VoltFormula setting can be modified according to your need for your app. To change the configuration, see [Configure VoltFormula](../howto/voltformula/configrosetta.md).
 
 - To know more about the proper way of handling codes, see [VoltFormula coding exercise examples in Volt Iris](../topicguides/voltformula/vfcodingguides.md).
