@@ -36,7 +36,7 @@ For more information, see the [Installation and configuration](https://opensourc
 
     !!! note
 
-        The Volt Foundry v10.0.0.0 is currently **not supported** for Volt MX Go.
+        If you wish to upgrade to Volt Foundry v10.0.0.0, read and understand the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have downloaded the Volt MX Go Plugin Installer.
 

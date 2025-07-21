@@ -33,7 +33,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 !!! info
 
     - The minimum supported version of Volt Foundry is v9.5.18.0 for Volt MX Go.
-    - The Volt Foundry v10.0.0.0 is currently **not supported** for Volt MX Go.
+    - If you wish to upgrade to Volt Foundry v10.0.0.0, read and understand the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}. 
 
 <!--
     - For Windows, the file name of the installation file is `VoltFoundrySetup-<version>_GA.zip`. 
@@ -78,7 +78,7 @@ Starting from the Volt MX Go v2.1 release, you must download the supported versi
 !!! info
 
     - The minimum supported version of Volt Iris is v9.5.50 for Volt MX Go.
-    - The Volt Iris v10.0.0.0 is currently **not supported** for Volt MX Go.
+    - The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}. 
 
 
 ### For Volt MX Go Plugin Installer

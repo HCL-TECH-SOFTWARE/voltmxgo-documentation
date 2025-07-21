@@ -10,7 +10,7 @@ Perform a new or an upgrade installation of Volt Iris.
 
     !!! note
 
-        The Volt Iris v10.0.0.0 is currently **not supported** for Volt MX Go.
+        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have downloaded the Volt MX Go Plugin Installer.
 
@@ -165,7 +165,7 @@ Upgrades Volt Iris to the latest version<!--from Volt MX Go v2.0.4 to Volt MX Go
 
     !!! note
 
-        The Volt Iris v10.0.0.0 is currently **not supported** for Volt MX Go.
+        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](#install-volt-mx-go-plugin-installer).
 
