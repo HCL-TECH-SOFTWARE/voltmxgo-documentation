@@ -34,7 +34,7 @@ The installer doesn't support automatic backups of database and other artifacts.
 
     !!! note
 
-        The Volt Foundry v10.0.0.0 is currently **not supported** for Volt MX Go.
+        If you wish to upgrade to Volt Foundry v10.0.0.0, read and understand the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - Download and install the latest Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](../installserver/installdrapi.md#install-volt-mx-go-plugin-installer).
 
