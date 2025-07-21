@@ -33,6 +33,11 @@ For more information, see the [Installation and configuration](https://opensourc
 #### Before you begin
 
 - You have downloaded the Volt Foundry installer. The minimum supported version is v9.5.18.0.
+
+    !!! note
+
+        If you wish to upgrade to Volt Foundry v10.0.0.0, read and understand the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
 - You have downloaded the Volt MX Go Plugin Installer.
 
 For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-or-later).

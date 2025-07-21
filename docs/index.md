@@ -65,7 +65,15 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
 <div class="grid cards" markdown>
 
--    :material-gesture-tap-button:{ .lg .middle } __Get started__
+-   :material-bullhorn:{ .lg .middle } __Important: Volt MX Go support for Volt MX v10__
+
+    ---
+
+    Volt MX Go customers who wish to upgrade to Volt Foundry or Volt Iris v10 should read and understand the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
+    ---
+
+-   :material-gesture-tap-button:{ .lg .middle } __Get started__
 
     ---
 
@@ -93,13 +101,12 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
     [:octicons-arrow-right-24: Go to What's New](./whatsnew/index.md)
 
-
 -   :material-book-open-variant:{ .lg .middle } __Tutorials__
 
     ---
 
     Hands-on introduction to Volt MX Go.
-    
+
     ---
 
     [:octicons-arrow-right-24: Go to Tutorials](./tutorials/index.md)
@@ -134,7 +141,7 @@ The Volt MX Go documentation is based on the [Diátaxis framework](https://diata
 
     [:octicons-arrow-right-24: Go to References](./references/index.md)
 
--    :material-link-variant:{ .lg .middle } __Quick links__
+-   :material-link-variant:{ .lg .middle } __Quick links__
 
     ---
 
