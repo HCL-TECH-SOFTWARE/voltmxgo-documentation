@@ -121,7 +121,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     3. On the **Volt Foundry** tab, enter your Volt Foundry URL in the **Foundry URL** text box, and then click **Validate**.
 
-        ![Preferences](../assets/images/dipreference.png){: style="height:80%;width:80%"}
+        ![Preferences](../assets/images/dipreference.png){: style="height:60%;width:60%"}
 
         You should see the **Validation Successful** message at the top of the dialog. If you entered an incorrect Volt Foundry URL, you will see an error message at the top of the dialog advising you to try the validation again.
 
@@ -140,11 +140,11 @@ In this tutorial, we will use a web app project. The following steps will enable
 1. In the top menu, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:60%;width:60%"}
 
 3. In the **Which device size do you want to start building for first?** dialog, select **Desktop** and click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:60%;width:60%"}
 
 4. Enter your **Project Name** and click **Create**.  
   
