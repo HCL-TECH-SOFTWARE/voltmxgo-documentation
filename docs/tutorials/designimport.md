@@ -140,19 +140,19 @@ In this tutorial, we will use a web app project. The following steps will enable
 1. In the top menu, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:60%;width:60%"}
+    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:70%;width:70%"}
 
 3. In the **Which device size do you want to start building for first?** dialog, select **Desktop** and click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:60%;width:60%"}
+    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:70%;width:70%"}
 
 4. Enter your **Project Name** and click **Create**.  
   
-    ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:70%;width:70%"}
 
 You can now see your project name in the upper-left corner of the **Volt Iris** UI.
 
-![Volt Iris user interface](../assets/images/diappname.png){: style="height:80%;width:80%"}
+![Volt Iris user interface](../assets/images/diappname.png){: style="height:60%;width:60%"}
 
 ## Import a Domino application
 
