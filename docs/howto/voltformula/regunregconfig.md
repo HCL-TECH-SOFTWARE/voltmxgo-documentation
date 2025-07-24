@@ -1,8 +1,8 @@
-# Register and unregister custom Rosetta API
+# Register and unregister custom Rosetta APIs
 
 ## About this task
 
-Describes how to register and unregister custom Rosetta API in the **API Configuration** section of the **VoltFormula** tab in the **Project Settings**.
+Describes how to register and unregister custom Rosetta APIs in the **API Configuration** section of the **VoltFormula** tab in the **Project Settings**.
 
 ## Before you begin
 
@@ -13,19 +13,19 @@ You have launched Volt Iris.
 ### Register custom API
 
 1. Go to **Project Settings**, and select **VoltFormula**.
-2. On the **Register Custom API** text box, click the **Browse** icon.
+2. On the **Register Custom API** text box, click the plus icon.
 
      ![Register Custom API text box](../../assets/images/vfreg.png)
 
-3. Select your custom API `.json` file.
+3. Select your custom API JSON file.
 4. Click **Done**.
 
 ### Unregister custom API
 
 1. Go to the **Project Settings**, and select **VoltFormula**.
-2. On the **Register Custom API** text box, click **X** to remove the custom API.
+2. On the **Register Custom API** text box, click delete icon to remove the custom API.
 
-    ![Register Custom API text box](../../assets/images/vfunreg.png)
+    <!--![Register Custom API text box](../../assets/images/vfunreg.png)-->
 
 3. Click **Done**.
 

@@ -19,6 +19,19 @@ Guides you through importing a Domino application to Volt Iris via Design Import
 
     ![Design Import Wizard dialog](../../assets/images/diwizard.png){: style="height:80%;width:80%"}
 
+    !!! info "Using Designer Profile"
+
+        The *Designer Profile* feature stores the information you enter in the **Design Import Wizard** when creating an Identity Service in a profile. This profile can be reused the next time you start Design Import to go directly to the **Scope and Forms** page, thus streamlining the import process.
+
+        To save your entered information in a profile, you must reach at least the **Scope and Forms** page in the **Design Import Wizard**. The profile remains available only while Volt Iris is open. Closing or restarting Volt Iris will delete the profile.
+        
+        The information saved in the profile is based on the latest Identity Service configuration you did in the **Design Import Wizard**.
+
+        ![Designer profile](../../assets/images/designprofile.png){: style="height:80%;width:80%"}
+
+        To use the stored profile, click **Use Previous Profile** and then you will be directed to the **Scope and Forms page**. 
+        
+
 3. On **Associate Foundry App** step, click **Use Existing**. The **Volt MX Go Applications** dialog opens.
 
     ![Design Import Wizard dialog](../../assets/images/difoundryapp.png){: style="height:80%;width:80%"}
@@ -122,4 +135,4 @@ Once you click **Done**, you can see the imported forms and views in a storyboar
 
 To see the imported forms in a directory, click the **DESIGN** tab to show the **Project** tab. You then expand the **Responsive Web / Desktop** and the **Form** directory to show the imported forms, views, and actions.
 
-![Import output in the Forms directory](../../assets/images/dioutput1.png){: style="height:80%;width:80%"}
+![Import output in the Forms directory](../../assets/images/dioutput1.png){: style="height:50%;width:50%"}

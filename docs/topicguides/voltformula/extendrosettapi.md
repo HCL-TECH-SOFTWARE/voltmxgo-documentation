@@ -76,4 +76,4 @@ In addition to extending via **JavaScript implementations**, when the `code` pro
 
 ## Additional information
 
-For more information, see [Register and unregister custom Rosetta API](../../howto/voltformula/regunregconfig.md).
+For more information, see [Register and unregister custom Rosetta APIs](../../howto/voltformula/regunregconfig.md).
