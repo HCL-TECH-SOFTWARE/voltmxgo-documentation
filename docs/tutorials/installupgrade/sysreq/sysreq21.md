@@ -1,6 +1,6 @@
-# System requirements for Volt MX Go v2.1 or later
+# System requirements for Volt MX Go v2.1 to v2.1.2
 
-This section describes the minimum system requirements for deploying Volt MX Go. 
+This section describes the minimum system requirements for deploying Volt MX Go.
 
 ## For Domino REST API
 

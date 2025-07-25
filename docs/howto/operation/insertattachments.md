@@ -8,7 +8,7 @@ Guides you on how to insert attachments via the [Summernote Editor](../../topicg
 
 - You have [generated CRUD forms for Object Service](codegen.md).
 
-- You have [built and published your app in Volt Iris](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have [built and published your app in Volt Iris](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/Cloud_Build_in_VoltMX_Iris.html#post-successful-build "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 !!! note "Important"
 

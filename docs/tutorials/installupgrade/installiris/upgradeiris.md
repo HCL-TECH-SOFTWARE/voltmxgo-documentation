@@ -1,4 +1,4 @@
-# For Volt MX Go 2.0.4 or earlier - EOS
+# Volt MX Go 2.0.4 or earlier - EOS
 
 --8<-- "endofsupport.md"
 

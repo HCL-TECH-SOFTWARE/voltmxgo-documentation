@@ -1,4 +1,4 @@
-# Volt MX Go v2.1 up to v2.1.2
+# For Volt MX Go v10
 
 ## Install Domino REST API
 
