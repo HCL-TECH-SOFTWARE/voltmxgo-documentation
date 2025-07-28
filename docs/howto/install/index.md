@@ -9,3 +9,5 @@ How-to guides for instructing users in completing key goals and tasks related to
 - [Connect to Domino server from Notes client](connectdominofromnotes.md)
 
 - [Configure Kubernetes Ingress for Domino REST API](drapiingress.md)
+
+- [Enable VoltScript in Volt Foundry](voltscript.md)
