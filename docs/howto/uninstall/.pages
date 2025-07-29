@@ -4,6 +4,7 @@ nav:
     - rancheruninstall.md
     - uninstallfirsttouch.md
     - uninstallplugin.md
+    - uninstallvs.md
     - Uninstall Volt Foundry for Linux: https://help.hcl-software.com/voltmx/v10/Foundry/voltmx_foundry_linux_install_guide/Content/Uninstalling_VoltMX_Foundry.html
     - Uninstall Volt Foundry for Windows: https://help.hcl-software.com/voltmx/v10/Foundry/voltmx_foundry_windows_install_guide/Content/Uninstalling_VoltMX_Foundry.html
     - Uninstall Volt Foundry installed on supported Kubernetes platform: https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#uninstalling-foundry
