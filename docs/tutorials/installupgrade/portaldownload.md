@@ -163,7 +163,7 @@ Starting from the Volt MX Go v2.1 up to v2.1.2, you must download the supported 
         - `FirstTouchRecipes.nsf.zip`
         - `FirstTouchRecipe.zip`
 
-## For Volt MX Go v2.0.4 and earlier - EOS
+## For Volt MX Go v2.0.4 and earlier
 
 --8<-- "endofsupport.md"
 

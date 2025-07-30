@@ -14,7 +14,7 @@ Perform a new or an upgrade installation of Volt Iris.
 
 - You have downloaded the Volt MX Go Plugin Installer.
 
-For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#volt-mx-go-v21-up-to-v212).
+For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-up-to-v212).
 
 ### Install Volt Iris
 
