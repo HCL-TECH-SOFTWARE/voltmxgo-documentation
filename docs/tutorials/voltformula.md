@@ -8,7 +8,7 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
 
 - You have created your [Volt Foundry admin account](../howto/install/foundryadminaccount.md).
 
-- You know how to use [Actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You know how to use [Actions](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 ## Launch Volt Iris
 

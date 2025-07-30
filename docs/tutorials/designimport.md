@@ -319,13 +319,13 @@ To see the imported forms in a directory, click the **DESIGN** tab to show the *
 
 Before you can do the CRUD operation in your imported Domino app, you must first build and publish the imported app in Volt Iris.
 
-If your app is a **Web App**, follow the instructions in [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
+If your app is a **Web App**, follow the instructions in [Building a Web App](https://help.hcl-software.com/voltmx/v10/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
 
 If your app is a **Native App:**
 
 1. [Configure your mobile app browser](../howto/designimport/configmobile.md).
 
-2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation to view the mobile app.
+2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation to view the mobile app.
 
 !!! note
 

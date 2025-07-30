@@ -4,8 +4,6 @@ The section provides information on the latest features, improvements, and resol
 
 - [Volt MX Go v10.0](v100.md)
 
-- [Volt MX Go v10.0](v100.md)
-
 - [Volt MX Go v2.1.2](v212.md)
 
 - [Volt MX Go v2.1.1](v211.md)

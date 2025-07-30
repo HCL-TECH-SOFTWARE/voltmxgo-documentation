@@ -34,7 +34,7 @@ Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodinggu
 
 ## Documentation references
 
-[HCL Volt MX Documentation](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+[HCL Volt MX Documentation](https://help.hcl-software.com/voltmx/v10/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 - Provides documentation and more information about Volt Iris and Volt Foundry.
 

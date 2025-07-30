@@ -1,4 +1,5 @@
 nav:
    - index.md
+   - installv10.md
    - installdrapi.md
    - nativeinstallers.md

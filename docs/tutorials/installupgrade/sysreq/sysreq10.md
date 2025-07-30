@@ -1,16 +1,18 @@
-# System requirements for Volt MX Go v2.0.4 or earlier - EOS
-
---8<-- "endofsupport.md"
+# System requirements for Volt MX Go v10
 
 This section describes the minimum system requirements for deploying Volt MX Go.
 
-## For installing Domino REST API
+## For Domino REST API
 
 --8<-- "drapiversion.md"
 
 Check the [system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101789 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for installing Domino REST API using the installer.
 
-## For installing Volt Foundry
+## For VoltScript Installation Tool
+
+The VoltScript Installation Tool runs on any supported Volt Foundry server installation.
+
+## For Volt Foundry
 
 **Software requirements**
 
@@ -32,16 +34,27 @@ Check the [Supported OS, Application Servers, and Database Guide](https://help.h
 
 Check the [supported browsers](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_supported_devices_os_browsers/Content/Supported_Browsers.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} for the Volt Foundry Console.
 
-**Prerequisites for Volt Foundry command line installer**
+<!--**Prerequisites for Volt Foundry command line installer**
 
-Check the additional [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Foundry command line installer.
+Check the additional [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/VoltMX_Foundry_CLI/Content/installer_cli.html#prerequisites) when using the Foundry command line installer. -->
 
-**Prerequisites for Volt MX Foundry Containers Helm Installation**
+**Prerequisites for Volt Foundry Containers Helm Installation**
 
 Check the [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} when using the Volt Foundry Containers Helm Installation.
 
-## For installing Volt Iris
+**Requirements for Volt Foundry Single Container Solution**
 
+- [Prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [Software requirements](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#software-requirements "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [Hardware requirements](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#hardware-requirements "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+
+## For Volt Iris
+
+- [For Windows](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_win/Content/Prerequisites.html#system-requirements "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+
+- [For Mac](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_mac/Content/Prerequisites.html#sr "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+
+<!--
 === "On Windows"
 
     **Operating System**
@@ -57,11 +70,12 @@ Check the [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltm
     |Internal Storage	|2 GB|
     |Network	|Ethernet Port|
 
+
 === "On Mac"
 
     **Operating System**
 
-    [Supported macOS versions](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_mac/Content/Supported_VoltMX_Iris_MacOS_versions.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} 
+    [Supported macOS versions](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_mac/Content/Supported_VoltMX_Iris_MacOS_versions.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
     **Hardware**
 
@@ -71,58 +85,7 @@ Check the [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltm
     |RAM	    |8 GB |
     |Internal Storage|	24 GB|
     |Network Ethernet |Port|
-
-## For deploying Volt MX Go using K3s on an Ubuntu, RHEL, SLES machine, or VM
-
---8<-- "devtestenvironment.md"
-
-**Operating System**
-
-- RHEL9
-- Ubuntu
-- SLES
-
-**Hardware** 
-
-| Spec | Minimum |
-| ---- | ------- |
-| CPU | 4 cores |
-| RAM | 16 GB |
-
-!!! note
-
-    - For more information on K3s, see [K3s - Lightweight Kubernetes](https://docs.k3s.io/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-    
-    - For more information on the installation requirements for K3s, see [K3s Installation Requirements](https://docs.k3s.io/installation/requirements "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-
-## For deploying Volt MX Go using Rancher Desktop running on Windows
-
---8<-- "devtestenvironment.md"
-
-**Operating System**
-
-- Windows 10 build 1909 or higher
-- Windows 11
-
-**Hardware**
-
-| Spec | Minimum |
-| ---- | ------- |
-| CPU | 4 cores |
-| RAM | 32 GB |
-
-**Additional requirements**
-
-Rancher Desktop requires the following on Windows:
-
-- Running on a machine with virtualization capabilities.
-- Persistent internet connection.
-- Windows Subsystem for Linux on Windows. This will automatically be installed as part of the Rancher Desktop setup. Manually downloading a distribution isn't necessary.
-
-!!!note
-    - For more information on Rancher Desktop, see [Introduction](https://docs.rancherdesktop.io/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Rancher Desktop documentation.
-
-    - For more information on Rancher Desktop installation requirements, see [Installation](https://docs.rancherdesktop.io/getting-started/installation/#windows "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Rancher Desktop documentation.
+-->
 
 ## Next step
 

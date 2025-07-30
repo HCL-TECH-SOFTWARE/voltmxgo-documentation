@@ -12,6 +12,7 @@ This section provides compatibility information between different versions of Vo
 
 |Volt MX Go version|Domino REST API version|
 |----|----|
+|version 10.0|version 1.1.5|
 |version 2.1.2|version 1.1.4|
 |version 2.1.1|version 1.1.3.1|
 |version 2.1|version 1.1.1|

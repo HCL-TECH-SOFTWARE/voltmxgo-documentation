@@ -96,7 +96,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
 !!! tip
 
-    For more information, see [How to Add Applications](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation. 
+    For more information, see [How to Add Applications](https://help.hcl-software.com/voltmx/v10/Foundry/voltmx_foundry_user_guide/Content/Adding_Applications.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation. 
 
 ## Configure an Identity service
 

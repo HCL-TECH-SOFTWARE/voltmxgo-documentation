@@ -2,6 +2,7 @@ nav:
     - index.md
     - obtainauthenticationtoken.md
     - checkstat.md
+    - checkvs.md
     - codegen.md
     - insertattachments.md   
     - logginglevel.md
