@@ -8,7 +8,7 @@ VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC "Link opens a new ta
 
 ## About this task
 
-This guide walks you through installing the VoltScript Plugin Installer using the VoltScript Installation Tool, and then using the VoltScript Plugin Installer to add VoltScript plugins to Volt Foundry.
+This guide walks you through installing the VoltScript Plugin Installer using the VoltScript Installation Tool, and then using the VoltScript Plugin Installer to add VoltScript plugins in Volt Foundry.
 
 ## Before your begin
 
@@ -19,9 +19,9 @@ For more information, see [Download HCL Volt MX Go installers](../../tutorials/i
 
 ## Procedure
 
-### Install VoltScript Installation Tool
+### Install VoltScript Plugin Installer 
 
-The procedure enables the installation of the VoltScript Installation Tool, which enables the installation of the VoltScript Plugin in Volt Foundry.
+The procedure guides your through the installation of the VoltScript Plugin Installer, installs the VoltScript plugins in Volt Foundry.
 
 === "**on Linux**"
 
@@ -87,10 +87,10 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 === "on Linux"
 
     1. Open Terminal.
-    1. Go to the directory where you installed the VoltScript Installation Tool. <!--By default, the installer executable is located in the `~/VoltMXGoPluginInstaller` directory.-->
-    2. Run the VoltScript Installation Tool by entering the following command and press **Enter**.
+    1. Go to the directory where you installed the VoltScript Plugin Installer. <!--By default, the installer executable is located in the `~/VoltMXGoPluginInstaller` directory.-->
+    2. Run the VoltScript Plugin Installer by entering the following command and press **Enter**.
 
-        `./<InstallationToolFilename>`
+        `./<installerfilename>`
 
         The installation tool opens on the Terminal showing the available options as can be seen from the following example:
 
@@ -128,4 +128,14 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
 ## Expected result
 
-After installing the VoltScript plugins in Volt Foundry, you can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
+
+## Additional information
+
+You can install VoltScript Runtime using the **Install VoltScript Runtime Zip** option in the VoltScript Plugin Installer. The VoltScript Runtime files will be saved in the following locations:
+
+- For Linux: `/usr/local/voltscript`
+- For Windows: `C:\Program Files\HCL\voltscript`
+
+For more information on VoltScript Runtime, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.

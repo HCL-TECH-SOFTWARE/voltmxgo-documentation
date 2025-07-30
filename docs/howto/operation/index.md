@@ -6,6 +6,8 @@ How-to guides for instructing users in completing key goals and tasks related to
 
 - [Check installation status of Volt MX Go plugins](checkstat.md)
 
+- [Check installation status of VoltScript plugins](checkvs.md)
+
 - [Generate CRUD forms for Object Service](codegen.md)
 
 - [Insert attachments via Summernote Editor](insertattachments.md)
