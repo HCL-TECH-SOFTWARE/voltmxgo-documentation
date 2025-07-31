@@ -44,11 +44,7 @@ For installing Volt Foundry, click the link to the installation guide correspond
 
     - Make sure to check all the details and complete all the applicable procedures indicated in the sections in the installation guides.
     
-    - After completing the installation, activate the **Volt MX Go license** on Volt Foundry and then shut it down before proceeding to the installation of the Volt MX Go plugins. For more information, see the following license activation guides on the Volt MX documentation:
-
-        [For Volt Foundry version 9.5.20.0 and onwards](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
-
-        [For Volt Foundry versions earlier than 9.5.20.0](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/License_Activation_through_VoltMX_Server_7.2.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} 
+    - After completing the installation, activate the **Volt MX Go license** on Volt Foundry. For more information, see the [license activation guide](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation. 
 
 - [For Windows](https://help.hcl-software.com/voltmx/v10/Foundry/voltmx_foundry_windows_install_guide/Content/Introduction.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
