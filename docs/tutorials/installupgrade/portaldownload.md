@@ -130,8 +130,8 @@ Starting from the Volt MX Go v2.1 up to v2.1.2, you must download the supported 
 
 !!! info
 
-    - The minimum supported version of Volt Iris is v9.5.50 for Volt MX Go v2.1 up to v2.1.2.
-    - The Volt Iris v10.0.0 is **not supported** for Volt MX Go v2.1 up to v2.1.2. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}. 
+    - The minimum supported version of Volt Iris is v9.5.54 for Volt MX Go v2.1 up to v2.1.2.
+    - The Volt Iris v10.0.0 is **not supported** for Volt MX Go v2.1.2 or earlier.2. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}. 
 
 
 ### For Volt MX Go Plugin Installer

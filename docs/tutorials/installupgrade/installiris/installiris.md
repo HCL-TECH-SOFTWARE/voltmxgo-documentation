@@ -6,11 +6,11 @@ Perform a new or an upgrade installation of Volt Iris.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.50.
+- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.54.
 
     !!! note
 
-        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go v2.1.2 or earlier. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have downloaded the Volt MX Go Plugin Installer.
 
@@ -161,11 +161,11 @@ Upgrades Volt Iris to the latest version<!--from Volt MX Go v2.0.4 to Volt MX Go
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer - v9.5.50 or later. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-up-to-v212).
+- You have downloaded the Volt Iris installer - v9.5.54 or later. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-up-to-v212).
 
     !!! note
 
-        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go v2.1.2 or earlier. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](#install-volt-mx-go-plugin-installer).
 
