@@ -39,7 +39,7 @@ The procedure guides your through the installation of the VoltScript Plugin Inst
         
         For example:
 
-        `./<installerfilename>.bin`
+        `./<installerfilename>`
 
     1. Follow the installation instructions. The binary file will initiate the installation process and may prompt you with on-screen instructions. Follow these instructions carefully to complete the installation.
 
@@ -53,15 +53,15 @@ The procedure guides your through the installation of the VoltScript Plugin Inst
     1. Double-click the installer file. The **VoltScript Installation Tool** window opens. 
     1. On the **Introduction**, read the details and instructions, and then click **Next**.
 
-        ![Introduction](../../assets/images/vs1.png){: style="height:80%;width:80%"}
+        ![Introduction](../../assets/images/vs1.png){: style="height:60%;width:60%"}
 
     1. On the **License Agreement**, read the agreement details, select the **I accept the terms of the License agreement** checkbox, and then click **Next**.
 
-        ![License Agreement](../../assets/images/vs2.png){: style="height:80%;width:80%"}
+        ![License Agreement](../../assets/images/vs2.png){: style="height:60%;width:60%"}
 
     1. On the **Choose Install Folder**, click **Next** if you agree with the indicated default location.
 
-        ![Choose Install Folder](../../assets/images/vs3.png){: style="height:80%;width:80%"} 
+        ![Choose Install Folder](../../assets/images/vs3.png){: style="height:60%;width:60%"} 
 
         !!! tip
 
@@ -70,15 +70,15 @@ The procedure guides your through the installation of the VoltScript Plugin Inst
 
     1. On the **Pre-Installation Summary**, review the details and then click **Install**.
 
-        ![Pre-Installation Summary](../../assets/images/vs4.png){: style="height:80%;width:80%"}
+        ![Pre-Installation Summary](../../assets/images/vs4.png){: style="height:60%;width:60%"}
 
     1. On the **Installing**, see the installation status.
 
-        ![Installing](../../assets/images/vs5.png){: style="height:80%;width:80%"}
+        ![Installing](../../assets/images/vs5.png){: style="height:60%;width:60%"}
 
     1. On the **Install Complete**, click **Done**.
 
-        ![Install Complete](../../assets/images/vs6.png){: style="height:80%;width:80%"}
+        ![Install Complete](../../assets/images/vs6.png){: style="height:60%;width:60%"}
 
 ### Install VoltScript plugins
 
@@ -129,7 +129,6 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 ## Expected result
 
 You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-
 
 ## Additional information
 

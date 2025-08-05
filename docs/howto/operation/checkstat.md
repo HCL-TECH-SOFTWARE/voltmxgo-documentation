@@ -1,7 +1,7 @@
 # Check installation status of Volt MX Go plugins
 
 !!!note
-    The information in this topic applies starting with the Volt MX Go version 2.1 release.
+    The information in this topic applies starting with the Volt MX Go v2.1 up to v2.1.2 release.
 
 ## About this task
 

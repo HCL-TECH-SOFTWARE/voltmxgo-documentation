@@ -22,7 +22,7 @@ You have installed the VoltScript Plugin Installer. For more information, see [I
     1. Go to the directory where you installed the VoltScript Plugin Installer.
     2. Run the VoltScript Plugin Installer by entering the following command and press **Enter**
 
-        `./<InstallationToolFilename>`
+        `./<installerfilename>`
 
         The installation tool opens on the Terminal.
 

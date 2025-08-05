@@ -73,7 +73,7 @@ The Domino Adapter handles the Domino database view with columns having the same
 
 !!! note
 
-    The information in this topic applies starting with the Volt MX Go version 2.1 release.
+    The information in this topic applies starting with the Volt MX Go v2.1 up to v2.1.2 release.
 
 Installing the MX Go plugins to Volt Iris requires the Volt Iris workspace to contain a `pluginsInfo.json` file in the `.plugins` directory. An installation error occurs if the `pluginsInfo.json` file isn't in the `.plugins` directory. To create the `pluginsInfo.json` file in the `.plugins directory`, [create a Desktop Web App project](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} with Volt Iris in your workspace, and then [run Live Preview](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}. Running the Live Preview creates the `pluginsInfo.json` file.
 
