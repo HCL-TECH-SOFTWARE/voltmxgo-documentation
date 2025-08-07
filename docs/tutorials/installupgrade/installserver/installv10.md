@@ -69,10 +69,10 @@ For installing Volt Foundry, click the link to the installation guide correspond
 
     [Volt Foundry Container Helm installation guide](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-    !!! warning "Important"
+    !!! note 
 
-        - Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
-        - **After completing the installation, activate the Volt MX Go license on Volt Foundry**.
+        Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
+        
 
 2. After completing all applicable steps in the installation guide, update the `values.yaml` file.
 
@@ -82,6 +82,11 @@ For installing Volt Foundry, click the link to the installation guide correspond
     4. Save your changes and close the file.
 
 3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go.
+
+
+!!! warning "Important"
+
+    After completing the installation, activate the Volt MX Go license on Volt Foundry.
 
 ### For single container solution
 
@@ -102,9 +107,9 @@ For more information, see [Volt Foundry Single Container Solution](https://help.
 
     [Volt Foundry Single Container Solution installation guide](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-    !!! warning "Important"
+    !!! note 
 
-        - The installation guides indicate installation files and installation file download locations. **You must use the installer you downloaded as indicated in the *Before you begin* section.**
+        - The installation guides indicate installation files and installation file download locations. You must use the installer you downloaded as indicated in the *Before you begin* section.
         - Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
 
 2. Update the `docker-compose.yml` file.
@@ -119,6 +124,10 @@ For more information, see [Volt Foundry Single Container Solution](https://help.
 
 3. Stop the existing images by running the command `docker compose down`.
 4. Restart the images by running the command `docker compose up -d`.
+
+!!! warning "Important"
+
+    After completing the installation, activate the Volt MX Go license on Volt Foundry.
 
 ## Next step
 
