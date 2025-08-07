@@ -12,7 +12,12 @@ This guide walks you through installing the VoltScript Plugin Installer using th
 
 ## Before your begin
 
-- You have downloaded and installed the supported version of Volt Foundry that's licensed with a Volt MX Go entitlement.
+- You have downloaded and installed the supported version of Volt Foundry that's licensed with a Volt MX Go entitlement. The minimum supported version of Volt Foundry is v10.0.0.1.
+
+    !!! note
+
+        VoltScript is only supported on Volt Foundry using a Tomcat non-clustered application server.
+
 - You have downloaded the VoltScript Installation Tool.
 
 For more information, see [Download HCL Volt MX Go installers](../../tutorials/installupgrade/portaldownload.md#for-volt-mx-go-v10).

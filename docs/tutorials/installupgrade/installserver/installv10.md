@@ -65,16 +65,15 @@ For installing Volt Foundry, click the link to the installation guide correspond
 
 #### Procedure
 
-- Click the link to the installation guide and follow the installation steps.
+1. Click the link to the installation guide and follow the installation steps.
 
     [Volt Foundry Container Helm installation guide](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#installation "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
     !!! warning "Important"
-        
+
         - Make sure to check all the details and complete all the applicable steps indicated in the installation guide.
         - **After completing the installation, activate the Volt MX Go license on Volt Foundry**.
 
-<!--
 2. After completing all applicable steps in the installation guide, update the `values.yaml` file.
 
     1. Locate the `values.yaml` file in the Volt Foundry directory.
@@ -83,7 +82,7 @@ For installing Volt Foundry, click the link to the installation guide correspond
     4. Save your changes and close the file.
 
 3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go.
--->
+
 ### For single container solution
 
 For more information, see [Volt Foundry Single Container Solution](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} in the Volt MX Documentation.
@@ -93,7 +92,9 @@ For more information, see [Volt Foundry Single Container Solution](https://help.
 - You have [obtained the authentication token from the HCL Container Repository](../../../howto/operation/obtainauthenticationtoken.md).
 - You have completed all the [installation prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_single_container/Content/VoltMX_Foundry_Single_Container_Solution_On-Prem_.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have downloaded the Volt Foundry Single Container install script. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
+- You have downloaded the Volt Foundry Single Container install script. **The minimum supported version is v10.0.0.1**
+
+    For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
 
 #### Procedure
 
@@ -110,7 +111,10 @@ For more information, see [Volt Foundry Single Container Solution](https://help.
 
     1. Locate the `docker-compose.yml` file in the Volt Foundry directory.
     2. Open the `docker-compose.yml` file with your preferred editor and locate the line containing the `image:` key.
-    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:9.5.18.0_GA"`.
+    3. Change the value of the `image:` key from `"hclcr.io/voltmx/voltmx-foundry-db:<version>_GA"` to `"hclcr.io/voltmxgo/voltmx-foundry-db:<version>_GA"`, wherein <version\> corresponds to the Volt Foundry release version. 
+
+        For example, `"hclcr.io/voltmxgo/voltmx-foundry-db:10.0.0.1_GA"`.
+
     4. Save your changes and close the file. 
 
 3. Stop the existing images by running the command `docker compose down`.
