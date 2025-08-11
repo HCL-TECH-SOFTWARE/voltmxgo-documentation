@@ -6,7 +6,7 @@ Perform a new or an upgrade installation of Volt Iris.
 
 ### Before you begin
 
-You have downloaded the Volt Iris installer. The minimum supported version is v10.0.0.1.
+You have downloaded the Volt Iris installer. **The minimum supported version is v10.0.1**.
 
 For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
 
@@ -20,7 +20,9 @@ For installing Volt Iris, click the link corresponding to your installation plat
 
 !!! warning "Important"
 
-    After installing Volt Iris, connect Volt Iris to a supported version of Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.
+    After installing Volt Iris, connect Volt Iris to a supported version of Volt Foundry that has been activated with a Volt MX Go license in My HCLSoftware Portal for the Volt MX Go capabilities to be visible in Volt Iris.
+
+    For more information on activating Volt Foundry with a Volt MX Go license in My HCLSoftware Portal, see the [license activation guide](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation.
 
 ## Upgrade Volt Iris 
 
@@ -28,7 +30,7 @@ Upgrades Volt Iris to the latest version.
 
 ### Before you begin
 
-You have downloaded the Volt Iris installer. The minimum supported version is v10.0.0.1.
+You have downloaded the Volt Iris installer. **The minimum supported version is v10.0.1**.
 
 For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
 
@@ -40,7 +42,9 @@ To upgrade, install the latest version of Volt Iris. Click the link correspondin
 
 - [For installing Volt Iris on Windows](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-!!! note "Important"
+!!! warning "Important"
 
     - Make sure to use the same Workspace Folder you used for your previous installation to access all the projects you worked on.
-    - After installing the plugins, connect Volt Iris to Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.  
+    - After installing Volt Iris, connect Volt Iris to a supported version of Volt Foundry that has been activated with a Volt MX Go license in my HCLSoftware Portal for the Volt MX Go capabilities to be visible in Volt Iris.
+
+        For more information on activating Volt Foundry with a Volt MX Go license in My HCLSoftware Portal, see the [license activation guide](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation.  

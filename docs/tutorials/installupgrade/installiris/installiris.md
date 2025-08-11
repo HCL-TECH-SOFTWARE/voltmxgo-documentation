@@ -185,7 +185,8 @@ To upgrade, install the latest version of Volt Iris. Click the link correspondin
 
 Install the Volt MX Go plugins to Volt Iris to enable Volt MX Go features. For the installation steps, see [Install Volt MX Go Plugins](#install-volt-mx-go-plugins).
 
-!!!warning "Important"
+!!! warning "Important"
+
     After installing the plugins, connect Volt Iris to Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.
 
 ### Important consideration

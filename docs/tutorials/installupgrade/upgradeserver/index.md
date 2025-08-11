@@ -7,7 +7,7 @@ The topic guides you in upgrading the following server components of Volt MX Go.
 
 ## Volt MX Go v10.0
 
-The upgrade process for Volt Foundry in Volt MX Go v10 differs from other releases. In Volt MX Go v10, the supported version of Volt Foundry is installed and then activated with a Volt MX Go license for the Volt MX Go features to work.
+The upgrade process for Volt Foundry in Volt MX Go v10 differs from other releases. In Volt MX Go v10, the supported version of Volt Foundry is installed and then activated with a Volt MX Go license in My HCLSoftware Portal for the Volt MX Go features to work.
 
 Using this installation option would require you to use your own Domino server.
 

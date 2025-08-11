@@ -16,7 +16,7 @@ The following procedure guides you in downloading the installers.
 
 !!! info
 
-    The minimum supported version of Volt Foundry is v10.0.0.1 for Volt MX Go v10.
+    The minimum supported version of Volt Foundry is v10.0.1 for Volt MX Go v10.
 
 1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 2. On the landing page, click **Sign in**.
@@ -30,7 +30,7 @@ The following procedure guides you in downloading the installers.
 
 !!! info
 
-    The minimum supported version of Volt Iris is v10.0.0.1 for Volt MX Go v10.
+    The minimum supported version of Volt Iris is v10.0.1 for Volt MX Go v10.
 
 1. Go to [My HCLSoftware portal](https://my.hcltechsw.com/ "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 2. On the landing page, click **Sign in**.

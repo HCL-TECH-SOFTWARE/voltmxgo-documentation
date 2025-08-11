@@ -30,7 +30,7 @@ The installer doesn't support automatic backups of database and other artifacts.
 
 - Back up your databases and server artifacts.
 
-- Download the latest Volt Foundry installer based on your installation platform. The minimum supported version is v10.0.0.1. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
+- Download the latest Volt Foundry installer based on your installation platform. **The minimum supported version is v10.0.1**. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
 
 - Ensure that the Volt Foundry installer has execute permission.
 - Ensure that you have the path of your previous installation directory.
@@ -47,7 +47,7 @@ The installer doesn't support automatic backups of database and other artifacts.
         - Check all the details and complete all the applicable steps indicated in the upgrade procedure.
         - Make sure to point to the same database you used for your previous Volt Foundry installation to access all the projects you worked on.
         
-        - After completing the installation, activate the **Volt MX Go license** on Volt Foundry. For more information, see the [license activation guide](https://help.hcl-software.com/voltmx/v10/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation. 
+        - After completing the installation, a Volt MX Go license must be used to activate Volt Foundry in the My HCLSoftware Portal for Volt MX Go features to work. For more information, see the [license activation guide](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation. 
 
     - [For Windows](https://help.hcl-software.com/voltmx/v10/Foundry/voltmx_foundry_windows_install_guide/Content/Upgrading_VoltMX_Foundry_SP1.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
@@ -82,6 +82,12 @@ You have downloaded the Volt Foundry Helm charts. For more information, see [Dow
 
 3. Execute the `helm upgrade foundry` command to upgrade the running images to use Volt MX Go.
 
+!!! warning "Important"
+
+    After completing the installation, a Volt MX Go license must be used to activate Volt Foundry in the My HCLSoftware Portal for Volt MX Go features to work. For more information, see the [license activation guide](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation.
+    
 ## Next step
+
+Before proceeding, make sure you have activated Volt Foundry using a Volt MX Go license in the My HCLSoftware Portal for the Volt MX Go features to work. For more information, see the [license activation guide](https://help.hcl-software.com/voltmx/v9.5/Foundry/voltmx_licensing_guide/Content/Volt_Foundry_Licensing_Guide.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} on the Volt MX documentation.
 
 After completing the upgrade installation of **Domino REST API** and **Volt Foundry**, proceed to [Install and upgrade Volt Iris](../installiris/index.md).
