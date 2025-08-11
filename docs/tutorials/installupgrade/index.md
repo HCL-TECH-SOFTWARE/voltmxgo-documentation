@@ -8,8 +8,8 @@ Guides you through the procedures for installing and upgrading Volt MX Go.
     
     **For Volt MX Go v10**:
 
-    - The installed Volt Foundry must be licensed with a Volt MX Go entitlement for Volt MX Go features to work.
-    - The installed Volt Iris must be connected to Volt Foundry licensed with Volt MX Go entitlement to enable Volt MX Go features in Volt Iris. 
+    - Volt Foundry is first installed. A Volt MX Go license must be used to activate Volt Foundry in the My HCLSoftware Portal for Volt MX Go features to work.
+    - The installed Volt Iris  must be connected to a supported version of Volt Foundry that has been activated with a Volt MX Go license in My HCLSoftware Portal for the Volt MX Go capabilities to be visible in Volt Iris. 
 
     **For Volt MX Go v2.1 up to v2.1.2**:
 

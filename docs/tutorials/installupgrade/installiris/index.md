@@ -4,7 +4,7 @@ Perform a new or an upgrade installation of Volt Iris.
 
 ## Volt MX Go v10
 
-The installation and upgrade processes for Volt Iris in the Volt MX Go v10 release differ from those in Volt MX Go v2.1.2 or earlier releases. The supported version of Volt Iris is first installed and then connected to a supported version of Volt Foundry licensed with a Volt MX Go entitlement to enable Volt MX Go features in Volt Iris.
+The installation and upgrade processes for Volt Iris in the Volt MX Go v10 release differ from those in Volt MX Go v2.1.2 or earlier releases. The supported version of Volt Iris is first installed. It is then connected to a supported version of Volt Foundry that has been activated with a Volt MX Go license in My HCLSoftware Portal for the Volt MX Go capabilities to be visible in Volt Iris.
 
 - [For more information, proceed to the installation instructions.](irisv10.md)
 
