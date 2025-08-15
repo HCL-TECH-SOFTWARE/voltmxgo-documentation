@@ -1,5 +1,7 @@
 # First Touch tutorial
 
+## About this task
+
 This tutorial guides you in accessing and running the First Touch Recipe Catalog app from Volt Foundry to view and explore the app.
 
 ## Before you begin

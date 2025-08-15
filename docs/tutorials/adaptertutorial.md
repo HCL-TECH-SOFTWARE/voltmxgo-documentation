@@ -1,5 +1,7 @@
 # Domino Adapter tutorial
 
+## About this task
+
 The tutorial guides you through the Domino Adapter process in Volt MX Go. You will create an app in Volt Foundry and connect the app to your Domino database as an endpoint via the Domino REST API. You will then configure a data model and test the methods, including standard CRUD operations, for interacting with the data model.
 
 For more information, see [Data models](../topicguides/adapter/datamodel.md) and [Methods](../topicguides/adapter/method.md).  
@@ -191,7 +193,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     ![Add a New Environment dialog](../assets/images/addenvironment.png)
 
-## Configure an Object service
+## Configure an object service for Domino
 
 1. In the left pane on the **Volt MX Foundry Console**, click **Apps**.
 2. On the **Apps** page, select the app you created.
