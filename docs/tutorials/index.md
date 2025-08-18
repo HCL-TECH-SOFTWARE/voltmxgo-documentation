@@ -12,7 +12,7 @@ The tutorials introduce you to Volt MX Go and the complete cycle of using its co
 
 - [VoltFormula tutorial](voltformula.md)
 
-- [Apache CouchDB](couch.md)
+- [Apache CouchDB Adapter tutorial](couch.md)
 
 - [Trainings and webinars](webinar.md)
 
