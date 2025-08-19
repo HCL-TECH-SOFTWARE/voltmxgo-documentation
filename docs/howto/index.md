@@ -10,6 +10,8 @@ How-to guides instruct users in completing key goals and tasks related to Volt M
 
 - [First Touch](firsttouch/index.md)
 
+- [Apache CouchDB](couchdb/index.md)
+
 - [Operation](operation/index.md)
 
 - [Uninstall](uninstall/index.md)

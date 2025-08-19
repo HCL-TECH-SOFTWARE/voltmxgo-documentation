@@ -21,10 +21,10 @@ Before starting this tutorial, review the following assumptions to make sure you
 
 For the purpose of this tutorial, it's assumed that:
 
-- You already have a test environment set up. The name of the test environment in the following procedures is going to be referred to as **localdevenv**.
+- You already have a test environment set up. The name of the test environment in the following procedures is going to be referred to as *localdevenv*.
 
 - You have a CouchDB database hosted on a machine.
-    
+
     In the following procedures, the CouchDB database is named *population* and it's hosted on a machine with the hostname *couchdb*.
 
     The *population* database contains data on the populations of cities across multiple continents, including Asia, Africa, and North America. A sample document in this database looks like the following:

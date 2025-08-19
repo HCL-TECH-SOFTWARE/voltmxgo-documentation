@@ -4,6 +4,7 @@ nav:
     - Design Import: designimport
     - VoltFormula: voltformula     
     - First Touch: firsttouch
+    - Apache CouchDB: couchdb
     - Operation: operation
     - Uninstall: uninstall
        

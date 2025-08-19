@@ -1,5 +1,11 @@
 # Known limitations
 
+## Apache CouchDB Adapter
+
+The current implementation of the Apache CouchDB[^1] adapter doesn't support nested fields, including JSON objects and JSON arrays.
+
+[^1]:Apache CouchDB and CouchDB are trademarks of The Apache Software Foundation.
+
 ## Data conversion
 
 As Domino REST API and Volt Foundry administrators can redefine field data types, it can cause data conversion issues as they can redefine a field in Domino differently. For example, a Domino REST API administrator can indicate a date field in Domino as a boolean, while a Volt Foundry administrator can indicate the same date field as a string. This causes conversion issues. As not all possible conversion points have been tested, **data conversion isn't yet supported**.
