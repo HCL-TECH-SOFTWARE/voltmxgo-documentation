@@ -88,7 +88,7 @@ Follow this procedure to update the first document returned from the CouchDb vie
 
     !!! note 
 
-        The value of the `record` field must be a stringified JSON where all double quotes (**"**) are escaped with a backslash (**\**) when the `action` is `updateSchema`.
+        The value of the `record` field must be a stringified JSON where all double quotes (") are escaped with a backslash (\\) when the `action` is `updateSchema`.
 
 2. Click **Send**.
 
@@ -127,7 +127,7 @@ console.log(`"${escapedJsonString}"`);
 
     The `jsonText` variable should contain the JSON response obtained from executing the `getSchema` action.
 
-You can use the following Javascript function to generate the properly escaped string required for the payload when executing `updateSchema`.  
+You can also use the following Javascript function to generate the properly escaped string required for the payload when executing `updateSchema`.  
 
 ```javascript
 function toEscapedJsonString(obj) {
