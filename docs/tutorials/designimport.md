@@ -2,6 +2,8 @@
 
 --8<-- "mxgoversion.md"
 
+## About this task
+
 The tutorial guides you through the Design Import process in Volt MX Go. You will create a project in Volt Iris and then run the Design Import Wizard to enable you to import Domino application forms, views, and agents, then build those forms and views within Volt Iris. You will also perform CRUD operations on the imported Domino application published via Volt Iris.  
 
 At the end of this tutorial, you will gain enough competence to use the Design Import Wizard to successfully import a Domino application.

@@ -12,7 +12,7 @@ The procedure guides you in generating CRUD forms and associated form-navigation
 
 - You have [added an environment for your app](../../tutorials/adaptertutorial.md#add-an-environment).
 
-- You have [configured an Object Service for your app in Volt Foundry](../../tutorials/adaptertutorial.md#configure-an-object-service).
+- You have [configured an Object Service for your app in Volt Foundry](../../tutorials/adaptertutorial.md#configure-an-object-service-for-domino).
 
 - You have [generated the data model for the Object Service](../../tutorials/adaptertutorial.md#generate-a-data-model).
 
