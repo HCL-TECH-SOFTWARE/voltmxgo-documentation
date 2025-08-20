@@ -117,7 +117,7 @@ For the purpose of this tutorial, it's assumed that:
 
     ![data model tab](../assets/images/couch1.png){: style="height:80%;width:80%"}
 
-    The **Import Objects from Backend** dialog appears, displaying the CouchDB databases. In the example image, *heroes_registry*, *population*, *super_docs*, and *support_tickets* are CouchDB databases. Expanding a database reveals a subset of objects available for imported.
+    The **Import Objects from Backend** dialog appears, displaying the CouchDB databases. In the example image, *heroes_registry*, *population*, *super_docs*, and *support_tickets* are CouchDB databases. Expanding a database reveals a subset of objects available for import.
 
     ![Import Objects from Backend](../assets/images/couch2.png){: style="height:80%;width:80%"}
 
