@@ -15,7 +15,7 @@ This tutorial guides you in accessing and running the First Touch Recipe Catalog
 !!!tip
     The following actions might require certain Domino access rights. Contact your Domino Administrator/Domino REST API Administrator for assistance.  
 
-- You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/howto/VoltMX/setupoauthnsf.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have [set up an oauth.nsf](https://opensource.hcltechsw.com/Domino-rest-api/references/security/setupoauthnsf.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have [set up Domino REST API](https://opensource.hcltechsw.com/Domino-rest-api/howto/IdP/configuredrapiIdP.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
