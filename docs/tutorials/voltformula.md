@@ -1,5 +1,7 @@
 # VoltFormula tutorial
 
+## About this task
+
 This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas from OpenFormula and NotesFormula into Volt MX Go Rosetta JavaScript. This feature in Volt Iris allows you to enter into source [OpenFormula](https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} and [Notes Formula Language](https://help.hcltechsw.com/dom_designer/10.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} and have it translated automatically into JavaScript code.
 
 ## Before you begin
@@ -8,7 +10,7 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
 
 - You have created your [Volt Foundry admin account](../howto/install/foundryadminaccount.md).
 
-- You know how to use [Actions](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You know how to use [Actions](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/working_with_Action_Editor.html#search-for-an-action-in-action-editor "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 ## Launch Volt Iris
 
@@ -273,6 +275,6 @@ This tutorial shows you how to use VoltFormula in Volt Iris to convert formulas 
 -->
 ## Additional information
 
-- The default Rosetta VoltFormula setting can be modified according to your need for your app. To change the configuration, see [Configure VoltFormula's Rosetta API Options](../howto/voltformula/configrosetta.md).
+- The default Rosetta VoltFormula setting can be modified according to your need for your app. To change the configuration, see [Configure VoltFormula](../howto/voltformula/configrosetta.md).
 
 - To know more about the proper way of handling codes, see [VoltFormula coding exercise examples in Volt Iris](../topicguides/voltformula/vfcodingguides.md).

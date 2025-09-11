@@ -1,4 +1,4 @@
-# For Volt MX Go v2.1 or later
+# Volt MX Go v2.1 up to v2.1.2
 
 Perform a new or an upgrade installation of Volt Iris.
 
@@ -6,23 +6,23 @@ Perform a new or an upgrade installation of Volt Iris.
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.50.
+- You have downloaded the Volt Iris installer. The minimum supported version is v9.5.54.
 
     !!! note
 
-        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go v2.1.2 or earlier. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have downloaded the Volt MX Go Plugin Installer.
 
-For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-or-later).
+For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-up-to-v212).
 
 ### Install Volt Iris
 
 For installing Volt Iris, click the link corresponding to your installation platform and follow the installation steps.
 
-- [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For installing Volt Iris on Mac](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- [For installing Volt Iris on Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For installing Volt Iris on Windows](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 ### Install Volt MX Go Plugin Installer
 
@@ -99,7 +99,7 @@ The procedure enables the installation of Volt MX Go plugins to Volt Iris to ena
 
 !!! warning "Important"
 
-    Installing the MX Go plugins into your workspace requires that your workspace contains a `pluginsInfo.json` file in the `.plugins` directory. Otherwise, an installation error occurs. To create the `pluginsInfo.json` file in the `.plugins` directory, [create a Desktop Web App project](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} with Volt Iris in your workspace, and then [run Live Preview](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}. Running the Live Preview creates the `pluginsInfo.json` file.
+    Installing the MX Go plugins into your workspace requires that your workspace contains a `pluginsInfo.json` file in the `.plugins` directory. Otherwise, an installation error occurs. To create the `pluginsInfo.json` file in the `.plugins` directory, [create a Desktop Web App project](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/CreateKRAProject.html#create-a-volt-mx-iris-reference-architecture-project "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"} with Volt Iris in your workspace, and then [run Live Preview](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/LivePreview.html#preview-your-web-app-with-iris "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}. Running the Live Preview creates the `pluginsInfo.json` file.
 
 === "on Mac"
 
@@ -161,11 +161,11 @@ Upgrades Volt Iris to the latest version<!--from Volt MX Go v2.0.4 to Volt MX Go
 
 ### Before you begin
 
-- You have downloaded the Volt Iris installer - v9.5.50 or later. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-or-later).
+- You have downloaded the Volt Iris installer - v9.5.54 or later. For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v21-up-to-v212).
 
     !!! note
 
-        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+        The Volt Iris v10.0.0 is currently **not supported** for Volt MX Go v2.1.2 or earlier. For more information, see the [knowledge base article](https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0122684 "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 - You have installed the Volt MX Go Plugin Installer. For more information, see [Install Volt MX Go Plugin Installer](#install-volt-mx-go-plugin-installer).
 
@@ -173,9 +173,9 @@ Upgrades Volt Iris to the latest version<!--from Volt MX Go v2.0.4 to Volt MX Go
 
 To upgrade, install the latest version of Volt Iris. Click the link corresponding to your installation platform and follow the installation steps.
 
-- [For installing Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For installing Volt Iris on Mac](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_mac/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- [For installing Volt Iris on Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For installing Volt Iris on Windows](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_win/Content/Installing%20VoltMX%20Iris.html#installing "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
 !!! note "Important"
 
@@ -185,7 +185,8 @@ To upgrade, install the latest version of Volt Iris. Click the link correspondin
 
 Install the Volt MX Go plugins to Volt Iris to enable Volt MX Go features. For the installation steps, see [Install Volt MX Go Plugins](#install-volt-mx-go-plugins).
 
-!!!warning "Important"
+!!! warning "Important"
+
     After installing the plugins, connect Volt Iris to Volt Foundry licensed with a Volt MX Go entitlement to enable and use the Volt MX Go features in Volt Iris.
 
 ### Important consideration
@@ -196,6 +197,6 @@ Updates for Volt Iris are released regularly, and you will receive an update not
 
 For more information on updating Volt Iris, click the link corresponding to your installation platform:
 
-- [For updating Volt Iris on Mac](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_mac/Content/Upgrade.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For updating Volt Iris on Mac](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_mac/Content/Upgrade.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
 
-- [For updating Volt Iris on Windows](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_starter_install_win/Content/Upgrade.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}
+- [For updating Volt Iris on Windows](https://help.hcl-software.com/voltmx/v10/Iris/iris_starter_install_win/Content/Upgrade.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}

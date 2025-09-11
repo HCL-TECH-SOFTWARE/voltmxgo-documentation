@@ -125,4 +125,4 @@ var yes = rosettajs.Logical.true();
 
 ## Additional information
 
-For more information, see [Configure VoltFormula's Rosetta API Options](../../howto/voltformula/configrosetta.md).
+For more information, see [Configure VoltFormula](../../howto/voltformula/configrosetta.md).

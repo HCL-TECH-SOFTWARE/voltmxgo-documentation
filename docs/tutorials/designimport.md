@@ -2,6 +2,8 @@
 
 --8<-- "mxgoversion.md"
 
+## About this task
+
 The tutorial guides you through the Design Import process in Volt MX Go. You will create a project in Volt Iris and then run the Design Import Wizard to enable you to import Domino application forms, views, and agents, then build those forms and views within Volt Iris. You will also perform CRUD operations on the imported Domino application published via Volt Iris.  
 
 At the end of this tutorial, you will gain enough competence to use the Design Import Wizard to successfully import a Domino application.
@@ -121,7 +123,7 @@ Kindly follow and complete the prerequisites that apply to your situation.
 
     3. On the **Volt Foundry** tab, enter your Volt Foundry URL in the **Foundry URL** text box, and then click **Validate**.
 
-        ![Preferences](../assets/images/dipreference.png){: style="height:80%;width:80%"}
+        ![Preferences](../assets/images/dipreference.png){: style="height:60%;width:60%"}
 
         You should see the **Validation Successful** message at the top of the dialog. If you entered an incorrect Volt Foundry URL, you will see an error message at the top of the dialog advising you to try the validation again.
 
@@ -140,19 +142,19 @@ In this tutorial, we will use a web app project. The following steps will enable
 1. In the top menu, select **Project** &rarr; **New Project**.
 2. In the **What do you want to start with now?** dialog, select **Web App** and click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/didevice.png){: style="height:70%;width:70%"}
 
 3. In the **Which device size do you want to start building for first?** dialog, select **Desktop** and click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/didevicesize.png){: style="height:70%;width:70%"}
 
 4. Enter your **Project Name** and click **Create**.  
   
-    ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/diprojectname.png){: style="height:70%;width:70%"}
 
 You can now see your project name in the upper-left corner of the **Volt Iris** UI.
 
-![Volt Iris user interface](../assets/images/diappname.png){: style="height:80%;width:80%"}
+![Volt Iris user interface](../assets/images/diappname.png){: style="height:60%;width:60%"}
 
 ## Import a Domino application
 
@@ -160,15 +162,15 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
 
 2. On **Getting Started** step, click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/diwizard.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/diwizard.png){: style="height:70%;width:70%"}
 
 3. On **Associate Foundry App** step, click **Create New**.
 
-    ![Design Import Wizard dialog](../assets/images/difoundryapp.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/difoundryapp.png){: style="height:70%;width:70%"}
 
 4. After creating the Foundry app having a default name similar to your **Project Name**, click **Next**.
 
-    ![Design Import Wizard dialog](../assets/images/difoundrybackend.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/difoundrybackend.png){: style="height:70%;width:70%"}
 
 5. On **Identity Service**:
 
@@ -179,16 +181,16 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
         |DRAPI URL|This refers to the Domino REST API URL you are working with.|
         |Scope|This refers to the name of the scope that's set up in the OAuth app you are using in the Domino REST API.<br/><br/>If multiple scopes are configured in the OAuth app, and you wish to use specific scopes, ensure that you separate these scopes with commas when you enter them. For example: `scope1,scope2`<br/><br/>If you intend to use or access all the scopes available in Domino REST API, enter `$DATA`. Just make sure that you only configured `$DATA` and `$SETUP` in the OAuth app in Domino REST API.|
         |App ID | This is the App ID of the OAuth app you are using in Domino REST API.|
-        |App Secret| This is the App Secret of the OAuth app you are using in Domino REST API.|
+        |App Secret| This is the App Secret of the OAuth app you are using in Domino REST API.<br/><br/>You can click and hold on the eye icon to verify the entered value.|
         |Service Name:| Any name that identifies the Volt Foundry Identity Services.<br/><br/>The service name must have a maximum of 10 alphanumeric characters without spaces.|
 
-        ![Design Import Wizard dialog](../assets/images/dikeep.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/dikeep.png){: style="height:70%;width:70%"}
 
     2. Select the **Identity Service**.
 
         The name of the Identity Service is the service name you provided prefixed with *MXGO*. As shown in the image, the name of the Identity Service is *MXGODemoApp*
 
-        ![Design Import Wizard dialog](../assets/images/didrapi.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/didrapi.png){: style="height:70%;width:70%"}
 
         !!!warning "Important"
 
@@ -236,7 +238,7 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
 
     3. Click **Next**. The **HCL Domino Login** dialog opens.
 
-        ![Domino REST API log in dialog](../assets/images/dicredential.png){: style="height:80%;width:80%"}
+        ![Domino REST API log in dialog](../assets/images/dicredential.png){: style="height:70%;width:70%"}
 
         !!! note
 
@@ -246,11 +248,11 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
 
     5. In the **Permission Requested** dialog, click **Allow**.
 
-        ![Domino REST API permission request dialog](../assets/images/didrapilogin.png){: style="height:80%;width:80%"}
+        ![Domino REST API permission request dialog](../assets/images/didrapilogin.png){: style="height:70%;width:70%"}
 
     6. Choose the identity service related to your app on Volt Foundry in **Foundry App Identity Service** and click **Next**.
 
-        ![Design Import Wizard dialog](../assets/images/difoundry.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/difoundry.png){: style="height:70%;width:70%"}
 
 6. On **Scope and Forms**:
 
@@ -267,32 +269,32 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
 
         The available scopes are based on the scopes defined when creating the identity service.  
 
-        ![Design Import Wizard dialog](../assets/images/discope.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/discope.png){: style="height:70%;width:70%"}
 
     1. Click the **Forms** tab and select the forms, fields and actions you want to include in the import.
 
-        ![Design Import Wizard dialog](../assets/images/discopeform.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/discopeform.png){: style="height:70%;width:70%"}
 
     1. Click the **Views** tab and select the views and actions you want to include in the import.
 
-        ![Design Import Wizard dialog](../assets/images/didbviews.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/didbviews.png){: style="height:70%;width:70%"}
 
     1. Click the **Agents** tab and select the agents you want to include in the import. 
 
-        ![Design Import Wizard dialog](../assets/images/diagents.png){: style="height:80%;width:80%"}
+        ![Design Import Wizard dialog](../assets/images/diagents.png){: style="height:70%;width:70%"}
 
     1. Click **Next**.
 
 7. On **Summary**, review the selected `forms`, `fields`, `views`, and `agents`. Once you confirm that you have selected everything that you want to import, click **Build Iris Application**.
 
-    ![Design Import Wizard dialog](../assets/images/disummary.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/disummary.png){: style="height:70%;width:70%"}
 
     !!! note
 
         - It may take a while to complete the publishing of the imported Domino app.
         - If a dialog indicating that existing Iris forms are detected appears, click **Yes** to overwrite the detected forms and proceed with the building of the application. The existing Iris forms were automatically generated when you created the project in Volt Iris.
 
-            ![Screenshot](../assets/images/dideleteform.png)
+            ![Screenshot](../assets/images/dideleteform.png){: style="height:80%;width:80%"}
 
 8. On **Result**, see the final `forms`, `views`, `actions`,`agents`, and then click **Done**.
 
@@ -305,7 +307,7 @@ You can now see your project name in the upper-left corner of the **Volt Iris** 
         <!-- When the scope you selected has active agents, the **Agents** tab is shown. Otherwise, the **AppForms** tab is shown.-->
         - You can click **view report** to see a results report of imported forms, views, and agents in a new window. 
 
-    ![Design Import Wizard dialog](../assets/images/diresult.png){: style="height:80%;width:80%"}
+    ![Design Import Wizard dialog](../assets/images/diresult.png){: style="height:70%;width:70%"}
 
 Once you click **Done**, you can see the imported forms and views in a storyboard view in Volt Iris.
 
@@ -313,19 +315,19 @@ Once you click **Done**, you can see the imported forms and views in a storyboar
 
 To see the imported forms in a directory, click the **DESIGN** tab to show the **Project** tab. You then expand the **Responsive Web / Desktop** and the **Form** directory to show the imported forms, views, and actions.
 
-![Import output in the Forms directory](../assets/images/dioutput1.png){: style="height:80%;width:80%"}
+![Import output in the Forms directory](../assets/images/dioutput1.png){: style="height:50%;width:50%"}
 
 ## Perform CRUD operation in imported Domino app
 
 Before you can do the CRUD operation in your imported Domino app, you must first build and publish the imported app in Volt Iris.
 
-If your app is a **Web App**, follow the instructions in [Building a Web App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
+If your app is a **Web App**, follow the instructions in [Building a Web App](https://help.hcl-software.com/voltmx/v10/Iris/iris_microapps/Content/WebPublish.html#publish-a-web-app "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation.
 
 If your app is a **Native App:**
 
 1. [Configure your mobile app browser](../howto/designimport/configmobile.md).
 
-2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://opensource.hcltechsw.com/volt-mx-docs/95/docs/documentation/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation to view the mobile app.
+2. After configuring your mobile app browser, follow the instructions in [Building a Native App](https://help.hcl-software.com/voltmx/v10/Iris/iris_user_guide/Content/LocalBuildStarter.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"} in the HCL Volt MX documentation to view the mobile app.
 
 !!! note
 

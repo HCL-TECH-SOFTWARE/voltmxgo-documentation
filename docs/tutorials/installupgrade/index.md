@@ -4,7 +4,14 @@ Guides you through the procedures for installing and upgrading Volt MX Go.
 
 !!! warning "Important"
 
-    The installation and upgrade processes for Volt Foundry and Volt Iris in the Volt MX Go v2.1 or later release differ from those of the Volt MX Go v2.0.4 or earlier release. In the Volt MX Go v2.1 or later release:
+    The installation and upgrade processes for Volt Foundry and Volt Iris differ based on Volt MX Go release version. 
+    
+    **For Volt MX Go v10**:
+
+    - Volt Foundry is first installed. A Volt MX Go license must be used to activate Volt Foundry in the My HCLSoftware Portal for Volt MX Go features to work.
+    - The installed Volt Iris  must be connected to a supported version of Volt Foundry that has been activated with a Volt MX Go license in My HCLSoftware Portal for the Volt MX Go capabilities to be visible in Volt Iris. 
+
+    **For Volt MX Go v2.1 up to v2.1.2**:
 
     - Volt Foundry and Volt Iris are first installed, followed by installing the necessary plugins using the Volt MX Go Plugin Installer. The plugins enable the capabilities unique to Volt MX Go. 
     - Volt Foundry must be licensed with a Volt MX Go entitlement for the plugins to be enabled and for the Volt MX Go features to work.
