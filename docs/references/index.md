@@ -54,7 +54,7 @@ Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodinggu
 
 <!--(https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
 
-- Provides documentation and more information about the **early access version** of VoltScript and related components.
+- Provides documentation and more information about VoltScript and related components.
 
 ## Support
 
