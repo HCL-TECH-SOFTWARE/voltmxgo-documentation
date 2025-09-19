@@ -57,4 +57,6 @@ You have checked the installation status of the VoltScript plugins in Volt Found
 
 To check the installation status of VoltScript Runtime, use the **Check the install status of the VoltScript Runtime Zip** option and then press **Enter**. A confirmation statement is shown on whether VoltScript Runtime is installed or not.
 
-For more information on VoltScript Runtime, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+For more information on VoltScript Runtime, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
+<!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->

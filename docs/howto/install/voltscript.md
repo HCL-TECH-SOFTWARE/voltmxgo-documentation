@@ -133,7 +133,9 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
 ## Expected result
 
-You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
+<!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
 
 ## Additional information
 
@@ -142,4 +144,6 @@ You can install VoltScript Runtime using the **Install VoltScript Runtime Zip** 
 - For Linux: `/usr/local/voltscript`
 - For Windows: `C:\Program Files\HCL\voltscript`
 
-For more information on VoltScript Runtime, see the [VoltScript documentation](https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+For more information on VoltScript Runtime, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
+<!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->

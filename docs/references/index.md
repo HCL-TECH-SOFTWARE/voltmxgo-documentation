@@ -50,7 +50,9 @@ Recommended [VoltFormula coding practices](../topicguides/voltformula/vfcodinggu
 
 - Provides a complete list of links to the documentation of different HCL Software products.
 
-[VoltScript](https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+[VoltScript](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}
+
+<!--(https://help.hcltechsw.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
 
 - Provides documentation and more information about the **early access version** of VoltScript and related components.
 
