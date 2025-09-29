@@ -24,7 +24,9 @@ For more information, see [Download HCL Volt MX Go installers](../../tutorials/i
 
 ## Procedure
 
-### Install VoltScript Plugin Installer 
+### For Volt Foundry installed using installers
+
+#### Install VoltScript Plugin Installer 
 
 The procedure guides your through the installation of the VoltScript Plugin Installer, installs the VoltScript plugins in Volt Foundry.
 
@@ -85,7 +87,7 @@ The procedure guides your through the installation of the VoltScript Plugin Inst
 
         ![Install Complete](../../assets/images/vs6.png){: style="height:60%;width:60%"}
 
-### Install VoltScript plugins
+#### Install VoltScript plugins
 
 The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
@@ -131,11 +133,57 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
     Make sure to restart Volt Foundry after completing the installation of the VoltScript plugins.  
 
-## Expected result
+#### Expected result
 
 You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 <!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
+
+### For Volt Foundry installed using Helm charts
+
+!!! note
+
+    Make sure you have downloaded the Volt Foundry Helm charts. **The minimum supported version is v10.0.1**. For more information, see [Download HCL Volt MX Go installers](../../tutorials/installupgrade/portaldownload.md#for-volt-mx-go-v10).
+
+1. Extract the downloaded installer zip file.
+2. Update the `voltmx-foundry-ingress.yaml` file in the `apps/templates` directory.
+
+    1. Open the `voltmx-foundry-ingress.yaml` file with your preferred editor.
+    2. Locate the *Ingress controller configuration for integration* part in the `voltmx-foundry-ingress.yaml` file.
+
+        ![Ingress controller configuration for integration](../../assets/images/vs8.png){: style="height:80%;width:80%"}
+
+    3. Add the following code snippet to be one of the *Integration paths*.
+
+        ```yaml
+        - path: /voltscript
+            pathType: Prefix
+            backend:
+              service:
+                name: voltmx-foundry-integration
+                port:
+                  number: 8080
+
+        ```
+
+        Make sure to follow the correct indentation when adding the code snippet. Refer to the folowing image showing the part of the `voltmx-foundry-ingress.yaml` file after adding the code snippet.
+
+        ![code snippet](../../assets/images/vs9.png){: style="height:50%;width:50%"}
+
+    4. Save your changes and close the file.
+
+3. Update the `values.yaml` file.
+
+    1. Open the `values.yaml` file with your preferred editor.
+    2. Locate the line containing the `imageRegistry:` key and make sure that its value is `"hclcr.io/voltmxgo"`.
+    3. Locate the line containing the `foundryBuildVer:` key and update its value to `"10.0.0_GA"`.
+    4. Save your changes and close the file.
+
+3. Proceed to [installing Volt Foundry using Helm charts on a supported Kubernetes platform](../../tutorials/installupgrade/installserver/installv10.md#for-using-helm-charts-on-a-supported-kubernetes-platform).
+
+#### Expected result
+
+After updating the `voltmx-foundry-ingress.yaml`, `values.yaml file`, and completing the Volt Foundry installation using Helm charts, you can now configure a VoltScript Integration Service in Volt Foundry installed using Helm charts. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 ## Additional information
 

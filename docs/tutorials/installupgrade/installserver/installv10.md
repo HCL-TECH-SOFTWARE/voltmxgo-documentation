@@ -54,12 +54,18 @@ For installing Volt Foundry, click the link to the installation guide correspond
 
 #### Before you begin
 
-- You have [obtained the authentication token from the HCL Container Repository](../../../howto/operation/obtainauthenticationtoken.md).
-- You have completed all the installation [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 - You have downloaded the Volt Foundry Helm charts. **The minimum supported version is v10.0.1**.
 
     For more information, see [Download HCL Volt MX Go installers](../portaldownload.md#for-volt-mx-go-v10).
+
+    !!! note
+
+        If you want VoltScript enabled for Volt Foundry, proceed to [Enable VoltScript in Volt Foundry](../../../howto/install/voltscript.md#for-volt-foundry-installed-using-helm-charts) before proceeding with the following prerequisites and the installation procedure. 
+
+- You have [obtained the authentication token from the HCL Container Repository](../../../howto/operation/obtainauthenticationtoken.md).
+- You have completed all the installation [prerequisites](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#prerequisites "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+- You have reviewed the configuration parameters and identified their required values as you must provide them during the installation. For more information, see [Configuration](https://help.hcl-software.com/voltmx/v10/Foundry/voltmxfoundry_containers_helm/Content/Installing_Containers_With_Helm.html#configuration "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
 
 #### Procedure
 
