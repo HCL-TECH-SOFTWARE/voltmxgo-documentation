@@ -8,9 +8,13 @@ VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC "Link opens a new ta
 
 ## About this task
 
-This guide walks you through installing the VoltScript Plugin Installer using the VoltScript Installation Tool, and then using the VoltScript Plugin Installer to add VoltScript plugins in Volt Foundry.
+This guide explains how to install the VoltScript Plugin Installer using the VoltScript Installation Tool, and how to use the VoltScript Plugin Installer to add VoltScript plugins to Volt Foundry. It also covers enabling VoltScript in Volt Foundry, which is deployed through Helm charts on a supported Kubernetes platform.
 
-## Before your begin
+<!--This guide walks you through installing the VoltScript Plugin Installer using the VoltScript Installation Tool, and then using the VoltScript Plugin Installer to add VoltScript plugins in Volt Foundry.-->
+
+## For Volt Foundry installed using installers
+
+### Before your begin
 
 - You have downloaded and installed the supported version of Volt Foundry that's licensed with a Volt MX Go entitlement. **The minimum supported version of Volt Foundry is v10.0.1**.
 
@@ -22,9 +26,7 @@ This guide walks you through installing the VoltScript Plugin Installer using th
 
 For more information, see [Download HCL Volt MX Go installers](../../tutorials/installupgrade/portaldownload.md#for-volt-mx-go-v10).
 
-## Procedure
-
-### For Volt Foundry installed using installers
+### Procedure
 
 #### Install VoltScript Plugin Installer 
 
@@ -133,17 +135,19 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
     Make sure to restart Volt Foundry after completing the installation of the VoltScript plugins.  
 
-#### Expected result
+### Expected result
 
 You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 <!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
 
-### For Volt Foundry installed using Helm charts
+## For Volt Foundry installed using Helm charts
 
-!!! note
+### Before you begin
 
-    Make sure you have downloaded the Volt Foundry Helm charts. **The minimum supported version is v10.0.1**. For more information, see [Download HCL Volt MX Go installers](../../tutorials/installupgrade/portaldownload.md#for-volt-mx-go-v10).
+Make sure you have downloaded the Volt Foundry Helm charts. **The minimum supported version is v10.0.1**. For more information, see [Download HCL Volt MX Go installers](../../tutorials/installupgrade/portaldownload.md#for-volt-mx-go-v10).
+
+### Procedure
 
 1. Extract the downloaded installer zip file.
 2. Update the `voltmx-foundry-ingress.yaml` file in the `apps/templates` directory.
@@ -179,9 +183,9 @@ You have now installed the VoltScript plugins in Volt Foundry. You can now confi
     3. Locate the line containing the `foundryBuildVer:` key and update its value to `"10.0.0_GA"`.
     4. Save your changes and close the file.
 
-3. Proceed to [installing Volt Foundry using Helm charts on a supported Kubernetes platform](../../tutorials/installupgrade/installserver/installv10.md#for-using-helm-charts-on-a-supported-kubernetes-platform).
+4. Proceed to [installing Volt Foundry using Helm charts on a supported Kubernetes platform](../../tutorials/installupgrade/installserver/installv10.md#for-using-helm-charts-on-a-supported-kubernetes-platform).
 
-#### Expected result
+### Expected result
 
 After updating the `voltmx-foundry-ingress.yaml`, `values.yaml file`, and completing the Volt Foundry installation using Helm charts, you can now configure a VoltScript Integration Service in Volt Foundry installed using Helm charts. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
