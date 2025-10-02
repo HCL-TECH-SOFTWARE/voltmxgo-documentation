@@ -61,6 +61,10 @@ The following procedure guides you in downloading the installers.
 
 Starting from the Volt MX Go v2.1 up to v2.1.2, you must download the supported versions of installers of Volt Foundry and Volt Iris. You must also download the Volt MX Go Plugin Installer, which installs the Volt MX Go plugins to Volt Foundry and Volt Iris to enable the Volt MX Go features. The following procedure guides you in downloading the installers.
 
+!!! warning "Important"
+
+    For Volt MX Go v2.1.2 installers, customers must contact Support by opening a support case to obtain the installers.
+
 ### For Volt Foundry
 
 === "Latest release"
