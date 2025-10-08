@@ -12,48 +12,48 @@ You are welcome to report bugs or provide feedback on the **product documentatio
 
 Perform the following steps to contribute to the documentation.
 
-1. Update the documentation.
+#### Update the documentation
 
-    1. Clone the [Volt MX Go documentation repo](https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation).
+1. Clone the [Volt MX Go documentation repo](https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation).
 
-        If you do not have write access to the repo, [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) and then [clone your forked repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository).
+    If you do not have write access to the repo, [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) and then [clone your forked repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository).
 
-    2. Create a new working branch for your changes.
-    3. Edit the Markdown files (.md) in the `docs` directory that you want to update using your preferred text or code editor, and then save the changes.
+2. Create a new working branch for your changes.
+3. Edit the Markdown files (.md) in the `docs` directory that you want to update using your preferred text or code editor, and then save the changes.
 
-2. Validate your changes
+#### Validate your changes
 
-    Perform the following steps if you want to preview how your changes render as HTML using MkDocs.
+Perform the following steps if you want to test and preview how your changes render as HTML using MkDocs.
 
-    1. [Install MkDocs](https://www.mkdocs.org/user-guide/installation/) (if not already installed) to build and preview the documentation locally.
-    2. Install the MkDocs plugins:
+1. [Install MkDocs](https://www.mkdocs.org/user-guide/installation/) (if not already installed) to build and preview the documentation locally.
+2. Install the MkDocs plugins:
 
-        ```
-        pip install mkdocs-material
-        pip install mkdocs-awesome-pages-plugin 
-        pip install mkdocs-git-revision-date-localized-plugin 
-        ```
+    ```
+    pip install mkdocs-material
+    pip install mkdocs-awesome-pages-plugin 
+    pip install mkdocs-git-revision-date-localized-plugin 
+    ```
 
-    3. Preview your changes in a web browser by running the [`mkdocs serve`](https://www.mkdocs.org/user-guide/cli/#mkdocs-serve) command.
+3. Preview your changes in a web browser by running the [`mkdocs serve`](https://www.mkdocs.org/user-guide/cli/#mkdocs-serve) command.
 
-        Make sure you're in the same directory as the `mkdocs.yml` configuration file when running the `mkdocs serve` command.
+    Make sure you're in the same directory as the `mkdocs.yml` configuration file when running the `mkdocs serve` command.
 
-    4. Open `http://127.0.0.1:8000` in your browser to check the formatting, links, and rendering of your changes.
+4. Open `http://127.0.0.1:8000` in your browser to check the formatting, links, and rendering of your changes.
 
-3. Submit your documentation changes.
+#### Submit your documentation changes
 
-    1. Stage and commit your changes with a clear commit message.
-    2. Push your branch to remote [Volt MX Go repo](https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation).
+1. Stage and commit your changes with a clear commit message.
+2. Push your branch to remote [Volt MX Go repo](https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation).
 
-        In case you created your branch from your fork, push your branch to your fork of the Volt MX Go repository.
+    In case you created your branch from your fork, push your branch to your fork of the Volt MX Go repository.
 
-    3. Navigate to the [Volt MX Go repo](https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation) on GitHub, then create a pull request (PR) from your branch targeting the main branch.
+3. Navigate to the [Volt MX Go repo](https://github.com/HCL-TECH-SOFTWARE/voltmxgo-documentation) on GitHub, then create a pull request (PR) from your branch targeting the main branch.
 
-        In case you pushed your branch to your fork of the Volt MX Go repository, see [create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+    In case you pushed your branch to your fork of the Volt MX Go repository, see [create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
-    4. Respond to review comments and update your PR as needed until approved.
+4. Respond to review comments and update your PR as needed until approved.
 
-        Once the pull request is approved and merged, your changes will be published on the documentation site.
+Once the pull request is approved and merged, your changes will be published on the documentation site.
 
 <!--
 - Install [MkDocs](https://github.com/squidfunk/mkdocs-material).
