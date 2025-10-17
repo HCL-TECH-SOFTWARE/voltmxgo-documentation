@@ -129,10 +129,6 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
     4. Press **Enter** to close the Command Prompt window.
 
-!!! tip
-
-    Make sure to restart Volt Foundry after completing the installation of the VoltScript plugins.
-
 #### Install VoltScript Runtime
 
 The procedure guides you in installing the VoltScript Runtime. For more information on VoltScript Runtime, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
@@ -164,7 +160,11 @@ The procedure guides you in installing the VoltScript Runtime. For more informat
     2. Enter **4** to install VoltScript Runtime Zip and press **Enter**.
 
     The VoltScript Runtime files are now saved in `C:\Program Files\HCL\voltscript`.
-     
+
+!!! tip
+
+    Make sure to restart Volt Foundry after completing the installation of the VoltScript plugins and VoltScript Runtime.
+
 ### Expected result
 
 You have now installed the VoltScript plugins in Volt Foundry and the VoltScript Runtime. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
