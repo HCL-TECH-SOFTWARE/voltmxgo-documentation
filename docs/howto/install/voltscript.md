@@ -10,8 +10,6 @@ VoltScript is a [BASIC](https://en.wikipedia.org/wiki/BASIC "Link opens a new ta
 
 This guide explains how to install the VoltScript Plugin Installer using the VoltScript Installation Tool, and how to use the VoltScript Plugin Installer to add VoltScript plugins to Volt Foundry. It also covers enabling VoltScript in Volt Foundry, which is deployed through Helm charts on a supported Kubernetes platform.
 
-<!--This guide walks you through installing the VoltScript Plugin Installer using the VoltScript Installation Tool, and then using the VoltScript Plugin Installer to add VoltScript plugins in Volt Foundry.-->
-
 ## For Volt Foundry installed using installers
 
 ### Before your begin
@@ -28,7 +26,7 @@ For more information, see [Download HCL Volt MX Go installers](../../tutorials/i
 
 ### Procedure
 
-#### Install VoltScript Plugin Installer 
+#### Install VoltScript Plugin Installer
 
 The procedure guides your through the installation of the VoltScript Plugin Installer, installs the VoltScript plugins in Volt Foundry.
 
@@ -131,15 +129,45 @@ The procedure guides you in installing the VoltScript plugins in Volt Foundry.
 
     4. Press **Enter** to close the Command Prompt window.
 
+#### Install VoltScript Runtime
+
+The procedure guides you in installing the VoltScript Runtime. For more information on VoltScript Runtime, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+
+=== "on Linux"
+
+    1. Open Terminal.
+    2. Go to the directory where you installed the VoltScript Plugin Installer. 
+    3. Run the VoltScript Plugin Installer by entering the following command and press **Enter**.
+
+        `./<installerfilename>`
+
+        The installation tool opens on the Terminal showing the available options.
+
+    4. Enter **4** to install VoltScript Runtime Zip and press **Enter**.
+    
+    The VoltScript Runtime files are now saved in `/usr/local/voltscript`.
+
+=== "on Windows"
+
+    1. Select **Start**, scroll through the alphabetical list, and select **VoltScript Plugin Installer**. Depending on your OS, you might need to select **All apps**, scroll through the alphabetical list, and click **VoltScript Plugin Installer**.
+
+        OR
+
+        Double-click the **VoltScript Plugin Installer** shortcut on your desktop if available. 
+
+        A Command Prompt window opens showing the available options.
+
+    2. Enter **4** to install VoltScript Runtime Zip and press **Enter**.
+
+    The VoltScript Runtime files are now saved in `C:\Program Files\HCL\voltscript`.
+
 !!! tip
 
-    Make sure to restart Volt Foundry after completing the installation of the VoltScript plugins.  
+    Make sure to restart Volt Foundry after completing the installation of the VoltScript plugins and VoltScript Runtime.
 
 ### Expected result
 
-You have now installed the VoltScript plugins in Volt Foundry. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
-
-<!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
+You have now installed the VoltScript plugins in Volt Foundry and the VoltScript Runtime. You can now configure a VoltScript Integration Service in Volt Foundry. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
 ## For Volt Foundry installed using Helm charts
 
@@ -167,7 +195,6 @@ Make sure you have downloaded the Volt Foundry Helm charts. **The minimum suppor
                 name: voltmx-foundry-integration
                 port:
                   number: 8080
-
         ```
 
         Make sure to follow the correct indentation when adding the code snippet. Refer to the folowing image showing the part of the `voltmx-foundry-ingress.yaml` file after adding the code snippet.
@@ -189,6 +216,7 @@ Make sure you have downloaded the Volt Foundry Helm charts. **The minimum suppor
 
 After updating the `voltmx-foundry-ingress.yaml`, `values.yaml file`, and completing the Volt Foundry installation using Helm charts, you can now configure a VoltScript Integration Service in Volt Foundry installed using Helm charts. For more information, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
 
+<!--
 ## Additional information
 
 You can install VoltScript Runtime using the **Install VoltScript Runtime Zip** option in the VoltScript Plugin Installer. The VoltScript Runtime files will be saved in the following locations:
@@ -197,5 +225,6 @@ You can install VoltScript Runtime using the **Install VoltScript Runtime Zip** 
 - For Windows: `C:\Program Files\HCL\voltscript`
 
 For more information on VoltScript Runtime, see the [VoltScript documentation](https://opensource.hcltechsw.com/voltscript-docs/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}.
+-->
 
 <!--(https://help.hcl-software.com/docs/voltscript/early-access/index.html "Link opens a new tab"){: target="_blank" rel="noopener noreferrer"}&nbsp;![link image](../../assets/images/external-link.svg){: style="height:13px;width:13px"}-->
